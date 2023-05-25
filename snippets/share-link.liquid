@@ -1,0 +1,30 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SHARE LINK
+----------------------------------------------------------------------------------------------------------------------
+
+Generate share URL for Twitter, Facebook, Pinterest and email
+
+********************************************
+Supported variables
+********************************************
+
+* title: the title of the resource being shared (can be for instance a product or blog post title)
+* description: the description of the content to share for Pinterest. It is truncated automatically to 200 characters
+{%- endcomment -%}
+
+{%- assign share_url = request.origin | append: url -%}
+
+{%- case host -%}
+  {%- when 'twitter' -%}
+    https://twitter.com/share?{% if title != blank %}text={{ title | url_param_escape }}&{% endif %}url={{ share_url }}
+
+  {%- when 'facebook' -%}
+    https://www.facebook.com/sharer.php?u={{ share_url }}
+
+  {%- when 'pinterest' -%}
+    https://pinterest.com/pin/create/button/?url={{ share_url }}{% if page_image != blank %}&media={{ page_image | image_url: width: 800 | prepend: 'https:' }}{% endif %}&description={{ description | strip_html | truncate: 200 | url_param_escape }}
+
+  {%- when 'email' -%}
+    mailto:?&subject={{ title | escape }}&body={{ share_url }}
+{%- endcase -%}

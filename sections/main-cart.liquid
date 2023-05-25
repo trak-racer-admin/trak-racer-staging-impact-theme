@@ -1,0 +1,619 @@
+<div class="container">
+  {%- if cart.item_count == 0 -%}
+    <div class="empty-state">
+      <div class="empty-state__icon-wrapper">
+        {%- render 'icon' with 'cart', width: 32, height: 32, stroke_width: 1 -%}
+        <span class="count-bubble count-bubble--lg">0</span>
+      </div>
+
+      <div class="prose">
+        <p class="h4">{{ 'cart.general.empty' | t }}</p>
+
+        {%- assign button_content = 'cart.general.continue_shopping' | t -%}
+        {%- render 'button', href: settings.cart_empty_button_link, size: 'xl', content: button_content -%}
+      </div>
+    </div>
+  {%- else -%}
+    <div class="page-spacer">
+      <div class="cart">
+        <div class="cart-header">
+          <h1 class="h2">{{ 'cart.general.title' | t }}</h1>
+
+          {%- if settings.cart_show_free_shipping_threshold -%}
+            {%- render 'free-shipping-bar' -%}
+          {%- endif -%}
+        </div>
+
+        <div class="cart-order">
+          <div class="cart-order__summary">
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            ORDER SUMMARY
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+            <table class="order-summary">
+              <thead class="order-summary__header">
+                <tr>
+                  <th>{{ 'customer.order.product' | t }}</th>
+                  <th class="w-0">{{ 'customer.order.quantity' | t }}</th>
+                  <th class="text-end">{{ 'customer.order.total' | t }}</th>
+                </tr>
+              </thead>
+
+              <tbody class="order-summary__body">
+                {%- for line_item in cart.items -%}
+                  {%- assign line_max_quantity = '' -%}
+
+                  {%- if line_item.variant.inventory_management != blank and line_item.variant.inventory_policy == 'deny' -%}
+                    {%- assign line_max_quantity = line_item.variant.inventory_quantity -%}
+                  {%- endif -%}
+
+                  <tr>
+                    <td>{%- render 'line-item', line_item: line_item -%}</td>
+
+                    <td class="hidden align-center text-center text-subdued sm:table-cell">
+                      <line-item-quantity class="v-stack justify-center gap-2">
+                        <input class="quantity-input" type="text" is="quantity-input" inputmode="numeric" {% if line_max_quantity != blank %}max="{{ line_max_quantity }}"{% endif %} data-line-key="{{ line_item.key }}" aria-label="{{ 'cart.order.change_quantity' | t | escape }}" value="{{ line_item.quantity }}">
+
+                        <span class="text-xs">
+                          <a href="{{ line_item.url_to_remove }}" class="link">{{ 'cart.order.remove' | t }}</a>
+                        </span>
+                      </line-item-quantity>
+                    </td>
+
+                    <td class="hidden align-center text-subdued text-end sm:table-cell">{{ line_item.final_line_price | money }}</td>
+                  </tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            SHIPPING ESTIMATOR
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+
+            {%- if section.settings.show_shipping_estimator and cart.requires_shipping -%}
+              {%- assign accordion_title = 'cart.shipping_estimator.estimate_shipping' | t -%}
+              {%- capture accordion_content -%}{%- render 'shipping-estimator' -%}{%- endcapture -%}
+
+              {%- render 'accordion', title: accordion_title, icon: 'picto-box', content: accordion_content, size: 'lg' -%}
+            {%- endif -%}
+          </div>
+
+          <safe-sticky class="cart-order__recap v-stack gap-6">
+            <form action="{{ routes.cart_url }}" method="POST" class="cart-form rounded">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {%- render block -%}
+
+                  {%- when 'totals' -%}
+                    <div class="cart-form__totals v-stack gap-2" {{ block.shopify_attributes }}>
+                      {%- if block.settings.show_order_weight -%}
+                        <div class="h-stack gap-4 justify-between">
+                          <span class="text-subdued">{{ 'cart.general.weight' | t }}</span>
+                          <span class="text-subdued">{{ cart.total_weight | weight_with_unit }}</span>
+                        </div>
+                      {%- endif -%}
+
+                      <div class="h-stack gap-4 justify-between">
+                        <span class="text-subdued">{{ 'cart.general.subtotal' | t }}</span>
+                        <span class="text-subdued">{{ cart.items_subtotal_price | money }}</span>
+                      </div>
+
+                      {% for discount_application in cart.cart_level_discount_applications %}
+                        <div class="h-stack gap-4 justify-between">
+                          <div class="badge">
+                            {%- render 'icon' with 'discount' -%} {{- discount_application.title -}}
+                          </div>
+
+                          <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
+                        </div>
+                      {% endfor %}
+
+                      <div class="h-stack gap-4 justify-between">
+                        <span class="h5">{{ 'cart.general.total' | t }}</span>
+                        <span class="h5">{{- cart.total_price | money_with_currency -}}</span>
+                      </div>
+
+                      {%- if block.settings.show_shipping_text -%}
+                        {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</span>
+                        {%- elsif cart.taxes_included -%}
+                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</span>
+                        {%- elsif shop.shipping_policy.body != blank -%}
+                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</span>
+                        {%- else -%}
+                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</span>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>
+
+                  {%- when 'cart_note' -%}
+                    <cart-note class="cart-form__note block" {{ block.shopify_attributes }}>
+                      {%- assign order_note = 'cart.general.order_note' | t -%}
+                      {%- render 'input', name: 'note', multiline: 3, label: order_note, value: cart.note, maxlength: block.settings.maxlength -%}
+                    </cart-note>
+
+                  {%- when 'text' -%}
+                    {%- if block.settings.content != blank -%}
+                      <div class="prose text-subdued" {{ block.shopify_attributes }}>
+                        {{- block.settings.content -}}
+                      </div>
+                    {%- endif -%}
+
+                  {%- when 'offer' -%}
+                    {%- assign previous_block_index = forloop.index0 | minus: 1 -%}
+                    {%- assign next_block_index = forloop.index0 | plus: 1 -%}
+
+                    {%- if section.blocks[next_block_index].type == 'offer' -%}
+                      <div class="v-stack gap-4">
+                    {%- endif -%}
+
+                    {%- render 'offer', block: block -%}
+
+                    {%- if section.blocks[previous_block_index].type == 'offer' -%}
+                      </div>
+                    {%- endif -%}
+
+                  {%- when 'accelerated_buttons' -%}
+                    {% if additional_checkout_buttons %}
+                      <div class="additional-checkout-buttons additional-checkout-buttons--vertical" {{ block.shopify_attributes }}>
+                        {{- content_for_additional_checkout_buttons -}}
+                      </div>
+                    {% endif %}
+
+                  {%- when 'checkout_button' -%}
+                    {%- assign checkout_button = 'cart.general.checkout' | t -%}
+                    {%- render 'button', type: 'submit', icon: 'picto-lock', content: checkout_button, size: 'xl', name: 'checkout', stretch: true, block: block -%}
+                {%- endcase -%}
+              {%- endfor -%}
+            </form>
+
+            {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+              <div class="v-stack gap-4">
+                <span class="text-xs text-subdued text-center">{{ 'cart.general.we_accept' | t }}</span>
+
+                <div class="h-stack gap-2 wrap justify-center">
+                  {%- for type in shop.enabled_payment_types -%}
+                    {{- type | payment_type_svg_tag -}}
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          </safe-sticky>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Cart",
+  "class": "shopify-section--main-cart",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "totals",
+      "name": "Totals",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_order_weight",
+          "label": "Show order weight",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_shipping_text",
+          "label": "Show shipping/taxes text",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "cart_note",
+      "name": "Cart note",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "number",
+          "id": "max_length",
+          "label": "Maximum number of characters"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "checkout_button",
+      "name": "Checkout button",
+      "limit": 1
+    },
+    {
+      "type": "accelerated_buttons",
+      "name": "Accelerated buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Configure accelerated payment buttons in your [payment settings](https://www.shopify.com/admin/settings/payments)."
+        }
+      ]
+    },
+    {
+      "type": "offer",
+      "name": "Offer",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            }
+          ],
+          "default": "start"
+        },
+        {
+          "type": "select",
+          "id": "icon_position",
+          "label": "Icon position",
+          "options": [
+            {
+              "value": "aligned",
+              "label": "Aligned horizontally"
+            },
+            {
+              "value": "stacked",
+              "label": "Stacked"
+            }
+          ],
+          "default": "aligned"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "Coupon",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-percent",
+              "label": "Percent",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-gift",
+              "label": "Gift",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-star",
+              "label": "Star",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-like",
+              "label": "Like",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-building",
+              "label": "Building",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-love",
+              "label": "Love",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-award-gift",
+              "label": "Award gift",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-happy",
+              "label": "Happy",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-box",
+              "label": "Box",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-pin",
+              "label": "Pin",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-timer",
+              "label": "Timer",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-validation",
+              "label": "Validation",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-truck",
+              "label": "Truck",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-return",
+              "label": "Return",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-earth",
+              "label": "Earth",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-plane",
+              "label": "Plane",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "Credit card",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-lock",
+              "label": "Lock",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-shield",
+              "label": "Shield",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-secure-profile",
+              "label": "Secure profile",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-money",
+              "label": "Money",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-recycle",
+              "label": "Recycle",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-leaf",
+              "label": "Leaf",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-tree",
+              "label": "Tree",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-mobile-phone",
+              "label": "Mobile phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "Customer support",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-operator",
+              "label": "Operator",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-mailbox",
+              "label": "Mailbox",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-envelope",
+              "label": "Envelope",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-comment",
+              "label": "Comment",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-question",
+              "label": "Question",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-at-sign",
+              "label": "At sign",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-camera",
+              "label": "Camera",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-wifi",
+              "label": "WiFi",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-bluetooth",
+              "label": "Bluetooth",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-printer",
+              "label": "Printer",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-smart-watch",
+              "label": "Smart watch",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-coffee",
+              "label": "Coffee",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-burger",
+              "label": "Burger",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-beer",
+              "label": "Beer",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-target",
+              "label": "Target",
+              "group": "Other"
+            },
+            {
+              "value": "picto-document",
+              "label": "Document",
+              "group": "Other"
+            },
+            {
+              "value": "picto-jewelry",
+              "label": "Jewelry",
+              "group": "Other"
+            },
+            {
+              "value": "picto-music",
+              "label": "Music",
+              "group": "Other"
+            },
+            {
+              "value": "picto-file",
+              "label": "File",
+              "group": "Other"
+            },
+            {
+              "value": "picto-mask",
+              "label": "Mask",
+              "group": "Other"
+            },
+            {
+              "value": "picto-stop",
+              "label": "Stop",
+              "group": "Other"
+            }
+          ],
+          "default": "picto-coupon"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Custom icon",
+          "info": "240 x 240px .png recommended"
+        },
+        {
+          "type": "range",
+          "id": "icon_width",
+          "min": 20,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Icon width",
+          "default": 24
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Shipping"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Short content about your shipping rates or discounts.</p>"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "Show shipping estimator",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": "Show payment icons",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

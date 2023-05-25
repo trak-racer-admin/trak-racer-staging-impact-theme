@@ -1,0 +1,206 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  CSS
+  ------------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --timeline-nav-item-count: {{ section.blocks.size }};
+    }
+  </style>
+
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  LIQUID
+  ------------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <div {% render 'section-properties' %}>
+    <div class="timeline">
+      <effect-carousel class="timeline__slider" id="timeline-carousel-{{ section.id }}">
+        {%- for block in section.blocks -%}
+          <div class="timeline__slide {% unless forloop.first %}reveal-invisible{% endunless %}" {{ block.shopify_attributes }}>
+            <div class="timeline__image-wrapper">
+              {%- if block.settings.image != blank -%}
+                {%- capture sizes -%}(max-width:700px) 100vw, min(700px, 50vw){%- endcapture -%}
+                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', class: "timeline__image rounded", sizes: sizes -}}
+              {%- else -%}
+                <div class="timeline__image">
+                  {{- 'image' | placeholder_svg_tag: 'placeholder rounded' -}}
+                </div>
+              {%- endif -%}
+            </div>
+
+            <div class="prose">
+              {%- if block.settings.subheading != blank -%}
+                <p class="bold text-base">{{- block.settings.subheading -}}</p>
+              {%- endif -%}
+
+              {%- if block.settings.title != blank -%}
+                <p class="h2">{{- block.settings.title -}}</p>
+              {%- endif -%}
+
+              {%- if block.settings.content != blank -%}
+                {{- block.settings.content -}}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </effect-carousel>
+
+      {%- if section.blocks.size > 1 -%}
+        <div class="timeline__controls scroll-area bleed md:unbleed">
+          <div class="relative w-full">
+            <span class="timeline__nav-bar"></span>
+            <page-dots class="timeline__nav" aria-controls="timeline-carousel-{{ section.id }}">
+              {%- for block in section.blocks -%}
+                {%- if block.settings.navigation_label != blank -%}
+                  <button class="timeline__nav-item" type="button" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                    <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: forloop.index }}</span>
+                    <span class="timeline__nav-label text-sm bold">{{- block.settings.navigation_label -}}</span>
+                  </button>
+                {%- endif -%}
+              {%- endfor -%}
+            </page-dots>
+          </div>
+
+          <div aria-controls="timeline-carousel-{{ section.id }}" class="timeline__buttons md-max:hidden">
+            <button is="prev-button" class="circle-button ring group" aria-controls="timeline-carousel-{{ section.id }}">
+              <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+              <span class="animated-arrow animated-arrow--reverse"></span>
+            </button>
+
+            <button is="next-button" class="circle-button ring group" aria-controls="timeline-carousel-{{ section.id }}">
+              <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+              <span class="animated-arrow"></span>
+            </button>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Timeline",
+  "class": "shopify-section--timeline",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "impact_text_ratio",
+      "label": "Impact text ratio",
+      "step": 0.1,
+      "min": 0.6,
+      "max": 1.5,
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "impact_text_color",
+      "label": "Impact text color"
+    },
+    {
+      "type": "color_background",
+      "id": "impact_text_gradient",
+      "label": "Impact text gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "navigation_label",
+          "label": "Navigation label",
+          "default": "label"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Timeline",
+      "blocks": [
+        {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1953"
+          }
+        },
+        {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1960"
+          }
+        },
+        {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1966"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,53 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+ARTICLE BANNER COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+Shows the blog post image with blog post summary on blog post details page. The snippet automatically adjust the image positioning based on its aspect ratio.
+
+********************************************
+Supported parameters
+********************************************
+
+* show_date
+* show_author
+* show_comments_count
+* layout
+{%- endcomment -%}
+
+<div class="article-banner {% if layout == 'image_text_overlay' %}sm:justify-items-center sm:align-items-center{% endif %}">
+  <div class="article-banner__content text-custom">
+    {%- if article.tags.size > 0 -%}
+      <a href="{{ blog.url }}/tagged/{{ article.tags.first | handle }}" class="badge bold text-sm">{{- article.tags.first -}}</a>
+    {%- endif -%}
+
+    <h1 class="h0">{{- article.title -}}</h1>
+
+    <div class="article__meta text-sm">
+      {%- if show_date -%}
+        <p class="text-with-icon link-faded">
+          {%- render 'icon' with 'blog-date' -%} <time>{{- article.published_at | date: format: 'abbreviated_date' -}}</time>
+        </p>
+      {%- endif -%}
+
+      {%- if show_author -%}
+        <p class="text-with-icon link-faded">
+          {%- render 'icon' with 'blog-author' -%} {{- 'blog.post.written_by' | t: author: article.author -}}
+        </p>
+      {%- endif -%}
+
+      {%- if show_comments_count and article.comments_enabled? -%}
+        <a href="#blog-post-comments" class="text-with-icon link-faded">
+          {%- render 'icon' with 'blog-comment' -%}
+          {{- 'blog.comments.count' | t: count: article.comments_count -}}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if article_image != blank -%}
+    {%- capture sizes -%}(max-width: 1149px) 100vw, {% if layout == 'image_text_overlay' %}min({{ settings.page_width }}px, 100vw){% elsif layout == 'content_first' %}1000px{% else %}(max-width: 1399px) calc(100vw * 0.60 - 40px), calc(min({{ settings.page_width }}px, 100vw) * 0.60 - 64px){% endif %}{%- endcapture -%}
+    <div class="article-banner__image">
+      {{- article_image | image_url: width: 1500 | image_tag: loading: 'lazy', sizes: sizes , widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+    </div>
+  {%- endif -%}
+</div>

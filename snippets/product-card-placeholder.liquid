@@ -1,0 +1,82 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT CARD PLACEHOLDER COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in featured collection to render a placeholder of a product card
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render
+* stacked: indicate if the product is stacked
+* reveal: if set to true the item will be revealed in a stacked mode
+* background: the background to use for the product card (if none is passed then the one from the global setting is used)
+* text_color: the text color to use for the product card (if none is passed then the one from the global setting is used)
+* text_alignment: can be "center"
+{%- endcomment -%}
+
+{%- if stacked and section.settings.products_per_row_mobile == '2' -%}
+  {%- assign mobile_reduced = true -%}
+{%- endif -%}
+
+{%- assign section_background = section.settings.background | default: settings.background -%}
+{%- assign card_background = background | default: settings.product_card_background -%}
+{%- assign card_text_color = text_color | default: settings.product_card_text_color -%}
+
+{%- if section_background != 'rgba(0,0,0,0)' and card_background != 'rgba(0,0,0,0)' and section_background != card_background -%}
+  {%- assign card_class = 'product-card' -%}
+{%- else -%}
+  {%- assign card_class = 'product-card product-card--blends' -%}
+{%- endif -%}
+
+<product-card {% if reveal %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
+  <div class="product-card__figure">
+    {{- placeholder_image | placeholder_svg_tag: 'product-card__image placeholder' -}}
+  </div>
+
+  <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
+    {%- capture vendor_placeholder -%}{{ 'general.on_boarding.product_vendor' | t }}{%- endcapture -%}
+    {%- capture title_placeholder -%}{{ 'general.on_boarding.product_title' | t }}{%- endcapture -%}
+
+    {%- if settings.show_vendor -%}
+      {%- if settings.show_product_rating and text_alignment != 'center' -%}
+        <div class="rating-with-text w-full">
+          {%- render 'vendor' with vendor_placeholder, class: 'text-xs' -%}
+
+          {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
+          {%- render 'product-rating', show_placeholder: true, class: rating_class, display_mode: settings.product_rating_mode -%}
+        </div>
+      {%- else -%}
+        {%- render 'vendor' with vendor_placeholder, class: 'text-xs' -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
+      {%- if settings.show_product_rating and settings.show_vendor == false -%}
+        <div class="rating-with-text">
+          <span><a href="{{ product.url }}" class="bold">{{ title_placeholder }}</a></span>
+          {%- render 'product-rating', show_placeholder: true, display_mode: settings.product_rating_mode -%}
+        </div>
+      {%- else -%}
+        <span><a href="{{ product.url }}" class="bold">{{ title_placeholder }}</a></span>
+      {%- endif -%}
+
+      <price-list class="price-list {% if text_alignment == 'center' %}justify-center{% endif %}">
+        <sale-price class="text-subdued">
+          {%- if settings.currency_code_enabled -%}
+            {{- 4500 | money_with_currency -}}
+          {%- else -%}
+            {{- 4500 | money -}}
+          {%- endif -%}
+        </sale-price>
+      </price-list>
+    </div>
+
+    {%- if settings.show_product_rating and mobile_reduced or text_alignment == 'center' -%}
+      {%- capture rating_class -%}{% unless text_alignment == 'center' %}sm:hidden{% endunless %}{%- endcapture -%}
+      {%- render 'product-rating', show_placeholder: true, class: rating_class, display_mode: settings.product_rating_mode -%}
+    {%- endif -%}
+  </div>
+</product-card>

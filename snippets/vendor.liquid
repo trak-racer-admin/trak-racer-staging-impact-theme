@@ -1,0 +1,28 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT VENDOR
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to generate a vendor link, by checking the existence of a vendor collection, and fallback
+to the automatic one if none is found
+
+********************************************
+Supported variables
+********************************************
+
+* vendor: the vendor to use
+* class: class to add to the vendor (by default the vendor is always subdued)
+{%- endcomment -%}
+
+{%- if vendor != blank -%}
+  {%- assign collection_handle = vendor | handle -%}
+  {%- assign collection_for_vendor = collections[collection_handle] -%}
+
+  {%- if collection_for_vendor != blank -%}
+    {%- assign url = collection_for_vendor.url -%}
+  {%- else -%}
+    {%- assign url = vendor | url_for_vendor -%}
+  {%- endif -%}
+
+  <a href="{{ url }}" class="{{ class }} link-faded">{{- vendor -}}</a>
+{%- endif -%}

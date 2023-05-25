@@ -1,0 +1,98 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+LOCALIZATION SELECTOR COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component renders a selector for a localization component (either country or locale).
+
+********************************************
+Supported variables
+********************************************
+
+* type: can be either "country" or "locale" (required)
+* show_country_name: for type "country" if set to true the country/currency name are shown
+* show_country_flag: for type "country" if set to true the country flags are shown
+* popover_horizontal_position: an optional vertical position
+* popover_vertical_position: an optional horizontal position (start if none is passed)
+{%- endcomment -%}
+
+{%- capture localization_form_id -%}localization-form-{{ type }}-{{ popover_vertical_position }}-{{ section.id }}{%- endcapture -%}
+{%- capture localization_popover_id -%}popover-localization-form-{{ type }}-{{ popover_vertical_position }}-{{ section.id }}{%- endcapture -%}
+{%- assign popover_vertical_position = popover_vertical_position | default: 'start' -%}
+{%- assign popover_horizontal_position = popover_horizontal_position | default: 'end' -%}
+
+{%- case type -%}
+  {%- when 'country' -%}
+    {%- comment -%}
+    ----------------------------------------------------------------------------------------------
+    COUNTRY SELECTOR
+    ----------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    {%- if show_country_flag -%}
+      <link rel="stylesheet" href="{{ 'country-flags.css' | asset_url }}" media="print" onload="this.media='all'; this.onload = null">
+    {%- endif -%}
+
+    <div class="relative">
+      <button type="button" class="text-with-icon gap-2.5 group" aria-controls="{{ localization_popover_id }}" aria-expanded="false">
+        <div class="h-stack gap-2">
+          {%- if show_country_flag -%}
+            <span class="country-flags country-flags--{{ localization.country.iso_code }}"></span>
+          {%- endif -%}
+
+          <span class="bold text-sm">
+            {%- if show_country_name -%}
+              {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {% if localization.country.currency.symbol %}{{ localization.country.currency.symbol }}){%- endif -%}
+            {%- else -%}
+              {{ localization.country.currency.iso_code }} {% if localization.country.currency.symbol %}{{ localization.country.currency.symbol }}{%- endif -%}
+            {%- endif -%}
+          </span>
+        </div>
+
+        {%- render 'icon' with 'chevron-bottom' -%}
+      </button>
+
+      <x-popover id="{{ localization_popover_id }}" initial-focus="[aria-selected='true']" anchor-horizontal="{{ popover_horizontal_position }}" anchor-vertical="{{ popover_vertical_position }}" class="popover">
+        <p class="h5" slot="title">{{ 'general.localization.country' | t }}</p>
+
+        {%- form 'localization', id: localization_form_id -%}
+          <x-listbox class="popover-listbox popover-listbox--sm" role="listbox">
+            {%- for country in localization.available_countries -%}
+              <button type="submit" class="popover-listbox__option" name="country_code" role="option" value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}aria-selected="true"{% endif %}>
+                <span class="country-flags country-flags--{{ country.iso_code }}"></span>
+                <span>{{- country.name }} ({{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{%- endif -%})</span>
+              </button>
+            {%- endfor -%}
+          </x-listbox>
+        {%- endform -%}
+      </x-popover>
+    </div>
+
+  {%- when 'locale' -%}
+    {%- comment -%}
+    ----------------------------------------------------------------------------------------------
+    LOCALE SELECTOR
+    ----------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    <div class="relative">
+      <button type="button" class="text-with-icon gap-2.5 group" aria-controls="{{ localization_popover_id }}" aria-expanded="false">
+        <span class="bold text-sm">{{- localization.language.endonym_name | capitalize -}}</span>
+        {%- render 'icon' with 'chevron-bottom' -%}
+      </button>
+
+      <x-popover id="{{ localization_popover_id }}" initial-focus="[aria-selected='true']" anchor-horizontal="{{ popover_horizontal_position }}" anchor-vertical="{{ popover_vertical_position }}" class="popover">
+        <p class="h5" slot="title">{{ 'general.localization.language' | t }}</p>
+
+        {%- form 'localization', id: localization_form_id -%}
+          <x-listbox class="popover-listbox popover-listbox--sm" role="listbox">
+            {%- for language in localization.available_languages -%}
+              <button type="submit" class="popover-listbox__option" name="locale_code" role="option" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}aria-selected="true"{% endif %}>
+                {{- language.endonym_name | capitalize -}}
+              </button>
+            {%- endfor -%}
+          </x-listbox>
+        {%- endform -%}
+      </x-popover>
+    </div>
+{%- endcase -%}

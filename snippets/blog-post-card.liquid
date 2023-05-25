@@ -1,0 +1,101 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+BLOG POST COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a single blog post (optionally highlighted)
+
+********************************************
+Supported parameters
+********************************************
+
+* article: the article to render. If no article is passed then a placeholder is generated
+* show_excerpt: if set to true, it will show the excerpt first or truncated part of the main content if none is set
+* show_date
+* show_author
+* show_comments_count
+* show_category: if set to true, the first tag of the article is shown as a category
+* featured: if set to true, the blog post takes the full width with a different layout
+* background: the background to use for the card when the blog post is featured
+* text_color: the text color to use for the card when the blog post is featured
+* sizes: the sizes attribute to show for loading the images
+{%- endcomment -%}
+
+{%- capture card_content -%}
+  {%- if article -%}
+    {%- if article.image != blank -%}
+      <a href="{{ article.url }}" class="blog-post-card__figure {% unless featured %}rounded{% endunless %}">
+        {%- if featured != true and show_category and article.tags.size > 0 -%}
+          <span class="badge badge--primary">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        {{- article.image | image_url: width: article.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', class: 'w-full h-full object-cover zoom-image' -}}
+      </a>
+    {%- endif -%}
+  {%- else -%}
+    <div class="blog-post-card__figure {% unless featured %}rounded{% endunless %}">
+      {{- 'image' | placeholder_svg_tag: 'placeholder zoom-image' -}}
+    </div>
+  {%- endif -%}
+
+  <div class="blog-post-card__info">
+    <div class="v-stack {% if featured %}gap-5 sm:gap-6{% else %}gap-4 sm:gap-5{% endif %}">
+      <div class="v-stack gap-3 {% if featured %}sm:gap-5{% else %}sm:gap-4{% endif %}">
+        {%- if featured and show_category and article.tags.size > 0 -%}
+          <span class="badge badge--current badge--lg">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        <p class="{% if heading_size != blank %}{{ heading_size }}{% elsif featured %}h2{% else %}h3{% endif %}">
+          {%- if article -%}
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          {%- else -%}
+            {{- 'general.on_boarding.blog_post_title' | t -}}
+          {%- endif -%}
+        </p>
+
+        {%- if show_excerpt -%}
+          {%- if article -%}
+            <p {% if featured %}class="text-lg"{% endif %}>{{ article.excerpt_or_content | strip_html | truncate: 200 }}</p>
+          {%- else -%}
+            <p {% if featured %}class="text-lg"{% endif %}>{{ 'general.on_boarding.blog_post_excerpt' | t }}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+
+      {%- if show_date or show_author or show_comments_count -%}
+        <div class="blog-post-card__meta">
+          {%- if show_date -%}
+            <div class="text-with-icon link-faded">
+              {%- render 'icon' with 'blog-date' -%}
+              <span class="text-sm">{{- article.published_at | default: 'now' | date: format: 'abbreviated_date' -}}</span>
+            </div>
+          {%- endif -%}
+
+          {%- if show_author -%}
+            <div class="text-with-icon link-faded">
+              {%- render 'icon' with 'blog-author' -%}
+              <span class="text-sm">{{- article.author | default: 'John D.' -}}</span>
+            </div>
+          {%- endif -%}
+
+          {%- if show_comments_count and article.comments_enabled? -%}
+            <div class="text-with-icon link-faded">
+              {%- render 'icon' with 'blog-comment' -%}
+              <a href="{{ article.url }}#blog-post-comments" class="text-sm">{{ 'blog.comments.count' | t: count: article.comments_count }}</a>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endcapture -%}
+
+{%- if featured -%}
+  <blog-post-card {% render 'surface', class: 'blog-post-card blog-post-card--featured snap-center group rounded', background: background, text_color: text_color, background_fallback: 'bg-secondary' %}>
+    {{- card_content -}}
+  </blog-post-card>
+{%- else -%}
+  <blog-post-card class="blog-post-card snap-center group">
+    {{- card_content -}}
+  </blog-post-card>
+{%- endif -%}

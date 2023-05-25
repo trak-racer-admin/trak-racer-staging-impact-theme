@@ -1,0 +1,281 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign text_position = section.settings.text_position -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-stack-intro: {% if text_position == 'center' %}66.6667%{% elsif section.settings.contact_form_size == 'small' %}50%{% else %}41.6667%{% endif %};
+    --section-stack-main: {% if section.settings.contact_form_size == 'small' %}50%{% else %}58.3334%{% endif %};
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  {%- assign text_position = section.settings.text_position -%}
+
+  <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
+    {%- capture content -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="bold">{{ section.settings.subheading | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="h2">
+          {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
+        </h2>
+      {%- endif -%}
+
+      {{- section.settings.content -}}
+    {%- endcapture -%}
+
+    {%- if content != blank -%}
+      <div class="section-stack__intro">
+        <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
+          {{- content -}}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="section-stack__main">
+      <div {% render 'surface', class: 'contact-form rounded', background: section.settings.contact_background, text_color: section.settings.contact_text_color, background_fallback: 'bg-secondary' %}>
+        {%- capture contact_form_id -%}contact-form-{{ section.id }}{%- endcapture -%}
+
+        {%- form 'contact', id: contact_form_id, class: 'form' -%}
+          <div class="fieldset">
+            {%- if form.posted_successfully? -%}
+              {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
+              {%- render 'banner', status: 'success', content: content -%}
+            {%- endif -%}
+
+            {%- if form.errors -%}
+              {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
+              {%- render 'banner', status: 'error', content: content -%}
+            {%- endif -%}
+
+            <div class="input-row">
+              {%- capture label -%}{{ 'contact.form.name' | t }}{%- endcapture -%}
+              {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
+
+              {%- capture label -%}{{ 'contact.form.email' | t }}{%- endcapture -%}
+              {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+            </div>
+
+            {%- for block in section.blocks -%}
+              {%- assign field_title = block.settings.title -%}
+
+              {%- if field_title == blank -%}
+                {%- capture field_title -%}Custom field {% increment custom_field %}{%- endcapture -%}
+              {%- endif -%}
+
+              {%- capture name -%}contact[{{ field_title | escape }}]{%- endcapture -%}
+
+              {%- if block.type == 'text' -%}
+                {%- if block.settings.use_long_text -%}
+                  {%- render 'input', name: name, label: block.settings.title, required: block.settings.required, multiline: 4, block: block -%}
+                {%- else -%}
+                  {%- render 'input', type: 'text', name: name, label: block.settings.title, required: block.settings.required, block: block -%}
+                {%- endif -%}
+              {%- elsif block.type == 'dropdown' and block.settings.values != blank -%}
+                {%- assign values = block.settings.values | split: ',' -%}
+
+                {%- capture options -%}
+                  <option value="" disabled selected></option>
+                  {%- for value in values -%}
+                    <option value="{{ value | strip | escape }}">{{ value | strip | escape }}</option>
+                  {%- endfor -%}
+                {%- endcapture -%}
+
+                {%- render 'select', options: options, name: name, label: block.settings.title, required: true, block: block -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- capture label -%}{{ 'contact.form.message' | t }}{%- endcapture -%}
+            {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
+          </div>
+
+          <div class="{% if text_position == 'center' %}justify-self-center{% else%}justify-self-start{% endif %}">
+            {%- capture button_content -%}{{ 'contact.form.submit' | t }}{%- endcapture -%}
+            {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+          </div>
+        {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact",
+  "class": "shopify-section--contact",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Contact Us"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Do you have any question?"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "contact_form_size",
+      "label": "Contact form size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "header",
+      "content": "Section colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "header",
+      "content": "Contact block colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "contact_background",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "contact_text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text field",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Custom field"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_long_text",
+          "label": "Use long text",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "Dropdown",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Custom field"
+        },
+        {
+          "type": "text",
+          "id": "values",
+          "label": "Values",
+          "info": "Separate each value by a comma.",
+          "default": "value 1, value 2, value 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact form",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

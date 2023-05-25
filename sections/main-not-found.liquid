@@ -1,0 +1,15 @@
+<div class="not-found">
+  <div class="prose text-center">
+    <h2 class="h4">{{ '404.general.title' | t }}</h2>
+    {%- capture button_content -%}{{ '404.general.continue_shopping' | t }}{%- endcapture -%}
+    {%- render 'button', content: button_content, href: routes.all_products_collection_url, size: 'xl' -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "404",
+  "class": "shopify-section--404",
+  "tag": "section"
+}
+{% endschema %}

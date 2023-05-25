@@ -1,0 +1,33 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PROGRESS BAR COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in various scrollable section to show a custom scroll bar progress
+
+********************************************
+Supported variables
+********************************************
+
+* observes: the ID of the element being observed (or controlled)
+* default_progress: the default progress advancement (between 0 and 1)
+* show_buttons: if set to true prev/next buttons are also being shown
+{%- endcomment -%}
+
+<div class="scrollbar peer-not-scrollable:hidden">
+  <scroll-progress observes="{{ observes }}" class="scrollbar__progress" style="--scroll-progress: {{ default_progress }}"></scroll-progress>
+
+  {%- if show_buttons -%}
+    <div aria-controls="{{ observes }}" class="scrollbar__buttons">
+      <button is="prev-button" class="circle-button ring group" aria-controls="{{ observes }}" disabled>
+        <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+        <span class="animated-arrow animated-arrow--reverse"></span>
+      </button>
+
+      <button is="next-button" class="circle-button ring group" aria-controls="{{ observes }}">
+        <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+        <span class="animated-arrow"></span>
+      </button>
+    </div>
+  {%- endif -%}
+</div>

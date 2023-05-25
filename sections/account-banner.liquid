@@ -1,0 +1,123 @@
+{%- if section.settings.image != blank -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      --content-over-media-height: {% if section.settings.image_size == 'sm' %}180px{% elsif section.settings.image_size == 'md' %}250px{% elsif section.settings.image_size == 'lg' %}350px{% else %}auto{% endif %};
+      --content-over-media-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    }
+
+    @media screen and (min-width: 700px) {
+      #shopify-section-{{ section.id }} {
+        --content-over-media-height: {% if section.settings.image_size == 'sm' %}300px{% elsif section.settings.image_size == 'md' %}400px{% elsif section.settings.image_size == 'lg' %}500px{% else %}auto{% endif %};
+      }
+    }
+  </style>
+
+  <div class="content-over-media">
+    {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' -}}
+
+    <div {% render 'surface', text_color: section.settings.text_color %}>
+      <div class="prose text-center">
+        <h1 class="h2">{{ 'customer.account.welcome' | t: first_name: customer.first_name, last_name: customer.last_name }}</h1>
+        <p>{{ 'customer.account.tagline' | t }}</p>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<nav class="account-nav bg-secondary">
+  <div class="relative container">
+    <ul class="h-stack justify-center gap-8" role="list">
+      {%- if request.page_type == 'customers/account' or request.page_type == 'customers/order' -%}
+        {%- assign orders_tab_active = true -%}
+      {%- elsif request.page_type == 'customers/addresses' -%}
+        {%- assign addresses_tab_active = true -%}
+      {%- endif -%}
+
+      <li class="account-nav__item" {% if orders_tab_active %}aria-current="page"{% endif %}>
+        <a href="{{ routes.account_url }}" class="bold {% unless orders_tab_active %}link-faded{% endunless %}">
+          {{- 'customer.account.orders' | t -}}
+        </a>
+      </li>
+
+      <li class="account-nav__item" {% if addresses_tab_active %}aria-current="page"{% endif %}>
+        <a href="{{ routes.account_addresses_url }}" class="bold {% unless addresses_tab_active %}link-faded{% endunless %}">
+          {{- 'customer.account.addresses' | t -}}
+        </a>
+      </li>
+
+      <li class="account-nav__item account-nav__item--logout">
+        <a href="{{ routes.account_logout_url }}" class="link-faded" data-no-instant>
+          {{- 'customer.account.logout' | t -}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Account banner",
+  "class": "shopify-section--account-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "2500 x 700px .jpg recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Original image ratio"
+        },
+        {
+          "value": "sm",
+          "label": "Small"
+        },
+        {
+          "value": "md",
+          "label": "Medium"
+        },
+        {
+          "value": "lg",
+          "label": "Large"
+        }
+      ],
+      "info": "Choose \"Original image ratio\" to avoid image cropping. [Learn more](https://help.shopify.com/en/manual/online-store/images/theme-images#best-practices-for-slideshows-and-full-widtw-images)",
+      "default": "md"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Only applies when an image is used."
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    }
+  ]
+}
+{% endschema %}

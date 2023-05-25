@@ -1,0 +1,336 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --multi-column-grid: {% if section.settings.stack_on_mobile %}none{% else %}auto / auto-flow 73vw{% endif %};
+      --multi-column-list-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
+    }
+  </style>
+
+  <div {% render 'section-properties' %}>
+    <div class="section-stack">
+      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+
+      <div class="multi-column scroll-area bleed md:unbleed">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'item' -%}
+              <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
+                {%- if block.settings.video != blank -%}
+                  <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
+                    {{ block.settings.video | video_tag: playsinline: true, muted: true, loop: true, preload: 'metadata', class: 'rounded' }}
+                  </video-media>
+                {%- elsif block.settings.image != blank -%}
+                  {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800', class: 'rounded' -}}
+                {%- endif -%}
+
+                {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
+                  <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
+                    {%- if block.settings.title != blank -%}
+                      <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
+                    {%- endif -%}
+
+                    {%- if block.settings.content != blank or block.settings.link_text != blank -%}
+                      <div class="prose">
+                        {{- block.settings.content -}}
+
+                        {%- if block.settings.link_text != blank -%}
+                          <div>
+                            {%- if block.settings.link_style == 'link' -%}
+                              <a href="{{ block.settings.link_url }}" class="link">{{ block.settings.link_text | escape }}</a>
+                            {%- else -%}
+                              {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, size: 'lg' -%}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              </div>
+
+            {%- when 'spacer' -%}
+              <div class="multi-column__item hidden md:block" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}></div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Multi-column",
+  "class": "shopify-section--multi-column",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "label": "Stack on mobile",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "gap",
+      "label": "Gap spacing",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+        "value": "x-large",
+        "label": "X-Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "About"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured content"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1400 x 1400px .jpg recommended"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "info": "Video are muted automatically and will autoplay."
+        },
+        {
+          "type": "select",
+          "id": "column_size",
+          "label": "Desktop item size",
+          "options": [
+            {
+              "value": "4",
+              "label": "25%"
+            },
+            {
+              "value": "3",
+              "label": "33%"
+            },
+            {
+              "value": "2",
+              "label": "50%"
+            },
+            {
+              "value": "1.5",
+              "label": "66%"
+            }
+          ],
+          "default": "3"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Column title"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading style",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "select",
+          "id": "link_style",
+          "label": "Link style",
+          "options": [
+            {
+              "value": "link",
+              "label": "Link"
+            },
+            {
+              "value": "button",
+              "label": "Button"
+            }
+          ],
+          "default": "link"
+        }
+      ]
+    },
+    {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Add extra space between columns. Ignored on mobile and tablets."
+        },
+        {
+          "type": "select",
+          "id": "column_size",
+          "label": "Desktop item size",
+          "options": [
+            {
+              "value": "12",
+              "label": "8%"
+            },
+            {
+              "value": "6",
+              "label": "16%"
+            },
+            {
+              "value": "4",
+              "label": "25%"
+            },
+            {
+              "value": "3",
+              "label": "33%"
+            }
+          ],
+          "default": "12"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-column",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {}
+        },
+        {
+          "type": "item",
+          "settings": {}
+        },
+        {
+          "type": "item",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

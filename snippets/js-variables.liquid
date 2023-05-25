@@ -1,0 +1,101 @@
+<script>
+  document.documentElement.classList.replace('no-js', 'js');
+
+  // This allows to expose several variables to the global scope, to be used in scripts
+  window.themeVariables = {
+    settings: {
+      showPageTransition: {{ settings.show_page_transition | json }},
+      headingApparition: {{ settings.heading_apparition | json }},
+      pageType: {{ request.page_type | json }},
+      moneyFormat: {{ shop.money_format | json }},
+      moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+      currencyCodeEnabled: {{ settings.currency_code_enabled | json }},
+      cartType: {{ settings.cart_type | json }},
+      showDiscount: {{ settings.show_discount | json }},
+      discountMode: {{ settings.discount_mode | json }}
+    },
+
+    strings: {
+      accessibilityClose: {{ 'general.accessibility.close' | t | json }},
+      accessibilityNext: {{ 'general.accessibility.next' | t | json }},
+      accessibilityPrevious: {{ 'general.accessibility.previous' | t | json }},
+      addToCartButton: {{ 'product.general.add_to_cart_button' | t | json }},
+      soldOutButton: {{ 'product.general.sold_out_button' | t | json }},
+      preOrderButton: {{ 'product.general.pre_order_button' | t | json }},
+      unavailableButton: {{ 'product.general.unavailable_button' | t | json }},
+      closeGallery: {{ 'product.gallery.close' | t | json }},
+      zoomGallery: {{ 'product.gallery.zoom' | t | json }},
+      errorGallery: {{ 'product.gallery.error' | t | json }},
+      soldOutBadge: {{ 'product.general.sold_out_badge' | t | json }},
+      discountBadge: {{ 'product.general.discount_badge_html' | t: savings: '@@' | json }},
+      sku: {{ 'product.general.sku' | t | json }},
+      searchNoResults: {{ 'search.general.no_results' | t | json }},
+      addOrderNote: {{ 'cart.general.add_order_note' | t | json }},
+      editOrderNote: {{ 'cart.general.edit_order_note' | t | json }},
+      shippingEstimatorNoResults: {{ 'cart.shipping_estimator.no_results' | t | json }},
+      shippingEstimatorOneResult: {{ 'cart.shipping_estimator.one_result' | t | json }},
+      shippingEstimatorMultipleResults: {{ 'cart.shipping_estimator.multiple_results' | t | json }},
+      shippingEstimatorError: {{ 'cart.shipping_estimator.error' | t | json }}
+    },
+
+    breakpoints: {
+      'sm': 'screen and (min-width: 700px)',
+      'md': 'screen and (min-width: 1000px)',
+      'lg': 'screen and (min-width: 1150px)',
+      'xl': 'screen and (min-width: 1400px)',
+
+      'sm-max': 'screen and (max-width: 699px)',
+      'md-max': 'screen and (max-width: 999px)',
+      'lg-max': 'screen and (max-width: 1149px)',
+      'xl-max': 'screen and (max-width: 1399px)'
+    }
+  };
+
+  {%- if settings.show_page_transition -%}
+    window.addEventListener('DOMContentLoaded', () => {
+      const isReloaded = (window.performance.navigation && window.performance.navigation.type === 1) || window.performance.getEntriesByType('navigation').map((nav) => nav.type).includes('reload');
+
+      if ('animate' in document.documentElement && window.matchMedia('(prefers-reduced-motion: no-preference)').matches && document.referrer.includes(location.host) && !isReloaded) {
+        document.body.animate({opacity: [0, 1]}, {duration: 115, fill: 'forwards'});
+      }
+    });
+
+    window.addEventListener('pageshow', (event) => {
+      document.body.classList.remove('page-transition');
+
+      if (event.persisted) {
+        document.body.animate({opacity: [0, 1]}, {duration: 0, fill: 'forwards'});
+      }
+    });
+  {%- endif -%}
+
+  // For detecting native share
+  document.documentElement.classList.add(`native-share--${navigator.share ? 'enabled' : 'disabled'}`);
+
+  {%- if request.page_type == 'product' -%}
+    // We save the product ID in local storage to be eventually used for recently viewed section
+    try {
+      const recentlyViewedProducts = new Set(JSON.parse(localStorage.getItem('theme:recently-viewed-products') || '[]'));
+
+      recentlyViewedProducts.delete({{ product.id }}); // Delete first to re-move the product
+      recentlyViewedProducts.add({{ product.id }});
+
+      localStorage.setItem('theme:recently-viewed-products', JSON.stringify(Array.from(recentlyViewedProducts.values()).reverse()));
+    } catch (e) {
+      // Safari in private mode does not allow setting item, we silently fail
+    }
+  {%- endif -%}
+
+  {%- if request.page_type == 'captcha' -%}
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual'; // Prevent the browser to scroll on captcha page
+    }
+  {%- endif -%}
+
+  {%- if request.page_type == 'policy' -%}
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.shopify-policy__title').classList.add('h1');
+      document.querySelector('.shopify-policy__body .rte').classList.add('prose');
+    });
+  {%- endif -%}
+</script>

@@ -1,0 +1,218 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign text_position = section.settings.text_position -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-stack-intro: {% if text_position == 'center' %}66.6667%{% else %}50%{% endif %};
+    --section-stack-main: 50%;
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
+    {%- capture content -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="bold">{{ section.settings.subheading | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="h2">
+          {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
+        </h2>
+      {%- endif -%}
+
+      {{- section.settings.content -}}
+
+      {%- if section.settings.button_text != blank -%}
+        {% render 'button', content: section.settings.button_text, href: section.settings.button_url, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
+      {%- endif -%}
+    {%- endcapture -%}
+
+    {%- if content != blank -%}
+      <div class="section-stack__intro">
+        <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
+          {{- content -}}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="section-stack__main">
+        <div {% render 'surface', class: 'accordion-box rounded', background: section.settings.accordion_background, text_color: section.settings.accordion_text_color, background_fallback: 'bg-secondary' %}>
+          {%- for block in section.blocks -%}
+            {%- if block.settings.title != blank and block.settings.content != blank -%}
+              {%- capture accordion_content -%}
+                <div class="prose">{{ block.settings.content }}</div>
+              {%- endcapture -%}
+
+              {%- render 'accordion', title: block.settings.title, content: accordion_content, block: block -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Accordion content",
+  "class": "shopify-section--accordion-content",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Write content to help your customers to better understand your products or policies.</p>"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    },
+    {
+      "type": "color",
+      "id": "accordion_background",
+      "label": "Accordion background"
+    },
+    {
+      "type": "color",
+      "id": "accordion_text_color",
+      "label": "Accordion text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordion content",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "title": "Question 1"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Question 2"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Question 3"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

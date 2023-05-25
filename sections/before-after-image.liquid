@@ -1,0 +1,254 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign text_position = section.settings.text_position -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-stack-intro: {% if text_position == 'center' %}50%{% else %}33.3333%{% endif %};
+    --section-stack-main: {% if text_position == 'center' and section.settings.expand_image %}100%{% else %}66.6667%{% endif %};
+
+    --before-after-initial-drag-position: {{ section.settings.drag_initial_position }}%;
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
+    {%- capture content -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="bold">{{ section.settings.subheading | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="h2">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {{- section.settings.content -}}
+    {%- endcapture -%}
+
+    {%- if content != blank -%}
+      <div class="section-stack__intro">
+        <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
+          {{ content }}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="section-stack__main">
+      <div {% render 'surface', class: 'before-after shadow', text_color: section.settings.before_text_color %}>
+        <div {% render 'surface', class: 'before-after__before-image', text_color: section.settings.before_text_color %}>
+          {%- capture sizes -%}(max-width: 999px) 100vw, {% if text_position == 'center' and section.settings.expand_image %}min({{ settings.page_width }}px, 100vw){% else %}1000px{% endif %}{%- endcapture -%}
+
+          {%- if section.settings.before_image != blank -%}
+            {{- section.settings.before_image | image_url: width: section.settings.before_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', draggable: false, class: 'rounded w-full' -}}
+          {%- else -%}
+            {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder rounded' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
+          {%- endif -%}
+
+          {%- if section.settings.before_text != blank -%}
+            <p class="before-after__label before-after__label--left before-after__label--{{ section.settings.before_after_text_position }} h5">
+              {{- section.settings.before_text | escape -}}
+            </p>
+          {%- endif -%}
+        </div>
+
+        <div {% render 'surface', class: 'before-after__after-image', text_color: section.settings.after_text_color %}>
+          {%- if section.settings.after_image != blank -%}
+            {{- section.settings.after_image | image_url: width: section.settings.after_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', class: 'object-fill rounded', draggable: false -}}
+          {%- else -%}
+            {{- 'lifestyle-2' | placeholder_svg_tag: 'bg-text filter-invert rounded' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
+          {%- endif -%}
+
+          {%- if section.settings.after_text != blank -%}
+            <p class="before-after__label before-after__label--right before-after__label--{{ section.settings.before_after_text_position }} h5">
+              {{- section.settings.after_text | escape -}}
+            </p>
+          {%- endif -%}
+        </div>
+
+        <div class="before-after__cursor-wrapper">
+          <split-cursor class="before-after__cursor" style="--background: {{ section.settings.drag_cursor_background.rgb }}">
+            <span class="sr-only">{{ 'general.accessibility.drag' | t }}</span>
+
+            <svg role="presentation" focusable="false" width="28" height="35" viewBox="0 0 32 40">
+              <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16V24C32 32.8366 24.8366 40 16 40C7.16344 40 0 32.8366 0 24V16Z" fill="{{ section.settings.drag_cursor_background }}"></path>
+              <path fill="{{ section.settings.drag_cursor_color }}" d="M11 14H13V26H11zM15 14H17V26H15zM19 14H21V26H19z"></path>
+            </svg>
+          </split-cursor>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Before/after image",
+  "class": "shopify-section--before-after-image",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Before/after"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Showcase your product benefit by using before/after image comparison.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "Before image",
+      "info": "2000 x 1200px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "After image",
+      "info": "Dimensions must match before image."
+    },
+    {
+      "type": "checkbox",
+      "id": "expand_image",
+      "label": "Expand image",
+      "info": "Only applicable when text position is set to center.",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "before_after_text_position",
+      "label": "Before/after text position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "text",
+      "id": "before_text",
+      "label": "Before text",
+      "default": "Before"
+    },
+    {
+      "type": "text",
+      "id": "after_text",
+      "label": "After text",
+      "default": "After"
+    },
+    {
+      "type": "range",
+      "id": "drag_initial_position",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "label": "Drag initial position",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "before_text_color",
+      "label": "Before text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "after_text_color",
+      "label": "After text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "drag_cursor_background",
+      "label": "Drag cursor background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "drag_cursor_color",
+      "label": "Drag cursor color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before/after image"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,57 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+VARIANT ADDED
+----------------------------------------------------------------------------------------------------------------------
+
+This section is used when a product is added to the cart, to show a notification. It is therefore only used internally
+by the theme and is not meant to be included directly into a page.
+{%- endcomment -%}
+
+<div class="quick-buy-drawer__info">
+  {%- assign added_to_cart = 'product.general.added_to_cart' | t -%}
+  {%- render 'banner', status: 'success', content: added_to_cart -%}
+
+  <div class="quick-buy-drawer__variant text-start h-stack gap-6">
+    {%- assign image = product_variant.featured_media | default: product_variant.product.featured_media -%}
+
+    {%- if image != blank -%}
+      {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'quick-buy-drawer__media rounded-xs' -}}
+    {%- endif -%}
+
+    <div class="v-stack gap-1">
+      <div class="v-stack gap-0.5">
+        <a href="{{ product_variant.url }}" class="bold justify-self-start">{{ product_variant.product.title }}</a>
+        {%- assign matched_line_item = cart.items | where: 'product_id', product_variant.product.id | first -%}
+        {%- render 'price-list', product: product_variant.product, line_item: matched_line_item -%}
+      </div>
+
+      {%- if matched_line_item.line_level_discount_allocations != blank -%}
+        <ul class="contents" role="list">
+          {%- for discount_allocation in matched_line_item.line_level_discount_allocations -%}
+            <li class="badge">
+              {%- render 'icon' with 'discount' -%} {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- unless product_variant.product.has_only_default_variant -%}
+        <p class="text-sm text-subdued">{{ product_variant.title }}</p>
+      {%- endunless -%}
+    </div>
+  </div>
+
+  <form action="{{ routes.cart_url }}" method="post" class="buy-buttons buy-buttons--compact">
+    {%- assign view_cart_label = 'cart.general.view_cart' | t -%}
+    {%- assign checkout_label = 'cart.general.checkout' | t -%}
+
+    {%- render 'button', href: routes.cart_url, secondary: true, content: view_cart_label -%}
+    {%- render 'button', type: 'submit', name: 'checkout', content: checkout_label -%}
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "Variant added"
+}
+{% endschema %}

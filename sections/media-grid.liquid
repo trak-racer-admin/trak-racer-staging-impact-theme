@@ -1,0 +1,679 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --media-grid-row-height: {{ section.settings.mobile_row_height }}px;
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      --media-grid-row-height: {{ section.settings.desktop_row_height }}px;
+    }
+  }
+
+  {%- for block in section.blocks -%}
+    #media-grid-{{ block.id }} {
+      --content-over-media-overlay: {{ block.settings.overlay_color.rgb }} /{{ block.settings.overlay_opacity | divided_by: 100.0 }};
+
+      {%- if block.settings.heading_tag == 'h5' or block.settings.heading_tag == 'h6' -%}
+        --content-over-media-gap: 1rem;
+      {%- endif -%}
+    }
+
+    {%- if block.settings.heading_tag == 'h5' or block.settings.heading_tag == 'h6' -%}
+      @media screen and (min-width: 740px) {
+        #media-grid-{{ block.id }} {
+          --content-over-media-gap: 1.5rem;
+        }
+      }
+    {%- endif -%}
+  {%- endfor -%}
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties', narrow: section.settings.reduce_width %}>
+  <media-grid class="media-grid">
+    {%- for block in section.blocks -%}
+      <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
+        {%- capture style -%}
+          --content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+
+          {%- if block.settings.heading_tag == 'h5' or block.settings.heading_tag == 'h6' -%}
+            --content-over-media-gap: 1.5rem;
+          {%- endif -%}
+        {%- endcapture -%}
+
+        <div id="media-grid-{{ block.id }}" {% render 'surface', class: 'content-over-media rounded', background: block.settings.background, background_gradient: block.settings.background_gradient, text_color: block.settings.text_color %}>
+          {%- case block.type -%}
+            {%- when 'image' -%}
+              {%- if block.settings.image -%}
+                {%- capture sizes -%}(max-width: 699px) 100vw, min({{ 390 | times: block.settings.desktop_column_span }}px, {{ 25 | times: block.settings.desktop_column_span }}vw){%- endcapture -%}
+                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400', class: 'content-over-media__media zoom-image' -}}
+              {%- endif -%}
+
+            {%- when 'video' -%}
+              {%- if block.settings.video -%}
+                <video-media autoplay style="--aspect-ratio: auto">
+                  {%- if block.settings.show_video_controls -%}
+                    {%- assign loop_video = false -%}
+                  {%- else -%}
+                    {%- assign loop_video = true -%}
+                  {%- endif -%}
+
+                  {{- block.settings.video | video_tag: playsinline: true, muted: true, loop: loop_video, controls: block.settings.show_video_controls, preload: 'metadata', class: 'object-fill' -}}
+                </video-media>
+              {%- else -%}
+                <video-media host="{{ block.settings.external_video_url.type }}" autoplay style="--aspect-ratio: auto">
+                  <template>
+                    {%- if block.settings.external_video_url.type == 'youtube' -%}
+                      <iframe src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+                    {%- elsif block.settings.external_video_url.type == 'vimeo' -%}
+                      <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay=1&autopause=1&background=1&loop=1&muted=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
+                    {%- endif -%}
+                  </template>
+                </video-media>
+              {%- endif -%}
+          {%- endcase -%}
+
+          {%- if block.settings.title != blank or block.settings.link_text != blank -%}
+            <div class="{{ block.settings.mobile_text_position }} {{ block.settings.desktop_text_position }}">
+              <div class="prose">
+                {%- if block.settings.title != blank -%}
+                  <p class="{{ block.settings.heading_tag }}">
+                    {% render 'styled-text', content: block.settings.title, gradient: block.settings.text_gradient %}
+                  </p>
+                {%- endif -%}
+
+                {%- if block.settings.link_text != blank -%}
+                  {%- render 'button', size: 'lg', content: block.settings.link_text, background: block.settings.button_background, text_color: block.settings.button_text_color -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </a>
+    {%- endfor -%}
+  </media-grid>
+</div>
+
+{% schema %}
+{
+  "name": "Media grid",
+  "class": "shopify-section--media-grid",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 15,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000 x 1500px .jpg recommended (portrait) or 1500 x 1500px .jpg recommended (square)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Promote your products"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "place-self-start text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "place-self-start-center text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "place-self-start-end text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "place-self-center-start text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "place-self-center text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "place-self-center-end text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "place-self-end-start text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "place-self-end-center text-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "place-self-end text-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "place-self-center text-center"
+        },
+        {
+          "type": "header",
+          "content": "Desktop",
+          "info": "When using a 1x1 tile, we recommend not using text on top of media."
+        },
+        {
+          "type": "range",
+          "id": "desktop_column_span",
+          "label": "Column",
+          "min": 1,
+          "max": 4,
+          "default": 2
+        },
+        {
+          "type": "range",
+          "id": "desktop_row_span",
+          "label": "Row",
+          "min": 1,
+          "max": 3,
+          "default": 2
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "sm:place-self-start sm:text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "sm:place-self-start-center sm:text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "sm:place-self-start-end sm:text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "sm:place-self-center-start sm:text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "sm:place-self-center sm:text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "sm:place-self-center-end sm:text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "sm:place-self-end-start sm:text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "sm:place-self-end-center sm:text-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "sm:place-self-end sm:text-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "sm:place-self-center sm:text-center"
+        },
+        {
+          "type": "header",
+          "content": "Colors",
+          "info": "Gradient replaces solid colors when set. Background is ignored when image is used."
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "#000000"
+        },
+        {
+          "type": "color_background",
+          "id": "background_gradient",
+          "label": "Background gradient"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color_background",
+          "id": "text_gradient",
+          "label": "Text gradient"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Video are muted to allow autoplay. For best visual results and avoid platform branding, we recommend uploading a MP4 file."
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "info": "Replaces external video if both are set."
+        },
+        {
+          "type": "video_url",
+          "id": "external_video_url",
+          "accept": ["vimeo", "youtube"],
+          "label": "Video URL",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_video_controls",
+          "label": "Show video controls",
+          "info": "Only applicable for MP4 videos. When controls are shown, loop is disabled.",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Promote your products"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h4"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "place-self-start text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "place-self-start-center text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "place-self-start-end text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "place-self-center-start text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "place-self-center text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "place-self-center-end text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "place-self-end-start text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "place-self-end-center text-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "place-self-end text-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "place-self-center text-center"
+        },
+        {
+          "type": "header",
+          "content": "Desktop",
+          "info": "When using a 1x1 tile, we recommend not using text on top of media."
+        },
+        {
+          "type": "range",
+          "id": "desktop_column_span",
+          "label": "Column",
+          "min": 1,
+          "max": 4,
+          "default": 2
+        },
+        {
+          "type": "range",
+          "id": "desktop_row_span",
+          "label": "Row",
+          "min": 1,
+          "max": 3,
+          "default": 2
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "sm:place-self-start sm:text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "sm:place-self-start-center sm:text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "sm:place-self-start-end sm:text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "sm:place-self-center-start sm:text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "sm:place-self-center sm:text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "sm:place-self-center-end sm:text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "sm:place-self-end-start sm:text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "sm:place-self-end-center sm:text-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "sm:place-self-end sm:text-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "sm:place-self-center sm:text-center"
+        },
+        {
+          "type": "header",
+          "content": "Colors",
+          "info": "Gradient replaces solid colors when set. Background is ignored when image is used."
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "#000000"
+        },
+        {
+          "type": "color_background",
+          "id": "background_gradient",
+          "label": "Background gradient"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color_background",
+          "id": "text_gradient",
+          "label": "Text gradient"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "reduce_width",
+      "label": "Reduce width on large screens",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row height",
+      "info": "Define the height of a single row, from which the grid is dynamically created."
+    },
+    {
+      "type": "range",
+      "id": "desktop_row_height",
+      "label": "Desktop row height",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 290
+    },
+    {
+      "type": "range",
+      "id": "mobile_row_height",
+      "label": "Mobile row height",
+      "min": 120,
+      "max": 260,
+      "step": 10,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media grid",
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "desktop_column_span": 2,
+            "desktop_row_span": 1
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "desktop_column_span": 2,
+            "desktop_row_span": 2
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "desktop_column_span": 2,
+            "desktop_row_span": 1
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

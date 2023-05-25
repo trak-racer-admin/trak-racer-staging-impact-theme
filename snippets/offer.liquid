@@ -1,0 +1,57 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+OFFER COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create banner (for instance to showing an error, an info, or to show promotion content). Because
+there are a lot of parameters, you simply need to pass the "block" object and everything will be extracted from it.
+
+********************************************
+Supported variables
+********************************************
+
+* title: an optional title for the banner
+* content: the textual content to use
+* icon: the name of an icon that is optionally added along the text
+* icon_width: the width of the icon
+* custom_icon: an image of an optional icon (if any)
+* icon_position: the position of the icon. Accept the values "aligned" or "stacked".
+* text_alignment: alignment of the text
+* background: an optional background that would override existing color
+* text_color: an optional text color that would override existing color
+{%- endcomment -%}
+
+{%- capture offer_class -%}offer {% if block.settings.text_alignment == 'center' %}offer--center{% endif %}{%- endcapture -%}
+
+<div {% render 'surface', class: offer_class, background: block.settings.background, text_color: block.settings.text_color, background_fallback: 'bg-secondary' %} {{ block.shopify_attributes }}>
+  {%- capture icon_with_title -%}
+    {%- if block.settings.custom_icon != blank -%}
+      {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+      {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
+      {%- capture style -%}max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+      {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', style: style, sizes: sizes, widths: widths -}}
+    {%- elsif block.settings.icon != 'none' -%}
+      {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
+    {%- endif -%}
+
+    {%- if block.settings.title != blank -%}
+      <span class="bold text-sm">{{ block.settings.title | escape }}</span>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- if icon_with_title != blank -%}
+    {%- if block.settings.icon_position == 'aligned' -%}
+      <div class="text-with-icon">
+        {{- icon_with_title -}}
+      </div>
+    {%- else -%}
+      {{- icon_with_title -}}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if block.settings.content != blank -%}
+    <div class="prose text-sm">
+      {{- block.settings.content -}}
+    </div>
+  {%- endif -%}
+</div>

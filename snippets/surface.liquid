@@ -1,0 +1,46 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SURFACE COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component allows to set the class and CSS variables to create a context with a different background, text color...
+
+********************************************
+Supported variables
+********************************************
+
+* background_gradient: an optional gradient for the section
+* background: a background to use
+* text_color: a text color to use
+* background_fallback: the class to be used as a fallback background if none is specified
+* class: extra class to be added on the wrapper
+* style: any extra style attributes
+{%- endcomment -%}
+
+{%- if background_gradient == blank and background == blank or background == 'rgba(0,0,0,0)' -%}
+  {%- capture class -%}{{ class }} {{ background_fallback }}{%- endcapture -%}
+{%- elsif background_gradient != blank -%}
+  {%- capture class -%}{{ class }} bg-gradient{%- endcapture -%}
+  {%- capture style -%}{{ style }} --gradient: {{ background_gradient }};{%- endcapture -%}
+{%- else -%}
+  {%- capture class -%}{{ class }} bg-custom{%- endcapture -%}
+  {%- capture style -%}{{ style }} --background: {{ background.rgb }};{%- endcapture -%}
+{%- endif -%}
+
+{%- if background_blur_radius != blank and background_opacity < 100 -%}
+  {%- capture class -%}{{ class }} backdrop-blur-custom {%- endcapture -%}
+  {%- capture style -%}{{ style }} --backdrop-blur: {{ background_blur_radius }}px;{%- endcapture -%}
+{%- endif -%}
+
+{%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+  {%- capture class -%}{{ class }} text-custom {%- endcapture -%}
+  {%- capture style -%}{{ style }} --text-color: {{ text_color.rgb }};{%- endcapture -%}
+{%- endunless -%}
+
+{%- if class != blank -%}
+  class="{{ class | strip }}"
+{%- endif -%}
+
+{%- if style != blank -%}
+  style="{{ style | strip }}"
+{%- endif -%}

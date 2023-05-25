@@ -1,0 +1,57 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+STYLED TEXT
+----------------------------------------------------------------------------------------------------------------------
+
+********************************************
+Goal
+********************************************
+
+Generate a text with an optional gradient or stroke.
+
+********************************************
+Supported variables
+********************************************
+
+* content: the content of the styled text
+* text_color: the color of the text to override
+* gradient: the gradient to use. If none is set it will inherit the parent color
+* style: can be either "fill" or "outline". If none is set, default to fill
+* apparition_effect: if set to true it will use the apparition effect defined in the "settings.heading_apparition"
+{%- endcomment -%}
+
+{%- liquid
+  capture class
+    if gradient != blank
+      echo 'text-gradient '
+    elsif text_color != blank and text_color != 'rgba(0,0,0,0)'
+      echo 'text-custom '
+    endif
+
+    if style == 'outline'
+      echo 'text-stroke '
+    endif
+  endcapture
+
+  capture style
+    if gradient != blank
+      echo '--gradient: ' | append: gradient
+    elsif text_color != blank and text_color != 'rgba(0,0,0,0)'
+      echo '--text-color: ' | append: text_color.rgb | append: ';'
+    endif
+  endcapture
+-%}
+
+{%- capture text_content -%}
+  {%- if apparition_effect and settings.heading_apparition contains 'split' and gradient == blank -%}
+    <split-lines>{{ content | strip | escape }}</split-lines>
+  {%- else -%}
+    {{- content | strip | escape -}}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if class != blank -%}
+  <span class="{{ class }}" style="{{ style }}">{{- text_content -}}</span>
+{%- else -%}
+  {{- text_content -}}
+{%- endif -%}

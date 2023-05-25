@@ -1,0 +1,36 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+CHECKBOX COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create the necessary markup to create an input checkbox
+
+********************************************
+Supported variables
+********************************************
+
+* name: the HTML name attribute that is used when the field is submitted.
+* type: by default the snippet generates a checkbox, but you can pass a "radio" type to generate radio buttons
+* form: if specified, define the form ID linked to this input
+* checked: if the checkbox is checked or not
+* disabled: if the checkbox is disabled or not
+* required: if true, the checkbox must be checked
+* value: the value to use (use 1 if none is passed)
+* switch: if set to true, the checkbox is rendered as a switch
+* label: the label to show
+* context: an optional context that can be passed from parent to identify the checkbox
+{%- endcomment -%}
+
+{%- capture id -%}checkbox-{{ section.id }}-{{ form }}-{{ context }}-{{ name | handle }}-{{ value | handle }}{%- endcapture -%}
+
+<div class="checkbox-container" {{ block.shopify_attributes }}>
+  {%- if switch -%}
+    <input id="{{ id }}" class="switch" type="{{ type | default: 'checkbox' }}" role="switch" name="{{ name }}" value="{{ value | default: 1 }}" {% if form %}form="{{ form }}"{% endif %} {% if disabled %}disabled{% endif %} {% if required %}required{% endif %} {% if checked %}checked{% endif %}>
+  {%- else -%}
+    <input id="{{ id }}" class="checkbox" type="{{ type | default: 'checkbox' }}" name="{{ name }}" value="{{ value | default: 1 }}" {% if form %}form="{{ form }}"{% endif %} {% if disabled %}disabled{% endif %} {% if required %}required{% endif %} {% if checked %}checked{% endif %}>
+  {%- endif -%}
+
+  {%- if label != blank -%}
+    <label for="{{ id }}">{{ label }}</label>
+  {%- endif -%}
+</div>

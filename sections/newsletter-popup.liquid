@@ -1,0 +1,126 @@
+{%- unless request.page_type == 'captcha' or section.settings.show_only_on_index and request.page_type != 'index' -%}
+  {%- unless section.settings.show_only_for_visitors and customer -%}
+    {%- assign posted_successfully = false -%}
+    {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
+
+    {%- capture temporary -%}
+      {%- form 'customer', id: newsletter_id, class: 'form' -%}
+        {%- assign posted_successfully = form.posted_successfully? -%}
+      {%- endform -%}
+    {%- endcapture -%}
+
+    <newsletter-popup id="newsletter-drawer" open-from="right" class="drawer newsletter-drawer" {% if section.settings.show_only_once %}only-once{% endif %} apparition-delay="{{ section.settings.apparition_delay }}" {% if posted_successfully %}open{% endif %} handle-section-events>
+      <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}" class="sm-max:hidden">
+        {%- render 'icon' with 'close', width: 19, height: 19 -%}
+      </button>
+
+      {%- if section.settings.image != blank -%}
+        {%- capture sizes -%}min(calc(100vw - 16px), 445px){%- endcapture -%}
+        {%- capture widths -%}{{ section.settings.image.width }}, {{ section.settings.image.width | times: 2 | at_most: section.settings.image.width }}{%- endcapture -%}
+        {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', widths: widths, sizes: sizes -}}
+      {%- endif -%}
+
+      <div class="newsletter-drawer__content v-stack gap-4 text-center">
+        <div class="v-stack gap-6">
+          {%- if section.settings.title != blank -%}
+            <p class="h5">{{- section.settings.title -}}</p>
+          {%- endif -%}
+
+          {%- form 'customer', id: newsletter_id, class: 'form' -%}
+            {%- if form.posted_successfully? -%}
+              {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+              {%- render 'banner', content: success_message, status: 'success' -%}
+
+              <script>
+                localStorage.setItem('theme:popup-filled', 'true');
+              </script>
+            {%- else -%}
+              {%- if form.errors -%}
+                {%- assign content = form.errors | default_errors -%}
+                {%- render 'banner', status: 'error', content: content -%}
+              {%- endif -%}
+
+              <div class="fieldset">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+
+                {%- assign label = 'blog.comments.email' | t -%}
+                {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+              </div>
+
+              {%- render 'button', content: section.settings.button_text, icon: 'picto-envelope', type: 'submit', size: 'xl' -%}
+            {%- endif -%}
+          {%- endform -%}
+        </div>
+
+        {%- if section.settings.subtext != blank -%}
+          <p class="text-xs text-subdued">{{- section.settings.subtext -}}</p>
+        {%- endif -%}
+      </div>
+    </newsletter-popup>
+  {%- endunless -%}
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "Newsletter popup",
+  "class": "shopify-section--popup",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+    },
+    {
+      "type": "range",
+      "id": "apparition_delay",
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "unit": "sec",
+      "label": "Delay until the popup appears",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "show_only_on_index",
+      "label": "Show only on home page",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_only_for_visitors",
+      "label": "Disable for account holders",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_only_once",
+      "label": "Show once to visitors",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1000 x 600px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Signup for our newsletter"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button",
+      "default": "Subscribe"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Describe what your customers will receive when subscribing to your newsletter."
+    }
+  ]
+}
+{% endschema %}

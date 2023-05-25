@@ -1,0 +1,354 @@
+{%- comment -%}
+This file defines all the CSS variables used throughout the theme. Feel free to adjust them at your own need, but
+note that this may have impact on different places.
+{%- endcomment -%}
+
+{%- capture direction -%}{% render 'direction' %}{%- endcapture -%}
+
+<style>
+  {%- assign heading_font_italic = settings.heading_font | font_modify: 'style', 'italic' -%}
+  {%- assign text_font_italic = settings.text_font | font_modify: 'style', 'italic' -%}
+  {%- assign text_font_bold = settings.text_font | font_modify: 'weight', 'bolder' -%}
+  {%- assign text_font_bold_italic = text_font_bold | font_modify: 'style', 'italic' -%}
+
+  /* Typography (heading) */
+  {{ settings.heading_font | font_face: font_display: 'fallback' }}
+
+  {%- if heading_font_italic -%}
+    {{ heading_font_italic | font_face: font_display: 'fallback' }}
+  {%- endif -%}
+
+  /* Typography (body) */
+  {{ settings.text_font | font_face: font_display: 'fallback' }}
+
+  {%- if text_font_italic -%}
+    {{ text_font_italic | font_face: font_display: 'fallback' }}
+  {%- endif -%}
+
+  {%- if text_font_bold -%}
+    {{ text_font_bold | font_face: font_display: 'fallback' }}
+  {%- endif -%}
+
+  {%- if text_font_bold_italic -%}
+    {{ text_font_bold_italic | font_face: font_display: 'fallback' }}
+  {%- endif -%}
+
+  :root {
+    /**
+     * ---------------------------------------------------------------------
+     * SPACING VARIABLES
+     *
+     * We are using a spacing inspired from frameworks like Tailwind CSS.
+     * ---------------------------------------------------------------------
+     */
+    --spacing-0-5: 0.125rem; /* 2px */
+    --spacing-1: 0.25rem; /* 4px */
+    --spacing-1-5: 0.375rem; /* 6px */
+    --spacing-2: 0.5rem; /* 8px */
+    --spacing-2-5: 0.625rem; /* 10px */
+    --spacing-3: 0.75rem; /* 12px */
+    --spacing-3-5: 0.875rem; /* 14px */
+    --spacing-4: 1rem; /* 16px */
+    --spacing-4-5: 1.125rem; /* 18px */
+    --spacing-5: 1.25rem; /* 20px */
+    --spacing-5-5: 1.375rem; /* 22px */
+    --spacing-6: 1.5rem; /* 24px */
+    --spacing-6-5: 1.625rem; /* 26px */
+    --spacing-7: 1.75rem; /* 28px */
+    --spacing-7-5: 1.875rem; /* 30px */
+    --spacing-8: 2rem; /* 32px */
+    --spacing-8-5: 2.125rem; /* 34px */
+    --spacing-9: 2.25rem; /* 36px */
+    --spacing-9-5: 2.375rem; /* 38px */
+    --spacing-10: 2.5rem; /* 40px */
+    --spacing-11: 2.75rem; /* 44px */
+    --spacing-12: 3rem; /* 48px */
+    --spacing-14: 3.5rem; /* 56px */
+    --spacing-16: 4rem; /* 64px */
+    --spacing-18: 4.5rem; /* 72px */
+    --spacing-20: 5rem; /* 80px */
+    --spacing-24: 6rem; /* 96px */
+    --spacing-28: 7rem; /* 112px */
+    --spacing-32: 8rem; /* 128px */
+    --spacing-36: 9rem; /* 144px */
+    --spacing-40: 10rem; /* 160px */
+    --spacing-44: 11rem; /* 176px */
+    --spacing-48: 12rem; /* 192px */
+    --spacing-52: 13rem; /* 208px */
+    --spacing-56: 14rem; /* 224px */
+    --spacing-60: 15rem; /* 240px */
+    --spacing-64: 16rem; /* 256px */
+    --spacing-72: 18rem; /* 288px */
+    --spacing-80: 20rem; /* 320px */
+    --spacing-96: 24rem; /* 384px */
+
+    /* Container */
+    --container-max-width: {{ settings.page_width }}px;
+    --container-narrow-max-width: {{ settings.page_width | minus: 250 }}px;
+    --container-gutter: var(--spacing-5);
+    --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-8){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-10){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-12){% else %}var(--spacing-14){% endif %};
+    --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-8){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-9){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-10){% else %}var(--spacing-12){% endif %};
+    --section-inner-spacing-inline: var(--container-gutter);
+    --section-stack-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-8){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-8){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-8){% else %}var(--spacing-10){% endif %};
+
+    /* Grid gutter */
+    --grid-gutter: var(--spacing-5);
+
+    /* Product list settings */
+    --product-list-row-gap: var(--spacing-8);
+    --product-list-column-gap: var(--grid-gutter);
+
+    /* Form settings */
+    --input-gap: var(--spacing-2);
+    --input-height: 2.625rem;
+    --input-padding-inline: var(--spacing-4);
+
+    /* Other sizes */
+    --sticky-area-height: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) * var(--header-height, 0px));
+
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+
+    /**
+     * ---------------------------------------------------------------------
+     * TYPOGRAPHY
+     * ---------------------------------------------------------------------
+     */
+
+    /* Font properties */
+    --heading-font-family: {{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }};
+    --heading-font-weight: {{ settings.heading_font.weight }};
+    --heading-font-style: {{ settings.heading_font.style }};
+    --heading-text-transform: {{ settings.heading_text_transform }};
+    --heading-letter-spacing: {% if direction == 'rtl' %}0{% else %}{{ settings.heading_letter_spacing | divided_by: 100.0 }}em{% endif %};
+    --text-font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    --text-font-weight: {{ settings.text_font.weight }};
+    --text-font-style: {{ settings.text_font.style }};
+    --text-letter-spacing: {% if direction == 'rtl' %}0{% else %}{{ settings.text_font_letter_spacing | divided_by: 100.0 }}em{% endif %};
+
+    /* Font sizes */
+    --text-h0: {% if settings.heading_font_size == 'small' %}2.5rem{% elsif settings.heading_font_size == 'medium' %}2.75rem{% else %}3rem{% endif %};
+    --text-h1: {% if settings.heading_font_size == 'small' %}1.75rem{% elsif settings.heading_font_size == 'medium' %}2rem{% else %}2.5rem{% endif %};
+    --text-h2: {% if settings.heading_font_size == 'small' %}1.5rem{% elsif settings.heading_font_size == 'medium' %}1.75rem{% else %}2rem{% endif %};
+    --text-h3: {% if settings.heading_font_size == 'small' %}1.375rem{% elsif settings.heading_font_size == 'medium' %}1.375rem{% else %}1.5rem{% endif %};
+    --text-h4: {% if settings.heading_font_size == 'small' %}1.125rem{% elsif settings.heading_font_size == 'medium' %}1.125rem{% else %}1.375rem{% endif %};
+    --text-h5: {% if settings.heading_font_size == 'small' %}1.125rem{% elsif settings.heading_font_size == 'medium' %}1.125rem{% else %}1.125rem{% endif %};
+    --text-h6: {% if settings.heading_font_size == 'small' %}1rem{% elsif settings.heading_font_size == 'medium' %}1rem{% else %}1rem{% endif %};
+    --text-xs: {{ settings.text_font_size_mobile | minus: 3 | at_least: 10 | divided_by: 16.0 }}rem;
+    --text-sm: {{ settings.text_font_size_mobile | minus: 2 | at_least: 11 | divided_by: 16.0 }}rem;
+    --text-base: {{ settings.text_font_size_mobile | divided_by: 16.0 }}rem;
+    --text-lg: {{ settings.text_font_size_mobile | plus: 4 | divided_by: 16.0 }}rem;
+
+    /**
+     * ---------------------------------------------------------------------
+     * COLORS
+     * ---------------------------------------------------------------------
+     */
+
+    /* Color settings */
+    {%- assign success_background = settings.success_color | color_mix: '#ffffff', 12 -%}
+    {%- assign warning_background = settings.warning_color | color_mix: '#ffffff', 12 -%}
+    {%- assign error_background = settings.error_color | color_mix: '#ffffff', 12 -%}
+    {%- assign product_on_sale_accent_brightness = settings.product_on_sale_accent | color_brightness -%}
+    {%- assign product_sold_out_badge_brightness = settings.product_sold_out_badge_background | color_brightness -%}
+    {%- assign product_primary_badge_brightness = settings.product_primary_badge_background | color_brightness -%}
+
+    --accent: {{ settings.primary_button_background.rgb }};
+    --text-primary: {{ settings.text_color.rgb }};
+    --background-primary: {{ settings.background.rgb }};
+    --dialog-background: {{ settings.dialog_background.rgb }};
+    --border-color: var(--text-color, var(--text-primary)) / 0.12;
+
+    /* Button colors */
+    --button-background-primary: {{ settings.primary_button_background.rgb }};
+    --button-text-primary: {{ settings.primary_button_text_color.rgb }};
+    --button-background-secondary: {{ settings.secondary_button_background.rgb }};
+    --button-text-secondary: {{ settings.secondary_button_text_color.rgb }};
+
+    /* Status colors */
+    --success-background: {{ success_background.rgb }};
+    --success-text: {{ settings.success_color.rgb }};
+    --warning-background: {{ warning_background.rgb }};
+    --warning-text: {{ settings.warning_color.rgb }};
+    --error-background: {{ error_background.rgb }};
+    --error-text: {{ settings.error_color.rgb }};
+
+    /* Product colors */
+    --on-sale-text: {{ settings.product_on_sale_accent.rgb }};
+    --on-sale-badge-background: {{ settings.product_on_sale_accent.rgb }};
+    --on-sale-badge-text: {% if product_on_sale_accent_brightness < 150 %}255 255 255{% else %}0 0 0{% endif %};
+    --sold-out-badge-background: {{ settings.product_sold_out_badge_background.rgb }};
+    --sold-out-badge-text: {% if product_sold_out_badge_brightness < 150 %}255 255 255{% else %}0 0 0{% endif %};
+    --primary-badge-background: {{ settings.product_primary_badge_background.rgb }};
+    --primary-badge-text: {% if product_primary_badge_brightness < 150 %}255 255 255{% else %}0 0 0{% endif %};
+    --star-color: {{ settings.product_rating_color.rgb }};
+    --product-card-background: {{ settings.product_card_background.rgb }};
+    --product-card-text: {{ settings.product_card_text_color.rgb }};
+
+    /* Header colors */
+    --header-background: {{ settings.header_background.rgb }};
+    --header-text: {{ settings.header_text_color.rgb }};
+
+    /* Footer colors */
+    --footer-background: {{ settings.footer_background.rgb }};
+    --footer-text: {{ settings.footer_text_color.rgb }};
+
+    /* Rounded variables (used for border radius) */
+    --rounded-xs: {{ settings.block_border_radius | at_most: 4 | divided_by: 16.0 }}rem;
+    --rounded-sm: {{ settings.block_border_radius | divided_by: 16.0 | divided_by: 4.0 }}rem;
+    --rounded: {{ settings.block_border_radius | divided_by: 16.0 | divided_by: 2.0 }}rem;
+    --rounded-lg: {{ settings.block_border_radius | divided_by: 16.0 }}rem;
+    --rounded-full: 9999px;
+
+    --rounded-button: {{ settings.button_border_radius | divided_by: 16.0 }}rem;
+    --rounded-input: {{ settings.input_border_radius | divided_by: 16.0 }}rem;
+
+    /* Box shadow */
+    --shadow-sm: 0 2px 8px rgb(var(--text-primary) / {{ settings.block_shadow_opacity | divided_by: 100.0 }});
+    --shadow: 0 5px 15px rgb(var(--text-primary) / {{ settings.block_shadow_opacity | divided_by: 100.0 }});
+    --shadow-md: 0 5px 30px rgb(var(--text-primary) / {{ settings.block_shadow_opacity | divided_by: 100.0 }});
+    --shadow-block: {{ settings.block_shadow_horizontal_offset }}px {{ settings.block_shadow_vertical_offset }}px {{ settings.block_shadow_blur }}px rgb(var(--text-primary) / {{ settings.block_shadow_opacity | divided_by: 100.0 }});
+
+    /**
+     * ---------------------------------------------------------------------
+     * OTHER
+     * ---------------------------------------------------------------------
+     */
+
+    --cursor-close-svg-url: url({{ 'cursor-close.svg' | asset_url }});
+    --cursor-zoom-in-svg-url: url({{ 'cursor-zoom-in.svg' | asset_url }});
+    --cursor-zoom-out-svg-url: url({{ 'cursor-zoom-out.svg' | asset_url }});
+    --checkmark-svg-url: url({{ 'checkmark.svg' | asset_url }});
+  }
+
+  [dir="rtl"]:root {
+    /* RTL support */
+    --transform-logical-flip: -1;
+    --transform-origin-start: right;
+    --transform-origin-end: left;
+  }
+
+  @media screen and (min-width: 700px) {
+    :root {
+      /* Typography (font size) */
+      --text-h0: {% if settings.heading_font_size == 'small' %}3.25rem{% elsif settings.heading_font_size == 'medium' %}3.5rem{% else %}4rem{% endif %};
+      --text-h1: {% if settings.heading_font_size == 'small' %}2.25rem{% elsif settings.heading_font_size == 'medium' %}2.5rem{% else %}3rem{% endif %};
+      --text-h2: {% if settings.heading_font_size == 'small' %}1.75rem{% elsif settings.heading_font_size == 'medium' %}2rem{% else %}2.5rem{% endif %};
+      --text-h3: {% if settings.heading_font_size == 'small' %}1.625rem{% elsif settings.heading_font_size == 'medium' %}1.625rem{% else %}2rem{% endif %};
+      --text-h4: {% if settings.heading_font_size == 'small' %}1.25rem{% elsif settings.heading_font_size == 'medium' %}1.375rem{% else %}1.625rem{% endif %};
+      --text-h5: {% if settings.heading_font_size == 'small' %}1.25rem{% elsif settings.heading_font_size == 'medium' %}1.125rem{% else %}1.25rem{% endif %};
+      --text-h6: {% if settings.heading_font_size == 'small' %}1.125rem{% elsif settings.heading_font_size == 'medium' %}1rem{% else %}1.125rem{% endif %};
+
+      --text-xs: {{ settings.text_font_size_desktop | minus: 4 | at_least: 11 | divided_by: 16.0 }}rem;
+      --text-sm: {{ settings.text_font_size_desktop | minus: 2 | at_least: 12 | divided_by: 16.0 }}rem;
+      --text-base: {{ settings.text_font_size_desktop | divided_by: 16.0 }}rem;
+      --text-lg: {{ settings.text_font_size_desktop | plus: 4 | divided_by: 16.0 }}rem;
+
+      /* Spacing */
+      --container-gutter: 2rem;
+      --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-12){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-16){% else %}var(--spacing-20){% endif %};
+      --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-10){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-10){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-12){% else %}var(--spacing-14){% endif %};
+      --section-inner-spacing-inline: {% if settings.section_boxed_horizontal_spacing == 'xsmall' %}var(--spacing-10){% elsif settings.section_boxed_horizontal_spacing == 'small' %}var(--spacing-10){% elsif settings.section_boxed_horizontal_spacing == 'medium' %}var(--spacing-12){% else %}var(--spacing-14){% endif %};
+      --section-stack-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-10){% else %}var(--spacing-12){% endif %};
+
+      /* Grid gutter */
+      --grid-gutter: var(--spacing-6);
+
+      /* Product list settings */
+      --product-list-row-gap: var(--spacing-12);
+
+      /* Form settings */
+      --input-gap: 1rem;
+      --input-height: 3.125rem;
+      --input-padding-inline: var(--spacing-5);
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    :root {
+      /* Spacing settings */
+      --container-gutter: var(--spacing-12);
+      --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-18){% else %}var(--spacing-20){% endif %};
+      --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-12){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-16){% else %}var(--spacing-18){% endif %};
+      --section-inner-spacing-inline: {% if settings.section_boxed_horizontal_spacing == 'xsmall' %}var(--spacing-12){% elsif settings.section_boxed_horizontal_spacing == 'small' %}var(--spacing-14){% elsif settings.section_boxed_horizontal_spacing == 'medium' %}var(--spacing-16){% else %}var(--spacing-18){% endif %};
+      --section-stack-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-10){% else %}var(--spacing-12){% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    :root {
+      /* Spacing settings */
+      --container-gutter: var(--spacing-12);
+      --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-20){% else %}var(--spacing-24){% endif %};
+      --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-12){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-16){% else %}var(--spacing-18){% endif %};
+      --section-inner-spacing-inline: {% if settings.section_boxed_horizontal_spacing == 'xsmall' %}var(--spacing-12){% elsif settings.section_boxed_horizontal_spacing == 'small' %}var(--spacing-14){% elsif settings.section_boxed_horizontal_spacing == 'medium' %}var(--spacing-16){% else %}var(--spacing-18){% endif %};
+      --section-stack-spacing-block: var(--spacing-12);
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    :root {
+      /* Typography (font size) */
+      --text-h0: {% if settings.heading_font_size == 'small' %}4rem{% elsif settings.heading_font_size == 'medium' %}4.5rem{% else %}5rem{% endif %};
+      --text-h1: {% if settings.heading_font_size == 'small' %}3rem{% elsif settings.heading_font_size == 'medium' %}3.5rem{% else %}3.75rem{% endif %};
+      --text-h2: {% if settings.heading_font_size == 'small' %}2.5rem{% elsif settings.heading_font_size == 'medium' %}2.75rem{% else %}3rem{% endif %};
+      --text-h3: {% if settings.heading_font_size == 'small' %}1.75rem{% elsif settings.heading_font_size == 'medium' %}2rem{% else %}2.25rem{% endif %};
+      --text-h4: {% if settings.heading_font_size == 'small' %}1.5rem{% elsif settings.heading_font_size == 'medium' %}1.75rem{% else %}2rem{% endif %};
+      --text-h5: {% if settings.heading_font_size == 'small' %}1.25rem{% elsif settings.heading_font_size == 'medium' %}1.375rem{% else %}1.5rem{% endif %};
+      --text-h6: {% if settings.heading_font_size == 'small' %}1.25rem{% elsif settings.heading_font_size == 'medium' %}1.25rem{% else %}1.25rem{% endif %};
+
+      --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-20){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-24){% else %}var(--spacing-28){% endif %};
+      --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-14){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-18){% else %}var(--spacing-20){% endif %};
+      --section-inner-spacing-inline: {% if settings.section_boxed_horizontal_spacing == 'xsmall' %}var(--spacing-14){% elsif settings.section_boxed_horizontal_spacing == 'small' %}var(--spacing-16){% elsif settings.section_boxed_horizontal_spacing == 'medium' %}var(--spacing-18){% else %}var(--spacing-20){% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    :root {
+      --section-outer-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-20){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-24){% else %}var(--spacing-32){% endif %};
+      --section-inner-max-spacing-block: {% if settings.section_vertical_spacing == 'xsmall' %}var(--spacing-16){% elsif settings.section_vertical_spacing == 'small' %}var(--spacing-18){% elsif settings.section_vertical_spacing == 'medium' %}var(--spacing-20){% else %}var(--spacing-24){% endif %};
+      --section-inner-spacing-inline: {% if settings.section_boxed_horizontal_spacing == 'xsmall' %}var(--spacing-16){% elsif settings.section_boxed_horizontal_spacing == 'small' %}var(--spacing-18){% elsif settings.section_boxed_horizontal_spacing == 'medium' %}var(--spacing-20){% else %}var(--spacing-24){% endif %};
+    }
+  }
+
+  /**
+   * ---------------------------------------------------------------------
+   * LIQUID DEPENDANT CSS
+   *
+   * Our main CSS is Liquid free, but some very specific features depend on
+   * theme settings, so we have them here
+   * ---------------------------------------------------------------------
+   */
+
+  {%- case settings.button_hover_effect -%}
+    {%- when 'fade' -%}
+      @media screen and (pointer: fine) {
+        .button:not([disabled]):hover, .btn:not([disabled]):hover, .shopify-payment-button__button--unbranded:not([disabled]):hover {
+          --button-background-opacity: 0.85;
+        }
+
+        .button--subdued:not([disabled]):hover {
+          --button-background: var(--text-color) / .05 !important;
+        }
+      }
+
+    {%- when 'reverse' -%}
+      @media screen and (pointer: fine) {
+        /* The !important are for the Shopify Payment button to ensure we override the default from Shopify styles */
+        .button:not([disabled]):not(.button--outline):hover, .btn:not([disabled]):hover, .shopify-payment-button__button--unbranded:not([disabled]):hover {
+          background-color: transparent !important;
+          color: rgb(var(--button-outline-color) / var(--button-background-opacity, 1)) !important;
+          box-shadow: inset 0 0 0 2px currentColor !important;
+        }
+
+        .button--outline:not([disabled]):hover {
+          background: rgb(var(--button-background));
+          color: rgb(var(--button-text-color));
+          box-shadow: inset 0 0 0 2px rgb(var(--button-background));
+        }
+      }
+
+  {%- endcase -%}
+</style>

@@ -1,0 +1,167 @@
+{%- if section.settings.text != blank -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --section-spacing-inline: 0;
+      --scrolling-text-font-size: {% if section.settings.text_size == 'xsmall' %}1.125rem{% elsif section.settings.text_size == 'small' %}2.5rem{% elsif section.settings.text_size == 'medium' %}3.75rem{% elsif section.settings.text_size == 'large' %}5rem{% else %}7.5rem{% endif %};
+    }
+
+    @media screen and (min-width: 700px) {
+      #shopify-section-{{ section.id }} {
+        --scrolling-text-font-size: {% if section.settings.text_size == 'xsmall' %}1.5rem{% elsif section.settings.text_size == 'small' %}3.75rem{% elsif section.settings.text_size == 'medium' %}5rem{% elsif section.settings.text_size == 'large' %}8.75rem{% else %}12.5rem{% endif %};
+      }
+    }
+  </style>
+
+  {%- if section.settings.text_size == 'xsmall' -%}
+    {%- assign is_tight = true -%}
+  {%- endif -%}
+
+  <div {% render 'section-properties', tight: is_tight %}>
+    {%- capture section_content -%}
+      {%- for i in (1..10) -%}
+        <span class="scrolling-text__text heading {% unless forloop.first %}motion-reduce:hidden{% endunless %}" {% unless forloop.first %}aria-hidden="true"{% endunless %}>
+          {%- render 'styled-text', content: section.settings.text, gradient: section.settings.text_gradient, style: section.settings.text_style -%}
+        </span>
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    <div class="scrolling-text {% if section.settings.scrolling_mode == 'scroll' %}scrolling-text--scroll{% else %}scrolling-text--auto{% endif %}">
+      {%- if section.settings.scrolling_mode == 'scroll' -%}
+        <visibility-progress class="scrolling-text__wrapper">
+          {{- section_content -}}
+        </visibility-progress>
+       {%- else -%}
+         <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" class="scrolling-text__wrapper">
+           {{- section_content -}}
+         </marquee-text>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Scrolling text",
+  "class": "shopify-section--scrolling-text",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Promotion text"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text size",
+      "options": [
+        {
+          "value": "xsmall",
+          "label": "X-Small"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xlarge",
+          "label": "X-Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "select",
+      "id": "text_style",
+      "label": "Text style",
+      "options": [
+        {
+          "value": "outline",
+          "label": "Outline"
+        },
+        {
+          "value": "fill",
+          "label": "Fill"
+        }
+      ],
+      "default": "fill"
+    },
+    {
+      "type": "select",
+      "id": "scrolling_mode",
+      "label": "Scrolling mode",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Automatic"
+        },
+        {
+          "value": "scroll",
+          "label": "On scroll"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "range",
+      "id": "scrolling_speed",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "label": "Automatic scrolling speed",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set. Gradient text outline and gradient background cannot be combined."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color_background",
+      "id": "text_gradient",
+      "label": "Text gradient"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling text"
+    }
+  ]
+}
+{% endschema %}

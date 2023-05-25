@@ -1,0 +1,222 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    @media screen and (min-width: 700px) {
+      #shopify-section-{{ section.id }} {
+        --tabs-max-width: {% if section.settings.content_size == 'small' %}760{% elsif section.settings.content_size == 'medium' %}1000{% elsif section.settings.content_size == 'large' %}1260{% endif %}px;
+        --section-stack-spacing-block: var(--spacing-8);
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      #shopify-section-{{ section.id }} {
+        --section-stack-spacing-block: var(--spacing-10);
+      }
+    }
+  </style>
+
+  <div {% render 'section-properties' %}>
+    <div class="tabs">
+      <div class="section-stack">
+        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+          <div class="prose text-center">
+            {%- if section.settings.subheading != blank -%}
+              <p class="bold">{{ section.settings.subheading | escape }}</p>
+            {%- endif -%}
+
+            {%- if section.settings.title != blank -%}
+              <p class="h2">{%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}</p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="tabs-container">
+          <div class="sm:hidden">
+            {%- for block in section.blocks -%}
+              {%- assign title = block.settings.title | default: block.settings.page.title -%}
+              {%- assign content = block.settings.page.content | default: block.settings.content -%}
+
+              {%- if title and content -%}
+                {%- assign open = false -%}
+
+                {%- if forloop.first and section.settings.first_tab_open -%}
+                  {%- assign open = true -%}
+                {%- endif -%}
+
+                {%- capture accordion_content -%}
+                  <div class="prose">{{ content }}</div>
+                {%- endcapture -%}
+
+                {%- render 'accordion', title: title, content: accordion_content, open: open -%}
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
+          <x-tabs class="tabs-inner">
+            <template shadowrootmode="open">
+              <slot role="tablist" part="tab-list" name="title"></slot>
+              <slot part="tab-panels" name="content"></slot>
+            </template>
+
+            {%- for block in section.blocks -%}
+              {%- assign title = block.settings.title | default: block.settings.page.title -%}
+              {%- assign content = block.settings.page.content | default: block.settings.content -%}
+
+              {%- if title != blank and content != blank -%}
+                <button type="button" slot="title" class="tabs-nav__button bold text-subdued text-center" {{ block.shopify_attributes }}>{{ title | escape }}</button>
+                <div role="tabpanel" class="tab-content prose" slot="content" {% cycle '', 'hidden', 'hidden', 'hidden', 'hidden' %}>
+                  {{ content }}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </x-tabs>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Tabs",
+  "class": "shopify-section--tabs",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_size",
+      "label": "Content size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill page"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "first_tab_open",
+      "label": "Open first tab on mobile"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Tab"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page",
+          "info": "Replaces inline content if specified."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 1",
+            "content": "<p>Use this text to share information about your brand with your customers.</p>"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

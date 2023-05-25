@@ -1,0 +1,47 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SECTION HEADER
+----------------------------------------------------------------------------------------------------------------------
+
+This component renders a section header, which is a pattern in many sections of the theme.
+
+********************************************
+Supported variables
+********************************************
+
+* subheading: the subheading (if any)
+* heading: the heading to show
+* heading_color: the color heading
+* heading_gradient: the optional gradient to use for the heading
+* content: an optional content to show
+* text_alignment: can be "start", "center" or "end" (default to start, which is a left alignment on LTR environment)
+* link_text: the text of the link
+* link_url: the link URL
+{%- endcomment -%}
+
+{% if subheading != blank or heading != blank or content != blank or link_text != blank %}
+  <section-header class="section-header {% if text_alignment != blank %}justify-{{ text_alignment | escape }} justify-items-{{ text_alignment | escape }} text-{{ text_alignment | escape }}{% endif %}">
+    {%- if subheading != blank or heading != blank or content != blank -%}
+      <div class="prose">
+        {%- if subheading != blank -%}
+          <p class="bold">{{- subheading | escape -}}</p>
+        {%- endif -%}
+
+        {%- if heading != blank -%}
+          <h2 class="h2" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %}>
+            {%- render 'styled-text', content: heading, text_color: heading_color, gradient: heading_gradient, apparition_effect: true -%}
+          </h2>
+        {%- endif -%}
+
+        {{- content -}}
+      </div>
+    {%- endif -%}
+
+    {%- if link_text != blank -%}
+      <a href="{{ link_url }}" class="text-with-icon group">
+        <span class="reversed-link">{{- link_text | escape -}}</span>
+        <span class="circle-chevron group-hover:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
+      </a>
+    {%- endif -%}
+  </section-header>
+{%- endif -%}

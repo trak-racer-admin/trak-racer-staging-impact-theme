@@ -1,0 +1,52 @@
+<privacy-bar class="privacy-bar" hidden>
+  <div class="privacy-bar__inner">
+    <button type="button" class="privacy-bar__close" data-action="close">
+      <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
+      {%- render 'icon' with 'delete' -%}
+    </button>
+
+    <div class="v-stack gap-4">
+      <div class="v-stack gap-2">
+        {%- if section.settings.privacy_bar_title != blank -%}
+          <p class="bold">{{ section.settings.privacy_bar_title | escape }}</p>
+        {%- endif -%}
+
+        {%- if section.settings.privacy_bar_content != blank -%}
+          <div class="prose text-xs">
+            {{- section.settings.privacy_bar_content -}}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="h-stack gap-2">
+        <button type="button" class="button button--sm" data-action="accept">{{ 'general.privacy_bar.accept' | t }}</button>
+        <button type="button" class="button button--sm button--subdued" data-action="decline">{{ 'general.privacy_bar.decline' | t }}</button>
+      </div>
+    </div>
+  </div>
+</privacy-bar>
+
+{% schema %}
+{
+  "name": "Privacy banner",
+  "class": "shopify-section--privacy-banner",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Privacy bar will only be visible if it fulfills the conditions of the [Shopify Customer Privacy API](https://shopify.dev/docs/themes/consent-tracking-api) or inside the theme editor to ease editing."
+    },
+    {
+      "type": "text",
+      "id": "privacy_bar_title",
+      "label": "Title",
+      "default": "Cookie policy"
+    },
+    {
+      "type": "richtext",
+      "id": "privacy_bar_content",
+      "label": "Content",
+      "default": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
+    }
+  ]
+}
+{% endschema %}

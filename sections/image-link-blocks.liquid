@@ -1,0 +1,296 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<style>
+  {%- assign block_size = section.settings.block_size -%}
+
+  #shopify-section-{{ section.id }} .image-link-blocks {
+    --image-link-blocks-item-width: {% if block_size == 'small' %}32vw{% elsif block_size == 'medium' %}38vw{% else %}48vw{% endif %};
+    --image-link-blocks-grid: auto / auto-flow var(--image-link-blocks-item-width);
+
+    --content-over-media-gap: var(--grid-gutter);
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} .image-link-blocks {
+      --image-link-blocks-item-width: {% if block_size == 'small' %}18vw{% elsif block_size == 'medium' %}22vw{% else %}26vw{% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .image-link-blocks {
+      --image-link-blocks-items-per-row: {% if block_size == 'small' %}6{% elsif block_size == 'medium' %}5{% else %}4{% endif %};
+      --image-link-blocks-grid: auto / auto-flow calc(var(--container-inner-width) / var(--image-link-blocks-items-per-row) - (var(--grid-gutter) / var(--image-link-blocks-items-per-row) * (var(--image-link-blocks-items-per-row) - 1)));
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} .image-link-blocks {
+      --image-link-blocks-items-per-row: {% if block_size == 'small' %}7{% elsif block_size == 'medium' %}6{% else %}5{% endif %};
+    }
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: section.settings.link_url -%}
+
+    <div class="floating-controls-container">
+      {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
+
+      <image-link-blocks id="{{ scroll_area_id }}" class="image-link-blocks scroll-area bleed md:unbleed">
+        {%- for block in section.blocks -%}
+          <div {% render 'surface', class: 'image-link-blocks__item group rounded', background: block.settings.background, text_color: block.settings.text_color, background_fallback: 'bg-secondary' %} {{ block.shopify_attributes }}>
+            {%- if block.settings.stretch_image -%}
+              {%- capture item_content -%}
+                {%- if block.settings.image != blank -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'zoom-image' -}}
+                {%- else -%}
+                  {{- 'image' | placeholder_svg_tag: 'zoom-image placeholder' -}}
+                {%- endif -%}
+
+                {%- if block.settings.link_text != blank -%}
+                  <div class="place-self-end-start w-full bold">
+                    <div class="h-stack justify-between gap-2">
+                      {{ block.settings.link_text | escape }}
+
+                      {%- if block.settings.link_url != blank -%}
+                        {%- if block.settings.stretch_image -%}
+                          {% render 'icon' with 'circle-button-right-clipped', direction_aware: true %}
+                        {%- else -%}
+                          <span class="circle-chevron">{% render 'icon' with 'chevron-right-small', direction_aware: true %}</span>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endcapture -%}
+
+              <a {% if block.settings.link_url %}href="{{ block.settings.link_url }}"{% endif %} class="content-over-media rounded" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
+                {{- item_content -}}
+              </a>
+            {%- else -%}
+              <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="image-link-blocks__inner">
+                {%- if block.settings.image != blank -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'image-link-blocks__image zoom-image' -}}
+                {%- else -%}
+                  {{- 'image' | placeholder_svg_tag: 'image-link-blocks__image placeholder' -}}
+                {%- endif -%}
+
+                {%- if block.settings.link_text != blank -%}
+                  <p class="image-link-blocks__title {% if block.settings.link_url != blank %}image-link-blocks__title--animate{% endif %} text-center bold">
+                    {{- block.settings.link_text | escape -}}
+
+                    {%- if block.settings.link_url != blank -%}
+                      {%- if block.settings.stretch_image -%}
+                        {% render 'icon' with 'circle-button-right-clipped', direction_aware: true %}
+                      {%- else -%}
+                        <span class="circle-chevron">{% render 'icon' with 'chevron-right-small', direction_aware: true %}</span>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </p>
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </image-link-blocks>
+
+      <button is="prev-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
+        <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+        <span class="animated-arrow animated-arrow--reverse"></span>
+      </button>
+
+      <button is="next-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
+        <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+        <span class="animated-arrow"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image link blocks",
+  "class": "shopify-section--image-link-blocks",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Link block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1200 x 1400px .jpg recommended"
+        },
+        {
+          "type": "checkbox",
+          "id": "stretch_image",
+          "label": "Stretch to fill",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "header",
+          "content": "Colors",
+          "info": "Overlay is ignored when \"Stretch to fill\" is disabled."
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "block_size",
+      "label": "Block size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image link blocks",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

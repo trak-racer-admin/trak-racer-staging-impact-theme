@@ -1,0 +1,61 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SHADOW DOM TEMPLATES
+----------------------------------------------------------------------------------------------------------------------
+
+This file defines various templates that we use for Shadow DOM (it is for now limited to drawer and popover). You can
+override those if you wish to change the default layout of those elements. You should not change them unless you have
+very valid reason to do so.
+{%- endcomment -%}
+
+<!-- DRAWER -->
+<template id="drawer-default-template">
+  <style>
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+
+  <button part="outside-close-button" is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+    {%- render 'icon' with 'close' -%}
+  </button>
+
+  <div part="overlay"></div>
+
+  <div part="content">
+    <header part="header">
+      <slot name="header"></slot>
+
+      <button part="close-button" is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon' with 'close' -%}
+      </button>
+    </header>
+
+    <div part="body">
+      <slot></slot>
+    </div>
+
+    <footer part="footer">
+      <slot name="footer"></slot>
+    </footer>
+  </div>
+</template>
+
+<!-- POPOVER -->
+<template id="popover-default-template">
+  <button part="outside-close-button" is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+    {%- render 'icon' with 'close' -%}
+  </button>
+
+  <div part="overlay"></div>
+
+  <div part="content">
+    <header part="title">
+      <slot name="title"></slot>
+    </header>
+
+    <div part="body">
+      <slot></slot>
+    </div>
+  </div>
+</template>

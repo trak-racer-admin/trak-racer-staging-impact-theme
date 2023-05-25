@@ -1,0 +1,109 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+BUTTON COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+Generate a button (or link styled as a button). It supports wide range of attributes that can be used to customize
+the appearance and functionality of the button.
+
+********************************************
+Supported variables
+********************************************
+
+* content: the content of the button
+* href: an optional link to set. If href is provided, then an "a" tag is generated, otherwise a "button"
+* size: can be "sm", "lg", "xl". If none is set, the default "base" size is used.
+* background: an optional background color to use that override the default
+* text_color: an optional text color to use that override the default
+* style: "fill" or "outline". If none is set "fill" is assumed
+* stretch: if passed to true, a full width button is generated
+* secondary: if set to true the button is of secondary style
+* subdued: if set to true, the button uses the subdued mode
+* type: when href is empty, can be either "button" or "submit" (default to button if none is set)
+* name: when the button is a real button, allow to set the name attribute that is submitted
+* icon: the name of an optional icon to render along the button
+* disabled: if set to true, the button is disabled
+* is: set the custom element bound to the element (if any)
+* form: the form ID that this button is linked to
+* external: if set to true and that a href is passed, it opens into a new window
+* aria_controls: the ID of the element controlled
+{%- endcomment -%}
+
+{% liquid
+  assign style = style | default: settings.button_style
+
+  capture class_attribute
+    echo 'button'
+
+    if size != blank and size != 'base'
+      echo ' button--' | append: size
+    endif
+
+    if style == 'outline'
+      echo ' button--outline'
+    endif
+
+    if secondary and disabled != true
+      echo ' button--secondary'
+    endif
+
+    if subdued and background == blank and text_color == blank
+      echo ' button--subdued'
+    endif
+
+    if stretch
+      echo ' w-full'
+    endif
+  endcapture
+%}
+
+{%- capture style_attribute -%}
+  {%- if background != blank and background != 'rgba(0,0,0,0)' -%}
+    --button-background: {{ background.rgb }} / var(--button-background-opacity, 1);
+
+    {%- if style != 'outline' -%}
+      --button-outline-color: {{ background.rgb }};
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if text_color != blank and text_color != 'rgba(0,0,0,0)' -%}
+    --button-text-color: {{ text_color.rgb }};
+
+    {%- if style == 'outline' -%}
+      --button-outline-color: {{ text_color.rgb }};
+    {%- endif -%}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- capture attributes -%}
+  {% if class_attribute != blank %}class="{{ class_attribute | strip_newlines | strip }}"{% endif %}
+  {% if style_attribute != blank %}style="{{ style_attribute | strip_newlines | strip }}"{% endif %}
+  {% if aria_controls %}aria-controls="{{ aria_controls }}" aria-expanded="false"{% endif %}
+  {% if disabled %}{% if href %}role="link" aria-disabled="true"{% else %}disabled{% endif %}{% endif %}
+  {% if name %}name="{{ name }}"{% endif %}
+  {% if form %}form="{{ form }}"{% endif %}
+  {% if href %}href="{{ href }}"{% endif %}
+  {% if external and href != blank %}target="_blank"{% endif %}
+  {% if href == blank %}is="{{ is | default: 'custom-button' }}"{% endif %}
+{%- endcapture -%}
+
+{%- capture button_content -%}
+  {% if icon != blank %}
+    <div class="text-with-icon justify-center">
+      {%- render 'icon' with icon, width: 18, height: 18 -%}
+      {{- content -}}
+    </div>
+  {%- else -%}
+    {{- content -}}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if href != blank -%}
+  <a {{ attributes }} {{ block.shopify_attributes }}>
+    {{- button_content -}}
+  </a>
+{%- else -%}
+  <button type="{{ type | default: 'button' }}" {{ attributes }} {{ block.shopify_attributes }}>
+    {{- button_content -}}
+  </button>
+{%- endif -%}

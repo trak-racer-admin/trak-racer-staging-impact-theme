@@ -1,0 +1,6 @@
+{%- case request.locale.iso_code -%}
+  {%- when 'ae' or 'ar' or 'arc' or 'bcc' or 'bqi' or 'ckb' or 'dv' or 'fa' or 'glk' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'mzn' or 'nqo' or 'pnb' or 'ps' or 'sd' or 'ug' or 'ur' or 'yi' -%}
+    rtl
+  {%- else -%}
+    ltr
+{%- endcase -%}

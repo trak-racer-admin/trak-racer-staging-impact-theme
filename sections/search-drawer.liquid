@@ -1,0 +1,272 @@
+<search-drawer {% if request.design_mode %}handle-section-events{% endif %} class="search-drawer {% if section.settings.full_width %}search-drawer--full{% endif %} drawer drawer--lg" id="search-drawer">
+  <form action="{{ routes.search_url }}" method="get" class="v-stack gap-5 sm:gap-8" role="search">
+    <div class="search-input">
+      <input type="search" name="q" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
+      <button type="reset" class="text-subdued">{{ 'search.general.clear' | t }}</button>
+      <button type="button" is="close-button">
+        <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
+        {%- render 'icon' with 'close' -%}
+      </button>
+    </div>
+
+    <style>
+      #shopify-section-{{ section.id }} {
+        --predictive-search-column-count: 3;
+      }
+    </style>
+
+    <input type="hidden" name="type" value="product">
+
+    <predictive-search class="predictive-search" section-id="{{ section.id }}">
+      {%- if section.settings.search_menu.links.size > 0 -%}
+        <div slot="idle">
+          <div class="v-stack gap-3 sm:gap-4">
+            {%- if section.settings.search_menu_show_title -%}
+              <p class="bold text-subdued">{{ section.settings.search_menu.title }}</p>
+            {%- endif -%}
+
+            <ul class="v-stack gap-2 sm:gap-3" role="list">
+              {%- for link in section.settings.search_menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="h5">
+                    <span class="reversed-link hover:show">{{ link.title }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div slot="results">
+        {%- if predictive_search.performed -%}
+          {%- assign results_count = 0 -%}
+          {%- assign categories_count = 0 -%}
+
+          {%- for resource in predictive_search.resources -%}
+            {%- assign results_count = results_count | plus: resource.last.size -%}
+
+            {%- if resource.last.size > 0 -%}
+              {%- assign categories_count = categories_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if results_count == 0 -%}
+            <div class="empty-state">
+              <p class="h6">{{ 'search.general.no_results' | t }}</p>
+            </div>
+          {%- else -%}
+            <span class="sr-only" role="status">{{ 'search.results_count' | t: count: results_count, terms: predictive_search.terms }}</span>
+
+            <x-tabs class="predictive-search__tabs">
+              <template>
+                <style>
+                  [role="tablist"]::-webkit-scrollbar {display: none;}
+
+                  :host {
+                    --predictive-search-column-width: {% if categories_count > 2 %}0px{% else %}400px{% endif %};
+                  }
+                </style>
+
+                <slot role="tablist" part="tab-list" name="title"></slot>
+                <slot part="tab-panels" name="content"></slot>
+              </template>
+
+              {%- if predictive_search.resources.products.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.products' | t -}}</button>
+
+                  {%- if section.settings.full_width -%}
+                    <button type="submit" class="text-with-icon group">
+                      <span><span class="reversed-link">{{ 'search.general.view_all' | t }}</span></span>
+                      <span class="circle-chevron group-hover:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
+                    </button>
+                  {%- endif -%}
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for predictive_search.resources.products as item, type: 'product' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if predictive_search.resources.queries.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.suggestions' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for predictive_search.resources.queries as item, type: 'query' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if predictive_search.resources.articles.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.posts' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for predictive_search.resources.articles as item, type: 'article' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if predictive_search.resources.collections.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.collections' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for predictive_search.resources.collections as item, type: 'collection' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if predictive_search.resources.pages.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.pages' | t -}}</button>
+                </div>
+
+                <div slot="content" class="predictive-search__tab-content v-stack gap-2 justify-start">
+                  {%- render 'predictive-search-result-item' for predictive_search.resources.pages as item, type: 'page' -%}
+                </div>
+              {%- endif -%}
+            </x-tabs>
+          {%- endif -%}
+        {%- elsif search.performed -%}
+          {%- if search.results_count > 0 -%}
+            <x-tabs class="predictive-search__tabs">
+              <template>
+                <style>
+                  [role="tablist"]::-webkit-scrollbar {display: none;}
+
+                  :host {
+                    --predictive-search-column-width: {% if categories_count > 2 %}0px{% else %}400px{% endif %};
+                  }
+                </style>
+
+                <slot role="tablist" part="tab-list" name="title"></slot>
+                <slot part="tab-panels" name="content"></slot>
+              </template>
+
+              {%- assign product_results = search.results | where: 'object_type', 'product' | slice: 0, 10 -%}
+              {%- assign article_results = search.results | where: 'object_type', 'article' | slice: 0, 10 -%}
+              {%- assign page_results = search.results | where: 'object_type', 'page' | slice: 0, 10 -%}
+
+              {%- if product_results.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.products' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for product_results as item, type: 'product' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if article_results.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.posts' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-item' for article_results as item, type: 'article' -%}
+                </div>
+              {%- endif -%}
+
+              {%- if page_results.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.pages' | t -}}</button>
+                </div>
+
+                <div slot="content" class="predictive-search__tab-content v-stack gap-2 justify-start">
+                  {%- render 'predictive-search-result-item' for page_results as item, type: 'page' -%}
+                </div>
+              {%- endif -%}
+            </x-tabs>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+
+      <div slot="loading">
+        <div class="v-stack gap-5 sm:gap-6 {% if section.settings.full_width %}md:hidden{% endif %}">
+          <div class="h-stack gap-4 sm:gap-5">
+            {%- for i in (1..3) -%}
+              <span class="skeleton skeleton--tab"></span>
+            {%- endfor -%}
+          </div>
+
+          <div class="v-stack gap-4 sm:gap-6">
+            {%- for i in (1..4) -%}
+              <div class="h-stack align-center gap-5 sm:gap-6">
+                <span class="skeleton skeleton--thumbnail"></span>
+
+                <div class="v-stack gap-3 w-full">
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 20%"></span>
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 80%"></span>
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 40%"></span>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+
+        {%- if section.settings.full_width -%}
+          <div class="predictive-search__skeleton-full-width hidden">
+            {%- for i in (1..3) -%}
+              <div class="v-stack gap-8">
+                <span class="skeleton skeleton--tab"></span>
+
+                {%- for i in (1..4) -%}
+                  <div class="h-stack align-center gap-5 sm:gap-6">
+                    <span class="skeleton skeleton--thumbnail"></span>
+
+                    <div class="v-stack gap-3 w-full">
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 20%"></span>
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 80%"></span>
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 40%"></span>
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </predictive-search>
+  </form>
+</search-drawer>
+
+{% schema %}
+{
+  "name": "Search drawer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_article_category",
+      "label": "Show blog post category",
+      "info": "Add tag organize blog posts [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#add-tags-to-a-blog-post).",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Featured links",
+      "info": "Promote collections, products or important pages when search terms is empty."
+    },
+    {
+      "type": "link_list",
+      "id": "search_menu",
+      "label": "Menu",
+      "info": "This menu won't show dropdown items."
+    },
+    {
+      "type": "checkbox",
+      "id": "search_menu_show_title",
+      "label": "Show menu title",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

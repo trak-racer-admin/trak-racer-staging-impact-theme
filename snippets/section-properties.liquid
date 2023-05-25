@@ -1,0 +1,72 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SECTION PROPERTIES
+----------------------------------------------------------------------------------------------------------------------
+
+This component setup the general colors and proper class based on whether the section.
+
+********************************************
+Supported variables
+********************************************
+
+By default, because section variables are available in snippet, the snippet will infer them from the section,
+but you can override them by manually passing a different value (although this should not be needed)
+
+* tight: if set to true, to vertical spacing will be reduced
+* narrow: if set to true, the horizontal spacing will be reduced
+* background_gradient: an optional gradient for the section
+* background: a background color for the section
+* text_color: a text color for the section
+* input_background: an optional color for input background
+* input_text_color: an optional color for input text color
+* full_width: a boolean saying if the section is full width or not
+{%- endcomment -%}
+
+{%- assign full_width = full_width | default: section.settings.full_width, allow_false: true -%}
+{%- assign background_gradient = background_gradient | default: section.settings.background_gradient -%}
+{%- assign background = background | default: section.settings.background -%}
+{%- assign text_color = text_color | default: section.settings.text_color -%}
+{%- assign input_background = input_background | default: section.settings.input_background -%}
+{%- assign input_text_color = input_text_color | default: section.settings.input_text_color -%}
+
+{%- if background_gradient == blank and background == blank or background == 'rgba(0,0,0,0)' or background == settings.background -%}
+  {%- comment -%}The section blends, so we have to use vertical margin, and set a container{%- endcomment -%}
+  {%- capture class -%}{{ class }} section-blends section-full{%- endcapture -%}
+{%- else -%}
+  {%- if full_width -%}
+    {%- capture class -%}{{ class }} section-full{%- endcapture -%}
+  {%- else -%}
+    {%- capture class -%}{{ class }} section-boxed{%- endcapture -%}
+  {%- endif -%}
+
+  {%- if background_gradient != blank -%}
+    {%- assign gradient_first_stop = background_gradient | split: 'rgba(' | last | split: ')' | first | remove: ',' | split: ' ' -%}
+
+    {%- capture class -%}{{ class }} bg-gradient{%- endcapture -%}
+    {%- capture style_attributes -%}{{ style_attributes }} --gradient: {{ background_gradient }}; --background: {{ gradient_first_stop[0] }} {{ gradient_first_stop[1] }} {{ gradient_first_stop[2] }};{%- endcapture -%}
+  {%- else -%}
+    {%- capture class -%}{{ class }} bg-custom{%- endcapture -%}
+    {%- capture style_attributes -%}{{ style_attributes }} --background: {{ background.rgb }};{%- endcapture -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+  {%- capture class -%}{{ class }} text-custom{%- endcapture -%}
+  {%- capture style_attributes -%}{{ style_attributes }} --text-color: {{ text_color.rgb }};{%- endcapture -%}
+{%- endunless -%}
+
+{%- unless input_background == 'rgba(0,0,0,0)' or input_background == blank -%}
+  {%- capture style_attributes -%}{{ style_attributes }} --input-background: {{ input_background.rgb }};{%- endcapture -%}
+{%- endunless -%}
+
+{%- unless input_text_color == 'rgba(0,0,0,0)' or input_text_color == blank -%}
+  {%- capture style_attributes -%}{{ style_attributes }} --input-text-color: {{ input_text_color.rgb }};{%- endcapture -%}
+{%- endunless -%}
+
+{%- if class != blank -%}
+  class="section {% if tight %}section--tight{% endif %} {% if narrow %}section--narrow{% endif %} {{ class | strip }}"
+{%- endif -%}
+
+{%- if style_attributes != blank -%}
+  style="{{ style_attributes | strip }}"
+{%- endif -%}

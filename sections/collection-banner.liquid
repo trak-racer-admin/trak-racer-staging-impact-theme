@@ -1,0 +1,339 @@
+{%- assign show_image = false -%}
+
+{%- if section.settings.show_collection_image and collection.image or section.settings.image -%}
+  {%- assign show_image = true -%}
+{%- endif -%}
+
+{%- capture collection_header -%}
+  {%- if section.settings.show_collection_title -%}
+    <h1 class="{{ section.settings.collection_title_size }}" {% if settings.heading_apparition != 'none' and show_image %}reveal-on-scroll="true"{% endif %}>
+      {%- render 'styled-text', content: collection.title, apparition_effect: true -%}
+    </h1>
+  {%- endif -%}
+
+  {%- if section.settings.show_collection_description and collection.description != blank -%}
+    <div class="prose">
+      {{- collection.description -}}
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if show_image -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.full_width -%}
+        --section-outer-spacing-block: 0;
+      {%- else -%}
+        --section-spacing-block-end: 0;
+      {%- endif -%}
+
+      --content-over-media-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+
+      {%- if section.settings.allow_transparent_header -%}
+        margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
+      {%- endif -%}
+    }
+
+    {%- unless section.settings.full_width -%}
+      .shopify-section:first-child .section[allow-transparent-header] {
+        padding-block-start: max(var(--section-inner-max-spacing-block), var(--header-height));
+      }
+    {%- endunless -%}
+  </style>
+
+  <div {% render 'section-properties' %} {%- if section.settings.allow_transparent_header -%}allow-transparent-header{% endif %}>
+    {%- capture class -%}collection-banner content-over-media content-over-media--{{ section.settings.image_size }} {% if section.settings.full_width %}full-bleed{% else %}shadow-block rounded-lg{% endif %}{%- endcapture -%}
+
+    <image-banner reveal-on-scroll="true" {% if section.settings.enable_parallax %}parallax="0.3"{% endif %} {% render 'surface', class: class, text_color: section.settings.text_color %}>
+      {%- assign desktop_image = section.settings.image | default: collection.image -%}
+      {%- assign mobile_image = section.settings.mobile_image | default: section.settings.image | default: collection.image -%}
+      {%- capture default_size -%}{% if section.settings.enable_parallax %}130vw{% else %}100vw{% endif %}{%- endcapture -%}
+      {%- capture sizes -%}{% if section.settings.full_width %}{{ default_size }}{% else %}(max-width: 740px) calc({{ default_size }} - 40px), (max-width: 999px) calc({{ default_size }} - 64px), min({{ settings.page_width | times: 1.3 }}px, {{ default_size }} - 96px){% endif %}{%- endcapture -%}
+
+      {%- if desktop_image == mobile_image -%}
+        {{- desktop_image | image_url: width: desktop_image.width | image_tag: fetchpriority: 'high', sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+      {%- else -%}
+        {{- desktop_image | image_url: width: desktop_image.width | image_tag: fetchpriority: 'high', sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'hidden sm:block' -}}
+        {{- mobile_image | image_url: width: mobile_image.width | image_tag: fetchpriority: 'high', sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600', class: 'sm:hidden' -}}
+      {%- endif -%}
+
+      {%- if collection_header != blank -%}
+        <div class="{{ section.settings.mobile_text_position }} {{ section.settings.desktop_text_position }}">
+          <div class="v-stack gap-4 sm:gap-6">
+            {{- collection_header -}}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.featured_product != blank -%}
+        {%- if section.settings.desktop_text_position contains 'center-end' or section.settings.desktop_text_position contains 'start-end' -%}
+          {%- assign featured_product_position = 'place-self-end-start' -%}
+        {%- else -%}
+          {%- assign featured_product_position = 'place-self-end' -%}
+        {%- endif -%}
+
+        <div class="{{ featured_product_position }} hidden md:block">
+          <div class="collection-featured-product">
+            {%- if section.settings.featured_product_heading != blank -%}
+              <p class="collection-featured-product__title text-xs bold">{{ section.settings.featured_product_heading | escape }}</p>
+            {%- endif -%}
+
+            <a href="{{ section.settings.featured_product.url }}" class="collection-featured-product__content">
+              {%- render 'horizontal-product', product: section.settings.featured_product, size: 'sm', output_link: false -%}
+            </a>
+          </div>
+        </div>
+      {%- endif -%}
+    </image-banner>
+  </div>
+{%- else -%}
+  {%- if collection_header != blank -%}
+    <div class="collection-header">
+      <div class="container">
+        <div class="v-stack gap-4 sm:gap-6">
+          {{- collection_header -}}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection banner",
+  "class": "shopify-section--collection-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_parallax",
+      "label": "Enable parallax effect",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_title",
+      "label": "Show collection title",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_description",
+      "label": "Show collection description",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "label": "Show collection image",
+      "info": "[Learn more](https://help.shopify.com/en/manual/products/collections/collection-layout#add-or-change-the-featured-image-for-a-collection) about adding or editing a collection image.",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "collection_title_size",
+      "label": "Collection title size",
+      "options": [
+        {
+          "value": "h0",
+          "label": "Hero"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h0"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Original image ratio"
+        },
+        {
+          "value": "sm",
+          "label": "Small"
+        },
+        {
+          "value": "md",
+          "label": "Medium"
+        },
+        {
+          "value": "lg",
+          "label": "Large"
+        }
+      ],
+      "info": "Choose \"Original image ratio\" to avoid image cropping. [Learn more](https://help.shopify.com/en/manual/online-store/images/theme-images#best-practices-for-slideshows-and-full-widtw-images)",
+      "default": "auto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "3200 x 1600px .jpg recommended. Default to collection image."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image",
+      "info": "1300 x 1500px .jpg recommended. Default to desktop image."
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_position",
+      "label": "Mobile content position",
+      "options": [
+        {
+          "value": "place-self-start text-start",
+          "label": "Top left"
+        },
+        {
+          "value": "place-self-start-center text-center",
+          "label": "Top center"
+        },
+        {
+          "value": "place-self-start-end text-end",
+          "label": "Top right"
+        },
+        {
+          "value": "place-self-center-start text-start",
+          "label": "Middle left"
+        },
+        {
+          "value": "place-self-center text-center",
+          "label": "Middle center"
+        },
+        {
+          "value": "place-self-center-end text-end",
+          "label": "Middle right"
+        },
+        {
+          "value": "place-self-end-start text-start",
+          "label": "Bottom left"
+        },
+        {
+          "value": "place-self-end-center text-center",
+          "label": "Bottom center"
+        },
+        {
+          "value": "place-self-end text-end",
+          "label": "Bottom right"
+        }
+      ],
+      "default": "place-self-center text-center"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_position",
+      "label": "Desktop content position",
+      "options": [
+        {
+          "value": "sm:place-self-start sm:text-start",
+          "label": "Top left"
+        },
+        {
+          "value": "sm:place-self-start-center sm:text-center",
+          "label": "Top center"
+        },
+        {
+          "value": "sm:place-self-start-end sm:text-end",
+          "label": "Top right"
+        },
+        {
+          "value": "sm:place-self-center-start sm:text-start",
+          "label": "Middle left"
+        },
+        {
+          "value": "sm:place-self-center sm:text-center",
+          "label": "Middle center"
+        },
+        {
+          "value": "sm:place-self-center-end sm:text-end",
+          "label": "Middle right"
+        }
+      ],
+      "default": "sm:place-self-center sm:text-center"
+    },
+    {
+      "type": "header",
+      "content": "Featured product",
+      "info": "This product won't show on small screens or collection that do not show image."
+    },
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "featured_product_heading",
+      "label": "Heading",
+      "default": "Featured product"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Ignored when no image is used."
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    }
+  ]
+}
+{% endschema %}

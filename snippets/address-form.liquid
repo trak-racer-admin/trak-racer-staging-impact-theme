@@ -1,0 +1,97 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+CUSTOMER ADDRESS
+----------------------------------------------------------------------------------------------------------------------
+
+Generate the drawer and all the associated fields for a customer address. This handles both the new address and
+existing address.
+
+********************************************
+Supported parameters
+********************************************
+
+* address: the address to edit, or "customer.new_address" to create a new one
+{%- endcomment -%}
+
+<x-drawer id="customer-address-{{ address.id | default: 'new' }}" class="drawer drawer--lg">
+  {%- if address.id != blank -%}
+    <h2 class="h5" slot="header">{{ 'customer.addresses.edit_address' | t }}</h2>
+  {%- else -%}
+    <h2 class="h5" slot="header">{{ 'customer.addresses.add_address' | t }}</h2>
+  {%- endif -%}
+
+  {%- form 'customer_address', address -%}
+    <div class="address-form">
+      <p class="text-start">{{ 'customer.addresses.fill_form' | t }}</p>
+
+      <div class="form">
+        <div class="fieldset">
+          {%- assign first_name_label = 'customer.addresses.first_name' | t -%}
+          {%- assign last_name_label = 'customer.addresses.last_name' | t -%}
+          {%- assign company_label = 'customer.addresses.company' | t -%}
+          {%- assign phone_label = 'customer.addresses.phone' | t -%}
+          {%- assign address1_label = 'customer.addresses.address1' | t -%}
+          {%- assign address2_label = 'customer.addresses.address2' | t -%}
+          {%- assign city_label = 'customer.addresses.city' | t -%}
+          {%- assign zip_label = 'customer.addresses.zip' | t -%}
+          {%- assign country_label = 'customer.addresses.country' | t -%}
+          {%- assign province_label = 'customer.addresses.province' | t -%}
+          {%- assign set_default_label = 'customer.addresses.set_default' | t -%}
+
+          {%- if request.locale.iso_code == 'ja' -%}
+            <div class="input-row">
+              {%- render 'input', name: 'address[last_name]', label: last_name_label, value: form.last_name, autocomplete: 'family-name' -%}
+              {%- render 'input', name: 'address[first_name]', label: first_name_label, value: form.first_name, autocomplete: 'given-name' -%}
+            </div>
+
+            {%- render 'input', name: 'address[zip]', label: zip_label, value: form.zip, autocomplete: 'postal-code', autocapitalize: 'characters' -%}
+
+            <country-selector class="contents" country="{{ form.country | escape }}" province="{{ form.province | escape }}">
+              {%- render 'select', name: 'address[country]', label: country_label, options: all_country_option_tags, autocomplete: 'country' -%}
+              {%- render 'select', name: 'address[province]', label: province_label, autocomplete: 'address-level1' -%}
+            </country-selector>
+
+            {%- render 'input', name: 'address[city]', label: city_label, value: form.city, autocomplete: 'address-level2' -%}
+            {%- render 'input', name: 'address[address1]', label: address1_label, value: form.address1, autocomplete: 'address-line1' -%}
+            {%- render 'input', name: 'address[address2]', label: address2_label, value: form.address2, autocomplete: 'address-line2' -%}
+            {%- render 'input', name: 'address[company]', label: company_label, value: form.company, autocomplete: 'organization' -%}
+            {%- render 'input', type: 'tel', name: 'address[phone]', label: phone_label, value: form.phone, autocomplete: 'tel' -%}
+          {%- else -%}
+            <div class="input-row">
+              {%- render 'input', name: 'address[first_name]', label: first_name_label, value: form.first_name, autocomplete: 'given-name' -%}
+              {%- render 'input', name: 'address[last_name]', label: last_name_label, value: form.last_name, autocomplete: 'family-name' -%}
+            </div>
+
+            {%- render 'input', name: 'address[company]', label: company_label, value: form.company, autocomplete: 'organization' -%}
+            {%- render 'input', type: 'tel', name: 'address[phone]', label: phone_label, value: form.phone, autocomplete: 'tel' -%}
+            {%- render 'input', name: 'address[address1]', label: address1_label, value: form.address1, autocomplete: 'address-line1' -%}
+            {%- render 'input', name: 'address[address2]', label: address2_label, value: form.address2, autocomplete: 'address-line2' -%}
+
+            <div class="input-row">
+              {%- render 'input', name: 'address[city]', label: city_label, value: form.city, autocomplete: 'address-level2' -%}
+              {%- render 'input', name: 'address[zip]', label: zip_label, value: form.zip, autocomplete: 'postal-code', autocapitalize: 'characters' -%}
+            </div>
+
+            <country-selector class="contents" country="{{ form.country | escape }}" province="{{ form.province | escape }}">
+              {%- render 'select', name: 'address[country]', label: country_label, options: all_country_option_tags, autocomplete: 'country' -%}
+              {%- render 'select', name: 'address[province]', label: province_label, autocomplete: 'address-level1' -%}
+            </country-selector>
+          {%- endif -%}
+
+          <div class="checkbox-container">
+            {%- if address.id == customer.default_address.id -%}
+              {%- assign is_default_address = true -%}
+            {%- else -%}
+              {%- assign is_default_address = false -%}
+            {%- endif -%}
+
+            {%- render 'checkbox', name: 'address[default]', label: set_default_label, value: 1, checked: is_default_address -%}
+          </div>
+        </div>
+
+        {%- assign save_button = 'customer.addresses.save_address' | t -%}
+        {%- render 'button', type: 'submit', content: save_button, size: 'xl', stretch: true -%}
+      </div>
+    </div>
+  {%- endform -%}
+</x-drawer>

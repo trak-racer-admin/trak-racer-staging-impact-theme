@@ -1,0 +1,121 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+OPTION SWATCH
+----------------------------------------------------------------------------------------------------------------------
+
+This component renders a single option swatch. The supported options depend on the type of swatch.
+
+********************************************
+Supported variables
+********************************************
+
+* selected: if set to true, this swatch is preselected
+* allow_multiple: if set to true, it allows several values to be selected (by using a checkbox instead of radio)
+* value: the color value
+* name: the name attribute when field is submitted
+* disabled: if set to true allow to disable the swatch
+* href: if a link is provided, the swatch is created as a link instead of an input
+* form: the form id to use for the input
+
+Media swatch specific parameters:
+
+* media: the media to use
+* size: can be 'sm' to make it smaller
+* bordered: if set to true, a border is added when the media is not selected
+
+Block swatch specific parameters
+
+* show_color: if set to true, show the color as a small tile.
+
+Color swatch specific parameters:
+
+* size: can be 'sm' to make it smaller
+* show_tooltip: if set to true, display a tooltip on hover
+{%- endcomment -%}
+
+{%- capture id -%}swatch-{{ section.id }}-{{ form }}-{{ context }}-{{ name | handle }}-{{ value | handle }}{%- endcapture -%}
+
+{%- if swatch == 'color' or swatch == 'block' and show_color -%}
+  {%- assign swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+
+  {%- assign value_downcase = value | downcase -%}
+  {%- assign swatch_style = '--swatch-background: ' | append: value_downcase -%}
+
+  {%- for swatch_item in swatch_config -%}
+    {%- assign swatch_parts = swatch_item | split: ':' -%}
+    {%- assign swatch_name = swatch_parts.first | downcase | strip -%}
+
+    {%- if value_downcase == swatch_name -%}
+      {%- assign swatch_value = swatch_parts.last | strip -%}
+
+      {%- if swatch_value contains '#' -%}
+        {%- assign swatch_style = '--swatch-background: ' | append: swatch_value -%}
+      {%- elsif images[swatch_value] != blank -%}
+        {%- assign swatch_image = images[swatch_value] | image_url: width: 72 -%}
+        {%- assign swatch_style = '--swatch-background: url(' | append: swatch_image | append: ')' -%}
+      {%- endif -%}
+
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- unless href -%}
+  <input class="sr-only" type="{% if allow_multiple %}checkbox{% else %}radio{% endif %}" name="{{ name }}" {% if form %}form="{{ form | escape }}"{% endif %} id="{{ id | escape }}" value="{{ value | escape }}" {% if disabled %}disabled{% endif %} {% if selected %}checked="checked"{% endif %}>
+{%- endunless -%}
+
+{%- case swatch -%}
+  {%- when 'media' -%}
+    {%- if media != blank -%}
+      {%- if href -%}
+        <a href="{{ href }}" class="media-swatch {% if size == 'sm' %}media-swatch--sm{% endif %} {% if selected %}is-selected{% endif %} {% if bordered %}border{% endif %}">
+          <span class="sr-only">{{ value }}</span>
+          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120', class: 'object-cover' -}}
+        </a>
+      {%- else -%}
+        <label class="media-swatch {% if size == 'sm' %}media-swatch--sm{% endif %} {% if bordered %}border{% endif %}" for="{{ id | escape }}" data-option-value>
+          <span class="sr-only">{{ value }}</span>
+          {{- media | image_url: width: media.width | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120', class: 'object-cover' -}}
+        </label>
+      {%- endif -%}
+    {%- else -%}
+      <label class="block-swatch" for="{{ id | escape }}" data-option-value>{{ value }}</label>
+    {%- endif -%}
+
+  {%- when 'block' -%}
+    {%- assign white_label = 'general.label.white' | t | downcase -%}
+    {%- assign value_downcase = value | downcase -%}
+
+    {%- if href -%}
+      <a href="{{ href }}" class="block-swatch {% if selected %}is-selected{% endif %}">
+        {%- if show_color -%}
+          <span class="block-swatch__color {% if white_label == value_downcase %}ring-inset{% endif %}" style="{{ swatch_style }}"></span>
+        {%- endif -%}
+
+        <span>{{ value }}</span>
+      </a>
+
+    {%- else -%}
+      <label class="block-swatch" for="{{ id | escape }}" data-option-value>
+        {%- if show_color -%}
+          <span class="block-swatch__color {% if white_label == value_downcase %}ring-inset{% endif %}" style="{{ swatch_style }}"></span>
+        {%- endif -%}
+
+        <span>{{ value }}</span>
+      </label>
+    {%- endif -%}
+
+  {%- when 'color' -%}
+    {%- assign white_label = 'general.label.white' | t | downcase -%}
+    {%- assign value_downcase = value | downcase -%}
+
+    {%- if href -%}
+      <a href="{{ href }}" class="color-swatch {% if settings.color_swatch_style == 'rectangle' %}color-swatch--rectangle{% endif %} {% if size == 'sm' %}color-swatch--sm{% endif %} {% if selected %}is-selected{% endif %} {% if white_label == value_downcase %}ring-inset{% endif %} {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %}" {% if show_tooltip %}data-tooltip="{{ value | escape }}"{% endif %} style="{{ swatch_style }}">
+        <span class="sr-only">{{ value }}</span>
+      </a>
+    {%- else -%}
+      <label class="color-swatch {% if settings.color_swatch_style == 'rectangle' %}color-swatch--rectangle{% endif %} {% if size == 'sm' %}color-swatch--sm{% endif %} {% if white_label == value_downcase %}ring-inset{% endif %} {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %}" for="{{ id | escape }}" data-option-value {% if show_tooltip %}data-tooltip="{{ value | escape }}"{% endif %} style="{{ swatch_style }}">
+        <span class="sr-only">{{ value }}</span>
+      </label>
+    {%- endif -%}
+{%- endcase -%}

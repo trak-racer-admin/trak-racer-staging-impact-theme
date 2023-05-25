@@ -1,0 +1,910 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Impact",
+    "theme_author": "Maestrooo",
+    "theme_version": "4.3.1",
+    "theme_documentation_url": "https://support.maestrooo.com/",
+    "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
+  },
+  {
+    "name": "Appearance and spacing",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Adapt the theme to your brand style by changing rounded elements, spacing and icons style."
+      },
+      {
+        "type": "range",
+        "id": "page_width",
+        "min": 1300,
+        "max": 1800,
+        "step": 20,
+        "unit": "px",
+        "label": "Page width",
+        "default": 1600
+      },
+      {
+        "type": "header",
+        "content": "Section spacing"
+      },
+      {
+        "type": "select",
+        "id": "section_vertical_spacing",
+        "label": "Vertical space between sections",
+        "options": [
+          {
+            "value": "xsmall",
+            "label": "X-Small"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "section_boxed_horizontal_spacing",
+        "label": "Horizontal space inside sections",
+        "options": [
+          {
+            "value": "xsmall",
+            "label": "X-Small"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "header",
+        "content": "Rounding"
+      },
+      {
+        "type": "range",
+        "id": "button_border_radius",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Button corner radius",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "input_border_radius",
+        "min": 0,
+        "max": 10,
+        "step": 2,
+        "unit": "px",
+        "label": "Input corner radius",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "block_border_radius",
+        "min": 0,
+        "max": 64,
+        "step": 4,
+        "unit": "px",
+        "label": "Block corner radius",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Shadow"
+      },
+      {
+        "type": "range",
+        "id": "block_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "unit": "%",
+        "label": "Opacity",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "block_shadow_horizontal_offset",
+        "min": -32,
+        "max": 32,
+        "step": 2,
+        "unit": "px",
+        "label": "Horizontal offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "block_shadow_vertical_offset",
+        "min": -32,
+        "max": 32,
+        "step": 2,
+        "unit": "px",
+        "label": "Vertical offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "block_shadow_blur",
+        "min": 0,
+        "max": 60,
+        "step": 5,
+        "unit": "px",
+        "label": "Blur",
+        "default": 50
+      },
+      {
+        "type": "header",
+        "content": "Icon"
+      },
+      {
+        "type": "range",
+        "id": "icon_stroke_width",
+        "min": 1,
+        "max": 2,
+        "step": 0.1,
+        "unit": "px",
+        "label": "Icon thickness",
+        "default": 2
+      },
+      {
+        "type": "select",
+        "id": "icon_style",
+        "label": "Icon style",
+        "info": "Not all icons have duo-tone style.",
+        "options": [
+          {
+            "value": "mono",
+            "label": "Monochrome"
+          },
+          {
+            "value": "duo",
+            "label": "Duo-tone"
+          }
+        ],
+        "default": "duo"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "options": [
+          {
+            "value": "fill",
+            "label": "Fill"
+          },
+          {
+            "value": "outline",
+            "label": "Outline"
+          }
+        ],
+        "default": "fill"
+      },
+      {
+        "type": "select",
+        "id": "button_hover_effect",
+        "label": "Hover effect",
+        "info": "Hover is not available on touch devices (phone, tablet...).",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "reverse",
+            "label": "Reverse style"
+          }
+        ],
+        "default": "fade"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text",
+        "default": "#677279"
+      },
+      {
+        "type": "color",
+        "id": "success_color",
+        "label": "Success",
+        "default": "#00a341"
+      },
+      {
+        "type": "color",
+        "id": "warning_color",
+        "label": "Warning",
+        "default": "#ffb74a"
+      },
+      {
+        "type": "color",
+        "id": "error_color",
+        "label": "Error",
+        "default": "#f83a3a"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "header_background",
+        "label": "Background",
+        "default": "#1e316a"
+      },
+      {
+        "type": "color",
+        "id": "header_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "footer_background",
+        "label": "Background",
+        "default": "#f3f5f6"
+      },
+      {
+        "type": "color",
+        "id": "footer_text_color",
+        "label": "Text",
+        "default": "#677279"
+      },
+      {
+        "type": "header",
+        "content": "Drawer/popover"
+      },
+      {
+        "type": "color",
+        "id": "dialog_background",
+        "label": "Modal/popover background",
+        "info": "Choose a color similar to the primary background.",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Primary button"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_background",
+        "label": "Background",
+        "default": "#00badb"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_text_color",
+        "label": "Text",
+        "default": "#677279"
+      },
+      {
+        "type": "header",
+        "content": "Secondary button"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_background",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Product",
+        "info": "[Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label) about setting custom badges."
+      },
+      {
+        "type": "color",
+        "id": "product_card_background",
+        "label": "Card background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "product_card_text_color",
+        "label": "Card text",
+        "default": "#677279"
+      },
+      {
+        "type": "color",
+        "id": "product_rating_color",
+        "label": "Star rating",
+        "default": "#ffb74a"
+      },
+      {
+        "type": "color",
+        "id": "product_on_sale_accent",
+        "label": "On sale accent",
+        "default": "#f83a3a"
+      },
+      {
+        "type": "color",
+        "id": "product_sold_out_badge_background",
+        "label": "Sold out badge",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "product_primary_badge_background",
+        "label": "Custom badge",
+        "default": "#1e316a"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Font",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "select",
+        "id": "heading_font_size",
+        "label": "Heading size",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "heading_text_transform",
+        "label": "Heading style",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "lowercase",
+            "label": "Lowercase"
+          },
+          {
+            "value": "uppercase",
+            "label": "Uppercase"
+          }
+        ],
+        "default": "normal"
+      },
+      {
+        "type": "range",
+        "min": -5,
+        "max": 10,
+        "step": 0.5,
+        "unit": "%",
+        "id": "heading_letter_spacing",
+        "label": "Heading letter spacing",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Body text"
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Font",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size_mobile",
+        "label": "Base size (mobile)",
+        "min": 11,
+        "max": 20,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "text_font_size_desktop",
+        "label": "Base size (tablet and desktop)",
+        "min": 11,
+        "max": 20,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "min": -5,
+        "max": 10,
+        "step": 0.5,
+        "unit": "%",
+        "id": "text_font_letter_spacing",
+        "label": "Body letter spacing",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Currency format",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Currency codes"
+      },
+      {
+        "type": "paragraph",
+        "content": "Cart and checkout total prices always show currency codes. Example: $1.00 USD."
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_code_enabled",
+        "label": "Show currency codes",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "Animation",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Users who configured their preferences to minimize non-essential motion will automatically experience reduced animations."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_page_transition",
+        "label": "Show page transition",
+        "info": "Fade in and out when the page changes.",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "zoom_image_on_hover",
+        "label": "Zoom image on hover",
+        "info": "Various images are zoomed when hovered.",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "reduce_drawer_animation",
+        "label": "Reduce drawer animation",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "reduce_menu_animation",
+        "label": "Reduce header menu animation",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "heading_apparition",
+        "label": "Heading apparition",
+        "info": "Line by line apparition can't be used for gradient heading. [Learn more](https://support.maestrooo.com/article/299-limitation-for-gradients-on-impact-theme)",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "split_fade",
+            "label": "Line by line, fade"
+          },
+          {
+            "value": "split_clip",
+            "label": "Line by line, clipped"
+          },
+          {
+            "value": "split_rotation",
+            "label": "Line by line, rotated"
+          }
+        ],
+        "default": "split_rotation"
+      }
+    ]
+  },
+  {
+    "name": "Color swatch",
+    "settings": [
+      {
+        "type": "select",
+        "id": "color_swatch_style",
+        "label": "Style",
+        "options": [
+          {
+            "value": "square",
+            "label": "Square"
+          },
+          {
+            "value": "rectangle",
+            "label": "Rectangle"
+          },
+          {
+            "value": "round",
+            "label": "Round"
+          }
+        ],
+        "default": "round"
+      },
+      {
+        "type": "textarea",
+        "id": "color_swatch_config",
+        "label": "Configuration",
+        "placeholder": "Red:#ff0000\nGreen:#00ff00\nBlue:#0000ff",
+        "info": "Each rule must be in its own line. [Learn more](https://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
+      }
+    ]
+  },
+  {
+    "name": "Product card",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_secondary_image",
+        "label": "Show secondary image on hover",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quick_buy",
+        "label": "Show quick buy",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_rating",
+        "label": "Show product rating",
+        "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "product_rating_mode",
+        "label": "Show product rating as...",
+        "options": [
+          {
+            "value": "rating",
+            "label": "Average rating (e.g. \"4.5\")"
+          },
+          {
+            "value": "count",
+            "label": "Count (e.g. \"3 reviews\")"
+          }
+        ],
+        "default": "rating"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_sold_out_badge",
+        "label": "Show sold out badge",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_discount",
+        "label": "Show discount badge",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "discount_mode",
+        "label": "Show discount as...",
+        "options": [
+          {
+            "value": "percentage",
+            "label": "Percentage"
+          },
+          {
+            "value": "saving",
+            "label": "Saving"
+          }
+        ],
+        "default": "saving"
+      },
+      {
+        "type": "select",
+        "id": "product_color_display",
+        "label": "Color display mode",
+        "info": "Variant images are hidden on mobile and small screens.",
+        "options": [
+          {
+            "value": "hide",
+            "label": "Hide"
+          },
+          {
+            "value": "count",
+            "label": "Count"
+          },
+          {
+            "value": "swatch",
+            "label": "Swatch"
+          },
+          {
+            "value": "variant",
+            "label": "Variant image"
+          }
+        ],
+        "default": "count"
+      },
+      {
+        "type": "select",
+        "id": "product_image_aspect_ratio",
+        "label": "Product image size",
+        "options": [
+          {
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "value": "short",
+            "label": "Short (4:3)"
+          },
+          {
+            "value": "square",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "tall",
+            "label": "Tall (2:3)"
+          },
+          {
+            "value": "short_crop",
+            "label": "Short (4:3) - fill card"
+          },
+          {
+            "value": "square_crop",
+            "label": "Square (1:1) - fill card"
+          },
+          {
+            "value": "tall_crop",
+            "label": "Tall (2:3) - fill card"
+          }
+        ],
+        "default": "natural"
+      },
+      {
+        "type": "select",
+        "id": "product_info_alignment",
+        "label": "Product info alignment",
+        "options": [
+          {
+            "value": "start",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ],
+        "default": "start"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "popover",
+            "label": "Confirmation popup"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "popover"
+      },
+      {
+        "type": "url",
+        "id": "cart_empty_button_link",
+        "label": "Empty button link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "header",
+        "content": "Free shipping bar",
+        "info": "Show a shipping bar advancement on cart page and cart drawer. Configure your [shipping rates](/admin/settings/shipping) to match the amount."
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_free_shipping_threshold",
+        "label": "Show shipping bar",
+        "default": false
+      },
+      {
+        "type": "number",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free shipping minimum amount",
+        "info": "Indicate the value in your store main currency.",
+        "default": 50
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Accounts"
+      },
+      {
+        "type": "url",
+        "id": "social_facebook",
+        "label": "Facebook"
+      },
+      {
+        "type": "url",
+        "id": "social_twitter",
+        "label": "Twitter"
+      },
+      {
+        "type": "url",
+        "id": "social_pinterest",
+        "label": "Pinterest"
+      },
+      {
+        "type": "url",
+        "id": "social_instagram",
+        "label": "Instagram"
+      },
+      {
+        "type": "url",
+        "id": "social_vimeo",
+        "label": "Vimeo"
+      },
+      {
+        "type": "url",
+        "id": "social_whatsapp",
+        "label": "WhatsApp"
+      },
+      {
+        "type": "url",
+        "id": "social_tumblr",
+        "label": "Tumblr"
+      },
+      {
+        "type": "url",
+        "id": "social_youtube",
+        "label": "YouTube"
+      },
+      {
+        "type": "url",
+        "id": "social_tiktok",
+        "label": "TikTok"
+      },
+      {
+        "type": "url",
+        "id": "social_linkedin",
+        "label": "LinkedIn"
+      },
+      {
+        "type": "url",
+        "id": "social_snapchat",
+        "label": "Snapchat"
+      },
+      {
+        "type": "url",
+        "id": "social_fancy",
+        "label": "Fancy"
+      },
+      {
+        "type": "url",
+        "id": "social_wechat",
+        "label": "WeChat"
+      },
+      {
+        "type": "url",
+        "id": "social_reddit",
+        "label": "Reddit"
+      },
+      {
+        "type": "url",
+        "id": "social_line",
+        "label": "LINE"
+      },
+      {
+        "type": "url",
+        "id": "social_spotify",
+        "label": "Spotify"
+      },
+      {
+        "type": "url",
+        "id": "social_21buttons",
+        "label": "21 Buttons"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Image",
+        "info": "180 x 180px .png recommended"
+      }
+    ]
+  }
+]

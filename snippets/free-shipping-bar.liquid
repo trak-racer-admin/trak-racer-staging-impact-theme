@@ -1,0 +1,43 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+FREE SHIPPING BAR
+----------------------------------------------------------------------------------------------------------------------
+
+Renders the free shipping bar component. It is used on cart page and cart drawer to render the remaining amount before
+being eligible for free shipping.
+
+********************************************
+Supported variables
+********************************************
+
+* size: accept the value "sm"
+{%- endcomment -%}
+
+{%- liquid
+  assign calculated_total_price = 0
+
+  for line_item in cart.items
+    if line_item.requires_shipping
+      assign calculated_total_price = calculated_total_price | plus: line_item.final_line_price
+    endif
+  endfor
+
+  # We have to remove the cart level discount from the calculated amount
+
+  assign total_cart_discount = 0
+
+  for discount_application in cart.cart_level_discount_applications
+    assign total_cart_discount = total_cart_discount | plus: discount_application.total_allocated_amount
+  endfor
+
+  assign calculated_total_price = calculated_total_price | minus: total_cart_discount
+-%}
+
+{%- if cart.requires_shipping -%}
+  <free-shipping-bar class="free-shipping-bar" threshold="{{ settings.cart_free_shipping_threshold | times: 100.0 }}" total-price="{{ calculated_total_price }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
+    {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
+    <span>&nbsp;</span>
+
+    <progress-bar class="progress-bar" role="progressbar" aria-valuemin="0" style="--progress: 0"></progress-bar>
+  </free-shipping-bar>
+{%- endif -%}

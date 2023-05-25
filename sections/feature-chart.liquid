@@ -1,0 +1,671 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign text_position = section.settings.text_position -%}
+{%- assign values_column_count = section.blocks | where: 'type', 'values' | size -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --feature-chart-values-columns-count: {{ values_column_count }};
+  }
+
+  @media screen and (min-width: 700px) {
+    {%- if text_position == 'center' -%}
+      #shopify-section-{{ section.id }} .section-stack__main {
+        width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}900px{% else %}auto{% endif %};
+        min-width: 680px;
+      }
+    {%- else -%}
+      #shopify-section-{{ section.id }} .section-stack {
+        flex-wrap: wrap;
+        justify-content: start;
+      }
+
+      #shopify-section-{{ section.id }} .section-stack__intro {
+        flex: 1 0 350px; /* Allow to grow and shrink with a range from 350px to 750px */
+        max-width: 750px;
+        width: auto;
+      }
+
+      #shopify-section-{{ section.id }} .section-stack__main {
+        flex: 1 1 {% if values_column_count == 1 %}600px{% elsif values_column_count == 2 %}900px{% else %}auto{% endif %};
+        min-width: 450px;
+        width: auto;
+      }
+    {%- endif -%}
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
+    {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank or section.settings.button_text != blank -%}
+      <div class="section-stack__intro">
+        <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
+          {%- if section.settings.subheading != blank -%}
+            <p class="bold">{{ section.settings.subheading | escape }}</p>
+          {%- endif -%}
+
+          {%- if section.settings.title != blank -%}
+            <h2 class="h2">
+              {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
+            </h2>
+          {%- endif -%}
+
+          {{- section.settings.content -}}
+
+          {%- if section.settings.button_text != blank -%}
+            {%- render 'button', size: 'lg', href: section.settings.button_url, content: section.settings.button_text, background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="section-stack__main">
+      {%- assign text_color = section.settings.chart_text_color | default: settings.text_color -%}
+      {%- assign background_color = section.settings.chart_background -%}
+
+      {%- if background_color == blank or background_color == 'rgba(0,0,0,0)' -%}
+        {%- assign background_color = settings.background | color_mix: text_color, 95 -%}
+      {%- endif -%}
+
+      <feature-chart max-rows="{{ section.settings.max_rows }}" {% render 'surface', class: 'feature-chart', background: background_color, text_color: text_color %}>
+        {%- assign has_product = false -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'values' and block.settings.product != blank -%}
+            {%- assign has_product = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        <div class="feature-chart__table {% if values_column_count > 1 %}feature-chart__table--multi-columns{% endif %} {% if has_product %}feature-chart__table--product{% endif %} divide-y scroll-area">
+          {%- assign headings_block = section.blocks | where: 'type', 'headings' | first -%}
+          {%- assign values_blocks = section.blocks | where: 'type', 'values' -%}
+          {%- assign outputted_count = 0 -%}
+          {%- assign total_rows_count = 0 -%}
+
+          {%- for i in (1..20) -%}
+            {%- assign heading_key = 'heading_' | append: i -%}
+            {%- assign value_key = 'value_' | append: i -%}
+
+            {%- assign heading_value = headings_block.settings[heading_key] -%}
+
+            {%- comment -%}We only output the line if at least one value is defined{%- endcomment -%}
+            {%- if heading_value != blank and values_blocks[0].settings[value_key] != blank or values_blocks[1].settings[value_key] != blank or values_blocks[2].settings[value_key] != blank -%}
+              {%- assign total_rows_count = total_rows_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- comment -%}We need to create a first row for the products if any{%- endcomment -%}
+          {%- if has_product -%}
+            {%- capture product_row -%}
+              {%- for i in (0..2) -%}
+                {%- if values_blocks[i].settings.product != blank -%}
+                  {%- assign chart_product = values_blocks[i].settings.product -%}
+
+                  <div class="feature-chart__product">
+                    {%- if section.settings.viewing_product != blank and request.page_type == 'product' and product == chart_product -%}
+                      <span class="badge">{{ section.settings.viewing_product }}</span>
+                    {%- endif -%}
+
+                    {%- if chart_product.featured_media -%}
+                      <a href="{{ chart_product.url }}">
+                        {{- chart_product.featured_image | image_url: width: chart_product.featured_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 80px, 150px', widths: '80,150,160,300' -}}
+                      </a>
+                    {%- endif -%}
+
+                    {%- capture color_swatch -%}
+                      {%- if section.settings.show_product_swatch -%}
+                        {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+
+                        {%- for color_label in color_label_list -%}
+                          {%- if chart_product.options_by_name[color_label] != blank -%}
+                            <div class="h-stack gap-2 sm:gap-2-5">
+                              {%- for color_name in chart_product.options_by_name[color_label].values -%}
+                                {%- assign product_option = chart_product.options_by_name[color_label] -%}
+                                {%- assign product_option_name = 'option' | append: product_option.position -%}
+                                {%- assign first_variant = chart_product.variants | where: product_option_name, color_name | first -%}
+
+                                {%- render 'swatch' with 'color', value: color_name, href: first_variant.url, size: 'sm' -%}
+                              {%- endfor -%}
+                            </div>
+
+                            {%- break -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endif -%}
+                    {%- endcapture -%}
+
+                    <div class="v-stack {% if color_swatch != blank %}gap-6{% else %}gap-5{% endif %}">
+                      <div class="v-stack gap-2">
+                        <div class="v-stack sm:gap-0.5">
+                          <a href="{{ chart_product.url }}" class="bold line-clamp">{{ chart_product.title }}</a>
+                          {%- render 'price-list', product: chart_product, hide_unit_price: true -%}
+                        </div>
+
+                        {{- color_swatch -}}
+                      </div>
+
+                      {%- if section.settings.view_product != blank -%}
+                        <div class="feature-chart__view-button-container hidden justify-self-start md:block">
+                          {%- render 'button', href: chart_product.url, content: section.settings.view_product, background: values_blocks[i].settings.view_button_background, text_color: values_blocks[i].settings.view_button_text_color, subdued: true -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endcapture -%}
+
+            <div class="feature-chart__table-row feature-chart__table-row--product">
+              {{- product_row -}}
+            </div>
+
+            {%- if total_rows_count > 6 -%}
+              <div class="feature-chart__table-row feature-chart__table-row--product feature-chart__table-row--sticky">
+                {{- product_row -}}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- for i in (1..20) -%}
+            {%- assign heading_key = 'heading_' | append: i -%}
+            {%- assign value_key = 'value_' | append: i -%}
+
+            {%- assign heading_value = headings_block.settings[heading_key] -%}
+
+            {%- comment -%}We only output the line if at least one value is defined{%- endcomment -%}
+            {%- if heading_value != blank and values_blocks[0].settings[value_key] != blank or values_blocks[1].settings[value_key] != blank or values_blocks[2].settings[value_key] != blank -%}
+              {%- assign outputted_count = outputted_count | plus: 1 -%}
+
+              <div class="feature-chart__table-row" {% if outputted_count > section.settings.max_rows %}hidden{% endif %}>
+                {%- if heading_value != blank -%}
+                  <div class="feature-chart__heading bold" {% if outputted_count == 0 %}{{ headings_block.shopify_attributes }}{% endif %}>{{ heading_value }}</div>
+                {%- endif -%}
+
+                {%- for i in (0..2) -%}
+                  {%- if values_blocks[i] != blank -%}
+                    {%- assign value = values_blocks[i].settings[value_key] -%}
+                    {%- assign stripped_value = value | strip_html | strip -%}
+
+                    <div class="feature-chart__value prose text-subdued" {% if outputted_count == 0 %}{{ values_blocks[i].shopify_attributes }}{% endif %}>
+                      {%- if stripped_value == 'FALSE' -%}
+                        <svg fill="none" class="icon offset-icon" width="16" height="16" viewBox="0 0 16 16" style="--icon-height: 16px">
+                          <path d="m.94 3.06 12 12 2.12-2.12-12-12L.94 3.06Zm2.12 12 12-12L12.94.94l-12 12 2.12 2.12Z" fill="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}"></path>
+                        </svg>
+                      {%- elsif stripped_value == 'TRUE' -%}
+                        <svg fill="none" class="icon offset-icon" width="20" height="16" viewBox="0 0 20 16" style="--icon-height: 16px">
+                          <path d="m2 7.6 5.259 5.6L18 2" stroke="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}" stroke-width="3"></path>
+                        </svg>
+                      {%- else -%}
+                        {{- value | default: '—' -}}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if outputted_count > section.settings.max_rows -%}
+          <div class="feature-chart__toggle">
+            <button data-action="toggle-rows" data-view-more="{{ section.settings.view_all_text | escape }}" data-view-less="{{ section.settings.view_less_text | escape }}" class="text-with-icon group">
+              <span class="feature-chart__toggle-text reversed-link">{{- section.settings.view_all_text | escape -}}</span>
+              <span class="circle-chevron group-hover:colors">{%- render 'icon' with 'chevron-bottom-small' -%}</span>
+            </button>
+          </div>
+        {%- endif -%}
+      </feature-chart>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature chart",
+  "class": "shopify-section--feature-chart",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Compare"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Product specification"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Give your customers useful information about your products and showcase differences between them.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "header",
+      "content": "Chart"
+    },
+    {
+      "type": "range",
+      "id": "max_rows",
+      "min": 1,
+      "max": 20,
+      "label": "Rows revealed by default",
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "View all text",
+      "default": "View all"
+    },
+    {
+      "type": "text",
+      "id": "view_less_text",
+      "label": "View less text",
+      "default": "View less"
+    },
+    {
+      "type": "text",
+      "id": "view_product",
+      "label": "View product button text",
+      "default": "View"
+    },
+    {
+      "type": "text",
+      "id": "viewing_product",
+      "label": "Currently viewing product label",
+      "info": "Badge added on the product page's main product."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_swatch",
+      "label": "Show product swatch",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    },
+    {
+      "type": "color",
+      "id": "chart_background",
+      "label": "Chart background"
+    },
+    {
+      "type": "color",
+      "id": "chart_text_color",
+      "label": "Chart text"
+    },
+    {
+      "type": "color",
+      "id": "chart_true_false_color",
+      "label": "True/false color"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Headings column",
+      "type": "headings",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "A heading without values is hidden automatically."
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading 1"
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Heading 2"
+        },
+        {
+          "type": "text",
+          "id": "heading_3",
+          "label": "Heading 3"
+        },
+        {
+          "type": "text",
+          "id": "heading_4",
+          "label": "Heading 4"
+        },
+        {
+          "type": "text",
+          "id": "heading_5",
+          "label": "Heading 5"
+        },
+        {
+          "type": "text",
+          "id": "heading_6",
+          "label": "Heading 6"
+        },
+        {
+          "type": "text",
+          "id": "heading_7",
+          "label": "Heading 7"
+        },
+        {
+          "type": "text",
+          "id": "heading_8",
+          "label": "Heading 8"
+        },
+        {
+          "type": "text",
+          "id": "heading_9",
+          "label": "Heading 9"
+        },
+        {
+          "type": "text",
+          "id": "heading_10",
+          "label": "Heading 10"
+        },
+        {
+          "type": "text",
+          "id": "heading_11",
+          "label": "Heading 11"
+        },
+        {
+          "type": "text",
+          "id": "heading_12",
+          "label": "Heading 12"
+        },
+        {
+          "type": "text",
+          "id": "heading_13",
+          "label": "Heading 13"
+        },
+        {
+          "type": "text",
+          "id": "heading_14",
+          "label": "Heading 14"
+        },
+        {
+          "type": "text",
+          "id": "heading_15",
+          "label": "Heading 15"
+        },
+        {
+          "type": "text",
+          "id": "heading_16",
+          "label": "Heading 16"
+        },
+        {
+          "type": "text",
+          "id": "heading_17",
+          "label": "Heading 17"
+        },
+        {
+          "type": "text",
+          "id": "heading_18",
+          "label": "Heading 18"
+        },
+        {
+          "type": "text",
+          "id": "heading_19",
+          "label": "Heading 19"
+        },
+        {
+          "type": "text",
+          "id": "heading_20",
+          "label": "Heading 20"
+        }
+      ]
+    },
+    {
+      "name": "Values column",
+      "type": "values",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product",
+          "info": "Select an optional product to connect metafields or to show product information."
+        },
+        {
+          "type": "richtext",
+          "id": "value_1",
+          "label": "Value 1"
+        },
+        {
+          "type": "richtext",
+          "id": "value_2",
+          "label": "Value 2"
+        },
+        {
+          "type": "richtext",
+          "id": "value_3",
+          "label": "Value 3"
+        },
+        {
+          "type": "richtext",
+          "id": "value_4",
+          "label": "Value 4"
+        },
+        {
+          "type": "richtext",
+          "id": "value_5",
+          "label": "Value 5"
+        },
+        {
+          "type": "richtext",
+          "id": "value_6",
+          "label": "Value 6"
+        },
+        {
+          "type": "richtext",
+          "id": "value_7",
+          "label": "Value 7"
+        },
+        {
+          "type": "richtext",
+          "id": "value_8",
+          "label": "Value 8"
+        },
+        {
+          "type": "richtext",
+          "id": "value_9",
+          "label": "Value 9"
+        },
+        {
+          "type": "richtext",
+          "id": "value_10",
+          "label": "Value 10"
+        },
+        {
+          "type": "richtext",
+          "id": "value_11",
+          "label": "Value 11"
+        },
+        {
+          "type": "richtext",
+          "id": "value_12",
+          "label": "Value 12"
+        },
+        {
+          "type": "richtext",
+          "id": "value_13",
+          "label": "Value 13"
+        },
+        {
+          "type": "richtext",
+          "id": "value_14",
+          "label": "Value 14"
+        },
+        {
+          "type": "richtext",
+          "id": "value_15",
+          "label": "Value 15"
+        },
+        {
+          "type": "richtext",
+          "id": "value_16",
+          "label": "Value 16"
+        },
+        {
+          "type": "richtext",
+          "id": "value_17",
+          "label": "Value 17"
+        },
+        {
+          "type": "richtext",
+          "id": "value_18",
+          "label": "Value 18"
+        },
+        {
+          "type": "richtext",
+          "id": "value_19",
+          "label": "Value 19"
+        },
+        {
+          "type": "richtext",
+          "id": "value_20",
+          "label": "Value 20"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "view_button_background",
+          "label": "View product button background"
+        },
+        {
+          "type": "color",
+          "id": "view_button_text_color",
+          "label": "View product button text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature chart",
+      "blocks": [
+        {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4"
+          }
+        },
+        {
+          "type": "values",
+          "settings": {
+            "value_1": "<p>Yes</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>No</p>"
+          }
+        },
+        {
+          "type": "values",
+          "settings": {
+            "value_1": "<p>No</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "<p>No</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,157 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+VERTICAL FACETING
+----------------------------------------------------------------------------------------------------------------------
+
+Show the faceting in vertical mode (notably used on desktop for the sidebar and on mobile mode). This snippet supports
+the following options:
+
+********************************************
+Supported variables
+********************************************
+
+* results: either collection or search drop to extract the filters from
+* show_sort_by: whether the sort by is added or not
+* show_filters: whether the filters are visible or not
+* update_on_change: if set to true the results will reload as soon as an option is changed
+{%- endcomment -%}
+
+{%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{%- capture context -%}{% if update_on_change %}sidebar{% else %}drawer{% endif %}{%- endcapture -%}
+{%- capture id_prefix -%}facets-{{ context }}-{{ section.id }}{%- endcapture -%}
+
+<form id="facet-form" is="facet-form" section-id="{{ section.id }}" {% if update_on_change %}update-on-change{% endif %} method="GET" action="{{ request.path }}" class="facets-vertical">
+  {%- comment -%}We always reset to the first page so that when criteria change, the page is restored to the first one{%- endcomment -%}
+  <input type="hidden" name="page" value="">
+  <input type="hidden" name="section_id" value="{{ section.id }}" disabled>
+
+  {%- if results.current_type != blank or results.current_vendor != blank -%}
+    <input type="hidden" name="q" value="{{ results.current_vendor | default: results.current_type | escape }}">
+  {%- endif -%}
+
+  {%- if request.page_type == 'search' -%}
+    <input type="hidden" name="q" value="{{ results.terms | escape }}">
+    <input type="hidden" name="type" value="product">
+  {%- endif -%}
+
+  {%- if show_sort_by -%}
+    {%- capture accordion_content -%}
+      <div class="checkbox-list">
+        {%- assign selected_sort_by = results.sort_by | default: results.default_sort_by -%}
+
+        {%- for option in results.sort_options -%}
+          {%- if option.name != blank -%}
+            {%- if option.value == selected_sort_by -%}
+              {%- assign checked = true -%}
+            {%- else -%}
+              {%- assign checked = false -%}
+            {%- endif -%}
+
+            {%- render 'checkbox', type: 'radio', label: option.name, name: 'sort_by', value: option.value, checked: checked, context: context -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endcapture -%}
+
+    {%- assign sort_by_label = 'collection.faceting.sort_by' | t -%}
+    {%- render 'accordion', title: sort_by_label, content: accordion_content, open: open_accordion, id: 'accordion-sort-by' -%}
+  {%- elsif results.sort_by != blank -%}
+    <input type="hidden" name="sort_by" value="{{ results.sort_by }}">
+  {%- endif -%}
+
+  {%- assign iterated_filters_count = 0 -%}
+
+  {%- if show_filters -%}
+    {%- for filter in results.filters -%}
+      {%- if filter.type == 'boolean' or filter.param_name == 'filter.v.availability' -%}
+        <div class="accordion">
+          <div class="accordion__toggle">
+            {%- if filter.param_name == 'filter.v.availability' -%}
+              <label for="{{ id_prefix }}-{{ filter.param_name }}" class="bold">{{- 'collection.faceting.availability_label' | t -}}</label>
+              <input id="{{ id_prefix }}-{{ filter.param_name }}" type="checkbox" class="switch" name="{{ filter.param_name }}" value="1" {% if filter.active_values.size > 0 %}checked{% endif %}>
+            {%- else -%}
+              <label for="{{ id_prefix }}-{{ filter.param_name }}" class="bold">{{- filter.label -}}</label>
+              <input id="{{ id_prefix }}-{{ filter.param_name }}" type="checkbox" class="switch" name="{{ filter.param_name }}" value="1" {% if filter.true_value.active %}checked{% endif %}>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- else -%}
+        {%- assign downcase_label = filter.label | downcase -%}
+
+        {%- if section.settings.show_empty_filter_values == false -%}
+          {%- assign empty_filter_values = filter.values | where: 'count', 0 | where: 'active', false -%}
+
+          {%- if empty_filter_values.size == filter.values.size -%}
+            {%- continue -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- capture accordion_content -%}
+          {%- case filter.type -%}
+            {%- when 'list' -%}
+              {%- if section.settings.show_color_swatch and color_label_list contains downcase_label -%}
+                <div class="h-stack wrap {% if settings.color_swatch_style == 'rectangle' %}gap-4{% else %}gap-2{% endif %}">
+                  {%- for filter_value in filter.values -%}
+                    {%- assign disabled = false -%}
+
+                    {%- if filter_value.count == 0 and filter_value.active == false -%}
+                      {% if section.settings.show_empty_filter_values == false %}
+                        {%- continue -%}
+                      {%- else -%}
+                        {%- assign disabled = true -%}
+                      {%- endif -%}
+                    {%- endif -%}
+
+                    {% render 'swatch' with 'color', allow_multiple: true, selected: filter_value.active, value: filter_value.label, name: filter_value.param_name, disabled: disabled, show_tooltip: true, context: context %}
+                  {%- endfor -%}
+                </div>
+              {%- else -%}
+                <div class="checkbox-list">
+                  {%- for filter_value in filter.values -%}
+                    {%- assign disabled = false -%}
+
+                    {%- if filter_value.count == 0 and filter_value.active == false -%}
+                      {% if section.settings.show_empty_filter_values == false %}
+                        {%- continue -%}
+                      {%- else -%}
+                        {%- assign disabled = true -%}
+                      {%- endif -%}
+                    {%- endif -%}
+
+                    {%- capture label -%}{{ filter_value.label }} {% if section.settings.show_filter_values_count %}({{ filter_value.count }}){% endif %}{%- endcapture -%}
+                    {%- render 'checkbox', label: label, name: filter_value.param_name, value: filter_value.value, checked: filter_value.active, disabled: disabled, context: context -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+
+            {%- when 'price_range' -%}
+              {%- render 'price-range', filter: filter -%}
+          {%- endcase -%}
+        {%- endcapture -%}
+
+        {%- if section.settings.open_first_filter_group and iterated_filters_count == 0 -%}
+          {%- assign open_accordion = true -%}
+        {%- else -%}
+          {%- assign open_accordion = false -%}
+        {%- endif -%}
+
+        {%- assign accordion_id = 'accordion-' | append: filter.param_name | handle -%}
+        {%- render 'accordion', title: filter.label, content: accordion_content, open: open_accordion, id: accordion_id -%}
+
+        {%- assign iterated_filters_count = iterated_filters_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- unless update_on_change -%}
+      <div class="facets-drawer__floating-apply">
+        {%- assign apply_label = 'collection.faceting.apply_filters' | t -%}
+        {%- render 'button', type: 'button', content: apply_label, size: 'xl', stretch: true, is: 'facet-apply-button' -%}
+      </div>
+    {%- endunless -%}
+
+    <noscript style="display: block; margin-top: 20px;">
+      {%- assign button_content = 'collection.faceting.apply_filters' | t -%}
+      {%- render 'button', type: 'submit', content: button_content, size: 'lg', stretch: true -%}
+    </noscript>
+  {%- endif -%}
+</form>

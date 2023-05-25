@@ -1,0 +1,109 @@
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<revealed-image class="revealed-image bg-custom">
+  <span class="revealed-image__scroll-tracker"></span>
+
+  {%- assign background = section.settings.background | default: settings.background -%}
+
+  <div class="revealed-image__scroller bg-custom" style="--background: {{ background.rgb }}">
+    <div class="revealed-image__wrapper">
+      <div class="revealed-image__image-clipper">
+        {%- if section.settings.image != blank -%}
+          {%- if section.settings.mobile_image == blank -%}
+            {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+          {%- else -%}
+            {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'hidden md:block' -}}
+            {{- section.settings.mobile_image | image_url: width: section.settings.mobile_image.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600', class: 'md:hidden' -}}
+          {%- endif -%}
+        {%- else -%}
+          {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
+        {%- endif -%}
+      </div>
+
+      {%- capture content -%}
+        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+          <div class="revealed-image__content-inner">
+            {%- if section.settings.subheading != blank -%}
+              <p class="bold">{{ section.settings.subheading | escape }}</p>
+            {%- endif -%}
+
+            {%- if section.settings.title != blank -%}
+              <p class="h0">{{ section.settings.title | escape }}</p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endcapture -%}
+
+      {%- if content != blank -%}
+        <div {% render 'surface', class: 'revealed-image__content revealed-image__content--outside prose', text_color: section.settings.text_color_outside %}>
+          {{- content -}}
+        </div>
+
+        <div aria-hidden="true" {% render 'surface', class: 'revealed-image__content revealed-image__content--inside prose', text_color: section.settings.text_color_inside %}>
+          {{- content -}}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</revealed-image>
+
+{% schema %}
+{
+  "name": "Revealed image on scroll",
+  "class": "shopify-section--revealed-image contents",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "3200 x 1600px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image",
+      "info": "1125 x 2000px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Reveal text on scroll"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "text_color_inside",
+      "label": "Text (inside image)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color_outside",
+      "label": "Text (outside image)",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Revealed image on scroll"
+    }
+  ]
+}
+{% endschema %}

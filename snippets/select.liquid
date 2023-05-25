@@ -1,0 +1,39 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SELECT COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This snippet generates a styled select using the native "select" element. If you wish to create a styled select, you
+need to use the "dropdown" snippet instead.
+
+********************************************
+Supported variables
+********************************************
+
+* name: the HTML name attribute that is used when the field is submitted.
+* form: if specified, define the form ID linked to this input
+* label: the label to show
+* options: if the type is "select", HTML of the rendered options
+* required: if set to true, the "required" attribute is added to the input
+* autocomplete: a hint to the browser for help autocompletion. List can be found here: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values
+{%- endcomment -%}
+
+{%- capture id -%}select-{{ section.id }}-{{ form }}-{{ name | handle }}{%- endcapture -%}
+
+{%- capture optional_attributes -%}
+  {% if form %}form="{{ form }}"{% endif %}
+  {% if autocomplete %}autocomplete="{{ autocomplete }}"{% endif %}
+  {% if required %}required{% endif %}
+{%- endcapture -%}
+
+<div class="form-control" {{ block.shopify_attributes }}>
+  <select id="{{ id }}" class="select select--native is-floating" name="{{ name }}" {{ optional_attributes }}>
+    {{- options -}}
+  </select>
+
+  {%- render 'icon' with 'chevron-bottom', class: 'select-chevron' -%}
+
+  {%- if label != blank -%}
+    <label for="{{ id }}" class="floating-label">{{ label }}</label>
+  {%- endif -%}
+</div>

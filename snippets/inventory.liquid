@@ -1,0 +1,49 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT INVENTORY COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to display the inventory of a given product
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product from which the inventory is extracted (required)
+* low_threshold: the inventory quantity threshold below which the inventory is shown as "red"
+* form_id: if specified, define the form ID linked to this input
+{%- endcomment -%}
+
+<variant-inventory {% if form_id %}form="{{ form_id }}"{% endif %}>
+  {%- for variant in product.variants -%}
+    {%- if variant == product.selected_or_first_available_variant -%}
+      {%- assign variant_selected = true -%}
+    {%- else -%}
+      {%- assign variant_selected = false -%}
+    {%- endif -%}
+
+    {%- if variant.available -%}
+      {%- if variant.inventory_management and variant.inventory_policy == 'deny' and variant.inventory_quantity <= low_threshold and low_threshold > 0 -%}
+        <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-error">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.low_stock_with_quantity_count' | t: count: variant.inventory_quantity -}}</span>
+      {%- else -%}
+        {%- if variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 and variant.requires_shipping -%}
+          {%- if variant.incoming and variant.next_incoming_date -%}
+            {%- capture next_incoming_date -%}{{ variant.next_incoming_date | date: format: 'date' }}{%- endcapture -%}
+            <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-warning">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.incoming_stock' | t: next_incoming_date: next_incoming_date -}}</span>
+          {%- else -%}
+            <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-warning">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.oversell_stock' | t -}}</span>
+          {%- endif -%}
+        {%- else -%}
+          <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-success">{%- render 'icon' with 'success' -%} {{- 'product.inventory.in_stock' | t -}}</span>
+        {%- endif -%}
+      {%- endif -%}
+    {%- elsif variant.incoming -%}
+      {%- if variant.next_incoming_date -%}
+        {%- capture next_incoming_date -%}{{ variant.next_incoming_date | date: format: 'date' }}{%- endcapture -%}
+        <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-warning">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.incoming_stock' | t: next_incoming_date: next_incoming_date -}}</span>
+      {%- else -%}
+        <span {% unless variant_selected %}hidden{% endunless %} data-variant-id="{{ variant.id }}" class="text-with-icon text-warning">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.oversell_stock' | t -}}</span>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+</variant-inventory>

@@ -1,0 +1,538 @@
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<style>
+  {%- if section.settings.controls_type == 'filled_arrows' -%}
+    {%- assign controls_background = section.blocks.first.settings.button_background -%}
+    {%- assign controls_color = section.blocks.first.settings.button_text_color -%}
+  {%- else -%}
+    {%- assign controls_color = section.blocks.first.settings.text_color -%}
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} {
+    --slideshow-background: {{ section.blocks.first.settings.background_gradient | default: section.blocks.first.settings.background | default: section.settings.background_gradient | default: section.settings.background }};
+    --slideshow-controls-background: {{ controls_background.rgb }};
+    --slideshow-controls-color: {{ controls_color.rgb }};
+
+    {%- if section.settings.allow_transparent_header -%}
+      margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
+    {%- endif -%}
+  }
+
+  {%- for block in section.blocks -%}
+    #block-{{ block.id }} {
+      {%- if section.settings.controls_type == 'filled_arrows' -%}
+        {%- assign controls_background = block.settings.button_background -%}
+        {%- assign controls_color = block.settings.button_text_color -%}
+      {%- else -%}
+        {%- assign controls_color = block.settings.text_color -%}
+      {%- endif -%}
+
+      --slideshow-slide-background: {{ block.settings.background_gradient | default: block.settings.background | default: section.settings.background_gradient | default: section.settings.background }};
+      --slideshow-slide-controls-background: {{ controls_background.rgb }};
+      --slideshow-slide-controls-color: {{ controls_color.rgb }};
+    }
+  {%- endfor -%}
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign slideshow_id = 'slideshow-' | append: section.id -%}
+
+<x-slideshow class="slideshow {% unless section.settings.full_width %}slideshow--boxed{% endunless %} {% if section.blocks.size > 1 %}slideshow--multiple-slides{% endif %}" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
+  {%- unless section.settings.full_width -%}
+    <span class="slideshow__slide-background"></span>
+  {%- endunless -%}
+
+  <slideshow-carousel id="{{ slideshow_id }}" class="slideshow__carousel" reveal-on-scroll="true" selector=".slideshow__slide" transition="{{ section.settings.transition_type }}" {% if section.settings.autoplay %}autoplay="{{ section.settings.cycle_speed }}"{% endif %} role="region">
+    {%- unless section.blocks.size == 1 or section.settings.controls_type contains 'arrows' -%}
+      <custom-cursor class="slideshow__cursor circle-button circle-button--lg circle-button--fill" aria-hidden="true">
+        {%- render 'icon' with 'chevron-right' -%}
+
+        <svg class="slideshow__cursor-ring" viewBox="-28 -28 56 56" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2">
+          <circle r="27" stroke-dasharray="158.33626974092556" stroke-dashoffset="158.33626974092556px"></circle>
+        </svg>
+      </custom-cursor>
+    {%- endunless -%}
+
+    {%- for block in section.blocks -%}
+      {%- capture slide -%}
+        <div class="content-over-media content-over-media--{{ section.settings.image_size }} {% unless section.settings.full_width %}rounded{% endunless %}" style="--content-over-media-content-max-width: {{ block.settings.content_max_width }}px; --content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
+          {%- comment -%}---------------- MEDIA ----------------{%- endcomment -%}
+          {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+
+          {%- if block.settings.image != blank -%}
+            {%- capture loading_strategy -%}{% if forloop.first %}eager{% else %}lazy{% endif %}{%- endcapture -%}
+            {%- capture fetch_priority -%}{% if forloop.first %}high{% else %}low{% endif %}{%- endcapture -%}
+
+            {%- if block.settings.mobile_image == blank -%}
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+            {%- else -%}
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'hidden sm:block' -}}
+              {{- block.settings.mobile_image | image_url: width: block.settings.mobile_image.width | image_tag: loading: loading_strategy, fetchpriority: fetch_priority, sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'sm:hidden' -}}
+            {%- endif -%}
+          {%- else -%}
+            {%- capture placeholder_image -%}{% cycle 'placeholder': 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
+            {{- placeholder_image | placeholder_svg_tag: 'placeholder' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
+          {%- endif -%}
+
+          {%- comment -%}---------------- CONTENT ----------------{%- endcomment -%}
+          {%- capture content_class -%}{{ block.settings.mobile_text_position }} {{ block.settings.desktop_text_position }}{%- endcapture -%}
+
+          <div {% render 'surface', class: content_class, text_color: block.settings.text_color %}>
+            <div class="prose">
+              {%- if block.settings.subheading != blank -%}
+                <p class="bold" data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
+              {%- endif -%}
+
+              {%- if block.settings.title != blank -%}
+                <p class="{{ block.settings.heading_tag }}" data-sequence="heading">
+                  {%- render 'styled-text', content: block.settings.title, apparition_effect: true -%}
+                </p>
+              {%- endif -%}
+
+              {%- if block.settings.button_text != blank -%}
+                {%- render 'button', href: block.settings.button_link, content: block.settings.button_text, size: 'xl', background: block.settings.button_background, text_color: block.settings.button_text_color -%}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endcapture -%}
+
+      {%- if block.settings.button_link != blank and block.settings.button_text == blank -%}
+        <a id="block-{{ block.id }}" href="{{ block.settings.button_link }}" class="slideshow__slide {% if forloop.first %}is-selected{% endif %}" role="group" {{ block.shopify_attributes }}>
+          {{- slide -}}
+        </a>
+      {%- else -%}
+        <div id="block-{{ block.id }}" class="slideshow__slide {% if forloop.first %}is-selected{% endif %}" role="group" {{ block.shopify_attributes }}>
+          {{- slide -}}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if section.blocks.size > 1 and section.settings.controls_type != 'none' -%}
+      <div class="slideshow__controls">
+        {%- case section.settings.controls_type -%}
+          {%- when 'filled_arrows' or 'outline_arrows' -%}
+            <div class="prev-next-buttons">
+              <button is="prev-button" aria-controls="{{ slideshow_id }}" class="circle-button circle-button--lg {% if section.settings.controls_type == 'filled_arrows' %}circle-button--fill{% else %}circle-button--bordered{% endif %} group">
+                <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+                <span class="animated-arrow animated-arrow--reverse"></span>
+              </button>
+
+              <button is="next-button" aria-controls="{{ slideshow_id }}" class="circle-button circle-button--lg {% if section.settings.controls_type == 'filled_arrows' %}circle-button--fill{% else %}circle-button--bordered{% endif %} group">
+                <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+                <span class="animated-arrow"></span>
+              </button>
+            </div>
+
+          {%- when 'numbers' -%}
+            <page-dots class="numbered-dots" aria-controls="{{ slideshow_id }}">
+              {%- for i in (1..section.blocks.size) -%}
+                <button type="button" class="numbered-dots__item" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                  <svg width="100%" height="100%" {% if section.settings.autoplay %}style="--percent: 0"{% endif %}>
+                    <circle cx="50%" cy="50%" r="15"></circle>
+                    <circle cx="50%" cy="50%" r="15"></circle>
+                  </svg>
+
+                  <span>{{- forloop.index -}}</span>
+                </button>
+              {%- endfor -%}
+            </page-dots>
+
+          {%- when 'dots' -%}
+            <page-dots class="stretching-dots" aria-controls="{{ slideshow_id }}">
+              {%- for i in (1..section.blocks.size) -%}
+                <button type="button" class="tap-area" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                  <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: forloop.index }}</span>
+                </button>
+              {%- endfor -%}
+            </page-dots>
+        {%- endcase -%}
+      </div>
+    {%- endif -%}
+  </slideshow-carousel>
+</x-slideshow>
+
+{% schema %}
+{
+  "name": "Slideshow",
+  "class": "shopify-section--slideshow",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Original image ratio"
+        },
+        {
+          "value": "sm",
+          "label": "Small"
+        },
+        {
+          "value": "md",
+          "label": "Medium"
+        },
+        {
+          "value": "lg",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill screen height"
+        }
+      ],
+      "info": "Choose \"Original image ratio\" to not cut images. [Learn more](https://help.shopify.com/en/manual/online-store/images/theme-images#best-practices-for-slideshows-and-full-width-images)",
+      "default": "auto"
+    },
+    {
+      "type": "select",
+      "id": "controls_type",
+      "label": "Controls",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "filled_arrows",
+          "label": "Filled arrows"
+        },
+        {
+          "value": "outline_arrows",
+          "label": "Outline arrows"
+        },
+        {
+          "value": "numbers",
+          "label": "Numbers"
+        },
+        {
+          "value": "dots",
+          "label": "Dots"
+        }
+      ],
+      "default": "dots"
+    },
+    {
+      "type": "select",
+      "id": "transition_type",
+      "label": "Transition type",
+      "options": [
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "fade_with_text",
+          "label": "Fade with text transition"
+        }
+      ],
+      "default": "fade_with_text"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto rotate between slides",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "cycle_speed",
+      "min": 4,
+      "max": 20,
+      "step": 1,
+      "unit": "sec",
+      "label": "Change slides every",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Background",
+      "info": "When \"Full width\" is enabled, the background is shown while image is loading. You can override the background for each slide."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#F2F2F2"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "info": "2800 x 1000px .jpg recommended",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image",
+          "info": "1200 x 1600px .jpg recommended"
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "range",
+          "id": "content_max_width",
+          "label": "Content maximum width",
+          "min": 400,
+          "max": 1200,
+          "step": 20,
+          "unit": "px",
+          "default": 780
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_position",
+          "label": "Mobile content position",
+          "options": [
+            {
+              "value": "place-self-start text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "place-self-start-center text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "place-self-start-end text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "place-self-center-start text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "place-self-center text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "place-self-center-end text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "place-self-end-start text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "place-self-end-center text-center",
+              "label": "Bottom center"
+            }
+          ],
+          "default": "place-self-center text-center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_position",
+          "label": "Desktop content position",
+          "options": [
+            {
+              "value": "sm:place-self-start sm:text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "sm:place-self-start-center sm:text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "sm:place-self-start-end sm:text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "sm:place-self-center-start sm:text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "sm:place-self-center sm:text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "sm:place-self-center-end sm:text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "sm:place-self-end-start sm:text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "sm:place-self-end-center sm:text-center",
+              "label": "Bottom center"
+            }
+          ],
+          "default": "sm:place-self-center sm:text-center"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Tell your story"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Slide title"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "h0",
+              "label": "H0"
+            },
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h0"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link",
+          "info": "Leave the button text empty to make the slide fully clickable."
+        },
+        {
+          "type": "header",
+          "content": "Slide colors"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 30
+        },
+        {
+          "type": "header",
+          "content": "Background",
+          "info": "Disable the \"Full width\" setting at the slideshow level to show background."
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color_background",
+          "id": "background_gradient",
+          "label": "Background gradient"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow",
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "title": "Slide 1"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "title": "Slide 2"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

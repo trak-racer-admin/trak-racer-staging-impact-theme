@@ -1,0 +1,351 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.allow_transparent_header -%}
+      --banner-spacing-block-added: var(--header-height);
+
+      margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
+    {%- endif -%}
+    --banner-content-padding-block-start: {%- if section.settings.allow_transparent_header -%}var(--spacing-12){% else %}var(--spacing-16){% endif %};
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      --banner-content-padding-block-start: {%- if section.settings.allow_transparent_header -%}var(--spacing-18){% else %}var(--spacing-28){% endif %};
+    }
+  }
+</style>
+
+<div class="blog" {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
+  {%- if blog.articles_count == 0 -%}
+    <div class="empty-state">
+      <div class="empty-state__icon-wrapper">
+        {%- render 'icon' with 'picto-comment', width: 32, height: 32, stroke_width: 1 -%}
+      </div>
+
+      <div class="prose">
+        <h1 class="h4">{{ 'blog.general.empty_blog' | t }}</h1>
+
+        {%- assign button_content = 'blog.general.back_to_home' | t -%}
+        {%- render 'button', size: 'xl', content: button_content, href: routes.root_url -%}
+      </div>
+    </div>
+  {%- else -%}
+    <header {% render 'surface', class: 'blog-banner', text_color: section.settings.banner_text_color, background: section.settings.banner_background, background_fallback: 'bg-secondary' %}>
+      <div class="container">
+        <div class="blog-banner-content v-stack gap-10 text-center justify-items-center">
+          <div class="v-stack gap-5 sm:gap-8">
+            <h1 class="h0">{{- blog.title -}}</h1>
+
+            {%- if section.settings.content != blank -%}
+              <div class="prose">
+                {{- section.settings.content -}}
+              </div>
+            {%- endif -%}
+          </div>
+
+          {%- if section.settings.show_newsletter_form -%}
+            {%- form 'customer', id: 'blog-newsletter', class: 'blog-banner__form form' -%}
+              {%- if form.posted_successfully? -%}
+                {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+                {%- render 'banner', content: success_message, status: 'success' -%}
+              {%- else -%}
+                {%- if form.errors -%}
+                  {%- assign content = form.errors | default_errors -%}
+                  {%- render 'banner', status: 'error', content: content -%}
+                {%- endif -%}
+              {%- endif -%}
+
+              <input type="hidden" name="contact[tags]" value="newsletter">
+
+              <div class="fieldset-with-submit">
+                {%- assign label = 'blog.comments.email' | t -%}
+                {%- assign button_content = 'blog.comments.submit' | t -%}
+
+                {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+                {%- render 'button', content: button_content, icon: 'email', type: 'submit', size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+              </div>
+            {%- endform -%}
+          {%- endif -%}
+        </div>
+
+        {%- if section.settings.show_tags and blog.all_tags.size > 0 -%}
+          <div class="scroll-area bleed sm:unbleed justify-items-center">
+            <div class="blog-filter-list">
+              <ul class="h-stack bold text-base" role="tablist">
+                <li role="tab" aria-selected="{% if current_tags == blank %}true{% else %}false{% endif %}">
+                  <a href="{{ blog.url }}" class="{% if current_tags == blank %}selected{% endif %}">{{ 'blog.general.all_posts' | t }}</a>
+                </li>
+
+                {%- for tag in blog.all_tags -%}
+                  <li role="tab" aria-selected="{% if current_tags contains tag %}true{% else %}false{% endif %}">
+
+                    {%- if current_tags contains tag -%}
+                      {{- tag | link_to_remove_tag: tag -}}
+                    {%- else -%}
+                      {{- tag | link_to_tag: tag -}}
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </header>
+
+    <div class="blog-posts__container container">
+      {%- paginate blog.articles by section.settings.articles_per_page -%}
+        <div class="blog-posts">
+          {%- for article in blog.articles -%}
+            {%- assign article_index = forloop.index -%}
+
+            {%- if section.blocks.size > 0 -%}
+              {%- for block in section.blocks -%}
+                {%- assign block_position = block.settings.position | at_most: section.settings.articles_per_page -%}
+
+                {%- if block_position == article_index -%}
+                  <div {% render 'surface', class: 'blog-posts-newsletter v-stack gap-6 sm:gap-8 text-center rounded', text_color: block.settings.text_color, background: block.settings.background, background_fallback: 'bg-secondary' %}>
+                    <div class="blog-posts-newsletter__content v-stack gap-4 justify-items-center sm:gap-6">
+                      {%- render 'icon' with 'picto-envelope', width: 24, height: 24 -%}
+
+                      {%- if block.settings.title != blank -%}
+                        <p class="h4">{{- block.settings.title -}}</p>
+                      {%- endif -%}
+
+                      {%- if block.settings.content != blank -%}
+                        <div class="prose">
+                          {{- block.settings.content -}}
+                        </div>
+                      {%- endif -%}
+                    </div>
+
+                    {%- form 'customer', id: 'blog-posts-newsletter-form', class: 'form form--tight' -%}
+                      <div class="fieldset">
+                        {%- if form.posted_successfully? -%}
+                          {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+                          {%- render 'banner', content: success_message, status: 'success' -%}
+                        {%- else -%}
+                          {%- if form.errors -%}
+                            {%- assign content = form.errors | default_errors -%}
+                            {%- render 'banner', status: 'error', content: content -%}
+                          {%- endif -%}
+                        {%- endif -%}
+
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+
+                        {%- assign label = 'blog.comments.email' | t -%}
+                        {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+                      </div>
+
+                      {%- render 'button', content: block.settings.button_text, icon: 'picto-envelope', type: 'submit', size: 'xl', secondary: true -%}
+                    {%- endform -%}
+
+                    {%- if block.settings.subtext != blank -%}
+                      <p class="text-sm text-subdued">{{- block.settings.subtext -}}</p>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+            {%- if section.settings.feature_first_article and forloop.first -%}
+              {%- assign background_color = article.metafields.banner.background_color.value | default: section.settings.feature_article_background -%}
+              {%- assign text_color = article.metafields.banner.text_color.value | default: section.settings.feature_article_text_color -%}
+              {%- capture sizes -%}(max-width: 999px) 100vw, calc(min(100vw, {{ settings.page_width }}px) * 0.65){%- endcapture -%}
+              {%- render 'blog-post-card', article: article, featured: section.settings.feature_first_article, show_excerpt: section.settings.show_excerpt, show_date: section.settings.show_date, show_author: section.settings.show_author, show_comments_count: section.settings.show_comments_count, show_category: section.settings.show_category, background: background_color, text_color: text_color, sizes: sizes -%}
+            {%- else -%}
+              {%- capture sizes -%}(max-width: 699px) 100vw, (max-width: 1149px) calc(100vw / 2 - 40px), (max-width: 1399px) calc(min(100vw, {{ settings.page_width }}px) / 3 - 40px) , calc(min(100vw, {{ settings.page_width }}px) / 3 - 80px) {%- endcapture -%}
+              {%- render 'blog-post-card', article: article, show_excerpt: section.settings.show_excerpt, show_date: section.settings.show_date, show_author: section.settings.show_author, show_comments_count: section.settings.show_comments_count, show_category: section.settings.show_category, sizes: sizes -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endpaginate -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Blog",
+  "class": "shopify-section--main-blog",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Write something about what your customers will receive by subscribing to your newsletter.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button",
+          "default": "Subscribe"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext"
+        },
+        {
+          "type": "range",
+          "id": "position",
+          "label": "Position in grid",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Get access to our latest news by signing up for our newsletter.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter_form",
+      "label": "Show newsletter form",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": true,
+      "info": "Categorize your blog posts by [adding tags](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#add-tags-to-a-blog-post)."
+    },
+    {
+      "type": "color",
+      "id": "banner_background",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "banner_text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    },
+    {
+      "type": "header",
+      "content": "Blog post listing"
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "label": "Articles per page",
+      "min": 5,
+      "max": 24,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "checkbox",
+      "id": "feature_first_article",
+      "label": "Feature first blog post",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "feature_article_background",
+      "label": "Featured article background"
+    },
+    {
+      "type": "color",
+      "id": "feature_article_text_color",
+      "label": "Featured article text"
+    },
+    {
+      "type": "header",
+      "content": "Blog post card"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comments_count",
+      "label": "Show comments count",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "label": "Show category",
+      "info": "The first post's tag will be shown as category.",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

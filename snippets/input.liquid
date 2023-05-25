@@ -1,0 +1,65 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+INPUT COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This snippet generate an input (or a textarea text field if the "multiline" option is passed
+
+********************************************
+Supported variables
+********************************************
+
+* name: the HTML name attribute that is used when the field is submitted (required)
+* type: the HTML type to use (such as "email", "password"...). If none is passed, "text" is assumed.
+* value: the default value (if any) for the setting
+* form: if specified, define the form ID linked to this input
+* label: the label to show
+* minlength: an optional min length for input
+* maxlength: an optional max length for input
+* required: if set to true, the "required" attribute is added to the input
+* show_max_characters_count: if set to true, a text will appear below the input to show the maximum count
+* tabindex: set a custom tabindex attribute
+* autocomplete: a hint to the browser for help autocompletion. List can be found here: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values
+* autocapitalize: a hint for auto capitalization
+* enterkeyhint: an optional hint for indicate the browser which button to show on the virtual keyboard
+* self_submit: if set to true, an icon is added inside the input to submit the field
+{%- endcomment -%}
+
+{%- capture id -%}input-{{ section.id }}-{{ form }}-{{ name | handle }}{%- endcapture -%}
+
+{%- capture optional_attributes -%}
+  {% if form %}form="{{ form }}"{% endif %}
+  {% if value and multiline == blank %}value="{{ value }}"{% endif %}
+  {% if tabindex %}tabindex="{{ tabindex }}"{% endif %}
+  {% if minlength and minlength > 0 %}minlength="{{ minlength }}"{% endif %}
+  {% if maxlength and maxlength > 0 %}maxlength="{{ maxlength }}"{% endif %}
+  {% if autocomplete %}autocomplete="{{ autocomplete }}"{% endif %}
+  {% if autocapitalize %}autocapitalize="{{ autocapitalize }}"{% endif %}
+  {% if enterkeyhint %}enterkeyhint="{{ enterkeyhint }}"{% endif %}
+  {% if required %}required{% endif %}
+{%- endcapture -%}
+
+<div class="form-control" {{ block.shopify_attributes }}>
+  {%- if multiline != blank -%}
+    <textarea id="{{ id }}" class="textarea is-floating" is="resizable-textarea" name="{{ name }}" placeholder=" " rows="{{ multiline }}" {{ optional_attributes }}>{{- value -}}</textarea>
+  {%- else -%}
+    <input id="{{ id }}" class="input is-floating" type="{{ type | default: 'text' }}" {% if type == 'email' or type == 'tel' %}dir="ltr"{% endif %} name="{{ name }}" placeholder=" " {{ optional_attributes }}>
+  {%- endif -%}
+
+  {%- if show_max_characters_count and maxlength > 0 -%}
+    <span class="form-control__max-characters-count text-sm text-subdued text-end">{{ 'general.form.max_characters' | t: max_chars: maxlength }}</span>
+  {%- endif -%}
+
+  {%- if label != blank -%}
+    <label for="{{ id }}" class="floating-label">{{ label }}</label>
+  {%- endif -%}
+
+  {%- if self_submit -%}
+    <div class="self-submit-button">
+      <button type="submit" class="circle-chevron hover:colors">
+        <span class="sr-only">{{ 'general.newsletter.subscribe' | t }}</span>
+        {%- render 'icon' with 'chevron-right-small', direction_aware: true -%}
+      </button>
+    </div>
+  {%- endif -%}
+</div>

@@ -1,0 +1,300 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign visible_images_count = section.blocks | map: 'settings' | where: 'image' | size -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --multiple-images-with-text-max-width: 580px;
+    --multiple-images-with-text-images-grid-template: {% if section.settings.images_layout != 'stacked' and visible_images_count > 1 %}repeat({% if visible_images_count == 2 %}1{% else %}2{% endif %}, auto) / minmax(0, 0.75fr) minmax(0, 1fr){% else %}none{% endif %};
+    --multiple-images-with-text-images-alignment: {% if section.settings.images_layout == 'collage' and section.settings.collage_images_alignment == 'top' or section.settings.collage_images_alignment == 'shifted' %}start{% else %}center{% endif %};
+    --multiple-images-with-text-main-image-offset: {% if section.settings.images_layout == 'collage' and section.settings.collage_images_alignment == 'shifted' and visible_images_count > 1 %}{% if visible_images_count == 2 %}40px{% else %}min(145px, 14vw){% endif %}{% else %}0px{% endif %};
+  }
+
+  {%- if section.settings.images_layout == 'stacked' or visible_images_count == 1 -%}
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} {
+        --multiple-images-with-text-max-width: none;
+        --multiple-images-with-text-grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+        --multiple-images-with-text-column-gap: var(--spacing-20);
+        --multiple-images-with-text-alignment: start;
+      }
+    }
+  {%- else -%}
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} {
+        --multiple-images-with-text-max-width: 690px;
+      }
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 1150px) {
+    #shopify-section-{{ section.id }} {
+      --multiple-images-with-text-max-width: none;
+      --multiple-images-with-text-grid-template-columns: {% if section.settings.images_layout == 'stacked' %}minmax(0, 0.8fr) minmax(0, 1fr){% else %}minmax(0, {% if visible_images_count == 1 %}max-content{% else %}1fr{% endif %}) minmax(0, 0.7fr){% endif %};
+      --multiple-images-with-text-column-gap: var(--spacing-24);
+      --multiple-images-with-text-alignment: start;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} {
+      --multiple-images-with-text-column-gap: var(--spacing-28);
+    }
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign is_narrow = false -%}
+
+{%- if section.settings.images_layout == 'stacked' -%}
+  {%- assign is_narrow = true -%}
+{%- endif -%}
+
+<div {% render 'section-properties', narrow: is_narrow %}>
+  <multiple-images-with-text class="multiple-images-with-text">
+    <multiple-images-with-text-image-list reversed swipeable="false" layout="{{ section.settings.images_layout }}" class="multiple-images-with-text__image-list">
+      {%- if visible_images_count == 0 -%}
+        {{- 'collection-1' | placeholder_svg_tag: 'placeholder' -}}
+      {%- else -%}
+        {%- comment -%}We have to reverse the images when they are stacked so that the image of the first block appears at the top of the stack{%- endcomment -%}
+        {%- if section.settings.images_layout == 'stacked' -%}
+          {%- assign section_blocks = section.blocks | reverse -%}
+        {%- else -%}
+          {%- assign section_blocks = section.blocks -%}
+        {%- endif -%}
+
+        {%- for block in section_blocks -%}
+          {%- if block.settings.image != blank -%}
+            {%- if section.settings.images_layout == 'scattered' -%}
+              {%- capture style -%}--image-rotation: {{ block.settings.image_rotation_degrees }}deg;{%- endcapture -%}
+            {%- endif -%}
+
+            {%- capture image_id -%}image-{{ block.id }}{%- endcapture -%}
+            {%- capture image_class -%}rounded-sm shadow-sm {% unless section.settings.images_layout == 'stacked' %}reveal{% endunless %}{%- endcapture -%}
+
+            {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: id: image_id, loading: 'lazy', style: style, sizes: 'min(100vw, 500px)', widths: '200,300,400,500,600,700,800,900,1000', class: image_class -}}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </multiple-images-with-text-image-list>
+
+    <div class="multiple-images-with-text__content-with-nav">
+      <multiple-images-with-text-content-list swipeable="false" class="multiple-images-with-text__content-list">
+        {%- assign outputted_text_count = 0 -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.settings.subheading != blank or block.settings.title != blank or block.settings.content != blank -%}
+            <div class="prose {% if outputted_text_count == 0 %}is-selected{% else %}reveal-invisible{% endif %}" {% if block.settings.image != blank %}image-id="image-{{ block.id }}"{% endif %} {{ block.shopify_attributes }}>
+              {%- if block.settings.subheading != blank -%}
+                <p class="bold">{{ block.settings.subheading | escape }}</p>
+              {%- endif -%}
+
+              {%- if block.settings.title != blank -%}
+                <p class="h1" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %}>
+                  {%- render 'styled-text', content: block.settings.title, apparition_effect: true -%}
+                </p>
+              {%- endif -%}
+
+              {{- block.settings.content -}}
+
+              {%- if block.settings.button_text != blank -%}
+                {%- render 'button', href: block.settings.button_url, content: block.settings.button_text, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+              {%- endif -%}
+            </div>
+
+            {%- assign outputted_text_count = outputted_text_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </multiple-images-with-text-content-list>
+
+      {%- if outputted_text_count > 1 -%}
+        <div class="prev-next-buttons">
+          <button is="prev-button" class="circle-button ring group">
+            <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+            <span class="animated-arrow animated-arrow--reverse"></span>
+          </button>
+
+          <button is="next-button" class="circle-button ring group">
+            <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+            <span class="animated-arrow"></span>
+          </button>
+        </div>
+      {%- endif -%}
+    </div>
+  </multiple-images-with-text>
+</div>
+
+{% schema %}
+{
+  "name": "Multiple images with text",
+  "class": "shopify-section--multiple-images-with-text",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "images_layout",
+      "label": "Images layout",
+      "options": [
+        {
+          "value": "stacked",
+          "label": "Stacked"
+        },
+        {
+          "value": "collage",
+          "label": "Collage"
+        },
+        {
+          "value": "scattered",
+          "label": "Scattered"
+        }
+      ],
+      "default": "stacked"
+    },
+    {
+      "type": "select",
+      "id": "collage_images_alignment",
+      "label": "Collage images alignment",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "shifted",
+          "label": "Shifted"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000 x 1200px .jpg recommended"
+        },
+        {
+          "type": "range",
+          "id": "image_rotation_degrees",
+          "min": -15,
+          "max": 15,
+          "step": 0.5,
+          "unit": "deg",
+          "label": "Image rotation",
+          "info": "Only applicable when images layout is set to \"Scattered\".",
+          "default": 0
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Image with text"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multiple images with text",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "title": "Heading 1",
+            "image_rotation_degrees": -2
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Heading 2",
+            "image_rotation_degrees": 1.5
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

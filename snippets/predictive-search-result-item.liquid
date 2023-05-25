@@ -1,0 +1,90 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PREDICTIVE SEARCH ITEM
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a single result for the predictive search (this is abstracted as a snippet as this is rendered for both
+native predictive search and for the fallback search in Liquid, for languages that do not support predictive search)
+
+********************************************
+Supported variables
+********************************************
+
+* item: the search result item
+* type: the object type. Can be "product", "query", "article", "collection" or "page"
+{%- endcomment -%}
+
+{%- case type -%}
+  {%- when 'product' -%}
+    {%- assign product = item -%}
+
+    <a href="{{ product.url }}" data-instant class="predictive-search-result group">
+      {%- if product.featured_media -%}
+        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: sizes: '96px', widths: '96,192' -}}
+      {%- endif -%}
+
+      <div class="v-stack gap-1 sm:gap-1.5">
+        {%- if settings.show_vendor -%}
+          <span class="text-xs text-subdued">{{ product.vendor }}</span>
+        {%- endif -%}
+
+        <div class="v-stack justify-items-start gap-0.5">
+          <span class="bold">
+            <span class="reversed-link">{{ product.title }}</span>
+          </span>
+
+          {%- render 'price-list', product: product -%}
+        </div>
+      </div>
+    </a>
+
+  {%- when 'query' -%}
+    {%- assign query = item -%}
+
+    <a href="{{ query.url }}" data-instant class="bold">
+      <span class="reversed-link hover:show">{{ query.styled_text }}</span>
+    </a>
+
+  {%- when 'article' -%}
+    {%- assign article = item -%}
+
+    <a href="{{ article.url }}" data-instant class="predictive-search-result group">
+      {%- if article.image -%}
+        {{- article.image | image_url: width: article.image.width | image_tag: sizes: '96px', widths: '96,192' -}}
+      {%- endif -%}
+
+      <div class="v-stack justify-items-start gap-2 sm:gap-3">
+        {%- if section.settings.show_article_category and article.tags.size > 0 -%}
+          <span class="badge badge--primary">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        <span class="bold">
+          <span class="reversed-link">{{ article.title }}</span>
+        </span>
+      </div>
+    </a>
+
+  {%- when 'collection' -%}
+    {%- assign collection = item -%}
+
+    <a href="{{ collection.url }}" data-instant class="predictive-search-result group">
+      {%- if collection.featured_image -%}
+        {{- collection.featured_image | image_url: width: collection.featured_image.width | image_tag: sizes: '96px', widths: '96,192' -}}
+      {%- endif -%}
+
+      <div class="v-stack justify-items-start gap-0.5">
+        <span class="bold">
+          <span class="reversed-link">{{ collection.title }}</span>
+        </span>
+
+        <span class="text-sm text-subdued">{{ 'collection.products_count' | t: count: collection.products_count }}</span>
+      </div>
+    </a>
+
+  {%- when 'page' -%}
+    {%- assign page = item -%}
+
+    <a href="{{ page.url }}" data-instant class="bold">
+      <span class="reversed-link hover:show">{{ page.title }}</span>
+    </a>
+{%- endcase -%}

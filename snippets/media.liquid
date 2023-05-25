@@ -1,0 +1,58 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+MEDIA COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a single media. This snippet can be used for product media, but also for media coming from metafields. We are
+doing a small performance tweak by pre-loading the media if we detect we are on a product page and that the media is
+related to the default media.
+
+********************************************
+Supported variables
+********************************************
+
+* media: the media to render (required)
+* sizes: an optional sizes attribute used for the image generation
+* preload: if set to true, the image is preloaded and its fetch priority is higher
+* autoplay: a boolean indicating if media of type video should autoplay
+* loop: a boolean indicating if media type of type video should loop
+* group: an optional group to set for the media. When a group is set, only one media at a time of the given group can play.
+* show_play_button: if set to false, the automatic button is not added
+{%- endcomment -%}
+
+{%- if preload -%}
+  {%- assign loading = 'eager' -%}
+  {%- assign fetchpriority = 'high' -%}
+{%- else -%}
+  {%- assign loading = 'lazy' -%}
+  {%- assign fetchpriority = 'auto' -%}
+{%- endif -%}
+
+{%- case media.media_type -%}
+  {%- when 'image' -%}
+    {{- media | image_url: width: media.preview_image.width | image_tag: loading: loading, fetchpriority: fetchpriority, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'rounded' -}}
+
+  {%- when 'video', 'external_video' -%}
+    <video-media {% if media.host %}host="{{ media.host }}"{% endif %} {% unless show_play_button %}show-play-button{% endunless %} {% if group != blank %}group="{{ group | escape }}"{% endif %} style="--aspect-ratio: {{ media.aspect_ratio }}">
+      {{- media | image_url: width: media.preview_image.width | image_tag: loading: loading, fetchpriority: fetchpriority, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'rounded' -}}
+
+      {%- if media.media_type == 'video' -%}
+        {{- media | video_tag: controls: true, playsinline: true, muted: autoplay, loop: loop, preload: 'metadata' -}}
+      {%- else -%}
+        <template>
+          {%- if media.host == 'youtube' -%}
+            {{- media | external_video_url: enablejsapi: true, loop: loop, mute: autoplay, autoplay: true | external_video_tag -}}
+          {%- elsif media.host == 'vimeo' -%}
+            {{- media | external_video_url: autopause: true, loop: loop, background: autoplay, muted: autoplay, autoplay: true | external_video_tag -}}
+          {%- else -%}
+            {{- media | external_video_tag: image_size: '2048x' -}}
+          {%- endif -%}
+        </template>
+      {%- endif -%}
+    </video-media>
+
+  {%- when 'model' -%}
+    <model-media {% if group != blank %}group="{{ group | escape }}"{% endif %} handle="{{ product.handle }}" style="aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+      {{- media | model_viewer_tag: image_size: '2048x', reveal: 'interaction', toggleable: true -}}
+    </model-media>
+{%- endcase -%}

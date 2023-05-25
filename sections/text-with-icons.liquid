@@ -1,0 +1,598 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --text-with-icons-template: {% if section.settings.stack_on_mobile %}minmax(0, 1fr){% else %}auto-flow 100%{% endif %};
+      --text-with-icons-justify: center;
+      --text-with-icons-text-align: center;
+      --text-with-icons-gap: {% if section.settings.icon_spacing == 'small' %}var(--spacing-5){% elsif section.settings.icon_spacing == 'medium' %}var(--spacing-6){% else %}var(--spacing-7){% endif %};
+    }
+
+    {%- if section.settings.stack_on_mobile -%}
+      @media screen and (min-width: 699px) {
+        #shopify-section-{{ section.id }} {
+          --text-with-icons-template: repeat(2, minmax(0, 1fr));
+        }
+      }
+    {%- endif -%}
+
+    @media screen and (min-width: 1150px) {
+      #shopify-section-{{ section.id }} {
+        --text-with-icons-gap: {% if section.settings.icon_spacing == 'small' %}var(--spacing-5){% elsif section.settings.icon_spacing == 'medium' %}var(--spacing-6){% else %}var(--spacing-8){% endif %};
+      }
+    }
+
+    {%- if section.blocks.size <= 3 -%}
+      @media screen and (min-width: 1000px) {
+        #shopify-section-{{ section.id }} {
+          --text-with-icons-template: repeat({{ section.blocks.size }}, minmax(0, 630px));
+          --text-with-icons-justify: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
+          --text-with-icons-text-align: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
+        }
+      }
+    {%- else -%}
+      @media screen and (min-width: 1150px) {
+        #shopify-section-{{ section.id }} {
+          --text-with-icons-template: repeat({{ section.blocks.size }}, 1fr);
+          --text-with-icons-justify: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
+          --text-with-icons-text-align: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
+        }
+      }
+    {%- endif -%}
+  </style>
+
+  <div {% render 'section-properties' %}>
+    <div class="section-stack">
+      {%- if section.settings.title != blank -%}
+        <div class="justify-self-center">
+          <h2 class="h3">{{ section.settings.title | escape }}</h2>
+        </div>
+      {%- endif -%}
+
+      <div class="text-with-icons">
+        <scroll-carousel class="text-with-icons__list scroll-area full-bleed {% if section.blocks.size <= 3 %}md:unbleed{% else %}lg:unbleed{% endif %}" id="carousel-{{ section.id }}" role="region">
+          {%- for block in section.blocks -%}
+            <div id="block-{{ section.id }}-{{ block.id }}" class="text-with-icons__item snap-center" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
+              {%- capture icon -%}
+                {%- if block.settings.custom_icon != blank -%}
+                  {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                  {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
+                  {%- capture style -%}--mobile-icon-max-width: {{ block.settings.mobile_icon_width }}px; --icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+                  {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                {%- else -%}
+                  {%- render 'icon' with block.settings.icon, width: block.settings.mobile_icon_width, height: block.settings.mobile_icon_width, class: 'sm:hidden' -%}
+                  {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'hidden sm:block' -%}
+                {%- endif -%}
+              {%- endcapture -%}
+
+              {%- if icon != blank -%}
+                {%- if block.settings.icon_background_type == 'none' -%}
+                  <div {% render 'surface', text_color: block.settings.icon_color %}>
+                    {{- icon -}}
+                  </div>
+                {%- else -%}
+                  {%- capture surface_class -%}icon-block {% if block.settings.icon_background_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                  <div {% render 'surface', class: surface_class, background: block.settings.icon_background, text_color: block.settings.icon_color, background_fallback: 'bg-secondary' %}>
+                    {{- icon -}}
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
+
+              <div class="text-with-icons__text-wrapper">
+                <div class="prose">
+                  {%- if block.settings.title != blank -%}
+                    <p class="{{ section.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
+                  {%- endif -%}
+
+                  {{- block.settings.content -}}
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </scroll-carousel>
+
+        {%- if section.blocks.size > 1 -%}
+          <page-dots aria-controls="carousel-{{ section.id }}" class="page-dots peer-not-scrollable:hidden">
+            {%- for index in (1..section.blocks.size) -%}
+              <button type="button" class="tap-area" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: index }}</span>
+              </button>
+            {%- endfor -%}
+          </page-dots>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Text with icons",
+  "class": "shopify-section--text-with-icons",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Text with icon",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "picto-coupon",
+              "label": "Coupon",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-percent",
+              "label": "Percent",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-gift",
+              "label": "Gift",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-star",
+              "label": "Star",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-like",
+              "label": "Like",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-building",
+              "label": "Building",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-love",
+              "label": "Love",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-award-gift",
+              "label": "Award gift",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-happy",
+              "label": "Happy",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-box",
+              "label": "Box",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-pin",
+              "label": "Pin",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-timer",
+              "label": "Timer",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-validation",
+              "label": "Validation",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-truck",
+              "label": "Truck",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-return",
+              "label": "Return",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-earth",
+              "label": "Earth",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-plane",
+              "label": "Plane",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "Credit card",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-lock",
+              "label": "Lock",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-shield",
+              "label": "Shield",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-secure-profile",
+              "label": "Secure profile",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-money",
+              "label": "Money",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-recycle",
+              "label": "Recycle",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-leaf",
+              "label": "Leaf",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-tree",
+              "label": "Tree",
+              "group": "Ecology"
+            },
+            {
+              "value": "picto-mobile-phone",
+              "label": "Mobile phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "Customer support",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-operator",
+              "label": "Operator",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-mailbox",
+              "label": "Mailbox",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-envelope",
+              "label": "Envelope",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-comment",
+              "label": "Comment",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-question",
+              "label": "Question",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-at-sign",
+              "label": "At sign",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-camera",
+              "label": "Camera",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-wifi",
+              "label": "WiFi",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-bluetooth",
+              "label": "Bluetooth",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-printer",
+              "label": "Printer",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-smart-watch",
+              "label": "Smart watch",
+              "group": "Tech"
+            },
+            {
+              "value": "picto-coffee",
+              "label": "Coffee",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-burger",
+              "label": "Burger",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-beer",
+              "label": "Beer",
+              "group": "Food & Drink"
+            },
+            {
+              "value": "picto-target",
+              "label": "Target",
+              "group": "Other"
+            },
+            {
+              "value": "picto-document",
+              "label": "Document",
+              "group": "Other"
+            },
+            {
+              "value": "picto-jewelry",
+              "label": "Jewelry",
+              "group": "Other"
+            },
+            {
+              "value": "picto-music",
+              "label": "Music",
+              "group": "Other"
+            },
+            {
+              "value": "picto-file",
+              "label": "File",
+              "group": "Other"
+            },
+            {
+              "value": "picto-mask",
+              "label": "Mask",
+              "group": "Other"
+            },
+            {
+              "value": "picto-stop",
+              "label": "Stop",
+              "group": "Other"
+            }
+          ],
+          "default": "picto-coupon"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Custom icon",
+          "info": "240 x 240px .png recommended"
+        },
+        {
+          "type": "range",
+          "id": "mobile_icon_width",
+          "min": 24,
+          "max": 120,
+          "step": 4,
+          "unit": "px",
+          "label": "Mobile icon width",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "icon_width",
+          "min": 24,
+          "max": 120,
+          "step": 4,
+          "unit": "px",
+          "label": "Icon width",
+          "default": 32
+        },
+        {
+          "type": "select",
+          "id": "icon_background_type",
+          "label": "Icon background type",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "square",
+              "label": "Square"
+            },
+            {
+              "value": "circle",
+              "label": "Circle"
+            }
+          ],
+          "default": "circle"
+        },
+        {
+          "type": "color",
+          "id": "icon_background",
+          "label": "Icon background"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon color",
+          "info": "Do not have effect when using custom icon."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Short content about your store</p>"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "label": "Stack on mobile",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Item"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h5"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment (desktop)",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "icon_spacing",
+      "label": "Icon spacing",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text with icons",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

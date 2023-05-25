@@ -1,0 +1,244 @@
+{%- assign is_promo_stretch = mega_menu_block.settings.stretch_promo -%}
+{%- assign promo_item_count = 0 -%}
+{%- capture promo_id -%}{{ mega_menu_block.id }}{% if is_navigation_drawer %}-drawer{% endif %}-{{ link_col }}-{{ use_carousel_fallback_until }}{%- endcapture -%}
+
+{%- for i in (1..3) -%}
+  {%- assign image_setting = 'image_' | append: i -%}
+
+  {%- if mega_menu_block.settings[image_setting] != blank -%}
+    {%- assign promo_item_count = promo_item_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if mega_menu_block.settings.product != blank -%}
+  {%- assign promo_item_count = promo_item_count | plus: 1 -%}
+{%- endif -%}
+
+{%- assign mega_menu_col = promo_item_count | plus: link_col -%}
+
+{% if force_carousel_mode or use_carousel_fallback_until %}
+  {%- assign is_promo_carousel = true -%}
+{% else %}
+  {%- case mega_menu_block.settings.promo_content_layout -%}
+    {%- when 'collage' -%}
+      {%- if is_navigation_drawer or link_col == 0 -%}
+        {%- assign is_promo_grid = true -%}
+      {% else %}
+        {%- assign is_promo_collage = true -%}
+      {%- endif -%}
+
+    {%- when 'grid' -%}
+      {%- assign is_promo_grid = true -%}
+
+    {%- when 'carousel' -%}
+      {%- if link_col == 0 -%}
+        {%- assign is_promo_grid = true -%}
+      {% else %}
+        {%- assign is_promo_carousel = true -%}
+      {%- endif -%}
+  {%- endcase -%}
+{% endif %}
+
+{% capture promo_grid %}
+  {% if is_promo_collage %}
+    "promo-1 promo-1 promo-2" 1fr "promo-1 promo-1 promo-3" 1fr / minmax(172px, var(--mega-menu-promo-grid-image-max-width)) minmax(172px, var(--mega-menu-promo-grid-image-max-width)) minmax(172px, var(--mega-menu-promo-grid-image-max-width))
+
+  {% elsif is_promo_grid %}
+    auto / repeat({{ promo_item_count }}, minmax(var(--mega-menu-promo-grid-image-min-width), var(--mega-menu-promo-grid-image-max-width)))
+
+  {% else %}
+    auto / auto
+
+  {% endif %}
+{% endcapture %}
+
+<style>
+  #navigation-promo-{{ promo_id }} {
+    --navigation-promo-grid: {{ promo_grid }};
+    --mega-menu-promo-grid-image-max-width: {% if block.settings.stretch_promo %}{% if is_promo_collage %}230px{% else %}400px{% endif %}{% else %}{% if is_promo_collage %}192px{% else %}300px{% endif %}{% endif %};
+    --mega-menu-promo-grid-image-min-width: 172px;
+    --promo-heading-font-size: {% if is_promo_carousel %}var(--text-h3){% else %}var(--text-h5){% endif %};
+    --content-over-media-row-gap: {% if is_promo_grid %}var(--spacing-3){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-5){% else %}var(--spacing-4){% endif %}{% endif %};
+    --content-over-media-column-gap: {% if is_promo_grid %}var(--spacing-4){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-6){% else %}var(--spacing-5){% endif %}{% endif %};
+
+    {%- if is_promo_carousel -%}
+      --promo-heading-line-height: 1.2;
+    {%- endif -%}
+
+    {%- if is_promo_grid -%}
+      --navigation-promo-gap: var(--spacing-2);
+      --panel-wrapper-justify-content: flex-start;
+    {%- endif -%}
+
+    {%- if is_promo_stretch and is_promo_carousel -%}
+      margin-inline-start: calc(var(--drawer-body-padding) * -1);
+      margin-inline-end: calc(var(--drawer-body-padding) * -1);
+      margin-block-end: calc(var(--drawer-body-padding) * -1);
+    {%- endif -%}
+  }
+
+  #navigation-promo-{{ promo_id }} .navigation-promo__carousel-controls {
+    {%- if mega_menu_block.settings.product != blank -%}
+      inset-block-start: var(--content-over-media-column-gap);
+    {%- else -%}
+      inset-block-end: var(--content-over-media-column-gap);
+    {%- endif -%}
+  }
+
+  @media screen and (min-width:700px) {
+    #navigation-promo-{{ promo_id }} {
+    {%- if is_promo_grid -%}
+      --promo-heading-font-size: var(--text-h6);
+    {%- endif -%}
+
+      --mega-menu-promo-grid-image-min-width: 192px;
+      --content-over-media-row-gap: {% if is_promo_grid %}var(--spacing-4){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-7){% else %}var(--spacing-5){% endif %}{% endif %};
+      --content-over-media-column-gap: {% if is_promo_grid %}var(--spacing-5){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-8){% else %}var(--spacing-6){% endif %}{% endif %};
+    }
+  }
+
+  {%- if is_navigation_drawer -%}
+    @media screen and (min-width: 1150px) {
+      #navigation-promo-{{ promo_id }} {
+        --promo-heading-font-size: {% if is_promo_grid %}var(--text-h5){% elsif is_promo_carousel %}var(--text-h4){% endif %};
+        --content-over-media-row-gap: {% if is_promo_grid %}var(--spacing-5){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-8){% else %}var(--spacing-6){% endif %}{% endif %};
+        --content-over-media-column-gap: {% if is_promo_grid %}var(--spacing-7){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-10){% else %}var(--spacing-8){% endif %}{% endif %};
+        --mega-menu-promo-grid-image-min-width: 220px;
+
+      {% if is_promo_carousel %}
+        --promo-heading-line-height: 1.3;
+      {% endif %}
+      }
+    }
+  {%- else -%}
+    @media screen and (min-width: 1150px) {
+      #navigation-promo-{{ promo_id }} {
+        --promo-heading-font-size: var(--text-h4);
+        --promo-heading-line-height: 1.3;
+        --navigation-promo-gap: {% if is_promo_stretch %}var(--spacing-0-5){% else %}var(--spacing-4){% endif %};
+        --mega-menu-promo-grid-image-min-width: 220px;
+
+        {% if is_promo_carousel %}
+          max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
+        {% endif %}
+
+        {% if is_promo_stretch %}
+          margin-block-start: calc(-1 * var(--mega-menu-block-padding));
+          margin-block-end: calc(-1 * var(--mega-menu-block-padding));
+          margin-inline-end: calc(-1 * (100vw - min(100vw - var(--container-gutter) * 2, var(--container-max-width))) / 2);
+
+          {% if link_col == 0 %}
+            margin-inline-start: calc(-1 * (100vw - min(100vw - var(--container-gutter) * 2, var(--container-max-width))) / 2);
+          {% endif %}
+        {% endif %}
+      }
+
+      {% if is_promo_collage %}
+        #navigation-promo-{{ promo_id }} .content-over-media:not(:first-child) {
+          --promo-heading-font-size: {% if mega_menu_block.settings.stretch_promo %}var(--text-h5){% else %}var(--text-h6){% endif %};
+          --promo-heading-line-height: 1.4;
+          --content-over-media-row-gap: {% if is_promo_stretch %}var(--spacing-5){% else %}var(--spacing-4){% endif %};
+          --content-over-media-column-gap: {% if is_promo_stretch %}var(--spacing-6){% else %}var(--spacing-5){% endif %};
+        }
+
+        #navigation-promo-{{ promo_id }} .content-over-media:first-child {
+          --content-over-media-row-gap: var(--spacing-8);
+          --content-over-media-column-gap: var(--spacing-10);
+        }
+
+      {% else %}
+        #navigation-promo-{{ promo_id }} {
+          --content-over-media-row-gap: {% if is_promo_grid %}{% if link_col == 0 and is_promo_stretch %}var(--spacing-8){% else %}var(--spacing-6){% endif %}{% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-8){% else %}var(--spacing-6){% endif %}{% endif %};
+          --content-over-media-column-gap: {% if is_promo_grid %}{% if link_col == 0 and is_promo_stretch %}var(--spacing-10){% else %}var(--spacing-8){% endif %}{% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-10){% else %}var(--spacing-8){% endif %}{% endif %};
+        }
+      {% endif %}
+    }
+
+    @media screen and (min-width: 1400px) {
+      #navigation-promo-{{ promo_id }} {
+        --mega-menu-promo-grid-image-max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
+
+        {% if mega_menu_col >= 5 and is_promo_grid %}
+          --promo-heading-font-size: {% if mega_menu_col == 5 %}var(--text-h5){% elsif mega_menu_col >= 6 %}var(--text-h6){% endif %};
+          --promo-heading-line-height: 1.4;
+        {% endif %}
+      }
+
+      {% if mega_menu_col >= 5 and is_promo_grid %}
+        #navigation-promo-{{ promo_id }} {
+          --content-over-media-row-gap: {% if mega_menu_col == 5 %}var(--spacing-5){% elsif mega_menu_col >= 6 %}var(--spacing-4){% endif %};
+          --content-over-media-column-gap: {% if mega_menu_col == 5 %}var(--spacing-6){% elsif mega_menu_col >= 6 %}var(--spacing-5){% endif %};
+        }
+      {% endif %}
+    }
+  {%- endif -%}
+</style>
+
+{%- capture promo_block_content -%}
+  {%- for i in (1..promo_item_count) -%}
+    {%- assign image_setting = 'image_' | append: i -%}
+    {%- assign image_heading_setting = 'image_heading_' | append: i -%}
+    {%- assign image_link_setting = 'image_link_' | append: i -%}
+    {%- assign image_text_color_setting = 'image_text_color_' | append: i -%}
+
+    {%- if mega_menu_block.settings[image_setting] != blank -%}
+      {%- capture image_sizes -%}
+        {%- if is_promo_grid -%}
+          (max-width: 699px) 172px, (max-width: 1149px) 192px,{% if is_navigation_drawer %}220px{% else %}minmax(220px, 440px){% endif %}
+        {%- elsif is_promo_collage -%}
+          {%- if forloop.first -%}{% if is_promo_stretch %}minmax(350px, 880px){% else %}minmax(350px, 650px){% endif %}{% else %}{% if is_promo_stretch %}minmax(192px, 440px){% else %}minmax(192px, 350px){% endif %}{%- endif -%}
+        {%- else -%}
+          (max-width: 699px) 100vw, (max-width: 1150px) 316px, {% if is_navigation_drawer %}360px{% else %}{% if is_promo_stretch %}440px{% else %}360px{% endif %}{% endif %}
+        {%- endif -%}
+      {%- endcapture -%}
+
+      <a {% if mega_menu_block.settings[image_link_setting] %}href="{{ mega_menu_block.settings[image_link_setting] }}"{% endif %}
+         class="content-over-media {% unless is_promo_stretch %}rounded-sm{% endunless %} group {% if is_promo_carousel and forloop.first == false %}reveal-invisible{% endif %}"
+         style="--text-color: {{ mega_menu_block.settings[image_text_color_setting].rgb }}; grid-area: {% if is_promo_carousel %}1 / -1{% elsif is_promo_collage %}promo-{{ i }}{% endif %};">
+
+        {{- mega_menu_block.settings[image_setting] | image_url: width: image.width | image_tag: loading: 'lazy', sizes: image_sizes, widths: '200,300,400,500,600,800,1000', class: "zoom-image" -}}
+
+        {%- if mega_menu_block.settings[image_heading_setting] != blank -%}
+          <div class="place-self-end-start text-custom">
+            <p class="bold" style="font-size: var(--promo-heading-font-size); line-height: var(--promo-heading-line-height, 1.4)">{{- mega_menu_block.settings[image_heading_setting] | escape -}}</p>
+          </div>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if mega_menu_block.settings.product != blank -%}
+    <div {% if is_promo_collage or is_promo_carousel %}style="grid-area: {% if is_promo_collage %}promo-{{ promo_item_count }}{% elsif is_promo_carousel %}1 / -1{% endif %}"{% endif %} class="align-self-stretch {% if is_promo_carousel and promo_item_count > 0 %}reveal-invisible{% endif %}">
+      {%- render 'product-card', product: mega_menu_block.settings.product, background: mega_menu_block.settings.product_card_background, text_color: mega_menu_block.settings.product_card_text_color, show_vendor: false, show_rating: false, show_badges: false, show_swatches: false, show_secondary_image: false, text_alignment: 'center' -%}
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+<div class="navigation-promo__wrapper {% if use_carousel_fallback_until %}{{ use_carousel_fallback_until }}:hidden{% endif %} {% if hide_promo_until != blank %}{{ hide_promo_until }}-max:hidden{% endif %}" id="navigation-promo-{{ promo_id }}">
+  {%- if is_promo_grid or is_promo_collage -%}
+    <div class="navigation-promo navigation-promo--{{ mega_menu_block.settings.promo_content_layout }} {% if is_promo_grid %}scroll-area bleed{% endif %}">
+      {{ promo_block_content }}
+    </div>
+  {%- else -%}
+    <div class="relative">
+      {%- capture carousel_id -%}promo-carousel-{{ promo_id }}{%- endcapture -%}
+      <mega-menu-promo-carousel id="{{ carousel_id }}" class="navigation-promo navigation-promo--{% if force_carousel_mode or use_carousel_fallback_until %}carousel{% else %}{{ mega_menu_block.settings.promo_content_layout }}{% endif %}" role="region" style="--navigation-promo-gap: 0">
+        {{ promo_block_content }}
+      </mega-menu-promo-carousel>
+
+      {%- if promo_item_count > 1 -%}
+        <div class="navigation-promo__carousel-controls">
+          <button is="prev-button" aria-controls="{{ carousel_id }}">
+            <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+            {%- render 'icon' with 'circle-button-left-clipped', width: 26, height: 26, direction_aware: true -%}
+          </button>
+
+          <button is="next-button" aria-controls="{{ carousel_id }}">
+            <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+            {%- render 'icon' with 'circle-button-right-clipped', width: 26, height: 26, direction_aware: true -%}
+          </button>
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>

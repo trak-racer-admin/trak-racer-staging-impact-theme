@@ -1,0 +1,153 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  {%- if request.page_type == 'product' and section.settings.enable_review_integration -%}
+    {%- comment -%}
+    IMPLEMENTATION NOTE: We natively integrate with the free Shopify Reviews app, which is a popular app (developed by
+    Shopify themselves) to show review. When we are in the product page, then we load custom CSS and custom JS. This
+    means that for merchant not using the app but an app section, it may lead to add extra JS, but this is an acceptable
+    performance impact as the JS and CSS are very small. 各務
+    {%- endcomment -%}
+    <link rel="stylesheet" href="{{ 'apps.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
+    <script type="module" src="{{ 'apps.js' | asset_url }}" fetchpriority="low"></script>
+
+    <template id="shopify-reviews-custom-header">
+      {%- assign rating_value = product.metafields.reviews.rating.value.rating | round: 1 -%}
+      {%- assign rating_count = product.metafields.reviews.rating_count.value | default: 0 -%}
+
+      <custom-spr-header product-id="{{ product.id | escape }}" review-count="{{ rating_count | escape }}" {% render 'surface', class: 'custom-spr__header', background_gradient: section.settings.review_header_gradient, text_color: section.settings.review_header_text_color %}>
+        <div class="v-stack gap-2">
+          {%- if rating_count > 0 -%}
+            <div class="custom-spr__rating text-center">
+              <span class="custom-spr__rating-value bold">{{ rating_value }}</span>
+              <span class="custom-spr__rating-max bold">/ {{ product.metafields.reviews.rating.value.scale_max }}</span>
+            </div>
+          {%- endif -%}
+
+          <div class="custom-spr__info text-center">
+            <p>
+              {%- if rating_count > 0 -%}
+                {{- 'apps.shopify_reviews.review_info' | t: rating_value: rating_value, rating_max: product.metafields.reviews.rating.value.scale_max -}}<br>
+              {%- endif -%}
+
+              {{- 'apps.shopify_reviews.review_count' | t: count: rating_count -}}
+            </p>
+          </div>
+        </div>
+
+        {%- assign leave_review_label = 'apps.shopify_reviews.leave_review' | t -%}
+        {%- render 'button', content: leave_review_label, size: 'xl', background: section.settings.review_button_background, text_color: section.settings.review_button_text_color -%}
+      </custom-spr-header>
+    </template>
+  {%- endif -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      {% if section.settings.remove_vertical_spacing %}--section-spacing-block: 0px;{% endif %}
+      {% if section.settings.remove_horizontal_spacing %}--section-spacing-inline: 0px;{% endif %}
+    }
+  </style>
+
+  <div {% render 'section-properties' %}>
+    {%- for block in section.blocks -%}
+      {%- render block -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Apps",
+  "class": "shopify-section--apps",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_vertical_spacing",
+      "label": "Remove vertical spacing",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_horizontal_spacing",
+      "label": "Remove horizontal spacing",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Shopify Reviews",
+      "info": "Install the [free Shopify Reviews app](https://apps.shopify.com/product-reviews) to use this feature. Only shows on product pages."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_review_integration",
+      "label": "Enable Shopify Reviews integration",
+      "info": "Adjust the Shopify Reviews app to the look and feel of the theme. Turn off to use the original app design.",
+      "default": true
+    },
+    {
+      "type": "color_background",
+      "id": "review_header_gradient",
+      "label": "Review count background gradient",
+      "default": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)"
+    },
+    {
+      "type": "color",
+      "id": "review_header_text_color",
+      "label": "Review count text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "review_button_background",
+      "label": "Review count button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "review_button_text_color",
+      "label": "Review count button text_color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apps"
+    }
+  ]
+}
+{% endschema %}

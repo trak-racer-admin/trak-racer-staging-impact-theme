@@ -1,0 +1,42 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+ACCORDION COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create an accordion (also called as collapsible). It internally uses the "details" HTML
+tag so that it can also be used without any JavaScript.
+
+********************************************
+Supported parameters
+********************************************
+
+* title: the title to use for the toggle button
+* icon: an optional icon attached to the title
+* content: the hidden content inside the accordion
+* open: if set to true the accordion is open by default
+* size: if set to "lg", the font is and spacing is bigger
+* class: any additional class
+* id: an optional ID for the accordion
+{%- endcomment -%}
+
+<details {% if id %}id="{{ id | escape }}"{% endif %} class="{{ class }} accordion {% if size %}accordion--{{ size }}{% endif %} group" aria-expanded="{% if open %}true{% else %}false{% endif %}" is="accordion-disclosure" {% if open %}open{% endif %} {{ block.shopify_attributes }}>
+  <summary>
+    {%- comment -%}iOS 14 does not support flex on the summary itself, so we have to use this extra div{%- endcomment -%}
+    <div class="accordion__toggle bold">
+      {%- if icon -%}
+        <div class="text-with-icon">
+          {%- render 'icon' with icon -%}
+          <span {% if size == 'lg' %}class="h6"{% endif %}>{{- title | escape -}}</span>
+        </div>
+      {%- else -%}
+        <span {% if size == 'lg' %}class="h6"{% endif %}>{{- title | escape -}}</span>
+      {%- endif -%}
+
+      <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">{%- render 'icon' with 'chevron-bottom-small' -%}</span>
+    </div>
+  </summary>
+
+  <div class="accordion__content">
+    {{- content -}}
+  </div>
+</details>

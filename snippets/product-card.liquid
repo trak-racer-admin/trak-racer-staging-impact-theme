@@ -1,0 +1,225 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT CARD COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in collection and featured collection to render a single product as a card
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render
+* show_rating: show or not the rating. If nothing is set, the theme uses the default product card setting
+* show_vendor: show or not the vendor. If nothing is set, the theme uses the default product card setting
+* show_quick_buy: show or not the quick buy. If nothing is set, the theme uses the default product card setting
+* show_secondary_image: show or not the secondary image. If nothing is set, the theme uses the default product card setting
+* show_swatches: allow to force hiding swatches. If nothing is set, it will default to the default card strategy
+* stacked: indicate if the product is in stack mode
+* reveal: if set to true the item will be revealed in a stacked mode
+* background: the background to use for the product card (if none is passed then the one from the global setting is used)
+* text_color: the text color to use for the product card (if none is passed then the one from the global setting is used)
+* text_alignment: can be "center". If nothing is set, the theme uses the default product card setting
+{%- endcomment -%}
+
+{%- assign show_rating = show_rating | default: settings.show_product_rating, allow_false: true -%}
+{%- assign show_vendor = show_vendor | default: settings.show_vendor, allow_false: true -%}
+{%- assign show_quick_buy = show_quick_buy | default: settings.show_quick_buy, allow_false: true -%}
+{%- assign show_secondary_image = show_secondary_image | default: settings.show_secondary_image, allow_false: true -%}
+{%- assign text_alignment = text_alignment | default: settings.product_info_alignment -%}
+
+{%- if stacked and section.settings.products_per_row_mobile == '2' -%}
+  {%- assign mobile_reduced = true -%}
+{%- endif -%}
+
+{%- assign section_background = section.settings.background_gradient | default: section.settings.background | default: settings.background -%}
+{%- assign card_background = background | default: settings.product_card_background -%}
+{%- assign card_text_color = text_color | default: settings.product_card_text_color -%}
+
+{%- if section_background != 'rgba(0,0,0,0)' and card_background != 'rgba(0,0,0,0)' and section_background != card_background -%}
+  {%- assign card_class = 'product-card ' -%}
+{%- else -%}
+  {%- assign card_class = 'product-card product-card--blends ' -%}
+{%- endif -%}
+
+{%- if show_secondary_image and product.media.size > 1 -%}
+  {%- assign card_class = card_class | append: 'product-card--show-secondary-media' -%}
+{%- endif -%}
+
+<product-card handle="{{ product.handle | escape }}" {% if reveal %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  PRODUCT BADGES
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- if show_badges and product.media.size > 0 -%}
+    {%- render 'product-badges', product: product, class: 'product-card__badge-list' -%}
+  {%- endif -%}
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  PRODUCT MEDIA
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- if product.media.size > 0 -%}
+    <div class="product-card__figure">
+      <a href="{{ product.url }}" data-instant>
+        {%- capture sizes -%}
+          {%- if stacked -%}
+            (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), (max-width: 1200px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
+          {%- else -%}
+            (max-width: 699px) 74vw, (max-width: 999px) 38vw, calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
+        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+
+        {%- if show_secondary_image and product.media.size > 1 -%}
+          {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
+          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+        {%- endif -%}
+      </a>
+
+      {%- if show_quick_buy and product.available -%}
+        <div class="product-card__quick-buy">
+          {%- assign quick_add_label = 'product.general.quick_add' | t -%}
+
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            {%- form 'product', product, is: 'product-form' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+              <div class="pointer-fine:hidden">
+                <button type="submit" is="custom-button" class="product-card__mobile-quick-buy-button" aria-label="{{ quick_add_label | escape }}">
+                  {%- render 'icon' with 'quick-buy-cart' -%}
+                </button>
+              </div>
+
+              <div class="pointer-coarse:hidden">
+                {%- render 'button', type: 'submit', content: quick_add_label -%}
+              </div>
+            {%- endform -%}
+          {%- else -%}
+            {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            <div class="pointer-fine:hidden">
+              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
+                {%- render 'icon' with 'quick-buy-cart' -%}
+              </button>
+            </div>
+
+            <div class="pointer-coarse:hidden">
+              {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
+            </div>
+
+            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
+              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            </quick-buy-drawer>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  PRODUCT INFO
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
+    {%- if show_vendor and product.vendor != blank -%}
+      {%- if show_rating and text_alignment != 'center' -%}
+        <div class="rating-with-text w-full">
+          {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
+
+          {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
+          {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
+        </div>
+      {%- else -%}
+        {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
+      {%- if show_rating and show_vendor == false or product.vendor == blank -%}
+        <div class="rating-with-text">
+          <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
+
+          {%- if text_alignment != 'center' -%}
+            {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
+            {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
+          {%- endif -%}
+        </div>
+      {%- else -%}
+        <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
+      {%- endif -%}
+
+      {%- render 'price-list', product: product, text_alignment: text_alignment -%}
+    </div>
+
+    {%- if show_rating and mobile_reduced or text_alignment == 'center' -%}
+      {%- capture rating_class -%}{% unless text_alignment == 'center' %}sm:hidden{% endunless %}{%- endcapture -%}
+      {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
+    {%- endif -%}
+
+    {%- if settings.product_color_display != 'hide' and show_swatches != false -%}
+      {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+
+      {%- for color_label in color_label_list -%}
+        {%- if product.options_by_name[color_label] != blank -%}
+          {%- assign product_option = product.options_by_name[color_label] -%}
+          {%- capture name -%}swatch-{{ section.id }}-{{ product.id }}-{{ product_option.position }}{%- endcapture -%}
+
+          <div class="product-card__aside">
+            {%- case settings.product_color_display -%}
+              {%- when 'count' -%}
+                <p class="product-card__color-count text-sm text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
+
+              {%- when 'swatch' -%}
+                <fieldset class="product-card__swatch-list h-stack {% if settings.color_swatch_style == 'rectangle' %}gap-2.5{% else %}gap-0.5{% endif %}" data-option-position="{{ product_option.position }}">
+                  {%- for option_value in product_option.values limit: 4 -%}
+                    {%- if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value -%}
+                      {%- assign selected = true -%}
+                    {%- else -%}
+                      {% assign selected = false %}
+                    {%- endif -%}
+
+                    {%- render 'swatch' with 'color', value: option_value, name: name, size: 'sm', selected: selected -%}
+                  {%- endfor -%}
+
+                  {% if product_option.values.size > 4 %}
+                    <a href="{{ product.url }}" data-instant class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                  {% endif %}
+                </fieldset>
+
+              {%- when 'variant' -%}
+                <fieldset class="product-card__variant-list" data-option-position="{{ product_option.position }}">
+                  {%- for option_value in product_option.values limit: 4 -%}
+                    {%- assign variant_option = 'option' | append: product_option.position -%}
+                    {%- assign variant_for_value = product.variants | where: variant_option, option_value | first -%}
+
+                    {%- if forloop.first or variant_for_value.matched and option_value == product_option.selected_value -%}
+                      {%- assign selected = true -%}
+                    {%- else -%}
+                      {% assign selected = false %}
+                    {%- endif -%}
+
+                    {%- render 'swatch' with 'media', media: variant_for_value.featured_media, value: option_value, name: name, size: 'sm', selected: selected -%}
+                  {%- endfor -%}
+
+                  {%- if product_option.values.size > 4 -%}
+                    <a href="{{ product.url }}" data-instant class="media-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                  {%- endif -%}
+                </fieldset>
+              {%- endcase -%}
+          </div>
+
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+</product-card>

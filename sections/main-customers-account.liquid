@@ -1,0 +1,137 @@
+<div class="container">
+  {%- if customer.orders.size == 0 -%}
+    <div class="empty-state">
+      <div class="empty-state__icon-wrapper">
+        {%- render 'icon' with 'picto-box', width: 32, height: 32, stroke_width: 1 -%}
+        <span class="count-bubble count-bubble--lg">0</span>
+      </div>
+
+      <div class="prose">
+        <p class="h6">{{ 'customer.account.no_orders' | t }}</p>
+
+        {%- assign button_content = 'customer.account.continue_shopping' | t -%}
+        {%- render 'button', href: routes.all_products_collection_url, size: 'xl', content: button_content -%}
+      </div>
+    </div>
+  {%- else -%}
+    <div class="page-spacer">
+      <div class="account">
+        <div class="account-header">
+          <div class="text-with-bubble justify-self-center">
+            <h1 class="h3">{{ 'customer.account.orders' | t }}</h1>
+            <span class="count-bubble count-bubble--lg">{{ customer.orders.size }}</span>
+          </div>
+        </div>
+
+        {%- paginate customer.orders by 16 -%}
+          <div class="account__block-list">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when '@app' -%}
+                  {%- render block -%}
+
+                {%- when 'liquid' -%}
+                  {%- if block.settings.liquid != blank -%}
+                    <div {{ block.shopify_attributes }}>
+                      {{ block.settings.liquid }}
+                    </div>
+                  {%- endif -%}
+
+                {%- when 'orders' -%}
+                  <div class="v-stack gap-5" {{ block.shopify_attributes }}>
+                    <div class="order-grid-list">
+                      {%- for order in customer.orders -%}
+                        <div class="order-grid-item rounded-sm">
+                          <p class="h5">{{ 'customer.order.order_name' | t: name: order.name }}</p>
+
+                          <div class="order-grid-item__categories">
+                            <div class="v-stack gap-1">
+                              <p class="bold">{{ 'customer.order.date' | t }}</p>
+                              <p class="text-subdued">{{ order.created_at | date: format: 'date' }}</p>
+                            </div>
+
+                            <div class="v-stack gap-1">
+                              <p class="bold">{{ 'customer.order.fulfillment_status' | t }}</p>
+                              <p class="text-subdued">{{ order.financial_status_label }}</p>
+                            </div>
+
+                            <div class="v-stack gap-1">
+                              <p class="bold">{{ 'customer.order.payment_status' | t }}</p>
+                              <p class="text-subdued">{{ order.fulfillment_status_label }}</p>
+                            </div>
+
+                            <div class="v-stack gap-1">
+                              <p class="bold">{{ 'customer.order.total' | t }}</p>
+                              <p class="text-subdued">{{ order.total_net_amount | money }}</p>
+                            </div>
+                          </div>
+
+                          {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
+                          {%- render 'button', href: order.customer_url, content: button_label, secondary: true, stretch: true -%}
+                        </div>
+                      {%- endfor -%}
+                    </div>
+
+                    <table class="order-table-list">
+                      <thead>
+                        <tr>
+                          <th>{{ 'customer.order.order' | t }}</th>
+                          <th>{{ 'customer.order.date' | t }}</th>
+                          <th>{{ 'customer.order.payment_status' | t }}</th>
+                          <th>{{ 'customer.order.fulfillment_status' | t }}</th>
+                          <th class="text-end">{{ 'customer.order.total' | t }}</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        {%- for order in customer.orders -%}
+                          <tr class="table-row-hover" onclick="window.location.href = '{{ order.customer_url }}'">
+                            <td class="bold">{{ order.name }}</td>
+                            <td class="text-subdued">{{ order.created_at | date: format: 'date' }}</td>
+                            <td class="text-subdued">{{ order.financial_status_label }}</td>
+                            <td class="text-subdued">{{ order.fulfillment_status_label }}</td>
+                            <td class="text-subdued text-end">{{ order.total_net_amount | money }}</td>
+                          </tr>
+                        {%- endfor -%}
+                      </tbody>
+                    </table>
+
+                    {%- render 'pagination', paginate: paginate -%}
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+        {%- endpaginate -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Customer account",
+  "class": "shopify-section--main-customers-account",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "liquid",
+      "name": "Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Liquid"
+        }
+      ]
+    },
+    {
+      "type": "orders",
+      "name": "Order list",
+      "limit": 1
+    }
+  ]
+}
+{% endschema %}

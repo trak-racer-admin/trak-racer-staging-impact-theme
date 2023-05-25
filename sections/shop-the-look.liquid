@@ -1,0 +1,265 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --shop-the-look-dot-background: {{ section.settings.background_dots.rgb }};
+    --shop-the-look-carousel-grid: {% if section.settings.stack_mobile %}auto-flow / auto{% else %}auto / auto-flow 75vw{% endif %};
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+
+    {%- render 'section-header', heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content -%}
+
+    <div class="shop-the-look">
+      <div class="relative">
+        {%- if section.settings.image != blank -%}
+          {%- capture sizes -%}(max-width:700px) 100vw, min({{ settings.page_width | divided_by: 2 }}px, 50vw){%- endcapture -%}
+          {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', widths: '300,400,500,600,800,1000', class: 'rounded', sizes: sizes -}}
+        {%- else -%}
+          {{- 'image' | placeholder_svg_tag: 'placeholder rounded' -}}
+        {%- endif -%}
+
+        {%- if section.blocks.size > 0 -%}
+          {%- capture dots -%}
+            {%- for block in section.blocks -%}
+              <button type="button" style="--shop-the-look-dot-top: {{ block.settings.vertical_position }}%; --shop-the-look-dot-left: {{ block.settings.horizontal_position }}%;" class="shop-the-look__dot" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: forloop.index }}</span>
+              </button>
+            {%- endfor -%}
+          {%- endcapture -%}
+          <shop-the-look-dots>
+            <page-dots aria-controls="scroll-carousel-{{ section.id }}" class="sm:hidden">
+              {{ dots }}
+            </page-dots>
+            <page-dots aria-controls="effect-carousel-{{ section.id }}" class="sm-max:hidden">
+              {{ dots }}
+            </page-dots>
+          </shop-the-look-dots>
+        {%- endif -%}
+      </div>
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="shop-the-look__products">
+          {%- assign horizontal_products_blends = true -%}
+          {%- assign section_background = section.settings.background_gradient | default: section.settings.background | default: settings.background -%}
+
+          {%- if section.settings.product_card_mobile_background != blank and section.settings.product_card_mobile_background != 'rgba(0,0,0,0)' and section.settings.product_card_mobile_background != section_background -%}
+            {%- assign horizontal_products_blends = false -%}
+          {%- endif -%}
+
+          <scroll-carousel selector=".horizontal-product" class="shop-the-look__carousel sm:hidden {% unless section.settings.stack_mobile %}scroll-area bleed sm:unbleed{% endunless %}" id="scroll-carousel-{{ section.id }}" role="region">
+            <div class="horizontal-product-list {% if horizontal_products_blends %}border {% if section.settings.stack_mobile %}divide-y{% else %}divide-x{% endif %}{% else %}separate{% endif %}">
+              {%- for block in section.blocks -%}
+                {%- if block.settings.product != blank -%}
+                  {%- render 'horizontal-product', product: block.settings.product, show_add_to_cart: true, background: section.settings.product_card_mobile_background, text_color: section.settings.product_card_mobile_text_color -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </scroll-carousel>
+
+          <effect-carousel class="shop-the-look__carousel sm-max:hidden" id="effect-carousel-{{ section.id }}" role="region">
+            {%- for block in section.blocks -%}
+              <div {% unless forloop.first %}class="reveal-invisible"{% endunless %} {{ block.shopify_attributes }}>
+                {%- if block.settings.product != blank -%}
+                  {%- render 'product-card', product: block.settings.product, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+                {%- else -%}
+                  {%- capture placeholder_image -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
+                  {%- render 'product-card-placeholder', placeholder_image: placeholder_image, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </effect-carousel>
+
+          {%- if section.blocks.size > 1 -%}
+            <div class="shop-the-look__controls sm-max:hidden">
+              <button is="prev-button" class="circle-button ring group" aria-controls="effect-carousel-{{ section.id }}">
+                <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+                <span class="animated-arrow animated-arrow--reverse"></span>
+              </button>
+
+              <button is="next-button" class="circle-button ring group" aria-controls="effect-carousel-{{ section.id }}">
+                <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+                <span class="animated-arrow"></span>
+              </button>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop the look",
+  "class": "shopify-section--shop-the-look",
+  "max_blocks": 4,
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_mobile",
+      "label": "Stack on mobile",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "2000 x 2000px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Shop the look"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "product_card_background",
+      "label": "Product card background (desktop)"
+    },
+    {
+      "type": "color",
+      "id": "product_card_text_color",
+      "label": "Product card text (desktop)"
+    },
+    {
+      "type": "color",
+      "id": "product_card_mobile_background",
+      "label": "Product card background (mobile)"
+    },
+    {
+      "type": "color",
+      "id": "product_card_mobile_text_color",
+      "label": "Product card text (mobile)"
+    },
+    {
+      "type": "color",
+      "id": "background_dots",
+      "label": "Dots background",
+      "default": "#FFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "range",
+          "id": "horizontal_position",
+          "min": 5,
+          "max": 95,
+          "step": 1,
+          "unit": "%",
+          "label": "Horizontal position",
+          "default": 30
+        },
+        {
+          "type": "range",
+          "id": "vertical_position",
+          "min": 5,
+          "max": 95,
+          "step": 1,
+          "unit": "%",
+          "label": "Vertical position",
+          "default": 30
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop the look",
+      "blocks": [
+        {
+          "type": "product",
+          "settings": {
+            "horizontal_position": 52,
+            "vertical_position": 25
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "horizontal_position": 75,
+            "vertical_position": 53
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "horizontal_position": 33,
+            "vertical_position": 73
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,57 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --page-max-width: {{ section.settings.content_width }};
+  }
+</style>
+
+<div class="container">
+  <div class="page-spacer">
+    <div class="page">
+      <h1 class="h1 text-center">{{ page.title }}</h1>
+
+      {%- if page.content != empty -%}
+        <div class="prose">
+          {{ page.content }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page",
+  "class": "shopify-section--main-page",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "content_width",
+      "label": "Content width",
+      "options": [
+        {
+          "value": "60ch",
+          "label": "Small"
+        },
+        {
+          "value": "80ch",
+          "label": "Medium"
+        },
+        {
+          "value": "100ch",
+          "label": "Large"
+        },
+        {
+          "value": "120ch",
+          "label": "X-Large"
+        },
+        {
+          "value": "100%",
+          "label": "Full width"
+        }
+      ],
+      "default": "80ch"
+    }
+  ]
+}
+{% endschema %}

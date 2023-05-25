@@ -1,0 +1,76 @@
+{%- if section.settings.html != blank -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      {% if section.settings.remove_vertical_spacing %}--section-spacing-block: 0px;{% endif %}
+      {% if section.settings.remove_horizontal_spacing %}--section-spacing-inline: 0px;{% endif %}
+    }
+  </style>
+
+  {%- render 'section-spacing-collapsing' -%}
+
+  <div {% render 'section-properties' %}>
+    {{ section.settings.html }}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "class": "shopify-section--custom-html",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_vertical_spacing",
+      "label": "Remove vertical spacing",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_horizontal_spacing",
+      "label": "Remove horizontal spacing",
+      "default": false
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML",
+      "default": "<p style=\"text-align: center\">Write or copy/paste HTML code</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ]
+}
+{% endschema %}

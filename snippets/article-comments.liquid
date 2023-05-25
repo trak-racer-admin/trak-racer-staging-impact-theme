@@ -1,0 +1,99 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+ARTICLE COMMENTS COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+Shows the blog post comments (if enabled on blog settings)
+
+********************************************
+Supported parameters
+********************************************
+
+* show_gravatar
+* comments_pagination
+{%- endcomment -%}
+
+<div class="article-comments" {{ block_attributes }} id="blog-post-comments">
+  {%- if article.comments_count > 0 -%}
+    <div class="comments-list bg-secondary">
+      <h3 class="h4">{{ 'blog.comments.count' | t: count: article.comments_count }}</h3>
+
+      {%- paginate article.comments by comments_pagination -%}
+        <div class="divide-y v-stack gap-4 sm:gap-8">
+          {%- for comment in article.comments -%}
+            <article class="comment">
+              {%- if show_gravatar -%}
+                <img class="comment__gravatar rounded-full" loading="lazy" width="32" height="32" src="//www.gravatar.com/avatar/{{ comment.email | md5 }}" alt="{{ comment.author }}">
+              {%- endif -%}
+
+              <div class="v-stack gap-2 sm:gap-3">
+                <div class="v-stack gap-1">
+                  <p class="bold text-base">{{ comment.author }}</p>
+
+                  <div class="prose">
+                    {{- comment.content -}}
+                  </div>
+                </div>
+
+                <time class="text-xs text-subdued">{{ comment.created_at | date: format: 'date_at_time' }}</time>
+              </div>
+            </article>
+          {%- endfor -%}
+        </div>
+
+        {%- render 'pagination', paginate: paginate, hash: '#blog-post-comments' -%}
+      {%- endpaginate -%}
+    </div>
+  {%- endif -%}
+
+  <div class="article-comments__form v-stack gap-6 sm:gap-8 border">
+    <div class="v-stack gap-4">
+      <p class="h4">{{ 'blog.comments.leave_comment' | t }}</p>
+
+      <div class="text-subdued prose text-sm">
+        {%- if blog.moderated? -%}
+          <p>{{ 'blog.comments.moderated' | t }}</p>
+        {%- endif -%}
+
+        {{- 'shopify.online_store.spam_detection.disclaimer_html' | t -}}
+      </div>
+    </div>
+
+    {%- form 'new_comment', article, class: 'form' -%}
+      <div class="fieldset">
+        {%- if form.posted_successfully? -%}
+          {%- capture content -%}
+            {%- if blog.moderated? -%}
+              {{- 'blog.comments.comment_sent' | t -}}
+            {%- else -%}
+              {{- 'blog.comments.comment_published' | t -}}
+            {%- endif -%}
+          {%- endcapture -%}
+          {%- render 'banner', status: 'success', content: content -%}
+
+        {%- else -%}
+          {%- if form.errors -%}
+            {%- assign content = form.errors | default_errors -%}
+            {%- render 'banner', status: 'error', content: content -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        <div class="input-row">
+          {%- assign label = 'blog.comments.name' | t -%}
+          {%- render 'input', type: 'text', name: 'comment[author]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
+
+          {%- assign label = 'blog.comments.email' | t -%}
+          {%- render 'input', type: 'email', name: 'comment[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+        </div>
+
+        {%- assign label = 'blog.comments.message' | t -%}
+        {%- render 'input', name: 'comment[body]', label: label, multiline: 4, required: true -%}
+      </div>
+
+      <div class="justify-self-start">
+        {%- assign button_content = 'blog.comments.submit' | t -%}
+        {%- render 'button', content: button_content, type: 'submit', size: 'xl' -%}
+      </div>
+    {%- endform -%}
+  </div>
+</div>

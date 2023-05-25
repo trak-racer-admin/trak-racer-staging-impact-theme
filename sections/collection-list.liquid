@@ -1,0 +1,373 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} .collection-list {
+    --collection-list-grid: {% if section.settings.stack_collections %}none{% else %}auto / auto-flow 73vw{% endif %};
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} .collection-list {
+      --collection-list-grid: {% if section.settings.stack_collections %}auto / repeat(2, minmax(0, 1fr)){% else %}auto / auto-flow 36vw{% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .collection-list {
+      --collection-list-grid: {% if section.settings.stack_collections %}auto / repeat({{ 3 | at_most: section.settings.collections_per_row }}, minmax(0, 1fr)){% else %}auto / auto-flow calc(var(--container-inner-width) / {{ section.settings.collections_per_row }} - (var(--grid-gutter) / 3 * 2)){% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} .collection-list {
+      --collection-list-grid: {% if section.settings.stack_collections %}auto / repeat({{ section.settings.collections_per_row }}, minmax(0, 1fr)){% else %}auto / auto-flow calc(var(--container-inner-width) / {{ section.settings.collections_per_row }} - (var(--grid-gutter) / {{ section.settings.collections_per_row }} * {{ section.settings.collections_per_row | minus: 1 }})){% endif %};
+    }
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+    {%- assign link_url = section.settings.link_url | default: section.settings.collection.url -%}
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: link_url -%}
+
+    <div class="{% if section.settings.show_progress_bar %}scrollable-with-controls{% else %}floating-controls-container{% endif %}">
+      {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
+
+      <scroll-carousel selector=".collection-card" id="{{ scroll_area_id }}" class="scroll-area bleed {% if section.blocks.size > section.settings.collections_per_row %}is-scrollable{% endif %}">
+        <collection-list class="collection-list">
+          {%- for block in section.blocks -%}
+            {%- assign collection = block.settings.collection -%}
+            {%- assign collection_url = block.settings.url | default: collection.url -%}
+
+            <a {% if collection_url != blank %}href="{{ collection_url }}"{% endif %} class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow" reveal-js>
+              <div class="content-over-media group rounded-sm" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
+                {%- if collection != blank or block.settings.image != blank -%}
+                  {%- assign image = block.settings.image | default: collection.featured_image -%}
+
+                  {%- if image != blank -%}
+                    {%- capture sizes -%}(max-width: 699px) 73vw, {{ settings.page_width | divided_by: section.settings.collections_per_row }}px{%- endcapture -%}
+                    {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,800,1000,1200,1400,1600', class: 'zoom-image' -}}
+                  {%- endif -%}
+
+                  <div class="collection-card__content-wrapper text-custom {{ block.settings.text_position }}" style="--text-color: {{ block.settings.text_color.rgb }}">
+                    {%- if block.settings.text_position contains 'place-self-end' -%}
+                      {%- render 'icon' with 'circle-button-right-clipped', width: 40, height: 40 -%}
+                    {%- endif -%}
+
+                    <div class="collection-card__content prose">
+                      {%- if block.settings.subheading != blank -%}
+                        <p class="bold">{{ block.settings.subheading | escape }}</p>
+                      {%- endif -%}
+
+                      <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | default: collection.title | escape }}</p>
+                    </div>
+
+                    {%- unless block.settings.text_position contains 'place-self-end' -%}
+                      {%- render 'icon' with 'circle-button-right-clipped', width: 40, height: 40 -%}
+                    {%- endunless -%}
+                  </div>
+                {%- else -%}
+                  {%- capture collection_placeholder -%}{% cycle 'collection-1', 'collection-2', 'collection-3' %}{%- endcapture -%}
+                  {{- collection_placeholder | placeholder_svg_tag: 'placeholder zoom-image' -}}
+
+                  <div class="collection-card__content-wrapper text-custom {{ block.settings.text_position }}" style="--text-color: {{ block.settings.text_color.rgb }}">
+                    {%- if block.settings.text_position contains 'place-self-end' -%}
+                      {%- render 'icon' with 'circle-button-right-clipped', width: 40, height: 40 -%}
+                    {%- endif -%}
+
+                    <div class="collection-card__content prose">
+                      <p class="{{ block.settings.heading_tag }}">{{- 'general.on_boarding.collection_title' | t -}}</p>
+                    </div>
+
+                    {%- unless block.settings.text_position contains 'place-self-end' -%}
+                      {%- render 'icon' with 'circle-button-right-clipped', width: 40, height: 40 -%}
+                    {%- endunless -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </a>
+          {%- endfor -%}
+        </collection-list>
+      </scroll-carousel>
+
+      {%- if section.settings.stack_collections == false -%}
+        {%- if section.settings.show_progress_bar -%}
+          {%- assign default_progress = section.settings.collections_per_row | times: 1.0 | divided_by: section.blocks.size -%}
+          {%- render 'scrollbar', observes: scroll_area_id, default_progress: default_progress, show_buttons: true -%}
+        {%- else -%}
+          <button is="prev-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
+            <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+            <span class="animated-arrow animated-arrow--reverse"></span>
+          </button>
+
+          <button is="next-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
+            <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+            <span class="animated-arrow"></span>
+          </button>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection list",
+  "class": "shopify-section--collection-list",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_collections",
+      "label": "Stack collections",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "collections_per_row",
+      "min": 2,
+      "max": 5,
+      "label": "Collections per row (desktop)",
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_progress_bar",
+      "label": "Show carousel progress bar",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collection list"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text",
+      "default": "View all"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1500 x 1800px .jpg recommended. Default to collection image."
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "info": "Default to collection title."
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "Default to collection URL."
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading style",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "select",
+          "id": "text_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "place-self-start text-start",
+              "label": "Top left"
+            },
+            {
+              "value": "place-self-start-center text-center",
+              "label": "Top center"
+            },
+            {
+              "value": "place-self-start-end text-end",
+              "label": "Top right"
+            },
+            {
+              "value": "place-self-center-start text-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "place-self-center text-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "place-self-center-end text-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "place-self-end-start text-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "place-self-end-center text-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "place-self-end text-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "place-self-center text-center"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 30
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection list",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

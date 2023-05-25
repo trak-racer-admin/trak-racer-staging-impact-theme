@@ -1,0 +1,84 @@
+<div class="container">
+  {%- paginate customer.addresses by 16 -%}
+    {%- if customer.addresses_count == 0 -%}
+      <div class="empty-state">
+        <div class="empty-state__icon-wrapper">
+          {%- render 'icon' with 'picto-pin', width: 32, height: 32, stroke_width: 1 -%}
+          <span class="count-bubble count-bubble--lg">0</span>
+        </div>
+
+        <div class="prose">
+          <p class="h6">{{ 'customer.addresses.no_addresses' | t }}</p>
+
+          {%- assign button_content = 'customer.addresses.add_address' | t -%}
+          {%- render 'button', size: 'xl', content: button_content, aria_controls: 'customer-address-new' -%}
+        </div>
+      </div>
+    {%- else -%}
+      <div class="page-spacer">
+        <div class="account">
+          <div class="account-header">
+            <div class="text-with-bubble justify-self-center">
+              <h1 class="h3">{{ 'customer.account.addresses' | t }}</h1>
+              <span class="count-bubble count-bubble--lg">{{ customer.addresses_count }}</span>
+            </div>
+          </div>
+
+          <div class="v-stack gap-6 sm:gap-12">
+            <div class="addresses-list">
+              {%- for address in customer.addresses -%}
+                <div class="address rounded-sm">
+                  {%- if address == customer.default_address -%}
+                    <p class="bold">{{ 'customer.addresses.default_address' | t }}</p>
+                  {%- else -%}
+                    <p class="bold">{{ 'customer.addresses.address_title' | t: position: forloop.index }}</p>
+                  {%- endif -%}
+
+                  {{- address | format_address -}}
+
+                  <div class="address__actions">
+                    <button type="button" aria-controls="customer-address-{{ address.id }}" aria-expanded="false">
+                      <span class="link text-sm text-subdued">{{ 'customer.addresses.edit' | t }}</span>
+                    </button>
+
+                    <form method="post" action="{{ address.url }}">
+                      <input type="hidden" name="_method" value="delete">
+                      <button is="confirm-button" data-message="{{ 'customer.addresses.delete_confirm' | t | escape }}">
+                        <span class="link text-sm text-subdued">{{ 'customer.addresses.delete' | t }}</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
+
+            {%- render 'pagination', paginate: paginate -%}
+
+            <div class="justify-self-center">
+              {%- assign button_content = 'customer.addresses.add_address' | t -%}
+              {%- render 'button', size: 'xl', content: button_content, aria_controls: 'customer-address-new' -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- render 'address-form', address: customer.new_address -%}
+
+    {%- for address in customer.addresses -%}
+      {%- render 'address-form', address: address -%}
+    {%- endfor -%}
+  {%- endpaginate -%}
+</div>
+
+<div class="article">
+
+</div>
+
+{% schema %}
+{
+  "name": "Customer addresses",
+  "class": "shopify-section--main-customers-addresses",
+  "tag": "section"
+}
+{% endschema %}

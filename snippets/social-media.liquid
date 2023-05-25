@@ -1,0 +1,157 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+SOCIAL MEDIA
+----------------------------------------------------------------------------------------------------------------------
+
+Output a list of social media icons based on the social URL settings.
+
+********************************************
+Supported variables
+********************************************
+
+* size: can be "sm" or nothing. When setting is set to "sm", this only impacts the mobile (desktop uses the same size)
+{%- endcomment -%}
+
+{%- capture social_media -%}
+  {%- if settings.social_facebook != blank or shop.brand.metafields.social_links.facebook != blank -%}
+    <li>
+      <a href="{{ settings.social_facebook | default: shop.brand.metafields.social_links.facebook }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Facebook' }}">
+        {%- render 'icon' with 'facebook' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_twitter != blank or shop.brand.metafields.social_links.twitter != blank -%}
+    <li>
+      <a href="{{ settings.social_twitter | default: shop.brand.metafields.social_links.twitter }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Twitter' }}">
+        {%- render 'icon' with 'twitter' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_instagram != blank or shop.brand.metafields.social_links.instagram != blank -%}
+    <li>
+      <a href="{{ settings.social_instagram | default: shop.brand.metafields.social_links.instagram }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Instagram' }}">
+        {%- render 'icon' with 'instagram' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_pinterest != blank or shop.brand.metafields.social_links.pinterest != blank -%}
+    <li>
+      <a href="{{ settings.social_pinterest | default: shop.brand.metafields.social_links.pinterest }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Pinterest' }}">
+        {%- render 'icon' with 'pinterest' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_youtube != blank or shop.brand.metafields.social_links.youtube != blank -%}
+    <li>
+      <a href="{{ settings.social_youtube | default: shop.brand.metafields.social_links.youtube }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'YouTube' }}">
+        {%- render 'icon' with 'youtube' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_tiktok != blank or shop.brand.metafields.social_links.tiktok != blank -%}
+    <li>
+      <a href="{{ settings.social_tiktok | default: shop.brand.metafields.social_links.tiktok }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'TikTok' }}">
+        {%- render 'icon' with 'tiktok' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_vimeo != blank or shop.brand.metafields.social_links.vimeo != blank -%}
+    <li>
+      <a href="{{ settings.social_vimeo | default: shop.brand.metafields.social_links.vimeo }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Vimeo' }}">
+        {%- render 'icon' with 'vimeo' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_linkedin != blank -%}
+    <li>
+      <a href="{{ settings.social_linkedin }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'LinkedIn' }}">
+        {%- render 'icon' with 'linkedin' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_snapchat != blank or shop.brand.metafields.social_links.snapchat != blank -%}
+    <li>
+      <a href="{{ settings.social_snapchat | default: shop.brand.metafields.social_links.snapchat }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Snapchat' }}">
+        {%- render 'icon' with 'snapchat' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_whatsapp != blank -%}
+    <li>
+      <a href="{{ settings.social_whatsapp }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'WhatsApp' }}">
+        {%- render 'icon' with 'whatsapp' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_tumblr != blank or shop.brand.metafields.social_links.tumblr != blank -%}
+    <li>
+      <a href="{{ settings.social_tumblr | default: shop.brand.metafields.social_links.tumblr }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Tumblr' }}">
+        {%- render 'icon' with 'tumblr' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_fancy != blank -%}
+    <li>
+      <a href="{{ settings.social_fancy }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Fancy' }}">
+        {%- render 'icon' with 'fancy' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_wechat != blank -%}
+    <li>
+      <a href="{{ settings.social_wechat }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'WeChat' }}">
+        {%- render 'icon' with 'wechat' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_reddit != blank -%}
+    <li>
+      <a href="{{ settings.social_reddit }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Reddit' }}">
+        {%- render 'icon' with 'reddit' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_line != blank -%}
+    <li>
+      <a href="{{ settings.social_line }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'LINE' }}">
+        {%- render 'icon' with 'line' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_spotify != blank -%}
+    <li>
+      <a href="{{ settings.social_spotify }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Spotify' }}">
+        {%- render 'icon' with 'spotify' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_21buttons != blank -%}
+    <li>
+      <a href="{{ settings.social_21buttons }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: '21 Buttons' }}">
+        {%- render 'icon' with '21buttons' -%}
+      </a>
+    </li>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if social_media != blank -%}
+  <ul class="social-media {% if size == 'sm' %}social-media--sm{% endif %}" role="list">
+    {{- social_media -}}
+  </ul>
+{%- endif -%}

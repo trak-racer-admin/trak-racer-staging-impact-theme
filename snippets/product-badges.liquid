@@ -1,0 +1,79 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT BADGES COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in product listing and product page to render the badges of a given product
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render the badges
+* types: the types of badge to output. Can be "custom", "sold_out" or "discount" (or a combination separated by comma). If nothing is set, all badges are outputted.
+* form_id: an optional form ID to use to update the badges when a given variant changes
+* block: an optional block to output theme editor attributes
+* class: an extra class added on the container
+{%- endcomment -%}
+
+{%- assign badge_types = types | default: 'custom, sold_out, discount' | split: ',' -%}
+{%- assign variant = product.selected_or_first_available_variant -%}
+
+{%- capture badges -%}
+  {%- for badge_type in badge_types -%}
+    {%- assign stripped_badge_type = badge_type | strip -%}
+
+    {%- case stripped_badge_type -%}
+      {%- when 'custom' -%}
+        {%- assign custom_badges = product.metafields.custom.badges.value | sort -%}
+
+        {%- for custom_badge in custom_badges -%}
+          <span class="badge badge--primary">{{ custom_badge }}</span>
+        {%- endfor -%}
+
+      {%- when 'sold_out' -%}
+        {%- if settings.show_sold_out_badge -%}
+          {%- if variant.available == false or form_id != blank -%}
+            <sold-out-badge {% if variant.available %}hidden{% endif %} {% if form_id != blank %}form="{{ form_id }}"{% endif %} class="badge badge--sold-out">
+              {{- 'product.general.sold_out_badge' | t -}}
+            </sold-out-badge>
+          {%- endif -%}
+        {%- endif -%}
+
+      {%- when 'discount' -%}
+        {%- if settings.show_discount -%}
+          {%- assign is_variant_on_sale = false -%}
+
+          {%- if variant.available and variant.compare_at_price > variant.price -%}
+            {%- assign is_variant_on_sale = true -%}
+          {%- endif -%}
+
+          {%- if form_id != blank or is_variant_on_sale -%}
+            {%- if settings.discount_mode == 'percentage' -%}
+              {%- assign savings = variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -%}
+            {%- else -%}
+              {%- capture savings -%}{{ variant.compare_at_price | minus: variant.price | money }}{%- endcapture -%}
+            {%- endif -%}
+
+            {%- comment -%}
+            When showing for product card (form_id == blank) and that the product price varies, we show a sale badge without explicit saving
+            as it can cause confusion
+            {%- endcomment -%}
+            <on-sale-badge {% unless is_variant_on_sale %}hidden{% endunless %} {% if settings.show_discount %}discount-mode="{{ settings.discount_mode | escape }}"{% endif %} {% if form_id != blank %}form="{{ form_id }}"{% endif %} class="badge badge--on-sale">
+              {%- if form_id == blank and product.price_varies -%}
+                {{- 'product.general.on_sale_badge' | t -}}
+              {%- else -%}
+                {{- 'product.general.discount_badge_html' | t: savings: savings -}}
+              {%- endif -%}
+            </on-sale-badge>
+          {%- endif -%}
+        {%- endif -%}
+    {%- endcase -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if badges != blank -%}
+  <div class="{{ class }}" {{ block.shopify_attributes }}>
+    {{- badges -}}
+  </div>
+{%- endif -%}

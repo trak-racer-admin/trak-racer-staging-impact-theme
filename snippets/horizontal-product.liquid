@@ -1,0 +1,74 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+HORIZONTAL PRODUCT COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in product page, blog page or collection to highlight small product
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render
+* size: can be "sm" or nothing
+* show_add_to_cart: a boolean indicating if we show the add to cart
+* background: an optional background color for the tile
+* text_color: an optional text color for the tile
+* output_link: if set to false, the link around the link is not set
+{%- endcomment -%}
+
+{%- capture class -%}horizontal-product {% if size == 'sm' %}horizontal-product--sm{% endif %} {% if background != 'rgba(0,0,0,0)' %}rounded-xs{% endif %} snap-start{%- endcapture -%}
+
+<div {% render 'surface', class: class, background: background, text_color: text_color %}>
+  {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+
+  <div class="horizontal-product__info">
+    <div class="v-stack gap-0.5">
+      {%- if output_link == false -%}
+        <span class="text-sm bold">{{ product.title }}</span>
+      {%- else -%}
+        <a href="{{ product.url }}" data-instant class="text-sm bold">
+          <span class="reversed-link hover:show">{{ product.title }}</span>
+        </a>
+      {%- endif -%}
+
+      <p class="text-sm text-subdued">
+        {%- if settings.currency_code_enabled -%}
+          {{- product.price | money_with_currency -}}
+        {%- else -%}
+          {{- product.price | money -}}
+        {%- endif -%}
+      </p>
+    </div>
+
+    {%- if show_add_to_cart -%}
+      <div class="horizontal-product__cta">
+        {%- if product.available -%}
+          {%- capture unique_id -%}{{ section.id }}-{{ block.id }}-{{ product.id }}{%- endcapture -%}
+          {%- capture button_content -%}{{ 'product.general.add_to_cart_short' | t }}{%- endcapture -%}
+
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            {%- capture product_form_id -%}complementary-product-{{ unique_id }}{%- endcapture -%}
+
+            {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- render 'button', content: button_content, type: 'submit', size: 'sm', subdued: true -%}
+            {%- endform -%}
+          {%- else -%}
+            {%- capture quick_buy_id -%}quick-buy-horizontal-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            {%- render 'button', content: button_content, size: 'sm', subdued: true, aria_controls: quick_buy_id -%}
+
+            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
+              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            </quick-buy-drawer>
+          {%- endif -%}
+        {%- else -%}
+          {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+          {%- render 'button', content: button_content, size: 'sm', disabled: true, subdued: true -%}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
