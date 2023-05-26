@@ -137,88 +137,6 @@
         "text_color": ""
       }
     },
-    "ffa49edd-69d1-486a-b0bf-46642fde7ffb": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19157304017184__ffa49edd-69d1-486a-b0bf-46642fde7ffb-1685075203b3b3008b-1": {
-          "type": "heading",
-          "settings": {
-            "text": "The Premium Experience",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19157304017184__ffa49edd-69d1-486a-b0bf-46642fde7ffb-1685075203b3b3008b-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "a8d35903-3ec8-4314-b83d-f9643e298b2c": {
-      "type": "rich-text",
-      "blocks": {
-        "f94c5cd6-65b3-4f67-b4d6-f021363e6ce9": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-star",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": ""
-          }
-        },
-        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Compact and fits almost anywhere<\/p>"
-          }
-        },
-        "d72ad407-820f-4c1d-9327-cc15c0bea274": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "79d0cf88-0f86-4f32-a9ba-cc67e8a86b9f": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": ""
-          }
-        },
-        "f3baa390-fd3c-4f60-b38f-26eedc47af61": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>The innovative adjustability is off the charts<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "f94c5cd6-65b3-4f67-b4d6-f021363e6ce9",
-        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-2",
-        "d72ad407-820f-4c1d-9327-cc15c0bea274",
-        "79d0cf88-0f86-4f32-a9ba-cc67e8a86b9f",
-        "f3baa390-fd3c-4f60-b38f-26eedc47af61"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "b9c5d0ce-ed6b-4b53-b3d1-530cade9b203": {
       "type": "hot-spots",
       "blocks": {
@@ -281,8 +199,8 @@
         "full_width": true,
         "image": "shopify:\/\/shop_images\/FS3_Hotspots_For_Desktop.png",
         "mobile_image": "shopify:\/\/shop_images\/FS3_Hotspots_For_Mobile.png",
-        "title": "",
-        "content": "",
+        "title": "The Premium Experience",
+        "content": "<ul><li>Compact and fits almost anywhere<\/li><li>The innovative adjustability is off the charts<\/li><\/ul>",
         "button_text": "",
         "button_url": "",
         "desktop_text_position": "place-self-start text-start",
@@ -290,7 +208,7 @@
         "image_background_gradient": "",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "overlay_text_color": "#ffffff",
+        "overlay_text_color": "#000000",
         "overlay_button_background": "",
         "overlay_button_text_color": "",
         "hot_spot_dot_background": "#ffffff",
@@ -610,8 +528,6 @@
     "main",
     "c626f5bb-d36d-41a1-bec3-25c8cd71e9cc",
     "8742d735-6a88-40b3-89d8-12bbe8dd7fcf",
-    "ffa49edd-69d1-486a-b0bf-46642fde7ffb",
-    "a8d35903-3ec8-4314-b83d-f9643e298b2c",
     "b9c5d0ce-ed6b-4b53-b3d1-530cade9b203",
     "c550dcba-3f43-45f3-9ed6-4362f7a01fb6",
     "8241a3c7-587b-4e1d-9d34-99dbc53f0c17",
