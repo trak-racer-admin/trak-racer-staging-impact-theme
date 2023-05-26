@@ -189,8 +189,8 @@
           "settings": {
             "horizontal_position": 55,
             "vertical_position": 14,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
+            "horizontal_position_mobile": 53,
+            "vertical_position_mobile": 25,
             "icon_width": 32,
             "title": "Innovative Adjustable Wheel Deck",
             "content": "<p>The wheel deck has been built to be the strongest amongst the competition. <\/p><p>Includes a 3-point stage height adjustment with pre-drilled mounting holes, fitting all major wheel brands on the market.<\/p>"
@@ -199,24 +199,24 @@
         "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-2": {
           "type": "item",
           "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
+            "horizontal_position": 41,
+            "vertical_position": 18,
+            "horizontal_position_mobile": 31,
+            "vertical_position_mobile": 27,
             "icon_width": 32,
-            "title": "Strength in materials and design",
+            "title": "Strength in Materials and Design",
             "content": "<p>The FS3 doesn't skimp out on the materials, with a gross weight of 18kgs (40lbs). The heavy duty construction provides the rigidity and strength for the toughest of races while maintaining a compact folding design.<\/p>"
           }
         },
         "738eacad-660e-4f86-b7d5-8b01fd1863e5": {
           "type": "item",
           "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
+            "horizontal_position": 48,
+            "vertical_position": 45,
             "horizontal_position_mobile": 30,
             "vertical_position_mobile": 30,
             "icon_width": 32,
-            "title": "Office chair ready",
+            "title": "Office Chair Ready",
             "content": "<p>The widest in it's class with a 65cm\/25 1\/2\" stance, the FS3 is ready to use with almost any office chair. It allows a firm stance for any type of racing while also having the ability to fold away in seconds for storage.<\/p>"
           }
         }
