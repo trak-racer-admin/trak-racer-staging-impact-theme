@@ -452,25 +452,107 @@
         "input_text_color": ""
       }
     },
-    "bcc54f4f-a02c-42d2-9213-ab779a3cb641": {
-      "type": "recently-viewed-products",
+    "518576c3-31f5-4f38-894a-ba6c2ae6cd18": {
+      "type": "media-grid",
+      "blocks": {
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-0": {
+          "type": "image",
+          "settings": {
+            "title": "Racing Simulators",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-1": {
+          "type": "image",
+          "settings": {
+            "title": "Flight Simulators",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-2": {
+          "type": "image",
+          "settings": {
+            "title": "Monitor Stands",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "26bbf099-28ff-46c4-89f2-a5a1b3359a50": {
+          "type": "image",
+          "settings": {
+            "title": "Seats",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-0",
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-1",
+        "template--19157304017184__518576c3-31f5-4f38-894a-ba6c2ae6cd18-16850748196fa3717b-2",
+        "26bbf099-28ff-46c4-89f2-a5a1b3359a50"
+      ],
       "settings": {
         "full_width": true,
-        "products_count": 6,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Recently viewed products",
-        "content": "",
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
         "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "background_gradient": ""
       }
     }
   },
@@ -484,6 +566,6 @@
     "8241a3c7-587b-4e1d-9d34-99dbc53f0c17",
     "e2e55b5d-ec70-4651-b956-b058383f7743",
     "d27ba0d4-71fd-4149-acda-080a37dd0303",
-    "bcc54f4f-a02c-42d2-9213-ab779a3cb641"
+    "518576c3-31f5-4f38-894a-ba6c2ae6cd18"
   ]
 }
