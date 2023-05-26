@@ -2,11 +2,488 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "c626f5bb-d36d-41a1-bec3-25c8cd71e9cc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19157304017184__c626f5bb-d36d-41a1-bec3-25c8cd71e9cc-168507294688d36ffc-1": {
+          "type": "heading",
+          "settings": {
+            "text": "FS3",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "0b7ab8a3-51e5-4596-b705-673ba38b49d8": {
+          "type": "heading",
+          "settings": {
+            "text": "Stand Above the Rest",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "a5ed9da4-40b8-4499-bdcc-932f54c0b646": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FS3-02.2_720x_2015a69b-9ac6-4b78-a2c8-76fcb6331c9c.webp",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "bb68c861-5b7f-42ea-85ec-5f3b7a6f4205": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Shop Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "9855b6df-5f9c-4f4e-89ad-36a36ec4b516": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__c626f5bb-d36d-41a1-bec3-25c8cd71e9cc-168507294688d36ffc-1",
+        "0b7ab8a3-51e5-4596-b705-673ba38b49d8",
+        "a5ed9da4-40b8-4499-bdcc-932f54c0b646",
+        "bb68c861-5b7f-42ea-85ec-5f3b7a6f4205",
+        "9855b6df-5f9c-4f4e-89ad-36a36ec4b516"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "8742d735-6a88-40b3-89d8-12bbe8dd7fcf": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Compact and Foldable",
+            "content": "<p>Compact design that folds away in a matter of seconds<\/p>"
+          }
+        },
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "30 Minute Assembly",
+            "content": "<p>Fast assembly, easy adjustability <\/p>"
+          }
+        },
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-wifi",
+            "custom_icon": "shopify:\/\/shop_images\/4236913.png",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Ultimate Compatibility",
+            "content": "<p>Compatible with PC, PS3, PS4, XBOX 360, XBOX One, Wii and more<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-2",
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-0",
+        "template--19157304017184__8742d735-6a88-40b3-89d8-12bbe8dd7fcf-16850730089c025c4a-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "a8d35903-3ec8-4314-b83d-f9643e298b2c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Premium Exprience\/Innovative\/Adjustability off the charts\/Compact and fits almost anywhere",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-1",
+        "template--19157304017184__a8d35903-3ec8-4314-b83d-f9643e298b2c-168507294688d36ffc-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "b9c5d0ce-ed6b-4b53-b3d1-530cade9b203": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 45,
+            "horizontal_position_mobile": 70,
+            "vertical_position_mobile": 48,
+            "icon_width": 32,
+            "title": "Innovative Ergonomic Design",
+            "content": "<p>The upgraded FS3 Wheel Stand is attractive and completely adjustable from the feet all the way up to the wheel deck.<\/p><p>The result is a reduction in stress to your shoulders and back while racing.<\/p>"
+          }
+        },
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 55,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Innovative Adjustable Wheel Deck",
+            "content": "<p>The wheel deck has been built to be the strongest amongst the competition. <\/p><p>Includes a 3-point stage height adjustment with pre-drilled mounting holes, fitting all major wheel brands on the market.<\/p>"
+          }
+        },
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Strength in materials and design",
+            "content": "<p>The FS3 doesn't skimp out on the materials, with a gross weight of 18kgs (40lbs). The heavy duty construction provides the rigidity and strength for the toughest of races while maintaining a compact folding design.<\/p>"
+          }
+        },
+        "738eacad-660e-4f86-b7d5-8b01fd1863e5": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 30,
+            "vertical_position": 30,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "Office chair ready",
+            "content": "<p>The widest in it's class with a 65cm\/25 1\/2\" stance, the FS3 is ready to use with almost any office chair. It allows a firm stance for any type of racing while also having the ability to fold away in seconds for storage.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-0",
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-1",
+        "template--19157304017184__b9c5d0ce-ed6b-4b53-b3d1-530cade9b203-1685073844269e4b06-2",
+        "738eacad-660e-4f86-b7d5-8b01fd1863e5"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/FS3_Hotspots_For_Desktop.png",
+        "mobile_image": "shopify:\/\/shop_images\/FS3_Hotspots_For_Mobile.png",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "c550dcba-3f43-45f3-9ed6-4362f7a01fb6": {
+      "type": "press",
+      "blocks": {
+        "template--19157304017184__c550dcba-3f43-45f3-9ed6-4362f7a01fb6-168507366615438d0c-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Valued Trak Racer customer",
+            "content": "\"I do not have the room for a full rig. I had purchased a Direct Drive wheel but did not want to attach it to my wooden desk with the strength these wheels have. Bought this stand and have not been disappointed. Sturdy enough to handle the DD wheel I have purchased without an issue. Easy to set up. Would definitely recommend for anyone that does not have the room for a full sim rig!\" -",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__c550dcba-3f43-45f3-9ed6-4362f7a01fb6-168507366615438d0c-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "8241a3c7-587b-4e1d-9d34-99dbc53f0c17": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19157304017184__8241a3c7-587b-4e1d-9d34-99dbc53f0c17-168507294688d36ffc-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The most durable wheel stand on the market",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19157304017184__8241a3c7-587b-4e1d-9d34-99dbc53f0c17-168507294688d36ffc-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Developed by industry professionals, the FS3 is the best-looking and most adjustable wheel stand on the market.<\/p>"
+          }
+        },
+        "d5d3ab39-695e-4e36-a0d0-bdb8751f59ed": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FS3-GIF2.gif",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__8241a3c7-587b-4e1d-9d34-99dbc53f0c17-168507294688d36ffc-1",
+        "template--19157304017184__8241a3c7-587b-4e1d-9d34-99dbc53f0c17-168507294688d36ffc-2",
+        "d5d3ab39-695e-4e36-a0d0-bdb8751f59ed"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "e2e55b5d-ec70-4651-b956-b058383f7743": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The beautiful design, strength and compactibility make the FS3 the number one wheel stand on the market.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "d27ba0d4-71fd-4149-acda-080a37dd0303": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-0": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-2": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-3": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-4": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-5": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-6": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-7": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-10": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-0",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-1",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-2",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-3",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-4",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-5",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-6",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-7",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-8",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-9",
+        "template--19157304017184__d27ba0d4-71fd-4149-acda-080a37dd0303-1685074218fc648722-10"
+      ],
+      "settings": {
+        "full_width": false,
+        "product": "",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "bcc54f4f-a02c-42d2-9213-ab779a3cb641": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "full_width": true,
+        "products_count": 6,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c626f5bb-d36d-41a1-bec3-25c8cd71e9cc",
+    "8742d735-6a88-40b3-89d8-12bbe8dd7fcf",
+    "a8d35903-3ec8-4314-b83d-f9643e298b2c",
+    "b9c5d0ce-ed6b-4b53-b3d1-530cade9b203",
+    "c550dcba-3f43-45f3-9ed6-4362f7a01fb6",
+    "8241a3c7-587b-4e1d-9d34-99dbc53f0c17",
+    "e2e55b5d-ec70-4651-b956-b058383f7743",
+    "d27ba0d4-71fd-4149-acda-080a37dd0303",
+    "bcc54f4f-a02c-42d2-9213-ab779a3cb641"
   ]
 }
