@@ -296,15 +296,25 @@
         "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1": {
           "type": "heading",
           "settings": {
-            "text": "The beautiful design, strength and compactibility make the FS3 the number one wheel stand on the market.",
+            "text": "Unleashing Elegance, Power, and Portability",
             "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "a3a624ff-1a11-4fe2-9376-2e31bde3ddde": {
+          "type": "heading",
+          "settings": {
+            "text": "The FS3 Reigns Supreme as the Unrivaled Wheel Stand Champion!",
+            "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
           }
         }
       },
       "block_order": [
-        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1"
+        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1",
+        "a3a624ff-1a11-4fe2-9376-2e31bde3ddde"
       ],
       "settings": {
         "full_width": true,
