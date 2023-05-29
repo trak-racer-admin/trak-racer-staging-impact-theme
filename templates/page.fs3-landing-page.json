@@ -290,30 +290,35 @@
         "text_color": ""
       }
     },
+    "6609b91f-7a66-43a8-bda3-6820a1a924d0": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "Unleashing Elegance, Power, and Portability",
+        "text_size": "small",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 19,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "e2e55b5d-ec70-4651-b956-b058383f7743": {
       "type": "rich-text",
       "blocks": {
-        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Unleashing Elegance, Power, and Portability",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
         "a3a624ff-1a11-4fe2-9376-2e31bde3ddde": {
           "type": "heading",
           "settings": {
             "text": "The FS3 Reigns Supreme as the Unrivaled Wheel Stand Champion!",
-            "heading_tag": "h4",
+            "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
           }
         }
       },
       "block_order": [
-        "template--19157304017184__e2e55b5d-ec70-4651-b956-b058383f7743-168507294688d36ffc-1",
         "a3a624ff-1a11-4fe2-9376-2e31bde3ddde"
       ],
       "settings": {
@@ -541,6 +546,7 @@
     "b9c5d0ce-ed6b-4b53-b3d1-530cade9b203",
     "c550dcba-3f43-45f3-9ed6-4362f7a01fb6",
     "8241a3c7-587b-4e1d-9d34-99dbc53f0c17",
+    "6609b91f-7a66-43a8-bda3-6820a1a924d0",
     "e2e55b5d-ec70-4651-b956-b058383f7743",
     "d27ba0d4-71fd-4149-acda-080a37dd0303",
     "518576c3-31f5-4f38-894a-ba6c2ae6cd18"
