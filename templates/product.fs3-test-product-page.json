@@ -3,14 +3,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
+            "heading_tag": "h2"
           }
         },
         "badges": {
@@ -21,11 +17,25 @@
         "price": {
           "type": "price",
           "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
           }
         },
         "rating": {
           "type": "rating",
           "settings": {
+            "show_empty": false
           }
         },
         "payment_terms": {
@@ -38,14 +48,20 @@
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
+          "type": "text",
           "settings": {
+            "text": "<ul><li>Extremely adjustable<\/li><li>Compact design, folds away in seconds<\/li><li>Compatible with PC, Xbox & PS consoles and more<\/li><\/ul>"
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
           }
         },
         "quantity_selector": {
@@ -56,38 +72,446 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
           }
         },
-        "pickup_availability": {
-          "type": "pickup_availability",
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
+          "type": "associated_products",
           "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "background": "#eaf2ed",
+            "text_color": "#00a341"
+          }
+        },
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "background": "#eaf2ed",
+            "text_color": "#00a341"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "badges",
         "price",
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
         "separator",
-        "description",
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de",
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
       ],
       "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "You have the freedom to raise or lower the wheel stand to your desired height. This allows you to find the most comfortable position that suits your racing style.",
+            "title": "Height and Angle Adjustments",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "subheading": "Our compact design enables the stand to fold away in a matter of seconds. It's easy to store, so you can maximize your limited space while still having a great racing setup whenever you need it.",
+            "title": "Easy Storage",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "The stand is 650mm wide, providing a firm stance when racing. It works seamlessly with most fixed and office\/race chairs, ensuring stability and comfort during your sessions.",
+            "title": "Office Chair Compatibility",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "subheading": "We've designed the stand to be compatible with all the popular steering wheel, shifter, and pedal sets on the market, including Logitech, Thrustmaster, and Fanatec.  Additionally, pre-drilled mounting holes are available for all major brands, ensuring easy installation.",
+            "title": "Maximum Compatibility",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "Your safety and comfort are our top priorities. The stand features hard-wood floor safe rubber feet to prevent any unwanted movement during intense races. It's built with high-grade steel tubing, resulting in a rigid frame that provides superior stability. The frame alone weighs nearly 18kgs (40lbs), showcasing its robust and durable build quality.",
+            "title": "Solid Construction",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 8,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Weight",
+            "heading_2": "Size",
+            "heading_3": "Assembly Time",
+            "heading_4": "Wheelbase Torque",
+            "heading_5": "Pedal Weight Capacity",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>18kgs (40lb)<\/p>",
+            "value_2": "<p>650mm wide x 1120mm high<\/p>",
+            "value_3": "<p>Approximately 1 Hour<\/p>",
+            "value_4": "<p>Up to 5nm<\/p>",
+            "value_5": "<p>100kgs (220lbs)<\/p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FS3 Specifications",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
+      "type": "video",
+      "blocks": {
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "FS3 - In Detail",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0",
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "974a92ca-5417-47d7-bae4-547d0c063284": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Chassis",
+            "content": "<p>High-quality chassis with assembly instructions plus tools and screws for assembly<\/p>"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Gear Shifter Mount",
+            "content": "<p>Left\/right adjustable <\/p>"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Wheel Mount",
+            "content": "<p>Angle and height adjustable <\/p>"
+          }
+        },
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Pedal Mount",
+            "content": "<p>Angle adjustable <\/p>"
+          }
+        },
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "2 Year Warranty",
+            "content": "<p>You're covered on faults for two years<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2",
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "What's Included",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
+        "recommendations_count": 6,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     }
   },
   "order": [
     "main",
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
     "related-products"
   ]
 }
