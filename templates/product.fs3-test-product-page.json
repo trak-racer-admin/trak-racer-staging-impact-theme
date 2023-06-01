@@ -350,7 +350,7 @@
         "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "subheading": "",
         "title": "FS3 Specifications",
         "content": "",
