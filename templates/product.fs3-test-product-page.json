@@ -190,7 +190,7 @@
       ],
       "settings": {
         "full_width": false,
-        "content_width": "large",
+        "content_width": "medium",
         "text_position": "start",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
