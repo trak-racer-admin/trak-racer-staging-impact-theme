@@ -180,13 +180,36 @@
         "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Welcome to our racing wheel stand! We're thrilled to offer you a beautifully designed and extremely adjustable setup that will take your racing experience to the next level. Here's how our stand can help you achieve the perfect racing position and improve your personal best.<\/p>"
+            "content": "<p>Welcome to our racing wheel stand! We're thrilled to offer you a beautifully designed and extremely adjustable setup that will take your racing experience to the next level. Here's how our stand can help you achieve the perfect racing position and improve your personal best:<\/p>"
+          }
+        },
+        "329d28c3-3488-49ac-a3ac-4b9037c255b4": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "d417e9b0-231d-4c2c-b74a-929e81426f51": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "dbd4fafd-b404-44d2-99b0-140a90f2a174": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
       "block_order": [
         "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-1",
-        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-2"
+        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-2",
+        "329d28c3-3488-49ac-a3ac-4b9037c255b4",
+        "d417e9b0-231d-4c2c-b74a-929e81426f51",
+        "dbd4fafd-b404-44d2-99b0-140a90f2a174"
       ],
       "settings": {
         "full_width": false,
