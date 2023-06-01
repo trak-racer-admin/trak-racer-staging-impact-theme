@@ -356,7 +356,7 @@
         "content": "",
         "button_text": "",
         "button_url": "",
-        "text_position": "center",
+        "text_position": "start",
         "max_rows": 5,
         "view_all_text": "View all",
         "view_less_text": "View less",
