@@ -72,12 +72,24 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
             "atc_button_background": "",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
+          }
+        },
+        "4163194c-df27-4c47-bd48-39a7883f8a23": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "Download Manual",
+            "size": "xl",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
           }
         },
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
@@ -130,6 +142,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "4163194c-df27-4c47-bd48-39a7883f8a23",
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
@@ -271,7 +284,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 8,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
