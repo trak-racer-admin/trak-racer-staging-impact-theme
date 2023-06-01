@@ -165,6 +165,38 @@
         "input_text_color": ""
       }
     },
+    "cb049c02-d181-478d-866f-1d2cd8df158e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Get Ready to Race with the {{ product.title }}",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Welcome to our racing wheel stand! We're thrilled to offer you a beautifully designed and extremely adjustable setup that will take your racing experience to the next level. Here's how our stand can help you achieve the perfect racing position and improve your personal best.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-1",
+        "template--19236073701664__cb049c02-d181-478d-866f-1d2cd8df158e-1685585731e194a368-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
       "type": "slideshow",
       "blocks": {
@@ -375,37 +407,6 @@
         "chart_true_false_color": ""
       }
     },
-    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
-      "type": "video",
-      "blocks": {
-        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0": {
-          "type": "play",
-          "settings": {
-          }
-        },
-        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1": {
-          "type": "heading",
-          "settings": {
-            "text": "FS3 - In Detail",
-            "heading_tag": "h4"
-          }
-        }
-      },
-      "block_order": [
-        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0",
-        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -494,6 +495,37 @@
         "text_color": ""
       }
     },
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
+      "type": "video",
+      "blocks": {
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "FS3 - In Detail",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0",
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -521,10 +553,11 @@
   },
   "order": [
     "main",
+    "cb049c02-d181-478d-866f-1d2cd8df158e",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
-    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a",
     "974a92ca-5417-47d7-bae4-547d0c063284",
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a",
     "related-products"
   ]
 }
