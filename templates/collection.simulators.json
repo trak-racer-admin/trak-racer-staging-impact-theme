@@ -117,6 +117,74 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0",
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1",
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Upgrade Your Rig",
+        "content": "<p>Choose from our wide range of rig add-ons and upgrade to give yourself the best racing experience!<\/p>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
@@ -124,6 +192,7 @@
     "main",
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
     "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
-    "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c"
+    "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
+    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166"
   ]
 }
