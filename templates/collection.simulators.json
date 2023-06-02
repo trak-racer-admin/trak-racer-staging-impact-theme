@@ -46,7 +46,7 @@
         ],
         "full_width": true,
         "stack_products": false,
-        "show_progress_bar": false,
+        "show_progress_bar": true,
         "products_count": 3,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
@@ -73,7 +73,7 @@
         ],
         "full_width": true,
         "stack_products": false,
-        "show_progress_bar": false,
+        "show_progress_bar": true,
         "products_count": 3,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
@@ -100,7 +100,7 @@
         ],
         "full_width": true,
         "stack_products": false,
-        "show_progress_bar": false,
+        "show_progress_bar": true,
         "products_count": 3,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
@@ -162,12 +162,27 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "dbd0fcf9-c49d-4f20-98af-16a9908d2257": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0",
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1",
-        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2"
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2",
+        "dbd0fcf9-c49d-4f20-98af-16a9908d2257"
       ],
       "settings": {
         "full_width": true,
