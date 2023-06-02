@@ -531,7 +531,8 @@
       "settings": {
         "recommendations_count": 6,
         "products": [
-
+          "test-2",
+          "test"
         ],
         "full_width": true,
         "stack_products": true,
