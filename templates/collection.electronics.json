@@ -27,7 +27,7 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "Monitor Stands",
+            "link_text": "Wheels",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -39,7 +39,7 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "Seats",
+            "link_text": "Pedals",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -51,7 +51,7 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "Mounting Accessories",
+            "link_text": "Handbrakes",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -63,7 +63,7 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "Spare Parts",
+            "link_text": "Shifters",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -75,7 +75,7 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "Gloves & Apparel",
+            "link_text": "Flight Sim Peripherals",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -93,7 +93,7 @@
       ],
       "settings": {
         "full_width": false,
-        "block_size": "medium",
+        "block_size": "large",
         "subheading": "",
         "title": "",
         "content": "",

@@ -3,16 +3,129 @@
     "banner": {
       "type": "collection-banner",
       "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "63ebf810-1c55-432e-b1c0-374ad6dfe18f": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-2": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "Monitor Stands",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-3": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "Seats",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-0": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "Mounting Accessories",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-1": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "Spare Parts",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "5e131acb-2f55-47ad-9480-c16e762d8b67": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "Gloves & Apparel",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-2",
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-3",
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-0",
+        "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-1",
+        "5e131acb-2f55-47ad-9480-c16e762d8b67"
+      ],
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "main": {
       "type": "main-collection",
       "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
       }
     }
   },
   "order": [
     "banner",
+    "63ebf810-1c55-432e-b1c0-374ad6dfe18f",
     "main"
   ]
 }
