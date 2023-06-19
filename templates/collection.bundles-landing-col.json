@@ -2,17 +2,183 @@
   "sections": {
     "banner": {
       "type": "collection-banner",
+      "disabled": true,
       "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "27c2e608-a195-4e54-800d-5c4268f2d666": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19490220671264__27c2e608-a195-4e54-800d-5c4268f2d666-1687137110a77c53e5-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Turnkeys",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19490220671264__27c2e608-a195-4e54-800d-5c4268f2d666-1687137110a77c53e5-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Shop our curated range of plug-in-and-play simulators. We'll build your rig - so when it gets to you, you're ready to race.<\/p>"
+          }
+        },
+        "24f23348-dfa6-4271-847b-5558a7eedf36": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Shop Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19490220671264__27c2e608-a195-4e54-800d-5c4268f2d666-1687137110a77c53e5-1",
+        "template--19490220671264__27c2e608-a195-4e54-800d-5c4268f2d666-1687137110a77c53e5-2",
+        "24f23348-dfa6-4271-847b-5558a7eedf36"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-start-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "8b53d79e-7c2c-4a16-b17b-aabdc74faff9": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19490220671264__8b53d79e-7c2c-4a16-b17b-aabdc74faff9-1687137110a77c53e5-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Ready to Race Bundles",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19490220671264__8b53d79e-7c2c-4a16-b17b-aabdc74faff9-1687137110a77c53e5-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our ready-to-race bundles are curated bundles with a small discount, combining premium components so you can buy and build with ease.<\/p>"
+          }
+        },
+        "e11b34cd-4a73-48d3-befa-799188ae6571": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Shop Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19490220671264__8b53d79e-7c2c-4a16-b17b-aabdc74faff9-1687137110a77c53e5-1",
+        "template--19490220671264__8b53d79e-7c2c-4a16-b17b-aabdc74faff9-1687137110a77c53e5-2",
+        "e11b34cd-4a73-48d3-befa-799188ae6571"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "605f60c5-f48c-4687-86c3-91213269462c": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19490220671264__605f60c5-f48c-4687-86c3-91213269462c-1687137110a77c53e5-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Bundle Builder",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19490220671264__605f60c5-f48c-4687-86c3-91213269462c-1687137110a77c53e5-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Build your own custom bundle, add as many or few components as you like and if you'd like to add assembly - we've got you covered.<\/p>"
+          }
+        },
+        "45c3de54-701b-4778-869f-bc124c303459": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Shop Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19490220671264__605f60c5-f48c-4687-86c3-91213269462c-1687137110a77c53e5-1",
+        "template--19490220671264__605f60c5-f48c-4687-86c3-91213269462c-1687137110a77c53e5-2",
+        "45c3de54-701b-4778-869f-bc124c303459"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-start-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     }
   },
   "order": [
     "banner",
-    "main"
+    "main",
+    "27c2e608-a195-4e54-800d-5c4268f2d666",
+    "8b53d79e-7c2c-4a16-b17b-aabdc74faff9",
+    "605f60c5-f48c-4687-86c3-91213269462c"
   ]
 }
