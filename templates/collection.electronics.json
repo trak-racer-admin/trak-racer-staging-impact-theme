@@ -26,6 +26,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/sq.png",
             "stretch_image": true,
             "link_text": "Wheels",
             "link_url": "",
@@ -38,11 +39,12 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-3": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/test_icon_bd51698d-5ce6-4933-87ca-751f49a6f184.png",
             "stretch_image": true,
             "link_text": "Pedals",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#1a1a1a",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
