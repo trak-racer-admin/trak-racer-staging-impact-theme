@@ -5,6 +5,7 @@
       "blocks": {
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
           }
         },
@@ -112,10 +113,10 @@
           "type": "headings",
           "settings": {
             "heading_1": "Dimensions",
-            "heading_2": "VESA Mounting Points",
-            "heading_3": "What's Included",
-            "heading_4": "Heading 4",
-            "heading_5": "",
+            "heading_2": "Monitors Held",
+            "heading_3": "Range of Motion",
+            "heading_4": "Weight Limit",
+            "heading_5": "What's Included",
             "heading_6": "",
             "heading_7": "",
             "heading_8": "",
@@ -138,38 +139,10 @@
           "settings": {
             "product": "",
             "value_1": "<p>1300mm H x 2360mm W (when fully extended) x 600mm D<\/p>",
-            "value_2": "<p>75mm x 75mm<\/p><p>100mm x 100mm<\/p><p>150mm x 150mm (via included extension bracket)<\/p><p>200mm x 200mm (via included extension bracket)<\/p><p>300mm x 300mm (via included extension bracket)<\/p><p>400mm x 400mm (via included extension bracket)<\/p><p>Note. Larger sizes available with additional mount<\/p>",
-            "value_3": "<p>Trak Racer 80mm x 40mm Aluminium Frame and fixing screws\/nuts<\/p><p>VESA Mounting Plate and fixing screws\/nuts and VESA Extension Brackets<\/p>",
-            "value_4": "<p>No<\/p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-2": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>No<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>Yes<\/p>",
-            "value_4": "<p>No<\/p>",
-            "value_5": "",
+            "value_2": "<p> 3 Monitors up to 45\" each<\/p>",
+            "value_3": "<p>Can rotate up to 90 degrees<\/p>",
+            "value_4": "<p>170kgs (374lbs)<\/p>",
+            "value_5": "<p>80mm x 40mm Aluminium Frame<br\/>All required fixing screws<br\/>VESA Mounting Plate<br\/>VESA Extension Brackets for 150mm - 400mm plates.<\/p>",
             "value_6": "",
             "value_7": "",
             "value_8": "",
@@ -192,8 +165,7 @@
       },
       "block_order": [
         "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-0",
-        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-1",
-        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-2"
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-1"
       ],
       "settings": {
         "full_width": true,
