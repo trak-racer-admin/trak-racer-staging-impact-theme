@@ -11,6 +11,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "heading_tag": "h2"
           }
         },
         "badges": {
@@ -21,11 +22,13 @@
         "price": {
           "type": "price",
           "settings": {
+            "show_taxes_notice": false
           }
         },
         "rating": {
           "type": "rating",
           "settings": {
+            "show_empty": false
           }
         },
         "payment_terms": {
@@ -41,11 +44,17 @@
         "description": {
           "type": "description",
           "settings": {
+            "collapse_content": false
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
           }
         },
         "quantity_selector": {
@@ -56,11 +65,12 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-          }
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
           }
         }
       },
@@ -78,16 +88,201 @@
         "buy_buttons"
       ],
       "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "cdda71d9-3142-445d-b057-df6fe8eb54c7": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Dimensions",
+            "heading_2": "VESA Mounting Points",
+            "heading_3": "What's Included",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>1300mm H x 2360mm W (when fully extended) x 600mm D<\/p>",
+            "value_2": "<p>75mm x 75mm<\/p><p>100mm x 100mm<\/p><p>150mm x 150mm (via included extension bracket)<\/p><p>200mm x 200mm (via included extension bracket)<\/p><p>300mm x 300mm (via included extension bracket)<\/p><p>400mm x 400mm (via included extension bracket)<\/p><p>Note. Larger sizes available with additional mount<\/p>",
+            "value_3": "<p>Trak Racer 80mm x 40mm Aluminium Frame and fixing screws\/nuts<\/p><p>VESA Mounting Plate and fixing screws\/nuts and VESA Extension Brackets<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-0",
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-1",
+        "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "{{ product.title }}",
+        "title": "Specifications",
+        "content": "<p>The upgraded Aluminium Trak Racer monitor stands are not just better looking than their competition but they are also more adjustable. The stands feature multi-adjustment of the vertical angle of the monitors and full adjustment slide on the horizontal.<\/p><p>Our stands are inspired by our cockpits and designed for maximum stability and strength. Each stand comes from quality core materials, unparalleled craftsmanship, and state-of-the-art manufacturing processes.<br\/><\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "dd661459-ae15-4572-a8df-40eedebb5796": {
+      "type": "revealed-image-on-scroll",
+      "settings": {
+        "subheading": "Upgrade Today to Experience",
+        "title": "Full Gaming Immersion",
+        "background": "",
+        "text_color_inside": "#ffffff",
+        "text_color_outside": "#000000"
+      }
+    },
+    "389b4cdb-aaad-40b3-8e39-75053159a45e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19593850519840__389b4cdb-aaad-40b3-8e39-75053159a45e-1687752438ca14b1f9-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Disclaimer<\/strong>. Trak Racer takes no responsibility for damage caused to personal effects while using this product.<\/p><p><strong>Disclaimer<\/strong>. No Electronics (eg Monitors or gaming cockpit) are included with this listing.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19593850519840__389b4cdb-aaad-40b3-8e39-75053159a45e-1687752438ca14b1f9-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
+        "recommendations_count": 6,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     }
   },
   "order": [
     "main",
+    "cdda71d9-3142-445d-b057-df6fe8eb54c7",
+    "dd661459-ae15-4572-a8df-40eedebb5796",
+    "389b4cdb-aaad-40b3-8e39-75053159a45e",
     "related-products"
   ]
 }
