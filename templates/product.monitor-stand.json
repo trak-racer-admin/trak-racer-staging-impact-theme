@@ -196,6 +196,8 @@
     "dd661459-ae15-4572-a8df-40eedebb5796": {
       "type": "revealed-image-on-scroll",
       "settings": {
+        "image": "shopify:\/\/shop_images\/desktop-computer-with-open-sketchbooks.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/desktop-computer-with-open-sketchbooks.jpg",
         "subheading": "Upgrade Today to Experience",
         "title": "Full Gaming Immersion",
         "background": "",
