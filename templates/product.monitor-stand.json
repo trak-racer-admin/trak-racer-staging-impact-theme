@@ -181,7 +181,7 @@
         "view_product": "View",
         "viewing_product": "",
         "show_product_swatch": true,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
