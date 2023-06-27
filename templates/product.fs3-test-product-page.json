@@ -74,7 +74,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
+            "atc_button_background": "#15007e",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -148,7 +148,7 @@
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
@@ -159,7 +159,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "#ffffff",
-        "background_gradient": "",
+        "background_gradient": "radial-gradient(rgba(255, 255, 255, 1), rgba(184, 186, 210, 0.6) 51%, rgba(84, 127, 255, 0.63) 85%, rgba(75, 150, 255, 1) 100%)",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
