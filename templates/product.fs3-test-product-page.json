@@ -203,7 +203,7 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bad.png",
+            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
             "mobile_image": "shopify:\/\/shop_images\/bad2.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
