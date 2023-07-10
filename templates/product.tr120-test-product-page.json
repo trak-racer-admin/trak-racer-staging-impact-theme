@@ -140,22 +140,15 @@
         "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1": {
           "type": "heading",
           "settings": {
-            "text": "Your Forever Rig",
-            "heading_tag": "h1",
+            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 0, 10, 1), rgba(255, 0, 10, 1) 38.849%, rgba(165, 45, 45, 1) 69%, rgba(165, 39, 44, 1) 100%)"
-          }
-        },
-        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Get ready to revolutionize your sim racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance. With years of expertise and customer feedback behind its development, this game-changing rig is here to dominate the track. Its unrivaled stability ensures steadfast support, even during the most intense maneuvers, giving you the confidence to push your limits. <\/p>"
           }
         }
       },
       "block_order": [
-        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1",
-        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-2"
+        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1"
       ],
       "settings": {
         "full_width": true,
