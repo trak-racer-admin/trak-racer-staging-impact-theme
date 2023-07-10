@@ -152,6 +152,61 @@
         "text_color": ""
       }
     },
+    "4c004138-6573-4801-942c-5d04c2712e1f": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--19818688282912__4c004138-6573-4801-942c-5d04c2712e1f-16889718978beb9459-0": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "32e0f2d6-1364-4210-a573-928d9c73eade": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19818688282912__4c004138-6573-4801-942c-5d04c2712e1f-16889718978beb9459-0",
+        "32e0f2d6-1364-4210-a573-928d9c73eade"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "small"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -180,6 +235,7 @@
   "order": [
     "main",
     "f382bb32-eb17-4ff3-a791-9c15b257375e",
+    "4c004138-6573-4801-942c-5d04c2712e1f",
     "related-products"
   ]
 }
