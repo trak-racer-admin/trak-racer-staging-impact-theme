@@ -141,8 +141,8 @@
       "settings": {
         "full_width": false,
         "content_size": "large",
-        "subheading": "Subheading",
-        "title": "Heading",
+        "subheading": "",
+        "title": "",
         "first_tab_open": false,
         "background": "#f0f0f0",
         "background_gradient": "",
