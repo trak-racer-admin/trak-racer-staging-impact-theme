@@ -166,59 +166,64 @@
         "text_color": ""
       }
     },
-    "4c004138-6573-4801-942c-5d04c2712e1f": {
-      "type": "media-with-text",
+    "67655670-47c9-4d54-a130-77fd0c6e1e77": {
+      "type": "slideshow",
       "blocks": {
-        "template--19818688282912__4c004138-6573-4801-942c-5d04c2712e1f-16889718978beb9459-0": {
+        "template--19818688282912__67655670-47c9-4d54-a130-77fd0c6e1e77-16889823078351d887-0": {
           "type": "image",
           "settings": {
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 1",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
             "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
           }
         },
-        "32e0f2d6-1364-4210-a573-928d9c73eade": {
+        "template--19818688282912__67655670-47c9-4d54-a130-77fd0c6e1e77-16889823078351d887-1": {
           "type": "image",
           "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
             "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "template--19818688282912__4c004138-6573-4801-942c-5d04c2712e1f-16889718978beb9459-0",
-        "32e0f2d6-1364-4210-a573-928d9c73eade"
+        "template--19818688282912__67655670-47c9-4d54-a130-77fd0c6e1e77-16889823078351d887-0",
+        "template--19818688282912__67655670-47c9-4d54-a130-77fd0c6e1e77-16889823078351d887-1"
       ],
       "settings": {
         "full_width": true,
-        "spacing": "small"
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
       }
     },
     "related-products": {
@@ -249,7 +254,7 @@
   "order": [
     "main",
     "f382bb32-eb17-4ff3-a791-9c15b257375e",
-    "4c004138-6573-4801-942c-5d04c2712e1f",
+    "67655670-47c9-4d54-a130-77fd0c6e1e77",
     "related-products"
   ]
 }
