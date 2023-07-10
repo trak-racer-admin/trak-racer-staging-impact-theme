@@ -25,6 +25,18 @@
             "show_taxes_notice": false
           }
         },
+        "7df52863-8e4b-4c40-9c70-62c7fef9d499": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "eta teta"
+          }
+        },
+        "6e40104f-6e5a-4548-aa17-483685b517f4": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
         "rating": {
           "type": "rating",
           "settings": {
@@ -79,6 +91,8 @@
         "title",
         "badges",
         "price",
+        "7df52863-8e4b-4c40-9c70-62c7fef9d499",
+        "6e40104f-6e5a-4548-aa17-483685b517f4",
         "rating",
         "payment_terms",
         "separator",
