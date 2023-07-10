@@ -11,7 +11,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h4"
           }
         },
         "badges": {
