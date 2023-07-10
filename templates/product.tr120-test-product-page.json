@@ -172,9 +172,11 @@
         "template--19818688282912__67655670-47c9-4d54-a130-77fd0c6e1e77-16889823078351d887-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/TR160_POWER.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TR160_POWER_MOB.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
             "subheading": "The TR160 is designed to have best-in-class stability. The thicker aluminum profile walls and robust construction make it the strongest rig in its class. Embrace this strength and let it boost your confidence on the track.",
             "title": "Focus on Strength and Stability",
             "heading_tag": "h2",
@@ -184,7 +186,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -226,6 +228,122 @@
         "background_gradient": ""
       }
     },
+    "16a30dbf-f7a4-4afc-92f4-2f17ae566176": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-0",
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-1",
+        "template--19818688282912__16a30dbf-f7a4-4afc-92f4-2f17ae566176-168898298448bc7b6f-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -255,6 +373,7 @@
     "main",
     "f382bb32-eb17-4ff3-a791-9c15b257375e",
     "67655670-47c9-4d54-a130-77fd0c6e1e77",
+    "16a30dbf-f7a4-4afc-92f4-2f17ae566176",
     "related-products"
   ]
 }
