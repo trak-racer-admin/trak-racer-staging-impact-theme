@@ -139,12 +139,12 @@
         "template--19817521053984__df6f81bd-464b-4eeb-8308-06a9a454ca3b-1688962750bbb7d350-2"
       ],
       "settings": {
-        "full_width": true,
-        "content_size": "medium",
+        "full_width": false,
+        "content_size": "large",
         "subheading": "Subheading",
         "title": "Heading",
         "first_tab_open": false,
-        "background": "",
+        "background": "#f0f0f0",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
