@@ -83,8 +83,21 @@
             "icon_width": 24,
             "title": "Shipping",
             "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#e43737",
+            "background": "#000000",
             "text_color": "#ffffff"
+          }
+        },
+        "91d421d0-bf45-4958-ad3b-a83aef6d602b": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "background": "#eaf2ed",
+            "text_color": "#00a341"
           }
         }
       },
@@ -100,7 +113,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "2797188b-937d-4dd8-819a-7276e6bfd016"
+        "2797188b-937d-4dd8-819a-7276e6bfd016",
+        "91d421d0-bf45-4958-ad3b-a83aef6d602b"
       ],
       "settings": {
         "full_width": true,
@@ -114,8 +128,8 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(83, 83, 83, 0.8588), rgba(220, 220, 220, 1) 100%)",
-        "text_color": "",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(220, 220, 220, 1) 100%)",
+        "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
@@ -148,7 +162,7 @@
         "content_width": "large",
         "text_position": "center",
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(180deg, rgba(220, 220, 220, 1) 7%, rgba(255, 255, 255, 1) 94%)",
         "text_color": ""
       }
     },
