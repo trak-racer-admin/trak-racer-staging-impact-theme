@@ -398,7 +398,7 @@
         "viewing_product": "",
         "show_product_swatch": true,
         "background": "",
-        "background_gradient": "linear-gradient(181deg, rgba(135, 133, 135, 1), rgba(0, 0, 0, 1) 94%)",
+        "background_gradient": "linear-gradient(180deg, rgba(135, 133, 135, 1), rgba(0, 0, 0, 1) 94%)",
         "text_color": "#ffffff",
         "heading_color": "#a5272c",
         "heading_gradient": "linear-gradient(320deg, rgba(155, 155, 155, 0.33), rgba(253, 253, 253, 1) 87%)",
@@ -493,7 +493,7 @@
         "text_alignment": "center",
         "icon_spacing": "medium",
         "background": "#000000",
-        "background_gradient": "linear-gradient(1deg, rgba(83, 83, 83, 0.86) 13%, rgba(0, 0, 0, 1) 86%)",
+        "background_gradient": "linear-gradient(0deg, rgba(83, 83, 83, 0.86) 13%, rgba(0, 0, 0, 1) 86%)",
         "text_color": "#ffffff"
       }
     },
