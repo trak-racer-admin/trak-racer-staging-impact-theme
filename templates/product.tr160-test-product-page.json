@@ -159,7 +159,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "#ffffff",
-        "background_gradient": "radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6) 27.698%, rgba(184, 186, 210, 0.6) 63%, rgba(84, 127, 255, 0.52) 82%, rgba(43, 130, 253, 1) 100%)",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(165, 45, 45, 0.1) 44%, rgba(165, 39, 44, 1) 81%, rgba(0, 0, 0, 1) 100%)",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
@@ -190,11 +190,11 @@
       ],
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "#efefef",
-        "background_gradient": "",
-        "text_color": ""
+        "background_gradient": "linear-gradient(179deg, rgba(0, 0, 0, 1) 13%, rgba(80, 80, 80, 1) 92%)",
+        "text_color": "#ffffff"
       }
     },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
