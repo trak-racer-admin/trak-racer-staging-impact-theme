@@ -518,7 +518,7 @@
         "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
@@ -568,7 +568,7 @@
         "title": "Compatibility",
         "first_tab_open": false,
         "background": "",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(165, 39, 44, 1) 86%)",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
