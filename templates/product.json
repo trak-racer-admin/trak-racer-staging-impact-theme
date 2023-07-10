@@ -99,68 +99,10 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "",
-        "background_gradient": "radial-gradient(rgba(255, 255, 255, 1) 5%, rgba(89, 88, 87, 0.1) 23%, rgba(89, 87, 87, 0.2) 44%, rgba(233, 25, 34, 0.25) 59%, rgba(241, 136, 155, 0.81) 77%, rgba(186, 0, 0, 1) 100%)",
+        "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
-      }
-    },
-    "d06494d5-636e-4425-b890-6f4e22b265b3": {
-      "type": "multi-column",
-      "blocks": {
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-0": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-1": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-2": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-0",
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-1",
-        "template--19149183516960__d06494d5-636e-4425-b890-6f4e22b265b3-16878395524f9c772e-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "About",
-        "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
-        "background": "#f0f0f0",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "related-products": {
@@ -190,7 +132,6 @@
   },
   "order": [
     "main",
-    "d06494d5-636e-4425-b890-6f4e22b265b3",
     "related-products"
   ]
 }
