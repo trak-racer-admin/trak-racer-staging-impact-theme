@@ -48,6 +48,12 @@
             "collapse_content": false
           }
         },
+        "83354084-4b62-4009-b9dd-9c503635b87a": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>The ultimate heavy-duty rig<\/li><li>Completely customise your experience<\/li><li>Motion compatible and ready to upgrade<\/li><\/ul>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -66,7 +72,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
             "atc_button_background": "#cc0101",
             "atc_button_text_color": "#ffffff",
@@ -110,6 +116,7 @@
         "payment_terms",
         "separator",
         "description",
+        "83354084-4b62-4009-b9dd-9c503635b87a",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -140,7 +147,7 @@
         "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1": {
           "type": "heading",
           "settings": {
-            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance",
+            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 0, 10, 1), rgba(255, 0, 10, 1) 38.849%, rgba(165, 45, 45, 1) 69%, rgba(165, 39, 44, 1) 100%)"
@@ -166,11 +173,11 @@
           "type": "image",
           "settings": {
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
-            "heading_tag": "h0",
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "subheading": "The TR160 is designed to have best-in-class stability. The thicker aluminum profile walls and robust construction make it the strongest rig in its class. Embrace this strength and let it boost your confidence on the track.",
+            "title": "Focus on Strength and Stability",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
@@ -186,11 +193,11 @@
           "type": "image",
           "settings": {
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 2",
-            "heading_tag": "h0",
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "The TR160 is built to withstand heavy-duty usage. Don't hold back! Test your skills and push your limits on the track. The rig's durability and reliability will support you in reaching new heights in your racing performance",
+            "title": "Push Your Limits",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
