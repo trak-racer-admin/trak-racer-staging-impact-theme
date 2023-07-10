@@ -43,6 +43,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": false
           }
@@ -113,10 +114,42 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(180deg, rgba(83, 83, 83, 0.8588), rgba(220, 220, 220, 1) 100%)",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "f382bb32-eb17-4ff3-a791-9c15b257375e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "linear-gradient(180deg, rgba(255, 0, 10, 1), rgba(255, 0, 10, 1) 38.849%, rgba(165, 45, 45, 1) 69%, rgba(165, 39, 44, 1) 100%)"
+          }
+        },
+        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-1",
+        "template--19818688282912__f382bb32-eb17-4ff3-a791-9c15b257375e-1688969962082f202c-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "related-products": {
@@ -130,7 +163,7 @@
         "stack_products": true,
         "show_progress_bar": false,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
+        "products_per_row_desktop": 5,
         "subheading": "",
         "title": "You may also like",
         "content": "",
@@ -146,6 +179,7 @@
   },
   "order": [
     "main",
+    "f382bb32-eb17-4ff3-a791-9c15b257375e",
     "related-products"
   ]
 }
