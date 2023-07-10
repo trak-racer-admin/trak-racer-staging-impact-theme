@@ -158,7 +158,7 @@
         "enable_video_looping": true,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(165, 45, 45, 0.1) 44%, rgba(165, 39, 44, 1) 81%, rgba(0, 0, 0, 1) 100%)",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
@@ -486,15 +486,15 @@
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "stack_on_mobile": false,
         "title": "What's Included",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
