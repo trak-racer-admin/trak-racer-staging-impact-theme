@@ -86,10 +86,10 @@
             "link": "",
             "text": "Download Manual",
             "size": "xl",
-            "style": "fill",
+            "style": "outline",
             "stretch": true,
-            "background": "",
-            "text_color": ""
+            "background": "#a29ca6",
+            "text_color": "#ffffff"
           }
         },
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
@@ -107,12 +107,12 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-truck",
             "icon_width": 24,
             "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#eaf2ed",
-            "text_color": "#00a341"
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
+            "background": "#545454",
+            "text_color": "#ffffff"
           }
         },
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79": {
@@ -120,12 +120,12 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#eaf2ed",
-            "text_color": "#00a341"
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#ffffff",
+            "text_color": "#545454"
           }
         }
       },
@@ -159,8 +159,8 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(165, 45, 45, 0.1) 44%, rgba(165, 39, 44, 1) 81%, rgba(0, 0, 0, 1) 100%)",
-        "text_color": "",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(33, 33, 33, 1) 100%)",
+        "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
@@ -193,7 +193,7 @@
         "content_width": "medium",
         "text_position": "center",
         "background": "#efefef",
-        "background_gradient": "linear-gradient(179deg, rgba(0, 0, 0, 1) 13%, rgba(80, 80, 80, 1) 92%)",
+        "background_gradient": "linear-gradient(179deg, rgba(33, 33, 33, 1) 13%, rgba(80, 80, 80, 1) 92%)",
         "text_color": "#ffffff"
       }
     },
@@ -493,7 +493,7 @@
         "text_alignment": "center",
         "icon_spacing": "medium",
         "background": "#000000",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(1deg, rgba(83, 83, 83, 0.86) 13%, rgba(0, 0, 0, 1) 86%)",
         "text_color": "#ffffff"
       }
     },
