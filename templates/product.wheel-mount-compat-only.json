@@ -135,24 +135,24 @@
         "template--19817521053984__df6f81bd-464b-4eeb-8308-06a9a454ca3b-1688962750bbb7d350-0": {
           "type": "tab",
           "settings": {
-            "title": "Tab 1",
-            "content": "<p>Use this text to share information about your brand with your customers.<\/p>",
+            "title": "Description",
+            "content": "{{ product.metafields.custom_fields.description_tab_1 | metafield_tag }}",
             "page": ""
           }
         },
         "template--19817521053984__df6f81bd-464b-4eeb-8308-06a9a454ca3b-1688962750bbb7d350-1": {
           "type": "tab",
           "settings": {
-            "title": "Tab 2",
-            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "Features",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}",
             "page": ""
           }
         },
         "template--19817521053984__df6f81bd-464b-4eeb-8308-06a9a454ca3b-1688962750bbb7d350-2": {
           "type": "tab",
           "settings": {
-            "title": "Tab 3",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "title": "Compatibility",
+            "content": "{{ product.metafields.custom_fields.compatibility_for_wheel_mounts_tab_3 | metafield_tag }}",
             "page": ""
           }
         }
