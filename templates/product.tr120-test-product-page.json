@@ -79,7 +79,7 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-truck",
             "icon_width": 24,
             "title": "Shipping",
             "content": "<p>In stock products are usually shipped within 2 business days! Learn more.<\/p>",
