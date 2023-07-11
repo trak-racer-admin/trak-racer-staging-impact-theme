@@ -162,7 +162,7 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "",
+        "product": "test",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -178,57 +178,77 @@
         "input_text_color": ""
       }
     },
-    "3d64bb3a-51ac-4579-b09b-91a8fcab3097": {
-      "type": "multiple-images-with-text",
+    "f39a9322-d082-437d-8478-e1886deceef7": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Trx_podium.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3": {
+      "type": "impact-text",
       "blocks": {
-        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-0": {
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR80-NWMA-DD.1_720x_9d5c5999-3240-44d9-981f-7e7316aede07.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "60",
+            "subheading": "seconds",
+            "content": "<p>F1 to GT positioning in less than 60 seconds.<\/p>",
+            "button_text": "",
             "button_url": "",
-            "button_text": ""
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
           }
         },
-        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-1": {
+        "ca2c02a4-7b20-469f-8c44-da48327843e7": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/008012GNR-min.png",
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "300",
+            "subheading": "seconds",
+            "content": "<p>To change your pedal position<\/p>",
+            "button_text": "",
             "button_url": "",
-            "button_text": ""
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
           }
         },
-        "03515ce9-4f1d-47ce-bf30-a33bf933a41b": {
+        "f15d034d-d79d-4857-882b-514851c4b7a9": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cube-controls-fpro-front.webp",
-            "image_rotation_degrees": 0,
-            "subheading": "",
-            "title": "Image with text",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "0",
+            "subheading": "tools",
+            "content": "<p>Required to adjust your rig<\/p>",
+            "button_text": "",
             "button_url": "",
-            "button_text": ""
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
           }
         }
       },
       "block_order": [
-        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-0",
-        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-1",
-        "03515ce9-4f1d-47ce-bf30-a33bf933a41b"
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
+        "ca2c02a4-7b20-469f-8c44-da48327843e7",
+        "f15d034d-d79d-4857-882b-514851c4b7a9"
       ],
       "settings": {
-        "full_width": false,
-        "images_layout": "stacked",
-        "collage_images_alignment": "shifted",
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
         "background": "",
-        "background_gradient": "linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 83%)",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
@@ -240,6 +260,7 @@
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "7e84a986-13b9-4c09-9706-1d0d46c45ac7",
-    "3d64bb3a-51ac-4579-b09b-91a8fcab3097"
+    "f39a9322-d082-437d-8478-e1886deceef7",
+    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3"
   ]
 }
