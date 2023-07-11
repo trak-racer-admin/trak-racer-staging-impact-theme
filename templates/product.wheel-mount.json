@@ -34,7 +34,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "rating": {
@@ -73,7 +73,7 @@
             "stack_blocks": true,
             "selector_mode": "dropdown",
             "color_mode": "color",
-            "size_chart_page": "mount-compatibility"
+            "size_chart_page": ""
           }
         },
         "quantity_selector": {
@@ -91,6 +91,16 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "ca5268a9-6a7b-4ef9-a340-187c18682f9e": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -107,7 +117,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "ca5268a9-6a7b-4ef9-a340-187c18682f9e"
       ],
       "settings": {
         "full_width": true,
