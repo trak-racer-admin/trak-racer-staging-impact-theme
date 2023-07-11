@@ -11,7 +11,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
         "badges": {
@@ -67,7 +67,7 @@
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#cc0101",
+            "atc_button_background": "#5ae788",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -112,9 +112,9 @@
         "enable_video_looping": true,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
+        "background": "#001633",
+        "background_gradient": "linear-gradient(124deg, rgba(251, 252, 253, 1) 1%, rgba(174, 209, 253, 1) 33%, rgba(51, 129, 237, 1) 58%, rgba(0, 25, 57, 0.93) 96%)",
+        "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
