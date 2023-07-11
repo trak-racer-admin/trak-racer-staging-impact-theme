@@ -14,6 +14,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Test_Alpine_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Alpine.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
@@ -22,7 +23,7 @@
             "heading_tag": "h2",
             "button_text": "Shop Now",
             "button_link": "",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
