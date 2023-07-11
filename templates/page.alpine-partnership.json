@@ -2,11 +2,186 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "8a294e45-c7c4-4b28-8411-1b5d0f0df425": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Test_Alpine_Banner.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "Welcome to the first sim racing rig ever co-produced by F1 engineers.",
+            "title": "Alpine F1 x Trak Racer",
+            "heading_tag": "h2",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": "linear-gradient(144deg, rgba(216, 231, 255, 1) 3%, rgba(126, 156, 255, 1) 33%, rgba(54, 89, 255, 1) 59%, rgba(0, 21, 122, 1) 84%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
+    "89ff794b-a53b-479a-8d9d-9d775b0fca1a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19607692378400__89ff794b-a53b-479a-8d9d-9d775b0fca1a-1689038541e31fc13d-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Experience the Ultimate Drive",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "linear-gradient(333deg, rgba(21, 107, 252, 1) 6%, rgba(127, 153, 237, 1) 72%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__89ff794b-a53b-479a-8d9d-9d775b0fca1a-1689038541e31fc13d-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-0": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-2": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-3": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-4": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-5": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-0",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-1",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-2",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-3",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-4",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-5",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-8",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9",
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
+    "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
   ]
 }
