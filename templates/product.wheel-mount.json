@@ -17,7 +17,7 @@
         "6b9cb3d9-4a38-4c09-89d3-00ba2bd739c5": {
           "type": "liquid",
           "settings": {
-            "liquid": "{% for variant in product.variants %}\n{% if product.selected_or_first_available_variant.id == variant.id %}\n<strong>{{ variant.metafields.my_fields.test_product_eta }}<\/strong>\n{% endif %}\n{% endfor %}\n<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.5.1\/jquery.min.js\"><\/script>\n<script type=\"text\/javascript\">\njQuery(document).ready(function($){\n$(\".no-js-hidden\").on(\"click\", function(){\nvar refreshint = setInterval(function(){\nlocation.reload();\n}, 1000);    });   });\n<\/script>"
+            "liquid": ""
           }
         },
         "13f9e06b-d5ae-42a6-9d46-ec30a1a6e62c": {
