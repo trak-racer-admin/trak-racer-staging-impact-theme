@@ -18,7 +18,7 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "subheading": "Welcome to the first sim racing rig ever co-produced by F1 engineers.",
+            "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
             "title": "Alpine F1 x Trak Racer",
             "heading_tag": "h2",
             "button_text": "Shop Now",
@@ -177,12 +177,69 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "3d64bb3a-51ac-4579-b09b-91a8fcab3097": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR80-NWMA-DD.1_720x_9d5c5999-3240-44d9-981f-7e7316aede07.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/008012GNR-min.png",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "03515ce9-4f1d-47ce-bf30-a33bf933a41b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cube-controls-fpro-front.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Image with text",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-0",
+        "template--19607692378400__3d64bb3a-51ac-4579-b09b-91a8fcab3097-168903886346b454f6-1",
+        "03515ce9-4f1d-47ce-bf30-a33bf933a41b"
+      ],
+      "settings": {
+        "full_width": false,
+        "images_layout": "stacked",
+        "collage_images_alignment": "shifted",
+        "background": "",
+        "background_gradient": "linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 83%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
-    "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7",
+    "3d64bb3a-51ac-4579-b09b-91a8fcab3097"
   ]
 }
