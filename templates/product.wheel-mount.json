@@ -73,7 +73,7 @@
             "stack_blocks": true,
             "selector_mode": "dropdown",
             "color_mode": "color",
-            "size_chart_page": ""
+            "size_chart_page": "mount-compatibility"
           }
         },
         "quantity_selector": {
