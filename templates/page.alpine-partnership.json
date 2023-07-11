@@ -161,7 +161,7 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "product": "test",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
@@ -171,7 +171,7 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "",
+        "background": "#1a1a1a",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
@@ -185,7 +185,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/Trx_podium.jpg",
+        "image": "shopify:\/\/shop_images\/trx_podium_3.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
