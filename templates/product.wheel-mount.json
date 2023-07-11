@@ -154,10 +154,92 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "abecf720-dacc-4fc1-92af-376d94a4670e": {
+      "type": "media-grid",
+      "blocks": {
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-0": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-1": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-2": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 3,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-0",
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-1",
+        "template--19817521021216__abecf720-dacc-4fc1-92af-376d94a4670e-168904983070b56344-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
     }
   },
   "order": [
     "main",
-    "64d5be95-75fc-415b-87d3-06f4177fe1be"
+    "64d5be95-75fc-415b-87d3-06f4177fe1be",
+    "abecf720-dacc-4fc1-92af-376d94a4670e"
   ]
 }
