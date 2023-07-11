@@ -91,16 +91,6 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
-        },
-        "ca5268a9-6a7b-4ef9-a340-187c18682f9e": {
-          "type": "associated_products",
-          "settings": {
-            "title": "Buy it with",
-            "stack_products": true,
-            "products_count": 5,
-            "background": "",
-            "text_color": ""
-          }
         }
       },
       "block_order": [
@@ -117,8 +107,7 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "ca5268a9-6a7b-4ef9-a340-187c18682f9e"
+        "buy_buttons"
       ],
       "settings": {
         "full_width": true,
