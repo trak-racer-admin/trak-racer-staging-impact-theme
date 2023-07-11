@@ -43,6 +43,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": false
           }
@@ -103,6 +104,55 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "64d5be95-75fc-415b-87d3-06f4177fe1be": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-0": {
+          "type": "item",
+          "settings": {
+            "title": "Description",
+            "content": "{{ product.metafields.custom_fields.description_tab_1 | metafield_tag }}"
+          }
+        },
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-1": {
+          "type": "item",
+          "settings": {
+            "title": "Features",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}"
+          }
+        },
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-2": {
+          "type": "item",
+          "settings": {
+            "title": "Compatibility",
+            "content": "{{ product.metafields.custom_fields.compatibility_for_wheel_mounts_tab_3 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-0",
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-1",
+        "template--19817521021216__64d5be95-75fc-415b-87d3-06f4177fe1be-16890495954db04e3b-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Heading",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
       }
     },
     "d06494d5-636e-4425-b890-6f4e22b265b3": {
@@ -190,6 +240,7 @@
   },
   "order": [
     "main",
+    "64d5be95-75fc-415b-87d3-06f4177fe1be",
     "d06494d5-636e-4425-b890-6f4e22b265b3",
     "related-products"
   ]
