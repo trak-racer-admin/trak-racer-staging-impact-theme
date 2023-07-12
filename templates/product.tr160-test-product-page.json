@@ -171,26 +171,19 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "Get ready to Race with {{ product.title }}",
-            "heading_tag": "h4",
+            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
-          }
-        },
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Welcome to our racing wheel stand! We're thrilled to offer you a beautifully designed and extremely adjustable setup that will take your racing experience to the next level. Here's how our stand can help you achieve the perfect racing position and improve your personal best.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1",
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-2"
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
       ],
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "text_position": "center",
         "background": "#efefef",
         "background_gradient": "linear-gradient(179deg, rgba(33, 33, 33, 1) 13%, rgba(80, 80, 80, 1) 92%)",

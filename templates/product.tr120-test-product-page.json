@@ -3,15 +3,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h4"
+          }
+        },
+        "124bd916-016d-49a0-866f-685eaed81b7d": {
+          "type": "sku",
+          "settings": {
           }
         },
         "badges": {
@@ -108,8 +108,8 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "124bd916-016d-49a0-866f-685eaed81b7d",
         "badges",
         "price",
         "rating",
@@ -224,7 +224,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
