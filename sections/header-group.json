@@ -46,6 +46,7 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify:\/\/shop_images\/TR_LOGO_Transparent_360c71d4-219d-427d-a520-93adb9d4dd4d.png",
         "reduce_padding": true,
         "background_opacity": 40,
         "background_blur_radius": 2
