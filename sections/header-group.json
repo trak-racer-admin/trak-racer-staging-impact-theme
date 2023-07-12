@@ -46,9 +46,9 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "reduce_padding": false,
-        "background_opacity": 33,
-        "background_blur_radius": 0
+        "reduce_padding": true,
+        "background_opacity": 40,
+        "background_blur_radius": 2
       }
     }
   },
