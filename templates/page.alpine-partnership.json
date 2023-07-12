@@ -44,7 +44,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -68,9 +68,70 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#f0f0f0",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3": {
+      "type": "impact-text",
+      "blocks": {
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
+          "type": "item",
+          "settings": {
+            "title": "60",
+            "subheading": "seconds",
+            "content": "<p>F1 to GT positioning in less than 60 seconds.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "ca2c02a4-7b20-469f-8c44-da48327843e7": {
+          "type": "item",
+          "settings": {
+            "title": "300",
+            "subheading": "seconds",
+            "content": "<p>To change your pedal position<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "f15d034d-d79d-4857-882b-514851c4b7a9": {
+          "type": "item",
+          "settings": {
+            "title": "0",
+            "subheading": "tools",
+            "content": "<p>Required to adjust your rig<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
+        "ca2c02a4-7b20-469f-8c44-da48327843e7",
+        "f15d034d-d79d-4857-882b-514851c4b7a9"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 238, 248, 1) 86%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "7e84a986-13b9-4c09-9706-1d0d46c45ac7": {
@@ -161,7 +222,7 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "product": "test",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
@@ -171,11 +232,57 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "#1a1a1a",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "0cfcaebe-acda-4800-9faa-ac0d9b56a254": {
+      "type": "timeline",
+      "blocks": {
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-0": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "June 2020",
+            "subheading": "Subheading",
+            "title": "Trak Racer",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-1": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1960",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-2": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "1966",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-0",
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-1",
+        "template--19607692378400__0cfcaebe-acda-4800-9faa-ac0d9b56a254-168913946827e56873-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "impact_text_ratio": 1,
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(211, 233, 255, 1), rgba(139, 196, 250, 1) 100%)",
+        "text_color": "",
+        "impact_text_color": "",
+        "impact_text_gradient": ""
       }
     },
     "f39a9322-d082-437d-8478-e1886deceef7": {
@@ -192,75 +299,15 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
-    },
-    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3": {
-      "type": "impact-text",
-      "blocks": {
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
-          "type": "item",
-          "settings": {
-            "title": "60",
-            "subheading": "seconds",
-            "content": "<p>F1 to GT positioning in less than 60 seconds.<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "ca2c02a4-7b20-469f-8c44-da48327843e7": {
-          "type": "item",
-          "settings": {
-            "title": "300",
-            "subheading": "seconds",
-            "content": "<p>To change your pedal position<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "f15d034d-d79d-4857-882b-514851c4b7a9": {
-          "type": "item",
-          "settings": {
-            "title": "0",
-            "subheading": "tools",
-            "content": "<p>Required to adjust your rig<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
-        "ca2c02a4-7b20-469f-8c44-da48327843e7",
-        "f15d034d-d79d-4857-882b-514851c4b7a9"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
+    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
     "7e84a986-13b9-4c09-9706-1d0d46c45ac7",
-    "f39a9322-d082-437d-8478-e1886deceef7",
-    "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3"
+    "0cfcaebe-acda-4800-9faa-ac0d9b56a254",
+    "f39a9322-d082-437d-8478-e1886deceef7"
   ]
 }
