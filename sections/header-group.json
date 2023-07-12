@@ -29,7 +29,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": false,
         "logo": "{{shop.brand.logo}}",
         "logo_max_width": 120,
@@ -45,7 +45,7 @@
         "show_country_selector": true,
         "show_country_flag": true,
         "show_country_name": false,
-        "transparent_header_text_color": "#ffffff",
+        "transparent_header_text_color": "#000000",
         "reduce_padding": false,
         "background_opacity": 100,
         "background_blur_radius": 0
