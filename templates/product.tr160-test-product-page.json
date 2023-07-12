@@ -174,7 +174,7 @@
             "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
             "heading_tag": "h2",
             "text_color": "",
-            "gradient": ""
+            "gradient": "linear-gradient(180deg, rgba(237, 237, 237, 1) 1%, rgba(237, 237, 237, 1) 44%, rgba(240, 196, 23, 1) 69%, rgba(240, 196, 23, 1) 100%)"
           }
         }
       },
@@ -196,8 +196,8 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bad.png",
-            "mobile_image": "shopify:\/\/shop_images\/bad2.jpg",
+            "image": "shopify:\/\/shop_images\/TR160_POWER.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TR160_POWER_MOB.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
