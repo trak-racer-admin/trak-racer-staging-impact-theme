@@ -11,7 +11,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
         "badges": {
@@ -65,9 +65,9 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#cc0101",
+            "atc_button_background": "#ff8200",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -114,7 +114,7 @@
         "max_image_zoom_level": 3,
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#1a1a1a",
+        "text_color": "#071d49",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
