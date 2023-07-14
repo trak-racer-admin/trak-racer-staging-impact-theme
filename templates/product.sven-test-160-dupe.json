@@ -79,22 +79,10 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#a5272c",
+            "atc_button_background": "#d33a3a",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "4163194c-df27-4c47-bd48-39a7883f8a23": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "text": "Download Manual",
-            "size": "xl",
-            "style": "outline",
-            "stretch": true,
-            "background": "#a29ca6",
-            "text_color": "#ffffff"
           }
         },
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
@@ -148,7 +136,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "4163194c-df27-4c47-bd48-39a7883f8a23",
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
@@ -177,23 +164,40 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
+            "text": "MAKE THE WORLD MOVE BENEATH YOUR FEET",
             "heading_tag": "h4",
-            "text_color": "",
+            "text_color": "#000000",
             "gradient": ""
+          }
+        },
+        "290311d2-3758-4e7c-9028-4afb1505f2fa": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>With the D-BOX Generation 5 kit, you won't have the problem like other brands where the affects and movement decrease when more weight is applied to the motion kit. The D-BOX weight limit is 460KG\/1,012Lbs in full 4 actuator configuration, 345KG\/759Lbs in 3 actuator configuration and 130KG\/286Lbs in 3 actuator configuration.<\/p>"
+          }
+        },
+        "f95cd612-14bb-4a42-94e9-6990712f3f8f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DBOX-4250i.1.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
           }
         }
       },
       "block_order": [
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1",
+        "290311d2-3758-4e7c-9028-4afb1505f2fa",
+        "f95cd612-14bb-4a42-94e9-6990712f3f8f"
       ],
       "settings": {
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
         "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(33, 33, 33, 1) 5%, rgba(86, 86, 86, 1) 70%)",
-        "text_color": "#ffffff"
+        "background_gradient": "",
+        "text_color": "#000000"
       }
     },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
@@ -202,13 +206,13 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR160_POWER.jpg",
+            "image": "shopify:\/\/shop_images\/slide_left_comfort.jpg",
             "mobile_image": "shopify:\/\/shop_images\/TR160_POWER_MOB.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "subheading": "You have the freedom to raise or lower the wheel stand to your desired height. This allows you to find the most comfortable position that suits your racing style.",
-            "title": "Height and Angle Adjustments",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -224,11 +228,12 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide_right_users.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start sm:text-start",
-            "subheading": "Our compact design enables the stand to fold away in a matter of seconds. It's easy to store, so you can maximize your limited space while still having a great racing setup whenever you need it.",
-            "title": "Easy Storage",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h4",
             "button_text": "",
             "button_link": "",
@@ -236,7 +241,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -244,11 +249,12 @@
         "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide_left_materials.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "subheading": "The stand is 650mm wide, providing a firm stance when racing. It works seamlessly with most fixed and office\/race chairs, ensuring stability and comfort during your sessions.",
-            "title": "Office Chair Compatibility",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h4",
             "button_text": "",
             "button_link": "",
@@ -256,7 +262,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -311,10 +317,10 @@
       ],
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "numbers",
-        "transition_type": "fade_with_text",
+        "transition_type": "fade",
         "autoplay": false,
         "cycle_speed": 8,
         "background": "#f2f2f2",
@@ -385,7 +391,7 @@
       "settings": {
         "full_width": true,
         "subheading": "Light & Ready",
-        "title": "FS3 Specifications",
+        "title": "DBOX SPECIFICATIONS",
         "content": "<p>We're here to support you in your quest for racing excellence. With our thoughtfully designed and adjustable wheel stand, you can enhance your racing performance while enjoying maximum comfort. Let's get ready to race and achieve your personal best!<\/p>",
         "button_text": "",
         "button_url": "",
@@ -396,15 +402,15 @@
         "view_product": "View",
         "viewing_product": "",
         "show_product_swatch": true,
-        "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(135, 133, 135, 1), rgba(78, 77, 77, 1) 100%)",
+        "background": "#ffffff",
+        "background_gradient": "",
         "text_color": "#ffffff",
-        "heading_color": "#a5272c",
-        "heading_gradient": "linear-gradient(320deg, rgba(255, 255, 255, 1) 0.36%, rgba(171, 167, 167, 1) 45%, rgba(253, 253, 253, 1) 86%)",
+        "heading_color": "#000000",
+        "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "chart_background": "#ffffff",
-        "chart_text_color": "#a5272c",
+        "chart_background": "#d33a3a",
+        "chart_text_color": "#ffffff",
         "chart_true_false_color": ""
       }
     },
