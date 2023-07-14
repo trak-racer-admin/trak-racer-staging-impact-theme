@@ -6,9 +6,258 @@
       "settings": {
         "content_width": "80ch"
       }
+    },
+    "cf65da16-5bdc-455f-b2e9-ed9e7ce29213": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--19607694082336__cf65da16-5bdc-455f-b2e9-ed9e7ce29213-168930534705c5d1a9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
+            "media_width": 30,
+            "media_position": "start",
+            "text_position": "place-self-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Bananabraidracing",
+            "title": "Aléthéa Boucq",
+            "content": "<p>I love my Trak Racer rig, I still remember the buzz I got when I sat 2 years ago in my first Trak Racer rig, the RS6, it was magical like having my own racing sports car in my flat... I still get the same buzz when seating in my TR80, it really make the immersion 100% better plus the rig looks extremely so good!<\/p>",
+            "link_text": "Shop TR80",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "linear-gradient(180deg, rgba(127, 101, 210, 1), rgba(237, 168, 255, 1) 98%)",
+            "text_color": "#ffffff",
+            "text_gradient": "linear-gradient(310deg, rgba(255, 220, 0, 1) 14%, rgba(201, 249, 33, 1) 85%)",
+            "button_background": "#803cee",
+            "button_text_color": ""
+          }
+        },
+        "c902fe6e-0c49-477b-ad1b-4f38ebf53afe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lange_veld.png",
+            "media_width": 30,
+            "media_position": "end",
+            "text_position": "place-self-start-end text-end",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Touring Car",
+            "title": "Niels Langeveld",
+            "content": "<p>I am training a lot on my Trakracer TR160, and still I am enjoying every moment. It’s easy in use and handling. Also adapting things like the screens, chair or pedals is no problem and not a lot of work. For me the strength of the frame is really important. I don’t like flex so everything needs to be solid. This is perfectly handled by Trakracer. Also trakracer is trying to improve everytime with new products as well. I am looking forward to the future with them.<\/p>",
+            "link_text": "Shop TR160",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "linear-gradient(180deg, rgba(194, 194, 194, 1) 7%, rgba(80, 80, 80, 1) 94%)",
+            "text_color": "#ffffff",
+            "text_gradient": "linear-gradient(115deg, rgba(255, 0, 0, 1), rgba(163, 0, 0, 1) 99%)",
+            "button_background": "#1a1a1a",
+            "button_text_color": ""
+          }
+        },
+        "7b2f8d3d-de0d-4f8d-a7b7-e6c36669c78e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Luke_King.png",
+            "media_width": 30,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Luke King Racing",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "linear-gradient(180deg, rgba(112, 142, 255, 1) 7%, rgba(0, 52, 248, 1) 94%)",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19607694082336__cf65da16-5bdc-455f-b2e9-ed9e7ce29213-168930534705c5d1a9-0",
+        "c902fe6e-0c49-477b-ad1b-4f38ebf53afe",
+        "7b2f8d3d-de0d-4f8d-a7b7-e6c36669c78e"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703": {
+      "type": "rich-text",
+      "blocks": {
+        "3f7a95cc-32bf-4abd-8afe-d4627ab3cae0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "c164b449-5079-4a5a-8f28-686ffb7f5da3": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Bananabraidracing"
+          }
+        },
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Aléthéa Boucq",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>What do you think of your Trak Racer simulator?<\/strong><\/p><p>I love my Trak Racer rig, I still remember the buzz I got when I sat 2 years ago in my first Trak Racer rig, the RS6, it was magical like having my own racing sports car in my flat... I still get the same buzz when seating in my TR80, it really make the immersion 100% better plus the rig looks extremely so good!<\/p><p><strong>How do you use the simulator in your training for real life racing and\/or day-to-day sim racing?<\/strong><\/p><p>I occasionally go to Go Karting and racing in my rig on different simulators has really helped with real life skills, it a very similar experience except I don't get the same bruises in my rig, haha! Seriously though, being in the rig is a real workout, I practice up to 1 hour every evening when I am not in the actual races, race stints can last anything between 30 to 60mins and the let's just say they get your heart racing and your weat glands fully activated! My last race was just over the weekend it was the 4.5 hours LFM endurance race at Spa, we started P41 and arrived P3, that was a serious challenge both physically and mentally!<\/p><p><strong>What are your top 3 games and tracks to race on?<\/strong><\/p><p>Assetto Corsa Competizione (I spend all of my time on the aforementioned!), Assetto Corsa and Dirt Rally 2.0.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3f7a95cc-32bf-4abd-8afe-d4627ab3cae0",
+        "c164b449-5079-4a5a-8f28-686ffb7f5da3",
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-0",
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-1",
+        "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(175, 166, 230, 0.54), rgba(245, 168, 255, 0.57) 100%)",
+        "text_color": "#1a1a1a"
+      }
+    },
+    "2af97261-3df1-43d6-95bb-8ef44eb07033": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Touring Car"
+          }
+        },
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Niels Langeveld",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>I am training a lot on my Trakracer TR160, and still I am enjoying every moment. It’s easy in use and handling. Also adapting things like the screens, chair or pedals is no problem and not a lot of work. For me the strength of the frame is really important. I don’t like flex so everything needs to be solid. This is perfectly handled by Trakracer. Also I see now that trakracer is trying to improve everytime with new products as well. I am looking forward to the future with them.<\/p><p>I use my sim for training but also to race online in series with other race drivers just for fun and winning. The online racing series gives you a very good simulation for your real racing. The tension of qualifying, racestart and tactics is good to simulate and to practice. Sometimes I have long evenings, so some comfort is important, this is well handled by trakracer. For training it is important to simulate the reality as much as possible. Good feeling with the brakes, steering wheel and seat position is therefore important. Products get better and better every year.<\/p><p>To be honest I only race on Iracing. For me other games are now not something I am focussed on. The tracks are a lot American but more and more European is coming. I like Fuji Speedway a lot but also Long Beach & Rudskogen.<\/p>"
+          }
+        },
+        "cbc76988-7567-4f11-9bc0-e3e8adb1724e": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "622be04c-af94-449e-be37-23643188f8b8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lange_veld.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-0",
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-1",
+        "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-2",
+        "cbc76988-7567-4f11-9bc0-e3e8adb1724e",
+        "622be04c-af94-449e-be37-23643188f8b8"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(245, 168, 255, 0.57), rgba(214, 172, 172, 0.57) 37.05%, rgba(255, 107, 107, 0.57) 74%, rgba(247, 105, 105, 0.57) 100%)",
+        "text_color": ""
+      }
+    },
+    "2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac": {
+      "type": "rich-text",
+      "blocks": {
+        "d0e149c6-5c06-4a88-9032-429396d0b083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Luke_King.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "42a19d99-f07c-46de-b4e3-0b35279e73f2": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d0e149c6-5c06-4a88-9032-429396d0b083",
+        "42a19d99-f07c-46de-b4e3-0b35279e73f2",
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-0",
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-1",
+        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(247, 105, 105, 0.57), rgba(250, 67, 30, 0.57) 13%, rgba(250, 19, 19, 0.69) 27%, rgba(255, 4, 4, 0.83) 49%, rgba(16, 148, 255, 0.83) 69%, rgba(32, 55, 255, 0.57) 100%)",
+        "text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "cf65da16-5bdc-455f-b2e9-ed9e7ce29213",
+    "cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703",
+    "2af97261-3df1-43d6-95bb-8ef44eb07033",
+    "2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac"
   ]
 }
