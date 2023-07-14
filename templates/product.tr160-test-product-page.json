@@ -408,6 +408,55 @@
         "chart_true_false_color": ""
       }
     },
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "<ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><li>Other Wheel Bases - may require mounting bracket (Trak Racer Direct Drive Mount recommended)<\/li><li>MiGe 130ST(small and big<\/li><li>Bodnar 53 series<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini \/ ULTIMATE<\/li><\/ul><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><strong>WITH <\/strong><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> DIRECT DRIVE FRONT MOUNT (SKU TR-DDBRDDM)<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>VRS Force Pro<\/li><li>AccuForce V1\/V2 (turn the top cover around to fit)<\/li><li>MiGe 130ST(small and big)<\/li><li>Bodnar 53 series<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini\/ ULTIMATE<\/li><li>Lenze MCS12 series<\/li><li>Kollmorgen AKM 52-53-54 (OSW and Leo Bodnar Simsteering systems)<\/li><li>Ricmotech Mini-Mite Direct-Drive Steering System Base<\/li><li>IMMSOURCE ET3 and ET5<\/li><li>Fanatec Podium DD (installs <strong>without<\/strong> front plate)<\/li><\/ul>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
+          "type": "item",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "<ul><li>Trak Racer Loadcell Pro Pedals (Coming Q4 2023)<\/li><li>Fanatec CSL Elite Pedals, ClubSport V1\/V2\/V3 (including Inverted Pedals)<\/li><li>Thrustmaster T-LCM, T3PA, GT Ed, T3PGT, T3PA PRO add-on and T500, T150 pedals<\/li><li>Heusinkveld Ultimate\/Ultimate+, Sprint and Pro<\/li><li>Logitech G25, G27, G29, G920, G923, G Pro pedals<\/li><li>Meca Cup1-2, Meca Cup1-3, Clutch and Base Plate, Meca Cup 1 Evo Hydraulic & LC<\/li><li>VRS DirectForce Pro Pedals<\/li><li>HPP PRX 3P, JBV 2\/3 Pedal System<\/li><li>Simagic P2000-S100 Pedal Set<\/li><li>BJ Sim Racing Steel Series, 1000psi Hydraulic<\/li><li>DC Sim Racing DC3<\/li><li>Racewerk S1 Hydraulic Sim Racing Pedals<\/li><li>Sim Coaches P1-3<\/li><li>Simtrecs ProPedal GT<\/li><li>Velazquez Engineering PRO+ Hydraulic<\/li><li>Simforge Mark-1<\/li><li>3DRAP Ngasa<\/li><li>Protosimtech PT2<\/li><li>OBP Pro Race V2 Sim Pedal System<\/li><li>Simworx Pro Series<\/li><li>WAVE IMPETUS<\/li><li>Quaife Throttle Pedal and Brake<\/li><li>Cube Controls Hydraulic SP01<\/li><li>Venym Pedals<\/li><li>Moza CRP Pedal set<\/li><li>Moza SRP Pedal set with and without SRP plate<\/li><li>JCL Hydraulic Pedals<\/li><li>Thera Pedals<\/li><li>Asetek La Prima, Forte and Invicta pedals (plate may require new mounting holes)<\/li><li>SRP GT\/GT-R\/Formula\/Formula-R (plate may require new mounting holes)<\/li><li>TRPED-PRO3<\/li><li>Simgrade pedal plate and VX PEDAL<\/li><\/ul><p><strong> <\/strong><\/p><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Thrustmaster TPR: Pendular Rudder Pedals<\/li><li>Thrustmaster T.Flight Rudder Pedals<\/li><li>Logitech Flight Rudder Pedals<\/li><li>Logitech Heavy Equipment<\/li><li>Virpil Ace<\/li><\/ul>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
+          "type": "item",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "<ul><li>Trak Racer Sequential Shifter Pro (Coming Q4 2023)<\/li><li>Fanatec ClubSport Shifter, SQ<\/li><li>Thrustmaster TH8A, RSTSS, TSS+<\/li><li>Prosim PSL Sequential Shifter<\/li><li>Heusinkveld SQ Shifter<\/li><li>Logitech G Shifter<\/li><li>DSD SQ Shifter<\/li><li>Jinx Shifter - additional mount required<\/li><li>Simworx Pro Series - additional mount required<\/li><li>VNM Simulation Sequential Shifter<\/li><li>Quaife PSL Sequential V2, Sequential, and H Pattern - additional mount required<\/li><li>Aiologs SQ Shifter<\/li><li>BJ Sim Racing Shifter 3.0<\/li><li>Frex H Pattern<\/li><li>SIMAGIC DS-8X<\/li><li>SIMAGIC Q1S<\/li><li>SIMAGIC TB-1<\/li><li>Moza HGP shifter<\/li><li>Meca Cup Shifter<\/li><li>TRSS-PRO<\/li><li>PRO-SIM<\/li><li>PRO-SIM LITE<\/li><li>PRO-SIM SEQUENTIAL<\/li><\/ul><p><br\/><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> HANDBRAKE MOUNT COMPATIBILITY<\/strong><\/p><ul><li>Trak Racer Loadcell Pro Handbrake TRHB (Coming Q4 2023)<\/li><li>Fanatec Clubsport Handbrake<\/li><li>Thrustmaster TSS+<\/li><li>DSD Hydralulic Handbrake<\/li><li>RealGear RALLYpro Handbrake<\/li><li>Heusinkveld Handbrakes<\/li><li>Prosim Handbrake Digital\/RX Analog<\/li><li>Quaife Handbrake<\/li><li>VNM Simulation Handbrake<\/li><li>Aiologs Handbrake<\/li><li>Meca Handbrake<\/li><li>Moza HBP<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Compatibility",
+        "content": "<p>Check the compatible peripherals!<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(78, 77, 77, 1), rgba(155, 155, 155, 1) 86%)",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -492,57 +541,8 @@
         "text_alignment": "center",
         "icon_spacing": "medium",
         "background": "#000000",
-        "background_gradient": "linear-gradient(180deg, rgba(78, 77, 77, 1) 13%, rgba(155, 155, 155, 1) 86%)",
+        "background_gradient": "linear-gradient(180deg, rgba(155, 155, 155, 1) 13%, rgba(155, 155, 155, 0.64) 86%)",
         "text_color": "#ffffff"
-      }
-    },
-    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
-      "type": "accordion-content",
-      "blocks": {
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
-          "type": "item",
-          "settings": {
-            "title": "Wheel Mount",
-            "content": "<ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><li>Other Wheel Bases - may require mounting bracket (Trak Racer Direct Drive Mount recommended)<\/li><li>MiGe 130ST(small and big<\/li><li>Bodnar 53 series<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini \/ ULTIMATE<\/li><\/ul><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><strong>WITH <\/strong><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> DIRECT DRIVE FRONT MOUNT (SKU TR-DDBRDDM)<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>VRS Force Pro<\/li><li>AccuForce V1\/V2 (turn the top cover around to fit)<\/li><li>MiGe 130ST(small and big)<\/li><li>Bodnar 53 series<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini\/ ULTIMATE<\/li><li>Lenze MCS12 series<\/li><li>Kollmorgen AKM 52-53-54 (OSW and Leo Bodnar Simsteering systems)<\/li><li>Ricmotech Mini-Mite Direct-Drive Steering System Base<\/li><li>IMMSOURCE ET3 and ET5<\/li><li>Fanatec Podium DD (installs <strong>without<\/strong> front plate)<\/li><\/ul>"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
-          "type": "item",
-          "settings": {
-            "title": "Pedal Mount",
-            "content": "<ul><li>Trak Racer Loadcell Pro Pedals (Coming Q4 2023)<\/li><li>Fanatec CSL Elite Pedals, ClubSport V1\/V2\/V3 (including Inverted Pedals)<\/li><li>Thrustmaster T-LCM, T3PA, GT Ed, T3PGT, T3PA PRO add-on and T500, T150 pedals<\/li><li>Heusinkveld Ultimate\/Ultimate+, Sprint and Pro<\/li><li>Logitech G25, G27, G29, G920, G923, G Pro pedals<\/li><li>Meca Cup1-2, Meca Cup1-3, Clutch and Base Plate, Meca Cup 1 Evo Hydraulic & LC<\/li><li>VRS DirectForce Pro Pedals<\/li><li>HPP PRX 3P, JBV 2\/3 Pedal System<\/li><li>Simagic P2000-S100 Pedal Set<\/li><li>BJ Sim Racing Steel Series, 1000psi Hydraulic<\/li><li>DC Sim Racing DC3<\/li><li>Racewerk S1 Hydraulic Sim Racing Pedals<\/li><li>Sim Coaches P1-3<\/li><li>Simtrecs ProPedal GT<\/li><li>Velazquez Engineering PRO+ Hydraulic<\/li><li>Simforge Mark-1<\/li><li>3DRAP Ngasa<\/li><li>Protosimtech PT2<\/li><li>OBP Pro Race V2 Sim Pedal System<\/li><li>Simworx Pro Series<\/li><li>WAVE IMPETUS<\/li><li>Quaife Throttle Pedal and Brake<\/li><li>Cube Controls Hydraulic SP01<\/li><li>Venym Pedals<\/li><li>Moza CRP Pedal set<\/li><li>Moza SRP Pedal set with and without SRP plate<\/li><li>JCL Hydraulic Pedals<\/li><li>Thera Pedals<\/li><li>Asetek La Prima, Forte and Invicta pedals (plate may require new mounting holes)<\/li><li>SRP GT\/GT-R\/Formula\/Formula-R (plate may require new mounting holes)<\/li><li>TRPED-PRO3<\/li><li>Simgrade pedal plate and VX PEDAL<\/li><\/ul><p><strong> <\/strong><\/p><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Thrustmaster TPR: Pendular Rudder Pedals<\/li><li>Thrustmaster T.Flight Rudder Pedals<\/li><li>Logitech Flight Rudder Pedals<\/li><li>Logitech Heavy Equipment<\/li><li>Virpil Ace<\/li><\/ul>"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
-          "type": "item",
-          "settings": {
-            "title": "Shifter & Handbrake Mount",
-            "content": "<ul><li>Trak Racer Sequential Shifter Pro (Coming Q4 2023)<\/li><li>Fanatec ClubSport Shifter, SQ<\/li><li>Thrustmaster TH8A, RSTSS, TSS+<\/li><li>Prosim PSL Sequential Shifter<\/li><li>Heusinkveld SQ Shifter<\/li><li>Logitech G Shifter<\/li><li>DSD SQ Shifter<\/li><li>Jinx Shifter - additional mount required<\/li><li>Simworx Pro Series - additional mount required<\/li><li>VNM Simulation Sequential Shifter<\/li><li>Quaife PSL Sequential V2, Sequential, and H Pattern - additional mount required<\/li><li>Aiologs SQ Shifter<\/li><li>BJ Sim Racing Shifter 3.0<\/li><li>Frex H Pattern<\/li><li>SIMAGIC DS-8X<\/li><li>SIMAGIC Q1S<\/li><li>SIMAGIC TB-1<\/li><li>Moza HGP shifter<\/li><li>Meca Cup Shifter<\/li><li>TRSS-PRO<\/li><li>PRO-SIM<\/li><li>PRO-SIM LITE<\/li><li>PRO-SIM SEQUENTIAL<\/li><\/ul><p><br\/><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> HANDBRAKE MOUNT COMPATIBILITY<\/strong><\/p><ul><li>Trak Racer Loadcell Pro Handbrake TRHB (Coming Q4 2023)<\/li><li>Fanatec Clubsport Handbrake<\/li><li>Thrustmaster TSS+<\/li><li>DSD Hydralulic Handbrake<\/li><li>RealGear RALLYpro Handbrake<\/li><li>Heusinkveld Handbrakes<\/li><li>Prosim Handbrake Digital\/RX Analog<\/li><li>Quaife Handbrake<\/li><li>VNM Simulation Handbrake<\/li><li>Aiologs Handbrake<\/li><li>Meca Handbrake<\/li><li>Moza HBP<\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Compatibility",
-        "content": "<p>Check the compatible peripherals!<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(155, 155, 155, 1), rgba(254, 254, 254, 1) 100%)",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
       }
     },
     "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
@@ -607,8 +607,8 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
-    "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
     "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a",
     "related-products"
   ]
