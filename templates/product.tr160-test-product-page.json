@@ -453,8 +453,8 @@
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "accordion_background": "#ffffff",
+        "accordion_text_color": "#a5272c"
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
