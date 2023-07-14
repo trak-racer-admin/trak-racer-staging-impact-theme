@@ -60,7 +60,7 @@
             "image": "shopify:\/\/shop_images\/Luke_King.png",
             "media_width": 30,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "Luke King Racing",
@@ -89,6 +89,7 @@
     },
     "cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "3f7a95cc-32bf-4abd-8afe-d4627ab3cae0": {
           "type": "image",
@@ -144,6 +145,7 @@
     },
     "2af97261-3df1-43d6-95bb-8ef44eb07033": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-0": {
           "type": "subheading",
@@ -199,9 +201,11 @@
     },
     "2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "d0e149c6-5c06-4a88-9032-429396d0b083": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Luke_King.png",
             "width_mode": "custom",
