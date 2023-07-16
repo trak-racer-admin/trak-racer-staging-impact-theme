@@ -13,34 +13,150 @@
         "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "I am 6’2″ tall and my son is only 5′. Can Trak Racer products be adjusted to suit both of us?",
+            "content": "<p>Trak Racer adds adjustable components to accommodate users of all sizes!<\/p>"
           }
         },
         "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            "title": "Why do Trak Racer products appear to be a little more expensive than other simulator products?",
+            "content": "<p>We include many extras that competitors simply don’t with their rigs. Thoroughly compare what we provide with that from one of our competitors? We believe we offer the best value high-end gaming rigs out there! <br\/><\/p>"
           }
         },
         "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Do Trak Racer products require assembly?",
+            "content": "<p>Trak Racer products are shipped out partially assembled to reduce shipping costs. Depending on the rig, assembly can be as quick as 30 minutes, through to many hours. See the relevant product page for details. PS, this doesn’t include the lifetime of tweaking and optimising that our customers love... <\/p>"
+          }
+        },
+        "6c3668aa-b6bd-433b-94f7-025d8c698285": {
+          "type": "item",
+          "settings": {
+            "title": "Are Trak Racer products comfortable?",
+            "content": "<p>All Trak Racer products are designed, developed, tested, improved, redesigned and manufactured. If the seat needs extra padding we add it, if the controls need to be closer, further away or adjusted, we do it. The result is a setup that is strong enough to accommodate the most demanding racers and will help you to remain focused and comfortable for hours!<\/p>"
+          }
+        },
+        "5a289089-1afa-4de0-b039-a6d012d6e070": {
+          "type": "item",
+          "settings": {
+            "title": "Are there any other products under development?",
+            "content": "<p>You bet, we have lots of new products we are bringing to market and coming your way… Stay tuned!<\/p>"
+          }
+        },
+        "f26bedae-fdba-46a0-ab38-1f24f6190c2c": {
+          "type": "item",
+          "settings": {
+            "title": "Are Trak Racer products compatible with PS5 and XBox Series X and S?",
+            "content": "<p>Trak Racer products are universal. They work with PS5, PS4, PS3, PS2, Xbox and PC systems. <\/p>"
+          }
+        },
+        "1456a2c6-4330-40fe-9089-c0452e0cfd53": {
+          "type": "item",
+          "settings": {
+            "title": "Where are Trak Racer products made?",
+            "content": "<p>All Trak Racer products have been designed and engineered in Australia and shared with our manufacturing partners across the world.<\/p>"
+          }
+        },
+        "e763bfcc-f3e2-4e74-8b26-7596f61ff3e6": {
+          "type": "item",
+          "settings": {
+            "title": "Are Trak Racer products easy to store?",
+            "content": "<p>Not really, but why would you want to hide such a beautiful piece of furniture? If you really need to you can dismantle a couple of our rigs in several minutes to minimise the size. We do have the FS3 which you can easily store way!<\/p>"
+          }
+        },
+        "f5ad853a-a466-447a-98eb-3514e2e118fd": {
+          "type": "item",
+          "settings": {
+            "title": "I’ve arranged someone to build my rig and I’m not happy? Will Trak Racer reimburse me?",
+            "content": "<p>No, Trak Racer will under no circumstance cover costs associated with installation or any labor from an installer not recommended or approved by Trak Racer. <\/p>"
           }
         }
       },
       "block_order": [
         "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-0",
         "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-1",
-        "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-2"
+        "template--19149182992672__ba06c840-7884-43c3-91ac-b639e5cbe378-1689550433ee0c9dac-2",
+        "6c3668aa-b6bd-433b-94f7-025d8c698285",
+        "5a289089-1afa-4de0-b039-a6d012d6e070",
+        "f26bedae-fdba-46a0-ab38-1f24f6190c2c",
+        "1456a2c6-4330-40fe-9089-c0452e0cfd53",
+        "e763bfcc-f3e2-4e74-8b26-7596f61ff3e6",
+        "f5ad853a-a466-447a-98eb-3514e2e118fd"
       ],
       "settings": {
         "full_width": false,
         "subheading": "",
-        "title": "FAQ",
+        "title": "General FAQs",
+        "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b499905b-13cc-43e5-9f21-ae8c65ddbb3f": {
+      "type": "faq",
+      "blocks": {
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-0": {
+          "type": "item",
+          "settings": {
+            "title": "I purchased an item and now it is on backorder. What do I do?",
+            "content": "<p>From time to time, an item can run out of stock before your order is processed. We will contact you if there is an issue, and we will work with you to get your product. At the very least, a full refund will be happily offered via the same means as your original payment.<\/p>"
+          }
+        },
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long until my Trak Racer is Shipped out?",
+            "content": "<p>Our products usually take 1-2 business days to dispatch not including transit time. Tracking will be provided once your order ships.<\/p>"
+          }
+        },
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I pick up my item from the warehouse?",
+            "content": "<p>Unfortunately, we are unable to offer warehouse pick-ups.<\/p>"
+          }
+        },
+        "850d7c6d-7787-4256-bdfb-b9844288bcc9": {
+          "type": "item",
+          "settings": {
+            "title": "Where do you ship to?",
+            "content": "<p>We currently ship to all states within the United States. However if you would like shipping arranged to Alaska, Puerto Rico, and Hawaii, please contact us via support@trakracer.com as we will be able to assist.<\/p>"
+          }
+        },
+        "cafd1f41-f932-4b4e-bef2-17a874be6e55": {
+          "type": "item",
+          "settings": {
+            "title": "How long will my order take?",
+            "content": "<p>Orders usually take up to 2 business days to be shipped. If you have pre-ordered any items, the order will be shipped as soon as everything is in stock.<\/p><p>If you would like us to send everything ahead of the pre-ordered items, please send us an email and we will do so!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-0",
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-1",
+        "template--19149182992672__b499905b-13cc-43e5-9f21-ae8c65ddbb3f-1689550433ee0c9dac-2",
+        "850d7c6d-7787-4256-bdfb-b9844288bcc9",
+        "cafd1f41-f932-4b4e-bef2-17a874be6e55"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "Shipping FAQs",
         "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
         "team_avatar_width": 160,
         "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
@@ -62,6 +178,7 @@
   },
   "order": [
     "main",
-    "ba06c840-7884-43c3-91ac-b639e5cbe378"
+    "ba06c840-7884-43c3-91ac-b639e5cbe378",
+    "b499905b-13cc-43e5-9f21-ae8c65ddbb3f"
   ]
 }
