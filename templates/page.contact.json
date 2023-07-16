@@ -10,31 +10,31 @@
     "contact": {
       "type": "contact",
       "blocks": {
+        "aee39e24-119f-4943-a59f-4e34c497fcb0": {
+          "type": "text",
+          "settings": {
+            "title": "Order number (if applicable)",
+            "use_long_text": false,
+            "required": false
+          }
+        },
         "857e7d25-a646-4270-88bb-350fca86dbf7": {
           "type": "dropdown",
           "settings": {
             "title": "Enquiry type",
             "values": "Sales, Shipping, Request Return, Change or Cancel Order, Damage or Repairs, Other"
           }
-        },
-        "aee39e24-119f-4943-a59f-4e34c497fcb0": {
-          "type": "text",
-          "settings": {
-            "title": "Subject",
-            "use_long_text": false,
-            "required": true
-          }
         }
       },
       "block_order": [
-        "857e7d25-a646-4270-88bb-350fca86dbf7",
-        "aee39e24-119f-4943-a59f-4e34c497fcb0"
+        "aee39e24-119f-4943-a59f-4e34c497fcb0",
+        "857e7d25-a646-4270-88bb-350fca86dbf7"
       ],
       "settings": {
         "full_width": true,
         "subheading": "Contact Us",
-        "title": "Do you have any question?",
-        "content": "",
+        "title": "Have a question?",
+        "content": "<p>Our dedicated team of simulation experts would love to help.<\/p><p>Feel free to contact us via the form.<\/p><p>We endeavour to respond to all enquiries within 24 hours, Monday - Friday.<\/p>",
         "text_position": "start",
         "contact_form_size": "large",
         "background": "",
@@ -47,10 +47,69 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-0",
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-1",
+        "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "contact"
+    "contact",
+    "0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b"
   ]
 }
