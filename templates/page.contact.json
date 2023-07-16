@@ -1,1 +1,56 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"contact":{"type":"contact","settings":{}}},"order":["main","contact"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "blocks": {
+        "857e7d25-a646-4270-88bb-350fca86dbf7": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Enquiry type",
+            "values": "Sales, Shipping, Request Return, Change or Cancel Order, Damage or Repairs, Other"
+          }
+        },
+        "aee39e24-119f-4943-a59f-4e34c497fcb0": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "use_long_text": false,
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "857e7d25-a646-4270-88bb-350fca86dbf7",
+        "aee39e24-119f-4943-a59f-4e34c497fcb0"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Do you have any question?",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact"
+  ]
+}
