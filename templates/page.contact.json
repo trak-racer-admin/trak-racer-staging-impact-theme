@@ -34,7 +34,7 @@
         "full_width": true,
         "subheading": "Contact Us",
         "title": "Have a question?",
-        "content": "<p>Our dedicated team of simulation experts would love to help.<\/p><p>Feel free to contact us via the form.<\/p><p>We endeavour to respond to all enquiries within 24 hours, Monday - Friday.<\/p>",
+        "content": "<p>Our dedicated team of simulation experts would love to help.<\/p><p>Feel free to contact us via the form.<\/p><p>We endeavour to respond to all enquiries within 24 hours, Monday - Friday.<\/p><p>For SALES email us at <strong>sales@trakracer.com.au<br\/><\/strong>For SUPPORT email us at <strong>support@trakracer.com.au<\/strong><\/p>",
         "text_position": "start",
         "contact_form_size": "large",
         "background": "",
@@ -55,9 +55,9 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Trak Racer Head Office",
+            "heading_tag": "h5",
+            "content": "<p>278 Canterbury Road<br\/>Surrey Hills<br\/>VIC 3127<br\/>Australia<br\/><strong>Phone: <\/strong>(03) 9811 7097<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -67,9 +67,9 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Trak Racer European Office",
+            "heading_tag": "h5",
+            "content": "<p>4e Regimentsdok 1 – 14<br\/>3433KW Nieuwegein<br\/>The Netherlands<br\/><strong>Phone: <\/strong>+31(0)345 267010<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -79,9 +79,9 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Trak Racer USA Office",
+            "heading_tag": "h5",
+            "content": "<p>7801 North Lamar Blvd.<br\/>STE C55<br\/>Austin, TX 78752<br\/>United States<br\/><strong>Phone:<\/strong> <a href=\"tel:18564743603\">+1 (512) 960-3856<\/a><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -94,14 +94,14 @@
         "template--19149183385888__0da1f7a3-b373-4368-bfcc-ed2df8ec0d3b-168954949213d68396-2"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "large",
         "text_alignment": "start",
-        "subheading": "About",
-        "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
-        "background": "",
+        "subheading": "",
+        "title": "Office Locations",
+        "content": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
