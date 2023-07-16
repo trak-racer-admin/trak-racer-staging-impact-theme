@@ -4,7 +4,7 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "content_width": "80ch"
+        "content_width": "100%"
       }
     },
     "contact": {
