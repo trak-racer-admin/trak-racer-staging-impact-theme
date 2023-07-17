@@ -297,6 +297,51 @@
         "text_color": ""
       }
     },
+    "4dcd86a1-fdd2-4799-b728-7b359d01737a": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<h6>✔️ Share With Your Inner Circle<\/h6><p>Tell friends and family how Trak Racer produce the most innovative and best quality hardware that helped improve your performance on the Trak or in the Sky.<\/p><h6>✔️ Write a Blog Post<\/h6><p>Do you write about sim racing, flight sim, technology or motorsports? Describe your experience with Trak Racer on your blog. Product comparison articles work wonders for other affiliates!<\/p><h6>✔️ Spread the Word on Social<\/h6><p>Share your favorite products and let your followers know about your love for Trak Racer and don’t forget to use your tracking URL!<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<h6>✔️ Publish Educational Content<\/h6><p>Get creative. Give people a tour of your Trak Racer setup and provide guidance on what they need to get started in Sim Racing or Flight Sim.<\/p><h6>🔻Run Digital Campaigns<\/h6><p>Promote Trak Racer on your website through banner ads and other content using your affiliate link.<\/p><h6>🔻 Get Your Clients Onboard<\/h6><p>Are you a simulation coach or professional cockpit builder? Recommend Trak Racer to your clients to earn more on top of your services.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-0",
+        "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "large",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Scale Your Earnings",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "6964765e-bbd7-4613-8fe6-834d72659108": {
       "type": "featured-collection",
       "disabled": true,
@@ -474,6 +519,7 @@
     "1f0992a8-a269-4b61-ab72-9934b5a08e25",
     "c8736990-9d16-4ace-8472-9c453c497793",
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291",
+    "4dcd86a1-fdd2-4799-b728-7b359d01737a",
     "6964765e-bbd7-4613-8fe6-834d72659108",
     "45618475-3706-439d-a08d-595ecc8d556f",
     "7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f",
