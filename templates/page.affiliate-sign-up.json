@@ -119,6 +119,7 @@
     },
     "e03256b7-2c99-40b4-861f-f03eec2db798": {
       "type": "text-with-icons",
+      "disabled": true,
       "blocks": {
         "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-0": {
           "type": "item",
