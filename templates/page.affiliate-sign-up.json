@@ -135,7 +135,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
+        "stack_mobile": false,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "line",
@@ -364,6 +364,107 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f": {
+      "type": "faq",
+      "blocks": {
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-0": {
+          "type": "item",
+          "settings": {
+            "title": "How does the program work?",
+            "content": "<p>The Trak Racer Partner Program allows you to make money by referring customers to the Trak Racer website. For every customer you refer that makes a purchase, you will earn a 5% commission. We will handle the fulfillment and customer service. You can use the dashboard to see detailed information about orders you have generated. When your commission 'bank' reaches $200 we will pay your commission at the start of the next month.<\/p>"
+          }
+        },
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-2": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-0",
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-1",
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "90bea3e8-9b92-420d-8806-90b0b1dc5f15": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-0": {
+          "type": "item",
+          "settings": {
+            "title": "Question 1",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-1": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-2": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-0",
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-1",
+        "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Heading",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -374,6 +475,8 @@
     "c8736990-9d16-4ace-8472-9c453c497793",
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291",
     "6964765e-bbd7-4613-8fe6-834d72659108",
-    "45618475-3706-439d-a08d-595ecc8d556f"
+    "45618475-3706-439d-a08d-595ecc8d556f",
+    "7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f",
+    "90bea3e8-9b92-420d-8806-90b0b1dc5f15"
   ]
 }
