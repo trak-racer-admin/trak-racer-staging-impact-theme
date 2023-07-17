@@ -2,11 +2,295 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5e8b8d62-8135-4494-9222-27c57817868c": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19929120407840__5e8b8d62-8135-4494-9222-27c57817868c-1689551003dd73e1aa-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Get paid when you refer clients to Trak Racer",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19929120407840__5e8b8d62-8135-4494-9222-27c57817868c-1689551003dd73e1aa-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Promote the world's leading Simulation Hardware Company and find a new income stream today!<\/p>"
+          }
+        },
+        "d57dba0b-9816-4d34-b8db-3cc11d6a8936": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Start Earning Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__5e8b8d62-8135-4494-9222-27c57817868c-1689551003dd73e1aa-1",
+        "template--19929120407840__5e8b8d62-8135-4494-9222-27c57817868c-1689551003dd73e1aa-2",
+        "d57dba0b-9816-4d34-b8db-3cc11d6a8936"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "fill",
+        "image": "shopify:\/\/shop_images\/C0307.00_02_11_10.Still010.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "c8736990-9d16-4ace-8472-9c453c497793": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/signup_1.webp",
+            "column_size": "3",
+            "title": "Step 1: Sign Up",
+            "heading_tag": "h4",
+            "content": "<p>Signup for the affiliate program. Its free to get started and no risk.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/share_1.webp",
+            "column_size": "3",
+            "title": "Step 2: Share link",
+            "heading_tag": "h4",
+            "content": "<p>Get your affiliate links and start sharing with your target audience.<\/p>",
+            "link_url": "",
+            "link_text": "Start Earning Now",
+            "link_style": "button"
+          }
+        },
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/earning.webp",
+            "column_size": "3",
+            "title": "Step 3: Start Earning",
+            "heading_tag": "h4",
+            "content": "<p>Earn right from the moment your traffic converts.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0",
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1",
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e03256b7-2c99-40b4-861f-f03eec2db798": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-send",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#992328",
+            "title": "Share with your inner circle",
+            "content": "<p>Tell friends and family how Trak Racer produce the most innovative and best quality hardware that helped improve your performance on the Trak or in the Sky.<\/p>"
+          }
+        },
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#992328",
+            "title": "Write a blog post",
+            "content": "<p>Do you write about sim racing, flight sim, technology or motorsports? Describe your experience with Trak Racer on your blog. Product comparison articles work wonders for other affiliates!<\/p>"
+          }
+        },
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-at-sign",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#992328",
+            "title": "Spread the word on social",
+            "content": "<p>Share your favorite products and let your followers know about your love for Trak Racer and don’t forget to use your tracking URL!<\/p>"
+          }
+        },
+        "190a3494-71a2-450f-a557-528c886dd5d9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "rgba(0,0,0,0)",
+            "icon_color": "#992328",
+            "title": "Publish Educational Content",
+            "content": "<p>Get creative. Give people a tour of your Trak Racer setup and provide guidance on what they need to get started in Sim Racing or Flight Sim.<\/p>"
+          }
+        },
+        "240b5b59-713c-4993-9f0c-95f5d9de9305": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Heading",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-0",
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-1",
+        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-2",
+        "190a3494-71a2-450f-a557-528c886dd5d9",
+        "240b5b59-713c-4993-9f0c-95f5d9de9305"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "Maximise your Earnings",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#191919",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "49f0a971-1890-40f0-a85e-a23ce4952453": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--19929120407840__49f0a971-1890-40f0-a85e-a23ce4952453-1689553949f0d99fcf-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hotel-poolside-checking-phones.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-start-end text-end",
+            "icon": "picto-send",
+            "icon_width": 36,
+            "subheading": "",
+            "title": "Share with your inner circle",
+            "content": "<p>Tell friends and family how Trak Racer produce the most innovative and best quality hardware that helped improve your performance on the Trak or in the Sky.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "a2b3a906-28d1-4464-adc1-f75f7e1c5ea2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hands-typing.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-start text-start",
+            "icon": "picto-comment",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Write a blog post",
+            "content": "<p>Do you write about sim racing, flight sim, technology or motorsports? Describe your experience with Trak Racer on your blog. Product comparison articles work wonders for other affiliates!<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "9957417f-d437-4a48-8264-4ad351d6bbda": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/social-media-on-cell-phone.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__49f0a971-1890-40f0-a85e-a23ce4952453-1689553949f0d99fcf-0",
+        "a2b3a906-28d1-4464-adc1-f75f7e1c5ea2",
+        "9957417f-d437-4a48-8264-4ad351d6bbda"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "5e8b8d62-8135-4494-9222-27c57817868c",
+    "c8736990-9d16-4ace-8472-9c453c497793",
+    "e03256b7-2c99-40b4-861f-f03eec2db798",
+    "49f0a971-1890-40f0-a85e-a23ce4952453"
   ]
 }
