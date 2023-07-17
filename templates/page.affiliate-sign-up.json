@@ -521,6 +521,45 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "45618475-3706-439d-a08d-595ecc8d556f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Affiliate Program Terms and Conditions<\/strong><\/p><p>The following terms and conditions (the \"Agreement\") govern your participation in the Trak Racer Partner Program (the \"Program\") offered by Trak Racer. By joining the Program, you acknowledge that you have read, understood, and agreed to comply with these terms and conditions. Trak Racer reserves the right to modify or update these terms and conditions at any time without prior notice. It is your responsibility to review these terms regularly for any changes.<\/p><ol><li><strong>Eligibility:<\/strong><\/li><\/ol><p><strong>a) <\/strong>The Program is open to individuals aged 18 years or older.<br\/><strong>b)<\/strong> Affiliates must have a PayPal account to receive payouts.<br\/><strong>c)<\/strong> Affiliates must agree to the terms and conditions of the Program.<\/p><ol><li>Affiliate Responsibilities:<br\/>2.1 As an affiliate, you will promote Trak Racer products using the provided affiliate link and marketing materials.<br\/>2.2 You must not engage in any deceptive, misleading, or unethical marketing practices.<br\/>2.3 You must not use any variation of the Trak Racer trademark or any Trak Racer URL as your display URL.<br\/>2.4 Affiliates are prohibited from bidding on specific keywords or terms related to Trak Racer products, as outlined in the Paid Search Policy.<br\/>2.5 You may not receive credit for referring yourself or engage in any fraudulent activities.<br\/>2.6 You must comply with all applicable laws and regulations while promoting Trak Racer products.<\/li><li>Commission and Payouts:<br\/>3.1 Affiliates will earn a commission of up to 5% on the referral sale of Trak Racer products.<br\/>3.2 Commissions will only be paid for completed sales that meet the following criteria:<br\/>a) The referred sale must have completed the 60-day payout period.<br\/>b) The total affiliate commission must exceed the minimum payment amount of $150 USD.<br\/>3.3 Payouts will be made monthly, and the payout report will be generated on the 15th of every month.<br\/>3.4 After the payout report is generated, it may take 1 to 2 weeks for funds to be disbursed.<br\/>3.5 Affiliates will be paid through PayPal. It is the affiliate's responsibility to ensure their PayPal information is accurate and up to date.<\/li><li>Prohibited Activities:<br\/>4.1 Affiliates are strictly prohibited from engaging in self-referrals.<br\/>4.2 Affiliates may not use language or ad copy that suggests official representation of Trak Racer.<br\/>4.3 Affiliates may not register or use any domain name URL that includes the word \"Trak Racer\" in any form.<br\/>4.4 Affiliates may not earn commissions during sale or promotional periods until the sale or promotion has ended.<br\/>4.5 Reseller sales are excluded from the Program.<br\/>4.6 Trak Racer reserves the right to change the Program policy without notice at any time.<br\/>4.7 Affiliates found violating or attempting to circumvent these rules will have all affiliate credit voided, will not receive payouts, and may be banned from further participation in the Program.<\/li><li>Intellectual Property:<br\/>5.1 Trak Racer retains all rights, title, and interest in its trademarks, logos, and intellectual property.<br\/>5.2 Affiliates may use Trak Racer marketing materials provided by the Program for promotional purposes only.<br\/>5.3 Affiliates may not modify or alter any Trak Racer marketing materials without prior written consent.<\/li><li>Limitation of Liability:<br\/>6.1 Trak Racer shall not be liable for any indirect, special, incidental, or consequential damages arising out of or related to the Program.<br\/>6.2 Trak Racer's total liability under this Agreement shall not exceed the total commissions paid or payable to the affiliate under the Program.<\/li><li>Termination:<br\/>7.1 Either party may terminate this Agreement at any time and for any reason by providing written notice to the other party.<br\/>7.2 Upon termination, all rights and licenses granted to the affiliate under this Agreement will immediately cease.<br\/>7.3 Termination does not relieve the affiliate from any liability incurred prior to termination.<\/li><li>Governing Law and Jurisdiction:<br\/>8.1 This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which Trak Racer is registered.<br\/>8.2 Any disputes arising from or related to this Agreement shall be subject to the exclusive jurisdiction of the courts in that jurisdiction.<\/li><\/ol><p>By joining the Trak Racer Partner Program, you agree to be bound by these terms and conditions. If you do not agree with any part of this Agreement, you should not participate in the Program.<\/p><p>If you have any questions or need further information, please contact us through the provided channels.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-0",
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-1",
+        "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -532,6 +571,7 @@
     "641116b3-7630-44ad-8411-b6e6b02b6f2b",
     "dd99f0f1-d76e-42f3-9a52-768084082d1a",
     "6964765e-bbd7-4613-8fe6-834d72659108",
-    "b9b7a81c-0c81-4fa6-b247-c5157b350b44"
+    "b9b7a81c-0c81-4fa6-b247-c5157b350b44",
+    "45618475-3706-439d-a08d-595ecc8d556f"
   ]
 }
