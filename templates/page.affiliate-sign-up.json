@@ -299,6 +299,7 @@
     },
     "4dcd86a1-fdd2-4799-b728-7b359d01737a": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-0": {
           "type": "item",
@@ -464,6 +465,7 @@
     },
     "90bea3e8-9b92-420d-8806-90b0b1dc5f15": {
       "type": "accordion-content",
+      "disabled": true,
       "blocks": {
         "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-0": {
           "type": "item",
