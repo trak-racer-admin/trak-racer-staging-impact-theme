@@ -424,22 +424,70 @@
         "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            "title": "What products can I promote?",
+            "content": "<p>You can promote any and all products on the Trak Racer site! We offer a 5% commission on all products from any brand, <strong>except <\/strong>for PCs and Monitors!<\/p>"
           }
         },
         "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Does it cost anything to sign up?",
+            "content": "<p>No! It is completely free to sign up and promote our products.<\/p>"
+          }
+        },
+        "0ba4dac3-50e2-4f7e-8d06-01fe9fb7c171": {
+          "type": "item",
+          "settings": {
+            "title": "Can anyone join your affiliate program?",
+            "content": "<p>Yes, our program is free to join and open to bloggers, sim racers, streamers, YouTubers, online marketers, digital entrepreneurs, and more. You don’t need to be an existing Trak Racer customer to become an affiliate, but we’d love for you to try our product. As an affiliate, you may benefit from special offers and discounts from time to time. Please note that rseller sales are excluded from the program.<\/p>"
+          }
+        },
+        "b8f17d0c-6ecd-45c7-9077-3fee0c403205": {
+          "type": "item",
+          "settings": {
+            "title": "Can I earn a commission on my own purchases?",
+            "content": "<p>Self-referrals for affiliate purchases are strictly prohibited. You will not receive credit when purchasing a product or service through your own affiliate link. You may receive an automatic notification from Trak Racer Subscriptions to let you know that a sale has taken place, but your affiliate payments will not include this amount.<\/p>"
+          }
+        },
+        "a7dece1e-a1c4-4f00-93fa-7403e4364a44": {
+          "type": "item",
+          "settings": {
+            "title": "How do you track my sales?",
+            "content": "<p>After signing up, you’ll get a unique and shareable affiliate link to use immediately. We use cookie tracking and your affiliate link to record clicks, new accounts, sales, and performance data.<\/p>"
+          }
+        },
+        "31ee234e-f43f-4bab-8cfd-405753586958": {
+          "type": "item",
+          "settings": {
+            "title": "How much can I earn?",
+            "content": "<p>There are no limits on how much you can make. The more referrals that convert through your affiliate link, the more you’ll earn.<\/p>"
+          }
+        },
+        "4d04108c-05f0-41d0-b777-ece03febcf8e": {
+          "type": "item",
+          "settings": {
+            "title": "When will I be paid?",
+            "content": "<p>For the recurring program, we pay commissions around the start of each month for verified sales from the previous month.<\/p>"
+          }
+        },
+        "b09f65eb-c7cf-474e-990d-072c45b83513": {
+          "type": "item",
+          "settings": {
+            "title": "Should I disclose use of affiliate links in my content?",
+            "content": "<p>Yes, and we recommend you do. Please visit the United States Federal Trade Commission’s website for guidelines concerning affiliate and influencer marketing disclosures and best practices.<\/p>"
           }
         }
       },
       "block_order": [
         "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-0",
         "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-1",
-        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-2"
+        "template--19929120407840__7bd6ef2d-7e2b-4771-8794-1994ec4e6c7f-1689550433ee0c9dac-2",
+        "0ba4dac3-50e2-4f7e-8d06-01fe9fb7c171",
+        "b8f17d0c-6ecd-45c7-9077-3fee0c403205",
+        "a7dece1e-a1c4-4f00-93fa-7403e4364a44",
+        "31ee234e-f43f-4bab-8cfd-405753586958",
+        "4d04108c-05f0-41d0-b777-ece03febcf8e",
+        "b09f65eb-c7cf-474e-990d-072c45b83513"
       ],
       "settings": {
         "full_width": true,
