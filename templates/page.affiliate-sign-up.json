@@ -212,6 +212,7 @@
     },
     "1a20d8f8-f0cf-43d1-8f65-5904e3a0220b": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "",
         "products": [
@@ -246,7 +247,7 @@
             "image": "shopify:\/\/shop_images\/TRX_ALPINE_GT.2_720x_79fdac13-bb60-4159-8658-8f1f1475b30e.webp",
             "column_size": "4",
             "title": "",
-            "heading_tag": "h4",
+            "heading_tag": "h6",
             "content": "<p><strong>RRP*:<\/strong> $999 USD<strong><br\/>Earn: <\/strong>$49.95<\/p>",
             "link_url": "",
             "link_text": "",
