@@ -247,7 +247,7 @@
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p><strong>RRP:<\/strong> $999<strong><br\/>Earn: <\/strong>$49.95<\/p>",
+            "content": "<p><strong>RRP*:<\/strong> $999<strong><br\/>Earn: <\/strong>$49.95<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -303,7 +303,7 @@
         "text_alignment": "center",
         "subheading": "",
         "title": "Earn 5% on nearly everything!",
-        "content": "<p>Earn a 5% commission on almost any product, excluding PCs & monitors. With a 5% commission on brands like Simucube or more, you could earn $100s on a single sale!<\/p>",
+        "content": "<p>Earn a 5% commission on almost any product, excluding PCs & monitors. With a 5% commission on brands like Simucube or more, you could earn $100s on a single sale!<\/p><p>*RRP prices and subsequently earnings are subject to change without notice.<\/p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
