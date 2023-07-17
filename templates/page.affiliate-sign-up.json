@@ -47,13 +47,14 @@
         "full_width": true,
         "allow_transparent_header": true,
         "enable_parallax": true,
-        "image_size": "lg",
-        "image": "shopify:\/\/shop_images\/C0307.00_02_11_10.Still010.jpg",
+        "image_size": "sm",
+        "image": "shopify:\/\/shop_images\/no_overlay.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 57
       }
     },
     "abf33c11-fe59-4932-9e2a-67e4df918d4d": {
