@@ -247,7 +247,7 @@
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p><strong>RRP*:<\/strong> $999<strong><br\/>Earn: <\/strong>$49.95<\/p>",
+            "content": "<p><strong>RRP*:<\/strong> $999 USD<strong><br\/>Earn: <\/strong>$49.95<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -256,10 +256,11 @@
         "template--19929120407840__d5885038-2018-49bf-8835-cbf8728795c4-16896349343a70eb16-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DBOX-4250i.8_720x_2b4369df-2b28-4ebb-b053-12865ca5de2e.webp",
             "column_size": "4",
-            "title": "Column title",
+            "title": "",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p><strong>RRP*:<\/strong> $7,949 USD<strong><br\/>Earn: <\/strong>$397.45<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -268,10 +269,11 @@
         "template--19929120407840__d5885038-2018-49bf-8835-cbf8728795c4-16896349343a70eb16-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Ultimate_transparent_2_720x_f696dd4c-b63e-4559-953b-5bc38bb56b4f.webp",
             "column_size": "4",
-            "title": "Column title",
+            "title": "",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p><strong>RRP*:<\/strong> $2,949 USD<strong><br\/>Earn: <\/strong>$147.45<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -280,10 +282,11 @@
         "c994aacd-55f3-42b6-8fa2-22a64a891c0e": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/TRX_SEAT.6_900x_fc22346e-ccfb-4251-a54d-1edab4c2acf4.webp",
             "column_size": "4",
-            "title": "Column title",
+            "title": "",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p><strong>RRP*:<\/strong> $599 USD<strong><br\/>Earn: <\/strong>$29.95<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
