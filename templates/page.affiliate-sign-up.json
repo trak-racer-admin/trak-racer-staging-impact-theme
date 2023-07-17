@@ -140,12 +140,12 @@
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "line",
-        "impact_text_size_ratio": 1,
-        "background": "#ffffff",
+        "impact_text_size_ratio": 1.5,
+        "background": "#8fb2d4",
         "background_gradient": "",
         "heading_text_color": "rgba(0,0,0,0)",
-        "heading_gradient": "linear-gradient(180deg, rgba(252, 195, 195, 1), rgba(220, 0, 0, 1) 100%)",
-        "text_color": "",
+        "heading_gradient": "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 49, 255, 1) 100%)",
+        "text_color": "#ffffff",
         "button_background": "",
         "button_text_color": ""
       }
@@ -156,7 +156,7 @@
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step-1.svg.imgo.svg",
+            "image": "shopify:\/\/shop_images\/test.png",
             "column_size": "3",
             "title": "Step 1",
             "heading_tag": "h4",
@@ -182,7 +182,7 @@
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step-3.svg.imgo.svg",
+            "image": "shopify:\/\/shop_images\/earn.png",
             "column_size": "3",
             "title": "Step 3",
             "heading_tag": "h4",
