@@ -64,9 +64,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/signup_1.webp",
             "column_size": "3",
-            "title": "Step 1: Sign Up",
-            "heading_tag": "h4",
-            "content": "<p>Signup for the affiliate program. Its free to get started and no risk.<\/p>",
+            "title": "Step 1: Sign Up for Free",
+            "heading_tag": "h5",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -77,11 +77,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/share_1.webp",
             "column_size": "3",
-            "title": "Step 2: Share link",
-            "heading_tag": "h4",
-            "content": "<p>Get your affiliate links and start sharing with your target audience.<\/p>",
+            "title": "Step 2: Share your link",
+            "heading_tag": "h5",
+            "content": "",
             "link_url": "",
-            "link_text": "Start Earning Now",
+            "link_text": "",
             "link_style": "button"
           }
         },
@@ -90,19 +90,46 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/earning.webp",
             "column_size": "3",
-            "title": "Step 3: Start Earning",
-            "heading_tag": "h4",
-            "content": "<p>Earn right from the moment your traffic converts.<\/p>",
+            "title": "Step 3: Earn when your link is used",
+            "heading_tag": "h5",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
+          }
+        },
+        "2a18e69d-1f62-4c94-a9bf-f92d2f8d3f16": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
+          }
+        },
+        "44ceb007-b1e1-4bda-b6cd-3cf4b50ed758": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Start Earning Now",
+            "link_style": "button"
+          }
+        },
+        "ad60f0d8-c0f8-4cb0-be01-393f49bc680b": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
           }
         }
       },
       "block_order": [
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0",
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1",
-        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2"
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2",
+        "2a18e69d-1f62-4c94-a9bf-f92d2f8d3f16",
+        "44ceb007-b1e1-4bda-b6cd-3cf4b50ed758",
+        "ad60f0d8-c0f8-4cb0-be01-393f49bc680b"
       ],
       "settings": {
         "full_width": false,
@@ -117,97 +144,9 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "e03256b7-2c99-40b4-861f-f03eec2db798": {
-      "type": "text-with-icons",
-      "disabled": true,
-      "blocks": {
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-0": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-send",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "#992328",
-            "title": "Share with your inner circle",
-            "content": "<p>Tell friends and family how Trak Racer produce the most innovative and best quality hardware that helped improve your performance on the Trak or in the Sky.<\/p>"
-          }
-        },
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-document",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "#992328",
-            "title": "Write a blog post",
-            "content": "<p>Do you write about sim racing, flight sim, technology or motorsports? Describe your experience with Trak Racer on your blog. Product comparison articles work wonders for other affiliates!<\/p>"
-          }
-        },
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-at-sign",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "#992328",
-            "title": "Spread the word on social",
-            "content": "<p>Share your favorite products and let your followers know about your love for Trak Racer and don’t forget to use your tracking URL!<\/p>"
-          }
-        },
-        "190a3494-71a2-450f-a557-528c886dd5d9": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-question",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "rgba(0,0,0,0)",
-            "icon_color": "#992328",
-            "title": "Publish Educational Content",
-            "content": "<p>Get creative. Give people a tour of your Trak Racer setup and provide guidance on what they need to get started in Sim Racing or Flight Sim.<\/p>"
-          }
-        },
-        "240b5b59-713c-4993-9f0c-95f5d9de9305": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Heading",
-            "content": "<p>Short content about your store<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-0",
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-1",
-        "template--19929120407840__e03256b7-2c99-40b4-861f-f03eec2db798-1689552503ab27a776-2",
-        "190a3494-71a2-450f-a557-528c886dd5d9",
-        "240b5b59-713c-4993-9f0c-95f5d9de9305"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "Maximise your Earnings",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "#191919",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "49f0a971-1890-40f0-a85e-a23ce4952453": {
       "type": "media-with-text",
+      "disabled": true,
       "blocks": {
         "template--19929120407840__49f0a971-1890-40f0-a85e-a23ce4952453-1689553949f0d99fcf-0": {
           "type": "image",
@@ -353,13 +292,246 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "1185251a-185e-4c2d-8f81-f5bc0f9a5291": {
+      "type": "rich-text",
+      "blocks": {
+        "72a1948e-ebe5-49f5-abc3-4bc333c876c0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/C0307.00_02_11_10.Still010.jpg",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "ca88e76e-db76-481a-8fee-8a7e03aa842c": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--19929120407840__1185251a-185e-4c2d-8f81-f5bc0f9a5291-16895573685cabeb39-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Scale Your Earnings",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19929120407840__1185251a-185e-4c2d-8f81-f5bc0f9a5291-16895573685cabeb39-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>Share With Your Inner Circle<\/h6><p>Tell friends and family how Trak Racer produce the most innovative and best quality hardware that helped improve your performance on the Trak or in the Sky.<\/p><h6>Write a Blog Post<\/h6><p>Do you write about sim racing, flight sim, technology or motorsports? Describe your experience with Trak Racer on your blog. Product comparison articles work wonders for other affiliates!<\/p><h6>Spread the Word on Social<\/h6><p>Share your favorite products and let your followers know about your love for Trak Racer and don’t forget to use your tracking URL!<\/p><h6>Publish Educational Content<\/h6><p>Get creative. Give people a tour of your Trak Racer setup and provide guidance on what they need to get started in Sim Racing or Flight Sim.<\/p><h6>Run Digital Campaigns<\/h6><p>Promote Trak Racer on your website through banner ads and other content using your affiliate link.<\/p><h6>Get Your Clients Onboard<\/h6><p>Are you a simulation coach or professional cockpit builder? Recommend Trak Racer to your clients to earn more on top of your services.<\/p>"
+          }
+        },
+        "d48ce5a6-23e6-4252-82fc-7f776c0e9837": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Earn Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "72a1948e-ebe5-49f5-abc3-4bc333c876c0",
+        "ca88e76e-db76-481a-8fee-8a7e03aa842c",
+        "template--19929120407840__1185251a-185e-4c2d-8f81-f5bc0f9a5291-16895573685cabeb39-1",
+        "template--19929120407840__1185251a-185e-4c2d-8f81-f5bc0f9a5291-16895573685cabeb39-2",
+        "d48ce5a6-23e6-4252-82fc-7f776c0e9837"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "641116b3-7630-44ad-8411-b6e6b02b6f2b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19929120407840__641116b3-7630-44ad-8411-b6e6b02b6f2b-16895573685cabeb39-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Why become a Trak Racer affliate?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__641116b3-7630-44ad-8411-b6e6b02b6f2b-16895573685cabeb39-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "dd99f0f1-d76e-42f3-9a52-768084082d1a": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "template--19929120407840__dd99f0f1-d76e-42f3-9a52-768084082d1a-16895579409fbe3501-0": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "5% Recurring Commission - Forever",
+            "content": "<p>For every recurring sale during the first 60 days, you will receive a 5% commission. This means that by sharing your affiliate link just one time, you have the potential to earn as long as they buy from us.<\/p>"
+          }
+        },
+        "template--19929120407840__dd99f0f1-d76e-42f3-9a52-768084082d1a-16895579409fbe3501-1": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Easy Payout System",
+            "content": "<p>You don’t have to worry about receiving your earned commissions. Trak Race will credit the commissions to your PayPal account once a month.<\/p>"
+          }
+        },
+        "efd14476-1d78-4af1-9395-1652f50aa137": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Easy to Understand Dashboard",
+            "content": "<p>The affiliate dashboard allows you to easily track all of your affiliate earnings and payments. Additionally, it provides you with access to all your affiliate links in one convenient location.<\/p>"
+          }
+        },
+        "3ebf5139-fa39-40bd-98f7-6f3edcfc8c32": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__dd99f0f1-d76e-42f3-9a52-768084082d1a-16895579409fbe3501-0",
+        "template--19929120407840__dd99f0f1-d76e-42f3-9a52-768084082d1a-16895579409fbe3501-1",
+        "efd14476-1d78-4af1-9395-1652f50aa137",
+        "3ebf5139-fa39-40bd-98f7-6f3edcfc8c32"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "fade",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "6964765e-bbd7-4613-8fe6-834d72659108": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "b9b7a81c-0c81-4fa6-b247-c5157b350b44": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-0",
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-1",
+        "template--19929120407840__b9b7a81c-0c81-4fa6-b247-c5157b350b44-1689551021674d5acc-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "5e8b8d62-8135-4494-9222-27c57817868c",
     "c8736990-9d16-4ace-8472-9c453c497793",
-    "e03256b7-2c99-40b4-861f-f03eec2db798",
-    "49f0a971-1890-40f0-a85e-a23ce4952453"
+    "49f0a971-1890-40f0-a85e-a23ce4952453",
+    "1185251a-185e-4c2d-8f81-f5bc0f9a5291",
+    "641116b3-7630-44ad-8411-b6e6b02b6f2b",
+    "dd99f0f1-d76e-42f3-9a52-768084082d1a",
+    "6964765e-bbd7-4613-8fe6-834d72659108",
+    "b9b7a81c-0c81-4fa6-b247-c5157b350b44"
   ]
 }
