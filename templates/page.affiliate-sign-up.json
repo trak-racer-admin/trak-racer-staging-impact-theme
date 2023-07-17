@@ -155,11 +155,11 @@
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/signup_1.webp",
+            "image": "shopify:\/\/shop_images\/step-1.svg.imgo.svg",
             "column_size": "3",
-            "title": "Step 1: Sign Up for Free",
+            "title": "Step 1",
             "heading_tag": "h5",
-            "content": "",
+            "content": "<h6>Sign Up for Free<\/h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -168,61 +168,34 @@
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/share_1.webp",
+            "image": "shopify:\/\/shop_images\/step-2.svg.imgo.svg",
             "column_size": "3",
-            "title": "Step 2: Share your link",
+            "title": "Step 2",
             "heading_tag": "h5",
-            "content": "",
+            "content": "<h6> Share your link<\/h6>",
             "link_url": "",
-            "link_text": "",
+            "link_text": "Start Earning Now",
             "link_style": "button"
           }
         },
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/earning.webp",
+            "image": "shopify:\/\/shop_images\/step-3.svg.imgo.svg",
             "column_size": "3",
-            "title": "Step 3: Earn when your link is used",
+            "title": "Step 3",
             "heading_tag": "h5",
-            "content": "",
+            "content": "<h6>Earn when your link is used<\/h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
-          }
-        },
-        "2a18e69d-1f62-4c94-a9bf-f92d2f8d3f16": {
-          "type": "spacer",
-          "settings": {
-            "column_size": "3"
-          }
-        },
-        "44ceb007-b1e1-4bda-b6cd-3cf4b50ed758": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "Start Earning Now",
-            "link_style": "button"
-          }
-        },
-        "ad60f0d8-c0f8-4cb0-be01-393f49bc680b": {
-          "type": "spacer",
-          "settings": {
-            "column_size": "3"
           }
         }
       },
       "block_order": [
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-0",
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1",
-        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2",
-        "2a18e69d-1f62-4c94-a9bf-f92d2f8d3f16",
-        "44ceb007-b1e1-4bda-b6cd-3cf4b50ed758",
-        "ad60f0d8-c0f8-4cb0-be01-393f49bc680b"
+        "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-2"
       ],
       "settings": {
         "full_width": true,
@@ -232,7 +205,7 @@
         "subheading": "",
         "title": "How it works",
         "content": "",
-        "background": "#ffffff",
+        "background": "#ededed",
         "background_gradient": "",
         "text_color": "rgba(0,0,0,0)"
       }
