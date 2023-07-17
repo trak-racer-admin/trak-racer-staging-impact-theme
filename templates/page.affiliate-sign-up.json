@@ -210,6 +210,33 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "1a20d8f8-f0cf-43d1-8f65-5904e3a0220b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": false,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Earn 5% on nearly everything!",
+        "content": "<p>Earn a 5% commission on almost any product, excluding PCs & monitors. With a 5% commission on  brands like Simucube or more, you could earn $100s on a single sale!<\/p>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291": {
       "type": "rich-text",
       "blocks": {
@@ -491,6 +518,7 @@
     "abf33c11-fe59-4932-9e2a-67e4df918d4d",
     "1f0992a8-a269-4b61-ab72-9934b5a08e25",
     "c8736990-9d16-4ace-8472-9c453c497793",
+    "1a20d8f8-f0cf-43d1-8f65-5904e3a0220b",
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291",
     "4dcd86a1-fdd2-4799-b728-7b359d01737a",
     "6964765e-bbd7-4613-8fe6-834d72659108",
