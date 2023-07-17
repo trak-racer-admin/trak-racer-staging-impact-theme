@@ -33,7 +33,7 @@
             "size": "lg",
             "text": "Start Earning Now",
             "url": "",
-            "background": "",
+            "background": "#992328",
             "text_color": ""
           }
         }
@@ -259,6 +259,71 @@
             "image": "shopify:\/\/shop_images\/social-media-on-cell-phone.jpg",
             "media_width": 50,
             "media_position": "start",
+            "text_position": "place-self-start-end text-end",
+            "icon": "picto-at-sign",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Spread the word on social",
+            "content": "<p>Share your favorite products and let your followers know about your love for Trak Racer and don’t forget to use your tracking URL!<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "b5489f78-e9c6-49d5-92a7-8e1512caed41": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-instructing-on-laptop.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "picto-document",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Publish Educational Content",
+            "content": "<p>Get creative. Give people a tour of your Trak Racer setup and provide guidance on what they need to get started in Sim Racing or Flight Sim.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "1f86532d-675b-42df-9ee5-d6f5a3854057": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/checkout-button.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Promote Trak Racer on your website through banner ads and other content using your affiliate link.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "560276f0-161e-499d-9676-597383263045": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
@@ -279,7 +344,10 @@
       "block_order": [
         "template--19929120407840__49f0a971-1890-40f0-a85e-a23ce4952453-1689553949f0d99fcf-0",
         "a2b3a906-28d1-4464-adc1-f75f7e1c5ea2",
-        "9957417f-d437-4a48-8264-4ad351d6bbda"
+        "9957417f-d437-4a48-8264-4ad351d6bbda",
+        "b5489f78-e9c6-49d5-92a7-8e1512caed41",
+        "1f86532d-675b-42df-9ee5-d6f5a3854057",
+        "560276f0-161e-499d-9676-597383263045"
       ],
       "settings": {
         "full_width": false,
