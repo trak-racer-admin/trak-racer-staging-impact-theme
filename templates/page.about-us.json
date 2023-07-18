@@ -130,12 +130,52 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "1a9107c8-3fa1-47c1-a168-58d7817e23e8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Vision",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At <strong>Trak Racer<\/strong>, we’re not interested in building the cheapest, lightest and simplest gaming platforms. We focus on bringing the best value, high-end gaming experience that won’t look like a homemade DIY product. Our products live up to the highest competitive standards our users demand.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-0",
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1",
+        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "18cd8f98-a7a2-474e-8da7-3f838234015c",
     "80af0649-6045-44c4-9aa2-1c35177cf708",
-    "76d10fe2-9e1c-4a61-81af-44c29548f045"
+    "76d10fe2-9e1c-4a61-81af-44c29548f045",
+    "1a9107c8-3fa1-47c1-a168-58d7817e23e8"
   ]
 }
