@@ -48,6 +48,7 @@
     },
     "80af0649-6045-44c4-9aa2-1c35177cf708": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--19949577765152__80af0649-6045-44c4-9aa2-1c35177cf708-1689646420f3b9c448-1": {
           "type": "heading",
@@ -95,6 +96,7 @@
     },
     "76d10fe2-9e1c-4a61-81af-44c29548f045": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "af3ee2ad-6b1f-4c3e-bc97-ecd95578b4e0": {
           "type": "divider",
@@ -131,15 +133,73 @@
         "text_color": ""
       }
     },
+    "92382605-ba9f-49ab-942b-e3f20c55c121": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Story",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Since 2008 Trak Racer has been designing and pioneering the best value, <strong>high-end gaming<\/strong> platforms and accessories. Trak Racer products are made from the highest quality materials that offer unsurpassed durability. To back this, <strong>Trak Racer<\/strong> offers warranties that give customers peace of mind over the long term.<\/p><p>From extensive research in both real-world motor-sports racing and game simulation, <strong>Trak Racer<\/strong> understands the importance of design, cutting-edge engineering and knowing what it takes to give you an edge over your competition.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-1",
+        "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5fb41665-db22-4518-8ea6-6634754a72e2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Design",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The <strong>Track Racer<\/strong> design aesthetic brings not only high levels of functionality but also quickly becomes a showpiece in any room, office or showroom. The design process that underpins each <strong>Trak Racer<\/strong> product ensures ergonomics that provide unsurpassed comfort for the longest competitive racing events.<\/p><p><strong>Trak Racer<\/strong> products are highly compatible with all console and PC based platforms and support a vast array of game peripherals. This ensures that you won’t be locked into a platform and provides high levels of future-proofing.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-1",
+        "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "1a9107c8-3fa1-47c1-a168-58d7817e23e8": {
       "type": "rich-text",
       "blocks": {
-        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1": {
           "type": "heading",
           "settings": {
@@ -157,7 +217,6 @@
         }
       },
       "block_order": [
-        "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-0",
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1",
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-2"
       ],
@@ -176,6 +235,8 @@
     "18cd8f98-a7a2-474e-8da7-3f838234015c",
     "80af0649-6045-44c4-9aa2-1c35177cf708",
     "76d10fe2-9e1c-4a61-81af-44c29548f045",
+    "92382605-ba9f-49ab-942b-e3f20c55c121",
+    "5fb41665-db22-4518-8ea6-6634754a72e2",
     "1a9107c8-3fa1-47c1-a168-58d7817e23e8"
   ]
 }
