@@ -33,10 +33,16 @@
             "gradient": "linear-gradient(340deg, rgba(255, 255, 255, 1), rgba(255, 183, 0, 0.55) 100%)"
           }
         },
+        "b5eabf72-f227-43b2-b085-0ec72afdb34f": {
+          "type": "subheading",
+          "settings": {
+            "text": "Q&A"
+          }
+        },
         "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "content": "<p><strong>What do you think of your Trak Racer simulator?<\/strong><\/p><p>I love my Trak Racer rig, I still remember the buzz I got when I sat 2 years ago in my first Trak Racer rig, the RS6, it was magical like having my own racing sports car in my flat... I still get the same buzz when seating in my TR80, it really make the immersion 100% better plus the rig looks extremely so good!<\/p><p><strong>How do you use the simulator in your training for real life racing and\/or day-to-day sim racing?<\/strong><\/p><p>I occasionally go to Go Karting and racing in my rig on different simulators has really helped with real life skills, it a very similar experience except I don't get the same bruises in my rig, haha! Seriously though, being in the rig is a real workout, I practice up to 1 hour every evening when I am not in the actual races, race stints can last anything between 30 to 60mins and the let's just say they get your heart racing and your weat glands fully activated! My last race was just over the weekend it was the 4.5 hours LFM endurance race at Spa, we started P41 and arrived P3, that was a serious challenge both physically and mentally!<\/p><p><strong>What are your top 3 games and tracks to race on?<\/strong><\/p><p>Assetto Corsa Competizione (I spend all of my time on the aforementioned!), Assetto Corsa and Dirt Rally 2.0.<\/p>"
           }
         }
       },
@@ -44,6 +50,7 @@
         "3ead4ad6-acee-4008-a512-1647b71e4ba3",
         "7c887a6d-275e-4e49-a40d-2a801709ebb5",
         "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-1",
+        "b5eabf72-f227-43b2-b085-0ec72afdb34f",
         "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-2"
       ],
       "settings": {
@@ -52,6 +59,31 @@
         "text_position": "start",
         "background": "",
         "background_gradient": "linear-gradient(180deg, rgba(121, 21, 252, 0.49) 2%, rgba(231, 195, 249, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "c3b2d230-8173-40d6-a038-15e4b9118aac": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19948262129952__c3b2d230-8173-40d6-a038-15e4b9118aac-16896456530567e77f-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop the Setup",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__c3b2d230-8173-40d6-a038-15e4b9118aac-16896456530567e77f-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
         "text_color": ""
       }
     },
@@ -143,7 +175,7 @@
         "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-10"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "product": "",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
@@ -153,17 +185,46 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "350b2fbd-e4b9-488c-9a43-a1e4aae1612b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 5,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Complete the setup",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     }
   },
   "order": [
     "main",
     "b868cc83-340c-4347-9e5f-f93a40077060",
-    "76ba76bf-d526-45a9-af1a-c0725615d83e"
+    "c3b2d230-8173-40d6-a038-15e4b9118aac",
+    "76ba76bf-d526-45a9-af1a-c0725615d83e",
+    "350b2fbd-e4b9-488c-9a43-a1e4aae1612b"
   ]
 }
