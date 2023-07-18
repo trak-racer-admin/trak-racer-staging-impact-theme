@@ -316,6 +316,7 @@
     },
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "72a1948e-ebe5-49f5-abc3-4bc333c876c0": {
           "type": "image",
@@ -429,7 +430,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "start",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
