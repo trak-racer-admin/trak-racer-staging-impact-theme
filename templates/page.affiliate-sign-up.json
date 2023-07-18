@@ -136,7 +136,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_mobile": false,
+        "stack_mobile": true,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "line",
