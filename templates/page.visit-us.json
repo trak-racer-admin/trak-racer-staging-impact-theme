@@ -2,11 +2,112 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "89b2b9f6-e36b-4417-8e92-880e19bdc963": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19951874703648__89b2b9f6-e36b-4417-8e92-880e19bdc963-1689657426cfbdcd1f-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Visit our Melbourne Showroom",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19951874703648__89b2b9f6-e36b-4417-8e92-880e19bdc963-1689657426cfbdcd1f-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "33bb5eb6-869f-418e-b986-7d04ce88fa50": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR_MEL.jpg",
+            "column_size": "1.5",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Trak Racer Melbourne",
+            "heading_tag": "h4",
+            "content": "<p>278 Canterbury Road<br\/>Surrey Hills<br\/>VIC 3127<br\/>Australia<br\/><strong>Phone:<\/strong> (03) 9811 7097<\/p>",
+            "link_url": "",
+            "link_text": "Visit Us",
+            "link_style": "link"
+          }
+        },
+        "0f1c6a1a-6ad6-4b08-8de1-ec25b34e010e": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-0",
+        "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-1",
+        "0f1c6a1a-6ad6-4b08-8de1-ec25b34e010e"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "0521a221-9c7e-4b3d-bf5a-e18c57c16a95": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<p style=\"text-align: center\">Write or copy\/paste HTML code<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "89b2b9f6-e36b-4417-8e92-880e19bdc963",
+    "33bb5eb6-869f-418e-b986-7d04ce88fa50",
+    "0521a221-9c7e-4b3d-bf5a-e18c57c16a95"
   ]
 }
