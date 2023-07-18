@@ -141,7 +141,7 @@
         "impact_text_style": "fill",
         "text_divider": "line",
         "impact_text_size_ratio": 1.5,
-        "background": "#8fb2d4",
+        "background": "#a8cef2",
         "background_gradient": "",
         "heading_text_color": "rgba(0,0,0,0)",
         "heading_gradient": "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 49, 255, 1) 100%)",
@@ -370,6 +370,66 @@
         "content_width": "large",
         "text_position": "start",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "0eafae26-2d5a-4952-a0c2-ef7e8c7c666a": {
+      "type": "rich-text",
+      "blocks": {
+        "b5cbb553-4ec2-4037-8f5d-11cc28db8f71": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/squish.jpg",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "d8cd7c90-3b18-4d7b-adb4-0e18a703be65": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--19929120407840__0eafae26-2d5a-4952-a0c2-ef7e8c7c666a-168963821754be554b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Scale Your Earnings",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19929120407840__0eafae26-2d5a-4952-a0c2-ef7e8c7c666a-168963821754be554b-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>There's so many different ways to earn! Utilise your existing channels to reach more clients and the endless potential!<\/p><h6>✔️ Share With Your Inner Circle<\/h6><h6>✔️ Write a Blog Post<\/h6><h6>✔️ Spread the Word on Social<\/h6><h6>✔️ Publish Educational Content<\/h6><h6>🔻Run Digital Campaigns<\/h6><h6>🔻 Get Your Clients Onboard<\/h6>"
+          }
+        },
+        "c0285ff9-23b8-4955-a78d-430e797d880c": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Earn Now",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "b5cbb553-4ec2-4037-8f5d-11cc28db8f71",
+        "d8cd7c90-3b18-4d7b-adb4-0e18a703be65",
+        "template--19929120407840__0eafae26-2d5a-4952-a0c2-ef7e8c7c666a-168963821754be554b-1",
+        "template--19929120407840__0eafae26-2d5a-4952-a0c2-ef7e8c7c666a-168963821754be554b-2",
+        "c0285ff9-23b8-4955-a78d-430e797d880c"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -648,6 +708,7 @@
     "1a20d8f8-f0cf-43d1-8f65-5904e3a0220b",
     "d5885038-2018-49bf-8835-cbf8728795c4",
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291",
+    "0eafae26-2d5a-4952-a0c2-ef7e8c7c666a",
     "4dcd86a1-fdd2-4799-b728-7b359d01737a",
     "6964765e-bbd7-4613-8fe6-834d72659108",
     "45618475-3706-439d-a08d-595ecc8d556f",
