@@ -109,22 +109,13 @@
             "menu": "service",
             "show_menu_title": true
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "title": "About",
-            "content": "<p>Since 2008 Trak Racer has been designing and pioneering the best value, <strong>high-end gaming<\/strong> platforms and accessories. Trak Racer products are made from the highest quality materials that offer unsurpassed durability. To back this, <strong>Trak Racer<\/strong> offers warranties that give customers peace of mind over the long term.<\/p>",
-            "enable_follow_on_shop": true
-          }
         }
       },
       "block_order": [
         "newsletter",
         "links",
         "1b353c78-1819-4f33-82ce-ef2f94b95921",
-        "b04f5f50-51db-467b-9546-223920775c32",
-        "text"
+        "b04f5f50-51db-467b-9546-223920775c32"
       ],
       "settings": {
         "show_social_media": true,
