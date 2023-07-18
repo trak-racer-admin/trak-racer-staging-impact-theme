@@ -84,12 +84,19 @@
           "type": "newsletter",
           "settings": {
             "image_width": 150,
-            "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "heading_size": "h5",
+            "title": "Sign Up and Save",
+            "content": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
           }
         },
         "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        },
+        "1b353c78-1819-4f33-82ce-ef2f94b95921": {
           "type": "links",
           "settings": {
             "menu": "footer",
@@ -108,6 +115,7 @@
       "block_order": [
         "newsletter",
         "links",
+        "1b353c78-1819-4f33-82ce-ef2f94b95921",
         "text"
       ],
       "settings": {
