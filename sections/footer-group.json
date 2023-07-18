@@ -99,14 +99,14 @@
         "1b353c78-1819-4f33-82ce-ef2f94b95921": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "support",
             "show_menu_title": true
           }
         },
         "b04f5f50-51db-467b-9546-223920775c32": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "service",
             "show_menu_title": true
           }
         },
