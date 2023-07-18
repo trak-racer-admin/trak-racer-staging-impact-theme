@@ -2,11 +2,168 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "b868cc83-340c-4347-9e5f-f93a40077060": {
+      "type": "rich-text",
+      "blocks": {
+        "3ead4ad6-acee-4008-a512-1647b71e4ba3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "7c887a6d-275e-4e49-a40d-2a801709ebb5": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Aléthéa Boucq",
+            "heading_tag": "h1",
+            "text_color": "#ffffff",
+            "gradient": "linear-gradient(340deg, rgba(255, 255, 255, 1), rgba(255, 183, 0, 0.55) 100%)"
+          }
+        },
+        "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3ead4ad6-acee-4008-a512-1647b71e4ba3",
+        "7c887a6d-275e-4e49-a40d-2a801709ebb5",
+        "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-1",
+        "template--19948262129952__b868cc83-340c-4347-9e5f-f93a40077060-168963821754be554b-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(121, 21, 252, 0.49) 2%, rgba(231, 195, 249, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "76ba76bf-d526-45a9-af1a-c0725615d83e": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-0": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-2": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-3": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-4": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-5": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-6": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-7": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-10": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-0",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-1",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-2",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-3",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-4",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-5",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-6",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-7",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-8",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-9",
+        "template--19948262129952__76ba76bf-d526-45a9-af1a-c0725615d83e-1689639844855c77fe-10"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b868cc83-340c-4347-9e5f-f93a40077060",
+    "76ba76bf-d526-45a9-af1a-c0725615d83e"
   ]
 }
