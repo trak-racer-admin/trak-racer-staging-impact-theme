@@ -114,7 +114,7 @@
           "type": "text",
           "settings": {
             "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
+            "content": "<p>Since 2008 Trak Racer has been designing and pioneering the best value, <strong>high-end gaming<\/strong> platforms and accessories. Trak Racer products are made from the highest quality materials that offer unsurpassed durability. To back this, <strong>Trak Racer<\/strong> offers warranties that give customers peace of mind over the long term.<\/p>",
             "enable_follow_on_shop": true
           }
         }
