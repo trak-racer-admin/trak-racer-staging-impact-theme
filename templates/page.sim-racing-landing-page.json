@@ -2,11 +2,124 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "6b6bb7f2-a642-497b-89c6-3076568dc8d0": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19966762156320__6b6bb7f2-a642-497b-89c6-3076568dc8d0-16897277420b4fe2d8-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Sim Racing Cockpits",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19966762156320__6b6bb7f2-a642-497b-89c6-3076568dc8d0-16897277420b4fe2d8-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "6034c4fe-5a06-4e50-a371-99492b55c4ef": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "Accessorise Your Rig",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "bcbec0dc-1b6c-4ff3-8aec-3c1c7fb1ceaa": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-0",
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-1",
+        "template--19966762156320__6034c4fe-5a06-4e50-a371-99492b55c4ef-168972781327369c94-2",
+        "bcbec0dc-1b6c-4ff3-8aec-3c1c7fb1ceaa"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Collection list",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6b6bb7f2-a642-497b-89c6-3076568dc8d0",
+    "6034c4fe-5a06-4e50-a371-99492b55c4ef"
   ]
 }
