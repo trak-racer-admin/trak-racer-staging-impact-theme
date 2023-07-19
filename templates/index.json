@@ -67,7 +67,7 @@
           "type": "collection",
           "settings": {
             "collection": "racing-simulators",
-            "image": "shopify:\/\/shop_images\/race.jpg",
+            "image": "shopify:\/\/shop_images\/collection_card.jpg",
             "subheading": "",
             "title": "Racing Simulators",
             "url": "",
@@ -144,18 +144,18 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_collections": true,
+        "stack_collections": false,
         "collections_per_row": 5,
-        "show_progress_bar": false,
+        "show_progress_bar": true,
         "subheading": "",
         "title": "Collection list",
         "content": "",
         "link_url": "",
         "link_text": "View all",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "heading_color": "",
+        "heading_color": "rgba(0,0,0,0)",
         "heading_gradient": ""
       }
     },
