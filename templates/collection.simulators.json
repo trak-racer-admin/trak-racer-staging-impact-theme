@@ -65,33 +65,6 @@
         "product_card_text_color": "#000000"
       }
     },
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_count": 3,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Upgradable Racing Simulators",
-        "content": "<p>Our upgradable racing simulators give you the best of both worlds - a solid base, with the parts you need, that are ready to upgrade as you grow throughout your sim racing journey!<\/p>",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "linear-gradient(0deg, rgba(110, 110, 110, 1) 14%, rgba(234, 234, 234, 1) 85%)",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c": {
       "type": "featured-collection",
       "settings": {
@@ -112,6 +85,33 @@
         "link_text": "",
         "background": "",
         "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Upgradable Racing Simulators",
+        "content": "<p>Our upgradable racing simulators give you the best of both worlds - a solid base, with the parts you need, that are ready to upgrade as you grow throughout your sim racing journey!<\/p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "linear-gradient(0deg, rgba(110, 110, 110, 1) 14%, rgba(234, 234, 234, 1) 85%)",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
@@ -265,8 +265,8 @@
     "banner",
     "main",
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
+    "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
     "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166",
     "a448e486-d30f-493a-93df-a34cc9bbae00"
   ]
