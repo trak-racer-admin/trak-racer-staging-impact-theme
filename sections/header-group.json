@@ -8,7 +8,7 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "Trak Racer are proud partners of the Alpine F1 team and Airbus Aircraft!",
             "url": ""
           }
         }
@@ -18,7 +18,7 @@
       ],
       "settings": {
         "enable_sticky": false,
-        "text_size": "text-xs",
+        "text_size": "text-base",
         "navigation_mode": "arrows",
         "scrolling_speed": 10,
         "background": "#1a1a1a",
@@ -28,13 +28,41 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "e34fe37f-c113-437e-b5e4-f92fab4d448e": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Shop All",
+            "layout": "horizontal_center",
+            "submenu_style": "bold_heading",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "e34fe37f-c113-437e-b5e4-f92fab4d448e"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
         "logo": "{{shop.brand.logo}}",
         "logo_max_width": 40,
         "logo_mobile_max_width": 45,
-        "menu": "main-menu",
+        "menu": "main-menu-1",
         "sidebar_menu": "",
         "secondary_menu": "",
         "menu_open_trigger": "click",
