@@ -32,7 +32,7 @@
         "e34fe37f-c113-437e-b5e4-f92fab4d448e": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "Shop All",
+            "menu_item": "Simulation",
             "layout": "horizontal_center",
             "submenu_style": "bold_heading",
             "image_heading_1": "",
@@ -55,7 +55,7 @@
         "d16b41bc-ae5d-44af-8e8c-7f97475da0a3": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "Brands",
+            "menu_item": "Accessories",
             "layout": "horizontal_center",
             "submenu_style": "bold_heading",
             "image_1": "shopify:\/\/shop_images\/D-BOX_WEB_HEADER.webp",
@@ -111,7 +111,7 @@
         "logo": "{{shop.brand.logo}}",
         "logo_max_width": 40,
         "logo_mobile_max_width": 45,
-        "menu": "main-menu-secondary-test",
+        "menu": "main-menu-1",
         "sidebar_menu": "main-menu-mobile",
         "secondary_menu": "",
         "menu_open_trigger": "click",
