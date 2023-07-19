@@ -26,6 +26,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/steering_wheel.jpg",
             "stretch_image": true,
             "link_text": "Wheels",
             "link_url": "",
@@ -38,6 +39,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-3": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2020-pc-sim-racing-wheels-ogi-1.webp",
             "stretch_image": true,
             "link_text": "Pedals",
             "link_url": "",
@@ -50,6 +52,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-0": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hb.jpg",
             "stretch_image": true,
             "link_text": "Handbrakes",
             "link_url": "",
@@ -62,6 +65,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Shifter.jpg",
             "stretch_image": true,
             "link_text": "Shifters",
             "link_url": "",
@@ -74,6 +78,7 @@
         "5e131acb-2f55-47ad-9480-c16e762d8b67": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/flight_controls.jpg",
             "stretch_image": true,
             "link_text": "Flight Sim Peripherals",
             "link_url": "",
