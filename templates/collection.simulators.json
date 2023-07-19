@@ -201,6 +201,64 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "a448e486-d30f-493a-93df-a34cc9bbae00": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Discover the Excitement of Online Racing Simulators",
+            "heading_tag": "h6",
+            "content": "<p>You may be at home thinking you just want the best budget racing simulator you can find. However, you may be surprised to learn we don’t just create a regular driving simulator for sale. We have spent years researching motor sport racing, as well as the best in game simulations to ensure every one of our racing simulators provides you with a premium experience. The all-new Alpine Racing TRX has been co-developed with the Alpine F1 Team to give you the experience of the real thing, at home. With a <strong>Trak Racer <\/strong>race car simulator for sale, you can experience everything you have ever dreamed of, from the comfort of your own home.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "The Highest Quality Online Racing Simulators",
+            "heading_tag": "h6",
+            "content": "<p>At <strong>Trak Racer<\/strong>, we understand not only how cool it is, but also how important it is to have a realistic racing simulator. With our cutting-edge designs, engineering, and manufacturing, you can get the same feel and rush of adrenaline in our racing car simulators, as you would in a real racing machine. Every single one of our racing car simulators for sale, are made from high grade materials, for long lasting durability and adjustability, and to ensure your investment will stay a showpiece in any room or office for many more years to come. With<strong>Trak Racer<\/strong>as part of your pit crew, you will be a force to be reckoned with, as you dominate with a racing simulator online, from our state-of-the-art best racing simulators.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Your High Octane Professional Racing Simulator",
+            "heading_tag": "h6",
+            "content": "<p>When you choose a race car simulator for sale from our team at<strong> Trak Racer<\/strong>, you can rest assured that it will be compatible with any console and PC based platforms that you may have. Having the best racing simulator that won’t lock you into a particular platform will help to future proof your gaming experiences. With an emphasis on creating the best budget racing simulator, for complete peace of mind, we also provide you with outstanding manufacturing warranties. If you require support assistance, simply email our team at <a href=\"mailto:support@trakracer.com\">support@trakracer.com<\/a>, and we can assist you with your budget racing simulator. Alternatively, if you are looking for a particular driving simulator for sale, simply contact our sales team directly, and we will help to secure the best racing simulator for you, at a great price!<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-0",
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-1",
+        "template--19252068221216__a448e486-d30f-493a-93df-a34cc9bbae00-1689737809aaa29e05-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -209,6 +267,7 @@
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
     "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
-    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166"
+    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166",
+    "a448e486-d30f-493a-93df-a34cc9bbae00"
   ]
 }
