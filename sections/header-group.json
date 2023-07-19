@@ -116,7 +116,7 @@
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "left",
-        "layout": "logo_left_navigation_inline",
+        "layout": "logo_left_navigation_center",
         "show_social_media": true,
         "show_locale_selector": true,
         "show_country_selector": true,
