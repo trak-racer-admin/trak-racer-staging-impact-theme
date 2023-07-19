@@ -45,6 +45,30 @@
             "image_link_3": "",
             "image_text_color_3": "#ffffff",
             "product": "",
+            "product_card_background": "rgba(0,0,0,0)",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        },
+        "d16b41bc-ae5d-44af-8e8c-7f97475da0a3": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Brands",
+            "layout": "horizontal_center",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify:\/\/shop_images\/D-BOX_WEB_HEADER.webp",
+            "image_heading_1": "Shop D-BOX",
+            "image_link_1": "",
+            "image_text_color_1": "#000000",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
             "product_card_background": "",
             "product_card_text_color": "",
             "promo_content_layout": "grid",
@@ -54,7 +78,8 @@
         }
       },
       "block_order": [
-        "e34fe37f-c113-437e-b5e4-f92fab4d448e"
+        "e34fe37f-c113-437e-b5e4-f92fab4d448e",
+        "d16b41bc-ae5d-44af-8e8c-7f97475da0a3"
       ],
       "settings": {
         "enable_sticky": true,
