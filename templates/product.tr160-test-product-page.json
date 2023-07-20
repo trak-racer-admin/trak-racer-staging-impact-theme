@@ -485,7 +485,7 @@
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "title": "What's Included",
         "heading_tag": "h5",
