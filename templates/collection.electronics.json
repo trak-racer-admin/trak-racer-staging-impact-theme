@@ -27,7 +27,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/steering_wheel.jpg",
+            "image": "shopify:\/\/shop_images\/wheels.jpg",
             "stretch_image": true,
             "link_text": "Wheels",
             "link_url": "",
@@ -40,7 +40,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-3": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2020-pc-sim-racing-wheels-ogi-1.webp",
+            "image": "shopify:\/\/shop_images\/pedals.jpg",
             "stretch_image": true,
             "link_text": "Pedals",
             "link_url": "",
