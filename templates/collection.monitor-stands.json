@@ -21,6 +21,79 @@
         "overlay_opacity": 30
       }
     },
+    "0eff9e1f-1bfa-47d2-829e-cb50ccd5e585": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-1": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-2": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-3": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "e3043619-8e61-408d-845d-ed5e7b32eb85": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-1",
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-2",
+        "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-3",
+        "e3043619-8e61-408d-845d-ed5e7b32eb85"
+      ],
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -40,6 +113,7 @@
   },
   "order": [
     "banner",
+    "0eff9e1f-1bfa-47d2-829e-cb50ccd5e585",
     "main"
   ]
 }
