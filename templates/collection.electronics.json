@@ -12,7 +12,6 @@
         "collection_title_size": "h2",
         "image_size": "sm",
         "image": "shopify:\/\/shop_images\/cube_header.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/cube_mobile.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "featured_product": "",
