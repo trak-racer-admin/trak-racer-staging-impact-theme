@@ -56,7 +56,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Extremely adjustable<\/li><li>Compact design, folds away in seconds<\/li><li>Compatible with PC, Xbox & PS consoles and more<\/li><\/ul>"
+            "text": "<ul><li>The ultimate heavy-duty rig<\/li><li>Completely customise your experience<\/li><li>Motion compatible and ready to upgrade<\/li><\/ul>"
           }
         },
         "variant_picker": {
@@ -202,13 +202,13 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR160_POWER.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/TR160_POWER_MOB.jpg",
+            "image": "shopify:\/\/shop_images\/slide_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/slide_1_mb.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "subheading": "You have the freedom to raise or lower the wheel stand to your desired height. This allows you to find the most comfortable position that suits your racing style.",
-            "title": "Height and Angle Adjustments",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "The TR160 is designed to have best-in-class stability. The thicker aluminum profile walls and robust construction make it the strongest rig in its class. Embrace this strength and let it boost your confidence on the track.",
+            "title": "Focus on Strength and Stability",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -264,19 +264,21 @@
         "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/TR-ONE_WM_a6f96332-ee58-4f9d-b02d-3d684a5bc785.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TR-ONE_WM_BM.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start sm:text-start",
-            "subheading": "We've designed the stand to be compatible with all the popular steering wheel, shifter, and pedal sets on the market, including Logitech, Thrustmaster, and Fanatec.  Additionally, pre-drilled mounting holes are available for all major brands, ensuring easy installation.",
-            "title": "Maximum Compatibility",
-            "heading_tag": "h4",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "Bring flexibility to your driving experience with the upgradable TR One Wheel Mount. The TR One Wheel Mount can be upgraded and adjusted by simply swapping the mounting plates so you can adjust your wheel mount quickly as you go through your racing journey.",
+            "title": "Upgrade on-the Go",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
