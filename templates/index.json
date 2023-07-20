@@ -85,7 +85,7 @@
             "subheading": "",
             "title": "Flight Simulators",
             "url": "",
-            "heading_tag": "h2",
+            "heading_tag": "h5",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -95,11 +95,11 @@
         "template--19149183320352__56bae42b-8352-4291-b2a0-90cf30962707-168972781327369c94-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "monitor-stands",
             "subheading": "",
             "title": "Monitor Stands",
             "url": "",
-            "heading_tag": "h2",
+            "heading_tag": "h5",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -123,11 +123,11 @@
         "58fc28f1-a533-4b9f-8d7b-20247843e73f": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "accessories",
             "subheading": "",
             "title": "Accessories",
             "url": "",
-            "heading_tag": "h2",
+            "heading_tag": "h5",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
