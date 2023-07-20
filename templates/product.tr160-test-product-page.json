@@ -241,26 +241,6 @@
             "background_gradient": ""
           }
         },
-        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "subheading": "The stand is 650mm wide, providing a firm stance when racing. It works seamlessly with most fixed and office\/race chairs, ensuring stability and comfort during your sessions.",
-            "title": "Office Chair Compatibility",
-            "heading_tag": "h4",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
         "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
           "type": "image",
           "settings": {
@@ -279,6 +259,26 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 20,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "subheading": "The stand is 650mm wide, providing a firm stance when racing. It works seamlessly with most fixed and office\/race chairs, ensuring stability and comfort during your sessions.",
+            "title": "Office Chair Compatibility",
+            "heading_tag": "h4",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
             "background": "",
             "background_gradient": ""
           }
@@ -307,8 +307,8 @@
       "block_order": [
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
-        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
         "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
         "24b4a55b-eee5-4a69-b907-71b1a4cc457f"
       ],
       "settings": {
