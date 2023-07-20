@@ -3,14 +3,15 @@
     "banner": {
       "type": "collection-banner",
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
+        "full_width": true,
+        "allow_transparent_header": true,
         "enable_parallax": true,
         "show_collection_title": true,
         "show_collection_description": true,
         "show_collection_image": true,
         "collection_title_size": "h0",
         "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/immersion_2.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "featured_product": "",
