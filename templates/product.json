@@ -51,7 +51,7 @@
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -72,7 +72,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
             "atc_button_background": "#cc0101",
             "atc_button_text_color": "#ffffff",
