@@ -11,7 +11,6 @@
         "show_collection_image": true,
         "collection_title_size": "h2",
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/immersion_2.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "featured_product": "",
