@@ -221,26 +221,6 @@
             "background_gradient": ""
           }
         },
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start sm:text-start",
-            "subheading": "Our compact design enables the stand to fold away in a matter of seconds. It's easy to store, so you can maximize your limited space while still having a great racing setup whenever you need it.",
-            "title": "Easy Storage",
-            "heading_tag": "h4",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
         "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
           "type": "image",
           "settings": {
@@ -259,6 +239,26 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 20,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "The TR160 is built to withstand heavy-duty usage. Don't hold back! Test your skills and push your limits on the track. The rig's durability and reliability will support you in reaching new heights in your racing performance",
+            "title": "Push Your Limits",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
             "background": "",
             "background_gradient": ""
           }
@@ -306,8 +306,8 @@
       },
       "block_order": [
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
         "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
         "1d5dbb33-f7e0-42d1-9487-92822115a20f",
         "24b4a55b-eee5-4a69-b907-71b1a4cc457f"
       ],
