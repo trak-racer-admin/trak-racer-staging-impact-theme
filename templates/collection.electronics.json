@@ -53,7 +53,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hb.jpg",
+            "image": "shopify:\/\/shop_images\/handbrake.jpg",
             "stretch_image": true,
             "link_text": "Handbrakes",
             "link_url": "",
@@ -66,7 +66,7 @@
         "template--19252197916960__63ebf810-1c55-432e-b1c0-374ad6dfe18f-1685676270a09896a7-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Shifter.jpg",
+            "image": "shopify:\/\/shop_images\/shifter5.jpg",
             "stretch_image": true,
             "link_text": "Shifters",
             "link_url": "",
@@ -79,7 +79,7 @@
         "5e131acb-2f55-47ad-9480-c16e762d8b67": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/flight_controls.jpg",
+            "image": "shopify:\/\/shop_images\/flight_controls_2.jpg",
             "stretch_image": true,
             "link_text": "Flight Sim Peripherals",
             "link_url": "",
