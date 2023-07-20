@@ -51,8 +51,9 @@
         "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-3": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/trip.jpg",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "Triple Monitor Stands",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
