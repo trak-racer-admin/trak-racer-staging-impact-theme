@@ -43,8 +43,15 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": false
+          }
+        },
+        "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
+          "type": "text",
+          "settings": {
+            "text": ""
           }
         },
         "variant_picker": {
@@ -96,6 +103,7 @@
         "payment_terms",
         "separator",
         "description",
+        "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
