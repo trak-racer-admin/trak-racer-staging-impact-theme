@@ -295,8 +295,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "Unleash the ultimate racing experience with the TR160 Racing Simulator. Its stability and adaptability are unmatched. Feel the exhilarating movements of race cars through motion simulation. With robust construction and versatile accessories, this cockpit evolves with you. Dominate the track, push your limits, and revolutionize your racing adventures.",
-            "title": "The Forever Rig",
+            "subheading": "Take advantage of the TR160's complete customization options. With its highly adjustable features and a wide range of available accessories, tailor the rig to fit your preferences and enhance your racing experience. Fine-tune every aspect to suit your style and comfort.",
+            "title": "Customize For Your Needs",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -361,11 +361,11 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>18kgs (40lb)<\/p>",
-            "value_2": "<p>650mm wide x 1120mm high<\/p>",
-            "value_3": "<p>Approximately 1 Hour<\/p>",
-            "value_4": "<p>Up to 5nm<\/p>",
-            "value_5": "<p>100kgs (220lbs)<\/p>",
+            "value_1": "<p>61.5kgs (135lbs)<\/p>",
+            "value_2": "<p>660mm wide x 1445mm long (25.98in x 56.88in)<\/p>",
+            "value_3": "<p>Approximately 7 Hours<\/p>",
+            "value_4": "<p>Up to and over 25nm<\/p>",
+            "value_5": "<p>200kgs (440lbs)<\/p>",
             "value_6": "",
             "value_7": "",
             "value_8": "",
@@ -392,9 +392,9 @@
       ],
       "settings": {
         "full_width": true,
-        "subheading": "Light & Ready",
-        "title": "FS3 Specifications",
-        "content": "<p>We're here to support you in your quest for racing excellence. With our thoughtfully designed and adjustable wheel stand, you can enhance your racing performance while enjoying maximum comfort. Let's get ready to race and achieve your personal best!<\/p>",
+        "subheading": "The Forever Rig",
+        "title": "TR160 Specifications",
+        "content": "<p>Unleash the ultimate racing experience with the TR160 Racing Simulator. Its stability and adaptability are unmatched. Feel the exhilarating movements of race cars through motion simulation. With robust construction and versatile accessories, this cockpit evolves with you. Dominate the track, push your limits, and revolutionize your racing adventures.<\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -429,7 +429,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Chassis",
-            "content": "<p>High-quality chassis with assembly instructions plus tools and screws for assembly<\/p>"
+            "content": "<p>All profile pieces - pieces are 160mm x 40mm each. Screws, brackets and fixtures are included along with an assembly tool kit.<\/p>"
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
@@ -441,8 +441,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Gear Shifter Mount",
-            "content": "<p>Left\/right adjustable <\/p>"
+            "title": "Your Choice of Wheel Mount",
+            "content": "<p>Choose between the TR One Wheel Mount or our Universal Mounting Plate depending on what you need!<\/p>"
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
@@ -454,8 +454,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Wheel Mount",
-            "content": "<p>Angle and height adjustable <\/p>"
+            "title": "Your Choice of Pedal Mount",
+            "content": "<p>Choose between the three available pedal mounting options depending on your compatibility needs.<\/p>"
           }
         },
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
@@ -467,8 +467,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Pedal Mount",
-            "content": "<p>Angle adjustable <\/p>"
+            "title": "Bonus Products",
+            "content": "<p>Floor-Protecting Rubber Feet<br\/>Set of 10 Cable Ties<br\/>Red Coloured Strips<\/p>"
           }
         },
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
@@ -480,8 +480,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "2 Year Warranty",
-            "content": "<p>You're covered on faults for two years<\/p>"
+            "title": "5 Year Warranty",
+            "content": "<p>You're covered on faults for five years<\/p>"
           }
         }
       },
@@ -564,7 +564,7 @@
         "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1": {
           "type": "heading",
           "settings": {
-            "text": "FS3 - In Detail",
+            "text": "TR160",
             "heading_tag": "h4"
           }
         }
