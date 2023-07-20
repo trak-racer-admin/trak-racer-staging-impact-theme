@@ -40,8 +40,9 @@
         "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/dual_2.jpg",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "Dual Monitor Stands",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
@@ -65,8 +66,9 @@
         "e3043619-8e61-408d-845d-ed5e7b32eb85": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/dual.jpg",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "Quad Monitor Stands",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
