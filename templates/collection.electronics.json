@@ -10,7 +10,7 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "collection_title_size": "h2",
-        "image_size": "sm",
+        "image_size": "auto",
         "image": "shopify:\/\/shop_images\/cube_header.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
