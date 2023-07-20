@@ -9,7 +9,7 @@
         "show_collection_title": true,
         "show_collection_description": true,
         "show_collection_image": true,
-        "collection_title_size": "h0",
+        "collection_title_size": "h2",
         "image_size": "auto",
         "image": "{{ collection.image }}",
         "mobile_text_position": "place-self-center text-center",
@@ -26,7 +26,7 @@
       "settings": {
         "products_per_page": 24,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
+        "products_per_row_desktop": 4,
         "filter_layout": "sidebar",
         "show_sort_by": true,
         "show_filters": true,
