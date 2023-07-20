@@ -9,7 +9,7 @@
         "show_collection_title": true,
         "show_collection_description": true,
         "show_collection_image": true,
-        "collection_title_size": "h0",
+        "collection_title_size": "h2",
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/immersion_2.jpg",
         "mobile_text_position": "place-self-center text-center",
