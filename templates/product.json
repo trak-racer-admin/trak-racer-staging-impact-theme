@@ -83,7 +83,7 @@
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: inline-block; margin:auto;\">           \n<ul class=\"list list-payment\" role=\"list\">\n              {%- for type in shop.enabled_payment_types -%}\n                <li class=\"list-payment__item\">\n                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}\n                <\/li>\n              {%- endfor -%}\n            <\/ul>\n          <\/div>"
+            "liquid": ""
           }
         },
         "2797188b-937d-4dd8-819a-7276e6bfd016": {
