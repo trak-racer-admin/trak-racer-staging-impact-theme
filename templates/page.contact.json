@@ -18,16 +18,25 @@
             "required": false
           }
         },
+        "28c403a1-6d2f-47c1-8aca-1e3dc2d95d3f": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "use_long_text": false,
+            "required": true
+          }
+        },
         "857e7d25-a646-4270-88bb-350fca86dbf7": {
           "type": "dropdown",
           "settings": {
             "title": "Enquiry type",
-            "values": "Sales, Shipping, Request Return, Change or Cancel Order, Damage or Repairs, Other"
+            "values": "General Enquiry,Damage Report,Feature Request,Order Adjustment,Product Compatibility,Tracking Details"
           }
         }
       },
       "block_order": [
         "aee39e24-119f-4943-a59f-4e34c497fcb0",
+        "28c403a1-6d2f-47c1-8aca-1e3dc2d95d3f",
         "857e7d25-a646-4270-88bb-350fca86dbf7"
       ],
       "settings": {
