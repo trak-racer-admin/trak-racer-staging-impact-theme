@@ -58,8 +58,7 @@
             "menu_item": "Accessories",
             "layout": "horizontal_center",
             "submenu_style": "bold_heading",
-            "image_1": "shopify:\/\/shop_images\/D-BOX_WEB_HEADER_5cb96d4d-f9e5-498c-97c5-8c136515d349.webp",
-            "image_heading_1": "Shop D-BOX",
+            "image_heading_1": "",
             "image_link_1": "",
             "image_text_color_1": "#000000",
             "image_heading_2": "",
@@ -105,7 +104,7 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "Brands",
-            "layout": "horizontal",
+            "layout": "horizontal_center",
             "submenu_style": "bold_heading",
             "image_1": "shopify:\/\/shop_images\/D-BOX_WEB_HEADER_5cb96d4d-f9e5-498c-97c5-8c136515d349.webp",
             "image_heading_1": "Shop D-BOX",
