@@ -126,11 +126,39 @@
         "show_filter_values_count": true,
         "open_first_filter_group": false
       }
+    },
+    "e7c8a766-2b96-4a09-96c8-de9936a1b02a": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "monitor-stands",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Complete Your Setup",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 49, 49, 1), rgba(153, 83, 83, 1) 100%)",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "banner",
     "63ebf810-1c55-432e-b1c0-374ad6dfe18f",
-    "main"
+    "main",
+    "e7c8a766-2b96-4a09-96c8-de9936a1b02a"
   ]
 }
