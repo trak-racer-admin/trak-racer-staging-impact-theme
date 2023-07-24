@@ -142,7 +142,7 @@
         "logo": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
         "logo_max_width": 250,
         "logo_mobile_max_width": 165,
-        "menu": "main-menu-1",
+        "menu": "main-menu-impact",
         "sidebar_menu": "main-menu-mobile",
         "secondary_menu": "",
         "menu_open_trigger": "click",
