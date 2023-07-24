@@ -16,12 +16,15 @@
       "block_order": [
         "message"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "enable_sticky": false,
         "text_size": "text-base",
-        "navigation_mode": "arrows",
-        "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "navigation_mode": "scrolling",
+        "scrolling_speed": 30,
+        "background": "#a5272c",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -152,7 +155,7 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
         "reduce_padding": true,
-        "background_opacity": 70,
+        "background_opacity": 100,
         "background_blur_radius": 2
       }
     }
