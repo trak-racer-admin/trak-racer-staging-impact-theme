@@ -42,11 +42,74 @@
             "background": "",
             "background_gradient": ""
           }
+        },
+        "608024a0-e217-41b1-9d40-12afc11e7af9": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide title",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "6bfd0c0c-b690-497d-9f2b-fa562d57b4e0": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide title",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "b508b95f-862c-4675-baa8-0ad8aca3045d": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide title",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
         }
       },
       "block_order": [
         "slide-1",
-        "slide-2"
+        "slide-2",
+        "608024a0-e217-41b1-9d40-12afc11e7af9",
+        "6bfd0c0c-b690-497d-9f2b-fa562d57b4e0",
+        "b508b95f-862c-4675-baa8-0ad8aca3045d"
       ],
       "settings": {
         "full_width": true,
@@ -159,6 +222,54 @@
         "heading_gradient": ""
       }
     },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "1664424230c4756b0e-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "19f7e4cc-3301-4ee8-9282-de7b8e98f856": {
+          "type": "heading",
+          "settings": {
+            "text": "From the Track to the Trak",
+            "heading_tag": "h2"
+          }
+        },
+        "1664424230c4756b0e-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Welcome to the first ever rigs used by professional F1 drivers to train.",
+            "heading_tag": "h1"
+          }
+        },
+        "1664424230c4756b0e-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664424230c4756b0e-0",
+        "19f7e4cc-3301-4ee8-9282-de7b8e98f856",
+        "1664424230c4756b0e-1",
+        "1664424230c4756b0e-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "image-link-blocks": {
       "type": "image-link-blocks",
       "blocks": {
@@ -245,48 +356,6 @@
         "heading_gradient": ""
       }
     },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "settings": {
-        "full_width": true,
-        "text": "Promotion text",
-        "text_size": "large",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
@@ -320,46 +389,6 @@
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
       }
     },
     "media-grid": {
@@ -518,6 +547,68 @@
       "settings": {
         "full_width": true,
         "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "17310b3e-2dd7-41c7-8b97-fe714fdd03a2": {
+      "type": "logo-list",
+      "blocks": {
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-1",
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-2",
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-3",
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-4",
+        "template--19149183320352__17310b3e-2dd7-41c7-8b97-fe714fdd03a2-logo-5"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Logo list",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 5,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -906,14 +997,13 @@
   "order": [
     "slideshow",
     "56bae42b-8352-4291-b2a0-90cf30962707",
-    "image-link-blocks",
-    "scrolling-text",
-    "featured-collection",
-    "impact-text",
     "image-with-text-overlay",
+    "image-link-blocks",
+    "impact-text",
     "media-grid",
     "before-after-image",
     "press",
+    "17310b3e-2dd7-41c7-8b97-fe714fdd03a2",
     "hot-spots",
     "multiple-images-with-text",
     "featured-product",
