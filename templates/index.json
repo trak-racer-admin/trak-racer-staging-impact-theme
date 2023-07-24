@@ -130,12 +130,12 @@
           "type": "collection",
           "settings": {
             "collection": "racing-simulators",
-            "image": "shopify:\/\/shop_images\/collection_card.jpg",
+            "image": "shopify:\/\/shop_images\/rigs.jpg",
             "subheading": "",
             "title": "Racing Simulators",
             "url": "",
             "heading_tag": "h5",
-            "text_position": "place-self-end text-end",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -145,56 +145,60 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Flight_Sims.jpg",
             "subheading": "",
             "title": "Flight Simulators",
             "url": "",
             "heading_tag": "h5",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "template--19149183320352__56bae42b-8352-4291-b2a0-90cf30962707-168972781327369c94-2": {
           "type": "collection",
           "settings": {
             "collection": "monitor-stands",
+            "image": "shopify:\/\/shop_images\/monitor_stands.jpg",
             "subheading": "",
             "title": "Monitor Stands",
             "url": "",
             "heading_tag": "h5",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "26b7b6b1-63b7-45cc-81be-11b2ed9b54f0": {
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Seats_4b7094e9-c7ba-4211-be92-d4ede7a74711.jpg",
             "subheading": "",
             "title": "Seats",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "58fc28f1-a533-4b9f-8d7b-20247843e73f": {
           "type": "collection",
           "settings": {
             "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/acc.jpg",
             "subheading": "",
             "title": "Accessories",
             "url": "",
             "heading_tag": "h5",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
