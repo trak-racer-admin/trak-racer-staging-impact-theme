@@ -215,7 +215,7 @@
         "collections_per_row": 5,
         "show_progress_bar": true,
         "subheading": "",
-        "title": "Collection list",
+        "title": "Shop Simulation",
         "content": "",
         "link_url": "",
         "link_text": "View all",
@@ -272,100 +272,14 @@
         "overlay_opacity": 30
       }
     },
-    "image-link-blocks": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "1664424046b00c932c-0": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-1": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-2": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-3": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "1664424046b00c932c-0",
-        "1664424046b00c932c-1",
-        "1664424046b00c932c-2",
-        "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
-      ],
-      "settings": {
-        "full_width": false,
-        "block_size": "medium",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
         "1664424181b38582d5-0": {
           "type": "item",
           "settings": {
-            "title": "100%",
-            "subheading": "Showcase a benefit of your product",
+            "title": "The first ever rig built with F1 Engineers.",
+            "subheading": "",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -383,11 +297,11 @@
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
-        "impact_text_size_ratio": 1,
+        "impact_text_size_ratio": 0.5,
         "background": "",
         "background_gradient": "",
         "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
+        "heading_gradient": "linear-gradient(180deg, rgba(7, 86, 249, 0.2), rgba(0, 129, 255, 0.63) 100%)",
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
@@ -1000,7 +914,6 @@
     "slideshow",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "image-with-text-overlay",
-    "image-link-blocks",
     "impact-text",
     "media-grid",
     "before-after-image",
