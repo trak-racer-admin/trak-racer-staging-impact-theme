@@ -228,14 +228,7 @@
         "1664424230c4756b0e-0": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
-          }
-        },
-        "19f7e4cc-3301-4ee8-9282-de7b8e98f856": {
-          "type": "heading",
-          "settings": {
-            "text": "From the Track to the Trak",
-            "heading_tag": "h2"
+            "text": "From the Track to the Trak"
           }
         },
         "1664424230c4756b0e-1": {
@@ -265,7 +258,6 @@
       },
       "block_order": [
         "1664424230c4756b0e-0",
-        "19f7e4cc-3301-4ee8-9282-de7b8e98f856",
         "1664424230c4756b0e-1",
         "1664424230c4756b0e-2",
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
