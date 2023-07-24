@@ -168,7 +168,7 @@
         "background_gradient": "linear-gradient(180deg, rgba(60, 131, 220, 1), rgba(33, 33, 33, 1) 29%, rgba(33, 33, 33, 1) 71%, rgba(60, 131, 220, 1) 100%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_text_color": "#ffffff"
       }
     },
     "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
