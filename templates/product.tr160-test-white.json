@@ -79,8 +79,8 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#a5272c",
-            "atc_button_text_color": "",
+            "atc_button_background": "#b60303",
+            "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
@@ -94,7 +94,7 @@
             "style": "outline",
             "stretch": true,
             "background": "#a29ca6",
-            "text_color": "#ffffff"
+            "text_color": "#1a1a1a"
           }
         },
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
@@ -164,9 +164,9 @@
         "enable_video_looping": true,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(222, 9, 9, 1), rgba(33, 33, 33, 1) 25%, rgba(33, 33, 33, 1) 80%)",
-        "text_color": "#ffffff",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
