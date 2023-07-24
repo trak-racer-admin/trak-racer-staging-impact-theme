@@ -1,0 +1,623 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "da1b0992-39dd-4453-845c-0715f56f5929": {
+          "type": "sku",
+          "settings": {
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>The ultimate heavy-duty rig<\/li><li>Completely customise your experience<\/li><li>Motion compatible and ready to upgrade<\/li><\/ul>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "dropdown",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#a5272c",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "4163194c-df27-4c47-bd48-39a7883f8a23": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "Download Manual",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#a29ca6",
+            "text_color": "#ffffff"
+          }
+        },
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-truck",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
+            "background": "#545454",
+            "text_color": "#ffffff"
+          }
+        },
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-credit-card",
+            "icon_width": 24,
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#ffffff",
+            "text_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "da1b0992-39dd-4453-845c-0715f56f5929",
+        "badges",
+        "price",
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
+        "rating",
+        "payment_terms",
+        "separator",
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "4163194c-df27-4c47-bd48-39a7883f8a23",
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de",
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(222, 9, 9, 1), rgba(33, 33, 33, 1) 25%, rgba(33, 33, 33, 1) 80%)",
+        "text_color": "#ffffff",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#efefef",
+        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
+        "text_color": "#ffffff"
+      }
+    },
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/slide_1_mb.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "The TR160 is designed to have best-in-class stability. The thicker aluminum profile walls and robust construction make it the strongest rig in its class. Embrace this strength and let it boost your confidence on the track.",
+            "title": "Focus on Strength and Stability",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR-ONE_WM_a6f96332-ee58-4f9d-b02d-3d684a5bc785.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TR-ONE_WM_BM.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "Bring flexibility to your driving experience with the upgradable TR One Wheel Mount. The TR One Wheel Mount can be upgraded and adjusted by simply swapping the mounting plates so you can adjust your wheel mount quickly as you go through your racing journey.",
+            "title": "Upgrade on-the Go",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/slide_3_mb.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "The TR160 is built to withstand heavy-duty usage. Don't hold back! Test your skills and push your limits on the track. The rig's durability and reliability will support you in reaching new heights in your racing performance",
+            "title": "Push Your Limits",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide_4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/slide_4_mob.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "The TR160 is motion-ready, allowing you to add a motion system to simulate the movements of various racecars. If you're ready to take your racing experience to the next level, consider exploring motion options. Embrace the thrill of a fully immersive and dynamic simulation, and elevate your racing skills to new heights.",
+            "title": "Rigid and Motion-Ready",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4eva_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/4eva.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "Take advantage of the TR160's complete customization options. With its highly adjustable features and a wide range of available accessories, tailor the rig to fit your preferences and enhance your racing experience. Fine-tune every aspect to suit your style and comfort.",
+            "title": "Customize For Your Needs",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 8,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Weight",
+            "heading_2": "Size",
+            "heading_3": "Assembly Time",
+            "heading_4": "Wheelbase Torque",
+            "heading_5": "Pedal Weight Capacity",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>61.5kgs (135lbs)<\/p>",
+            "value_2": "<p>660mm wide x 1445mm long (25.98in x 56.88in)<\/p>",
+            "value_3": "<p>Approximately 7 Hours<\/p>",
+            "value_4": "<p>Up to and over 25nm<\/p>",
+            "value_5": "<p>200kgs (440lbs)<\/p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "The Forever Rig",
+        "title": "TR160 Specifications",
+        "content": "<p>Unleash the ultimate racing experience with the TR160 Racing Simulator. Its stability and adaptability are unmatched. Feel the exhilarating movements of race cars through motion simulation. With robust construction and versatile accessories, this cockpit evolves with you. Dominate the track, push your limits, and revolutionize your racing adventures.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "#a5272c",
+        "heading_gradient": "linear-gradient(320deg, rgba(253, 0, 0, 1) 0.36%, rgba(171, 167, 167, 1) 45%, rgba(155, 53, 53, 1) 86%)",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "#f2f2f2",
+        "chart_text_color": "#000000",
+        "chart_true_false_color": ""
+      }
+    },
+    "974a92ca-5417-47d7-bae4-547d0c063284": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Chassis",
+            "content": "<p>All profile pieces - pieces are 160mm x 40mm each. Screws, brackets and fixtures are included along with an assembly tool kit.<\/p>"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Your Choice of Wheel Mount",
+            "content": "<p>Choose between the TR One Wheel Mount or our Universal Mounting Plate depending on what you need!<\/p>"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Your Choice of Pedal Mount",
+            "content": "<p>Choose between the three available pedal mounting options depending on your compatibility needs.<\/p>"
+          }
+        },
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Bonus Products",
+            "content": "<p>Floor-Protecting Rubber Feet<br\/>Set of 10 Cable Ties<br\/>Red Coloured Strips<\/p>"
+          }
+        },
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "5 Year Warranty",
+            "content": "<p>You're covered on faults for five years<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2",
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "What's Included",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#e6e6e6",
+        "background_gradient": "",
+        "text_color": "#000000"
+      }
+    },
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "<ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><li>Other Wheel Bases - may require mounting bracket (Trak Racer Direct Drive Mount recommended)<\/li><li>MiGe 130ST(small and big<\/li><li>Bodnar 53 series<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini \/ ULTIMATE<\/li><\/ul><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><strong>WITH <\/strong><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> DIRECT DRIVE FRONT MOUNT (SKU TR-DDBRDDM)<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>VRS Force Pro<\/li><li>AccuForce V1\/V2 (turn the top cover around to fit)<\/li><li>MiGe 130ST(small and big)<\/li><li>Bodnar 53 series<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini\/ ULTIMATE<\/li><li>Lenze MCS12 series<\/li><li>Kollmorgen AKM 52-53-54 (OSW and Leo Bodnar Simsteering systems)<\/li><li>Ricmotech Mini-Mite Direct-Drive Steering System Base<\/li><li>IMMSOURCE ET3 and ET5<\/li><li>Fanatec Podium DD (installs <strong>without<\/strong> front plate)<\/li><\/ul>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
+          "type": "item",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "<ul><li>Trak Racer Loadcell Pro Pedals (Coming Q4 2023)<\/li><li>Fanatec CSL Elite Pedals, ClubSport V1\/V2\/V3 (including Inverted Pedals)<\/li><li>Thrustmaster T-LCM, T3PA, GT Ed, T3PGT, T3PA PRO add-on and T500, T150 pedals<\/li><li>Heusinkveld Ultimate\/Ultimate+, Sprint and Pro<\/li><li>Logitech G25, G27, G29, G920, G923, G Pro pedals<\/li><li>Meca Cup1-2, Meca Cup1-3, Clutch and Base Plate, Meca Cup 1 Evo Hydraulic & LC<\/li><li>VRS DirectForce Pro Pedals<\/li><li>HPP PRX 3P, JBV 2\/3 Pedal System<\/li><li>Simagic P2000-S100 Pedal Set<\/li><li>BJ Sim Racing Steel Series, 1000psi Hydraulic<\/li><li>DC Sim Racing DC3<\/li><li>Racewerk S1 Hydraulic Sim Racing Pedals<\/li><li>Sim Coaches P1-3<\/li><li>Simtrecs ProPedal GT<\/li><li>Velazquez Engineering PRO+ Hydraulic<\/li><li>Simforge Mark-1<\/li><li>3DRAP Ngasa<\/li><li>Protosimtech PT2<\/li><li>OBP Pro Race V2 Sim Pedal System<\/li><li>Simworx Pro Series<\/li><li>WAVE IMPETUS<\/li><li>Quaife Throttle Pedal and Brake<\/li><li>Cube Controls Hydraulic SP01<\/li><li>Venym Pedals<\/li><li>Moza CRP Pedal set<\/li><li>Moza SRP Pedal set with and without SRP plate<\/li><li>JCL Hydraulic Pedals<\/li><li>Thera Pedals<\/li><li>Asetek La Prima, Forte and Invicta pedals (plate may require new mounting holes)<\/li><li>SRP GT\/GT-R\/Formula\/Formula-R (plate may require new mounting holes)<\/li><li>TRPED-PRO3<\/li><li>Simgrade pedal plate and VX PEDAL<\/li><\/ul><p><strong> <\/strong><\/p><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Thrustmaster TPR: Pendular Rudder Pedals<\/li><li>Thrustmaster T.Flight Rudder Pedals<\/li><li>Logitech Flight Rudder Pedals<\/li><li>Logitech Heavy Equipment<\/li><li>Virpil Ace<\/li><\/ul>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
+          "type": "item",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "<ul><li>Trak Racer Sequential Shifter Pro (Coming Q4 2023)<\/li><li>Fanatec ClubSport Shifter, SQ<\/li><li>Thrustmaster TH8A, RSTSS, TSS+<\/li><li>Prosim PSL Sequential Shifter<\/li><li>Heusinkveld SQ Shifter<\/li><li>Logitech G Shifter<\/li><li>DSD SQ Shifter<\/li><li>Jinx Shifter - additional mount required<\/li><li>Simworx Pro Series - additional mount required<\/li><li>VNM Simulation Sequential Shifter<\/li><li>Quaife PSL Sequential V2, Sequential, and H Pattern - additional mount required<\/li><li>Aiologs SQ Shifter<\/li><li>BJ Sim Racing Shifter 3.0<\/li><li>Frex H Pattern<\/li><li>SIMAGIC DS-8X<\/li><li>SIMAGIC Q1S<\/li><li>SIMAGIC TB-1<\/li><li>Moza HGP shifter<\/li><li>Meca Cup Shifter<\/li><li>TRSS-PRO<\/li><li>PRO-SIM<\/li><li>PRO-SIM LITE<\/li><li>PRO-SIM SEQUENTIAL<\/li><\/ul><p><br\/><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> HANDBRAKE MOUNT COMPATIBILITY<\/strong><\/p><ul><li>Trak Racer Loadcell Pro Handbrake TRHB (Coming Q4 2023)<\/li><li>Fanatec Clubsport Handbrake<\/li><li>Thrustmaster TSS+<\/li><li>DSD Hydralulic Handbrake<\/li><li>RealGear RALLYpro Handbrake<\/li><li>Heusinkveld Handbrakes<\/li><li>Prosim Handbrake Digital\/RX Analog<\/li><li>Quaife Handbrake<\/li><li>VNM Simulation Handbrake<\/li><li>Aiologs Handbrake<\/li><li>Meca Handbrake<\/li><li>Moza HBP<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Compatibility",
+        "content": "<p>Check the compatible peripherals!<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f2f2f2",
+        "accordion_text_color": "#000000"
+      }
+    },
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a": {
+      "type": "video",
+      "blocks": {
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1": {
+          "type": "heading",
+          "settings": {
+            "text": "TR160",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-0",
+        "template--19236073701664__fa0ebdd5-5f44-44a4-8857-ebf12d490d7a-1685584905e1e1633b-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "test-2",
+          "test"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce",
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "fa0ebdd5-5f44-44a4-8857-ebf12d490d7a",
+    "related-products"
+  ]
+}
