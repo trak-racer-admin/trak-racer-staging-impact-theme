@@ -165,7 +165,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 0.78), rgba(33, 33, 33, 0.89) 30%, rgba(33, 33, 33, 1) 80%, rgba(186, 1, 1, 1) 100%)",
+        "background_gradient": "linear-gradient(180deg, rgba(191, 10, 10, 1), rgba(33, 33, 33, 1) 25%, rgba(33, 33, 33, 1) 80%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
