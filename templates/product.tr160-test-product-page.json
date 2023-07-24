@@ -180,7 +180,7 @@
             "text": "Revolutionize your racing experience with the TR160, the ultimate racing cockpit designed to push the boundaries of performance.",
             "heading_tag": "h2",
             "text_color": "",
-            "gradient": "linear-gradient(180deg, rgba(247, 247, 247, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(193, 193, 192, 1) 66.547%, rgba(194, 194, 194, 1) 90%)"
+            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
           }
         }
       },
@@ -192,7 +192,7 @@
         "content_width": "large",
         "text_position": "center",
         "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(86, 86, 86, 1) 70%)",
+        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
         "text_color": "#ffffff"
       }
     },
