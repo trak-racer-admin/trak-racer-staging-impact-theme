@@ -250,21 +250,34 @@
           "settings": {
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
           }
+        },
+        "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn More",
+            "url": "",
+            "background": "#0087b9",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
         "1664424230c4756b0e-0",
         "19f7e4cc-3301-4ee8-9282-de7b8e98f856",
         "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "1664424230c4756b0e-2",
+        "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "image_size": "lg",
+        "image": "shopify:\/\/shop_images\/with_gradient_a1b3f550-93a6-4e34-8ac4-cc194428d487.jpg",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
