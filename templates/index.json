@@ -242,12 +242,6 @@
             "heading_tag": "h1"
           }
         },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        },
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
           "type": "button",
           "settings": {
@@ -263,7 +257,6 @@
       "block_order": [
         "1664424230c4756b0e-0",
         "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2",
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
       "settings": {
