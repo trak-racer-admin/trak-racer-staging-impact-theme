@@ -113,6 +113,29 @@
     },
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "0e316969-78ed-4d74-949d-d1378e93f074": {
+          "type": "promotion_image",
+          "disabled": true,
+          "settings": {
+            "position": 4,
+            "column_span": "1",
+            "image": "shopify:\/\/shop_images\/560x560-b.webp",
+            "title": "",
+            "content": "",
+            "link_url": "shopify:\/\/pages\/mount-compatibility",
+            "link_text": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-start text-start",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "0e316969-78ed-4d74-949d-d1378e93f074"
+      ],
       "settings": {
         "products_per_page": 24,
         "products_per_row_mobile": "2",
