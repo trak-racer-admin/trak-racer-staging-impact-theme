@@ -124,7 +124,7 @@
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_1.value }}",
             "subheading": "",
             "title": "",
             "url": "",
@@ -138,7 +138,7 @@
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_2.value }}",
             "subheading": "",
             "title": "",
             "url": "",
@@ -152,7 +152,7 @@
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_3.value }}",
             "subheading": "",
             "title": "",
             "url": "",
@@ -166,7 +166,7 @@
         "dbd0fcf9-c49d-4f20-98af-16a9908d2257": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_4.value }}",
             "subheading": "",
             "title": "",
             "url": "",
