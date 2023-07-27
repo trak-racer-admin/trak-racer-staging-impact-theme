@@ -73,6 +73,12 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "325d866c-69db-48ce-95c7-d2323034ab4d": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
+          }
         }
       },
       "block_order": [
@@ -86,7 +92,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "325d866c-69db-48ce-95c7-d2323034ab4d"
       ],
       "settings": {
         "full_width": true,
