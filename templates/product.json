@@ -83,7 +83,7 @@
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
           "type": "liquid",
           "settings": {
-            "liquid": ""
+            "liquid": "{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
           }
         },
         "2797188b-937d-4dd8-819a-7276e6bfd016": {
