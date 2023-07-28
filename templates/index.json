@@ -409,46 +409,6 @@
         "background": "",
         "background_gradient": ""
       }
-    },
-    "press": {
-      "type": "press",
-      "blocks": {
-        "16644243327ba53d2a-0": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "",
-            "content": "Share info about what your customers say about your products.",
-            "show_rating": false,
-            "rating": 4
-          }
-        },
-        "16644243327ba53d2a-1": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "",
-            "content": "Or share content about your promotion, offers...",
-            "show_rating": false,
-            "rating": 4
-          }
-        }
-      },
-      "block_order": [
-        "16644243327ba53d2a-0",
-        "16644243327ba53d2a-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_size": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
     }
   },
   "order": [
@@ -456,7 +416,6 @@
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "image-with-text-overlay",
     "impact-text",
-    "media-grid",
-    "press"
+    "media-grid"
   ]
 }
