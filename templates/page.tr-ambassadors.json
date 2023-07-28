@@ -13,7 +13,7 @@
             "content": "<p>Sim Racing Content Creator<br\/><a href=\"https:\/\/www.youtube.com\/@Theamusante\/about\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/@Theamusante\/about\">YouTube<\/a><\/p>",
             "link_url": "",
             "link_text": "Learn More",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1": {
@@ -41,16 +41,55 @@
             "link_text": "Learn More",
             "link_style": "link"
           }
+        },
+        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "1ef068c6-b8f3-4e36-a03b-d3beeb0f55b4": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0",
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1",
-        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-2"
+        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-2",
+        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704",
+        "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d",
+        "1ef068c6-b8f3-4e36-a03b-d3beeb0f55b4"
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
