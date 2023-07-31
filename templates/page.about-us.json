@@ -71,6 +71,12 @@
           "settings": {
           }
         },
+        "bdffb12f-2fd7-4105-a38a-0f30570d8d59": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
         "249126d9-ae38-4cc3-bf49-1b3a0d546647": {
           "type": "image",
           "settings": {
@@ -84,6 +90,7 @@
         "template--19949577765152__80af0649-6045-44c4-9aa2-1c35177cf708-1689646420f3b9c448-1",
         "template--19949577765152__80af0649-6045-44c4-9aa2-1c35177cf708-1689646420f3b9c448-2",
         "53d4c42b-f107-4690-8761-bfb36d758e03",
+        "bdffb12f-2fd7-4105-a38a-0f30570d8d59",
         "249126d9-ae38-4cc3-bf49-1b3a0d546647"
       ],
       "settings": {
@@ -137,6 +144,15 @@
     "9658970e-7d44-443c-ad85-3cee38627e87": {
       "type": "rich-text",
       "blocks": {
+        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
+            "width_mode": "custom",
+            "max_width": 360,
+            "mobile_max_width": 490
+          }
+        },
         "8141e6a3-8656-4874-97e4-7e00713c758b": {
           "type": "heading",
           "settings": {
@@ -146,20 +162,17 @@
             "gradient": ""
           }
         },
-        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d": {
-          "type": "image",
-          "disabled": true,
+        "68e18bd3-9a2a-4da2-a3e7-60fa8076ab03": {
+          "type": "richtext",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
-            "width_mode": "custom",
-            "max_width": 360,
-            "mobile_max_width": 490
+            "content": "<p>Trak Racer products are built with great care, taking on board feedback from our users to ensure we build the best possible products!<\/p>"
           }
         }
       },
       "block_order": [
+        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d",
         "8141e6a3-8656-4874-97e4-7e00713c758b",
-        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d"
+        "68e18bd3-9a2a-4da2-a3e7-60fa8076ab03"
       ],
       "settings": {
         "full_width": true,
