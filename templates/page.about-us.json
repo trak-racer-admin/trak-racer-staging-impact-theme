@@ -196,41 +196,6 @@
         "button_text_color": ""
       }
     },
-    "d3e18bcc-a487-4966-9991-3052e896f3d0": {
-      "type": "media-with-text",
-      "blocks": {
-        "5bc13541-99de-41ad-8c74-60868f5cd4f8": {
-          "type": "video",
-          "settings": {
-            "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "autoplay": true,
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "5bc13541-99de-41ad-8c74-60868f5cd4f8"
-      ],
-      "settings": {
-        "full_width": true,
-        "spacing": "none"
-      }
-    },
     "affc25ae-9874-4027-96dc-52f9249c5cc0": {
       "type": "media-with-text",
       "blocks": {
@@ -240,7 +205,7 @@
             "image": "shopify:\/\/shop_images\/trak_racer_CU.jpg",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
@@ -259,14 +224,37 @@
         "21f27826-65de-466d-ac6b-4f5f0469c1a2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/the_design.jpg",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "The Design",
+            "content": "<p>The <strong>Track Racer<\/strong> design aesthetic brings not only high levels of functionality but also quickly becomes a showpiece in any room, office or showroom. The design process that underpins each <strong>Trak Racer<\/strong> product ensures ergonomics that provide unsurpassed comfort for the longest competitive racing events.<\/p><p><strong>Trak Racer<\/strong> products are highly compatible with all console and PC based platforms and support a vast array of game peripherals. This ensures that you won’t be locked into a platform and provides high levels of future-proofing.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "f2b3314d-18b9-4fef-b12b-3f15499b0d8b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/the_vision.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "The Vision",
+            "content": "<p>At <strong>Trak Racer<\/strong>, we’re not interested in building the cheapest, lightest and simplest gaming platforms. We focus on bringing the best value, high-end gaming experience that won’t look like a homemade DIY product. Our products live up to the highest competitive standards our users demand.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -280,7 +268,8 @@
       },
       "block_order": [
         "template--19949577765152__affc25ae-9874-4027-96dc-52f9249c5cc0-image-1",
-        "21f27826-65de-466d-ac6b-4f5f0469c1a2"
+        "21f27826-65de-466d-ac6b-4f5f0469c1a2",
+        "f2b3314d-18b9-4fef-b12b-3f15499b0d8b"
       ],
       "settings": {
         "full_width": false,
@@ -391,7 +380,6 @@
     "76d10fe2-9e1c-4a61-81af-44c29548f045",
     "9658970e-7d44-443c-ad85-3cee38627e87",
     "168b2eea-e972-437e-a81e-ff1b4974cd93",
-    "d3e18bcc-a487-4966-9991-3052e896f3d0",
     "affc25ae-9874-4027-96dc-52f9249c5cc0",
     "92382605-ba9f-49ab-942b-e3f20c55c121",
     "5fb41665-db22-4518-8ea6-6634754a72e2",
