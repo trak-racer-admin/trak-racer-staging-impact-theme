@@ -32,7 +32,7 @@
             "style": "fill",
             "size": "lg",
             "text": "Start Earning Now",
-            "url": "",
+            "url": "https:\/\/affiliates.trakracer.com\/create-account?ref=10",
             "background": "#0081ff",
             "text_color": ""
           }
@@ -174,7 +174,7 @@
             "title": "Step 2",
             "heading_tag": "h4",
             "content": "<h6> Share your link<\/h6>",
-            "link_url": "",
+            "link_url": "https:\/\/affiliates.trakracer.com\/create-account?ref=10",
             "link_text": "Start Earning Now",
             "link_style": "button"
           }
@@ -413,7 +413,7 @@
             "style": "fill",
             "size": "xl",
             "text": "Earn Now",
-            "url": "",
+            "url": "https:\/\/affiliates.trakracer.com\/create-account?ref=10",
             "background": "",
             "text_color": ""
           }
