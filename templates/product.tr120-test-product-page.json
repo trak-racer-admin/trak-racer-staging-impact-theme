@@ -80,12 +80,6 @@
             "payment_button_text_color": ""
           }
         },
-        "f4e2924a-9842-4d5c-801d-ff9c455dee8b": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
-          }
-        },
         "6cae225c-d39a-4a36-96f1-d8a32ba480d8": {
           "type": "button",
           "settings": {
@@ -96,6 +90,12 @@
             "stretch": true,
             "background": "",
             "text_color": "#ffffff"
+          }
+        },
+        "f4e2924a-9842-4d5c-801d-ff9c455dee8b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
           }
         },
         "2797188b-937d-4dd8-819a-7276e6bfd016": {
@@ -138,8 +138,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "f4e2924a-9842-4d5c-801d-ff9c455dee8b",
         "6cae225c-d39a-4a36-96f1-d8a32ba480d8",
+        "f4e2924a-9842-4d5c-801d-ff9c455dee8b",
         "2797188b-937d-4dd8-819a-7276e6bfd016",
         "91d421d0-bf45-4958-ad3b-a83aef6d602b"
       ],
