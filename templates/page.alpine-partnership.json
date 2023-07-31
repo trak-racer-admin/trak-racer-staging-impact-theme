@@ -17,7 +17,7 @@
             "mobile_image": "shopify:\/\/shop_images\/23_F1_CAR.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "desktop_text_position": "sm:place-self-start sm:text-start",
             "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
             "title": "Alpine F1 x Trak Racer",
             "heading_tag": "h2",
