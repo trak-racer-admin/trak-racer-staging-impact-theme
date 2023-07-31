@@ -9,6 +9,7 @@
     },
     "18cd8f98-a7a2-474e-8da7-3f838234015c": {
       "type": "video",
+      "disabled": true,
       "blocks": {
         "template--19949577765152__18cd8f98-a7a2-474e-8da7-3f838234015c-1689646164b232c9b8-0": {
           "type": "play",
@@ -133,6 +134,159 @@
         "text_color": ""
       }
     },
+    "9658970e-7d44-443c-ad85-3cee38627e87": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
+            "width_mode": "custom",
+            "max_width": 360,
+            "mobile_max_width": 490
+          }
+        }
+      },
+      "block_order": [
+        "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(151, 151, 151, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "168b2eea-e972-437e-a81e-ff1b4974cd93": {
+      "type": "impact-text",
+      "disabled": true,
+      "blocks": {
+        "template--19949577765152__168b2eea-e972-437e-a81e-ff1b4974cd93-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "Made by gamers, for gamers",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 0.5
+          }
+        }
+      },
+      "block_order": [
+        "template--19949577765152__168b2eea-e972-437e-a81e-ff1b4974cd93-item-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.5,
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(151, 151, 151, 1) 50%, rgba(255, 255, 255, 1) 100%)",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(180deg, rgba(247, 5, 5, 1), rgba(255, 0, 0, 1) 51%, rgba(26, 26, 26, 1) 100%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "d3e18bcc-a487-4966-9991-3052e896f3d0": {
+      "type": "media-with-text",
+      "blocks": {
+        "5bc13541-99de-41ad-8c74-60868f5cd4f8": {
+          "type": "video",
+          "settings": {
+            "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay": true,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "5bc13541-99de-41ad-8c74-60868f5cd4f8"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "affc25ae-9874-4027-96dc-52f9249c5cc0": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--19949577765152__affc25ae-9874-4027-96dc-52f9249c5cc0-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trak_racer_CU.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-end text-end",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "The Story",
+            "content": "<p>Since 2008 Trak Racer has been designing and pioneering the best value, <strong>high-end gaming<\/strong> platforms and accessories. Trak Racer products are made from the highest quality materials that offer unsurpassed durability. To back this, <strong>Trak Racer<\/strong> offers warranties that give customers peace of mind over the long term.<\/p><p>From extensive research in both real-world motor-sports racing and game simulation, <strong>Trak Racer<\/strong> understands the importance of design, cutting-edge engineering and knowing what it takes to give you an edge over your competition.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "21f27826-65de-466d-ac6b-4f5f0469c1a2": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19949577765152__affc25ae-9874-4027-96dc-52f9249c5cc0-image-1",
+        "21f27826-65de-466d-ac6b-4f5f0469c1a2"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "92382605-ba9f-49ab-942b-e3f20c55c121": {
       "type": "rich-text",
       "blocks": {
@@ -235,6 +389,10 @@
     "18cd8f98-a7a2-474e-8da7-3f838234015c",
     "80af0649-6045-44c4-9aa2-1c35177cf708",
     "76d10fe2-9e1c-4a61-81af-44c29548f045",
+    "9658970e-7d44-443c-ad85-3cee38627e87",
+    "168b2eea-e972-437e-a81e-ff1b4974cd93",
+    "d3e18bcc-a487-4966-9991-3052e896f3d0",
+    "affc25ae-9874-4027-96dc-52f9249c5cc0",
     "92382605-ba9f-49ab-942b-e3f20c55c121",
     "5fb41665-db22-4518-8ea6-6634754a72e2",
     "1a9107c8-3fa1-47c1-a168-58d7817e23e8"
