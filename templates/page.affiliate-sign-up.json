@@ -381,7 +381,7 @@
         "b5cbb553-4ec2-4037-8f5d-11cc28db8f71": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/squish.jpg",
+            "image": "shopify:\/\/shop_images\/affiliate_asset.jpg",
             "width_mode": "custom",
             "max_width": 600,
             "mobile_max_width": 400
@@ -404,7 +404,7 @@
         "template--19929120407840__0eafae26-2d5a-4952-a0c2-ef7e8c7c666a-168963821754be554b-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>There's so many different ways to earn! Utilise your existing channels to reach more clients and the endless potential!<\/p><h6>✔️ Share With Your Inner Circle<\/h6><h6>✔️ Write a Blog Post<\/h6><h6>✔️ Spread the Word on Social<\/h6><h6>✔️ Publish Educational Content<\/h6><h6>🔻Run Digital Campaigns<\/h6><h6>🔻 Get Your Clients Onboard<\/h6>"
+            "content": "<p>There's so many different ways to earn! Utilise your existing channels to reach more clients and the endless potential!<\/p><h6>🔻 Share With Your Inner Circle<\/h6><h6>🔻 Write a Blog Post<\/h6><h6>🔻 Spread the Word on Social<\/h6><h6>🔻 Publish Educational Content<\/h6><h6>🔻Run Digital Campaigns<\/h6><h6>🔻 Get Your Clients Onboard<\/h6>"
           }
         },
         "c0285ff9-23b8-4955-a78d-430e797d880c": {
@@ -430,7 +430,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "start",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
