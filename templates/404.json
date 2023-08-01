@@ -1,1 +1,34 @@
-{"sections":{"main":{"type":"main-not-found","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-not-found",
+      "settings": {
+      }
+    },
+    "9cc20092-b55c-47cb-b17f-14ca1f72bf23": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "full_width": true,
+        "products_count": 6,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9cc20092-b55c-47cb-b17f-14ca1f72bf23"
+  ]
+}
