@@ -595,7 +595,7 @@
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3"
       ],
       "custom_css": [
-        "template div {text-align: left;}"
+        "body {text-align: left;}"
       ],
       "settings": {
         "full_width": true,
