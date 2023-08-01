@@ -11,7 +11,12 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h4"
+          }
+        },
+        "3d8a178e-4414-47ed-a135-2765af91549a": {
+          "type": "sku",
+          "settings": {
           }
         },
         "badges": {
@@ -22,7 +27,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "rating": {
@@ -79,6 +84,12 @@
             "text_color": ""
           }
         },
+        "5820ccae-e759-4a4c-9e1b-fa1bf19e1157": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -113,6 +124,7 @@
       "block_order": [
         "vendor",
         "title",
+        "3d8a178e-4414-47ed-a135-2765af91549a",
         "badges",
         "price",
         "rating",
@@ -123,6 +135,7 @@
         "variant_picker",
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
+        "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "2797188b-937d-4dd8-819a-7276e6bfd016"
