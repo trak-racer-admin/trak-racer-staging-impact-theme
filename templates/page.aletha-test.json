@@ -6,6 +6,7 @@
         "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/bouq_cat.jpg",
             "column_size": "3",
             "title": "What do you think of your Trak Racer simulator?",
             "heading_tag": "h5",
@@ -19,7 +20,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "How do you use the simulator in your training for real life racing and\/or day-to-day sim racing?",
+            "title": "How do you use the simulator in your training for sim racing?",
             "heading_tag": "h5",
             "content": "<p>I occasionally go to Go Karting and racing in my rig on different simulators has really helped with real life skills, it a very similar experience except I don't get the same bruises in my rig, haha! Seriously though, being in the rig is a real workout, I practice up to 1 hour every evening when I am not in the actual races, race stints can last anything between 30 to 60mins and the let's just say they get your heart racing and your weat glands fully activated! My last race was just over the weekend it was the 4.5 hours LFM endurance race at Spa, we started P41 and arrived P3, that was a serious challenge both physically and mentally!<\/p>",
             "link_url": "",
@@ -30,6 +31,7 @@
         "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-3": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/aletha_1.jpg",
             "column_size": "3",
             "title": "What are your top 3 games and tracks to race on?",
             "heading_tag": "h5",
