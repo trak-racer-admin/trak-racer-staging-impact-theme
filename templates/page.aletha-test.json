@@ -1,5 +1,63 @@
 {
   "sections": {
+    "e8ac128d-1fab-40e0-91d9-a8faa75cbf43": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "What do you think of your Trak Racer simulator?",
+            "heading_tag": "h5",
+            "content": "<p>I love my Trak Racer rig, I still remember the buzz I got when I sat 2 years ago in my first Trak Racer rig, the RS6, it was magical like having my own racing sports car in my flat... I still get the same buzz when seating in my TR80, it really make the immersion 100% better plus the rig looks extremely so good!<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "How do you use the simulator in your training for real life racing and\/or day-to-day sim racing?",
+            "heading_tag": "h5",
+            "content": "<p>I occasionally go to Go Karting and racing in my rig on different simulators has really helped with real life skills, it a very similar experience except I don't get the same bruises in my rig, haha! Seriously though, being in the rig is a real workout, I practice up to 1 hour every evening when I am not in the actual races, race stints can last anything between 30 to 60mins and the let's just say they get your heart racing and your weat glands fully activated! My last race was just over the weekend it was the 4.5 hours LFM endurance race at Spa, we started P41 and arrived P3, that was a serious challenge both physically and mentally!<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "What are your top 3 games and tracks to race on?",
+            "heading_tag": "h5",
+            "content": "<p>Assetto Corsa Competizione (I spend all of my time on the aforementioned!), Assetto Corsa and Dirt Rally 2.0.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-1",
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-2",
+        "template--19948262129952__e8ac128d-1fab-40e0-91d9-a8faa75cbf43-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Q&A",
+        "title": "Aléthéa Boucq",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -60,6 +118,35 @@
         "background": "",
         "background_gradient": "linear-gradient(180deg, rgba(121, 21, 252, 0.49) 2%, rgba(231, 195, 249, 1) 100%)",
         "text_color": ""
+      }
+    },
+    "f44a0f89-b71f-497a-8171-a3890f1fca1d": {
+      "type": "press",
+      "blocks": {
+        "template--19948262129952__f44a0f89-b71f-497a-8171-a3890f1fca1d-quote-1": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Just a girl navigating the world, one apex at the time… 🏁♥️",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__f44a0f89-b71f-497a-8171-a3890f1fca1d-quote-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "c3b2d230-8173-40d6-a038-15e4b9118aac": {
@@ -218,13 +305,76 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "66aa0364-d52f-4069-a49e-ca06d675c270": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+          }
+        },
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-1",
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-2",
+        "template--19948262129952__66aa0364-d52f-4069-a49e-ca06d675c270-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
+    "e8ac128d-1fab-40e0-91d9-a8faa75cbf43",
     "main",
     "b868cc83-340c-4347-9e5f-f93a40077060",
+    "f44a0f89-b71f-497a-8171-a3890f1fca1d",
     "c3b2d230-8173-40d6-a038-15e4b9118aac",
     "76ba76bf-d526-45a9-af1a-c0725615d83e",
-    "350b2fbd-e4b9-488c-9a43-a1e4aae1612b"
+    "350b2fbd-e4b9-488c-9a43-a1e4aae1612b",
+    "66aa0364-d52f-4069-a49e-ca06d675c270"
   ]
 }
