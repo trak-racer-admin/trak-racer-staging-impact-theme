@@ -85,12 +85,6 @@
             "payment_button_text_color": ""
           }
         },
-        "2feb5056-48de-4c75-b21d-eaeadecae15b": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
-          }
-        },
         "4163194c-df27-4c47-bd48-39a7883f8a23": {
           "type": "button",
           "settings": {
@@ -101,6 +95,12 @@
             "stretch": true,
             "background": "#a29ca6",
             "text_color": "#ffffff"
+          }
+        },
+        "2feb5056-48de-4c75-b21d-eaeadecae15b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
           }
         },
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
@@ -154,8 +154,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "4163194c-df27-4c47-bd48-39a7883f8a23",
+        "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
@@ -236,7 +236,7 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
             "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
             "heading_tag": "h2",
             "button_text": "",
@@ -259,7 +259,7 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "The TR160 is built to withstand heavy-duty usage. Don't hold back! Test your skills and push your limits on the track. The rig's durability and reliability will support you in reaching new heights in your racing performance",
-            "title": "Push Your Limits",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
