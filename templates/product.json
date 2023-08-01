@@ -106,19 +106,6 @@
           "settings": {
             "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
           }
-        },
-        "2797188b-937d-4dd8-819a-7276e6bfd016": {
-          "type": "offer",
-          "settings": {
-            "text_alignment": "start",
-            "icon_position": "aligned",
-            "icon": "picto-coupon",
-            "icon_width": 24,
-            "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#c7c4c4",
-            "text_color": "#000000"
-          }
         }
       },
       "block_order": [
@@ -137,8 +124,7 @@
         "a9f02b4b-5792-465e-a882-e198dbd35643",
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "buy_buttons",
-        "ceb055d8-5897-4811-906d-0fdad123d02c",
-        "2797188b-937d-4dd8-819a-7276e6bfd016"
+        "ceb055d8-5897-4811-906d-0fdad123d02c"
       ],
       "settings": {
         "full_width": true,
