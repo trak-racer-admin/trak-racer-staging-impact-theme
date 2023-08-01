@@ -69,6 +69,16 @@
           "settings": {
           }
         },
+        "a9f02b4b-5792-465e-a882-e198dbd35643": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -112,6 +122,7 @@
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "variant_picker",
         "quantity_selector",
+        "a9f02b4b-5792-465e-a882-e198dbd35643",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "2797188b-937d-4dd8-819a-7276e6bfd016"
