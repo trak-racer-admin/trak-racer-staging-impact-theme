@@ -258,7 +258,7 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "The TR160 is built to withstand heavy-duty usage. Don't hold back! Test your skills and push your limits on the track. The rig's durability and reliability will support you in reaching new heights in your racing performance",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
             "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
             "heading_tag": "h2",
             "button_text": "",
