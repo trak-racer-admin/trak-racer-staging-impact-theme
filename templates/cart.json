@@ -1,1 +1,44 @@
-{"sections":{"main":{"type":"main-cart","blocks":{"totals":{"type":"totals","settings":{}},"cart_note":{"type":"cart_note","settings":{}},"checkout_button":{"type":"checkout_button","settings":{}}},"block_order":["totals","cart_note","checkout_button"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "blocks": {
+        "totals": {
+          "type": "totals",
+          "settings": {
+            "show_order_weight": false,
+            "show_shipping_text": true
+          }
+        },
+        "cart_note": {
+          "type": "cart_note",
+          "settings": {
+          }
+        },
+        "checkout_button": {
+          "type": "checkout_button",
+          "settings": {
+          }
+        },
+        "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3": {
+          "type": "accelerated_buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "totals",
+        "cart_note",
+        "checkout_button",
+        "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3"
+      ],
+      "settings": {
+        "show_shipping_estimator": true,
+        "show_payment_icons": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
