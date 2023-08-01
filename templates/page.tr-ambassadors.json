@@ -1,19 +1,85 @@
 {
   "sections": {
+    "66ff8e33-de98-4229-a950-485dbbd244ef": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Formula Drift"
+          }
+        },
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dan Burkett",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Dan has beat all odds pioneering his way through drifting from ProAm to Pro2 and now entering his 8th year in the most competitive drift series in the world as a Formula Drift Pro1 driver. <\/p>"
+          }
+        },
+        "ded39dad-325d-4b87-bf7b-f78baefe53e5": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn More",
+            "url": "",
+            "background": "#d5333b",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-subheading-1",
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-heading-1",
+        "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-richtext-1",
+        "ded39dad-325d-4b87-bf7b-f78baefe53e5"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/dan_burkett.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 49
+      }
+    },
     "e49a2d8b-b8de-42f9-82a5-abd3619a6cb7": {
       "type": "multi-column",
       "blocks": {
-        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0": {
+        "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
+            "image": "shopify:\/\/shop_images\/owen_trinkler.jpg",
             "column_size": "3",
-            "title": "Aléthéa Boucq",
+            "title": "Owen Trinkler",
             "heading_tag": "h5",
-            "content": "<p>Sim Racing Content Creator<br\/><a href=\"https:\/\/www.youtube.com\/@Theamusante\/about\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/@Theamusante\/about\">YouTube<\/a><\/p>",
+            "content": "<p>Professional NASCAR Driver<\/p>",
             "link_url": "",
-            "link_text": "Learn More",
-            "link_style": "button"
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charlie_martin.png",
+            "column_size": "3",
+            "title": "Charlie Martin",
+            "heading_tag": "h5",
+            "content": "<p>Professional Race Car Driver<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1": {
@@ -29,6 +95,19 @@
             "link_style": "link"
           }
         },
+        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
+            "column_size": "3",
+            "title": "Aléthéa Boucq",
+            "heading_tag": "h5",
+            "content": "<p>Sim Racing Content Creator<\/p>",
+            "link_url": "",
+            "link_text": "Learn More",
+            "link_style": "button"
+          }
+        },
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-2": {
           "type": "item",
           "settings": {
@@ -39,30 +118,6 @@
             "content": "<p>Professional Rally Car Driver<\/p>",
             "link_url": "",
             "link_text": "Learn More",
-            "link_style": "link"
-          }
-        },
-        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_url": "",
-            "link_text": "",
             "link_style": "link"
           }
         },
@@ -77,15 +132,54 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "c39cbd99-43b8-49dc-8eb9-a1e28193282c": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "905d3ea6-8950-4e01-b337-e4f11a48cf42": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "f8eaaf53-f0ff-4b05-bb61-e64e58e37209": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
-        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0",
-        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1",
-        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-2",
-        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704",
         "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d",
-        "1ef068c6-b8f3-4e36-a03b-d3beeb0f55b4"
+        "ea9e6928-e90e-4372-bfe1-21fbc1d8b704",
+        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1",
+        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0",
+        "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-2",
+        "1ef068c6-b8f3-4e36-a03b-d3beeb0f55b4",
+        "c39cbd99-43b8-49dc-8eb9-a1e28193282c",
+        "905d3ea6-8950-4e01-b337-e4f11a48cf42",
+        "f8eaaf53-f0ff-4b05-bb61-e64e58e37209"
       ],
       "settings": {
         "full_width": true,
@@ -389,72 +483,15 @@
         "background_gradient": "linear-gradient(180deg, rgba(245, 168, 255, 0.57), rgba(214, 172, 172, 0.57) 37.05%, rgba(255, 107, 107, 0.57) 74%, rgba(247, 105, 105, 0.57) 100%)",
         "text_color": ""
       }
-    },
-    "2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "d0e149c6-5c06-4a88-9032-429396d0b083": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Luke_King.png",
-            "width_mode": "custom",
-            "max_width": 600,
-            "mobile_max_width": 400
-          }
-        },
-        "42a19d99-f07c-46de-b4e3-0b35279e73f2": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "d0e149c6-5c06-4a88-9032-429396d0b083",
-        "42a19d99-f07c-46de-b4e3-0b35279e73f2",
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-0",
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-1",
-        "template--19607694082336__2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac-168930413824b8f502-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(247, 105, 105, 0.57), rgba(250, 67, 30, 0.57) 13%, rgba(250, 19, 19, 0.69) 27%, rgba(255, 4, 4, 0.83) 49%, rgba(16, 148, 255, 0.83) 69%, rgba(32, 55, 255, 0.57) 100%)",
-        "text_color": ""
-      }
     }
   },
   "order": [
+    "66ff8e33-de98-4229-a950-485dbbd244ef",
     "e49a2d8b-b8de-42f9-82a5-abd3619a6cb7",
     "45845d1a-dce2-48e3-85d2-f6e32da7d8a9",
     "main",
     "cf65da16-5bdc-455f-b2e9-ed9e7ce29213",
     "cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703",
-    "2af97261-3df1-43d6-95bb-8ef44eb07033",
-    "2c9ff5bb-f5be-4e0f-ba1c-5b6eb54b86ac"
+    "2af97261-3df1-43d6-95bb-8ef44eb07033"
   ]
 }
