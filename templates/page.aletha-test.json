@@ -88,6 +88,68 @@
         "button_text_color": ""
       }
     },
+    "921598cf-852a-4a37-8be9-249139fd7c0c": {
+      "type": "logo-list",
+      "blocks": {
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-1",
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-2",
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-3",
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-4",
+        "template--19948262129952__921598cf-852a-4a37-8be9-249139fd7c0c-logo-5"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Logo list",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "e8ac128d-1fab-40e0-91d9-a8faa75cbf43": {
       "type": "multi-column",
       "disabled": true,
@@ -404,6 +466,7 @@
   "order": [
     "dfbdbf80-fe56-4623-9ff0-f028245f94ae",
     "566a25c8-f327-4817-b70e-415e35943759",
+    "921598cf-852a-4a37-8be9-249139fd7c0c",
     "e8ac128d-1fab-40e0-91d9-a8faa75cbf43",
     "main",
     "b868cc83-340c-4347-9e5f-f93a40077060",
