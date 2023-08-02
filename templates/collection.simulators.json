@@ -40,11 +40,9 @@
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "{{ collection.metafields.custom_fields.featured_collection_1.value }}",
         "products": [
-          "800mm-long-cockpit-mounted-single-monitor-stand-1",
-          "cockpit-mounted-monitor-stand-with-triple-monitor-mount-1",
-          "copy-of-tr-one-fully-adjustable-direct-fit-wheel-mount-for-simucube-vrs-accuforce-osw-mige-etc"
+
         ],
         "full_width": true,
         "stack_products": false,
