@@ -93,6 +93,7 @@
     },
     "1eb979a5-d0ab-45bd-adb5-af4137be54b4": {
       "type": "media-grid",
+      "disabled": true,
       "blocks": {
         "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1": {
           "type": "image",
