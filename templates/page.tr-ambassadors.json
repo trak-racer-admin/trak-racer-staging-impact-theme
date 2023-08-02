@@ -66,7 +66,7 @@
             "content": "<p>Professional NASCAR Driver<\/p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "ea9e6928-e90e-4372-bfe1-21fbc1d8b704": {
@@ -79,7 +79,7 @@
             "content": "<p>Professional Race Car Driver<\/p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-1": {
@@ -92,7 +92,7 @@
             "content": "<p>Professional Race Car Driver<\/p>",
             "link_url": "",
             "link_text": "Learn More",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "template--19607694082336__e49a2d8b-b8de-42f9-82a5-abd3619a6cb7-1689639056ddd02bde-0": {
@@ -118,11 +118,12 @@
             "content": "<p>Professional Rally Car Driver<\/p>",
             "link_url": "",
             "link_text": "Learn More",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "1ef068c6-b8f3-4e36-a03b-d3beeb0f55b4": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
@@ -135,6 +136,7 @@
         },
         "c39cbd99-43b8-49dc-8eb9-a1e28193282c": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
@@ -147,6 +149,7 @@
         },
         "905d3ea6-8950-4e01-b337-e4f11a48cf42": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
@@ -159,6 +162,7 @@
         },
         "f8eaaf53-f0ff-4b05-bb61-e64e58e37209": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
