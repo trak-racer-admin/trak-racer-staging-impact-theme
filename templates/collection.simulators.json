@@ -40,10 +40,8 @@
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399": {
       "type": "featured-collection",
       "settings": {
-        "collection": "racing-simulators",
-        "products": [
-
-        ],
+        "collection": "",
+        "products": "{{ section.settings.collection.metafields.custom.test_product_metafield_for_collections.value }}",
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": true,
