@@ -57,7 +57,7 @@
           "settings": {
             "column_size": "1.5",
             "title": "{{ collection.metafields.custom.brand_biography.value.brand_name.value }}",
-            "heading_tag": "h4",
+            "heading_tag": "h2",
             "content": "{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}",
             "link_url": "",
             "link_text": "",
