@@ -58,7 +58,7 @@
             "column_size": "1.5",
             "title": "{{ collection.metafields.custom.brand_biography.value.brand_name.value }}",
             "heading_tag": "h2",
-            "content": "{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}",
+            "content": "<p>{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -70,14 +70,14 @@
         "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "start",
         "subheading": "About",
-        "title": "",
+        "title": "Cube Controls",
         "content": "",
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
       }
