@@ -144,6 +144,52 @@
         "input_text_color": ""
       }
     },
+    "3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7": {
+      "type": "tabs",
+      "blocks": {
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "content": "{{ product.metafields.custom_fields.description_tab_1 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Features",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Compatibility",
+            "content": "{{ product.metafields.custom_fields.compatibility_for_wheel_mounts_tab_3 | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-1",
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-2",
+        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "subheading": "About",
+        "title": "The {{ product.title }}",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -171,6 +217,7 @@
   },
   "order": [
     "main",
+    "3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7",
     "related-products"
   ]
 }
