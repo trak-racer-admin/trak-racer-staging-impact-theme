@@ -27,7 +27,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
@@ -73,7 +73,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "background": "#ffffff",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
       }
