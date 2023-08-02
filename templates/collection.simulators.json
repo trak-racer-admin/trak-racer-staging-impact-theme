@@ -40,7 +40,7 @@
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399": {
       "type": "featured-collection",
       "settings": {
-        "collection": "{{ collection.metafields.custom_fields.featured_collection_1.value }}",
+        "collection": "{{ collection.metafields.custom.collection_sections.value.collection_1.value }}",
         "products": [
 
         ],
@@ -67,7 +67,7 @@
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "{{ collection.metafields.custom.collection_sections.value.collection_2.value }}",
         "products": [
 
         ],
@@ -94,7 +94,7 @@
     "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "{{ collection.metafields.custom.collection_sections.value.collection_3.value }}",
         "products": [
 
         ],
