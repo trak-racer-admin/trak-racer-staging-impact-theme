@@ -170,21 +170,12 @@
             "content": "",
             "page": ""
           }
-        },
-        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-3": {
-          "type": "tab",
-          "settings": {
-            "title": "Compatibility",
-            "content": "{{ product.metafields.custom_fields.compatibility_for_wheel_mounts_tab_3 | metafield_tag }}",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-1",
         "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-2",
-        "63e0b31b-f578-4b30-8c58-793d74489d18",
-        "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-3"
+        "63e0b31b-f578-4b30-8c58-793d74489d18"
       ],
       "settings": {
         "full_width": true,
