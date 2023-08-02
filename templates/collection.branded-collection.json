@@ -56,7 +56,7 @@
           "type": "item",
           "settings": {
             "column_size": "1.5",
-            "title": "{{ collection.metafields.custom.brand_biography.value.brand_name.value }}",
+            "title": "",
             "heading_tag": "h2",
             "content": "<p>{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}<\/p>",
             "link_url": "",
