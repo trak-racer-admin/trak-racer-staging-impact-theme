@@ -2,14 +2,13 @@
   "sections": {
     "banner": {
       "type": "collection-banner",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
         "enable_parallax": true,
         "show_collection_title": true,
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "collection_title_size": "h2",
         "image_size": "auto",
         "image": "{{ collection.image }}",
