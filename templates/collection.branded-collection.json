@@ -55,7 +55,7 @@
         "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3": {
           "type": "item",
           "settings": {
-            "column_size": "3",
+            "column_size": "1.5",
             "title": "{{ collection.metafields.custom.brand_biography.value.brand_name.value }}",
             "heading_tag": "h4",
             "content": "{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}",
