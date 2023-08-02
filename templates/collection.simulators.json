@@ -128,8 +128,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -142,8 +142,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -156,8 +156,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -170,8 +170,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -186,7 +186,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_collections": true,
+        "stack_collections": false,
         "collections_per_row": 4,
         "show_progress_bar": false,
         "subheading": "",
