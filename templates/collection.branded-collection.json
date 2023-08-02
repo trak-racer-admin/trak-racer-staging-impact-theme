@@ -2,17 +2,15 @@
   "sections": {
     "banner": {
       "type": "collection-banner",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
         "enable_parallax": true,
         "show_collection_title": true,
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "collection_title_size": "h2",
         "image_size": "auto",
-        "image": "{{ collection.image }}",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "featured_product": "",
@@ -37,10 +35,57 @@
         "show_filter_values_count": true,
         "open_first_filter_group": false
       }
+    },
+    "9670575c-5e07-4dcf-8e8d-0dda47109965": {
+      "type": "multi-column",
+      "blocks": {
+        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ collection.metafields.custom.brand_biography.value.brand_logo.value }}",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "{{ collection.metafields.custom.brand_biography.value.brand_name.value }}",
+            "heading_tag": "h4",
+            "content": "{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-1",
+        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "banner",
-    "main"
+    "main",
+    "9670575c-5e07-4dcf-8e8d-0dda47109965"
   ]
 }
