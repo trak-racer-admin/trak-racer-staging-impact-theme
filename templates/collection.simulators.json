@@ -132,7 +132,7 @@
             "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1": {
@@ -146,7 +146,7 @@
             "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2": {
@@ -160,7 +160,7 @@
             "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "dbd0fcf9-c49d-4f20-98af-16a9908d2257": {
