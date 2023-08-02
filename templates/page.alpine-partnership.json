@@ -82,7 +82,7 @@
       ],
       "settings": {
         "full_width": true,
-        "images_layout": "scattered",
+        "images_layout": "stacked",
         "collage_images_alignment": "middle",
         "background": "",
         "background_gradient": "",
