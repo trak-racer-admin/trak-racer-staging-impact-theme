@@ -8,7 +8,7 @@
         "enable_parallax": true,
         "show_collection_title": true,
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "collection_title_size": "h2",
         "image_size": "auto",
         "mobile_text_position": "place-self-center text-center",
