@@ -26,8 +26,9 @@
         "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-1": {
           "type": "item",
           "settings": {
+            "image": "{{ collection.metafields.custom.featured_image_1.value }}",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "{{ collection.metafields.custom.featured_collection_title_1.value }}",
             "link_url": "{{ collection.metafields.custom.featured_collection_link_1.value }}",
             "background": "",
             "text_color": "#ffffff",
@@ -38,8 +39,9 @@
         "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-2": {
           "type": "item",
           "settings": {
+            "image": "{{ collection.metafields.custom.featured_image_2.value }}",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "{{ collection.metafields.custom.featured_collection_title_2.value }}",
             "link_url": "{{ collection.metafields.custom.featured_collection_link_2.value }}",
             "background": "",
             "text_color": "#ffffff",
@@ -50,8 +52,9 @@
         "template--19698789712160__0eff9e1f-1bfa-47d2-829e-cb50ccd5e585-item-3": {
           "type": "item",
           "settings": {
+            "image": "{{ collection.metafields.custom.featured_image_3.value }}",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "{{ collection.metafields.custom.featured_collection_title_3.value }}",
             "link_url": "{{ collection.metafields.custom.featured_collection_link_3.value }}",
             "background": "",
             "text_color": "#ffffff",
@@ -62,8 +65,9 @@
         "e3043619-8e61-408d-845d-ed5e7b32eb85": {
           "type": "item",
           "settings": {
+            "image": "{{ collection.metafields.custom.featured_image_4.value }}",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "{{ collection.metafields.custom.featured_collection_title_4.value }}",
             "link_url": "{{ collection.metafields.custom.featured_collection_link_4.value }}",
             "background": "",
             "text_color": "#ffffff",
@@ -74,8 +78,9 @@
         "fb6db2a5-3995-4f5a-9cb5-3e06e84c7f1a": {
           "type": "item",
           "settings": {
+            "image": "{{ collection.metafields.custom.featured_image_5.value }}",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "{{ collection.metafields.custom.featured_collection_title_5.value }}",
             "link_url": "{{ collection.metafields.custom.featured_collection_link_5.value }}",
             "background": "",
             "text_color": "#ffffff",
