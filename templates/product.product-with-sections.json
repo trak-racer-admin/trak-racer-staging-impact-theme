@@ -150,7 +150,7 @@
         "template--20269392494880__d75aff1d-94fd-4f2b-8f4c-1d944b448ea9-tab-1": {
           "type": "tab",
           "settings": {
-            "title": "Tab 1",
+            "title": "Description",
             "content": "<p>Use this text to share information about your brand with your customers.<\/p>",
             "page": ""
           }
@@ -158,7 +158,7 @@
         "template--20269392494880__d75aff1d-94fd-4f2b-8f4c-1d944b448ea9-tab-2": {
           "type": "tab",
           "settings": {
-            "title": "Tab 2",
+            "title": "Features",
             "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "page": ""
           }
@@ -166,7 +166,7 @@
         "template--20269392494880__d75aff1d-94fd-4f2b-8f4c-1d944b448ea9-tab-3": {
           "type": "tab",
           "settings": {
-            "title": "Tab 3",
+            "title": "Specifications",
             "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
             "page": ""
           }
