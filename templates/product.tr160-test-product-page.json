@@ -25,12 +25,6 @@
             "show_taxes_notice": true
           }
         },
-        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
-          "type": "inventory",
-          "settings": {
-            "low_inventory_threshold": 0
-          }
-        },
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
           "type": "liquid",
           "settings": {
@@ -72,6 +66,12 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+          }
+        },
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
           }
         },
         "buy_buttons": {
@@ -145,7 +145,6 @@
         "da1b0992-39dd-4453-845c-0715f56f5929",
         "badges",
         "price",
-        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
@@ -153,6 +152,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
         "quantity_selector",
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
         "buy_buttons",
         "4163194c-df27-4c47-bd48-39a7883f8a23",
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
