@@ -2,11 +2,276 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "92dd3ab7-bfac-40c2-b594-956f6b81da9c": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Reccommended Wheelbase Torque",
+            "heading_2": "Approx Assembly Time",
+            "heading_3": "GT & Formula Adjustment Time",
+            "heading_4": "Wheel Mount Rigidity",
+            "heading_5": "Pedal Tray Adjustability",
+            "heading_6": "Assembled Dimensions",
+            "heading_7": "Weight",
+            "heading_8": "Comment",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "test",
+            "value_1": "<p>Up to 20Nm<\/p>",
+            "value_2": "<p>7 Hours<\/p>",
+            "value_3": "<p>30 Minutes (Requires hybrid pedal system)<\/p>",
+            "value_4": "<p>Strong with side mounted wheel uprights<\/p>",
+            "value_5": "<p>High<\/p>",
+            "value_6": "<p>660mm wide x 1208mm long (25.95in x 47.55in)<\/p>",
+            "value_7": "<p>47kgs (103lbs)<\/p>",
+            "value_8": "<p>A great cockpit that offers huge adjustment in the pedal mount and is also compatible with the TR One Wheel Mounting System (so you can just swap components out when you upgrade)!<\/p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "alpine-racing-trx-2023-livery",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "d83f37e5-8509-4982-97d5-be4393879fb3": {
+          "type": "values",
+          "settings": {
+            "product": "tr160-mk4-racing-simulator",
+            "value_1": "",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-headings-1",
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-1",
+        "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-2",
+        "d83f37e5-8509-4982-97d5-be4393879fb3"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare Our",
+        "title": "Aluminium Profile Rigs",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "Shop Now",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 10,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "compare",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "53c91761-92d1-4902-8aea-48c2af0f38be": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-headings-1",
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-1",
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare Our",
+        "title": "Tubular Profile Rigs",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 8,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "compare",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "92dd3ab7-bfac-40c2-b594-956f6b81da9c",
+    "53c91761-92d1-4902-8aea-48c2af0f38be"
   ]
 }
