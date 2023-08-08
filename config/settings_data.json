@@ -63,14 +63,8 @@
         "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.embeded\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
         "disabled": false,
         "settings": {
-          "selected_theme": "impact",
+          "selected_theme": "dawn",
           "no_block_id": false
-        }
-      },
-      "5439026248262864547": {
-        "type": "shopify:\/\/apps\/preorder-globo-restock\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
-        "disabled": false,
-        "settings": {
         }
       }
     }

@@ -107,7 +107,7 @@
             "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
           }
         },
-        "79cc5259-143f-40e5-b02d-653a8d038698": {
+        "270d505b-2383-4538-83f6-145c2f2e47ed": {
           "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
           "settings": {
           }
@@ -130,7 +130,7 @@
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
-        "79cc5259-143f-40e5-b02d-653a8d038698"
+        "270d505b-2383-4538-83f6-145c2f2e47ed"
       ],
       "settings": {
         "full_width": true,
