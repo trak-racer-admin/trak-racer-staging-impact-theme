@@ -621,14 +621,13 @@
       "settings": {
         "recommendations_count": 6,
         "products": [
-          "test-2",
-          "test"
+
         ],
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
+        "stack_products": false,
+        "show_progress_bar": true,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
+        "products_per_row_desktop": 5,
         "subheading": "",
         "title": "You may also like",
         "content": "",
