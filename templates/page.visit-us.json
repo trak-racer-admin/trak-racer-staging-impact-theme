@@ -14,18 +14,25 @@
           "type": "heading",
           "settings": {
             "text": "Visit our Melbourne Showroom",
-            "heading_tag": "h1",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
+          }
+        },
+        "b8da8809-03fc-4418-8661-a0ff5405b050": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Want to try out a rig? Visit us in Surrey Hills to have a go! We've got all our rigs up and ready for you to test and our helpful team members will be happy to answer any questions you might have so you can make the right choice.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--19951874703648__89b2b9f6-e36b-4417-8e92-880e19bdc963-1689657426cfbdcd1f-1"
+        "template--19951874703648__89b2b9f6-e36b-4417-8e92-880e19bdc963-1689657426cfbdcd1f-1",
+        "b8da8809-03fc-4418-8661-a0ff5405b050"
       ],
       "settings": {
         "full_width": true,
-        "content_width": "large",
+        "content_width": "medium",
         "text_position": "center",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
@@ -38,7 +45,6 @@
         "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR_MEL.jpg",
             "column_size": "1.5",
             "title": "",
             "heading_tag": "h4",
