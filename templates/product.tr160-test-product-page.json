@@ -50,7 +50,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>The ultimate heavy-duty rig<\/li><li>Completely customise your experience<\/li><li>Motion compatible and ready to upgrade<\/li><\/ul>"
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -88,7 +88,7 @@
         "4163194c-df27-4c47-bd48-39a7883f8a23": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "{{ product.metafields.custom_fields.product_manual.value }}",
             "text": "Download Manual",
             "size": "xl",
             "style": "outline",
@@ -215,12 +215,12 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/slide_1_mb.jpg",
+            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "The TR160 is designed to have best-in-class stability. The thicker aluminum profile walls and robust construction make it the strongest rig in its class. Embrace this strength and let it boost your confidence on the track.",
+            "subheading": "",
             "title": "Focus on Strength and Stability",
             "heading_tag": "h2",
             "button_text": "",
