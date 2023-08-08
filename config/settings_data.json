@@ -51,7 +51,29 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/globo-product-options-variant\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1519107564253711417": {
+        "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.embeded\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+        "disabled": false,
+        "settings": {
+          "selected_theme": "dawn",
+          "no_block_id": false
+        }
+      },
+      "5439026248262864547": {
+        "type": "shopify:\/\/apps\/preorder-globo-restock\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Sound": {
