@@ -14,7 +14,7 @@
           "type": "headings",
           "settings": {
             "heading_1": "Reccommended Wheelbase Torque",
-            "heading_2": "Approx Assembly Time",
+            "heading_2": "Assembly Time",
             "heading_3": "GT & Formula Adjustment Time",
             "heading_4": "Wheel Mount Rigidity",
             "heading_5": "Pedal Tray Adjustability",
@@ -96,7 +96,7 @@
           "settings": {
             "product": "tr160-mk4-racing-simulator",
             "value_1": "<p>Up to and over 25Nm<\/p>",
-            "value_2": "",
+            "value_2": "<p>Approximately 7 Hours<\/p>",
             "value_3": "",
             "value_4": "",
             "value_5": "",
