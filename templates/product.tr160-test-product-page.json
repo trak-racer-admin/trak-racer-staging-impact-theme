@@ -220,8 +220,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "",
-            "title": "Focus on Strength and Stability",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -237,8 +237,8 @@
         "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR-ONE_WM_a6f96332-ee58-4f9d-b02d-3d684a5bc785.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/TR-ONE_WM_BM.jpg",
+            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -259,8 +259,8 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide_3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/slide_3_mb.jpg",
+            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
