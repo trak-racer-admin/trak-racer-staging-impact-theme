@@ -374,8 +374,8 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>61.5kgs (135lbs)<\/p>",
-            "value_2": "<p>660mm wide x 1445mm long (25.98in x 56.88in)<\/p>",
+            "value_1": "<p>{{ block.settings.product.metafields.custom_fields.weight.value }}<\/p>",
+            "value_2": "<p>{{ block.settings.product.metafields.custom_fields.size.value }}<\/p>",
             "value_3": "<p>Approximately 7 Hours<\/p>",
             "value_4": "<p>Up to and over 25nm<\/p>",
             "value_5": "<p>200kgs (440lbs)<\/p>",
