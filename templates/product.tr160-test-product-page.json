@@ -79,7 +79,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#a5272c",
+            "atc_button_background": "#cc0101",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -172,7 +172,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(231, 29, 29, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
+        "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
