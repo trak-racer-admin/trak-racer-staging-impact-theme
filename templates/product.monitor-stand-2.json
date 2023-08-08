@@ -43,13 +43,13 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "collapse_content": false
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -91,10 +91,10 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-truck",
             "icon_width": 24,
             "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
             "background": "#ffb1b1",
             "text_color": "#6a0003"
           }
@@ -106,10 +106,10 @@
             "icon_position": "aligned",
             "icon": "picto-coupon",
             "icon_width": 24,
-            "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#eaf2ed",
-            "text_color": "#00a341"
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#6d6d6d",
+            "text_color": "#ffffff"
           }
         }
       },
