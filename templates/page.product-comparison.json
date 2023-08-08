@@ -158,14 +158,14 @@
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "Heading 1",
-            "heading_2": "Heading 2",
-            "heading_3": "Heading 3",
-            "heading_4": "Heading 4",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
+            "heading_1": "Reccommended Wheelbase Torque",
+            "heading_2": "Assembly Time",
+            "heading_3": "GT & Formula Adjustment Time",
+            "heading_4": "Wheel Mount Rigidity",
+            "heading_5": "Pedal Tray Adjustability",
+            "heading_6": "Assembled Dimensions",
+            "heading_7": "Weight",
+            "heading_8": "Comment",
             "heading_9": "",
             "heading_10": "",
             "heading_11": "",
@@ -183,7 +183,7 @@
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-1": {
           "type": "values",
           "settings": {
-            "product": "",
+            "product": "cockpit-mounted-dual-monitor-stand-up-to-80-displays",
             "value_1": "<p>Yes<\/p>",
             "value_2": "<p>Yes<\/p>",
             "value_3": "<p>No<\/p>",
@@ -211,11 +211,39 @@
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2": {
           "type": "values",
           "settings": {
-            "product": "",
+            "product": "cube-f-pro-black-formula-sim-racing-steering-wheel",
             "value_1": "<p>No<\/p>",
             "value_2": "<p>Yes<\/p>",
             "value_3": "<p>Yes<\/p>",
             "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "50f34497-5c83-4f0c-bea4-13db1cfa17a4": {
+          "type": "values",
+          "settings": {
+            "product": "cube-sp01-formula-style-sim-racing-pedal-set",
+            "value_1": "",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
             "value_5": "",
             "value_6": "",
             "value_7": "",
@@ -240,7 +268,8 @@
       "block_order": [
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-headings-1",
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-1",
-        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2"
+        "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2",
+        "50f34497-5c83-4f0c-bea4-13db1cfa17a4"
       ],
       "settings": {
         "full_width": true,
@@ -249,21 +278,21 @@
         "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "max_rows": 8,
         "view_all_text": "View all",
         "view_less_text": "View less",
         "view_product": "View",
         "viewing_product": "compare",
         "show_product_swatch": true,
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "chart_background": "",
+        "chart_background": "#ffffff",
         "chart_text_color": "",
         "chart_true_false_color": ""
       }
