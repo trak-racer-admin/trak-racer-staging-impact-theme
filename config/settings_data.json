@@ -66,18 +66,6 @@
           "selected_theme": "impact",
           "no_block_id": false
         }
-      },
-      "5439026248262864547": {
-        "type": "shopify:\/\/apps\/preorder-globo-restock\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "6279071938380501511": {
-        "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-        "disabled": true,
-        "settings": {
-        }
       }
     }
   },

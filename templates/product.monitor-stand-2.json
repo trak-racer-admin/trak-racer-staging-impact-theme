@@ -134,6 +134,52 @@
         "input_text_color": ""
       }
     },
+    "42cfae89-f339-41b7-ad57-432b17ace067": {
+      "type": "tabs",
+      "blocks": {
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "content": "{{ product.metafields.custom_fields.description_tab_1 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Features",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Dimensions & Specifications",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-1",
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-2",
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -161,6 +207,7 @@
   },
   "order": [
     "main",
+    "42cfae89-f339-41b7-ad57-432b17ace067",
     "related-products"
   ]
 }
