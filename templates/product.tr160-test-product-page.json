@@ -405,9 +405,9 @@
       ],
       "settings": {
         "full_width": true,
-        "subheading": "The Forever Rig",
-        "title": "TR160 Specifications",
-        "content": "<p>Unleash the ultimate racing experience with the TR160 Racing Simulator. Its stability and adaptability are unmatched. Feel the exhilarating movements of race cars through motion simulation. With robust construction and versatile accessories, this cockpit evolves with you. Dominate the track, push your limits, and revolutionize your racing adventures.<\/p>",
+        "subheading": "{{ product.metafields.custom_fields.product_specification_headline.value }}",
+        "title": "{{ product.title }} Specifications",
+        "content": "",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
