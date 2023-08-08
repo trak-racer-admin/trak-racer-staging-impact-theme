@@ -138,6 +138,11 @@
             "background": "#ffffff",
             "text_color": "#545454"
           }
+        },
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -158,7 +163,8 @@
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
-        "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
       ],
       "settings": {
         "full_width": true,
