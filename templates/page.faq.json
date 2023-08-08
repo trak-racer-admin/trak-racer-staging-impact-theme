@@ -174,11 +174,88 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "157ba779-c8f8-429c-bd66-cd31fc6ae863": {
+      "type": "faq",
+      "blocks": {
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "What is Trak Racer’s Warranty Policy?",
+            "content": "<p>All Trak Racer products are warranted for a minimum of 12 months and up to 5 years on specific parts. Trak Racer products are however designed to last far beyond the warranty period. For all warranty concerns please contact us at support@trakracer.com.<\/p>"
+          }
+        },
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-3": {
+          "type": "item",
+          "settings": {
+            "title": "If I’ve changed my mind, what do I do?",
+            "content": "<p>If returning due to a change of mind the items must not be used and returned within 14 days of receiving. If outside the 14-day return period thereis a 10% restocking fee. If returning for repair\/replacement, goods should be returned within the warranty period. <\/p>"
+          }
+        },
+        "15779aa8-6379-4f50-840d-ef1b0db5269e": {
+          "type": "item",
+          "settings": {
+            "title": "How do I initiate a return?",
+            "content": "<p>Trak Racer must first be contacted with details of the problem. If we cannot resolve the issue we will send you a return form and return number to get the goods back to us. Please return items in their original packaging. <\/p>"
+          }
+        },
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-2": {
+          "type": "item",
+          "settings": {
+            "title": "How do I return an item?",
+            "content": "<p>We want you to love your Trak Racer product. We are happy to exchange or refund any part of your online order that you are not satisfied with (within 14days, subject to terms and conditions). Trak Racer guarantees that all items sold are brand new (unless otherwise specified) and quality tested before shipment.<\/p>"
+          }
+        },
+        "0e89cefb-558b-43e8-81cc-ee3cb0a1348d": {
+          "type": "item",
+          "settings": {
+            "title": "Where do I send a return item?",
+            "content": "<p>Please contact us with details of the issue\/return request and we will send you a return form that must be included and posted to the address on the form. <\/p>"
+          }
+        },
+        "10b0994e-af2b-40f9-a401-5b350a8f87c8": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to process the return?",
+            "content": "<p>Once we receive goods back they are externally and internally examined to match serial numbers with what was sent to you and checked to determine manufacturer fault, customer fault or no fault at all. The return process normally takes 1-2 weeks. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-1",
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-3",
+        "15779aa8-6379-4f50-840d-ef1b0db5269e",
+        "template--19149182992672__157ba779-c8f8-429c-bd66-cd31fc6ae863-item-2",
+        "0e89cefb-558b-43e8-81cc-ee3cb0a1348d",
+        "10b0994e-af2b-40f9-a401-5b350a8f87c8"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "ba06c840-7884-43c3-91ac-b639e5cbe378",
-    "b499905b-13cc-43e5-9f21-ae8c65ddbb3f"
+    "b499905b-13cc-43e5-9f21-ae8c65ddbb3f",
+    "157ba779-c8f8-429c-bd66-cd31fc6ae863"
   ]
 }
