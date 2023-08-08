@@ -38,7 +38,7 @@
         "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-1": {
           "type": "values",
           "settings": {
-            "product": "test",
+            "product": "{{ page.metafields.custom.comparison_rig_1.value }}",
             "value_1": "<p>Up to 20Nm<\/p>",
             "value_2": "<p>7 Hours<\/p>",
             "value_3": "<p>30 Minutes (Requires hybrid pedal system)<\/p>",
@@ -66,7 +66,7 @@
         "template--20340533821728__92dd3ab7-bfac-40c2-b594-956f6b81da9c-values-2": {
           "type": "values",
           "settings": {
-            "product": "alpine-racing-trx-2023-livery",
+            "product": "{{ page.metafields.custom.comparison_rig_2.value }}",
             "value_1": "<p>Up to 25Nm<\/p>",
             "value_2": "<p>Approximately 7 Hours<\/p>",
             "value_3": "<p>30 Minutes (Requires hybrid pedal system)<\/p>",
@@ -94,7 +94,7 @@
         "d83f37e5-8509-4982-97d5-be4393879fb3": {
           "type": "values",
           "settings": {
-            "product": "tr160-mk4-racing-simulator",
+            "product": "{{ page.metafields.custom.comparison_rig_3.value }}",
             "value_1": "<p>Up to and over 25Nm<\/p>",
             "value_2": "<p>Approximately 7 Hours<\/p>",
             "value_3": "<p>30 Minutes (Requires hybrid pedal system)<\/p>",
@@ -132,7 +132,7 @@
         "title": "Aluminium Profile Rigs",
         "content": "",
         "button_text": "Shop Now",
-        "button_url": "",
+        "button_url": "{{ page.metafields.custom.shop_link_1.value }}",
         "text_position": "center",
         "max_rows": 10,
         "view_all_text": "View all",
@@ -183,7 +183,7 @@
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-1": {
           "type": "values",
           "settings": {
-            "product": "cockpit-mounted-dual-monitor-stand-up-to-80-displays",
+            "product": "{{ page.metafields.custom.comparison_rig_4.value }}",
             "value_1": "<p>Up to 10Nm<\/p>",
             "value_2": "<p>Approximately 1 Hour<\/p>",
             "value_3": "<p>N\/A<\/p>",
@@ -211,7 +211,7 @@
         "template--20340533821728__53c91761-92d1-4902-8aea-48c2af0f38be-values-2": {
           "type": "values",
           "settings": {
-            "product": "cube-f-pro-black-formula-sim-racing-steering-wheel",
+            "product": "{{ page.metafields.custom.comparison_rig_5.value }}",
             "value_1": "<p>Up to 25Nm<\/p>",
             "value_2": "<p>Approximately 1 Hour<\/p>",
             "value_3": "<p>N\/A<\/p>",
@@ -239,7 +239,7 @@
         "50f34497-5c83-4f0c-bea4-13db1cfa17a4": {
           "type": "values",
           "settings": {
-            "product": "cube-sp01-formula-style-sim-racing-pedal-set",
+            "product": "{{ page.metafields.custom.comparison_rig_6.value }}",
             "value_1": "<p>Up to 25Nm<\/p>",
             "value_2": "<p>Approximately 1 Hour<\/p>",
             "value_3": "<p>3-5 minutes<\/p>",
@@ -277,7 +277,7 @@
         "title": "Tubular Profile Rigs",
         "content": "",
         "button_text": "Shop Now",
-        "button_url": "",
+        "button_url": "{{ page.metafields.custom.shop_link_2.value }}",
         "text_position": "center",
         "max_rows": 8,
         "view_all_text": "View all",
