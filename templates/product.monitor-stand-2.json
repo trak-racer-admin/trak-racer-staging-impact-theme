@@ -104,7 +104,7 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-credit-card",
             "icon_width": 24,
             "title": "Flexible Payment Options",
             "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
