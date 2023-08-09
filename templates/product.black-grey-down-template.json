@@ -178,7 +178,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 4,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(316deg, rgba(3, 3, 3, 1), rgba(46, 46, 46, 1) 33%, rgba(73, 73, 73, 1) 56%, rgba(145, 145, 145, 1) 81.655%)",
+        "background_gradient": "linear-gradient(180deg, rgba(3, 3, 3, 1), rgba(46, 46, 46, 1) 33%, rgba(73, 73, 73, 1) 56%, rgba(145, 145, 145, 1) 81.655%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
@@ -204,7 +204,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#000000",
+        "background": "#919191",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
