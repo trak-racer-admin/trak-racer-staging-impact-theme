@@ -138,7 +138,7 @@
       ],
       "settings": {
         "enable_sticky": true,
-        "hide_on_scroll": false,
+        "hide_on_scroll": true,
         "logo": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
         "logo_max_width": 200,
         "logo_mobile_max_width": 170,
