@@ -1,0 +1,9 @@
+<script>
+  document.addEventListener('globo.preorder.show.preorder', e => {
+      const form = e.detail.form;
+      const message = e.detail.profile.message;
+      const preorderBtn = form.querySelector('.gPreorderBtn')
+
+      preorderBtn.innerHTML = message.preorderText;
+  })
+</script>
