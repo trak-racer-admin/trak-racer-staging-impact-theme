@@ -251,7 +251,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 20,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -273,7 +273,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -295,7 +295,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -317,7 +317,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -337,7 +337,7 @@
         "controls_type": "numbers",
         "transition_type": "fade_with_text",
         "autoplay": false,
-        "cycle_speed": 8,
+        "cycle_speed": 20,
         "background": "#f2f2f2",
         "background_gradient": ""
       }
