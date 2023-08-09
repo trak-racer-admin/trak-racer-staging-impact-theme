@@ -1,0 +1,654 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "da1b0992-39dd-4453-845c-0715f56f5929": {
+          "type": "sku",
+          "settings": {
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": true
+          }
+        },
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "dropdown",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#cc0101",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "4163194c-df27-4c47-bd48-39a7883f8a23": {
+          "type": "button",
+          "settings": {
+            "link": "{{ product.metafields.custom_fields.product_manual.value }}",
+            "text": "Download Manual",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#a29ca6",
+            "text_color": "#ffffff"
+          }
+        },
+        "2feb5056-48de-4c75-b21d-eaeadecae15b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
+          }
+        },
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-truck",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
+            "background": "#545454",
+            "text_color": "#ffffff"
+          }
+        },
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-credit-card",
+            "icon_width": 24,
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#ffffff",
+            "text_color": "#545454"
+          }
+        },
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "da1b0992-39dd-4453-845c-0715f56f5929",
+        "badges",
+        "price",
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
+        "rating",
+        "payment_terms",
+        "separator",
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
+        "variant_picker",
+        "quantity_selector",
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
+        "buy_buttons",
+        "4163194c-df27-4c47-bd48-39a7883f8a23",
+        "2feb5056-48de-4c75-b21d-eaeadecae15b",
+        "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de",
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
+        "text_color": "#ffffff",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom_fields.product_statement.value }}",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#efefef",
+        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
+        "text_color": "#ffffff"
+      }
+    },
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_5_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_5_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
+        "24b4a55b-eee5-4a69-b907-71b1a4cc457f"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 20,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Weight",
+            "heading_2": "Size",
+            "heading_3": "Assembly Time",
+            "heading_4": "Wheelbase Torque",
+            "heading_5": "Pedal Weight Capacity",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>{{ product.metafields.custom_fields.weight.value }}<\/p>",
+            "value_2": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
+            "value_3": "<p>{{ product.metafields.custom_fields.assembly_time.value }}<\/p>",
+            "value_4": "<p>{{ product.metafields.custom_fields.pedal_weight_capacity.value }}<\/p>",
+            "value_5": "<p>{{ product.metafields.custom_fields.wheelbase_torque.value }}<\/p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "{{ product.metafields.custom_fields.product_specification_headline.value }}",
+        "title": "{{ product.title }} Specifications",
+        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "#a5272c",
+        "heading_gradient": "linear-gradient(320deg, rgba(253, 0, 0, 1) 0.36%, rgba(171, 167, 167, 1) 45%, rgba(155, 53, 53, 1) 86%)",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "#f2f2f2",
+        "chart_text_color": "#000000",
+        "chart_true_false_color": ""
+      }
+    },
+    "974a92ca-5417-47d7-bae4-547d0c063284": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.what_s_included_header_1.value }}",
+            "content": "{{ product.metafields.custom.what_s_included_subtext_1 | metafield_tag }}"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Your Choice of Wheel Mount",
+            "content": "<p>Choose between the TR One Wheel Mount or our Universal Mounting Plate depending on what you need!<\/p>"
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Your Choice of Pedal Mount",
+            "content": "<p>Choose between the three available pedal mounting options depending on your compatibility needs.<\/p>"
+          }
+        },
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Bonus Products",
+            "content": "<p>Floor-Protecting Rubber Feet<br\/>Set of 10 Cable Ties<br\/>Red Coloured Strips<\/p>"
+          }
+        },
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "5 Year Warranty",
+            "content": "<p>You're covered on faults for five years<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2",
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "What's Included",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#e6e6e6",
+        "background_gradient": "",
+        "text_color": "#000000"
+      }
+    },
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "{{ product.metafields.custom_fields.compatibility_wheel_mounts | metafield_tag }}"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
+          "type": "item",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "{{ product.metafields.custom_fields.compatibility_pedal_mounts | metafield_tag }}"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
+          "type": "item",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "{{ product.metafields.custom_fields.compatibility_shifter_handbrake_mounts | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Compatibility",
+        "content": "<p>Check the compatible peripherals!<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f2f2f2",
+        "accordion_text_color": "#000000"
+      }
+    },
+    "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
+      "type": "tabs",
+      "disabled": true,
+      "blocks": {
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "<ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><li>Other Wheel Bases - may require mounting bracket (Trak Racer Direct Drive Mount recommended)<\/li><li>MiGe 130ST(small and big<\/li><li>Bodnar 53 series<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini \/ ULTIMATE<\/li><\/ul><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><strong>WITH <\/strong><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> DIRECT DRIVE FRONT MOUNT (SKU TR-DDBRDDM)<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>VRS Force Pro<\/li><li>AccuForce V1\/V2 (turn the top cover around to fit)<\/li><li>MiGe 130ST(small and big)<\/li><li>Bodnar 53 series<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini\/ ULTIMATE<\/li><li>Lenze MCS12 series<\/li><li>Kollmorgen AKM 52-53-54 (OSW and Leo Bodnar Simsteering systems)<\/li><li>Ricmotech Mini-Mite Direct-Drive Steering System Base<\/li><li>IMMSOURCE ET3 and ET5<\/li><li>Fanatec Podium DD (installs <strong>without<\/strong> front plate)<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1",
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2",
+        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3"
+      ],
+      "custom_css": [
+        "body {text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce",
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "e0e54f60-4a55-4832-b13b-a296f9061f3c",
+    "related-products"
+  ]
+}
