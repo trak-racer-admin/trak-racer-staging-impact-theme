@@ -193,7 +193,7 @@
             "text": "{{ product.metafields.custom_fields.product_statement.value }}",
             "heading_tag": "h2",
             "text_color": "",
-            "gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1) 2.518%, rgba(145, 22, 22, 1) 42%, rgba(171, 100, 100, 1) 74%, rgba(135, 70, 70, 1) 100%)"
+            "gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1) 2.518%, rgba(201, 21, 21, 1) 42%, rgba(171, 100, 100, 1) 74%, rgba(135, 70, 70, 1) 100%)"
           }
         }
       },
