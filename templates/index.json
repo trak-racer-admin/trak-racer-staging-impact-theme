@@ -6,11 +6,13 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_343239c1-4ba7-4703-b6d4-edcbb6fd32d8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_842679ef-c162-4be7-8e52-fd28359d99be.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -18,7 +20,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
