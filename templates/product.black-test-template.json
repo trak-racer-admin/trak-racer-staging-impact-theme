@@ -176,9 +176,9 @@
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
+        "max_image_zoom_level": 4,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
+        "background_gradient": "linear-gradient(316deg, rgba(3, 3, 3, 1), rgba(46, 46, 46, 1) 33%, rgba(73, 73, 73, 1) 56%, rgba(145, 145, 145, 1) 81.655%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
@@ -193,7 +193,7 @@
             "text": "{{ product.metafields.custom_fields.product_statement.value }}",
             "heading_tag": "h2",
             "text_color": "",
-            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+            "gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1) 2.518%, rgba(145, 22, 22, 1) 42%, rgba(171, 100, 100, 1) 74%, rgba(135, 70, 70, 1) 100%)"
           }
         }
       },
@@ -204,8 +204,8 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
+        "background": "#dcdcdc",
+        "background_gradient": "",
         "text_color": "#ffffff"
       }
     },
