@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "collection_title_size": "h2",
+        "image_size": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "test-2",
+        "featured_product_heading": "Alpine Racing TRX",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "444dc5e0-f86d-49f6-ad2d-a04223bb2399": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "{{ collection.metafields.custom.collection_section_1.value }}",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Easy-to-Build Racing Simulators",
+        "content": "<p>Our aluminum, tubular profile rigs are perfect for any first-time racer, or just those that don't want to waste time taking getting onto the track. With a build time of less than 90 minutes, you'll be ready to race before you know it.<\/p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#ffffff",
+        "product_card_text_color": "#000000"
+      }
+    },
+    "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "{{ collection.metafields.custom.collection_section_2.value }}",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Pro Racing Simulators",
+        "content": "<p>Our Pro Racing Simulators are perfect if you're looking for best-in-class customisation and upgradability. Compatible with a wide range of heavy-duty peripherals, you'll be ready to own the Trak.<\/p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "{{ collection.metafields.custom.collection_section_3.value }}",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Upgradable Racing Simulators",
+        "content": "<p>Our upgradable racing simulators give you the best of both worlds - a solid base, with the parts you need, that are ready to upgrade as you grow throughout your sim racing journey!<\/p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_1.value }}",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_2.value }}",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_3.value }}",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "dbd0fcf9-c49d-4f20-98af-16a9908d2257": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom_fields.featured_collection_4.value }}",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-0",
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-1",
+        "template--19252068221216__3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166-16856759652beee317-2",
+        "dbd0fcf9-c49d-4f20-98af-16a9908d2257"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Upgrade Your Rig",
+        "content": "<p>Choose from our wide range of rig add-ons and upgrade to give yourself the best racing experience!<\/p>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
+    "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
+    "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
+    "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166"
+  ]
+}
