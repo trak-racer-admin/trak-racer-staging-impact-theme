@@ -63,6 +63,12 @@
             "size_chart_page": ""
           }
         },
+        "262b0eb2-81b0-434d-9494-dd0f03db2d18": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -156,6 +162,7 @@
         "separator",
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
+        "262b0eb2-81b0-434d-9494-dd0f03db2d18",
         "quantity_selector",
         "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
         "buy_buttons",
