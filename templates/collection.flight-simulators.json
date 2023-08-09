@@ -54,8 +54,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Easy-to-Build Racing Simulators",
-        "content": "<p>Our aluminum, tubular profile rigs are perfect for any first-time racer, or just those that don't want to waste time taking getting onto the track. With a build time of less than 90 minutes, you'll be ready to race before you know it.<\/p>",
+        "title": "Easy-to-Build Flight Simulators",
+        "content": "<p>Our tubular profile simulators are perfect if you're ready to jump straight into your flight cockpit! With all the essential mounts, these rigs can be assembled quickly and you will be flying in no time!<\/p>",
         "link_url": "",
         "link_text": "",
         "background": "#ffffff",
@@ -83,33 +83,6 @@
         "subheading": "",
         "title": "Pro Racing Simulators",
         "content": "<p>Our Pro Racing Simulators are perfect if you're looking for best-in-class customisation and upgradability. Compatible with a wide range of heavy-duty peripherals, you'll be ready to own the Trak.<\/p>",
-        "link_url": "",
-        "link_text": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "{{ collection.metafields.custom.collection_section_3.value }}",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_count": 3,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Upgradable Racing Simulators",
-        "content": "<p>Our upgradable racing simulators give you the best of both worlds - a solid base, with the parts you need, that are ready to upgrade as you grow throughout your sim racing journey!<\/p>",
         "link_url": "",
         "link_text": "",
         "background": "#ffffff",
@@ -210,7 +183,6 @@
     "main",
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
     "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166"
   ]
 }
