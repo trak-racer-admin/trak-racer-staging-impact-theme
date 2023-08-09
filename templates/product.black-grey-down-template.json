@@ -63,6 +63,12 @@
             "size_chart_page": ""
           }
         },
+        "ed7caa25-d724-4c32-9e0b-98da9a25bd4b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -156,6 +162,7 @@
         "separator",
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
+        "ed7caa25-d724-4c32-9e0b-98da9a25bd4b",
         "quantity_selector",
         "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
         "buy_buttons",
