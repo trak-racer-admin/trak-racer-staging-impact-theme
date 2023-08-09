@@ -204,7 +204,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#000000",
+        "background": "#2b2b2b",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
