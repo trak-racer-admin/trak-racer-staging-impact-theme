@@ -205,7 +205,7 @@
         "content_width": "large",
         "text_position": "center",
         "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
+        "background_gradient": "linear-gradient(180deg, rgba(1, 103, 186, 1) 2%, rgba(66, 149, 230, 1) 70%)",
         "text_color": "#ffffff"
       }
     },
