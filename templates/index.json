@@ -6,8 +6,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_1a804ad9-da35-4c58-8bff-c2192ae65ad4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_68ecfc87-605a-49e0-9179-5b69a09a72cb.png",
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_343239c1-4ba7-4703-b6d4-edcbb6fd32d8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_842679ef-c162-4be7-8e52-fd28359d99be.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
