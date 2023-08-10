@@ -171,7 +171,7 @@
         "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "#717070",
