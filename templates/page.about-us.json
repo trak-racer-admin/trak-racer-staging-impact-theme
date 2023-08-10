@@ -147,7 +147,6 @@
         "2aaf49bb-c3d2-4d0d-90f0-c0dc05aa6d4d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
             "width_mode": "custom",
             "max_width": 360,
             "mobile_max_width": 490
@@ -269,7 +268,6 @@
         "f2b3314d-18b9-4fef-b12b-3f15499b0d8b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/the_vision.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
