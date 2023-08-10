@@ -1,9 +1,23 @@
 <script>
-  document.addEventListener('globo.preorder.show.preorder', e => {
-      const form = e.detail.form;
-      const message = e.detail.profile.message;
-      const preorderBtn = form.find('.gPreorderBtn')
-
-      preorderBtn.html(message.preorderText);
-  })
+  const preorderCustom = {
+      render: function(){
+          this.initSelectors()
+          this.handleEvents()
+      },
+      initSelectors: function(){
+          window.GloboPreorderParams = window.GloboPreorderParams || {};
+          window.GloboPreorderParams.selectors = window.GloboPreorderParams.selectors || {};
+          window.GloboPreorderParams.selectors.productVariantActivator += ", .variant-picker__option button";
+      },
+      handleEvents: function(){
+          document.addEventListener('globo.preorder.show.preorder', e => {
+              const form = e.detail.form;
+              const message = e.detail.profile.message;
+              const preorderBtn = form.find('.gPreorderBtn')
+        
+              preorderBtn.html(message.preorderText);
+          })
+      }
+  }
+  preorderCustom.render()
 </script>
