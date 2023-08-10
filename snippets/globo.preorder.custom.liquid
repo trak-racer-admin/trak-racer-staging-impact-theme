@@ -7,7 +7,7 @@
       initSelectors: function(){
           window.GloboPreorderParams = window.GloboPreorderParams || {};
           window.GloboPreorderParams.selectors = window.GloboPreorderParams.selectors || {};
-          window.GloboPreorderParams.selectors.productVariantActivator += ", .variant-picker__option button";
+          window.GloboPreorderParams.selectors.productVariantActivator += ", .variant-picker__option .popover-listbox__option";
       },
       handleEvents: function(){
           document.addEventListener('globo.preorder.show.preorder', e => {
