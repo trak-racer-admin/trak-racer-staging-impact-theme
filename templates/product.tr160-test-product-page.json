@@ -28,7 +28,7 @@
         "6d176bf7-fcdb-4940-90f9-ebadf0791ea5": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "shopify:\/\/pages\/compare-our-rigs",
             "text": "Compare Rigs",
             "size": "sm",
             "style": "outline",
