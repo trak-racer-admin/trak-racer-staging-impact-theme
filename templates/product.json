@@ -182,20 +182,6 @@
     },
     "169164228579fecd9c": {
       "type": "apps",
-      "blocks": {
-        "9af9ab56-9cab-4dcc-b94f-53329d79c275": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "",
-            "badge_link": "",
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "9af9ab56-9cab-4dcc-b94f-53329d79c275"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
