@@ -2,11 +2,42 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "e7f75dca-521c-485f-a023-a2cce86ee155": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Website_banners_good_size.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "41739dc2-7f7b-4d30-a641-ba551cbbe2ac": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<iframe id=\"klaviyo_subscribe_page\" src=\"https:\/\/manage.kmail-lists.com\/subscriptions\/subscribe?a=RV9jZ4&g=UtWTmA&embed=1\" seamless=\"seamless\" width=\"100%\" scrolling=\"yes\" frameborder=\"0\" style=\"overflow: hidden;height: 1800px;\"><\/iframe>\n<script type=\"text\/javascript\" src=\"\/\/a.klaviyo.com\/media\/js\/lib\/iframeresizer.js\"><\/script>\n<script type=\"text\/javascript\">iFrameResize({}, '#klaviyo_subscribe_page');<\/script>",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(2, 55, 151, 1), rgba(0, 112, 192, 1) 42.086%, rgba(50, 145, 204, 1) 83%)",
+        "text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e7f75dca-521c-485f-a023-a2cce86ee155",
+    "41739dc2-7f7b-4d30-a641-ba551cbbe2ac"
   ]
 }
