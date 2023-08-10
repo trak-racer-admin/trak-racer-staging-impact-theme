@@ -86,7 +86,7 @@
         "f5ad853a-a466-447a-98eb-3514e2e118fd"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "subheading": "",
         "title": "General FAQs",
         "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
