@@ -13,8 +13,7 @@
         "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ALPINE_00001698_0003.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/23_F1_CAR.jpg",
+            "image": "shopify:\/\/shop_images\/222222222222222.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-start sm:text-start",
@@ -54,7 +53,6 @@
         "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "Alpine F1 team at Melbourne Grand Prix 2023",
@@ -66,7 +64,6 @@
         "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/363502700_2023045468045187_2854395059075187767_n.jpg",
             "image_rotation_degrees": 1.5,
             "subheading": "",
             "title": "Alpine and Trak Racer at Belgium Grand Prix 2023",
