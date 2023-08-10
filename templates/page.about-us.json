@@ -268,6 +268,7 @@
         "f2b3314d-18b9-4fef-b12b-3f15499b0d8b": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/the_vision.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
