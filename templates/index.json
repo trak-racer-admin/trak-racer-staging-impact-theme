@@ -6,8 +6,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_343239c1-4ba7-4703-b6d4-edcbb6fd32d8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_842679ef-c162-4be7-8e52-fd28359d99be.png",
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_1a804ad9-da35-4c58-8bff-c2192ae65ad4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_68ecfc87-605a-49e0-9179-5b69a09a72cb.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -132,7 +132,6 @@
           "type": "collection",
           "settings": {
             "collection": "racing-simulators",
-            "image": "shopify:\/\/shop_images\/rigs.jpg",
             "subheading": "",
             "title": "Racing Simulators",
             "url": "",
@@ -147,7 +146,6 @@
           "type": "collection",
           "settings": {
             "collection": "flight-simulators",
-            "image": "shopify:\/\/shop_images\/Flight_Sims.jpg",
             "subheading": "",
             "title": "Flight Simulators",
             "url": "",
@@ -162,7 +160,6 @@
           "type": "collection",
           "settings": {
             "collection": "monitor-stands",
-            "image": "shopify:\/\/shop_images\/monitor_stands.jpg",
             "subheading": "",
             "title": "Monitor Stands",
             "url": "",
@@ -177,7 +174,6 @@
           "type": "collection",
           "settings": {
             "collection": "seats-seat-add-ons",
-            "image": "shopify:\/\/shop_images\/Seats_4b7094e9-c7ba-4211-be92-d4ede7a74711.jpg",
             "subheading": "",
             "title": "Seats",
             "url": "",
@@ -192,7 +188,6 @@
           "type": "collection",
           "settings": {
             "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/accessories.jpg",
             "subheading": "",
             "title": "Accessories",
             "url": "",
@@ -266,7 +261,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "lg",
-        "image": "shopify:\/\/shop_images\/with_gradient_a1b3f550-93a6-4e34-8ac4-cc194428d487.jpg",
         "mobile_text_position": "place-self-center-start text-start",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
