@@ -154,7 +154,7 @@
         "cafd1f41-f932-4b4e-bef2-17a874be6e55"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "subheading": "",
         "title": "Shipping FAQs",
         "content": "<p>Use this text to share information about your product or shipping policies.<\/p>",
