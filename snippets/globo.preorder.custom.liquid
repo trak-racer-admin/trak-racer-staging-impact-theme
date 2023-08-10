@@ -10,6 +10,23 @@
           window.GloboPreorderParams.selectors.productVariantActivator += ", .variant-picker__option .popover-listbox__option";
       },
       handleEvents: function(){
+          const app = this;
+
+          window.addEventListener('load', function(){
+              $(document).on('click change', window.GloboPreorderParams.selectors.productVariantActivator, function(){
+                  window.Globo.Preorder.appSetInterval(function(){
+                      if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+                          app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+                      }
+                  }, 400, 2)
+              })
+              window.Globo.Preorder.appSetInterval(function(){
+                  if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+                      app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+                  }
+              }, 400, 2)
+          })
+        
           document.addEventListener('globo.preorder.show.preorder', e => {
               const form = e.detail.form;
               const message = e.detail.profile.message;
@@ -17,6 +34,17 @@
         
               preorderBtn.html(message.preorderText);
           })
+      },
+      renderSingleProductForm: function(form, product){
+          const app = window.Globo.Preorder;
+          const productVariantActivator = app.settings.selectors.productVariantActivator;
+          const productVariantSelector = app.settings.selectors.productVariantSelector;
+          const productQuantitySelector = app.settings.selectors.productQuantitySelector;
+          const productAddToCartTextElement = app.settings.selectors.productAddToCartTextElement;
+          const paymentButton = app.settings.selectors.paymentButton;     
+          
+          app.renderProductForm(product, form, productVariantActivator, productVariantSelector, productQuantitySelector, 'button[type="submit"]', productAddToCartTextElement, paymentButton)
+          app.renderBisForm(product, form, productVariantActivator, productVariantSelector)
       }
   }
   preorderCustom.render()
