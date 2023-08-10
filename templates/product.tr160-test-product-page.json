@@ -25,6 +25,18 @@
             "show_taxes_notice": true
           }
         },
+        "6d176bf7-fcdb-4940-90f9-ebadf0791ea5": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "Compare Rigs",
+            "size": "sm",
+            "style": "outline",
+            "stretch": false,
+            "background": "#ffffff",
+            "text_color": "#ffffff"
+          }
+        },
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
           "type": "liquid",
           "settings": {
@@ -156,6 +168,7 @@
         "da1b0992-39dd-4453-845c-0715f56f5929",
         "badges",
         "price",
+        "6d176bf7-fcdb-4940-90f9-ebadf0791ea5",
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
