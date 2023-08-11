@@ -50,7 +50,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
+            "text": ""
           }
         },
         "variant_picker": {
@@ -197,7 +197,7 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "{{ product.metafields.custom_fields.product_statement.value }}",
+            "text": "",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
@@ -222,8 +222,6 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
@@ -266,8 +264,6 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
@@ -575,7 +571,6 @@
     },
     "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
       "type": "tabs",
-      "disabled": true,
       "blocks": {
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1": {
           "type": "tab",
@@ -607,6 +602,7 @@
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2",
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3"
       ],
+      "disabled": true,
       "custom_css": [
         "body {text-align: left;}"
       ],
