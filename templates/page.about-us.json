@@ -9,7 +9,6 @@
     },
     "18cd8f98-a7a2-474e-8da7-3f838234015c": {
       "type": "video",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__18cd8f98-a7a2-474e-8da7-3f838234015c-1689646164b232c9b8-0": {
           "type": "play",
@@ -36,6 +35,7 @@
         "template--19949577765152__18cd8f98-a7a2-474e-8da7-3f838234015c-1689646164b232c9b8-1",
         "cc62b417-161c-40bd-ab4f-5c27786a9d3f"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
@@ -49,7 +49,6 @@
     },
     "80af0649-6045-44c4-9aa2-1c35177cf708": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__80af0649-6045-44c4-9aa2-1c35177cf708-1689646420f3b9c448-1": {
           "type": "heading",
@@ -93,6 +92,7 @@
         "bdffb12f-2fd7-4105-a38a-0f30570d8d59",
         "249126d9-ae38-4cc3-bf49-1b3a0d546647"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "medium",
@@ -104,7 +104,6 @@
     },
     "76d10fe2-9e1c-4a61-81af-44c29548f045": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "af3ee2ad-6b1f-4c3e-bc97-ecd95578b4e0": {
           "type": "divider",
@@ -132,6 +131,7 @@
         "template--19949577765152__76d10fe2-9e1c-4a61-81af-44c29548f045-1689646420f3b9c448-1",
         "template--19949577765152__76d10fe2-9e1c-4a61-81af-44c29548f045-1689646420f3b9c448-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "medium",
@@ -158,7 +158,7 @@
             "text": "Made by gamers, for gamers",
             "heading_tag": "h1",
             "text_color": "",
-            "gradient": ""
+            "gradient": "linear-gradient(180deg, rgba(251, 51, 51, 1), rgba(183, 0, 0, 1) 68%, rgba(150, 4, 4, 1) 100%)"
           }
         },
         "68e18bd3-9a2a-4da2-a3e7-60fa8076ab03": {
@@ -178,13 +178,12 @@
         "content_width": "large",
         "text_position": "center",
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(151, 151, 151, 1) 50%, rgba(255, 255, 255, 1) 100%)",
+        "background_gradient": "",
         "text_color": ""
       }
     },
     "168b2eea-e972-437e-a81e-ff1b4974cd93": {
       "type": "impact-text",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__168b2eea-e972-437e-a81e-ff1b4974cd93-item-1": {
           "type": "item",
@@ -202,6 +201,7 @@
       "block_order": [
         "template--19949577765152__168b2eea-e972-437e-a81e-ff1b4974cd93-item-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -300,7 +300,6 @@
     },
     "92382605-ba9f-49ab-942b-e3f20c55c121": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-1": {
           "type": "heading",
@@ -322,6 +321,7 @@
         "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-1",
         "template--19949577765152__92382605-ba9f-49ab-942b-e3f20c55c121-1689646420f3b9c448-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -333,7 +333,6 @@
     },
     "5fb41665-db22-4518-8ea6-6634754a72e2": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-1": {
           "type": "heading",
@@ -355,6 +354,7 @@
         "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-1",
         "template--19949577765152__5fb41665-db22-4518-8ea6-6634754a72e2-1689646420f3b9c448-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -366,7 +366,6 @@
     },
     "1a9107c8-3fa1-47c1-a168-58d7817e23e8": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1": {
           "type": "heading",
@@ -388,6 +387,7 @@
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-1",
         "template--19949577765152__1a9107c8-3fa1-47c1-a168-58d7817e23e8-1689646420f3b9c448-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
