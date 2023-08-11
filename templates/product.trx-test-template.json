@@ -185,7 +185,7 @@
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(19, 74, 212, 1), rgba(63, 137, 239, 1) 33%, rgba(33, 33, 33, 1) 67%)",
+        "background_gradient": "linear-gradient(180deg, rgba(112, 153, 255, 1), rgba(63, 137, 239, 1) 33%, rgba(33, 33, 33, 1) 67%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
@@ -225,8 +225,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -242,13 +242,11 @@
         "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -267,8 +265,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -284,13 +282,11 @@
         "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -306,13 +302,11 @@
         "24b4a55b-eee5-4a69-b907-71b1a4cc457f": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_5_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_5_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -408,9 +402,9 @@
       ],
       "settings": {
         "full_width": true,
-        "subheading": "{{ product.metafields.custom_fields.product_specification_headline.value }}",
+        "subheading": "",
         "title": "{{ product.title }} Specifications",
-        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
+        "content": "",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -444,8 +438,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.what_s_included_header_1.value }}",
-            "content": "{{ product.metafields.custom.what_s_included_subtext_1 | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
@@ -457,8 +451,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Your Choice of Wheel Mount",
-            "content": "<p>Choose between the TR One Wheel Mount or our Universal Mounting Plate depending on what you need!<\/p>"
+            "title": "",
+            "content": ""
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
@@ -470,8 +464,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Your Choice of Pedal Mount",
-            "content": "<p>Choose between the three available pedal mounting options depending on your compatibility needs.<\/p>"
+            "title": "",
+            "content": ""
           }
         },
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
@@ -483,8 +477,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Bonus Products",
-            "content": "<p>Floor-Protecting Rubber Feet<br\/>Set of 10 Cable Ties<br\/>Red Coloured Strips<\/p>"
+            "title": "",
+            "content": ""
           }
         },
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
@@ -496,8 +490,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "5 Year Warranty",
-            "content": "<p>You're covered on faults for five years<\/p>"
+            "title": "",
+            "content": ""
           }
         }
       },
@@ -527,21 +521,21 @@
           "type": "item",
           "settings": {
             "title": "Wheel Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_wheel_mounts | metafield_tag }}"
+            "content": ""
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
           "type": "item",
           "settings": {
             "title": "Pedal Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_pedal_mounts | metafield_tag }}"
+            "content": ""
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
           "type": "item",
           "settings": {
             "title": "Shifter & Handbrake Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_shifter_handbrake_mounts | metafield_tag }}"
+            "content": ""
           }
         }
       },
