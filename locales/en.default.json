@@ -113,7 +113,7 @@
     },
     "inventory": {
       "in_stock": "In stock",
-      "oversell_stock": "Re-stocking soon",
+      "oversell_stock": "Re-stocking soon {{ variant.metafields.custom.product_eta }}",
       "incoming_stock": "Re-stocking on {{ next_incoming_date }}",
       "low_stock_with_quantity_count": {
         "one": "Only {{count}} unit left",
@@ -301,9 +301,9 @@
       "weight": "Weight",
       "subtotal": "Subtotal",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "add_order_note": "Add order note",
       "edit_order_note": "Edit order note",
