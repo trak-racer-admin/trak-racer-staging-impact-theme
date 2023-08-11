@@ -156,6 +156,98 @@
         "input_text_color": ""
       }
     },
+    "a3457182-54ef-4f74-a7e7-4e0533eedf40": {
+      "type": "tabs",
+      "blocks": {
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 1",
+            "content": "<p>Use this text to share information about your brand with your customers.<\/p>",
+            "page": "flight-rs6-description"
+          }
+        },
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "page": "flight-rs6-whats-included"
+          }
+        },
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "page": "flight-rs6-mount-compatibility"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-1",
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-2",
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "afb023b3-4bca-41e2-a30f-cd3aaa1a03b4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "d40a1d4d-cf50-47a5-b2b3-679d1cb3dd4d": {
+          "type": "page",
+          "settings": {
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-subheading-1",
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-heading-1",
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-richtext-1",
+        "d40a1d4d-cf50-47a5-b2b3-679d1cb3dd4d"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "169164228579fecd9c": {
       "type": "apps",
       "blocks": {
@@ -211,6 +303,8 @@
   },
   "order": [
     "main",
+    "a3457182-54ef-4f74-a7e7-4e0533eedf40",
+    "afb023b3-4bca-41e2-a30f-cd3aaa1a03b4",
     "169164228579fecd9c",
     "related-products"
   ]

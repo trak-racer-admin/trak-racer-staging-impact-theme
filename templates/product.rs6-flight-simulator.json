@@ -156,6 +156,204 @@
         "input_text_color": ""
       }
     },
+    "ef552550-d8b8-40dd-915d-2b4dde8d49d0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17061634179236__ef552550-d8b8-40dd-915d-2b4dde8d49d0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trak Racer RS6 Motion-Ready Flight Cockpit",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17061634179236__ef552550-d8b8-40dd-915d-2b4dde8d49d0-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The RS6 MK3 is an entry-level and extremely rigid simulator that has had several upgrades from customer feedback based on the previous popular RS6, the MK2. From 2014 to 2021, the RS6 was globally, the most preferred entry-level racing simulator in the market and now, it’s the preferred entry level Flight Sim. It ticks all of the boxes for a Flight Simulator Rig that assembles in 30-60 minutes. It's Strong, Adjustable, and has an array of genuine Trak Racer add-ons to personalize the cockpit. In the usual Trak Racer way, we gathered customer feedback from over 17,000 RS6 MK1 and MK2 owners to develop the RS6 MK3.<\/p>"
+          }
+        },
+        "79b91e96-f98f-44a4-900f-9c5cd0857043": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rs6-flight_6085ce68-ec39-4615-b02f-089adb62c2b9.webp",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "52449840-cfcf-4c5f-86a3-41bbf057fb8a": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "2e6b51cf-3d45-4329-918e-6b11b5c7d5fc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/airbus_13b93a3c-ccd1-4ca8-956c-d9e1d1774192.webp",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "999c5001-0e21-4a2b-9435-6c9ec9c3ffeb": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Take To The Skies With An Official Airbus Partner!",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "08c6aa4a-c9db-4bea-a87e-0beb512f4018": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061634179236__ef552550-d8b8-40dd-915d-2b4dde8d49d0-heading-1",
+        "template--17061634179236__ef552550-d8b8-40dd-915d-2b4dde8d49d0-richtext-1",
+        "79b91e96-f98f-44a4-900f-9c5cd0857043",
+        "52449840-cfcf-4c5f-86a3-41bbf057fb8a",
+        "2e6b51cf-3d45-4329-918e-6b11b5c7d5fc",
+        "999c5001-0e21-4a2b-9435-6c9ec9c3ffeb",
+        "08c6aa4a-c9db-4bea-a87e-0beb512f4018"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#383838",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(150, 150, 150, 1) 100%)",
+        "text_color": "#ffffff"
+      }
+    },
+    "5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17061634179236__5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/airbus_13b93a3c-ccd1-4ca8-956c-d9e1d1774192.webp",
+            "column_size": "1.5",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17061634179236__5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b-item-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Take To The Skies With An Official Airbus Partner!",
+            "heading_tag": "h2",
+            "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061634179236__5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b-item-2",
+        "template--17061634179236__5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b-item-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(150, 150, 150, 1), rgba(215, 215, 215, 1) 60%, rgba(203, 223, 228, 1) 100%)",
+        "text_color": "#000000"
+      }
+    },
+    "ce11baa1-9241-4cf9-82fc-b103e3e2cb9e": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18_RS6-flight_1.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-3": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Secure and Adjustable",
+            "heading_tag": "h3",
+            "content": "<p>If you’re a serious flight sim operator, then you have a flight yoke. Mount it up directly onto the yoke platform on the Trak Racer rig and adjust as required into the most comfortable position.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Left and Right-Side Mounts Included",
+            "heading_tag": "h3",
+            "content": "<p>With all the adjustment you need for your left and right-side flight controls from any major brand, you’ll be able to hit the skies in absolute comfort.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "760b7ae4-b27e-4872-adfd-5e7eaa3dbd0a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/32_RS6-Yoke-Mount.webp",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-1",
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-3",
+        "template--17061634179236__ce11baa1-9241-4cf9-82fc-b103e3e2cb9e-item-2",
+        "760b7ae4-b27e-4872-adfd-5e7eaa3dbd0a"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(203, 223, 228, 1) 1%, rgba(163, 188, 194, 1) 42.446%, rgba(110, 168, 197, 1) 72.662%, rgba(60, 107, 143, 1) 100%)",
+        "text_color": ""
+      }
+    },
     "169164228579fecd9c": {
       "type": "apps",
       "blocks": {
@@ -211,6 +409,9 @@
   },
   "order": [
     "main",
+    "ef552550-d8b8-40dd-915d-2b4dde8d49d0",
+    "5a1e78dd-fe40-42f8-b74b-c8e2a9f1782b",
+    "ce11baa1-9241-4cf9-82fc-b103e3e2cb9e",
     "169164228579fecd9c",
     "related-products"
   ]
