@@ -113,7 +113,7 @@
           "type": "associated_products",
           "settings": {
             "title": "Buy it with",
-            "stack_products": true,
+            "stack_products": false,
             "products_count": 5,
             "background": "",
             "text_color": ""
