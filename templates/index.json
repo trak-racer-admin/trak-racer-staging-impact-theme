@@ -197,7 +197,7 @@
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
-            "text": "Welcome to the first ever rigs used by professional F1 drivers to train.",
+            "text": "Alpine F1 x Trak Racer",
             "heading_tag": "h1"
           }
         },
@@ -222,12 +222,14 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "lg",
-        "mobile_text_position": "place-self-center-start text-start",
-        "desktop_text_position": "sm:place-self-center-start sm:text-start",
-        "text_color": "#ffffff",
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#353535",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "impact-text": {
