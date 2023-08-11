@@ -34,6 +34,7 @@
     "show_page_transition": true,
     "heading_apparition": "fade",
     "color_swatch_style": "round",
+    "color_swatch_config": "Alpine Racing Blue:#6a97fd\nBlack:#000000",
     "show_vendor": false,
     "show_product_rating": true,
     "show_sold_out_badge": false,

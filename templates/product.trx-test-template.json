@@ -58,7 +58,7 @@
           "settings": {
             "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "dropdown",
+            "selector_mode": "block",
             "color_mode": "color",
             "size_chart_page": ""
           }
