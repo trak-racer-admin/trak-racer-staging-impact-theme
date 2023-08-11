@@ -228,7 +228,7 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
