@@ -1,91 +1,50 @@
 {
   "sections": {
-    "slideshow": {
-      "type": "slideshow",
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "slide-1": {
-          "type": "image",
+        "1664424230c4756b0e-0": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_1a804ad9-da35-4c58-8bff-c2192ae65ad4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_68ecfc87-605a-49e0-9179-5b69a09a72cb.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "shopify:\/\/pages\/trak-racer-15th-birthday-giveaway",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
+            "text": "From the Track to the Trak"
           }
         },
-        "slide-2": {
-          "type": "image",
-          "disabled": true,
+        "1664424230c4756b0e-1": {
+          "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center-end text-end",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "button_text": "Learn More",
-            "button_link": "",
-            "text_color": "#000000",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
+            "text": "Alpine F1 x Trak Racer",
+            "heading_tag": "h1"
           }
         },
-        "608024a0-e217-41b1-9d40-12afc11e7af9": {
-          "type": "image",
+        "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
+          "type": "button",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn More",
+            "url": "",
+            "background": "#0087b9",
+            "text_color": ""
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2",
-        "608024a0-e217-41b1-9d40-12afc11e7af9"
+        "1664424230c4756b0e-0",
+        "1664424230c4756b0e-1",
+        "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
+        "enable_parallax": false,
         "image_size": "auto",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": true,
-        "cycle_speed": 20,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+        "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
       }
     },
     "56bae42b-8352-4291-b2a0-90cf30962707": {
@@ -186,51 +145,92 @@
         "heading_gradient": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "slideshow": {
+      "type": "slideshow",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
+        "slide-1": {
+          "type": "image",
           "settings": {
-            "text": "From the Track to the Trak"
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_1a804ad9-da35-4c58-8bff-c2192ae65ad4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_68ecfc87-605a-49e0-9179-5b69a09a72cb.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify:\/\/pages\/trak-racer-15th-birthday-giveaway",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
           }
         },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
+        "slide-2": {
+          "type": "image",
+          "disabled": true,
           "settings": {
-            "text": "Alpine F1 x Trak Racer",
-            "heading_tag": "h1"
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center-end text-end",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "Learn More",
+            "button_link": "",
+            "text_color": "#000000",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
           }
         },
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
-          "type": "button",
+        "608024a0-e217-41b1-9d40-12afc11e7af9": {
+          "type": "image",
           "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Learn More",
-            "url": "",
-            "background": "#0087b9",
-            "text_color": ""
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
+        "slide-1",
+        "slide-2",
+        "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
-        "mobile_text_position": "place-self-start-center text-center",
-        "desktop_text_position": "sm:place-self-end sm:text-end",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 20
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 20,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
     "impact-text": {
@@ -375,9 +375,9 @@
     }
   },
   "order": [
-    "slideshow",
-    "56bae42b-8352-4291-b2a0-90cf30962707",
     "image-with-text-overlay",
+    "56bae42b-8352-4291-b2a0-90cf30962707",
+    "slideshow",
     "impact-text",
     "media-grid"
   ]
