@@ -115,8 +115,8 @@
             "title": "Buy it with",
             "stack_products": false,
             "products_count": 5,
-            "background": "",
-            "text_color": ""
+            "background": "#f5f5f5",
+            "text_color": "#353535"
           }
         },
         "a89d3139-d37b-4d55-8f2b-66855e7f62de": {
