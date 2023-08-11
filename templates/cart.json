@@ -25,16 +25,19 @@
           "settings": {
           }
         },
-        "5d5a77c8-2a57-4813-84dc-900e8ba03f39": {
-          "type": "shopify:\/\/apps\/exemptify\/blocks\/ExemptifyCartValidationSnippet\/53648040-92ea-472b-92a5-eb781e92b01b",
+        "232411b1-9ff7-43a6-88af-e8122e74af07": {
+          "type": "offer",
+          "disabled": true,
           "settings": {
-            "align_right": false,
-            "exemptify_cart_title": "EU VAT ID",
-            "title_size": 1.3,
-            "exemptify_cart_subttitle": "(VAT will be deducted at payment step)",
-            "subtitle_size": 0.8,
-            "exemptify_cart_placeholder": "EU VAT ID",
-            "additional_styles": "padding:10px;"
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/Badge_300_x_135_Reverse.png",
+            "icon_width": 56,
+            "title": "Zip Pay",
+            "content": "<p>Up to 36 months interest-free with Zip Pay! T&Cs apply.<\/p>",
+            "background": "",
+            "text_color": ""
           }
         }
       },
@@ -43,15 +46,37 @@
         "cart_note",
         "checkout_button",
         "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3",
-        "5d5a77c8-2a57-4813-84dc-900e8ba03f39"
+        "232411b1-9ff7-43a6-88af-e8122e74af07"
       ],
       "settings": {
         "show_shipping_estimator": true,
         "show_payment_icons": true
       }
+    },
+    "674dbf5b-dada-4880-a1d9-02a660d7836d": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "full_width": true,
+        "products_count": 5,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Forgotten something?",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "674dbf5b-dada-4880-a1d9-02a660d7836d"
   ]
 }
