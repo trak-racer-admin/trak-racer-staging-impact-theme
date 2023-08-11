@@ -45,7 +45,6 @@
         "allow_transparent_header": true,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/dan_burkett.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
@@ -59,7 +58,7 @@
         "d2e6da2a-81b6-4b83-926f-52e1e82c9f8d": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/owen_trinkler.jpg",
+            "image": "shopify:\/\/shop_images\/owen_trinkler.png",
             "column_size": "3",
             "title": "Owen Trinkler",
             "heading_tag": "h5",
@@ -91,7 +90,7 @@
             "heading_tag": "h5",
             "content": "<p>Professional Race Car Driver<\/p>",
             "link_url": "",
-            "link_text": "Learn More",
+            "link_text": "",
             "link_style": "button"
           }
         },
@@ -104,7 +103,7 @@
             "heading_tag": "h5",
             "content": "<p>Sim Racing Content Creator<\/p>",
             "link_url": "",
-            "link_text": "Learn More",
+            "link_text": "",
             "link_style": "button"
           }
         },
@@ -117,7 +116,7 @@
             "heading_tag": "h5",
             "content": "<p>Professional Rally Car Driver<\/p>",
             "link_url": "",
-            "link_text": "Learn More",
+            "link_text": "",
             "link_style": "button"
           }
         },
@@ -200,12 +199,10 @@
     },
     "45845d1a-dce2-48e3-85d2-f6e32da7d8a9": {
       "type": "image-link-blocks",
-      "disabled": true,
       "blocks": {
         "template--19607694082336__45845d1a-dce2-48e3-85d2-f6e32da7d8a9-1689638879c71acda5-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
             "stretch_image": true,
             "link_text": "Aléthéa Boucq",
             "link_url": "",
@@ -218,7 +215,6 @@
         "template--19607694082336__45845d1a-dce2-48e3-85d2-f6e32da7d8a9-1689638879c71acda5-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lange_veld.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -231,7 +227,6 @@
         "template--19607694082336__45845d1a-dce2-48e3-85d2-f6e32da7d8a9-1689638879c71acda5-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Luke_King.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -273,6 +268,7 @@
         "29b3a529-2861-4298-97cb-d05eed1b24d8",
         "c0c17733-5cd0-4abf-9314-ed7d4808cf69"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "block_size": "large",
@@ -297,12 +293,10 @@
     },
     "cf65da16-5bdc-455f-b2e9-ed9e7ce29213": {
       "type": "media-with-text",
-      "disabled": true,
       "blocks": {
         "template--19607694082336__cf65da16-5bdc-455f-b2e9-ed9e7ce29213-168930534705c5d1a9-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
             "media_width": 30,
             "media_position": "start",
             "text_position": "place-self-start text-start",
@@ -324,7 +318,6 @@
         "c902fe6e-0c49-477b-ad1b-4f38ebf53afe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lange_veld.png",
             "media_width": 30,
             "media_position": "end",
             "text_position": "place-self-start-end text-end",
@@ -346,7 +339,6 @@
         "7b2f8d3d-de0d-4f8d-a7b7-e6c36669c78e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Luke_King.png",
             "media_width": 30,
             "media_position": "start",
             "text_position": "place-self-start text-start",
@@ -371,6 +363,7 @@
         "c902fe6e-0c49-477b-ad1b-4f38ebf53afe",
         "7b2f8d3d-de0d-4f8d-a7b7-e6c36669c78e"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -378,12 +371,10 @@
     },
     "cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "3f7a95cc-32bf-4abd-8afe-d4627ab3cae0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Aletha_Boq.png",
             "width_mode": "custom",
             "max_width": 600,
             "mobile_max_width": 400
@@ -423,6 +414,7 @@
         "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-1",
         "template--19607694082336__cf2b8fea-5d62-49e9-a7e9-2ccf3cc0b703-168930413824b8f502-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "content_width": "small",
@@ -434,7 +426,6 @@
     },
     "2af97261-3df1-43d6-95bb-8ef44eb07033": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19607694082336__2af97261-3df1-43d6-95bb-8ef44eb07033-168930413824b8f502-0": {
           "type": "subheading",
@@ -465,7 +456,6 @@
         "622be04c-af94-449e-be37-23643188f8b8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lange_veld.png",
             "width_mode": "custom",
             "max_width": 600,
             "mobile_max_width": 400
@@ -479,6 +469,7 @@
         "cbc76988-7567-4f11-9bc0-e3e8adb1724e",
         "622be04c-af94-449e-be37-23643188f8b8"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "content_width": "small",
