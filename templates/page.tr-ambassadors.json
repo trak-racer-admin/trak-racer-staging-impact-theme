@@ -45,6 +45,7 @@
         "allow_transparent_header": true,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/dan_burkett.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
