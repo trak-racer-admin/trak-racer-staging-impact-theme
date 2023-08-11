@@ -82,7 +82,7 @@
         "controls_type": "numbers",
         "transition_type": "fade_with_text",
         "autoplay": true,
-        "cycle_speed": 13,
+        "cycle_speed": 20,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
