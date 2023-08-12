@@ -58,7 +58,7 @@
           "settings": {
             "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "block",
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -255,11 +255,13 @@
         "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
           "type": "image",
           "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -275,10 +277,12 @@
         "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
           "type": "image",
           "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
             "title": "",
             "heading_tag": "h2",
             "button_text": "",
@@ -346,8 +350,8 @@
             "value_1": "<p>{{ product.metafields.custom_fields.weight.value }}<\/p>",
             "value_2": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
             "value_3": "<p>{{ product.metafields.custom_fields.assembly_time.value }}<\/p>",
-            "value_4": "<p>{{ product.metafields.custom_fields.pedal_weight_capacity.value }}<\/p>",
-            "value_5": "<p>{{ product.metafields.custom_fields.wheelbase_torque.value }}<\/p>",
+            "value_4": "<p>{{ product.metafields.custom_fields.wheelbase_torque.value }}<\/p>",
+            "value_5": "<p>{{ product.metafields.custom_fields.pedal_weight_capacity.value }}<\/p>",
             "value_6": "",
             "value_7": "",
             "value_8": "",
@@ -376,7 +380,7 @@
         "full_width": true,
         "subheading": "",
         "title": "{{ product.title }} Specifications",
-        "content": "",
+        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -410,7 +414,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
             "content": ""
           }
         },
@@ -423,7 +427,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
             "content": ""
           }
         },
@@ -436,7 +440,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
             "content": ""
           }
         },
@@ -449,7 +453,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_4.value }}",
             "content": ""
           }
         },
@@ -462,7 +466,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_5.value }}",
             "content": ""
           }
         }
