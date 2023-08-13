@@ -18,28 +18,28 @@
       handleEvents: function(){
           const app = this;
 
-          window.addEventListener('load', function(){
-              $(document).on('click change', window.GloboPreorderParams.selectors.productVariantActivator, function(){
-                  window.Globo.Preorder.appSetInterval(function(){
-                      if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
-                          app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
-                      }
-                  }, 400, 2)
-              })
-              window.Globo.Preorder.appSetInterval(function(){
-                  if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
-                      app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
-                  }
-              }, 400, 2)
-          })
+          // window.addEventListener('load', function(){
+          //     $(document).on('click change', window.GloboPreorderParams.selectors.productVariantActivator, function(){
+          //         window.Globo.Preorder.appSetInterval(function(){
+          //             if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+          //                 app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+          //             }
+          //         }, 400, 2)
+          //     })
+          //     window.Globo.Preorder.appSetInterval(function(){
+          //         if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+          //             app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+          //         }
+          //     }, 400, 2)
+          // })
         
-          document.addEventListener('globo.preorder.show.preorder', e => {
-              const form = e.detail.form;
-              const message = e.detail.profile.message;
-              const preorderBtn = form.find('.gPreorderBtn')
+          // document.addEventListener('globo.preorder.show.preorder', e => {
+          //     const form = e.detail.form;
+          //     const message = e.detail.profile.message;
+          //     const preorderBtn = form.find('.gPreorderBtn')
         
-              preorderBtn.html(message.preorderText);
-          })
+          //     preorderBtn.html(message.preorderText);
+          // })
       },
       renderSingleProductForm: function(form, product){
           const app = window.Globo.Preorder;
