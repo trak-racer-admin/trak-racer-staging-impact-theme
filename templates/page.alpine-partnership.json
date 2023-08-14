@@ -113,19 +113,13 @@
     "a55855ce-000c-4da6-9b02-fe94409c1346": {
       "type": "rich-text",
       "blocks": {
-        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1": {
           "type": "heading",
           "settings": {
             "text": "One partnership to change the sim racing world forever",
             "heading_tag": "h1",
             "text_color": "",
-            "gradient": ""
+            "gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(112, 198, 210, 1) 86%)"
           }
         },
         "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1": {
@@ -136,7 +130,6 @@
         }
       },
       "block_order": [
-        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-subheading-1",
         "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1",
         "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1"
       ],
@@ -144,7 +137,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
