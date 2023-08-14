@@ -23,7 +23,7 @@
             "heading_tag": "h2",
             "button_text": "Shop Now",
             "button_link": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#008eff",
             "overlay_color": "#000000",
@@ -196,7 +196,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#fff",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -253,7 +253,7 @@
         "impact_text_style": "fill",
         "text_divider": "line",
         "impact_text_size_ratio": 0.7,
-        "background": "#fff",
+        "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "",
         "heading_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 238, 248, 1) 86%)",
@@ -334,6 +334,11 @@
           "type": "pickup_availability",
           "settings": {
           }
+        },
+        "8e9f5d4a-334a-443c-95c2-08e842dc93a4": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -347,7 +352,8 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-8",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9",
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10"
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10",
+        "8e9f5d4a-334a-443c-95c2-08e842dc93a4"
       ],
       "settings": {
         "full_width": true,
