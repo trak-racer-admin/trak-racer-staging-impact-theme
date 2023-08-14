@@ -150,7 +150,7 @@
           "settings": {
             "text": "Trak Racer x Alpine World",
             "heading_tag": "h1",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "gradient": ""
           }
         }
@@ -162,8 +162,8 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#aaeef8",
-        "background_gradient": "",
+        "background": "#baf1f9",
+        "background_gradient": "linear-gradient(180deg, rgba(52, 133, 236, 1) 11%, rgba(170, 238, 248, 1) 84%)",
         "text_color": ""
       }
     },
