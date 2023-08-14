@@ -110,6 +110,45 @@
         "overlay_opacity": 30
       }
     },
+    "a55855ce-000c-4da6-9b02-fe94409c1346": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "One partnership to change the sim racing world forever",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>In October 2020, a world-changing collaboration was formed between the Alpine F1 Racing Team and sim racing experts Trak Racer. The partnership was built on a shared passion for innovation and creativity. Pushing the boundaries together, Trak Racer and Alpine have been able to change and create new ways for drivers to train.<\/p><p>In early 2021, the announcement of the Alpine Racing TRX, a first-of-its-kind racing simulator, meant that sim racers would now have unlimited access and flexibility to test and hone their skills with new racing styles.<\/p><p>The resounding success of the Alpine Racing TRX is a testament to the partnership between Trak Racer and Alpine and we look forward to many years continuing to collaborate and drive innovation in the sim racing space.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-subheading-1",
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1",
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
       "type": "media-grid",
       "blocks": {
@@ -441,6 +480,7 @@
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "3007b565-c367-4be6-91f3-69e501578fa2",
     "3bf6c5b3-c0d1-465c-88bc-c84af361393b",
+    "a55855ce-000c-4da6-9b02-fe94409c1346",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
