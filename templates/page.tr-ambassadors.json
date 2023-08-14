@@ -16,6 +16,13 @@
             "heading_tag": "h1"
           }
         },
+        "bee2bf10-0be7-4962-808d-31d84ac42d2e": {
+          "type": "heading",
+          "settings": {
+            "text": "If you don't have the time or money for a real racecar, get yourself a quality simulator from Trak Racer and bring the racecar experience inside your own home!",
+            "heading_tag": "h3"
+          }
+        },
         "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-richtext-1": {
           "type": "richtext",
           "settings": {
@@ -24,6 +31,7 @@
         },
         "ded39dad-325d-4b87-bf7b-f78baefe53e5": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "style": "fill",
             "size": "lg",
@@ -37,6 +45,7 @@
       "block_order": [
         "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-subheading-1",
         "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-heading-1",
+        "bee2bf10-0be7-4962-808d-31d84ac42d2e",
         "template--19607694082336__66ff8e33-de98-4229-a950-485dbbd244ef-richtext-1",
         "ded39dad-325d-4b87-bf7b-f78baefe53e5"
       ],
