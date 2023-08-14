@@ -90,7 +90,6 @@
     },
     "1eb979a5-d0ab-45bd-adb5-af4137be54b4": {
       "type": "media-grid",
-      "disabled": true,
       "blocks": {
         "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1": {
           "type": "image",
@@ -161,6 +160,7 @@
         "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-2",
         "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -292,18 +292,18 @@
           "settings": {
           }
         },
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6": {
-          "type": "description",
+        "65fcd15e-b101-4931-8706-3d42596c9404": {
+          "type": "text",
           "settings": {
-            "collapse_content": false
+            "text": "{{ section.settings.product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7": {
           "type": "variant_picker",
           "settings": {
-            "hide_sold_out_variants": false,
+            "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "block",
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -316,7 +316,7 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
             "atc_button_background": "",
             "atc_button_text_color": "",
@@ -337,7 +337,7 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-3",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-4",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-5",
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6",
+        "65fcd15e-b101-4931-8706-3d42596c9404",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-8",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9",
