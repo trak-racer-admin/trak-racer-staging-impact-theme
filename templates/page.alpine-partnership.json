@@ -142,6 +142,31 @@
         "text_color": ""
       }
     },
+    "f43012a9-e5cd-43f9-9a71-4ea09fdd24c3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17060381425828__f43012a9-e5cd-43f9-9a71-4ea09fdd24c3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trak Racer x Alpine World",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__f43012a9-e5cd-43f9-9a71-4ea09fdd24c3-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "linear-gradient(15deg, rgba(170, 238, 248, 1) 14%, rgba(52, 133, 236, 1) 87%)",
+        "text_color": ""
+      }
+    },
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
       "type": "media-grid",
       "blocks": {
@@ -214,14 +239,15 @@
         "28fc00c5-51b5-45e6-82c2-1ea69beabf32": {
           "type": "image",
           "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
+            "image": "shopify:\/\/shop_images\/ALPINE_00001558_0020.jpg",
+            "title": "Trak Racer with Estaban Ocon at Silverstone 2022",
+            "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_column_span": 2,
             "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -229,7 +255,7 @@
             "button_background": "#000000",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         },
         "afae82e8-400b-4425-ac3e-80e3133423ba": {
@@ -474,6 +500,7 @@
     "3007b565-c367-4be6-91f3-69e501578fa2",
     "3bf6c5b3-c0d1-465c-88bc-c84af361393b",
     "a55855ce-000c-4da6-9b02-fe94409c1346",
+    "f43012a9-e5cd-43f9-9a71-4ea09fdd24c3",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
