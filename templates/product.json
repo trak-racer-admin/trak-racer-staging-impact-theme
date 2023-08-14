@@ -54,6 +54,7 @@
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -150,8 +151,8 @@
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
