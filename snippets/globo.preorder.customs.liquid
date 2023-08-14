@@ -23,9 +23,9 @@
               const profile = e.detail.profile;
              console.log('check form', form, profile)
               if(!profile.discountPayment.fullPayment.enable && !profile.discountPayment.partialPayment.enable){
-                  form.addClass('gHidePaymentOption')
+                  form.classList.add('gHidePaymentOption')
               }else{
-                  form.removeClass('gHidePaymentOption')
+                  form.classList.remove('gHidePaymentOption')
               }
           })
 
