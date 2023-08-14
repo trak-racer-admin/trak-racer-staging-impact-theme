@@ -48,6 +48,36 @@
         "background_gradient": ""
       }
     },
+    "3007b565-c367-4be6-91f3-69e501578fa2": {
+      "type": "press",
+      "blocks": {
+        "template--17060381425828__3007b565-c367-4be6-91f3-69e501578fa2-quote-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/test_bwt_alpine_logo.png",
+            "logo_width": 100,
+            "author": "Esteban Ocon | Driver I Alpine F1 Team",
+            "content": "I really enjoyed the Trak Racer, Alpine Racing TRX. It’s a very useful tool for preparing for Grand Prix’s. It has everything we need as professional racing drivers!",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__3007b565-c367-4be6-91f3-69e501578fa2-quote-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
       "type": "media-grid",
       "blocks": {
@@ -377,6 +407,7 @@
   "order": [
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
+    "3007b565-c367-4be6-91f3-69e501578fa2",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
