@@ -14,6 +14,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/ALPINE_00001696_0008.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/alp_mobile.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
@@ -21,7 +22,7 @@
             "title": "Alpine F1 x Trak Racer",
             "heading_tag": "h2",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
             "text_color": "#fff",
             "button_background": "#ffffff",
             "button_text_color": "#008eff",
@@ -175,13 +176,6 @@
         "background_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 14%, rgba(170, 238, 248, 1) 86%)"
       }
     },
-    "4b638faa-bf42-49e0-adcf-dfde7f350aed": {
-      "type": "media-with-text",
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      }
-    },
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a": {
       "type": "rich-text",
       "blocks": {
@@ -202,7 +196,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "rgba(0,0,0,0)",
+        "background": "#fff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -259,7 +253,7 @@
         "impact_text_style": "fill",
         "text_divider": "line",
         "impact_text_size_ratio": 0.7,
-        "background": "",
+        "background": "#fff",
         "background_gradient": "",
         "heading_text_color": "",
         "heading_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 238, 248, 1) 86%)",
@@ -378,7 +372,6 @@
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
-    "4b638faa-bf42-49e0-adcf-dfde7f350aed",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
     "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
