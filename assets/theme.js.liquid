@@ -3053,6 +3053,12 @@ var VariantInventory = class extends HTMLElement {
   _onVariantChanged(event) {
     const variantId = event.detail.variant ? event.detail.variant["id"] : null;
     Array.from(this.children).forEach((item) => item.toggleAttribute("hidden", variantId !== parseInt(item.getAttribute("data-variant-id"))));
+
+    /* HC - Metafield based ETA - 11 Aug '23 */
+    if(document.getElementById("hcetas"))
+    {
+       Array.from(document.getElementById("hcetas").children).forEach((item) => item.toggleAttribute("hidden", variantId !== parseInt(item.getAttribute("data-variant-id"))));
+    }
   }
 };
 if (!window.customElements.get("variant-inventory")) {
