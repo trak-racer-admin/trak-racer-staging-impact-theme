@@ -4,7 +4,6 @@
   "sections": {
     "text-with-icons": {
       "type": "text-with-icons",
-      "disabled": true,
       "blocks": {
         "free-shipping": {
           "type": "item",
@@ -65,6 +64,7 @@
         "discount",
         "payment"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -85,8 +85,8 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h5",
-            "title": "Sign Up and Save",
-            "content": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+            "title": "Join the Trak Racer community!",
+            "content": "<p>Subscribe to get unique offers and community content!<\/p>"
           }
         },
         "links": {
