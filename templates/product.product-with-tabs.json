@@ -183,7 +183,7 @@
         "subheading": "About",
         "title": "The {{ product.title }}",
         "first_tab_open": false,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
