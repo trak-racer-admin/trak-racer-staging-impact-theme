@@ -16,8 +16,8 @@
         "image_size": "sm",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
-        "featured_product": "test-2",
-        "featured_product_heading": "Alpine Racing TRX",
+        "featured_product": "",
+        "featured_product_heading": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
