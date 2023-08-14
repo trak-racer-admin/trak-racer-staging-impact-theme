@@ -13,20 +13,20 @@
         "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/222222222222222.jpg",
+            "image": "shopify:\/\/shop_images\/ALPINE_00001696_0008.jpg",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
             "title": "Alpine F1 x Trak Racer",
             "heading_tag": "h2",
             "button_text": "Shop Now",
             "button_link": "",
-            "text_color": "#008eff",
+            "text_color": "#fff",
             "button_background": "#ffffff",
             "button_text_color": "#008eff",
             "overlay_color": "#000000",
-            "overlay_opacity": 10,
+            "overlay_opacity": 20,
             "background": "",
             "background_gradient": "linear-gradient(333deg, rgba(216, 231, 255, 1) 3%, rgba(240, 240, 240, 0.71) 21.223%, rgba(126, 156, 255, 1) 41%, rgba(54, 89, 255, 1) 59%, rgba(41, 90, 151, 0.71) 85%)"
           }
@@ -98,7 +98,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/5c5a7b6f-3e5a-4ed8-976e-27a8acfcacba_1.jpg",
-            "title": "Trak Racer featured on the Alpine F1 car in February 2023!",
+            "title": "Trak Racer featured on the Alpine F1 car in February 2023",
             "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
