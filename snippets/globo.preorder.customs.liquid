@@ -18,6 +18,17 @@
       handleEvents: function(){
           const app = this;
 
+          document.addEventListener('globo.preorder.show.preorder', e => {
+              const form = e.detail.form;
+              const profile = e.detail.profile;
+             console.log('check form', form, profile)
+              if(!profile.discountPayment.fullPayment.enable && !profile.discountPayment.partialPayment.enable){
+                  form.addClass('gHidePaymentOption')
+              }else{
+                  form.removeClass('gHidePaymentOption')
+              }
+          })
+
           // window.addEventListener('load', function(){
           //     $(document).on('click change', window.GloboPreorderParams.selectors.productVariantActivator, function(){
           //         window.Globo.Preorder.appSetInterval(function(){
