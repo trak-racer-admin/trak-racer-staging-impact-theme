@@ -261,6 +261,7 @@
         "afae82e8-400b-4425-ac3e-80e3133423ba": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Alpine_TR.jpg",
             "title": "Alpine F1 Car for Trak Racer at Sim Race Expo 2022",
             "heading_tag": "h5",
             "link_url": "",
@@ -276,7 +277,7 @@
             "button_background": "#000000",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         }
       },
