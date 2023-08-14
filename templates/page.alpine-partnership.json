@@ -492,6 +492,52 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "dcebc5b2-391f-48ba-a807-44ef3c283a0f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ALPINE_00001698_0008_1.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>The Alpine F1 Racing Team, previously Renault F1 Team, is a distinguished Formula One squad with a legacy of success. Established in 1977 as Renault Sport, the team clinched Constructors' Championships in 2005 and 2006. Rebranded as Alpine in 2021, they combine racing prowess with Alpine's road car expertise. With a commitment to excellence, the team competes at the pinnacle of motorsport, embodying speed, innovation, and competition.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-1",
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "About Alpine",
+        "content": "",
+        "background": "#2173b8",
+        "background_gradient": "linear-gradient(46deg, rgba(33, 115, 184, 1) 13%, rgba(2, 25, 43, 1) 86%)",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -504,6 +550,7 @@
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
-    "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7",
+    "dcebc5b2-391f-48ba-a807-44ef3c283a0f"
   ]
 }
