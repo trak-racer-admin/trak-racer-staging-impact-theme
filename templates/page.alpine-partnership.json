@@ -54,7 +54,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/222222222222222.jpg",
-            "title": "Alpine eSports headquarters using Trak Racer simulators to train!",
+            "title": "Alpine Esports headquarters using Trak Racer simulators to train",
             "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
@@ -76,7 +76,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
-            "title": "Melbourne Grand Prix 2023 - Alpine Drivers practicing on the Alpine Racing TRX!",
+            "title": "Melbourne Grand Prix 2023 - Alpine Drivers practicing on the Alpine Racing TRX",
             "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
@@ -104,7 +104,7 @@
             "link_text": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_column_span": 2,
-            "desktop_row_span": 1,
+            "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "background": "#000000",
             "background_gradient": "",
@@ -172,7 +172,7 @@
         "desktop_row_height": 290,
         "mobile_row_height": 150,
         "background": "#047de3",
-        "background_gradient": ""
+        "background_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 14%, rgba(170, 238, 248, 1) 86%)"
       }
     },
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a": {
