@@ -42,7 +42,7 @@
       ],
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/dan_burkett.jpg",
