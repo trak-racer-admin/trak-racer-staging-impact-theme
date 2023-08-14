@@ -80,15 +80,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {
-            "image_width": 150,
-            "heading_size": "h5",
-            "title": "Join the Trak Racer community!",
-            "content": "<p>Subscribe to get unique offers and community content!<\/p>"
-          }
-        },
         "links": {
           "type": "links",
           "settings": {
@@ -109,13 +100,22 @@
             "menu": "service",
             "show_menu_title": true
           }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "image_width": 150,
+            "heading_size": "h5",
+            "title": "Join the Trak Racer community!",
+            "content": "<p>Subscribe to get unique offers and community content!<\/p>"
+          }
         }
       },
       "block_order": [
-        "newsletter",
         "links",
         "1b353c78-1819-4f33-82ce-ef2f94b95921",
-        "b04f5f50-51db-467b-9546-223920775c32"
+        "b04f5f50-51db-467b-9546-223920775c32",
+        "newsletter"
       ],
       "settings": {
         "show_social_media": true,
