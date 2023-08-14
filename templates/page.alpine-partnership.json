@@ -78,6 +78,38 @@
         "logo_item_border": ""
       }
     },
+    "3bf6c5b3-c0d1-465c-88bc-c84af361393b": {
+      "type": "video",
+      "blocks": {
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Alpine F1 hitting the Trak on the Alpine Racing TRX at Calder Park",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-play-1",
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=FUyoOfm7sRE",
+        "poster": "shopify:\/\/shop_images\/TR_Logo.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
       "type": "media-grid",
       "blocks": {
@@ -408,6 +440,7 @@
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "3007b565-c367-4be6-91f3-69e501578fa2",
+    "3bf6c5b3-c0d1-465c-88bc-c84af361393b",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
