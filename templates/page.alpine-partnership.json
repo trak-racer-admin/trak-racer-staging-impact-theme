@@ -19,7 +19,7 @@
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
-            "title": "Alpine F1 x Trak Racer",
+            "title": "BWT Alpine F1 x Trak Racer",
             "heading_tag": "h2",
             "button_text": "Shop Now",
             "button_link": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
@@ -38,7 +38,7 @@
       ],
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "dots",
         "transition_type": "fade_with_text",
@@ -56,7 +56,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/test_bwt_alpine_logo.png",
             "logo_width": 100,
-            "author": "Esteban Ocon | Driver I Alpine F1 Team",
+            "author": "Esteban Ocon | Driver I BWT Alpine F1 Team",
             "content": "I really enjoyed the Trak Racer, Alpine Racing TRX. It’s a very useful tool for preparing for Grand Prix’s. It has everything we need as professional racing drivers!",
             "show_rating": false,
             "rating": 4
@@ -89,7 +89,7 @@
         "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Alpine F1 hitting the Trak on the Alpine Racing TRX at Calder Park",
+            "text": "BWT Alpine F1 hitting the Trak on the Alpine Racing TRX at Calder Park",
             "heading_tag": "h4"
           }
         }
@@ -125,7 +125,7 @@
         "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>In October 2020, a world-changing collaboration was formed between the Alpine F1 Racing Team and sim racing experts Trak Racer. The partnership was built on a shared passion for innovation and creativity. Pushing the boundaries together, Trak Racer and Alpine have been able to change and create new ways for drivers to train.<\/p><p>In early 2021, the announcement of the Alpine Racing TRX, a first-of-its-kind racing simulator, meant that sim racers would now have unlimited access and flexibility to test and hone their skills with new racing styles.<\/p><p>The resounding success of the Alpine Racing TRX is a testament to the partnership between Trak Racer and Alpine and we look forward to many years continuing to collaborate and drive innovation in the sim racing space.<\/p>"
+            "content": "<p>In October 2020, a world-changing collaboration was formed between the BWT Alpine F1 Racing Team and sim racing experts Trak Racer. The partnership was built on a shared passion for innovation and creativity. Pushing the boundaries together, Trak Racer and Alpine have been able to change and create new ways for drivers to train.<\/p><p>In early 2021, the announcement of the Alpine Racing TRX, a first-of-its-kind racing simulator, meant that sim racers would now have unlimited access and flexibility to test and hone their skills with new racing styles.<\/p><p>The resounding success of the Alpine Racing TRX is a testament to the partnership between Trak Racer and Alpine and we look forward to many years continuing to collaborate and drive innovation in the sim racing space.<\/p>"
           }
         }
       },
@@ -218,7 +218,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/5c5a7b6f-3e5a-4ed8-976e-27a8acfcacba_1.jpg",
-            "title": "Trak Racer featured on the Alpine F1 car in February 2023",
+            "title": "Trak Racer featured on the BWT Alpine F1 car in February 2023",
             "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
