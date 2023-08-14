@@ -27,7 +27,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#008eff",
             "overlay_color": "#000000",
-            "overlay_opacity": 20,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -325,24 +325,24 @@
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3": {
       "type": "impact-text",
       "blocks": {
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
-          "type": "item",
-          "settings": {
-            "title": "60",
-            "subheading": "seconds",
-            "content": "<p>F1 to GT positioning in less than 60 seconds.<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
         "ca2c02a4-7b20-469f-8c44-da48327843e7": {
           "type": "item",
           "settings": {
             "title": "300",
             "subheading": "seconds",
             "content": "<p>To change your pedal position<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
+          "type": "item",
+          "settings": {
+            "title": "60",
+            "subheading": "seconds",
+            "content": "<p>F1 to GT seat positioning in less than 60 seconds.<\/p>",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -363,8 +363,8 @@
         }
       },
       "block_order": [
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
         "ca2c02a4-7b20-469f-8c44-da48327843e7",
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
         "f15d034d-d79d-4857-882b-514851c4b7a9"
       ],
       "settings": {
