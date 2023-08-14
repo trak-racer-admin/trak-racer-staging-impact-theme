@@ -162,8 +162,8 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "linear-gradient(180deg, rgba(170, 238, 248, 1) 14%, rgba(52, 133, 236, 1) 87%)",
+        "background": "#aaeef8",
+        "background_gradient": "",
         "text_color": ""
       }
     },
@@ -293,7 +293,7 @@
         "desktop_row_height": 290,
         "mobile_row_height": 150,
         "background": "#047de3",
-        "background_gradient": "linear-gradient(180deg, rgba(52, 133, 236, 1) 14%, rgba(170, 238, 248, 1) 86%)"
+        "background_gradient": "linear-gradient(360deg, rgba(52, 133, 236, 1) 14%, rgba(170, 238, 248, 1) 86%)"
       }
     },
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a": {
