@@ -4,7 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "message": {
           "type": "message",
@@ -17,6 +16,7 @@
       "block_order": [
         "message"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -110,8 +110,8 @@
             "menu_item": "Support",
             "layout": "horizontal_center",
             "submenu_style": "bold_heading",
-            "image_heading_1": "Sim Racing Academy",
-            "image_link_1": "shopify:\/\/collections\/racing-simulators",
+            "image_heading_1": "Partner Program",
+            "image_link_1": "",
             "image_text_color_1": "#ffffff",
             "image_heading_2": "Alpine F1 x Trak Racer",
             "image_link_2": "",
