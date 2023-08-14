@@ -25,7 +25,7 @@
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
         "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
-        "mobile_text_position": "place-self-start-end text-end",
+        "mobile_text_position": "place-self-start-center text-center",
         "desktop_text_position": "sm:place-self-end sm:text-end",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
