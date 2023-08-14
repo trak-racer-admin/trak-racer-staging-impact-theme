@@ -47,6 +47,133 @@
         "background_gradient": ""
       }
     },
+    "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
+      "type": "media-grid",
+      "blocks": {
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/222222222222222.jpg",
+            "title": "Alpine eSports headquarters using Trak Racer simulators to train!",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 4,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
+            "title": "Melbourne Grand Prix 2023 - Alpine Drivers practicing on the Alpine Racing TRX!",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "28fc00c5-51b5-45e6-82c2-1ea69beabf32": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "afae82e8-400b-4425-ac3e-80e3133423ba": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-1",
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-2",
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3",
+        "28fc00c5-51b5-45e6-82c2-1ea69beabf32",
+        "afae82e8-400b-4425-ac3e-80e3133423ba"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
     "2c4713a9-f1a9-42da-beef-909350326f0e": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -318,7 +445,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
+            "atc_button_background": "#62a3ee",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -354,7 +481,7 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
@@ -365,6 +492,7 @@
   "order": [
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
+    "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "2c4713a9-f1a9-42da-beef-909350326f0e",
     "1eb979a5-d0ab-45bd-adb5-af4137be54b4",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
