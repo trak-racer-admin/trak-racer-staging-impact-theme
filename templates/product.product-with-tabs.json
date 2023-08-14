@@ -90,6 +90,12 @@
             "low_inventory_threshold": 0
           }
         },
+        "c190e057-0a9c-454b-af85-fde390c1cbeb": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -123,6 +129,7 @@
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
+        "c190e057-0a9c-454b-af85-fde390c1cbeb",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c"
       ],
