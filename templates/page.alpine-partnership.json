@@ -36,7 +36,7 @@
         "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": true,
         "image_size": "auto",
         "controls_type": "dots",
@@ -80,7 +80,7 @@
             "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_column_span": 2,
             "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
@@ -97,14 +97,15 @@
         "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3": {
           "type": "image",
           "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
+            "image": "shopify:\/\/shop_images\/5c5a7b6f-3e5a-4ed8-976e-27a8acfcacba_1.jpg",
+            "title": "Trak Racer featured on the Alpine F1 car in February 2023!",
+            "heading_tag": "h5",
             "link_url": "",
             "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_column_span": 2,
             "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -112,7 +113,7 @@
             "button_background": "#000000",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 20
           }
         },
         "28fc00c5-51b5-45e6-82c2-1ea69beabf32": {
@@ -170,130 +171,7 @@
         "reduce_width": false,
         "desktop_row_height": 290,
         "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
-    "2c4713a9-f1a9-42da-beef-909350326f0e": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-1": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Alpine F1 team at Melbourne Grand Prix 2023",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-2": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Alpine and Trak Racer at Belgium Grand Prix 2023",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-1",
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "1eb979a5-d0ab-45bd-adb5-af4137be54b4": {
-      "type": "media-grid",
-      "blocks": {
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-2": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-3": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1",
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-2",
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "rgba(0,0,0,0)",
+        "background": "#047de3",
         "background_gradient": ""
       }
     },
@@ -474,9 +352,9 @@
         "full_width": true,
         "product": "{{ page.metafields.custom.comparison_rig_1.value }}",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "contained",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -493,8 +371,6 @@
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
     "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
-    "2c4713a9-f1a9-42da-beef-909350326f0e",
-    "1eb979a5-d0ab-45bd-adb5-af4137be54b4",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
     "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
