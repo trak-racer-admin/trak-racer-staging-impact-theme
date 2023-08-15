@@ -479,6 +479,77 @@
         "background_gradient": ""
       }
     },
+    "13942dab-2bfb-42c2-9106-887f02716a44": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Frame\/Chassis Features",
+            "heading_tag": "h4",
+            "content": "<ul><li>Adjustable Height<\/li><li>Rigid Frame Constructed from Premium Materials<\/li><li>Folds up to a Compact Size for Storage<\/li><li>Wide Leg Stance - Suitable for Office Chairs!<\/li><li>650mm wide for firm stance when racing<\/li><li>Hard-Wood Floor Safe Feet<\/li><li>Finished in high-grade steel tubing<\/li><li>Folds away in a matter of Seconds<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Adjustable Pedal Mount Features",
+            "heading_tag": "h4",
+            "content": "<ul><li>Pre-drilled mounting points for all major brand rudders and sim racing pedals<\/li><li>Angle Adjustable with Realistic Inclined Angle<\/li><li>Distance Slider for perfect ergonomics<\/li><li>Compatible with PC, PS3, PS4, PS5, XBOX 360, XBOX One, Wii and more<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-3": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Adjustable Wheel Mount Features",
+            "heading_tag": "h4",
+            "content": "<ul><li>Solid construction<\/li><li>Pre-drilled mounting points for all major brand yokes and sim racing wheel bases<\/li><li><strong>3-Point Adjustment allows you to adjust the height and angle of the mount<\/strong><\/li><li>Distance Slider for perfect ergonomics<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "9f51622b-fd4c-4d37-bd5a-33abec34ab6a": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "What's Included",
+            "heading_tag": "h4",
+            "content": "<ul><li>High Quality Chassis with Assembly Instructions<\/li><li>Left and Right Side Flight Sim mounts<\/li><li>Left\/Right Adjustable Gear Shifter Mount<\/li><li>Angle and Height Adjustable Wheel Mount<\/li><li>Angle Adjustable Pedal Mount<\/li><li>Tools and Screws for Assembly<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-1",
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-2",
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-3",
+        "9f51622b-fd4c-4d37-bd5a-33abec34ab6a"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "TRAK RACER PREMIUM FS3 WHEEL STAND OVERVIEW",
+        "content": "<ul><li>Compatible with PC and Console<\/li><li>Compatible with all popular Flight Yoke, Rudders and Flight Controls as well as steering wheels, pedals and shifters on the market<\/li><li>Improved Left and Right Side Flight Control Mounts and a Gear Shift is included with pre-drilled mounting points and slide function for Sim Racing<\/li><li>Reinforced Angle and Distance Adjustable Pedal Mount, suitable for all the big brands!<\/li><li>Upgraded 3-Point adjustable steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Designed and Engineered in Australia<\/li><\/ul>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "62ed16f3-523c-43c3-9604-6964782a797f": {
       "type": "tabs",
       "blocks": {
@@ -903,6 +974,7 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "7617e7f5-08a4-4353-8604-b762708565f8",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "13942dab-2bfb-42c2-9106-887f02716a44",
     "62ed16f3-523c-43c3-9604-6964782a797f",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
