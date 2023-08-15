@@ -596,52 +596,6 @@
         "text_color": ""
       }
     },
-    "62ed16f3-523c-43c3-9604-6964782a797f": {
-      "type": "tabs",
-      "blocks": {
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-1": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 1",
-            "content": "<p>Use this text to share information about your brand with your customers.<\/p>",
-            "page": ""
-          }
-        },
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-2": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 2",
-            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "page": ""
-          }
-        },
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-3": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 3",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-1",
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-2",
-        "template--17063911751844__62ed16f3-523c-43c3-9604-6964782a797f-tab-3"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_size": "medium",
-        "subheading": "Subheading",
-        "title": "Heading",
-        "first_tab_open": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
       "type": "feature-chart",
       "blocks": {
@@ -974,7 +928,6 @@
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "22bf5fbe-8005-4f2e-9ccb-383dcc824975",
     "13942dab-2bfb-42c2-9106-887f02716a44",
-    "62ed16f3-523c-43c3-9604-6964782a797f",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
