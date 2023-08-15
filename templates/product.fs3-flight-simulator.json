@@ -219,6 +219,86 @@
         "text_color": "#ffffff"
       }
     },
+    "7617e7f5-08a4-4353-8604-b762708565f8": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/27_FS3-Side-Mount.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Left and Right Side Mounts Included",
+            "content": "<p>With all the adjustment you need for your left and right-side flight controls from any major brand, you’ll be able to hit the skies in absolute comfort.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "afc2fc92-4329-4ed4-9f77-a8560cccc7b4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/28_FS3-Yoke-Mount_97902182-c2f4-4daa-8b3c-faffce43ff30.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Secure and Adjustable",
+            "content": "<p>If you’re a serious flight sim operator, then you have a flight yoke. Mount it up directly onto the yoke platform on the Trak Racer wheel stand and adjust as required into the most comfortable position.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "9948cd6a-280a-4330-ab49-c6e66210d01f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26_FS3-Rudder_758ba73d-c655-4dc2-9043-ff74172e1aec.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Rigidity and Fine-Tune Adjustment",
+            "content": "<p>Mount your rudders directly onto the pedal baseplate of the FS3 Flight Stand and adjust the position on the micro side slider or angle to get it into the perfect position.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1",
+        "afc2fc92-4329-4ed4-9f77-a8560cccc7b4",
+        "9948cd6a-280a-4330-ab49-c6e66210d01f"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
       "type": "slideshow",
       "blocks": {
@@ -705,6 +785,7 @@
   "order": [
     "main",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
+    "7617e7f5-08a4-4353-8604-b762708565f8",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
