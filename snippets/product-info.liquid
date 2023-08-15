@@ -73,12 +73,8 @@
   
         {%- when 'payment_terms' -%}
           <payment-terms class="product-info__payment-terms" form="{{ product_form_id }}" {{ block.shopify_attributes }}>
-            {%- capture product_installment_form_id -%}product-installment-form-{{ section.id }}-{{ product.id }}{%- endcapture -%}
-  
-            {%- form 'product', product, id: product_installment_form_id -%}
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-              {{- form | payment_terms -}}
-            {%- endform -%}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            {{- form | payment_terms -}}
           </payment-terms>
   
         {%- when 'separator' -%}
