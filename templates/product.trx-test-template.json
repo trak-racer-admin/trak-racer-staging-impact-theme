@@ -385,7 +385,7 @@
       ],
       "settings": {
         "full_width": true,
-        "subheading": "",
+        "subheading": "{{ product.metafields.custom_fields.product_specification_headline.value }}",
         "title": "{{ product.title }} Specifications",
         "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
         "button_text": "",
@@ -422,7 +422,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "content": ""
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}"
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
@@ -435,7 +435,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
-            "content": ""
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}"
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
@@ -448,7 +448,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
-            "content": ""
+            "content": "<p>{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}<\/p>"
           }
         },
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
@@ -461,7 +461,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "{{ product.metafields.custom_fields.whats_included_header_4.value }}",
-            "content": ""
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_4 | metafield_tag }}"
           }
         },
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
@@ -474,7 +474,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "{{ product.metafields.custom_fields.whats_included_header_5.value }}",
-            "content": ""
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_5 | metafield_tag }}"
           }
         }
       },
