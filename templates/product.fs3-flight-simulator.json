@@ -479,6 +479,52 @@
         "background_gradient": ""
       }
     },
+    "22bf5fbe-8005-4f2e-9ccb-383dcc824975": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FS3-FLT.3.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Trak Racer FS3 Flight Stand Overview",
+            "heading_tag": "h4",
+            "content": "<ul><li>Compatible with PC and Console<\/li><li>Compatible with all popular Flight Yoke, Rudders and Flight Controls as well as steering wheels, pedals and shifters on the market<\/li><li>Improved Left and Right Side Flight Control Mounts and a Gear Shift is included with pre-drilled mounting points and slide function for Sim Racing<\/li><li>Reinforced Angle and Distance Adjustable Pedal Mount, suitable for all the big brands!<\/li><li>Upgraded 3-Point adjustable steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Designed and Engineered in Australia<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1",
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#bde5f7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "13942dab-2bfb-42c2-9106-887f02716a44": {
       "type": "multi-column",
       "blocks": {
@@ -542,9 +588,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "About",
-        "title": "TRAK RACER PREMIUM FS3 WHEEL STAND OVERVIEW",
-        "content": "<ul><li>Compatible with PC and Console<\/li><li>Compatible with all popular Flight Yoke, Rudders and Flight Controls as well as steering wheels, pedals and shifters on the market<\/li><li>Improved Left and Right Side Flight Control Mounts and a Gear Shift is included with pre-drilled mounting points and slide function for Sim Racing<\/li><li>Reinforced Angle and Distance Adjustable Pedal Mount, suitable for all the big brands!<\/li><li>Upgraded 3-Point adjustable steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Designed and Engineered in Australia<\/li><\/ul>",
+        "subheading": "",
+        "title": "",
+        "content": "",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -926,6 +972,7 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "7617e7f5-08a4-4353-8604-b762708565f8",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "22bf5fbe-8005-4f2e-9ccb-383dcc824975",
     "13942dab-2bfb-42c2-9106-887f02716a44",
     "62ed16f3-523c-43c3-9604-6964782a797f",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
