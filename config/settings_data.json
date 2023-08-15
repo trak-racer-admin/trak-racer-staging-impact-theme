@@ -1,6 +1,6 @@
 {
   "current": {
-    "section_vertical_spacing": "small",
+    "section_vertical_spacing": "xsmall",
     "button_border_radius": 24,
     "input_border_radius": 8,
     "block_border_radius": 16,
@@ -75,12 +75,10 @@
         "settings": {
         }
       },
-      "1519107564253711417": {
-        "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.embeded\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+      "17530695623102652971": {
+        "type": "shopify:\/\/apps\/exemptify\/blocks\/ExemptifyApp\/53648040-92ea-472b-92a5-eb781e92b01b",
         "disabled": false,
         "settings": {
-          "selected_theme": "impact",
-          "no_block_id": false
         }
       }
     }
