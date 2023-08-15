@@ -657,6 +657,7 @@
         "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
         "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -759,6 +760,7 @@
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
