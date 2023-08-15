@@ -182,7 +182,7 @@
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(189, 229, 247, 1), rgba(143, 204, 231, 1) 33%, rgba(217, 216, 216, 1) 63.309%, rgba(194, 194, 194, 1) 81.295%, rgba(161, 161, 161, 1) 100%)",
-        "text_color": "#ffffff",
+        "text_color": "#1a1a1a",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
