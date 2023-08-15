@@ -7360,12 +7360,12 @@ split-lines {
   --product-info-block-spacing: var(--spacing-6);
 }
 
-.product-info > * + * {
+.product-info form > * + * {
   margin-block-start: var(--product-info-block-spacing);
   margin-block-end: var(--product-info-block-spacing);
 }
 
-.product-info > :last-child {
+.product-info form > :last-child {
   margin-block-end: 0;
 }
 
