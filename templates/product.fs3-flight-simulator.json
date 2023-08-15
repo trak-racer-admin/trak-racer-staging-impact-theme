@@ -193,15 +193,22 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "",
+            "text": "FS3 Flight Wheel Stand",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
           }
+        },
+        "81c78793-c0c1-4085-b743-fd13baf17657": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The FS3 is an entry-level and extremely rigid wheel stand that has had several upgrades from customer feedback. From 2017 onward, the FS3 was globally, the most preferred entry-level wheel stand in the market and now, it’s the preferred entry level Flight wheel stand. It ticks all of the boxes for a Flight Wheel Stand Rig that assembles in under 30 minutes. It's Strong, Adjustable, and has an array of genuine Trak Racer add-ons to personalize the stand.<\/p>"
+          }
         }
       },
       "block_order": [
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1",
+        "81c78793-c0c1-4085-b743-fd13baf17657"
       ],
       "settings": {
         "full_width": true,
@@ -546,6 +553,52 @@
         "accordion_text_color": "#000000"
       }
     },
+    "6a866393-9e10-4a80-a480-c495a0eed3a2": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/airbus_6896074a-1522-4565-a3eb-64ba0d6c45ed.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Take to the skies with an offical AIRBUS partner!",
+            "heading_tag": "h4",
+            "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-1",
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
       "type": "tabs",
       "blocks": {
@@ -656,6 +709,7 @@
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "6a866393-9e10-4a80-a480-c495a0eed3a2",
     "e0e54f60-4a55-4832-b13b-a296f9061f3c",
     "related-products",
     "16919816096b1b8f4c"
