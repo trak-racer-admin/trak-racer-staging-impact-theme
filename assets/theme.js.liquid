@@ -3063,15 +3063,15 @@ var VariantInventory = class extends HTMLElement {
        console.log(inventory + ' ' + textype);
        if(textype  === null)
        {
-           document.getElementByClassName("hc-new-eta").empty();
+           document.getElementById("hc-new-eta").empty();
        }
        else
        {
-           document.getElementByClassName("hc-new-eta").empty();
+           document.getElementById("hc-new-eta").empty();
            if(inventory < 1)
            {
                let newtexttype = textype.split(":");
-               document.getElementByClassName("hc-new-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
+               document.getElementById("hc-new-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
            }
        }
     }
