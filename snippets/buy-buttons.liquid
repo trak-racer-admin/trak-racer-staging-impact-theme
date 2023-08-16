@@ -25,8 +25,8 @@ Supported variables
 {%- form 'product', product, is: 'product-form', id: form_id -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-  {% if block.settings.liquid != blank %}
-    {{ block.settings.liquid }}
+  {% if customliquid != blank %}
+    {{ customliquid }}
   {% endif %}
   
   {%- assign button_disabled = false -%}
