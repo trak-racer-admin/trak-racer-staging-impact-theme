@@ -3063,11 +3063,11 @@ var VariantInventory = class extends HTMLElement {
        console.log(inventory + ' ' + textype);
        if(textype  === null)
        {
-           document.getElementById("hc-new-eta").empty();
+           document.getElementById("hc-new-eta").innerHTML = "";
        }
        else
        {
-           document.getElementById("hc-new-eta").empty();
+           document.getElementById("hc-new-eta").innerHTML = "";
            if(inventory < 1)
            {
                let newtexttype = textype.split(":");
