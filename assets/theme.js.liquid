@@ -3058,7 +3058,7 @@ var VariantInventory = class extends HTMLElement {
     if(document.getElementById("hcetas"))
     {
        Array.from(document.getElementById("hcetas").children).forEach((item) => item.toggleAttribute("hidden", variantId !== parseInt(item.getAttribute("data-variant-id"))));
-       let textype = item_shipping[variant.id];
+       let textype = item_shipping[variantId];
        if(textype  === null)
        {}
        else
