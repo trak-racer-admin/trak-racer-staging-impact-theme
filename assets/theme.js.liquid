@@ -3058,6 +3058,15 @@ var VariantInventory = class extends HTMLElement {
     if(document.getElementById("hcetas"))
     {
        Array.from(document.getElementById("hcetas").children).forEach((item) => item.toggleAttribute("hidden", variantId !== parseInt(item.getAttribute("data-variant-id"))));
+       let textype = item_shipping[variant.id];
+       if(textype  === null)
+       {}
+       else
+       {
+                    
+           let newtexttype = textype.split(":");
+           document.getElementByClassName("hc-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
+       }
     }
   }
 };
