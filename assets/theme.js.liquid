@@ -3059,13 +3059,17 @@ var VariantInventory = class extends HTMLElement {
     {
        Array.from(document.getElementById("hcetas").children).forEach((item) => item.toggleAttribute("hidden", variantId !== parseInt(item.getAttribute("data-variant-id"))));
        let textype = item_shipping[variantId];
+       let inventory = item_inventory[variantId];
        if(textype  === null)
        {}
        else
        {
            document.getElementByClassName("hc-new-eta").empty();
-           let newtexttype = textype.split(":");
-           document.getElementByClassName("hc-new-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
+           if(inventory < 1)
+           {
+               let newtexttype = textype.split(":");
+               document.getElementByClassName("hc-new-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
+           }
        }
     }
   }
