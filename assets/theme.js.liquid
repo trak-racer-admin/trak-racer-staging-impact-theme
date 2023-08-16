@@ -3061,7 +3061,9 @@ var VariantInventory = class extends HTMLElement {
        let textype = item_shipping[variantId];
        let inventory = parseInt(item_inventory[variantId]);
        if(textype  === null)
-       {}
+       {
+           document.getElementByClassName("hc-new-eta").empty();
+       }
        else
        {
            document.getElementByClassName("hc-new-eta").empty();
