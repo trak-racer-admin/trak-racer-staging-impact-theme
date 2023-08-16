@@ -43,7 +43,7 @@
     "product_color_display": "swatch",
     "product_image_aspect_ratio": "short",
     "product_info_alignment": "center",
-    "cart_type": "page",
+    "cart_type": "drawer",
     "social_facebook": "https:\/\/www.facebook.com\/trakracer\/",
     "social_twitter": "https:\/\/twitter.com\/trak_racer",
     "social_instagram": "https:\/\/www.instagram.com\/trakracer\/",
@@ -71,12 +71,6 @@
       },
       "5439026248262864547": {
         "type": "shopify:\/\/apps\/preorder-globo-restock\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "17530695623102652971": {
-        "type": "shopify:\/\/apps\/exemptify\/blocks\/ExemptifyApp\/53648040-92ea-472b-92a5-eb781e92b01b",
         "disabled": false,
         "settings": {
         }
