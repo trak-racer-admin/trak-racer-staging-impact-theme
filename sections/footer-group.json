@@ -108,21 +108,21 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "",
-            "show_menu_title": true
-          }
-        },
-        "1b353c78-1819-4f33-82ce-ef2f94b95921": {
-          "type": "links",
-          "settings": {
-            "menu": "",
+            "menu": "general",
             "show_menu_title": true
           }
         },
         "b04f5f50-51db-467b-9546-223920775c32": {
           "type": "links",
           "settings": {
-            "menu": "",
+            "menu": "support",
+            "show_menu_title": true
+          }
+        },
+        "1b353c78-1819-4f33-82ce-ef2f94b95921": {
+          "type": "links",
+          "settings": {
+            "menu": "service",
             "show_menu_title": true
           }
         }
@@ -130,8 +130,8 @@
       "block_order": [
         "newsletter",
         "links",
-        "1b353c78-1819-4f33-82ce-ef2f94b95921",
-        "b04f5f50-51db-467b-9546-223920775c32"
+        "b04f5f50-51db-467b-9546-223920775c32",
+        "1b353c78-1819-4f33-82ce-ef2f94b95921"
       ],
       "settings": {
         "show_social_media": true,
