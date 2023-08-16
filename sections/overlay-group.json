@@ -25,7 +25,7 @@
     "cart-drawer": {
       "type": "cart-drawer",
       "settings": {
-        "show_cart_note": true,
+        "show_cart_note": false,
         "show_shipping_text": true,
         "show_view_cart_button": true,
         "show_checkout_button": true,
