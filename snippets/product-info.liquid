@@ -1,7 +1,7 @@
 {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
 <safe-sticky class="product-info">
-  {%- form 'product', product, is: 'product-form', id: form_id -%}
+  {%- form 'product', product, is: 'product-form', id: product_form_id -%}
     {%- for block in section.blocks -%}
       {%- assign previous_block_index = forloop.index0 | minus: 1 -%}
       {%- assign previous_block = section.blocks[previous_block_index] -%}
