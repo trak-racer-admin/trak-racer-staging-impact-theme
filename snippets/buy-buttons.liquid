@@ -22,7 +22,7 @@ Supported variables
 
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 
-
+{%- form 'product', product, is: 'product-form', id: form_id -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
   {%- assign button_disabled = false -%}
@@ -86,3 +86,4 @@ Supported variables
       {%- endif -%}
     </buy-buttons>
   </div>
+{%- endform -%}
