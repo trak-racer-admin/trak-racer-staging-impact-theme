@@ -3071,7 +3071,7 @@ var VariantInventory = class extends HTMLElement {
            if(inventory < 1)
            {
                let newtexttype = textype.split(":");
-               document.getElementById("hc-new-eta").append('<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">');
+               document.getElementById("hc-new-eta").innerHTML = '<input type="hidden" name="properties['+ newtexttype[0] +']" value="'+ newtexttype[1] +'">';
            }
        }
     }
