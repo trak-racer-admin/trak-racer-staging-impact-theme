@@ -509,7 +509,7 @@
           "type": "item",
           "settings": {
             "title": "Wheel Mount",
-            "content": ""
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}"
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
