@@ -516,15 +516,15 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
           "type": "item",
           "settings": {
-            "title": "Pedal Mount",
-            "content": ""
+            "title": "Pedal Mount (click to view)",
+            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}"
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
           "type": "item",
           "settings": {
-            "title": "Shifter & Handbrake Mount",
-            "content": ""
+            "title": "Shifter & Handbrake Mount (click to view)",
+            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}"
           }
         }
       },
