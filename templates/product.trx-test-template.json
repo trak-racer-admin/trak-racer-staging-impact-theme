@@ -538,6 +538,37 @@
         "accordion_text_color": "#000000"
       }
     },
+    "015dc3a2-534d-417a-96e0-83bcf42175ab": {
+      "type": "video",
+      "blocks": {
+        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom_fields.video_title.value }}",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-play-1",
+        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
       "type": "tabs",
       "blocks": {
@@ -648,6 +679,7 @@
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "015dc3a2-534d-417a-96e0-83bcf42175ab",
     "e0e54f60-4a55-4832-b13b-a296f9061f3c",
     "related-products",
     "16919816096b1b8f4c"
