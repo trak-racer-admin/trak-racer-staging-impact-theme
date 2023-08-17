@@ -175,7 +175,7 @@
           "type": "tab",
           "settings": {
             "title": "Specifications",
-            "content": "",
+            "content": "{{ product.metafields.custom_fields.specifications_tab_3 | metafield_tag }}",
             "page": ""
           }
         }
