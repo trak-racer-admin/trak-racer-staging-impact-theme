@@ -50,7 +50,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "variant_picker": {
