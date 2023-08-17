@@ -74,6 +74,14 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1519107564253711417": {
+        "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.embeded\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+        "disabled": false,
+        "settings": {
+          "selected_theme": "dawn",
+          "no_block_id": false
+        }
       }
     }
   },
