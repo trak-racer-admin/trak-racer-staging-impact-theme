@@ -548,6 +548,7 @@
         },
         "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-heading-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.video_title.value }}",
             "heading_tag": "h3"
