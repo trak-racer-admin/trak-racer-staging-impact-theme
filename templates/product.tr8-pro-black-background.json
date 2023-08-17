@@ -418,7 +418,7 @@
         "background_gradient": "",
         "text_color": "#000000",
         "heading_color": "#a5272c",
-        "heading_gradient": "linear-gradient(320deg, rgba(0, 104, 253, 1) 0.36%, rgba(18, 134, 188, 1) 45%, rgba(152, 192, 250, 1) 86%)",
+        "heading_gradient": "linear-gradient(320deg, rgba(253, 0, 0, 1) 0.36%, rgba(188, 18, 18, 1) 45%, rgba(191, 102, 102, 1) 86%)",
         "button_background": "",
         "button_text_color": "",
         "chart_background": "#f2f2f2",
