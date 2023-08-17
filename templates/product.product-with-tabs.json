@@ -48,13 +48,13 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "collapse_content": false
+            "collapse_content": true
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -90,7 +90,7 @@
             "low_inventory_threshold": 0
           }
         },
-        "c190e057-0a9c-454b-af85-fde390c1cbeb": {
+        "6beb8029-2eaf-4b9b-bed4-441c3daea9ed": {
           "type": "liquid",
           "settings": {
             "liquid": "<!-- HC - Metafield based ETA - 11 Aug '23 -->\n{% assign current_variant = product.selected_or_first_available_variant %}\n<div id=\"hcetas\">\n{% for variant in product.variants %}\n    <div {% unless variant == current_variant %} hidden {% endunless %} class=\"hc-eta\" data-variant-id=\"{{ variant.id }}\">\n        {% if variant.available == false or variant.inventory_quantity < 1 %}\n          {% if variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n        <input name=\"{% if variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ variant.metafields.custom.product_eta }}{% endif %}\" \/>\n        {% endif %}\n        {% if variant.available == false or variant.inventory_quantity < 1 %}{{ variant.metafields.custom.product_eta }}{% endif %}\n    <\/div>\n{% endfor %}\n<\/div>"
@@ -104,7 +104,8 @@
             "atc_button_background": "#cc0101",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
-            "payment_button_text_color": ""
+            "payment_button_text_color": "",
+            "liquid": "<p style=\"text-align: center\">Write or copy\/paste Liquid code<\/p>"
           }
         },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
@@ -129,7 +130,7 @@
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
-        "c190e057-0a9c-454b-af85-fde390c1cbeb",
+        "6beb8029-2eaf-4b9b-bed4-441c3daea9ed",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c"
       ],
