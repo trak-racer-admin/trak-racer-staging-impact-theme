@@ -43,13 +43,14 @@
         },
         "separator": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },
         "description": {
           "type": "description",
           "settings": {
-            "collapse_content": false
+            "collapse_content": true
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
