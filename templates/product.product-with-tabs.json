@@ -49,7 +49,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "collapse_content": true
+            "collapse_content": false
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
