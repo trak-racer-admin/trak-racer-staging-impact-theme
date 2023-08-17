@@ -25,12 +25,6 @@
             "show_taxes_notice": true
           }
         },
-        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
-          "type": "liquid",
-          "settings": {
-            "liquid": ""
-          }
-        },
         "rating": {
           "type": "rating",
           "settings": {
@@ -50,7 +44,7 @@
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -147,7 +141,6 @@
         "da1b0992-39dd-4453-845c-0715f56f5929",
         "badges",
         "price",
-        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
         "separator",
