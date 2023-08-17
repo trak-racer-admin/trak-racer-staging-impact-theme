@@ -43,19 +43,18 @@
         },
         "separator": {
           "type": "separator",
-          "disabled": true,
           "settings": {
           }
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": true
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -172,12 +171,21 @@
             "content": "{{ product.metafields.custom_fields.specifications_tab_3 | metafield_tag }}",
             "page": ""
           }
+        },
+        "bbb790cd-6f80-4a90-b932-3e55f6338058": {
+          "type": "tab",
+          "settings": {
+            "title": "Compatibility",
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-1",
         "template--20226331541792__3df41bd0-4fd4-45c2-85cb-24d9b9fd4df7-tab-2",
-        "63e0b31b-f578-4b30-8c58-793d74489d18"
+        "63e0b31b-f578-4b30-8c58-793d74489d18",
+        "bbb790cd-6f80-4a90-b932-3e55f6338058"
       ],
       "settings": {
         "full_width": true,
