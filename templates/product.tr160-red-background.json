@@ -303,7 +303,7 @@
             "image": "{{ product.metafields.custom_fields.product_slide_image_5_desktop.value }}",
             "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_5_mobile.value }}",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
             "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
