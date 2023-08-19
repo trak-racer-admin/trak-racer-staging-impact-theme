@@ -74,6 +74,12 @@
             "low_inventory_threshold": 0
           }
         },
+        "f1b96095-d249-412f-9213-4090a3d0bc17": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Metafield based ETA - 11 Aug '23 -->\n{% assign current_variant = product.selected_or_first_available_variant %}\n<div id=\"hcetas\">\n{% for variant in product.variants %}\n    <div {% unless variant == current_variant %} hidden {% endunless %} class=\"hc-eta\" data-variant-id=\"{{ variant.id }}\">\n        {% if variant.available == false or variant.inventory_quantity < 1 %}\n          {% if variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n        <input name=\"{% if variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ variant.metafields.custom.product_eta }}{% endif %}\" \/>\n        {% endif %}\n        {% if variant.available == false or variant.inventory_quantity < 1 %}{{ variant.metafields.custom.product_eta }}{% endif %}\n    <\/div>\n{% endfor %}\n<\/div>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -149,6 +155,7 @@
         "2e345fec-d7a5-41be-abee-ce429953e013",
         "quantity_selector",
         "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
+        "f1b96095-d249-412f-9213-4090a3d0bc17",
         "buy_buttons",
         "4163194c-df27-4c47-bd48-39a7883f8a23",
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
