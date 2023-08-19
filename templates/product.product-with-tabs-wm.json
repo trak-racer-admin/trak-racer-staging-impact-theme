@@ -59,6 +59,11 @@
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
+        "e46dff6e-ab3c-4426-b968-a33dfc835f4c": {
+          "type": "separator",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -105,7 +110,7 @@
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": "",
-            "liquid": ""
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
@@ -126,6 +131,7 @@
         "separator",
         "description",
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
+        "e46dff6e-ab3c-4426-b968-a33dfc835f4c",
         "variant_picker",
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
