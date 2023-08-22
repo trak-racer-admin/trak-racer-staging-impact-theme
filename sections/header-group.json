@@ -139,7 +139,7 @@
         "enable_sticky": true,
         "hide_on_scroll": true,
         "logo": "{{ shop.brand.logo }}",
-        "logo_max_width": 200,
+        "logo_max_width": 300,
         "logo_mobile_max_width": 170,
         "menu": "main-menu-impact",
         "sidebar_menu": "",
