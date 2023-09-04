@@ -137,7 +137,7 @@
       ],
       "settings": {
         "enable_sticky": true,
-        "hide_on_scroll": true,
+        "hide_on_scroll": false,
         "logo": "{{ shop.brand.logo }}",
         "logo_max_width": 200,
         "logo_mobile_max_width": 170,
