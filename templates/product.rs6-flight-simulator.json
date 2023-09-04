@@ -568,9 +568,9 @@
           "type": "item",
           "settings": {
             "column_size": "4",
-            "title": "Adjustable Pedal Mount Features",
+            "title": "Flight Mount & Gear Shifter Features",
             "heading_tag": "h4",
-            "content": "<ul><li>Pre-drilled mounting points for all major brand rudders and sim racing pedals<\/li><li>Angle Adjustable with Realistic Inclined Angle<\/li><li>Distance Slider for perfect ergonomics<\/li><li>Compatible with PC, PS3, PS4, PS5, XBOX 360, XBOX One, Wii and more<\/li><\/ul>",
+            "content": "<p><strong>Flight Controls:<\/strong><\/p><ul><li>The Distance Slider mount allows you to adjust the position of the mounts to the most ergonomic position for you<\/li><li>Angle Adjustment enabled you to face the shift mount inwards, flat and outwards for customised adjustability.<\/li><\/ul><p><strong>Gear Shifter:<\/strong><\/p><ul><li>The Distance Slider mount allows you to adjust the position of the mount to the most ergonomic position for you<\/li><li>Angle Adjustment enabled you to face the shift mount inwards, flat and outwards for customised adjustability<\/li><li>Pre-drilled mounting points for all major brand shifters including Saitek\/Logitech, Thrustmaster, Virpil and more<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -580,9 +580,9 @@
           "type": "item",
           "settings": {
             "column_size": "4",
-            "title": "Adjustable Wheel Mount Features",
+            "title": "Adjustable Yoke\/Wheel Mount Features",
             "heading_tag": "h4",
-            "content": "<ul><li>Solid construction<\/li><li>Pre-drilled mounting points for all major brand yokes and sim racing wheel bases<\/li><li><strong>3-Point Adjustment allows you to adjust the height and angle of the mount<\/strong><\/li><li>Distance Slider for perfect ergonomics<\/li><\/ul>",
+            "content": "<ul><li>Adjustable Yoke\/Wheel Mount Features<\/li><li>Forward and back micro-adjust sliding mount<\/li><li>Welded steel frame on the underside of the mount for added strength mount<\/li><li>Pre-drilled mounting points for all major brand flight rudders and pedals<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
