@@ -270,7 +270,7 @@
         "9948cd6a-280a-4330-ab49-c6e66210d01f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/37_TR120-FL-Rudder.webp",
+            "image": "shopify:\/\/shop_images\/TR160-Rudder.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -486,7 +486,7 @@
         "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR120-FLT.9_1800x1800_51bf13ab-ff1b-4ce4-a0cd-e6821630ad9a.webp",
+            "image": "shopify:\/\/shop_images\/TR160-FLT.8_1800x1800_abd2d7b2-5744-454b-96ad-469992a11af8.webp",
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
@@ -500,9 +500,9 @@
           "type": "item",
           "settings": {
             "column_size": "2",
-            "title": "Trak Racer TR120 Flight Simulator Overview",
+            "title": "Trak Racer TR160 Flight Simulator Overview",
             "heading_tag": "h4",
-            "content": "<ul><li>Heavier duty brackets - especially important for wheel uprights to increase rigidity<\/li><li>Thicker-walled aluminium profile compared to the competition<\/li><li>Experience gained in sim racing since 2008<\/li><li>The leading sim cockpit innovators in the industry<\/li><li>Better value for money – we include more!<\/li><li>Accessible product from over 11 country warehouses<\/li><li>Constant development of accessories<\/li><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Shifter Mount and Over-sized Support Profile (for Sim Racing)<\/li><li>Over 30 optional accessories<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>",
+            "content": "<ul><li>Rigid 160mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 160 x 40mm Heavy Duty Brackets<\/li><li>Shifter Mount and Over-sized Support Profile (for Sim Racing)<\/li><li>Over 30 optional accessories<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
