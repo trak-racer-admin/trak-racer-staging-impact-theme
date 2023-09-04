@@ -226,7 +226,7 @@
         "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/35_TR8-Pro-FL-Side-Mount_9f9be7f3-d921-40e2-bcf1-30b12353ee66.webp",
+            "image": "shopify:\/\/shop_images\/38_TR120-Side-Mount.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -248,7 +248,7 @@
         "afc2fc92-4329-4ed4-9f77-a8560cccc7b4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/36_TR8-Pro-FL-Yoke-Mount_99e57626-3506-419d-bf4f-3e0f9c38e7ef.webp",
+            "image": "shopify:\/\/shop_images\/24_TR160-Yoke-Mount_1.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -270,7 +270,7 @@
         "9948cd6a-280a-4330-ab49-c6e66210d01f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/33_TR8-Pro-FL-Rudder_a018a23f-c259-4f18-9eda-4a904f5e5445.webp",
+            "image": "shopify:\/\/shop_images\/37_TR120-FL-Rudder.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -292,7 +292,7 @@
         "44aa7c9e-4475-4482-a7fc-6f61707bb22e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/34_TR8Pro-Seat-Slider_a8f0d311-e4a4-4115-a964-fb358c8cbaf8.webp",
+            "image": "shopify:\/\/shop_images\/TR160_05-GIF09-SeatSlider_fe808bce-029b-4b8e-802a-7f0eba3e4f6a.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
