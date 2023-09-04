@@ -289,18 +289,40 @@
             "button_text_color": ""
           }
         },
-        "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15": {
+        "44aa7c9e-4475-4482-a7fc-6f61707bb22e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/15_Fs3-wheel.webp",
+            "image": "shopify:\/\/shop_images\/30_RS6-Seat-slider2.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
+            "title": "Dual-Lock Seat Slider Kit Included",
+            "content": "<p>The TR Premium seat slider runner kit will give you quick adjustments of the seat position and lock you in with the least amount of play.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11_RS6-Wheel.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
             "title": "More Adjustable and Strengthened Wheel Mount",
-            "content": "<p>We have added a wheel mount micro-tune slide to the FS3 Sim Stand to give you forward and back adjustment. We have also strengthened the 2\" tube to withstand up to 8nm direct drive steering wheel torque without flex.<\/p>",
+            "content": "<p>We have added a wheel mount micro-tune slide to the RS6 MK3 to give you forward and back adjustment. We have also strengthened the 2\" tube to withstand up to 11nm direct drive steering wheel torque without flex.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -314,15 +336,15 @@
         "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/14_Fs3-shifter.webp",
+            "image": "shopify:\/\/shop_images\/12_RS6-Eshifter_2f72a7fa-eb86-4246-a876-e01deaa3819a.webp",
             "media_width": 50,
-            "media_position": "start",
+            "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "More Adjustable and Strengthened Left or Right Side Shifter Mount",
-            "content": "<p>The shifter mount has been strengthened by increasing the thickness of the mount and also the plate on the simulator stand that it mounts to. We have even added mounting points to enable the shifter mount to move forwards and back.<\/p>",
+            "content": "<p>The shifter mount has been strengthened by increasing the thickness of the mount and also the plate on the simulator that it mounts to. We have even added mounting points to enable the shifter mount to move forwards and back.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -336,15 +358,15 @@
         "7a5c16a4-1812-48f9-9546-8f6385890135": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/13_FS3-Pedal.webp",
+            "image": "shopify:\/\/shop_images\/10_RS6-Pedal_09096f03-fc9c-4a15-9015-ca40f5d925c8.webp",
             "media_width": 50,
-            "media_position": "end",
+            "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "Strengthened Pedal Plate",
-            "content": "<p>The FS3 has been improved to withstand up to heavier braking forces without flex. We have also added pre-drilled mounting points for more new pedal sets on the market and the slide function on the FS3 remains - so you can get those pedals exactly where you need them!<\/p>",
+            "content": "<p>The RS6 MK3 has been improved to withstand up to 100kgs of braking for force without flex. We have also added pre-drilled mounting points for more new pedal sets on the market and the slide function on the RS6 remains - so you can get those pedals exactly where you need them!<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -360,6 +382,7 @@
         "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1",
         "afc2fc92-4329-4ed4-9f77-a8560cccc7b4",
         "9948cd6a-280a-4330-ab49-c6e66210d01f",
+        "44aa7c9e-4475-4482-a7fc-6f61707bb22e",
         "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15",
         "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c",
         "7a5c16a4-1812-48f9-9546-8f6385890135"
@@ -486,7 +509,7 @@
         "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FS3-FLT.3.webp",
+            "image": "shopify:\/\/shop_images\/18505-I_shopify-min_1800x1800_ad4b0c5c-2262-4fd3-acd4-12d89e57baa0.webp",
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
@@ -500,9 +523,9 @@
           "type": "item",
           "settings": {
             "column_size": "2",
-            "title": "Trak Racer FS3 Flight Stand Overview",
+            "title": "Trak Racer RS6 Flight Simulator Overview",
             "heading_tag": "h4",
-            "content": "<ul><li>Compatible with PC and Console<\/li><li>Compatible with all popular Flight Yoke, Rudders and Flight Controls as well as steering wheels, pedals and shifters on the market<\/li><li>Improved Left and Right Side Flight Control Mounts and a Gear Shift is included with pre-drilled mounting points and slide function for Sim Racing<\/li><li>Reinforced Angle and Distance Adjustable Pedal Mount, suitable for all the big brands!<\/li><li>Upgraded 3-Point adjustable steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Designed and Engineered in Australia<\/li><\/ul>",
+            "content": "<ul><li>Left and Right-side Flight Control Mounts included<\/li><li>Yoke, Direct Drive Steering Wheel & Belt Drive Ready!<\/li><li>Compatible with PC and Console (Xbox and PlayStation for example)<\/li><li>Compatible with all popular Yokes, Rudders, Flight Controls as well as sim racing steering wheel-bases, pedals and shifters on the market<\/li><li>Stiffened, Dual-Supported Shaft for a NO FLEX Wheel Mount<\/li><li>Optional Freestanding Single, Triple or Quad Monitor Stand<\/li><li>Patented adjustable yoke and steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Strengthened Left and Right-Side Gear Shift mount with pre-drilled mounting points and slide<\/li><li>Reinforced Angle and Distance Adjustable Rudder\/Pedal Mount, suitable for all the big brands!<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -535,7 +558,7 @@
             "column_size": "4",
             "title": "Frame\/Chassis Features",
             "heading_tag": "h4",
-            "content": "<ul><li>Adjustable Height<\/li><li>Rigid Frame Constructed from Premium Materials<\/li><li>Folds up to a Compact Size for Storage<\/li><li>Wide Leg Stance - Suitable for Office Chairs!<\/li><li>650mm wide for firm stance when racing<\/li><li>Hard-Wood Floor Safe Feet<\/li><li>Finished in high-grade steel tubing<\/li><li>Folds away in a matter of Seconds<\/li><\/ul>",
+            "content": "<ul><li>Solid framework with no obstruction between your legs and no additional braces required to strengthen the cockpit<\/li><li>A wide and firm stance when racing<\/li><li>Low ground clearance with hard wood rubber floor protectors<\/li><li>Finished in 2\"(51mm) high-grade steel tubing<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
