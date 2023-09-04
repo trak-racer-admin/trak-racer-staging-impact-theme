@@ -194,7 +194,7 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "FS3 Flight Wheel Stand",
+            "text": "{{ product.title }}",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
@@ -594,7 +594,7 @@
             "column_size": "4",
             "title": "What's Included",
             "heading_tag": "h4",
-            "content": "<ul><li>High Quality Chassis with Assembly Instructions<\/li><li>Left and Right Side Flight Sim mounts<\/li><li>Left\/Right Adjustable Gear Shifter Mount<\/li><li>Angle and Height Adjustable Wheel Mount<\/li><li>Angle Adjustable Pedal Mount<\/li><li>Tools and Screws for Assembly<\/li><\/ul>",
+            "content": "<ul><li>2\" Industrial Strength Iron Chassis<\/li><li>2\" Industrial Strength Iron Chassis<\/li><li>Fully Adjustable Angle Pedal Mount with Distance Slider<\/li><li>Premium Seat Sliders<\/li><li>Left\/Right Mounting Gear Shifter<\/li><li>Angle, Slide and Height Adjustable Wheel Mount<\/li><li>Assembly Instructions<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"

@@ -194,7 +194,7 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "FS3 Flight Wheel Stand",
+            "text": "{{ product.title }}",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
@@ -203,7 +203,7 @@
         "81c78793-c0c1-4085-b743-fd13baf17657": {
           "type": "richtext",
           "settings": {
-            "content": "<p>The FS3 is an entry-level and extremely rigid wheel stand that has had several upgrades from customer feedback. From 2017 onward, the FS3 was globally, the most preferred entry-level wheel stand in the market and now, it’s the preferred entry level Flight wheel stand. It ticks all of the boxes for a Flight Wheel Stand Rig that assembles in under 30 minutes. It's Strong, Adjustable, and has an array of genuine Trak Racer add-ons to personalize the stand.<\/p>"
+            "content": "<p>The TR8 Pro is an upgraded version of the popular Trak Racer TR8. From 2018 to 2021, the TR8 was the King of Sim Racing Rigs and now, it’s the King of Flight Sim Rigs. It ticks all of the boxes for a Flight Simulator Rig that assembles in 30-60 minutes. It's Strong, Adjustable, and has an Integrated Monitor Stand. In the usual Trak Racer way, we gathered customer feedback from over 10,000 TR8 owners to develop the TR8 PRO.<\/p>"
           }
         }
       },
