@@ -314,15 +314,15 @@
         "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tr8pwm_GIF-min-_1_78226036-edd6-4f87-8683-0fa353bdb4fa.webp",
+            "image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1_bde6da36-7fd1-444a-924c-61c1fb1ae0bd.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "More Adjustable and Strengthened Wheel Mount",
-            "content": "<p>We have added a wheel mount slider to the TR8 PRO to give you 130mm forward and back adjustment with the use of proprietary ball-bearing-assisted sliders. We have also strengthened the 2\" tube to withstand up to 30nm direct drive steering wheel torque without flex.<\/p>",
+            "title": "Rigid and Adjustable Wheel Plate",
+            "content": "<p>The Trak Racer Wheel Plate suits most belt-drive and direct drive wheelbases on the market. It’s extremely adjustable and won’t cause any flexing issues; no matter how much torque you want to punish it with!<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -336,37 +336,15 @@
         "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tr8pshifter_GIF-min-_1.webp",
+            "image": "shopify:\/\/shop_images\/TR120_02-GIF06-Shifter_55abad84-1e65-4737-be64-dc827dc3f053.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "More Adjustable and Strengthened Left or Right Side Shifter Mount",
-            "content": "<p>The shifter mount has been strengthened by increasing the thickness of the mount and also the plate on the simulator that it mounts to. We have even added mounting points to enable the shifter mount to move forwards and back.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "7a5c16a4-1812-48f9-9546-8f6385890135": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tr8ppedal-min3-_1.webp",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Strengthened Pedal Plate",
-            "content": "<p>The TR8 PRO has been improved to withstand up to 180kgs of braking for force without flex. We have also added pre-drilled mounting points for more new pedal sets on the market and the slide function on the TR8 remains - so you can get those pedals exactly where you need them!<\/p>",
+            "title": "TR One Expandable Shifter Mount",
+            "content": "<p>The TR Gen 2 shifter mount has been strengthened by completely over-hauling the design and increasing the thickness of the mount – it also has a fine-tune slide adjustment! !<\/p><p>TR has even created new mounts for other peripherals including handbrake and flight sim mounts that will add directly onto the side of the plate.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -384,8 +362,7 @@
         "9948cd6a-280a-4330-ab49-c6e66210d01f",
         "44aa7c9e-4475-4482-a7fc-6f61707bb22e",
         "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15",
-        "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c",
-        "7a5c16a4-1812-48f9-9546-8f6385890135"
+        "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c"
       ],
       "settings": {
         "full_width": false,
@@ -509,7 +486,7 @@
         "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/152.04_Shopify-min_1800x1800_6ea03986-f2b6-433d-a49f-cdfac7d02608.webp",
+            "image": "shopify:\/\/shop_images\/TR120_02-GIF06-Shifter_82f7cced-c5a6-4391-a984-6d64089eaa10.webp",
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
@@ -523,9 +500,9 @@
           "type": "item",
           "settings": {
             "column_size": "2",
-            "title": "Trak Racer TR8 Pro Flight Simulator Overview",
+            "title": "Trak Racer TR120 Flight Simulator Overview",
             "heading_tag": "h4",
-            "content": "<ul><li>Left and Right-side Flight Control Mounts included<\/li><li>Yoke, Direct Drive Steering Wheel & Belt Drive Ready!<\/li><li>Compatible with PC and Console (Xbox and PlayStation for example)<\/li><li>Compatible with all popular Yokes, Rudders, Flight Controls as well as sim racing steering wheel bases, pedals and shifters on the market<\/li><li>Stiffened, Dual-Supported NO FLEX Wheel Shaft<\/li><li>Optional Integrated Single, Triple or Quad Monitor Stand<\/li><li>Patented 3-Point adjustable yoke and steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Strengthened Left and Right-Side Gear Shift mount with pre-drilled mounting points and slide<\/li><li>Reinforced Angle and Distance Adjustable Rudder\/Pedal Mount, suitable for all the big brands!<\/li><\/ul>",
+            "content": "<ul><li>Heavier duty brackets - especially important for wheel uprights to increase rigidity<\/li><li>Thicker-walled aluminium profile compared to the competition<\/li><li>Experience gained in sim racing since 2008<\/li><li>The leading sim cockpit innovators in the industry<\/li><li>Better value for money – we include more!<\/li><li>Accessible product from over 11 country warehouses<\/li><li>Constant development of accessories<\/li><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Shifter Mount and Over-sized Support Profile (for Sim Racing)<\/li><li>Over 30 optional accessories<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
