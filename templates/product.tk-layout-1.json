@@ -170,7 +170,6 @@
       "blocks": {
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1": {
           "type": "play",
-          "disabled": true,
           "settings": {
           }
         },
@@ -193,9 +192,10 @@
         "autoplay": false,
         "video_size": "auto",
         "external_video_url": "https:\/\/youtu.be\/eBJk5jLqieo",
+        "poster": "shopify:\/\/shop_images\/Bundle_3_-_frame_at_0m1s.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "related-products": {
