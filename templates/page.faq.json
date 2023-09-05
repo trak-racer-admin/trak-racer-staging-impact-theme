@@ -128,14 +128,14 @@
           "type": "item",
           "settings": {
             "title": "Can I pick up my item from the warehouse?",
-            "content": "<p>Unfortunately, we are unable to offer warehouse pick-ups.<\/p>"
+            "content": "<p>Yes, you are able to pick up from the warehouse in Dandenong.<\/p>"
           }
         },
         "850d7c6d-7787-4256-bdfb-b9844288bcc9": {
           "type": "item",
           "settings": {
             "title": "Where do you ship to?",
-            "content": "<p>We currently ship to all states within the United States. However if you would like shipping arranged to Alaska, Puerto Rico, and Hawaii, please contact us via support@trakracer.com as we will be able to assist.<\/p>"
+            "content": "<p>We currently ship Australia-wide.<\/p>"
           }
         },
         "cafd1f41-f932-4b4e-bef2-17a874be6e55": {
