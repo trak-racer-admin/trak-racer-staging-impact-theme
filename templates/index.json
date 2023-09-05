@@ -138,6 +138,126 @@
         "heading_gradient": ""
       }
     },
+    "3f7b945f-481e-4108-a802-88e7e010652c": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-vendor-1": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-badges-1": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-price-1": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-rating-1": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-separator-1": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "d2d591d4-0677-4de2-ab5d-577a8b1dc68f": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Your Gateway Into Sim Racing<\/h4><p>Shop our new Plug + Play Simulators and get the immersive experience in your home without the hassle of setting it up yourself.<\/p>"
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-description-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "91abcd44-d78c-4f33-bebc-62a0072ea7b4": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/products\/the-apprentice-plug-play-simulator",
+            "text": "Learn More",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-vendor-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-title-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-badges-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-price-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-rating-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-separator-1",
+        "d2d591d4-0677-4de2-ab5d-577a8b1dc68f",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-description-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-variant_picker-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-quantity_selector-1",
+        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-buy_buttons-1",
+        "91abcd44-d78c-4f33-bebc-62a0072ea7b4"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "the-apprentice-plug-play-simulator",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -214,6 +334,7 @@
         "slide-2",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -365,13 +486,78 @@
         "background": "",
         "background_gradient": ""
       }
+    },
+    "e49ec022-390c-483c-85df-a8ab79ad73e7": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-1",
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-2",
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-3",
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-4",
+        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Logo list",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 5,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
     }
   },
   "order": [
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
+    "3f7b945f-481e-4108-a802-88e7e010652c",
     "slideshow",
     "impact-text",
-    "media-grid"
+    "media-grid",
+    "e49ec022-390c-483c-85df-a8ab79ad73e7"
   ]
 }
