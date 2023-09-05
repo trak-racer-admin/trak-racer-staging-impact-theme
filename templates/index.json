@@ -3,6 +3,13 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
+        "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2": {
+          "type": "heading",
+          "settings": {
+            "text": "The Trak Racer x BWT Alpine F1 Story",
+            "heading_tag": "h4"
+          }
+        },
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
           "type": "button",
           "settings": {
@@ -16,6 +23,7 @@
         }
       },
       "block_order": [
+        "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2",
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
       "settings": {
@@ -24,12 +32,12 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_ad4374d1-2fe2-4f83-ad94-e4cbcf3f25a8.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-end sm:text-end",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 15
       }
     },
     "56bae42b-8352-4291-b2a0-90cf30962707": {
