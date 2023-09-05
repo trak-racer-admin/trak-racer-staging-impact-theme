@@ -165,6 +165,39 @@
         "input_text_color": ""
       }
     },
+    "b04db594-708b-42f5-998d-8736ea8d10b6": {
+      "type": "video",
+      "blocks": {
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1": {
+          "type": "play",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/youtu.be\/eBJk5jLqieo",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -220,6 +253,7 @@
   },
   "order": [
     "main",
+    "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
     "169164228579fecd9c"
   ]
