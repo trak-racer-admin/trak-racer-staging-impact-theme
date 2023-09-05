@@ -60,6 +60,11 @@
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
+        "2cae9652-7b64-4797-8dea-ec7ab4870c5a": {
+          "type": "separator",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -121,6 +126,7 @@
         "separator",
         "description",
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
+        "2cae9652-7b64-4797-8dea-ec7ab4870c5a",
         "variant_picker",
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
