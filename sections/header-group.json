@@ -142,7 +142,7 @@
         "logo_max_width": 200,
         "logo_mobile_max_width": 170,
         "menu": "main-menu-impact",
-        "sidebar_menu": "",
+        "sidebar_menu": "main-menu-impact-drawer",
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "left",
