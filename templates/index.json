@@ -138,6 +138,33 @@
         "heading_gradient": ""
       }
     },
+    "a0989716-fbfa-438c-9ca9-87df62670662": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "plug-and-play-simulators",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "Welcome to Plug + Play Simulators",
+        "title": "Your Gateway into Sim Racing",
+        "content": "<p>Shop our brand new Plug + Play Simulators and get setup and ready to race in no time at all! We'll set up and assemble the full rig for you, all you have to do is get in and drive!<\/p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "3f7b945f-481e-4108-a802-88e7e010652c": {
       "type": "featured-product",
       "blocks": {
@@ -240,6 +267,7 @@
         "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-buy_buttons-1",
         "91abcd44-d78c-4f33-bebc-62a0072ea7b4"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "product": "the-apprentice-plug-play-simulator",
@@ -549,15 +577,51 @@
         "logo_item_background": "",
         "logo_item_border": ""
       }
+    },
+    "974a2167-d7f4-481b-9bc4-e376df9b8abc": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--17060380672164__974a2167-d7f4-481b-9bc4-e376df9b8abc-blog-1": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__974a2167-d7f4-481b-9bc4-e376df9b8abc-blog-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": false,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Check out our blogs!",
+        "content": "",
+        "link_url": "shopify:\/\/blogs\/racing-simulator",
+        "link_text": "View all",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
+    "a0989716-fbfa-438c-9ca9-87df62670662",
     "3f7b945f-481e-4108-a802-88e7e010652c",
     "slideshow",
     "impact-text",
     "media-grid",
-    "e49ec022-390c-483c-85df-a8ab79ad73e7"
+    "e49ec022-390c-483c-85df-a8ab79ad73e7",
+    "974a2167-d7f4-481b-9bc4-e376df9b8abc"
   ]
 }
