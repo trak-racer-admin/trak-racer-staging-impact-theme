@@ -12,6 +12,7 @@
         },
         "cart_note": {
           "type": "cart_note",
+          "disabled": true,
           "settings": {
           }
         },
@@ -38,18 +39,6 @@
             "background": "",
             "text_color": ""
           }
-        },
-        "33aa7c36-d700-47a0-a536-bab80cd45462": {
-          "type": "shopify:\/\/apps\/exemptify\/blocks\/ExemptifyCartValidationSnippet\/53648040-92ea-472b-92a5-eb781e92b01b",
-          "settings": {
-            "align_right": false,
-            "exemptify_cart_title": "EU VAT ID",
-            "title_size": 1.3,
-            "exemptify_cart_subttitle": "(VAT will be deducted at payment step)",
-            "subtitle_size": 0.8,
-            "exemptify_cart_placeholder": "EU VAT ID",
-            "additional_styles": "padding:10px;"
-          }
         }
       },
       "block_order": [
@@ -57,8 +46,7 @@
         "cart_note",
         "checkout_button",
         "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3",
-        "232411b1-9ff7-43a6-88af-e8122e74af07",
-        "33aa7c36-d700-47a0-a536-bab80cd45462"
+        "232411b1-9ff7-43a6-88af-e8122e74af07"
       ],
       "settings": {
         "show_shipping_estimator": true,
