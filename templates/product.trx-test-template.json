@@ -31,6 +31,13 @@
             "show_empty": false
           }
         },
+        "248f51a3-21d6-45b4-a273-5e9b8c63910f": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {
@@ -148,6 +155,7 @@
         "badges",
         "price",
         "rating",
+        "248f51a3-21d6-45b4-a273-5e9b8c63910f",
         "payment_terms",
         "separator",
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
