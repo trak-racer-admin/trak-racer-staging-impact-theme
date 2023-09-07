@@ -42,10 +42,10 @@
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
+        "2aeb8055-6414-41de-a30b-2c7d423dfa9b": {
+          "type": "text",
           "settings": {
-            "collapse_content": false
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -87,7 +87,8 @@
             "atc_button_background": "#ce151b",
             "atc_button_text_color": "",
             "payment_button_background": "",
-            "payment_button_text_color": ""
+            "payment_button_text_color": "",
+            "liquid": "<p style=\"text-align: center\">Write or copy\/paste Liquid code<\/p>"
           }
         },
         "57bf1284-3ed4-45a2-8501-68ca075d8fd9": {
@@ -117,7 +118,7 @@
         "rating",
         "payment_terms",
         "separator",
-        "description",
+        "2aeb8055-6414-41de-a30b-2c7d423dfa9b",
         "variant_picker",
         "quantity_selector",
         "6b883659-1953-483b-9a60-5b7c8847d3f0",
@@ -206,7 +207,7 @@
         "template--19593850519840__cdda71d9-3142-445d-b057-df6fe8eb54c7-16877526516d3fd7b1-1"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "subheading": "{{ product.title }}",
         "title": "Specifications",
         "content": "<p>The upgraded Aluminium Trak Racer monitor stands are not just better looking than their competition but they are also more adjustable. The stands feature multi-adjustment of the vertical angle of the monitors and full adjustment slide on the horizontal.<\/p><p>Our stands are inspired by our cockpits and designed for maximum stability and strength. Each stand comes from quality core materials, unparalleled craftsmanship, and state-of-the-art manufacturing processes.<\/p><p><strong>Optional: <\/strong>Quad Monitor Add-On (SKU: TR80-4M)<\/p><p><strong>Note:<\/strong> Larger sizes available with additional mount<br\/><\/p>",
@@ -229,6 +230,52 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
+      }
+    },
+    "dd14124f-8159-49e4-a63b-b6712be442b3": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17060380180644__dd14124f-8159-49e4-a63b-b6712be442b3-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR80-VESA3.7_1_9759863d-bfac-42a8-b2bc-e28ef2774af8.png",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17060380180644__dd14124f-8159-49e4-a63b-b6712be442b3-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<ul><li><strong>Includes: <\/strong>4 VESA mounts and all fixing screws<\/li><li><strong>VESA Adjustments: <\/strong>Angle adjustment available<\/li><li><strong>Mounting points:<\/strong> 75mm - 400mm - larger sizes can be added with an additional mount<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380180644__dd14124f-8159-49e4-a63b-b6712be442b3-item-1",
+        "template--17060380180644__dd14124f-8159-49e4-a63b-b6712be442b3-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Adjustable VESA mount",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "389b4cdb-aaad-40b3-8e39-75053159a45e": {
@@ -256,19 +303,19 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "recommendations_count": 6,
+        "recommendations_count": 4,
         "products": [
 
         ],
         "full_width": true,
-        "stack_products": true,
+        "stack_products": false,
         "show_progress_bar": false,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
+        "products_per_row_desktop": 4,
         "subheading": "",
         "title": "You may also like",
         "content": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -281,6 +328,7 @@
   "order": [
     "main",
     "cdda71d9-3142-445d-b057-df6fe8eb54c7",
+    "dd14124f-8159-49e4-a63b-b6712be442b3",
     "389b4cdb-aaad-40b3-8e39-75053159a45e",
     "related-products"
   ]
