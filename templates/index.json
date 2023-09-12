@@ -584,7 +584,7 @@
         "template--17060380672164__974a2167-d7f4-481b-9bc4-e376df9b8abc-blog-1": {
           "type": "blog",
           "settings": {
-            "blog": "news",
+            "blog": "racing-simulator",
             "posts_count": 3,
             "stack_items": false
           }
