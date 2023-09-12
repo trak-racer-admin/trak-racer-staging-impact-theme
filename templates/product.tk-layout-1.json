@@ -567,17 +567,17 @@
           "settings": {
             "navigation_label": "Order Shipped",
             "subheading": "Order Shipped",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "title": "Phase 5",
+            "content": "<p>We ship your order with one of our trusted carriers.<\/p>"
           }
         },
         "c538ca6e-429d-414b-b6f3-9207bdb83974": {
           "type": "slide",
           "settings": {
             "navigation_label": "Order Arrives",
-            "subheading": "Subheading",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "subheading": "Order Arrives",
+            "title": "Phase 6",
+            "content": "<p>Your rig will be delivered into your home and unpacked for you. Once you install the monitors, you can plug your PC in and race right away.<\/p>"
           }
         }
       },
