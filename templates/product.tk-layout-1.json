@@ -426,7 +426,7 @@
         "product_card_text_color": "",
         "product_card_mobile_background": "",
         "product_card_mobile_text_color": "",
-        "background_dots": "#FFF"
+        "background_dots": "#ffffff"
       }
     },
     "91cdbda0-a685-49c6-bf2b-d7da069c9109": {
@@ -599,6 +599,26 @@
         "impact_text_gradient": ""
       }
     },
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Have a question?",
+        "content": "<p>We're here to help - whether you have a question about the rig, or want to add your own customisations, we're happy to help!<\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "#ff454c",
+        "button_text_color": ""
+      }
+    },
     "b04db594-708b-42f5-998d-8736ea8d10b6": {
       "type": "video",
       "blocks": {
@@ -695,6 +715,7 @@
     "8c20408f-48ad-40e9-87fa-7dacd0aaa30a",
     "91cdbda0-a685-49c6-bf2b-d7da069c9109",
     "046cb4a3-f399-439e-9d21-687edd02659b",
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
     "169164228579fecd9c"
