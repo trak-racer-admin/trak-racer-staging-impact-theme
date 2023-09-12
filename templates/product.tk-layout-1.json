@@ -46,15 +46,21 @@
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
+        "e633f343-926b-45cd-95ca-e2b063b636a8": {
+          "type": "offer",
           "settings": {
-            "collapse_content": false
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Note - this product arrives fully assembled.",
+            "content": "",
+            "background": "#d6fffc",
+            "text_color": "#0629fb"
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -107,7 +113,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#cc0101",
+            "atc_button_background": "#ff454c",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": "",
@@ -135,7 +141,7 @@
         "rating",
         "payment_terms",
         "separator",
-        "description",
+        "e633f343-926b-45cd-95ca-e2b063b636a8",
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "variant_picker",
         "0040dc10-c915-4ceb-9474-555cc98fd73b",
@@ -163,6 +169,71 @@
         "text_color": "#1a1a1a",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Expertly curated, ready to race simulators to give you the ultimate competitive edge",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(133deg, rgba(218, 218, 218, 1) 11%, rgba(255, 255, 255, 1) 87%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(159deg, rgba(255, 62, 62, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "45ace661-5d65-430c-bdc8-9db45ffc738b": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-subheading-1",
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1",
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "b04db594-708b-42f5-998d-8736ea8d10b6": {
@@ -249,12 +320,56 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "38068d05-fe18-4d25-a86a-6d1540ea3919": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-1": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-2": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-1",
+        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
     "main",
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
+    "45ace661-5d65-430c-bdc8-9db45ffc738b",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
-    "169164228579fecd9c"
+    "169164228579fecd9c",
+    "38068d05-fe18-4d25-a86a-6d1540ea3919"
   ]
 }
