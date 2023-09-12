@@ -302,6 +302,39 @@
         "text_color": ""
       }
     },
+    "eefab2a8-30d9-446a-8a79-052f6ac35f19": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 10,
+        "products": [
+          "tr80-racing-simulator-mk5",
+          "gt-style-fixed-fiberglass-seat-1",
+          "simucube-2-sport-direct-drive-wheel-base",
+          "simucube-sqr-quick-release-pin",
+          "simucube-tahko-gt-21-wireless-wheel",
+          "caster-wheels-with-brake-mounting-brackets-1",
+          "tr8020-620mm-table-top-desk-with-swivel-mount-black-2",
+          "universal-aluminium-profile-headphone-hook-holder-1",
+          "alum-floor-triple-monitor-stand-monitors-up-to-46",
+          "premium-sim-rig-floor-mat-with-rgb-light"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "What's in the kit? (Option 1)",
+        "content": "<p>Not listed below, but also included:<\/p><ul><li>Headphone hook<\/li><li>AOC Monitor<\/li><li>Surge Protector<\/li><li>Speakers<\/li><\/ul>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "45ace661-5d65-430c-bdc8-9db45ffc738b": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -334,6 +367,160 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
+      }
+    },
+    "8c20408f-48ad-40e9-87fa-7dacd0aaa30a": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "benq-mobiuz-1ms-144hz-ultrawide-curved-gaming-monitor-ex3415r",
+            "horizontal_position": 52,
+            "vertical_position": 25
+          }
+        },
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "gt-style-fixed-fiberglass-seat-1",
+            "horizontal_position": 75,
+            "vertical_position": 53
+          }
+        },
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-3": {
+          "type": "product",
+          "settings": {
+            "product": "tr80-racing-simulator-mk5",
+            "horizontal_position": 41,
+            "vertical_position": 47
+          }
+        },
+        "757f0616-ee90-4f27-b492-20d67bc8cfa1": {
+          "type": "product",
+          "settings": {
+            "product": "alum-floor-triple-monitor-stand-monitors-up-to-46",
+            "horizontal_position": 26,
+            "vertical_position": 44
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-1",
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-2",
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-3",
+        "757f0616-ee90-4f27-b492-20d67bc8cfa1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "title": "What's in the kit? (Option 2)",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#FFF"
+      }
+    },
+    "91cdbda0-a685-49c6-bf2b-d7da069c9109": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 24,
+            "vertical_position": 70,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "367ac19c-ade4-4c18-a1c9-832109c3e122": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 30,
+            "vertical_position": 30,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "4253ccf9-91a0-48e1-b857-f79231d03ffd": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 30,
+            "vertical_position": 30,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-1",
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2",
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-3",
+        "367ac19c-ade4-4c18-a1c9-832109c3e122",
+        "4253ccf9-91a0-48e1-b857-f79231d03ffd"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "title": "What's in the kit? (Option 3)",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
       }
     },
     "b04db594-708b-42f5-998d-8736ea8d10b6": {
@@ -420,47 +607,6 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
-    },
-    "38068d05-fe18-4d25-a86a-6d1540ea3919": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-1": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-2": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-1",
-        "template--17075952877732__38068d05-fe18-4d25-a86a-6d1540ea3919-item-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -468,10 +614,12 @@
     "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
     "bbe63f78-9157-4007-a278-05bf2c593a24",
     "499c9acc-c640-47bd-960b-94b4f6544c20",
+    "eefab2a8-30d9-446a-8a79-052f6ac35f19",
     "45ace661-5d65-430c-bdc8-9db45ffc738b",
+    "8c20408f-48ad-40e9-87fa-7dacd0aaa30a",
+    "91cdbda0-a685-49c6-bf2b-d7da069c9109",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
-    "169164228579fecd9c",
-    "38068d05-fe18-4d25-a86a-6d1540ea3919"
+    "169164228579fecd9c"
   ]
 }
