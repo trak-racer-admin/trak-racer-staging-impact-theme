@@ -447,8 +447,8 @@
         "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2": {
           "type": "item",
           "settings": {
-            "horizontal_position": 62,
-            "vertical_position": 14,
+            "horizontal_position": 18,
+            "vertical_position": 22,
             "horizontal_position_mobile": 62,
             "vertical_position_mobile": 14,
             "icon_width": 32,
@@ -471,25 +471,25 @@
         "367ac19c-ade4-4c18-a1c9-832109c3e122": {
           "type": "item",
           "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
+            "horizontal_position": 59,
+            "vertical_position": 62,
             "horizontal_position_mobile": 30,
             "vertical_position_mobile": 30,
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "title": "TR80 Racing Simulator",
+            "content": "<p>At the core of the setup is the Trak Racer TR80 Racing Simulator with GT Seat. This sturdy rig will take anything you throw at it on the trak!<\/p>"
           }
         },
         "4253ccf9-91a0-48e1-b857-f79231d03ffd": {
           "type": "item",
           "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
+            "horizontal_position": 48,
+            "vertical_position": 45,
             "horizontal_position_mobile": 30,
             "vertical_position_mobile": 30,
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "title": "All your accessories",
+            "content": "<p>Because we want to help you get on the trak as fast as possible, your new rig also includes some important accessories:<\/p><ul><li>Caster Wheels <\/li><li>Adjustable Keyboard Mount<\/li><li>Surge Protector<\/li><li>LED Mat<\/li><\/ul>"
           }
         }
       },
