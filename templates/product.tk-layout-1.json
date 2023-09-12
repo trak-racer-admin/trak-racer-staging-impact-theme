@@ -196,6 +196,112 @@
         "text_color": ""
       }
     },
+    "bbe63f78-9157-4007-a278-05bf2c593a24": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Experience Full Immersion",
+            "heading_tag": "h3",
+            "content": "<p>Our plug and play simulators have been carefully curated by the expert team at Trak Racer. We've selected a range of high quality components and peripherals to provide you with the ultimate racing simulation experience.<\/p><p><\/p><p>With zero flex, maximum customisation, this rig will take you anywhere and everywhere. Experience the freedom of endless possibilities.<\/p><p><\/p><p>You can strap in as soon as your rig arrives and begin dominating the track immediately. No stress. We take care of assembling and testing, leaving you with more time to race above the rest.<\/p><p><\/p><p>We'll even dial in your hardware and software to whichever games you love to play! If you aren't sure - just ask! Our friendly team are always happy to help you on your racing journey.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scale_earnings_17eec32c-c5dc-4782-93f0-6d4db1e69a1e.jpg",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2",
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "499c9acc-c640-47bd-960b-94b4f6544c20": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "All-in-one-Simulator",
+            "content": ""
+          }
+        },
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Assembled",
+            "content": ""
+          }
+        },
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Tested & Configured",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-1",
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2",
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "45ace661-5d65-430c-bdc8-9db45ffc738b": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -217,6 +323,7 @@
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1",
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -359,6 +466,8 @@
   "order": [
     "main",
     "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
+    "bbe63f78-9157-4007-a278-05bf2c593a24",
+    "499c9acc-c640-47bd-960b-94b4f6544c20",
     "45ace661-5d65-430c-bdc8-9db45ffc738b",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
