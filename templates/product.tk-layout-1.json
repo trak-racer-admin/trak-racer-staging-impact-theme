@@ -440,8 +440,8 @@
             "horizontal_position_mobile": 24,
             "vertical_position_mobile": 70,
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "title": "Triple Monitor Stand",
+            "content": "<p>The Trak Racer Triple Monitor stand is sturdy enough to handle anything,<\/p>"
           }
         },
         "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2": {
@@ -452,20 +452,20 @@
             "horizontal_position_mobile": 62,
             "vertical_position_mobile": 14,
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "title": "Your complete PC setup",
+            "content": "<ul><li>MSI Gaming PC<\/li><li>Three AOC Monitors<\/li><li>Logitech Wireless Keyboard & Mouse<\/li><li>Speakers<\/li><\/ul>"
           }
         },
         "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-3": {
           "type": "item",
           "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
+            "horizontal_position": 41,
+            "vertical_position": 42,
             "horizontal_position_mobile": 83,
             "vertical_position_mobile": 75,
             "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "title": "All your racing electronics",
+            "content": "<ul><li>Simucube 2 Sport Direct Drive <\/li><li>Simucube Quick Release Pin<\/li><li>Simucube GT Wheel<\/li><li>VNM Racing Pedals <\/li><\/ul>"
           }
         },
         "367ac19c-ade4-4c18-a1c9-832109c3e122": {
