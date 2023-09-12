@@ -508,7 +508,7 @@
         "button_text": "",
         "button_url": "",
         "desktop_text_position": "place-self-start text-start",
-        "image_background": "",
+        "image_background": "#ffffff",
         "image_background_gradient": "",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
@@ -521,6 +521,82 @@
         "hot_spot_content_text_color": "#000000",
         "hot_spot_content_opacity": 90,
         "hot_spot_content_blur_radius": 3
+      }
+    },
+    "046cb4a3-f399-439e-9d21-687edd02659b": {
+      "type": "timeline",
+      "blocks": {
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Recieved",
+            "subheading": "Order Recieved",
+            "title": "Phase 1",
+            "content": "<p>When you place your order, it is immediately received by our team and your components are shipped to our team of experts so we can begin building your rig.<\/p>"
+          }
+        },
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-2": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Build Started",
+            "subheading": "Build Started",
+            "title": "Phase 2",
+            "content": "<p>Once we receive your components to our warehouse, we begin assembling the rig and any accessories.<\/p>"
+          }
+        },
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-3": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Software Configured",
+            "subheading": "Software Configured",
+            "title": "Phase 3",
+            "content": "<p>Once your rig is complete, we configure and optimse all software, install some games and setup your PC and monitors, so that when your rig arrives, you can race straight away.<\/p>"
+          }
+        },
+        "938c719e-edd0-465a-aa1d-0bdc57037741": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Packaged",
+            "subheading": "Order Packaged",
+            "title": "Phase 4",
+            "content": "<p>Once your rig is complete and your software is configured, we carefully package your order into a sturdy crate and is ready for shipment.<\/p>"
+          }
+        },
+        "96d28770-8100-4266-ab30-d85525495a75": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Shipped",
+            "subheading": "Order Shipped",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "c538ca6e-429d-414b-b6f3-9207bdb83974": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Arrives",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-1",
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-2",
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-3",
+        "938c719e-edd0-465a-aa1d-0bdc57037741",
+        "96d28770-8100-4266-ab30-d85525495a75",
+        "c538ca6e-429d-414b-b6f3-9207bdb83974"
+      ],
+      "settings": {
+        "full_width": true,
+        "impact_text_ratio": 1,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "impact_text_color": "",
+        "impact_text_gradient": ""
       }
     },
     "b04db594-708b-42f5-998d-8736ea8d10b6": {
@@ -618,6 +694,7 @@
     "45ace661-5d65-430c-bdc8-9db45ffc738b",
     "8c20408f-48ad-40e9-87fa-7dacd0aaa30a",
     "91cdbda0-a685-49c6-bf2b-d7da069c9109",
+    "046cb4a3-f399-439e-9d21-687edd02659b",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
     "169164228579fecd9c"
