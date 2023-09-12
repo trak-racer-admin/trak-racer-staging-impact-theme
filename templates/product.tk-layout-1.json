@@ -199,28 +199,21 @@
     "45ace661-5d65-430c-bdc8-9db45ffc738b": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Experience Full Immersion",
             "heading_tag": "h1"
           }
         },
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "content": "<p>Our plug and play simulators have been carefully curated by the expert team at Trak Racer. We've selected a range of high-quality components and peripherals to provide you with the ultimate racing simulation experience.<\/p><p>With zero flex, maximum customisation, this rig will take you anywhere and everywhere. Experience the freedom of endless possibilities.<\/p><p>You can strap in as soon as your rig arrives and begin dominating the track immediately. No stress. We take care of assembling and testing, leaving you with more time to race above the rest.<\/p><p>We'll even dial in your hardware and software to whichever games you love to play! If you aren't sure - just ask! Our friendly team are always happy to help you on your racing journey.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-subheading-1",
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1",
         "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1"
       ],
@@ -230,7 +223,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
