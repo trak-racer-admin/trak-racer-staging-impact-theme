@@ -88,7 +88,7 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": "",
-            "liquid": "<p style=\"text-align: center\">Write or copy\/paste Liquid code<\/p>"
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
         "57bf1284-3ed4-45a2-8501-68ca075d8fd9": {
@@ -178,10 +178,10 @@
           "settings": {
             "product": "",
             "value_1": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
-            "value_2": "<p> 3 Monitors up to 45\" each<\/p>",
-            "value_3": "<p>Can rotate up to 90 degrees<\/p>",
-            "value_4": "<p>170kgs (374lbs)<\/p>",
-            "value_5": "<p>80mm x 40mm Aluminium Frame<br\/>All required fixing screws<br\/>VESA Mounting Plate<br\/>VESA Extension Brackets for 150mm - 400mm plates.<\/p>",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
+            "value_5": "",
             "value_6": "",
             "value_7": "",
             "value_8": "",
