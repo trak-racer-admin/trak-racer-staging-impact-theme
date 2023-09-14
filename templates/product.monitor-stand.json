@@ -177,7 +177,7 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>1300mm H x 2360mm W (when fully extended) x 600mm D<\/p>",
+            "value_1": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
             "value_2": "<p> 3 Monitors up to 45\" each<\/p>",
             "value_3": "<p>Can rotate up to 90 degrees<\/p>",
             "value_4": "<p>170kgs (374lbs)<\/p>",
