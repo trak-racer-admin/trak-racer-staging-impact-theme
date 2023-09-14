@@ -100,6 +100,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "15659862187755629035": {
+        "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-embed\/865cd10f-9515-4d8b-8e41-efece9c83f71",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
