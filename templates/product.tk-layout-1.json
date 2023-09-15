@@ -282,12 +282,13 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/AIOSIM_ICON_e68a06f1-57e7-4cf9-b5f0-dc2bb9132794.png",
             "mobile_icon_width": 120,
             "icon_width": 120,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "All-in-one-Simulator",
+            "title": "Race Ready Simulator",
             "content": ""
           }
         },
@@ -295,12 +296,13 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/ASSEMBLED_ICON_cdcee2b7-49ea-4430-8340-8f28a65a1aba.png",
             "mobile_icon_width": 120,
             "icon_width": 120,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Assembled",
+            "title": "Fully Assembled",
             "content": ""
           }
         },
@@ -308,6 +310,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/TESTED_ICON_c5152974-acec-48fa-b3c2-45c87da710e0.png",
             "mobile_icon_width": 120,
             "icon_width": 120,
             "icon_background_type": "none",
@@ -337,6 +340,7 @@
     },
     "eefab2a8-30d9-446a-8a79-052f6ac35f19": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "recommendations_count": 10,
         "products": [
