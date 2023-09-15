@@ -328,7 +328,7 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
@@ -541,7 +541,7 @@
       "settings": {
         "full_width": true,
         "image": "shopify:\/\/shop_images\/1.jpg",
-        "title": "What's in the kit? (Option 3)",
+        "title": "What's in the kit?",
         "content": "",
         "button_text": "",
         "button_url": "",
