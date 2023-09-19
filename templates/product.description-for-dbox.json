@@ -46,19 +46,6 @@
           "settings": {
           }
         },
-        "e633f343-926b-45cd-95ca-e2b063b636a8": {
-          "type": "offer",
-          "settings": {
-            "text_alignment": "start",
-            "icon_position": "aligned",
-            "icon": "none",
-            "icon_width": 24,
-            "title": "Note - this product arrives fully assembled.",
-            "content": "",
-            "background": "#d6fffc",
-            "text_color": "#0629fb"
-          }
-        },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
           "settings": {
@@ -120,18 +107,6 @@
             "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
-        "de54c711-1fad-4bec-b210-ac37a6f95ec9": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/pages\/contact-us",
-            "text": "Have a question? Want to customise? Contact us!",
-            "size": "xl",
-            "style": "outline",
-            "stretch": true,
-            "background": "#ff454c",
-            "text_color": "#ff454c"
-          }
-        },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
           "type": "liquid",
           "settings": {
@@ -153,7 +128,6 @@
         "rating",
         "payment_terms",
         "separator",
-        "e633f343-926b-45cd-95ca-e2b063b636a8",
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "variant_picker",
         "0040dc10-c915-4ceb-9474-555cc98fd73b",
@@ -162,7 +136,6 @@
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "268a6de7-86de-4d86-95d2-db65698f953f",
         "buy_buttons",
-        "de54c711-1fad-4bec-b210-ac37a6f95ec9",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "270d505b-2383-4538-83f6-145c2f2e47ed"
       ],
@@ -190,7 +163,7 @@
         "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Expertly curated, ready to race simulators to give you the ultimate competitive edge",
+            "text": "Level up & feel the Trak as it should be felt!",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(133deg, rgba(218, 218, 218, 1) 11%, rgba(255, 255, 255, 1) 87%)"
@@ -205,7 +178,7 @@
         "content_width": "large",
         "text_position": "center",
         "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(159deg, rgba(255, 62, 62, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+        "background_gradient": "linear-gradient(159deg, rgba(255, 253, 253, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
         "text_color": ""
       }
     },
