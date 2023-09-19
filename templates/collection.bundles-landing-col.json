@@ -2,7 +2,6 @@
   "sections": {
     "banner": {
       "type": "collection-banner",
-      "disabled": true,
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -19,6 +18,118 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
+      }
+    },
+    "88126f73-ddcc-49c1-89fa-0c28f365827a": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-vendor-1": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-badges-1": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-price-1": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-rating-1": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-separator-1": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "b6a3b5cd-3dcf-413f-8e36-bc7352e009c9": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.custom_fields.product_highlights | metafield_tag }}"
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#7947ec",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "bc9960ba-f187-41ee-9043-f44905139953": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/products\/spec-3-the-slingshot",
+            "text": "Learn More",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-vendor-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-title-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-badges-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-price-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-rating-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-separator-1",
+        "b6a3b5cd-3dcf-413f-8e36-bc7352e009c9",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-variant_picker-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-quantity_selector-1",
+        "template--17060380934308__88126f73-ddcc-49c1-89fa-0c28f365827a-buy_buttons-1",
+        "bc9960ba-f187-41ee-9043-f44905139953"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "spec-3-the-slingshot",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     },
     "main": {
@@ -71,6 +182,7 @@
         "template--19490220671264__27c2e608-a195-4e54-800d-5c4268f2d666-1687137110a77c53e5-2",
         "24f23348-dfa6-4271-847b-5558a7eedf36"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -116,6 +228,7 @@
         "template--19490220671264__8b53d79e-7c2c-4a16-b17b-aabdc74faff9-1687137110a77c53e5-2",
         "e11b34cd-4a73-48d3-befa-799188ae6571"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -161,6 +274,7 @@
         "template--19490220671264__605f60c5-f48c-4687-86c3-91213269462c-1687137110a77c53e5-2",
         "45c3de54-701b-4778-869f-bc124c303459"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -176,6 +290,7 @@
   },
   "order": [
     "banner",
+    "88126f73-ddcc-49c1-89fa-0c28f365827a",
     "main",
     "27c2e608-a195-4e54-800d-5c4268f2d666",
     "8b53d79e-7c2c-4a16-b17b-aabdc74faff9",
