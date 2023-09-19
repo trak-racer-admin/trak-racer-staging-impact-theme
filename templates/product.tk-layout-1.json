@@ -488,8 +488,8 @@
           "settings": {
             "horizontal_position": 24,
             "vertical_position": 70,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
+            "horizontal_position_mobile": 36,
+            "vertical_position_mobile": 59,
             "icon_width": 32,
             "title": "Triple Monitor Stand",
             "content": "<p>The Trak Racer Triple Monitor stand is sturdy enough to handle anything.<\/p>"
