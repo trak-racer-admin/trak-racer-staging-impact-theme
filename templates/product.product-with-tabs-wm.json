@@ -74,6 +74,12 @@
             "size_chart_page": ""
           }
         },
+        "90703678-c3ac-459a-b522-0f4a6c37cb86": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -133,6 +139,7 @@
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "e46dff6e-ab3c-4426-b968-a33dfc835f4c",
         "variant_picker",
+        "90703678-c3ac-459a-b522-0f4a6c37cb86",
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
