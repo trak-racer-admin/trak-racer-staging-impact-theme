@@ -66,7 +66,7 @@
         "2e345fec-d7a5-41be-abee-ce429953e013": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
+            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
           }
         },
         "quantity_selector": {
