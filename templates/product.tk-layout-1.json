@@ -120,6 +120,18 @@
             "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
+        "de54c711-1fad-4bec-b210-ac37a6f95ec9": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/contact-us",
+            "text": "Have a question? Want to customise? Contact us!",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#ff454c",
+            "text_color": "#ff454c"
+          }
+        },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
           "type": "liquid",
           "settings": {
@@ -150,6 +162,7 @@
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "268a6de7-86de-4d86-95d2-db65698f953f",
         "buy_buttons",
+        "de54c711-1fad-4bec-b210-ac37a6f95ec9",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "270d505b-2383-4538-83f6-145c2f2e47ed"
       ],
@@ -479,7 +492,7 @@
             "vertical_position_mobile": 70,
             "icon_width": 32,
             "title": "Triple Monitor Stand",
-            "content": "<p>The Trak Racer Triple Monitor stand is sturdy enough to handle anything,<\/p>"
+            "content": "<p>The Trak Racer Triple Monitor stand is sturdy enough to handle anything.<\/p>"
           }
         },
         "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2": {
