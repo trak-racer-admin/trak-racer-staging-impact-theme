@@ -4,7 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "message": {
           "type": "message",
@@ -17,6 +16,7 @@
       "block_order": [
         "message"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -87,12 +87,12 @@
             "submenu_style": "bold_heading",
             "image_1": "shopify:\/\/shop_images\/D-BOX.jpg",
             "image_heading_1": "D-BOX",
-            "image_link_1": "",
+            "image_link_1": "shopify:\/\/collections\/d-box",
             "image_text_color_1": "#000000",
-            "image_2": "shopify:\/\/shop_images\/cube-controls-gt-sport.webp",
+            "image_2": "shopify:\/\/shop_images\/Cube_Control.jpg",
             "image_heading_2": "Cube Controls",
-            "image_link_2": "",
-            "image_text_color_2": "#ffffff",
+            "image_link_2": "shopify:\/\/collections\/cube-controls",
+            "image_text_color_2": "#000000",
             "image_heading_3": "",
             "image_link_3": "",
             "image_text_color_3": "#ffffff",
@@ -110,12 +110,11 @@
             "menu_item": "Support",
             "layout": "horizontal_center",
             "submenu_style": "bold_heading",
-            "image_1": "shopify:\/\/shop_images\/Racing.jpg",
-            "image_heading_1": "Sim Racing Academy",
-            "image_link_1": "shopify:\/\/collections\/racing-simulators",
+            "image_heading_1": "Partner Program",
+            "image_link_1": "",
             "image_text_color_1": "#ffffff",
-            "image_2": "shopify:\/\/shop_images\/F1.jpg",
-            "image_heading_2": "Alpine F1 x Trak Racer",
+            "image_2": "shopify:\/\/shop_images\/our_ambassadors.jpg",
+            "image_heading_2": "Our Ambassadors",
             "image_link_2": "",
             "image_text_color_2": "#ffffff",
             "image_heading_3": "",
@@ -139,11 +138,11 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify:\/\/shop_images\/TR_LOGO_WHITE_TRANSP.png",
+        "logo": "shopify:\/\/shop_images\/512_px_logo_07004d81-0ef8-4a87-b0c3-c9f87908dda7.png",
         "logo_max_width": 200,
         "logo_mobile_max_width": 170,
         "menu": "main-menu-impact",
-        "sidebar_menu": "main-menu-mobile",
+        "sidebar_menu": "main-menu-impact-drawer",
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "left",

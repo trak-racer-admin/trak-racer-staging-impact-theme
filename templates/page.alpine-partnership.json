@@ -13,23 +13,23 @@
         "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ALPINE_00001698_0003.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/23_F1_CAR.jpg",
+            "image": "shopify:\/\/shop_images\/ALPINE_00001696_0008.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/aLP_CAR.jpg",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
-            "title": "Alpine F1 x Trak Racer",
+            "title": "BWT Alpine F1 Team x Trak Racer",
             "heading_tag": "h2",
             "button_text": "Shop Now",
-            "button_link": "",
-            "text_color": "#008eff",
+            "button_link": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
+            "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#008eff",
             "overlay_color": "#000000",
-            "overlay_opacity": 10,
+            "overlay_opacity": 0,
             "background": "",
-            "background_gradient": "linear-gradient(333deg, rgba(216, 231, 255, 1) 3%, rgba(240, 240, 240, 0.71) 21.223%, rgba(126, 156, 255, 1) 41%, rgba(54, 89, 255, 1) 59%, rgba(41, 90, 151, 0.71) 85%)"
+            "background_gradient": ""
           }
         }
       },
@@ -37,8 +37,8 @@
         "template--19607692378400__8a294e45-c7c4-4b28-8411-1b5d0f0df425-1689038394fd66c4e1-0"
       ],
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": true,
+        "full_width": true,
+        "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "dots",
         "transition_type": "fade_with_text",
@@ -48,129 +48,253 @@
         "background_gradient": ""
       }
     },
-    "2c4713a9-f1a9-42da-beef-909350326f0e": {
-      "type": "multiple-images-with-text",
+    "3007b565-c367-4be6-91f3-69e501578fa2": {
+      "type": "press",
       "blocks": {
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-1": {
-          "type": "item",
+        "template--17060381425828__3007b565-c367-4be6-91f3-69e501578fa2-quote-1": {
+          "type": "quote",
           "settings": {
-            "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Alpine F1 team at Melbourne Grand Prix 2023",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-2": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/363502700_2023045468045187_2854395059075187767_n.jpg",
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Alpine and Trak Racer at Belgium Grand Prix 2023",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
+            "logo": "shopify:\/\/shop_images\/test_bwt_alpine_logo.png",
+            "logo_width": 100,
+            "author": "Esteban Ocon | Driver I BWT Alpine F1 Team",
+            "content": "I really enjoyed the Trak Racer, Alpine Racing TRX. It’s a very useful tool for preparing for Grand Prix’s. It has everything we need as professional racing drivers!",
+            "show_rating": false,
+            "rating": 4
           }
         }
       },
       "block_order": [
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-1",
-        "template--19607692378400__2c4713a9-f1a9-42da-beef-909350326f0e-item-2"
+        "template--17060381425828__3007b565-c367-4be6-91f3-69e501578fa2-quote-1"
       ],
       "settings": {
         "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
+        "content_size": "medium",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
-    "1eb979a5-d0ab-45bd-adb5-af4137be54b4": {
-      "type": "media-grid",
-      "disabled": true,
+    "3bf6c5b3-c0d1-465c-88bc-c84af361393b": {
+      "type": "video",
       "blocks": {
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1": {
-          "type": "image",
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-play-1": {
+          "type": "play",
           "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
           }
         },
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-2": {
-          "type": "image",
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-heading-1": {
+          "type": "heading",
           "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-3": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "text": "BWT Alpine F1 hitting the Trak on the Alpine Racing TRX at Calder Park",
+            "heading_tag": "h4"
           }
         }
       },
       "block_order": [
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-1",
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-2",
-        "template--19607692378400__1eb979a5-d0ab-45bd-adb5-af4137be54b4-image-3"
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-play-1",
+        "template--17060381425828__3bf6c5b3-c0d1-465c-88bc-c84af361393b-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=FUyoOfm7sRE",
+        "poster": "shopify:\/\/shop_images\/TR_Logo.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "a55855ce-000c-4da6-9b02-fe94409c1346": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "One partnership to change the sim racing world forever",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(112, 198, 210, 1) 86%)"
+          }
+        },
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>In October 2020, a world-changing collaboration was formed between the BWT Alpine F1 Racing Team and sim racing experts Trak Racer. The partnership was built on a shared passion for innovation and creativity. Pushing the boundaries together, Trak Racer and Alpine have been able to change and create new ways for drivers to train.<\/p><p>In early 2021, the announcement of the Alpine Racing TRX, a first-of-its-kind racing simulator, meant that sim racers would now have unlimited access and flexibility to test and hone their skills with new racing styles.<\/p><p>The resounding success of the Alpine Racing TRX is a testament to the partnership between Trak Racer and Alpine and we look forward to many years continuing to collaborate and drive innovation in the sim racing space.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-heading-1",
+        "template--17060381425828__a55855ce-000c-4da6-9b02-fe94409c1346-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "f43012a9-e5cd-43f9-9a71-4ea09fdd24c3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17060381425828__f43012a9-e5cd-43f9-9a71-4ea09fdd24c3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trak Racer x Alpine World",
+            "heading_tag": "h1",
+            "text_color": "#000000",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__f43012a9-e5cd-43f9-9a71-4ea09fdd24c3-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#baf1f9",
+        "background_gradient": "linear-gradient(180deg, rgba(52, 133, 236, 1) 11%, rgba(170, 238, 248, 1) 84%)",
+        "text_color": ""
+      }
+    },
+    "647eccb9-c730-4429-a7b9-fd16a6fcea0b": {
+      "type": "media-grid",
+      "blocks": {
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/222222222222222.jpg",
+            "title": "Alpine Esports headquarters using Trak Racer simulators to train",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 4,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
+            "title": "Melbourne Grand Prix 2023 - BWT Alpine drivers practicing on the Alpine Racing TRX",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5c5a7b6f-3e5a-4ed8-976e-27a8acfcacba_1.jpg",
+            "title": "Trak Racer featured on the BWT Alpine F1 car in February 2023",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "28fc00c5-51b5-45e6-82c2-1ea69beabf32": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/86242946-22ce-4ad2-b9b7-51335391786c.png",
+            "title": "Trak Racer Alpine Racing TRX prototype at the Dutch Grand Prix 2021",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "afae82e8-400b-4425-ac3e-80e3133423ba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alpine_TR.jpg",
+            "title": "BWT Alpine F1 Car for Trak Racer at Sim Race Expo 2022",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-1",
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-2",
+        "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3",
+        "28fc00c5-51b5-45e6-82c2-1ea69beabf32",
+        "afae82e8-400b-4425-ac3e-80e3133423ba"
       ],
       "settings": {
         "full_width": true,
         "reduce_width": false,
         "desktop_row_height": 290,
         "mobile_row_height": 150,
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": ""
+        "background": "#047de3",
+        "background_gradient": "linear-gradient(360deg, rgba(52, 133, 236, 1) 14%, rgba(170, 238, 248, 1) 86%)"
       }
     },
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a": {
@@ -193,7 +317,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -201,24 +325,24 @@
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3": {
       "type": "impact-text",
       "blocks": {
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
-          "type": "item",
-          "settings": {
-            "title": "60",
-            "subheading": "seconds",
-            "content": "<p>F1 to GT positioning in less than 60 seconds.<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
         "ca2c02a4-7b20-469f-8c44-da48327843e7": {
           "type": "item",
           "settings": {
             "title": "300",
             "subheading": "seconds",
             "content": "<p>To change your pedal position<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0": {
+          "type": "item",
+          "settings": {
+            "title": "60",
+            "subheading": "seconds",
+            "content": "<p>F1 to GT seat positioning in less than 60 seconds.<\/p>",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -239,8 +363,8 @@
         }
       },
       "block_order": [
-        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
         "ca2c02a4-7b20-469f-8c44-da48327843e7",
+        "template--19607692378400__b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3-16890392433dcd6b75-0",
         "f15d034d-d79d-4857-882b-514851c4b7a9"
       ],
       "settings": {
@@ -250,7 +374,7 @@
         "impact_text_style": "fill",
         "text_divider": "line",
         "impact_text_size_ratio": 0.7,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "",
         "heading_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 238, 248, 1) 86%)",
@@ -295,18 +419,18 @@
           "settings": {
           }
         },
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6": {
-          "type": "description",
+        "65fcd15e-b101-4931-8706-3d42596c9404": {
+          "type": "text",
           "settings": {
-            "collapse_content": false
+            "text": "{{ section.settings.product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
         },
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7": {
           "type": "variant_picker",
           "settings": {
-            "hide_sold_out_variants": false,
+            "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "block",
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -319,9 +443,9 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
+            "atc_button_background": "#62a3ee",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -330,6 +454,17 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10": {
           "type": "pickup_availability",
           "settings": {
+          }
+        },
+        "8e9f5d4a-334a-443c-95c2-08e842dc93a4": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
+        },
+        "13666077-0792-4b81-b2f1-e63612f6ce9d": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{section.settings.product}}"
           }
         }
       },
@@ -340,38 +475,90 @@
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-3",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-4",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-5",
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-6",
+        "65fcd15e-b101-4931-8706-3d42596c9404",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-7",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-8",
         "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-9",
-        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10"
+        "template--19607692378400__7e84a986-13b9-4c09-9706-1d0d46c45ac7-1689038695d4459a00-10",
+        "8e9f5d4a-334a-443c-95c2-08e842dc93a4",
+        "13666077-0792-4b81-b2f1-e63612f6ce9d"
       ],
       "settings": {
         "full_width": true,
         "product": "{{ page.metafields.custom.comparison_rig_1.value }}",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "contained",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "dcebc5b2-391f-48ba-a807-44ef3c283a0f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ALPINE_00001698_0008_1.jpg",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>The BWT Alpine F1 Racing Team, previously Renault F1 Team, is a distinguished Formula One squad with a legacy of success. Established in 1977 as Renault Sport, the team clinched Constructors' Championships in 2005 and 2006. Rebranded as Alpine in 2021, they combine racing prowess with Alpine's road car expertise. With a commitment to excellence, the team competes at the pinnacle of motorsport, embodying speed, innovation, and competition.<\/p>",
+            "link_url": "https:\/\/www.alpine-cars.co.uk\/formula-1.html",
+            "link_text": "Learn More",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-1",
+        "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "About Alpine",
+        "content": "",
+        "background": "#2173b8",
+        "background_gradient": "linear-gradient(46deg, rgba(33, 115, 184, 1) 13%, rgba(2, 25, 43, 1) 86%)",
+        "text_color": "#ffffff"
       }
     }
   },
   "order": [
     "main",
     "8a294e45-c7c4-4b28-8411-1b5d0f0df425",
-    "2c4713a9-f1a9-42da-beef-909350326f0e",
-    "1eb979a5-d0ab-45bd-adb5-af4137be54b4",
+    "3007b565-c367-4be6-91f3-69e501578fa2",
+    "3bf6c5b3-c0d1-465c-88bc-c84af361393b",
+    "a55855ce-000c-4da6-9b02-fe94409c1346",
+    "f43012a9-e5cd-43f9-9a71-4ea09fdd24c3",
+    "647eccb9-c730-4429-a7b9-fd16a6fcea0b",
     "89ff794b-a53b-479a-8d9d-9d775b0fca1a",
     "b8a08ef2-0d1c-46e8-ac8c-ecde3ab405c3",
-    "7e84a986-13b9-4c09-9706-1d0d46c45ac7"
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7",
+    "dcebc5b2-391f-48ba-a807-44ef3c283a0f"
   ]
 }

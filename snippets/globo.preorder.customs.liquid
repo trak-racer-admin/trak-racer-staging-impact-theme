@@ -1,0 +1,73 @@
+<script>
+  const preorderCustom = {
+      render: function(){
+          this.initSelectors()
+          this.handleEvents()
+      },
+      initSelectors: function(){
+          window.GloboPreorderParams = window.GloboPreorderParams || {};
+          window.GloboPreorderParams.selectors = window.GloboPreorderParams.selectors || {};
+          window.GloboPreorderParams.selectors.productVariantActivator += ", .variant-picker__option .popover-listbox__option";
+          window.GloboPreorderParams.selectors.collectionProductForms = ".gCollectionForm";
+          // window.GloboPreorderParams.selectors.productAddToCartBtn = [".gpo-clone-atc-button", 'button[type="submit"]'];
+          window.GloboPreorderParams.selectors.productAddToCartTextElement = 'div';
+
+          window.GloboPreorderParams.advancedSettings = window.GloboPreorderParams.advancedSettings || {};
+          window.GloboPreorderParams.advancedSettings.isDuplicateBtn = false;
+      },
+      handleEvents: function(){
+          const app = this;
+
+          document.addEventListener('globo.preorder.show.preorder', e => {
+              const form = e.detail.form;
+              const profile = e.detail.profile;
+             console.log('check form', form, profile)
+              if(!profile.discountPayment.fullPayment.enable && !profile.discountPayment.partialPayment.enable){
+                  form.classList.add('gHidePaymentOption')
+              }else{
+                  form.classList.remove('gHidePaymentOption')
+              }
+          })
+
+          // window.addEventListener('load', function(){
+          //     $(document).on('click change', window.GloboPreorderParams.selectors.productVariantActivator, function(){
+          //         window.Globo.Preorder.appSetInterval(function(){
+          //             if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+          //                 app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+          //             }
+          //         }, 400, 2)
+          //     })
+          //     window.Globo.Preorder.appSetInterval(function(){
+          //         if(window.GloboPreorderParams.page == 'product' && $('form.singleProductPreOrderForm').length){
+          //             app.renderSingleProductForm($('form.singleProductPreOrderForm'), window.GloboPreorderParams.product)
+          //         }
+          //     }, 400, 2)
+          // })
+        
+          // document.addEventListener('globo.preorder.show.preorder', e => {
+          //     const form = e.detail.form;
+          //     const message = e.detail.profile.message;
+          //     const preorderBtn = form.find('.gPreorderBtn')
+        
+          //     preorderBtn.html(message.preorderText);
+          // })
+      },
+      renderSingleProductForm: function(form, product){
+          const app = window.Globo.Preorder;
+          const productVariantActivator = app.settings.selectors.productVariantActivator;
+          const productVariantSelector = app.settings.selectors.productVariantSelector;
+          const productQuantitySelector = app.settings.selectors.productQuantitySelector;
+          const productAddToCartTextElement = app.settings.selectors.productAddToCartTextElement;
+          const paymentButton = app.settings.selectors.paymentButton;     
+          
+          app.renderProductForm(product, form, productVariantActivator, productVariantSelector, productQuantitySelector, 'button[type="submit"]', productAddToCartTextElement, paymentButton)
+          app.renderBisForm(product, form, productVariantActivator, productVariantSelector)
+      }
+  }
+  preorderCustom.render()
+</script>
+<style>
+  .gHidePaymentOption .gPreorderSellingPlanWrapper{
+      display: none;
+  }
+</style>

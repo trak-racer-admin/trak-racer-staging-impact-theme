@@ -1,6 +1,6 @@
 {
   "current": {
-    "section_vertical_spacing": "medium",
+    "section_vertical_spacing": "xsmall",
     "button_border_radius": 24,
     "input_border_radius": 8,
     "block_border_radius": 16,
@@ -9,7 +9,7 @@
     "icon_stroke_width": 1,
     "icon_style": "mono",
     "button_hover_effect": "fade",
-    "background": "#ffffff",
+    "background": "#f2f2f2",
     "text_color": "#1a1a1a",
     "header_background": "#000000",
     "header_text_color": "#ffffff",
@@ -20,20 +20,22 @@
     "secondary_button_background": "#1a1a1a",
     "secondary_button_text_color": "#ffffff",
     "product_card_text_color": "#000000",
-    "product_on_sale_accent": "#ffffff",
+    "product_rating_color": "#ffb74a",
+    "product_on_sale_accent": "#000000",
     "product_primary_badge_background": "#803cee",
     "heading_font": "helvetica_n3",
     "heading_font_size": "large",
     "heading_text_transform": "normal",
     "heading_letter_spacing": 7.5,
-    "text_font": "avenir_next_n4",
+    "text_font": "roboto_n3",
     "text_font_size_mobile": 14,
-    "text_font_size_desktop": 16,
+    "text_font_size_desktop": 17,
     "text_font_letter_spacing": 5,
     "currency_code_enabled": false,
     "show_page_transition": true,
     "heading_apparition": "fade",
     "color_swatch_style": "round",
+    "color_swatch_config": "Alpine Racing Blue:#6a97fd\nBlack:#000000",
     "show_vendor": false,
     "show_product_rating": true,
     "show_sold_out_badge": false,
@@ -41,6 +43,7 @@
     "product_color_display": "swatch",
     "product_image_aspect_ratio": "short",
     "product_info_alignment": "center",
+    "cart_type": "page",
     "social_facebook": "https:\/\/www.facebook.com\/trakracer\/",
     "social_twitter": "https:\/\/twitter.com\/trak_racer",
     "social_instagram": "https:\/\/www.instagram.com\/trakracer\/",
@@ -51,7 +54,54 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/globo-product-options-variant\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "733389323033596483": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": true
+        }
+      },
+      "5439026248262864547": {
+        "type": "shopify:\/\/apps\/preorder-globo-restock\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1519107564253711417": {
+        "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.embeded\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+        "disabled": false,
+        "settings": {
+          "selected_theme": "impact",
+          "no_block_id": false
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "15659862187755629035": {
+        "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-embed\/865cd10f-9515-4d8b-8e41-efece9c83f71",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Sound": {

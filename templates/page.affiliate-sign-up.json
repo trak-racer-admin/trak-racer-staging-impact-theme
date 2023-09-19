@@ -48,13 +48,13 @@
         "allow_transparent_header": true,
         "enable_parallax": true,
         "image_size": "sm",
-        "image": "shopify:\/\/shop_images\/no_overlay.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
+        "image": "shopify:\/\/shop_images\/with_gradient.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/affiliate_asset_1.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 57
+        "overlay_opacity": 20
       }
     },
     "abf33c11-fe59-4932-9e2a-67e4df918d4d": {
@@ -169,7 +169,7 @@
         "template--19929120407840__c8736990-9d16-4ace-8472-9c453c497793-1689551021674d5acc-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/share.png",
+            "image": "shopify:\/\/shop_images\/share_3a2801f5-cc7a-4184-a9b3-b4ade735f6c9.png",
             "column_size": "3",
             "title": "Step 2",
             "heading_tag": "h4",
@@ -206,7 +206,7 @@
         "subheading": "",
         "title": "How it works",
         "content": "",
-        "background": "#ededed",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -245,7 +245,7 @@
         "template--19929120407840__d5885038-2018-49bf-8835-cbf8728795c4-16896349343a70eb16-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TRX_ALPINE_GT.2_720x_79fdac13-bb60-4159-8658-8f1f1475b30e.webp",
+            "image": "shopify:\/\/shop_images\/TRX_ALPINE_F1.2_1f1014fd-4fa6-4fb3-9c16-db2d686988cd.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h6",
@@ -258,7 +258,7 @@
         "template--19929120407840__d5885038-2018-49bf-8835-cbf8728795c4-16896349343a70eb16-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DBOX-4250i.8_720x_2b4369df-2b28-4ebb-b053-12865ca5de2e.webp",
+            "image": "shopify:\/\/shop_images\/DBOX-4250i.8.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -271,7 +271,7 @@
         "template--19929120407840__d5885038-2018-49bf-8835-cbf8728795c4-16896349343a70eb16-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ultimate_transparent_2_720x_f696dd4c-b63e-4559-953b-5bc38bb56b4f.webp",
+            "image": "shopify:\/\/shop_images\/Ultimate_transparent_2_1.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -284,7 +284,7 @@
         "c994aacd-55f3-42b6-8fa2-22a64a891c0e": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEAT-4.1_900x_6d0abb79-edd3-4dee-934d-d4edd28317b7.webp",
+            "image": "shopify:\/\/shop_images\/SEAT-4.1_0c7292ac-e2e4-427e-8753-8915d214b476.png",
             "column_size": "4",
             "title": "",
             "heading_tag": "h4",
@@ -302,7 +302,7 @@
         "c994aacd-55f3-42b6-8fa2-22a64a891c0e"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -316,12 +316,10 @@
     },
     "1185251a-185e-4c2d-8f81-f5bc0f9a5291": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "72a1948e-ebe5-49f5-abc3-4bc333c876c0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/C0307.00_02_11_10.Still010.jpg",
             "width_mode": "custom",
             "max_width": 600,
             "mobile_max_width": 400
@@ -366,6 +364,7 @@
         "template--19929120407840__1185251a-185e-4c2d-8f81-f5bc0f9a5291-16895573685cabeb39-2",
         "d48ce5a6-23e6-4252-82fc-7f776c0e9837"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -381,9 +380,9 @@
         "b5cbb553-4ec2-4037-8f5d-11cc28db8f71": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/affiliate_asset.jpg",
+            "image": "shopify:\/\/shop_images\/scale_earnings.jpg",
             "width_mode": "custom",
-            "max_width": 600,
+            "max_width": 890,
             "mobile_max_width": 400
           }
         },
@@ -437,7 +436,6 @@
     },
     "4dcd86a1-fdd2-4799-b728-7b359d01737a": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-0": {
           "type": "item",
@@ -468,6 +466,7 @@
         "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-0",
         "template--19929120407840__4dcd86a1-fdd2-4799-b728-7b359d01737a-1689576146672e029d-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -511,7 +510,6 @@
     },
     "45618475-3706-439d-a08d-595ecc8d556f": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-0": {
           "type": "subheading",
@@ -540,6 +538,7 @@
         "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-1",
         "template--19929120407840__45618475-3706-439d-a08d-595ecc8d556f-16895573685cabeb39-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -651,7 +650,6 @@
     },
     "90bea3e8-9b92-420d-8806-90b0b1dc5f15": {
       "type": "accordion-content",
-      "disabled": true,
       "blocks": {
         "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-0": {
           "type": "item",
@@ -680,6 +678,7 @@
         "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-1",
         "template--19929120407840__90bea3e8-9b92-420d-8806-90b0b1dc5f15-16895742316ea37253-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",

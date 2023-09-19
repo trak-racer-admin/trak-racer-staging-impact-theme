@@ -1,0 +1,742 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h4"
+          }
+        },
+        "3d8a178e-4414-47ed-a135-2765af91549a": {
+          "type": "sku",
+          "settings": {
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": true
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "e633f343-926b-45cd-95ca-e2b063b636a8": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Note - this product arrives fully assembled.",
+            "content": "",
+            "background": "#d6fffc",
+            "text_color": "#0629fb"
+          }
+        },
+        "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "stack_blocks": true,
+            "selector_mode": "dropdown",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "0040dc10-c915-4ceb-9474-555cc98fd73b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "a9f02b4b-5792-465e-a882-e198dbd35643": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "5820ccae-e759-4a4c-9e1b-fa1bf19e1157": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "268a6de7-86de-4d86-95d2-db65698f953f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Metafield based ETA - 11 Aug '23 -->\n{% assign current_variant = product.selected_or_first_available_variant %}\n<div id=\"hcetas\">\n{% for variant in product.variants %}\n    <div {% unless variant == current_variant %} hidden {% endunless %} class=\"hc-eta\" data-variant-id=\"{{ variant.id }}\">\n        {% if variant.available == false or variant.inventory_quantity < 1 %}\n          {% if variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n        <input name=\"{% if variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ variant.metafields.custom.product_eta }}{% endif %}\" \/>\n        {% endif %}\n        {% if variant.available == false or variant.inventory_quantity < 1 %}{{ variant.metafields.custom.product_eta }}{% endif %}\n    <\/div>\n{% endfor %}\n<\/div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#ff454c",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "",
+            "payment_button_text_color": "",
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
+          }
+        },
+        "de54c711-1fad-4bec-b210-ac37a6f95ec9": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/contact-us",
+            "text": "Have a question? Want to customise? Contact us!",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#ff454c",
+            "text_color": "#ff454c"
+          }
+        },
+        "ceb055d8-5897-4811-906d-0fdad123d02c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
+          }
+        },
+        "270d505b-2383-4538-83f6-145c2f2e47ed": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "3d8a178e-4414-47ed-a135-2765af91549a",
+        "badges",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "e633f343-926b-45cd-95ca-e2b063b636a8",
+        "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
+        "variant_picker",
+        "0040dc10-c915-4ceb-9474-555cc98fd73b",
+        "quantity_selector",
+        "a9f02b4b-5792-465e-a882-e198dbd35643",
+        "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
+        "268a6de7-86de-4d86-95d2-db65698f953f",
+        "buy_buttons",
+        "de54c711-1fad-4bec-b210-ac37a6f95ec9",
+        "ceb055d8-5897-4811-906d-0fdad123d02c",
+        "270d505b-2383-4538-83f6-145c2f2e47ed"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#1a1a1a",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Expertly curated, ready to race simulators to give you the ultimate competitive edge",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(133deg, rgba(218, 218, 218, 1) 11%, rgba(255, 255, 255, 1) 87%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(159deg, rgba(255, 62, 62, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "b04db594-708b-42f5-998d-8736ea8d10b6": {
+      "type": "video",
+      "blocks": {
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/youtu.be\/eBJk5jLqieo",
+        "poster": "shopify:\/\/shop_images\/Bundle_3_-_frame_at_0m1s.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "bbe63f78-9157-4007-a278-05bf2c593a24": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Experience Full Immersion",
+            "heading_tag": "h3",
+            "content": "<p>Our plug and play simulators have been carefully curated by the expert team at Trak Racer. We've selected a range of high quality components and peripherals to provide you with the ultimate racing simulation experience.<\/p><p><\/p><p>With zero flex, maximum customisation, this rig will take you anywhere and everywhere. Experience the freedom of endless possibilities.<\/p><p><\/p><p>You can strap in as soon as your rig arrives and begin dominating the track immediately. No stress. We take care of assembling and testing, leaving you with more time to race above the rest.<\/p><p><\/p><p>We'll even dial in your hardware and software to whichever games you love to play! If you aren't sure - just ask! Our friendly team are always happy to help you on your racing journey.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scale_earnings_17eec32c-c5dc-4782-93f0-6d4db1e69a1e.jpg",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2",
+        "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "499c9acc-c640-47bd-960b-94b4f6544c20": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/AIOSIM_ICON_e68a06f1-57e7-4cf9-b5f0-dc2bb9132794.png",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Race Ready Simulator",
+            "content": ""
+          }
+        },
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/ASSEMBLED_ICON_cdcee2b7-49ea-4430-8340-8f28a65a1aba.png",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Fully Assembled",
+            "content": ""
+          }
+        },
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/TESTED_ICON_c5152974-acec-48fa-b3c2-45c87da710e0.png",
+            "mobile_icon_width": 120,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Tested & Configured",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-1",
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2",
+        "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "eefab2a8-30d9-446a-8a79-052f6ac35f19": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 10,
+        "products": [
+          "tr80-racing-simulator-mk5",
+          "gt-style-fixed-fiberglass-seat-1",
+          "simucube-2-sport-direct-drive-wheel-base",
+          "simucube-sqr-quick-release-pin",
+          "simucube-tahko-gt-21-wireless-wheel",
+          "caster-wheels-with-brake-mounting-brackets-1",
+          "tr8020-620mm-table-top-desk-with-swivel-mount-black-2",
+          "universal-aluminium-profile-headphone-hook-holder-1",
+          "alum-floor-triple-monitor-stand-monitors-up-to-46",
+          "premium-sim-rig-floor-mat-with-rgb-light"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "What's in the kit? (Option 1)",
+        "content": "<p>Not listed below, but also included:<\/p><ul><li>Headphone hook<\/li><li>AOC Monitor<\/li><li>Surge Protector<\/li><li>Speakers<\/li><\/ul>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "45ace661-5d65-430c-bdc8-9db45ffc738b": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Experience Full Immersion",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our plug and play simulators have been carefully curated by the expert team at Trak Racer. We've selected a range of high-quality components and peripherals to provide you with the ultimate racing simulation experience.<\/p><p>With zero flex, maximum customisation, this rig will take you anywhere and everywhere. Experience the freedom of endless possibilities.<\/p><p>You can strap in as soon as your rig arrives and begin dominating the track immediately. No stress. We take care of assembling and testing, leaving you with more time to race above the rest.<\/p><p>We'll even dial in your hardware and software to whichever games you love to play! If you aren't sure - just ask! Our friendly team are always happy to help you on your racing journey.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-heading-1",
+        "template--17075952877732__45ace661-5d65-430c-bdc8-9db45ffc738b-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "8c20408f-48ad-40e9-87fa-7dacd0aaa30a": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "benq-mobiuz-1ms-144hz-ultrawide-curved-gaming-monitor-ex3415r",
+            "horizontal_position": 52,
+            "vertical_position": 25
+          }
+        },
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "gt-style-fixed-fiberglass-seat-1",
+            "horizontal_position": 75,
+            "vertical_position": 53
+          }
+        },
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-3": {
+          "type": "product",
+          "settings": {
+            "product": "tr80-racing-simulator-mk5",
+            "horizontal_position": 41,
+            "vertical_position": 47
+          }
+        },
+        "757f0616-ee90-4f27-b492-20d67bc8cfa1": {
+          "type": "product",
+          "settings": {
+            "product": "alum-floor-triple-monitor-stand-monitors-up-to-46",
+            "horizontal_position": 26,
+            "vertical_position": 44
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-1",
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-2",
+        "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-3",
+        "757f0616-ee90-4f27-b492-20d67bc8cfa1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "title": "What's in the kit? (Option 2)",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "91cdbda0-a685-49c6-bf2b-d7da069c9109": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 24,
+            "vertical_position": 70,
+            "horizontal_position_mobile": 36,
+            "vertical_position_mobile": 59,
+            "icon_width": 32,
+            "title": "Triple Monitor Stand",
+            "content": "<p>The Trak Racer Triple Monitor stand is sturdy enough to handle anything.<\/p>"
+          }
+        },
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 18,
+            "vertical_position": 22,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Your complete PC setup",
+            "content": "<ul><li>MSI Gaming PC<\/li><li>Three AOC Monitors<\/li><li>Logitech Wireless Keyboard & Mouse<\/li><li>Speakers<\/li><\/ul>"
+          }
+        },
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 41,
+            "vertical_position": 42,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "All your racing electronics",
+            "content": "<ul><li>Simucube 2 Sport Direct Drive <\/li><li>Simucube Quick Release Pin<\/li><li>Simucube GT Wheel<\/li><li>VNM Racing Pedals <\/li><\/ul>"
+          }
+        },
+        "367ac19c-ade4-4c18-a1c9-832109c3e122": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 59,
+            "vertical_position": 62,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "TR80 Racing Simulator",
+            "content": "<p>At the core of the setup is the Trak Racer TR80 Racing Simulator with GT Seat. This sturdy rig will take anything you throw at it on the trak!<\/p>"
+          }
+        },
+        "4253ccf9-91a0-48e1-b857-f79231d03ffd": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 48,
+            "vertical_position": 45,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "All your accessories",
+            "content": "<p>Because we want to help you get on the trak as fast as possible, your new rig also includes some important accessories:<\/p><ul><li>Caster Wheels <\/li><li>Adjustable Keyboard Mount<\/li><li>Surge Protector<\/li><li>LED Mat<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-1",
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-2",
+        "template--17075952877732__91cdbda0-a685-49c6-bf2b-d7da069c9109-item-3",
+        "367ac19c-ade4-4c18-a1c9-832109c3e122",
+        "4253ccf9-91a0-48e1-b857-f79231d03ffd"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "title": "What's in the kit?",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "046cb4a3-f399-439e-9d21-687edd02659b": {
+      "type": "timeline",
+      "blocks": {
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Recieved",
+            "subheading": "Order Recieved",
+            "title": "Phase 1",
+            "content": "<p>When you place your order, it is immediately received by our team and your components are shipped to our team of experts so we can begin building your rig.<\/p>"
+          }
+        },
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-2": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Build Started",
+            "subheading": "Build Started",
+            "title": "Phase 2",
+            "content": "<p>Once we receive your components to our warehouse, we begin assembling the rig and any accessories.<\/p>"
+          }
+        },
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-3": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Software Configured",
+            "subheading": "Software Configured",
+            "title": "Phase 3",
+            "content": "<p>Once your rig is complete, we configure and optimse all software, install some games and setup your PC and monitors, so that when your rig arrives, you can race straight away.<\/p>"
+          }
+        },
+        "938c719e-edd0-465a-aa1d-0bdc57037741": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Packaged",
+            "subheading": "Order Packaged",
+            "title": "Phase 4",
+            "content": "<p>Once your rig is complete and your software is configured, we carefully package your order into a sturdy crate and is ready for shipment.<\/p>"
+          }
+        },
+        "96d28770-8100-4266-ab30-d85525495a75": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Shipped",
+            "subheading": "Order Shipped",
+            "title": "Phase 5",
+            "content": "<p>We ship your order with one of our trusted carriers.<\/p>"
+          }
+        },
+        "c538ca6e-429d-414b-b6f3-9207bdb83974": {
+          "type": "slide",
+          "settings": {
+            "navigation_label": "Order Arrives",
+            "subheading": "Order Arrives",
+            "title": "Phase 6",
+            "content": "<p>Your rig will be delivered into your home and unpacked for you. Once you install the monitors, you can plug your PC in and race right away.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-1",
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-2",
+        "template--17075952877732__046cb4a3-f399-439e-9d21-687edd02659b-slide-3",
+        "938c719e-edd0-465a-aa1d-0bdc57037741",
+        "96d28770-8100-4266-ab30-d85525495a75",
+        "c538ca6e-429d-414b-b6f3-9207bdb83974"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "impact_text_ratio": 1,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "impact_text_color": "",
+        "impact_text_gradient": ""
+      }
+    },
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Have a question?",
+        "content": "<p>We're here to help - whether you have a question about the rig, or want to add your own customisations, we're happy to help!<\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "#ff454c",
+        "button_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "169164228579fecd9c": {
+      "type": "apps",
+      "blocks": {
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
+      ],
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#717070",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
+        "text_color": "rgba(0,0,0,0)",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
+    "b04db594-708b-42f5-998d-8736ea8d10b6",
+    "bbe63f78-9157-4007-a278-05bf2c593a24",
+    "499c9acc-c640-47bd-960b-94b4f6544c20",
+    "eefab2a8-30d9-446a-8a79-052f6ac35f19",
+    "45ace661-5d65-430c-bdc8-9db45ffc738b",
+    "8c20408f-48ad-40e9-87fa-7dacd0aaa30a",
+    "91cdbda0-a685-49c6-bf2b-d7da069c9109",
+    "046cb4a3-f399-439e-9d21-687edd02659b",
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573",
+    "related-products",
+    "169164228579fecd9c"
+  ]
+}

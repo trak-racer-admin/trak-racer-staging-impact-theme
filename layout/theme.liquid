@@ -11,6 +11,27 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
 
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
   <head>
+
+<!-- Hotjar Tracking Code for Trak Racer AU -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3644640,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    
+<script>
+(function(g,e,o,t,a,r,ge,tl,y,s){
+t=g.getElementsByTagName(e)[0];y=g.createElement(e);y.async=true;
+y.src='https://g10696554090.co/gr?id=-N57_LwkHYDwqEVvtxKf&refurl='+g.referrer+'&winurl='+encodeURIComponent(window.location);
+t.parentNode.insertBefore(y,t);
+})(document,'script');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="{{ settings.header_background }}">
@@ -45,6 +66,8 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}
     {%- render 'js-variables' -%}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
@@ -84,5 +107,6 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+  {% render 'globo.preorder.customs' %}
   </body>
 </html>

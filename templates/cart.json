@@ -12,6 +12,7 @@
         },
         "cart_note": {
           "type": "cart_note",
+          "disabled": true,
           "settings": {
           }
         },
@@ -24,21 +25,58 @@
           "type": "accelerated_buttons",
           "settings": {
           }
+        },
+        "232411b1-9ff7-43a6-88af-e8122e74af07": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 56,
+            "title": "Zip Pay",
+            "content": "<p>Up to 36 months interest-free with Zip Pay! T&Cs apply.<\/p>",
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
         "totals",
         "cart_note",
         "checkout_button",
-        "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3"
+        "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3",
+        "232411b1-9ff7-43a6-88af-e8122e74af07"
       ],
       "settings": {
         "show_shipping_estimator": true,
         "show_payment_icons": true
       }
+    },
+    "674dbf5b-dada-4880-a1d9-02a660d7836d": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "full_width": true,
+        "products_count": 5,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "674dbf5b-dada-4880-a1d9-02a660d7836d"
   ]
 }

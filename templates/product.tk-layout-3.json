@@ -114,6 +114,18 @@
             "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
+        "5a090f5f-4d61-4d08-b880-3ac7712eafad": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/contact-us",
+            "text": "Have a question? Want to customise? Contact us",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
           "type": "liquid",
           "settings": {
@@ -144,6 +156,7 @@
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
         "268a6de7-86de-4d86-95d2-db65698f953f",
         "buy_buttons",
+        "5a090f5f-4d61-4d08-b880-3ac7712eafad",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "270d505b-2383-4538-83f6-145c2f2e47ed"
       ],
@@ -163,6 +176,39 @@
         "text_color": "#1a1a1a",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "b04db594-708b-42f5-998d-8736ea8d10b6": {
+      "type": "video",
+      "blocks": {
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        },
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
+        "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/youtu.be\/0L52L1_OSHI",
+        "poster": "shopify:\/\/shop_images\/Bundle_1_-_frame_at_0m2s.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "related-products": {
@@ -220,6 +266,7 @@
   },
   "order": [
     "main",
+    "b04db594-708b-42f5-998d-8736ea8d10b6",
     "related-products",
     "169164228579fecd9c"
   ]

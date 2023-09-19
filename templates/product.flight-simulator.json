@@ -54,7 +54,6 @@
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -72,7 +71,7 @@
         "0040dc10-c915-4ceb-9474-555cc98fd73b": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
+            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
           }
         },
         "quantity_selector": {
@@ -96,12 +95,6 @@
             "low_inventory_threshold": 0
           }
         },
-        "268a6de7-86de-4d86-95d2-db65698f953f": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- HC - Metafield based ETA - 11 Aug '23 -->\n{% assign current_variant = product.selected_or_first_available_variant %}\n<div id=\"hcetas\">\n{% for variant in product.variants %}\n    <div {% unless variant == current_variant %} hidden {% endunless %} class=\"hc-eta\" data-variant-id=\"{{ variant.id }}\">\n        {% if variant.available == false or variant.inventory_quantity < 1 %}\n          {% if variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n        <input name=\"{% if variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ variant.metafields.custom.product_eta }}{% endif %}\" \/>\n        {% endif %}\n        {% if variant.available == false or variant.inventory_quantity < 1 %}{{ variant.metafields.custom.product_eta }}{% endif %}\n    <\/div>\n{% endfor %}\n<\/div>"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -110,8 +103,7 @@
             "atc_button_background": "#cc0101",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
-            "payment_button_text_color": "",
-            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
+            "payment_button_text_color": ""
           }
         },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
@@ -142,7 +134,6 @@
         "quantity_selector",
         "a9f02b4b-5792-465e-a882-e198dbd35643",
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157",
-        "268a6de7-86de-4d86-95d2-db65698f953f",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
         "270d505b-2383-4538-83f6-145c2f2e47ed"
@@ -152,8 +143,8 @@
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
-        "mobile_media_size": "contained",
-        "mobile_carousel_control": "thumbnails",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
@@ -165,28 +156,96 @@
         "input_text_color": ""
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "a3457182-54ef-4f74-a7e7-4e0533eedf40": {
+      "type": "tabs",
+      "blocks": {
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 1",
+            "content": "<p>Use this text to share information about your brand with your customers.<\/p>",
+            "page": "flight-rs6-description"
+          }
+        },
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "page": "flight-rs6-whats-included"
+          }
+        },
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "page": "flight-rs6-mount-compatibility"
+          }
+        }
+      },
+      "block_order": [
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-1",
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-2",
+        "template--17061627691172__a3457182-54ef-4f74-a7e7-4e0533eedf40-tab-3"
+      ],
       "settings": {
-        "recommendations_count": 4,
-        "products": [
-
-        ],
         "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "You may also like",
-        "content": "",
-        "background": "#ffffff",
+        "content_size": "medium",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "first_tab_open": false,
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "heading_gradient": ""
+      }
+    },
+    "afb023b3-4bca-41e2-a30f-cd3aaa1a03b4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "d40a1d4d-cf50-47a5-b2b3-679d1cb3dd4d": {
+          "type": "page",
+          "settings": {
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-subheading-1",
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-heading-1",
+        "template--17061627691172__afb023b3-4bca-41e2-a30f-cd3aaa1a03b4-richtext-1",
+        "d40a1d4d-cf50-47a5-b2b3-679d1cb3dd4d"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "169164228579fecd9c": {
@@ -216,11 +275,37 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "169164228579fecd9c"
+    "a3457182-54ef-4f74-a7e7-4e0533eedf40",
+    "afb023b3-4bca-41e2-a30f-cd3aaa1a03b4",
+    "169164228579fecd9c",
+    "related-products"
   ]
 }

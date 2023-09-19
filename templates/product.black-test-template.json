@@ -25,18 +25,6 @@
             "show_taxes_notice": true
           }
         },
-        "6d176bf7-fcdb-4940-90f9-ebadf0791ea5": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/pages\/compare-our-rigs",
-            "text": "Compare Rigs",
-            "size": "sm",
-            "style": "outline",
-            "stretch": false,
-            "background": "#ffffff",
-            "text_color": "#ffffff"
-          }
-        },
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
           "type": "liquid",
           "settings": {
@@ -73,12 +61,6 @@
             "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
-          }
-        },
-        "262b0eb2-81b0-434d-9494-dd0f03db2d18": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
           }
         },
         "quantity_selector": {
@@ -168,14 +150,12 @@
         "da1b0992-39dd-4453-845c-0715f56f5929",
         "badges",
         "price",
-        "6d176bf7-fcdb-4940-90f9-ebadf0791ea5",
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
         "separator",
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
-        "262b0eb2-81b0-434d-9494-dd0f03db2d18",
         "quantity_selector",
         "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
         "buy_buttons",
@@ -196,9 +176,9 @@
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
+        "max_image_zoom_level": 4,
         "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
+        "background_gradient": "linear-gradient(316deg, rgba(3, 3, 3, 1), rgba(46, 46, 46, 1) 33%, rgba(73, 73, 73, 1) 56%, rgba(145, 145, 145, 1) 81.655%)",
         "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
@@ -213,7 +193,7 @@
             "text": "{{ product.metafields.custom_fields.product_statement.value }}",
             "heading_tag": "h2",
             "text_color": "",
-            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+            "gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1) 2.518%, rgba(201, 21, 21, 1) 42%, rgba(171, 100, 100, 1) 74%, rgba(135, 70, 70, 1) 100%)"
           }
         }
       },
@@ -224,8 +204,8 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(128, 31, 31, 1) 70%)",
+        "background": "#000000",
+        "background_gradient": "",
         "text_color": "#ffffff"
       }
     },
@@ -236,7 +216,7 @@
           "type": "image",
           "settings": {
             "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_mobile.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
@@ -588,6 +568,7 @@
     },
     "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
       "type": "tabs",
+      "disabled": true,
       "blocks": {
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1": {
           "type": "tab",
@@ -619,7 +600,6 @@
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2",
         "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3"
       ],
-      "disabled": true,
       "custom_css": [
         "body {text-align: left;}"
       ],

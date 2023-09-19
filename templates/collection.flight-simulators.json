@@ -16,8 +16,8 @@
         "image_size": "sm",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
-        "featured_product": "",
-        "featured_product_heading": "",
+        "featured_product": "test-2",
+        "featured_product_heading": "Alpine Racing TRX",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
@@ -54,8 +54,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Easy-to-Build",
-        "content": "<p>Our steel, tubular profile rigs are customisable for first-time racers to pro racers! With a build time of less than 90 minutes, you'll be ready to race before you know it.<\/p>",
+        "title": "Easy-to-Build Flight Simulators",
+        "content": "<p>Our tubular profile simulators are perfect if you're ready to jump straight into your flight cockpit! With all the essential mounts, these rigs can be assembled quickly and you will be flying in no time!<\/p>",
         "link_url": "",
         "link_text": "",
         "background": "#ffffff",
@@ -81,35 +81,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "DIY Racing Simulators",
-        "content": "<p>Our DIY Racing Simulators are perfect if you're looking for customisation and upgradability. Compatible with a wide range of heavy-duty peripherals, you'll be ready to own the Trak.<\/p>",
-        "link_url": "",
-        "link_text": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "{{ collection.metafields.custom.collection_section_3.value }}",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_count": 3,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Entry Level Racing Simulators",
-        "content": "<p>Our entry level racing simulators give you the best of both worlds - a solid base, with the parts you need, that are ready to upgrade as you grow throughout your sim racing journey!<\/p>",
+        "title": "Pro Flight Simulators",
+        "content": "<p>Our Pro Flight Simulators offer the best in class flight experience. Take off and cruise with ease and customise your flight experience with an endless range of addons.<\/p>",
         "link_url": "",
         "link_text": "",
         "background": "#ffffff",
@@ -194,7 +167,7 @@
         "show_progress_bar": false,
         "subheading": "",
         "title": "Upgrade Your Rig",
-        "content": "<p>Choose from our wide range of rig add-ons and upgrade to give yourself the best racing experience!<\/p>",
+        "content": "<p>Choose from our wide range of rig accessories and upgrade to give yourself the best flight experience!<\/p>",
         "link_url": "",
         "link_text": "View all",
         "background": "",
@@ -210,7 +183,6 @@
     "main",
     "444dc5e0-f86d-49f6-ad2d-a04223bb2399",
     "fefb93ba-5ad1-491d-8d4f-1fb81ccd619c",
-    "5d893a49-451d-4ec2-8df2-2e44e3ccd156",
     "3ecd90f9-16b4-4ecb-a4c9-e60ae72d1166"
   ]
 }

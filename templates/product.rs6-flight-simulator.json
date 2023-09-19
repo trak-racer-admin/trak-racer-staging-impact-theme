@@ -1,0 +1,962 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h4"
+          }
+        },
+        "da1b0992-39dd-4453-845c-0715f56f5929": {
+          "type": "sku",
+          "settings": {
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": true
+          }
+        },
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "stack_blocks": true,
+            "selector_mode": "dropdown",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "2e345fec-d7a5-41be-abee-ce429953e013": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "3971d3b0-c188-45e0-b3a5-9d3fa23825d8": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Metafield based ETA - 11 Aug '23 -->\n{% assign current_variant = product.selected_or_first_available_variant %}\n<div id=\"hcetas\">\n{% for variant in product.variants %}\n    <div {% unless variant == current_variant %} hidden {% endunless %} class=\"hc-eta\" data-variant-id=\"{{ variant.id }}\">\n        {% if variant.available == false or variant.inventory_quantity < 1 %}\n          {% if variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n        <input name=\"{% if variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ variant.metafields.custom.product_eta }}{% endif %}\" \/>\n        {% endif %}\n        {% if variant.available == false or variant.inventory_quantity < 1 %}{{ variant.metafields.custom.product_eta }}{% endif %}\n    <\/div>\n{% endfor %}\n<\/div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#cc0101",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": "",
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
+          }
+        },
+        "4163194c-df27-4c47-bd48-39a7883f8a23": {
+          "type": "button",
+          "settings": {
+            "link": "{{ product.metafields.custom_fields.product_manual.value }}",
+            "text": "Download Manual",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#a29ca6",
+            "text_color": "#ffffff"
+          }
+        },
+        "2feb5056-48de-4c75-b21d-eaeadecae15b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- HC - Added Payment Liquid code - 27 Jul '23 -->\n{%- if shop.enabled_payment_types.size > 0 -%}\n            <div class=\"footer__payment-icons h-stack wrap gap-2\">\n              {%- for type in shop.enabled_payment_types -%}\n                {{- type | payment_type_svg_tag -}}\n              {%- endfor -%}\n            <\/div>\n          {%- endif -%}"
+          }
+        },
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-truck",
+            "icon_width": 24,
+            "title": "Shipping",
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
+            "background": "#545454",
+            "text_color": "#ffffff"
+          }
+        },
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-credit-card",
+            "icon_width": 24,
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#ffffff",
+            "text_color": "#545454"
+          }
+        },
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
+          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "da1b0992-39dd-4453-845c-0715f56f5929",
+        "badges",
+        "price",
+        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
+        "rating",
+        "payment_terms",
+        "separator",
+        "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
+        "variant_picker",
+        "2e345fec-d7a5-41be-abee-ce429953e013",
+        "quantity_selector",
+        "c69e860c-ed86-40a9-9098-c3b08b2d25ef",
+        "3971d3b0-c188-45e0-b3a5-9d3fa23825d8",
+        "buy_buttons",
+        "4163194c-df27-4c47-bd48-39a7883f8a23",
+        "2feb5056-48de-4c75-b21d-eaeadecae15b",
+        "a89d3139-d37b-4d55-8f2b-66855e7f62de",
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
+        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(180deg, rgba(189, 229, 247, 1), rgba(143, 204, 231, 1) 33%, rgba(217, 216, 216, 1) 63.309%, rgba(194, 194, 194, 1) 81.295%, rgba(161, 161, 161, 1) 100%)",
+        "text_color": "#1a1a1a",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.title }}",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+          }
+        },
+        "81c78793-c0c1-4085-b743-fd13baf17657": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The RS6 MK3 is an entry-level and extremely rigid simulator that has had several upgrades from customer feedback based on the previous popular RS6, the MK2. From 2014 to 2021, the RS6 was globally, the most preferred entry-level racing simulator in the market and now, it’s the preferred entry level Flight Sim. It ticks all of the boxes for a Flight Simulator Rig that assembles in 30-60 minutes. It's Strong, Adjustable, and has an array of genuine Trak Racer add-ons to personalize the cockpit. In the usual Trak Racer way, we gathered customer feedback from over 17,000 RS6 MK1 and MK2 owners to develop the RS6 MK3.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1",
+        "81c78793-c0c1-4085-b743-fd13baf17657"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#efefef",
+        "background_gradient": "linear-gradient(180deg, rgba(1, 103, 186, 1) 2%, rgba(66, 149, 230, 1) 70%)",
+        "text_color": "#ffffff"
+      }
+    },
+    "7617e7f5-08a4-4353-8604-b762708565f8": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18_RS6-flight_1_1.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Left and Right Side Mounts Included",
+            "content": "<p>With all the adjustment you need for your left and right-side flight controls from any major brand, you’ll be able to hit the skies in absolute comfort.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "afc2fc92-4329-4ed4-9f77-a8560cccc7b4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/32_RS6-Yoke-Mount_1.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Secure and Adjustable",
+            "content": "<p>If you’re a serious flight sim operator, then you have a flight yoke. Mount it up directly onto the yoke platform on the Trak Racer wheel stand and adjust as required into the most comfortable position.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "9948cd6a-280a-4330-ab49-c6e66210d01f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/29_RS6-Flight-Rudder.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Rigidity and Fine-Tune Adjustment",
+            "content": "<p>Mount your rudders directly onto the pedal baseplate of the simulator and adjust the position on the micro side slider or angle to get it into the perfect position.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "44aa7c9e-4475-4482-a7fc-6f61707bb22e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30_RS6-Seat-slider2.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Dual-Lock Seat Slider Kit Included",
+            "content": "<p>The TR Premium seat slider runner kit will give you quick adjustments of the seat position and lock you in with the least amount of play.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11_RS6-Wheel.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "More Adjustable and Strengthened Wheel Mount",
+            "content": "<p>We have added a wheel mount micro-tune slide to the RS6 MK3 to give you forward and back adjustment. We have also strengthened the 2\" tube to withstand up to 11nm direct drive steering wheel torque without flex.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12_RS6-Eshifter_2f72a7fa-eb86-4246-a876-e01deaa3819a.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "More Adjustable and Strengthened Left or Right Side Shifter Mount",
+            "content": "<p>The shifter mount has been strengthened by increasing the thickness of the mount and also the plate on the simulator that it mounts to. We have even added mounting points to enable the shifter mount to move forwards and back.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "7a5c16a4-1812-48f9-9546-8f6385890135": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_RS6-Pedal_09096f03-fc9c-4a15-9015-ca40f5d925c8.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Strengthened Pedal Plate",
+            "content": "<p>The RS6 MK3 has been improved to withstand up to 100kgs of braking for force without flex. We have also added pre-drilled mounting points for more new pedal sets on the market and the slide function on the RS6 remains - so you can get those pedals exactly where you need them!<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__7617e7f5-08a4-4353-8604-b762708565f8-image-1",
+        "afc2fc92-4329-4ed4-9f77-a8560cccc7b4",
+        "9948cd6a-280a-4330-ab49-c6e66210d01f",
+        "44aa7c9e-4475-4482-a7fc-6f61707bb22e",
+        "d5301eb0-70c9-4e8a-8204-be5f0b0f9b15",
+        "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c",
+        "7a5c16a4-1812-48f9-9546-8f6385890135"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "",
+            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 20,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "22bf5fbe-8005-4f2e-9ccb-383dcc824975": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18505-I_shopify-min_1800x1800_ad4b0c5c-2262-4fd3-acd4-12d89e57baa0.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Trak Racer RS6 Flight Simulator Overview",
+            "heading_tag": "h4",
+            "content": "<ul><li>Left and Right-side Flight Control Mounts included<\/li><li>Yoke, Direct Drive Steering Wheel & Belt Drive Ready!<\/li><li>Compatible with PC and Console (Xbox and PlayStation for example)<\/li><li>Compatible with all popular Yokes, Rudders, Flight Controls as well as sim racing steering wheel-bases, pedals and shifters on the market<\/li><li>Stiffened, Dual-Supported Shaft for a NO FLEX Wheel Mount<\/li><li>Optional Freestanding Single, Triple or Quad Monitor Stand<\/li><li>Patented adjustable yoke and steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Strengthened Left and Right-Side Gear Shift mount with pre-drilled mounting points and slide<\/li><li>Reinforced Angle and Distance Adjustable Rudder\/Pedal Mount, suitable for all the big brands!<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-1",
+        "template--17063911751844__22bf5fbe-8005-4f2e-9ccb-383dcc824975-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#bde5f7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "13942dab-2bfb-42c2-9106-887f02716a44": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Frame\/Chassis Features",
+            "heading_tag": "h4",
+            "content": "<ul><li>Solid framework with no obstruction between your legs and no additional braces required to strengthen the cockpit<\/li><li>A wide and firm stance when racing<\/li><li>Low ground clearance with hard wood rubber floor protectors<\/li><li>Finished in 2\"(51mm) high-grade steel tubing<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Flight Mount & Gear Shifter Features",
+            "heading_tag": "h4",
+            "content": "<p><strong>Flight Controls:<\/strong><\/p><ul><li>The Distance Slider mount allows you to adjust the position of the mounts to the most ergonomic position for you<\/li><li>Angle Adjustment enabled you to face the shift mount inwards, flat and outwards for customised adjustability.<\/li><\/ul><p><strong>Gear Shifter:<\/strong><\/p><ul><li>The Distance Slider mount allows you to adjust the position of the mount to the most ergonomic position for you<\/li><li>Angle Adjustment enabled you to face the shift mount inwards, flat and outwards for customised adjustability<\/li><li>Pre-drilled mounting points for all major brand shifters including Saitek\/Logitech, Thrustmaster, Virpil and more<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-3": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Adjustable Yoke\/Wheel Mount Features",
+            "heading_tag": "h4",
+            "content": "<ul><li>Adjustable Yoke\/Wheel Mount Features<\/li><li>Forward and back micro-adjust sliding mount<\/li><li>Welded steel frame on the underside of the mount for added strength mount<\/li><li>Pre-drilled mounting points for all major brand flight rudders and pedals<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "9f51622b-fd4c-4d37-bd5a-33abec34ab6a": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "What's Included",
+            "heading_tag": "h4",
+            "content": "<ul><li>2\" Industrial Strength Iron Chassis<\/li><li>2\" Industrial Strength Iron Chassis<\/li><li>Fully Adjustable Angle Pedal Mount with Distance Slider<\/li><li>Premium Seat Sliders<\/li><li>Left\/Right Mounting Gear Shifter<\/li><li>Angle, Slide and Height Adjustable Wheel Mount<\/li><li>Assembly Instructions<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-1",
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-2",
+        "template--17063911751844__13942dab-2bfb-42c2-9106-887f02716a44-item-3",
+        "9f51622b-fd4c-4d37-bd5a-33abec34ab6a"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Weight",
+            "heading_2": "Size",
+            "heading_3": "Assembly Time",
+            "heading_4": "Wheelbase Torque",
+            "heading_5": "Pedal Weight Capacity",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>{{ product.metafields.custom_fields.weight.value }}<\/p>",
+            "value_2": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
+            "value_3": "<p>{{ product.metafields.custom_fields.assembly_time.value }}<\/p>",
+            "value_4": "<p>{{ product.metafields.custom_fields.wheelbase_torque.value }}<\/p>",
+            "value_5": "<p>{{ product.metafields.custom_fields.pedal_weight_capacity.value }}<\/p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
+        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "{{ product.title }} Specifications",
+        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "#a5272c",
+        "heading_gradient": "linear-gradient(320deg, rgba(0, 104, 253, 1) 0.36%, rgba(18, 134, 188, 1) 45%, rgba(152, 192, 250, 1) 86%)",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "#f2f2f2",
+        "chart_text_color": "#000000",
+        "chart_true_false_color": ""
+      }
+    },
+    "974a92ca-5417-47d7-bae4-547d0c063284": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
+            "content": ""
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
+            "content": ""
+          }
+        },
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
+            "content": ""
+          }
+        },
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_4.value }}",
+            "content": ""
+          }
+        },
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_5.value }}",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1",
+        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2",
+        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
+        "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "What's Included",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#e6e6e6",
+        "background_gradient": "",
+        "text_color": "#000000"
+      }
+    },
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
+          "type": "item",
+          "settings": {
+            "title": "Yoke\/Heavy Equipment Compatibility (click to view)",
+            "content": "<ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><br\/><strong>ALSO SIM STEERING WHEEL BASE COMPATIBLIITY<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><\/ul><p>Contact us if your product is not listed<br\/><br\/><strong>ALSO SIM SHIFTER COMPATIBLIITY<\/strong><\/p><ul><li>Trak Racer Sequential Shifter Pro (Coming Q4 2023)<\/li><li>Fanatec ClubSport Shifter, SQ<\/li><li>Thrustmaster TH8A, RSTSS, TSS+<\/li><li>Prosim PSL Sequential Shifter<\/li><li>Heusinkveld SQ Shifter<\/li><li>Logitech G Shifter<\/li><li>DSD SQ Shifter<\/li><li>Jinx Shifter - additional mount required<\/li><li>Simworx Pro Series - additional mount required<\/li><li>VNM Simulation Sequential Shifter<\/li><li>Quaife PSL Sequential V2, Sequential, and H Pattern - additional mount required<\/li><li>Aiologs SQ Shifter<\/li><li>BJ Sim Racing Shifter 3.0<\/li><li>Frex H Pattern<\/li><li>SIMAGIC DS-8X<\/li><li>SIMAGIC Q1S<\/li><li>SIMAGIC TB-1<\/li><li>Moza HGP shifter<\/li><li>Meca Cup Shifter<\/li><li>TRSS-PRO<\/li><li>PRO-SIM<\/li><li>PRO-SIM LITE<\/li><li>PRO-SIM SEQUENTIAL<\/li><\/ul><p>Contact us if your product is not listed.<\/p>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
+          "type": "item",
+          "settings": {
+            "title": "Rudder\/Heavy Equipment Compatibility (click to view)",
+            "content": "<ul><li>Thrustmaster TPR: Pendular Rudder Pedals<\/li><li>Thrustmaster T.Flight Rudder Pedals<\/li><li>Logitech Flight Rudder Pedals<\/li><li>Logitech Heavy Equipment<\/li><li>Virpil Ace<\/li><\/ul><p><br\/><strong>ALSO SIM PEDAL COMPATIBLIITY<\/strong><\/p><ul><li>Trak Racer Loadcell Pro Pedals (Coming Q4 2023)<\/li><li>Fanatec CSL Elite Pedals, ClubSport V1\/V2\/V3 (including Inverted Pedals)<\/li><li>Thrustmaster T-LCM, T3PA, GT Ed, T3PGT, T3PA PRO add-on and T500, T150 pedals<\/li><li>Heusinkveld Ultimate\/Ultimate+, Sprint and Pro<\/li><li>Logitech G25, G27, G29, G920, G923, G Pro pedals<\/li><li>Meca Cup1-2, Meca Cup1-3, Clutch and Base Plate, Meca Cup 1 Evo Hydraulic & LC<\/li><li>VRS DirectForce Pro Pedals<\/li><li>HPP PRX 3P, JBV 2\/3 Pedal System<\/li><li>Simagic P2000-S100 Pedal Set<\/li><li>BJ Sim Racing Steel Series, 1000psi Hydraulic<\/li><li>DC Sim Racing DC3<\/li><li>Racewerk S1 Hydraulic Sim Racing Pedals<\/li><li>Sim Coaches P1-3<\/li><li>Simtrecs ProPedal GT<\/li><li>Velazquez Engineering PRO+ Hydraulic<\/li><li>Simforge Mark-1<\/li><li>3DRAP Ngasa<\/li><li>Protosimtech PT2<\/li><li>OBP Pro Race V2 Sim Pedal System<\/li><li>Simworx Pro Series<\/li><li>WAVE IMPETUS<\/li><li>Quaife Throttle Pedal and Brake<\/li><li>Cube Controls Hydraulic SP01<\/li><li>Venym Pedals<\/li><li>Moza CRP Pedal set<\/li><li>Moza SRP Pedal set with and without SRP plate<\/li><li>JCL Hydraulic Pedals<\/li><li>Thera Pedals<\/li><li>Asetek La Prima, Forte and Invicta pedals (plate may require new mounting holes)<\/li><li>SRP GT\/GT-R\/Formula\/Formula-R (plate may require new mounting holes)<\/li><li>TRPED-PRO3<\/li><li>Simgrade pedal plate and VX PEDAL<\/li><\/ul><p>Contact us if your product is not listed<\/p>"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
+          "type": "item",
+          "settings": {
+            "title": "Flight Controls Compatibility (click to view)",
+            "content": "<ul><li>Thrustmaster Hotas Warthog (magnetic base) Joystick pedal<\/li><li>Thrustmaster HOTAS Warthog™ Dual Throttles \/ T.Flight HOTAS One \/T.Flight Hotas 4<\/li><li>Thrustmaster T.16000M\/ T.16000M FCS \/<\/li><li>Thrustmaster TCA Quadrant Airbus edition \/ TCA Officer \/ TCA Sidestick Airbus Edition<\/li><li>Thrustmaster TWCS Throttle<\/li><li>Thrustmaster T.Flight Stick X \/ T.Flight Hotas X<\/li><li>Thrustmaster TWCS Throttle \/<\/li><li>Thrustmaster USB Joystick<\/li><li>Logitech Throttle Quadrant<\/li><li>Logitech Saitek Flight Throttle Quadrant<\/li><li>Logitech Extreme 3D Pro Joystick<\/li><li>Logitech Saitek X56 H.O.T.A.S.<\/li><li>Logitech Saitek X52 Professional H.O.T.A.S.<\/li><li>Logitech Saitek X52 H.O.T.A.S.<\/li><li>VirtualFly Flight Sim Throttle Quadrant – TQ6 PLUS<\/li><li>VirtualFly Throttle for Flight Simulator – TQ3 PLUS<\/li><li>Virpil VPC MongoosT-50<\/li><li>Honeycomb Airnautical Bravo Throttle Quadrant<\/li><li>Hori HOTAS Flight Stick<\/li><li>VKB Gunfighter III series stick – may require new holes to be drilled or clamp<\/li><\/ul><p>Note. Turtle Beach Velocity One Flight fits onto Trak Racer Wheel \/ Yoke Mounts<\/p><p><span style=\"text-decoration:underline\"><strong>Contact us if your product is not listed<\/strong><\/span><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Compatibility",
+        "content": "<p>Check the compatible peripherals!<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f2f2f2",
+        "accordion_text_color": "#000000"
+      }
+    },
+    "6a866393-9e10-4a80-a480-c495a0eed3a2": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/airbus_6896074a-1522-4565-a3eb-64ba0d6c45ed.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Take to the skies with an official AIRBUS partner!",
+            "heading_tag": "h4",
+            "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-1",
+        "template--17063911751844__6a866393-9e10-4a80-a480-c495a0eed3a2-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#bde5f7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "16919816096b1b8f4c": {
+      "type": "apps",
+      "blocks": {
+        "cbfa0aa7-9293-4cf3-b901-d21cbcf8e3c7": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "cbfa0aa7-9293-4cf3-b901-d21cbcf8e3c7"
+      ],
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce",
+    "7617e7f5-08a4-4353-8604-b762708565f8",
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "22bf5fbe-8005-4f2e-9ccb-383dcc824975",
+    "13942dab-2bfb-42c2-9106-887f02716a44",
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "6a866393-9e10-4a80-a480-c495a0eed3a2",
+    "related-products",
+    "16919816096b1b8f4c"
+  ]
+}

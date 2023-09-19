@@ -43,13 +43,13 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "collapse_content": false
           }
         },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom_fields.product_highlights | metafield_tag }}"
           }
@@ -91,12 +91,25 @@
           "settings": {
             "text_alignment": "start",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
+            "icon": "picto-truck",
             "icon_width": 24,
             "title": "Shipping",
-            "content": "<p>Short content about your shipping rates or discounts.<\/p>",
-            "background": "#c7c4c4",
-            "text_color": "#000000"
+            "content": "<p>In stock items are shipped within 2 business days!<\/p>",
+            "background": "#ffb1b1",
+            "text_color": "#6a0003"
+          }
+        },
+        "d15c8b07-c6a3-4613-b353-0bd8f78d20f0": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-credit-card",
+            "icon_width": 24,
+            "title": "Flexible Payment Options",
+            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "background": "#6d6d6d",
+            "text_color": "#ffffff"
           }
         }
       },
@@ -114,15 +127,16 @@
         "quantity_selector",
         "buy_buttons",
         "ceb055d8-5897-4811-906d-0fdad123d02c",
-        "2797188b-937d-4dd8-819a-7276e6bfd016"
+        "2797188b-937d-4dd8-819a-7276e6bfd016",
+        "d15c8b07-c6a3-4613-b353-0bd8f78d20f0"
       ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
@@ -132,6 +146,52 @@
         "text_color": "#1a1a1a",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "42cfae89-f339-41b7-ad57-432b17ace067": {
+      "type": "tabs",
+      "blocks": {
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "content": "{{ product.metafields.custom_fields.description_tab_1 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Features",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Dimensions & Specifications",
+            "content": "{{ product.metafields.custom_fields.specifications_tab_3_ | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-1",
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-2",
+        "template--20343741579552__42cfae89-f339-41b7-ad57-432b17ace067-tab-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "",
+        "title": "",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "related-products": {
@@ -161,6 +221,7 @@
   },
   "order": [
     "main",
+    "42cfae89-f339-41b7-ad57-432b17ace067",
     "related-products"
   ]
 }
