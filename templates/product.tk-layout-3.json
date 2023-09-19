@@ -72,7 +72,7 @@
         "0040dc10-c915-4ceb-9474-555cc98fd73b": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
+            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
           }
         },
         "quantity_selector": {
