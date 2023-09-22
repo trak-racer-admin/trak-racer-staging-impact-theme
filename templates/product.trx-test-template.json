@@ -369,7 +369,7 @@
         "full_width": true,
         "subheading": "",
         "title": "{{ product.title }} Specifications",
-        "content": "",
+        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
