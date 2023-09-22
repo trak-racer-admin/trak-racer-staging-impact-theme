@@ -35,57 +35,10 @@
         "show_filter_values_count": true,
         "open_first_filter_group": false
       }
-    },
-    "9670575c-5e07-4dcf-8e8d-0dda47109965": {
-      "type": "multi-column",
-      "blocks": {
-        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ collection.metafields.custom.brand_biography.value.brand_logo.value }}",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3": {
-          "type": "item",
-          "settings": {
-            "column_size": "1.5",
-            "title": "",
-            "heading_tag": "h2",
-            "content": "<p>{{ collection.metafields.custom.brand_biography.value.brand_biography | metafield_tag }}<\/p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-1",
-        "template--20229186683168__9670575c-5e07-4dcf-8e8d-0dda47109965-item-3"
-      ],
-      "settings": {
-        "full_width": false,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "start",
-        "subheading": "About",
-        "title": "Cube Controls",
-        "content": "",
-        "background": "#f2f2f2",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
     "banner",
-    "main",
-    "9670575c-5e07-4dcf-8e8d-0dda47109965"
+    "main"
   ]
 }
