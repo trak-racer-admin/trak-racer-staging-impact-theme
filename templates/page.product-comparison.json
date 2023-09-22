@@ -132,7 +132,7 @@
         "title": "Aluminium Profile Rigs",
         "content": "",
         "button_text": "Shop Now",
-        "button_url": "{{ page.metafields.custom.shop_link_1.value }}",
+        "button_url": "",
         "text_position": "center",
         "max_rows": 10,
         "view_all_text": "View all",
