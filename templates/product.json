@@ -93,7 +93,7 @@
         "5820ccae-e759-4a4c-9e1b-fa1bf19e1157": {
           "type": "inventory",
           "settings": {
-            "low_inventory_threshold": 0
+            "low_inventory_threshold": 10
           }
         },
         "268a6de7-86de-4d86-95d2-db65698f953f": {
