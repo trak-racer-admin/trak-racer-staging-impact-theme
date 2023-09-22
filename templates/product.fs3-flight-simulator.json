@@ -486,94 +486,6 @@
         "text_color": ""
       }
     },
-    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
-      "type": "feature-chart",
-      "blocks": {
-        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Weight",
-            "heading_2": "Size",
-            "heading_3": "Assembly Time",
-            "heading_4": "Wheelbase Torque",
-            "heading_5": "Pedal Weight Capacity",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>{{ product.metafields.custom_fields.weight.value }}<\/p>",
-            "value_2": "<p>{{ product.metafields.custom_fields.size.value }}<\/p>",
-            "value_3": "<p>{{ product.metafields.custom_fields.assembly_time.value }}<\/p>",
-            "value_4": "<p>{{ product.metafields.custom_fields.wheelbase_torque.value }}<\/p>",
-            "value_5": "<p>{{ product.metafields.custom_fields.pedal_weight_capacity.value }}<\/p>",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-0",
-        "template--19236073701664__ebb82c11-a248-4b66-b944-cf4d8dfb3ef7-168558457779615ee1-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "{{ product.title }} Specifications",
-        "content": "<p>{{ product.metafields.custom_fields.product_specification_text | metafield_tag }}<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "viewing_product": "",
-        "show_product_swatch": true,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#000000",
-        "heading_color": "#a5272c",
-        "heading_gradient": "linear-gradient(320deg, rgba(0, 104, 253, 1) 0.36%, rgba(18, 134, 188, 1) 45%, rgba(152, 192, 250, 1) 86%)",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "#f2f2f2",
-        "chart_text_color": "#000000",
-        "chart_true_false_color": ""
-      }
-    },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
       "type": "accordion-content",
       "blocks": {
@@ -728,7 +640,6 @@
     "7617e7f5-08a4-4353-8604-b762708565f8",
     "22bf5fbe-8005-4f2e-9ccb-383dcc824975",
     "13942dab-2bfb-42c2-9106-887f02716a44",
-    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "6a866393-9e10-4a80-a480-c495a0eed3a2",
     "related-products",
