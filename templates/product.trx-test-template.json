@@ -540,19 +540,10 @@
           "type": "play",
           "settings": {
           }
-        },
-        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.metafields.custom_fields.video_title.value }}",
-            "heading_tag": "h3"
-          }
         }
       },
       "block_order": [
-        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-play-1",
-        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-heading-1"
+        "template--17061529485476__015dc3a2-534d-417a-96e0-83bcf42175ab-play-1"
       ],
       "settings": {
         "full_width": true,
