@@ -574,95 +574,6 @@
         "chart_true_false_color": ""
       }
     },
-    "974a92ca-5417-47d7-bae4-547d0c063284": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "content": ""
-          }
-        },
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
-            "content": ""
-          }
-        },
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-truck",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
-            "content": ""
-          }
-        },
-        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-love",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_4.value }}",
-            "content": ""
-          }
-        },
-        "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-shield",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_5.value }}",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-0",
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1",
-        "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2",
-        "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
-        "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "What's Included",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "#e6e6e6",
-        "background_gradient": "",
-        "text_color": "#000000"
-      }
-    },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
       "type": "accordion-content",
       "blocks": {
@@ -818,7 +729,6 @@
     "22bf5fbe-8005-4f2e-9ccb-383dcc824975",
     "13942dab-2bfb-42c2-9106-887f02716a44",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
-    "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "6a866393-9e10-4a80-a480-c495a0eed3a2",
     "related-products",
