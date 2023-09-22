@@ -14,21 +14,10 @@
           "settings": {
           }
         },
-        "badges": {
-          "type": "badges",
-          "settings": {
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
             "show_taxes_notice": true
-          }
-        },
-        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20": {
-          "type": "liquid",
-          "settings": {
-            "liquid": ""
           }
         },
         "rating": {
@@ -45,12 +34,6 @@
         "separator": {
           "type": "separator",
           "settings": {
-          }
-        },
-        "4d134a75-af80-4f1c-845b-a78ccdd74dfd": {
-          "type": "text",
-          "settings": {
-            "text": ""
           }
         },
         "variant_picker": {
@@ -151,13 +134,10 @@
       "block_order": [
         "title",
         "da1b0992-39dd-4453-845c-0715f56f5929",
-        "badges",
         "price",
-        "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
         "rating",
         "payment_terms",
         "separator",
-        "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
         "variant_picker",
         "2e345fec-d7a5-41be-abee-ce429953e013",
         "quantity_selector",
