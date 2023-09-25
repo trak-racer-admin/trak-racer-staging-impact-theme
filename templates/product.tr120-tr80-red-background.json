@@ -442,8 +442,8 @@
         "eaef00a5-8b34-4754-8e9c-50e8450807f2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR120.4_1_e26d5771-98d2-443e-b36a-3ef6fb6f8ec9.png",
-            "width_mode": "custom",
+            "image": "{{ product.metafields.custom_fields.key_benefits_image.value }}",
+            "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
           }
@@ -451,7 +451,7 @@
         "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Optional Shifter Mount and Over-sized Support Profile<\/li><li>Over 30 optional accessories<\/li><li>Compatible with TR One Wheel and Shifter Mounting Systems<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>"
+            "content": "{{ product.metafields.custom_fields.key_benefits | metafield_tag }}"
           }
         }
       },
