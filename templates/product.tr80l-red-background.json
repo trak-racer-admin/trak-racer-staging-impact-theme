@@ -316,6 +316,31 @@
         "background_gradient": ""
       }
     },
+    "8af113e3-f59e-4098-a0ad-04d814fc29e0": {
+      "type": "before-after-image",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Wheel Mounting",
+        "content": "<p>Choose between the future-proof <strong>TR-One Wheel Mount<\/strong> (simply swap out the internal component as you upgrade your direct drive - rather than purchase a whole new mount).<\/p><p>Alternatively, the Universal Wheel Mount is a great option that suits most belt-drive and direct drive wheels on the market!<\/p>",
+        "before_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_9_f98937cd-b261-43cf-a5f1-a5aa674a8bbb.webp",
+        "after_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1_bde6da36-7fd1-444a-924c-61c1fb1ae0bd_1.webp",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "TR One Wheel Mounting System",
+        "after_text": "Universal Wheel Mount",
+        "drag_initial_position": 50,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#1a1a1a",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
       "type": "feature-chart",
       "blocks": {
@@ -602,6 +627,7 @@
     "main",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "8af113e3-f59e-4098-a0ad-04d814fc29e0",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
