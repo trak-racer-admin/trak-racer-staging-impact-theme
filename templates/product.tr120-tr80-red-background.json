@@ -460,6 +460,7 @@
         "eaef00a5-8b34-4754-8e9c-50e8450807f2",
         "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-richtext-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",

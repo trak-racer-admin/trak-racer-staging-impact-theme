@@ -316,6 +316,31 @@
         "background_gradient": ""
       }
     },
+    "8af113e3-f59e-4098-a0ad-04d814fc29e0": {
+      "type": "before-after-image",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Wheel Mounting",
+        "content": "<p>Choose between the future-proof <strong>TR-One Wheel Mount<\/strong> (simply swap out the internal component as you upgrade your direct drive - rather than purchase a whole new mount).<\/p><p>Alternatively, the Universal Wheel Mount is a great option that suits most belt-drive and direct drive wheels on the market!<\/p>",
+        "before_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_9_f98937cd-b261-43cf-a5f1-a5aa674a8bbb.webp",
+        "after_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_9_f98937cd-b261-43cf-a5f1-a5aa674a8bbb.webp",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "TR One Wheel Mounting System",
+        "after_text": "Universal Wheel Mount",
+        "drag_initial_position": 50,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#1a1a1a",
+        "before_text_color": "#000000",
+        "after_text_color": "#000000",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
       "type": "feature-chart",
       "blocks": {
@@ -401,6 +426,49 @@
         "chart_background": "#f2f2f2",
         "chart_text_color": "#000000",
         "chart_true_false_color": ""
+      }
+    },
+    "6b072857-47cc-4798-b536-72c9045dea0b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Key Benefits",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "eaef00a5-8b34-4754-8e9c-50e8450807f2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR120.4_1_e26d5771-98d2-443e-b36a-3ef6fb6f8ec9.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Optional Shifter Mount and Over-sized Support Profile<\/li><li>Over 30 optional accessories<\/li><li>Compatible with TR One Wheel and Shifter Mounting Systems<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-heading-1",
+        "eaef00a5-8b34-4754-8e9c-50e8450807f2",
+        "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
@@ -602,7 +670,9 @@
     "main",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "8af113e3-f59e-4098-a0ad-04d814fc29e0",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "6b072857-47cc-4798-b536-72c9045dea0b",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "related-products",
