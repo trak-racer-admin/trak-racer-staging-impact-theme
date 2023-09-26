@@ -191,7 +191,7 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "{{ product.metafields.custom_fields.product_statement.value }}",
+            "text": "",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1) 2.518%, rgba(201, 21, 21, 1) 42%, rgba(171, 100, 100, 1) 74%, rgba(135, 70, 70, 1) 100%)"
