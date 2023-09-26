@@ -243,7 +243,7 @@
         "91abcd44-d78c-4f33-bebc-62a0072ea7b4": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/products\/the-apprentice-plug-play-simulator",
+            "link": "shopify:\/\/products\/spec-2-plug-and-play-simulator",
             "text": "Learn More",
             "size": "xl",
             "style": "outline",
@@ -270,7 +270,7 @@
       "disabled": true,
       "settings": {
         "full_width": true,
-        "product": "the-apprentice-plug-play-simulator",
+        "product": "spec-2-plug-and-play-simulator",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
