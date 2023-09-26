@@ -307,7 +307,7 @@
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
             "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
-            "heading_tag": "h0",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
