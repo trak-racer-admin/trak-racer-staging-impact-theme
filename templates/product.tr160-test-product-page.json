@@ -100,7 +100,8 @@
             "atc_button_background": "#cc0101",
             "atc_button_text_color": "",
             "payment_button_background": "",
-            "payment_button_text_color": ""
+            "payment_button_text_color": "",
+            "liquid": "<p style=\"text-align: center\">Write or copy\/paste Liquid code<\/p>"
           }
         },
         "4163194c-df27-4c47-bd48-39a7883f8a23": {
@@ -210,7 +211,7 @@
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
           "type": "heading",
           "settings": {
-            "text": "{{ product.metafields.custom_fields.product_statement.value }}",
+            "text": "",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
@@ -461,8 +462,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.what_s_included_header_1.value }}",
-            "content": "{{ product.metafields.custom.what_s_included_subtext_1 | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
@@ -544,21 +545,21 @@
           "type": "item",
           "settings": {
             "title": "Wheel Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_wheel_mounts | metafield_tag }}"
+            "content": ""
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
           "type": "item",
           "settings": {
             "title": "Pedal Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_pedal_mounts | metafield_tag }}"
+            "content": ""
           }
         },
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
           "type": "item",
           "settings": {
             "title": "Shifter & Handbrake Mount",
-            "content": "{{ product.metafields.custom_fields.compatibility_shifter_handbrake_mounts | metafield_tag }}"
+            "content": ""
           }
         }
       },
