@@ -682,6 +682,7 @@
         "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-values-2",
         "b8e0965a-73bb-4993-bec6-0109828e0a60"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "Compare",
@@ -742,7 +743,7 @@
         "full_width": true,
         "subheading": "",
         "title": "Compatibility",
-        "content": "<p>Check the compatible peripherals!<\/p>",
+        "content": "<p>Our simulators are made to be used with the biggest brands in the simracing market!<\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -755,6 +756,69 @@
         "button_text_color": "",
         "accordion_background": "#f2f2f2",
         "accordion_text_color": "#000000"
+      }
+    },
+    "27d25dbd-b0a2-43da-946d-8a6113041b50": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-1",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-2",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-3",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-4",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 5,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "related-products": {
@@ -820,6 +884,7 @@
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "131585c0-4dc4-4a55-9b67-c16cf6feb3c3",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "27d25dbd-b0a2-43da-946d-8a6113041b50",
     "related-products",
     "16919816096b1b8f4c"
   ]
