@@ -318,14 +318,13 @@
     },
     "8af113e3-f59e-4098-a0ad-04d814fc29e0": {
       "type": "before-after-image",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
         "title": "Wheel Mounting",
-        "content": "<p>Choose between the future-proof <strong>TR-One Wheel Mount<\/strong> (simply swap out the internal component as you upgrade your direct drive - rather than purchase a whole new mount).<\/p><p>Alternatively, the Universal Wheel Mount is a great option that suits most belt-drive and direct drive wheels on the market!<\/p>",
+        "content": "<p>Choose between the future-proof <strong>TR-One Wheel Mount<\/strong> (simply swap out the internal component as you upgrade your direct drive - rather than purchase a whole new mount).<\/p><p>Alternatively, the <strong>Universal Wheel Mount<\/strong> is a great option that suits most belt-drive and direct drive wheels on the market!<\/p>",
         "before_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_9_f98937cd-b261-43cf-a5f1-a5aa674a8bbb.webp",
-        "after_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_9_f98937cd-b261-43cf-a5f1-a5aa674a8bbb.webp",
+        "after_image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1_bde6da36-7fd1-444a-924c-61c1fb1ae0bd_1.webp",
         "expand_image": false,
         "text_position": "start",
         "before_after_text_position": "top",
@@ -443,8 +442,8 @@
         "eaef00a5-8b34-4754-8e9c-50e8450807f2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR120.4_1_e26d5771-98d2-443e-b36a-3ef6fb6f8ec9.png",
-            "width_mode": "custom",
+            "image": "{{ product.metafields.custom_fields.key_benefits_image.value }}",
+            "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
           }
@@ -452,7 +451,7 @@
         "template--17066372661412__6b072857-47cc-4798-b536-72c9045dea0b-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Optional Shifter Mount and Over-sized Support Profile<\/li><li>Over 30 optional accessories<\/li><li>Compatible with TR One Wheel and Shifter Mounting Systems<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>"
+            "content": "{{ product.metafields.custom_fields.key_benefits | metafield_tag }}"
           }
         }
       },
@@ -564,6 +563,152 @@
         "text_color": "#000000"
       }
     },
+    "131585c0-4dc4-4a55-9b67-c16cf6feb3c3": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "tr80-racing-simulator-mk5",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "tr120-racing-simulator-1",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "b8e0965a-73bb-4993-bec6-0109828e0a60": {
+          "type": "values",
+          "settings": {
+            "product": "tr160-mk4-racing-simulator",
+            "value_1": "",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-headings-1",
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-values-1",
+        "template--17086424514724__131585c0-4dc4-4a55-9b67-c16cf6feb3c3-values-2",
+        "b8e0965a-73bb-4993-bec6-0109828e0a60"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
       "type": "accordion-content",
       "blocks": {
@@ -611,6 +756,69 @@
         "button_text_color": "",
         "accordion_background": "#f2f2f2",
         "accordion_text_color": "#000000"
+      }
+    },
+    "27d25dbd-b0a2-43da-946d-8a6113041b50": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-1",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-2",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-3",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-4",
+        "template--17086424514724__27d25dbd-b0a2-43da-946d-8a6113041b50-logo-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 5,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "related-products": {
@@ -674,7 +882,9 @@
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "6b072857-47cc-4798-b536-72c9045dea0b",
     "974a92ca-5417-47d7-bae4-547d0c063284",
+    "131585c0-4dc4-4a55-9b67-c16cf6feb3c3",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "27d25dbd-b0a2-43da-946d-8a6113041b50",
     "related-products",
     "16919816096b1b8f4c"
   ]

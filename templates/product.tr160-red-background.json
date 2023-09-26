@@ -307,7 +307,7 @@
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
             "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
-            "heading_tag": "h0",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
@@ -553,7 +553,7 @@
         "full_width": true,
         "subheading": "",
         "title": "Compatibility",
-        "content": "<p>Check the compatible peripherals!<\/p>",
+        "content": "<p>Our simulators are made to be used with the biggest brands in the simracing market!<\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
@@ -566,56 +566,6 @@
         "button_text_color": "",
         "accordion_background": "#f2f2f2",
         "accordion_text_color": "#000000"
-      }
-    },
-    "e0e54f60-4a55-4832-b13b-a296f9061f3c": {
-      "type": "tabs",
-      "blocks": {
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1": {
-          "type": "tab",
-          "settings": {
-            "title": "Wheel Mount",
-            "content": "<ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Thrustmaster T500, T300, T150, TC-PS, TS-XW, TX, 248, T-GT, T80, TMX and T-GT II<\/li><li>Thrustmaster T818<\/li><li>Logitech G25, G27, G29, G920, G923, Logitech G PRO<\/li><li>Fanatec Elite, Clubsport, Podium DD1\/DD2, CSL DD , Fanatec GT DD Pro and CSL Elite<\/li><li>AccuForce V1\/V2<\/li><li>SIMAGIC M10<\/li><li>Moza R5, R9, R16, R21 DD Wheel Bases<\/li><li>Simagic Alpha Mini<\/li><li>Asetek La Prima, Forte and Invicta DD wheel bases<\/li><li>Cammus 15Nm Direct Drive<\/li><li>Other Wheel Bases - may require mounting bracket (Trak Racer Direct Drive Mount recommended)<\/li><li>MiGe 130ST(small and big<\/li><li>Bodnar 53 series<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini \/ ULTIMATE<\/li><\/ul><p><strong>Also, Flight\/Heavy Equipment<\/strong><\/p><ul><li>Logitech Flight Yoke System (by clamp)<\/li><li>Logitech Flight Switch\/Multi\/Instrument Panels<\/li><li>Logitech Heavy Equipment<\/li><li>Turtle Beach Velocity One Flight<\/li><li>Honeycomb Aeronautical Alpha Flight Controls (by clamp)<\/li><\/ul><p><strong>WITH <\/strong><span style=\"text-decoration:underline\"><strong>OPTIONAL<\/strong><\/span><strong> DIRECT DRIVE FRONT MOUNT (SKU TR-DDBRDDM)<\/strong><\/p><ul><li>Trak Racer 13Nm and 20Nm Direct Drive Bases (Coming Q3 2024)<\/li><li>Simucube SC1 \/ SC2 Sport, Pro, Ultimate<\/li><li>VRS Force Pro<\/li><li>AccuForce V1\/V2 (turn the top cover around to fit)<\/li><li>MiGe 130ST(small and big)<\/li><li>Bodnar 53 series<\/li><li>SIMAGIC ALPHA \/ ALPHA Mini\/ ULTIMATE<\/li><li>Lenze MCS12 series<\/li><li>Kollmorgen AKM 52-53-54 (OSW and Leo Bodnar Simsteering systems)<\/li><li>Ricmotech Mini-Mite Direct-Drive Steering System Base<\/li><li>IMMSOURCE ET3 and ET5<\/li><li>Fanatec Podium DD (installs <strong>without<\/strong> front plate)<\/li><\/ul>",
-            "page": ""
-          }
-        },
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 2",
-            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "page": ""
-          }
-        },
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 3",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-1",
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-2",
-        "template--19818471325984__e0e54f60-4a55-4832-b13b-a296f9061f3c-tab-3"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "body {text-align: left;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_size": "medium",
-        "subheading": "Subheading",
-        "title": "Heading",
-        "first_tab_open": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
       }
     },
     "related-products": {
@@ -678,7 +628,6 @@
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
-    "e0e54f60-4a55-4832-b13b-a296f9061f3c",
     "related-products",
     "16919816096b1b8f4c"
   ]
