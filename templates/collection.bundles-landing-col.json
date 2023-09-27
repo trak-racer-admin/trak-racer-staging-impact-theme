@@ -91,7 +91,7 @@
         "bc9960ba-f187-41ee-9043-f44905139953": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/products\/spec-3-the-slingshot",
+            "link": "shopify:\/\/products\/spec-3-alpine-racing-trx",
             "text": "Learn More",
             "size": "xl",
             "style": "outline",
@@ -116,7 +116,7 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "spec-3-the-slingshot",
+        "product": "spec-3-alpine-racing-trx",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "contained",
