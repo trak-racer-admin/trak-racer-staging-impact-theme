@@ -31,10 +31,10 @@
             "liquid": ""
           }
         },
-        "rating": {
-          "type": "rating",
+        "2b7aa229-e255-4b8e-a0ba-7bc13a645576": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "show_empty": false
+            "product": "{{product}}"
           }
         },
         "payment_terms": {
@@ -154,7 +154,7 @@
         "badges",
         "price",
         "9a2b7fc4-8b14-4b6b-a71b-2d3e2b0f6e20",
-        "rating",
+        "2b7aa229-e255-4b8e-a0ba-7bc13a645576",
         "payment_terms",
         "separator",
         "4d134a75-af80-4f1c-845b-a78ccdd74dfd",
