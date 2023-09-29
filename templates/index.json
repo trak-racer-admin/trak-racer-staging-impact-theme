@@ -76,7 +76,6 @@
         "slide-1",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -115,6 +114,7 @@
         "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2",
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
