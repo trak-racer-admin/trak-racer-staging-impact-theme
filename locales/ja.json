@@ -36,7 +36,7 @@
       "subscribed_successfully": "メールマガジンへの登録が完了しました"
     },
     "localization": {
-      "country": "国/地域",
+      "country": "国\/地域",
       "language": "言語"
     },
     "privacy_bar": {
@@ -301,9 +301,9 @@
       "weight": "重量",
       "subtotal": "小計",
       "total": "合計",
-      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\" class=\"link\">配送料</a>は購入手続き時に計算されます",
+      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\" class=\"link\">配送料<\/a>は購入手続き時に計算されます",
       "taxes_included_but_shipping_at_checkout": "税込みで、配送料は購入手続き時に計算されます",
-      "taxes_included_and_shipping_policy_html": "税込み。<a href=\"{{ link }}\" class=\"link\">配送料</a>は購入手続き時に計算されます。",
+      "taxes_included_and_shipping_policy_html": "税込み。<a href=\"{{ link }}\" class=\"link\">配送料<\/a>は購入手続き時に計算されます。",
       "taxes_and_shipping_at_checkout": "税と配送料は購入手続き時に計算されます",
       "add_order_note": "注文メモの追加",
       "edit_order_note": "注文メモの編集すす",
