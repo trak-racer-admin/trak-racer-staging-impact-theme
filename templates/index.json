@@ -1,5 +1,93 @@
 {
   "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "Learn More",
+            "button_link": "",
+            "text_color": "#000000",
+            "button_background": "#0087b9",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tekengebied_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/tr160-mk4-racing-simulator",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "608024a0-e217-41b1-9d40-12afc11e7af9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-2",
+        "slide-1",
+        "608024a0-e217-41b1-9d40-12afc11e7af9"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 20,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -26,6 +114,7 @@
         "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2",
         "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -163,216 +252,6 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
-      }
-    },
-    "3f7b945f-481e-4108-a802-88e7e010652c": {
-      "type": "featured-product",
-      "blocks": {
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-vendor-1": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-title-1": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-badges-1": {
-          "type": "badges",
-          "settings": {
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-price-1": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-rating-1": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-separator-1": {
-          "type": "separator",
-          "settings": {
-          }
-        },
-        "d2d591d4-0677-4de2-ab5d-577a8b1dc68f": {
-          "type": "text",
-          "settings": {
-            "text": "<h4>Your Gateway Into Sim Racing<\/h4><p>Shop our new Plug + Play Simulators and get the immersive experience in your home without the hassle of setting it up yourself.<\/p>"
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-description-1": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-quantity_selector-1": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "91abcd44-d78c-4f33-bebc-62a0072ea7b4": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/products\/spec-2-plug-and-play-simulator",
-            "text": "Learn More",
-            "size": "xl",
-            "style": "outline",
-            "stretch": true,
-            "background": "",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-vendor-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-title-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-badges-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-price-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-rating-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-separator-1",
-        "d2d591d4-0677-4de2-ab5d-577a8b1dc68f",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-description-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-variant_picker-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-quantity_selector-1",
-        "template--17060380672164__3f7b945f-481e-4108-a802-88e7e010652c-buy_buttons-1",
-        "91abcd44-d78c-4f33-bebc-62a0072ea7b4"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "product": "spec-2-plug-and-play-simulator",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_bottom",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_1a804ad9-da35-4c58-8bff-c2192ae65ad4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_68ecfc87-605a-49e0-9179-5b69a09a72cb.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "shopify:\/\/pages\/trak-racer-15th-birthday-giveaway",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "slide-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center-end text-end",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "button_text": "Learn More",
-            "button_link": "",
-            "text_color": "#000000",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "608024a0-e217-41b1-9d40-12afc11e7af9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2",
-        "608024a0-e217-41b1-9d40-12afc11e7af9"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "image_size": "auto",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": true,
-        "cycle_speed": 20,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
     "impact-text": {
@@ -614,11 +493,10 @@
     }
   },
   "order": [
+    "slideshow",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "a0989716-fbfa-438c-9ca9-87df62670662",
-    "3f7b945f-481e-4108-a802-88e7e010652c",
-    "slideshow",
     "impact-text",
     "media-grid",
     "e49ec022-390c-483c-85df-a8ab79ad73e7",

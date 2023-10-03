@@ -1,0 +1,31 @@
+<script type="text/javascript">
+
+      window.kameleoonQueue = window.kameleoonQueue || [];
+      
+      var product_item = {
+      
+      name: "{{ product.title }}",
+      
+      categoryID: {{ product.collections[0].id }},
+      
+      category: "{{ product.collections[0].title }}",
+      
+      mainImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+      
+      url: "{{ shop.secure_url }}{{ product.url }}",
+      
+      brand: "{{ product.vendor }}",
+      
+      price: "{{ product.price_min | money_without_currency }}",
+      
+      available: {{ product.available }},
+      
+      sku: "{{ product.id }}",
+      
+      description: "{{ product.content }}"
+      
+      };
+      
+      kameleoonQueue.push(['Products.trackProductView', "{{ product.id }}", product_item]);
+      
+</script>
