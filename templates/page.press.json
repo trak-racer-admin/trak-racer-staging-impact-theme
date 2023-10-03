@@ -13,7 +13,6 @@
         "template--19949824508192__9e8d2a79-f127-46b7-a102-aaa9941dc4a3-1689647487f572e26c-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FS3_TeST_RE_View.png",
             "column_size": "3",
             "title": "Newesc - FS3 Review",
             "heading_tag": "h5",
@@ -27,7 +26,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Column title! Sample content here",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_url": "",
