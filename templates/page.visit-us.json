@@ -13,7 +13,7 @@
         "template--19951874703648__89b2b9f6-e36b-4417-8e92-880e19bdc963-1689657426cfbdcd1f-1": {
           "type": "heading",
           "settings": {
-            "text": "Visit our Melbourne Showroom",
+            "text": "Visit our Melbourne Showroom.",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -57,7 +57,6 @@
         "template--19951874703648__33bb5eb6-869f-418e-b986-7d04ce88fa50-16896574352ab7c70b-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR_showroom.jpg",
             "column_size": "1.5",
             "title": "",
             "heading_tag": "h4",
