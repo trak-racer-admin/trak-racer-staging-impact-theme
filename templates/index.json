@@ -13,7 +13,7 @@
           "type": "heading",
           "settings": {
             "text": "Alpine Racing TRX",
-            "heading_tag": "h1"
+            "heading_tag": "h2"
           }
         },
         "c784b7d1-82a1-425f-8f50-bf34eb325042": {
@@ -33,105 +33,16 @@
         "464494f2-46aa-4849-bebf-b7fd7f7f812b",
         "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": true,
         "video_size": "md",
-        "video": "shopify:\/\/files\/videos\/video adac trx.mp4",
+        "video": "shopify:\/\/files\/videos\/Web Banner (Q2, 2023).mp4",
         "external_video_url": "https:\/\/youtu.be\/gv5LZFG7Afc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 15
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "button_text": "Learn More",
-            "button_link": "",
-            "text_color": "#000000",
-            "button_background": "#0087b9",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Tekengebied_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "shopify:\/\/products\/tr160-mk4-racing-simulator",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "608024a0-e217-41b1-9d40-12afc11e7af9": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide-2",
-        "slide-1",
-        "608024a0-e217-41b1-9d40-12afc11e7af9"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "image_size": "auto",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": true,
-        "cycle_speed": 8,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
     "image-with-text-overlay": {
@@ -273,8 +184,124 @@
         "heading_gradient": ""
       }
     },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "Learn More",
+            "button_link": "",
+            "text_color": "#000000",
+            "button_background": "#0087b9",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tekengebied_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/tr160-mk4-racing-simulator",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "608024a0-e217-41b1-9d40-12afc11e7af9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_kopieren_2.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-2",
+        "slide-1",
+        "608024a0-e217-41b1-9d40-12afc11e7af9"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 8,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "dd1ebc77-77a9-4644-9d70-3bf342f8041d": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "racing-simulators",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 13,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Find your perfect simulator",
+        "content": "",
+        "link_url": "shopify:\/\/collections\/racing-simulators",
+        "link_text": "View all",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "a0989716-fbfa-438c-9ca9-87df62670662": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "plug-and-play-simulators",
         "products": [
@@ -570,9 +597,10 @@
   },
   "order": [
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
-    "slideshow",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
+    "slideshow",
+    "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
     "a0989716-fbfa-438c-9ca9-87df62670662",
     "impact-text",
     "16964984703716d114",
