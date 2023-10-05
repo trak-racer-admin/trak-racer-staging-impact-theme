@@ -35,7 +35,7 @@
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": true,
-        "video_size": "auto",
+        "video_size": "lg",
         "external_video_url": "https:\/\/youtu.be\/gv5LZFG7Afc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
