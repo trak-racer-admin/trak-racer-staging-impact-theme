@@ -3,14 +3,32 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
-        "template--17060380672164__3c02c793-b794-482d-a8e9-d915c4e9ca59-play-1": {
-          "type": "play",
+        "c784b7d1-82a1-425f-8f50-bf34eb325042": {
+          "type": "button",
           "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Button text",
+            "url": "",
+            "background": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "6b58de34-e0dd-4eb2-b6c2-037236d17568": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "size": "lg",
+            "text": "Button text",
+            "url": "",
+            "background": "",
+            "text_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "template--17060380672164__3c02c793-b794-482d-a8e9-d915c4e9ca59-play-1"
+        "c784b7d1-82a1-425f-8f50-bf34eb325042",
+        "6b58de34-e0dd-4eb2-b6c2-037236d17568"
       ],
       "disabled": true,
       "settings": {
