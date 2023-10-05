@@ -3,43 +3,47 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
+        "8583a7f8-bb48-45ba-94ae-2da648356bb4": {
+          "type": "subheading",
+          "settings": {
+            "text": "Your Edge Against the Competition"
+          }
+        },
+        "464494f2-46aa-4849-bebf-b7fd7f7f812b": {
+          "type": "heading",
+          "settings": {
+            "text": "Alpine Racing TRX",
+            "heading_tag": "h1"
+          }
+        },
         "c784b7d1-82a1-425f-8f50-bf34eb325042": {
           "type": "button",
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Button text",
-            "url": "",
-            "background": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "6b58de34-e0dd-4eb2-b6c2-037236d17568": {
-          "type": "button",
-          "settings": {
-            "style": "outline",
-            "size": "lg",
-            "text": "Button text",
-            "url": "",
+            "text": "Shop Now",
+            "url": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
             "background": "",
             "text_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "c784b7d1-82a1-425f-8f50-bf34eb325042",
-        "6b58de34-e0dd-4eb2-b6c2-037236d17568"
+        "8583a7f8-bb48-45ba-94ae-2da648356bb4",
+        "464494f2-46aa-4849-bebf-b7fd7f7f812b",
+        "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
       "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": true,
-        "video_size": "lg",
+        "video_size": "md",
+        "video": "shopify:\/\/files\/videos\/video adac trx.mp4",
         "external_video_url": "https:\/\/youtu.be\/gv5LZFG7Afc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 15
       }
     },
     "slideshow": {
