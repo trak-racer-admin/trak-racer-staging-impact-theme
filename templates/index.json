@@ -342,8 +342,8 @@
         "ae27904b-5955-410b-822b-06c70cef1c38": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "show_heading": false,
-            "heading": "",
+            "show_heading": true,
+            "heading": "What our customers are saying",
             "badge_link": "",
             "product": ""
           }
@@ -356,10 +356,10 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#ffffff",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
-        "enable_review_integration": true,
+        "enable_review_integration": false,
         "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
