@@ -12,6 +12,7 @@
       "block_order": [
         "template--17060380672164__3c02c793-b794-482d-a8e9-d915c4e9ca59-play-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -99,7 +100,6 @@
         "slide-1",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
