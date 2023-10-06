@@ -575,6 +575,7 @@
       "block_order": [
         "template--17060380672164__974a2167-d7f4-481b-9bc4-e376df9b8abc-blog-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "show_excerpt": false,
@@ -593,6 +594,123 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "328e6918-1bbd-4ea3-a819-d8159e76f8e7": {
+      "type": "revealed-image-on-scroll",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Reveal text on scroll",
+        "background": "",
+        "text_color_inside": "#ffffff",
+        "text_color_outside": "#000000"
+      }
+    },
+    "8267ced5-406c-4fc5-9985-0f4d89959265": {
+      "type": "impact-text",
+      "blocks": {
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "100nm",
+            "subheading": "support",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "7b41d68b-9989-439e-a137-5382c8c33a24": {
+          "type": "item",
+          "settings": {
+            "title": "0%",
+            "subheading": "pedal flexing",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "e95aa6a2-511f-49d9-bc24-1b8450e422fd": {
+          "type": "item",
+          "settings": {
+            "title": "160mm",
+            "subheading": "strong fun",
+            "content": "<p>extra content<\/p>",
+            "button_text": "button text",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1",
+        "7b41d68b-9989-439e-a137-5382c8c33a24",
+        "e95aa6a2-511f-49d9-bc24-1b8450e422fd"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 1,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(181deg, rgba(252, 21, 21, 1) 14%, rgba(84, 64, 64, 1) 80.576%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "73c90621-810e-4eb4-b437-3d7a582e0d14": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-richtext-1": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-subheading-1",
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-heading-1",
+        "template--17060380672164__73c90621-810e-4eb4-b437-3d7a582e0d14-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/SPEC_1_04.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
@@ -606,6 +724,9 @@
     "16964984703716d114",
     "media-grid",
     "e49ec022-390c-483c-85df-a8ab79ad73e7",
-    "974a2167-d7f4-481b-9bc4-e376df9b8abc"
+    "974a2167-d7f4-481b-9bc4-e376df9b8abc",
+    "328e6918-1bbd-4ea3-a819-d8159e76f8e7",
+    "8267ced5-406c-4fc5-9985-0f4d89959265",
+    "73c90621-810e-4eb4-b437-3d7a582e0d14"
   ]
 }
