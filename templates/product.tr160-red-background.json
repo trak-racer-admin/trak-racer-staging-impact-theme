@@ -172,7 +172,7 @@
         "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
