@@ -651,6 +651,7 @@
         "7b41d68b-9989-439e-a137-5382c8c33a24",
         "e95aa6a2-511f-49d9-bc24-1b8450e422fd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_mobile": true,
