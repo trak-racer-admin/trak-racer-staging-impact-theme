@@ -187,28 +187,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "button_text": "Learn More",
-            "button_link": "shopify:\/\/pages\/alpine-f1-partnership",
-            "text_color": "#000000",
-            "button_background": "#0087b9",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
         "slide-1": {
           "type": "image",
           "settings": {
@@ -225,6 +203,28 @@
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "Learn More",
+            "button_link": "shopify:\/\/pages\/alpine-f1-partnership",
+            "text_color": "#000000",
+            "button_background": "#0087b9",
+            "button_text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "background": "",
@@ -256,8 +256,8 @@
         }
       },
       "block_order": [
-        "slide-2",
         "slide-1",
+        "slide-2",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
       "settings": {
