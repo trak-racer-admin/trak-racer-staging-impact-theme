@@ -288,7 +288,7 @@
       "address2": "Complemento",
       "city": "Cidade",
       "zip": "CEP",
-      "country": "País/Região",
+      "country": "País\/Região",
       "province": "Estado",
       "set_default": "Usar como endereço padrão"
     }
@@ -301,9 +301,9 @@
       "weight": "Peso",
       "subtotal": "Subtotal",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Tributos e <a href=\"{{ link }}\" class=\"link\">frete</a> calculados na finalização da compra",
+      "taxes_and_shipping_policy_at_checkout_html": "Tributos e <a href=\"{{ link }}\" class=\"link\">frete<\/a> calculados na finalização da compra",
       "taxes_included_but_shipping_at_checkout": "Tributos incluídos e frete calculado na finalização da compra",
-      "taxes_included_and_shipping_policy_html": "Tributos incluídos. <a href=\"{{ link }}\" class=\"link\">Frete</a> calculado na finalização da compra.",
+      "taxes_included_and_shipping_policy_html": "Tributos incluídos. <a href=\"{{ link }}\" class=\"link\">Frete<\/a> calculado na finalização da compra.",
       "taxes_and_shipping_at_checkout": "Tributos e frete calculados na finalização da compra",
       "add_order_note": "Adicionar observações sobre o pedido",
       "edit_order_note": "Editar observações sobre o pedido",
