@@ -564,6 +564,55 @@
         "text_color": "#000000"
       }
     },
+    "3504df82-16f3-40cf-90fd-aeaf83f3541e": {
+      "type": "tabs",
+      "blocks": {
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-1",
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-2",
+        "template--17066372661412__3504df82-16f3-40cf-90fd-aeaf83f3541e-tab-3"
+      ],
+      "custom_css": [
+        ".tab-content {text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "fill",
+        "subheading": "",
+        "title": "Compatibility",
+        "first_tab_open": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
       "type": "accordion-content",
       "blocks": {
@@ -594,6 +643,7 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -674,6 +724,7 @@
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "6b072857-47cc-4798-b536-72c9045dea0b",
     "974a92ca-5417-47d7-bae4-547d0c063284",
+    "3504df82-16f3-40cf-90fd-aeaf83f3541e",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "related-products",
     "16919816096b1b8f4c"
