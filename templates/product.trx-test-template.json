@@ -567,10 +567,13 @@
         "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-2",
         "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-3"
       ],
+      "custom_css": [
+        ".tab-content {text-align: left;}"
+      ],
       "settings": {
         "full_width": true,
         "content_size": "large",
-        "subheading": "Subheading",
+        "subheading": "",
         "title": "Compatability",
         "first_tab_open": false,
         "background": "#ffffff",
