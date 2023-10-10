@@ -181,6 +181,22 @@
         "input_text_color": ""
       }
     },
+    "9699c3a6-d29d-424f-8992-c24a2d0b7bc6": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "text": "{{ product.metafields.custom_fields.product_headline_statement.value }}",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
       "type": "rich-text",
       "blocks": {
@@ -197,6 +213,7 @@
       "block_order": [
         "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -708,6 +725,7 @@
   },
   "order": [
     "main",
+    "9699c3a6-d29d-424f-8992-c24a2d0b7bc6",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
