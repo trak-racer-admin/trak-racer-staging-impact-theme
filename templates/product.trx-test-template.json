@@ -423,7 +423,7 @@
           "type": "image",
           "settings": {
             "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
-            "width_mode": "full_width",
+            "width_mode": "custom",
             "max_width": 1000,
             "mobile_max_width": 600
           }
