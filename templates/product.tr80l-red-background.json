@@ -465,6 +465,41 @@
         "text_color": ""
       }
     },
+    "cf88ec80-324f-459d-b87e-57e57d4b3beb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17066372661412__cf88ec80-324f-459d-b87e-57e57d4b3beb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dimensions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "b37bd608-0b2b-4e1b-8835-fa6e4cb12ce0": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "template--17066372661412__cf88ec80-324f-459d-b87e-57e57d4b3beb-heading-1",
+        "b37bd608-0b2b-4e1b-8835-fa6e4cb12ce0"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -681,10 +716,10 @@
         "product_card_text_color": ""
       }
     },
-    "16919816096b1b8f4c": {
+    "1696925372acdddf55": {
       "type": "apps",
       "blocks": {
-        "cbfa0aa7-9293-4cf3-b901-d21cbcf8e3c7": {
+        "ead77184-a522-4c50-99ce-c188be665efa": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
@@ -693,14 +728,14 @@
         }
       },
       "block_order": [
-        "cbfa0aa7-9293-4cf3-b901-d21cbcf8e3c7"
+        "ead77184-a522-4c50-99ce-c188be665efa"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
+        "background": "#ffffff",
+        "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
         "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
@@ -717,10 +752,11 @@
     "8af113e3-f59e-4098-a0ad-04d814fc29e0",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "6b072857-47cc-4798-b536-72c9045dea0b",
+    "cf88ec80-324f-459d-b87e-57e57d4b3beb",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "3504df82-16f3-40cf-90fd-aeaf83f3541e",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "related-products",
-    "16919816096b1b8f4c"
+    "1696925372acdddf55"
   ]
 }
