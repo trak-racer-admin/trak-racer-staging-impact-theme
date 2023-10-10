@@ -476,7 +476,7 @@
         "template--17086424514724__8f7df348-f2a5-4f5a-add8-7c712f2c50ac-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
+            "text": "Dimensions",
             "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
@@ -774,6 +774,7 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
