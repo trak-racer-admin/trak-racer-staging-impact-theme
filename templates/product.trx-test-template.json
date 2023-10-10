@@ -387,8 +387,9 @@
     },
     "60e04e2d-ec6f-40e6-965d-dcdca49799af": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
