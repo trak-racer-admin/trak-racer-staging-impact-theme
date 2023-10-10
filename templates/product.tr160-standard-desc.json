@@ -426,6 +426,41 @@
         "chart_true_false_color": ""
       }
     },
+    "59869190-55a7-472e-b22d-3b1565a35196": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dimensions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "8b1c6446-ebba-40f6-b580-1f512dd70743": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1",
+        "8b1c6446-ebba-40f6-b580-1f512dd70743"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -519,6 +554,52 @@
         "text_color": "#000000"
       }
     },
+    "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb": {
+      "type": "tabs",
+      "blocks": {
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-1",
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-2",
+        "template--17087704826020__27a97f99-7e34-46ea-b4b4-ba8d8c2243eb-tab-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "subheading": "",
+        "title": "Compatability",
+        "first_tab_open": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
       "type": "accordion-content",
       "blocks": {
@@ -549,6 +630,7 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -626,7 +708,9 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "59869190-55a7-472e-b22d-3b1565a35196",
     "974a92ca-5417-47d7-bae4-547d0c063284",
+    "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "related-products",
     "16919816096b1b8f4c"
