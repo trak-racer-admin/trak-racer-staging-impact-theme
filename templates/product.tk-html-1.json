@@ -113,7 +113,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#ff454c",
+            "atc_button_background": "#ce151b",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": "",
@@ -128,8 +128,8 @@
             "size": "xl",
             "style": "outline",
             "stretch": true,
-            "background": "#ff454c",
-            "text_color": "#ff454c"
+            "background": "#ce151b",
+            "text_color": "#ce151b"
           }
         },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
@@ -184,6 +184,62 @@
         "input_text_color": ""
       }
     },
+    "4c5dd779-e1b6-44b6-9693-e3686c7220e8": {
+      "type": "tabs",
+      "blocks": {
+        "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Spec 1: TR8 Pro Overview",
+            "content": "",
+            "page": "spec-1-tr8-pro-overview"
+          }
+        }
+      },
+      "block_order": [
+        "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "fill",
+        "subheading": "Spec 1: TR8 Pro",
+        "title": "Description",
+        "first_tab_open": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "169164228579fecd9c": {
+      "type": "apps",
+      "blocks": {
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28": {
       "type": "rich-text",
       "blocks": {
@@ -200,6 +256,7 @@
       "block_order": [
         "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -230,6 +287,7 @@
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -275,6 +333,7 @@
         "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2",
         "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -339,6 +398,7 @@
         "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2",
         "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -551,6 +611,7 @@
         "367ac19c-ade4-4c18-a1c9-832109c3e122",
         "4253ccf9-91a0-48e1-b857-f79231d03ffd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "image": "shopify:\/\/shop_images\/1.jpg",
@@ -667,7 +728,7 @@
         "heading_gradient": "",
         "contact_background": "",
         "contact_text_color": "",
-        "button_background": "#ff454c",
+        "button_background": "#ce151b",
         "button_text_color": ""
       }
     },
@@ -694,38 +755,12 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
-    },
-    "169164228579fecd9c": {
-      "type": "apps",
-      "blocks": {
-        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
-      ],
-      "settings": {
-        "full_width": false,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#717070",
-        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
-        "text_color": "rgba(0,0,0,0)",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
     }
   },
   "order": [
     "main",
+    "4c5dd779-e1b6-44b6-9693-e3686c7220e8",
+    "169164228579fecd9c",
     "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
     "bbe63f78-9157-4007-a278-05bf2c593a24",
@@ -736,7 +771,6 @@
     "91cdbda0-a685-49c6-bf2b-d7da069c9109",
     "046cb4a3-f399-439e-9d21-687edd02659b",
     "a2b3d321-faf9-48ba-8687-51cdc5f58573",
-    "related-products",
-    "169164228579fecd9c"
+    "related-products"
   ]
 }
