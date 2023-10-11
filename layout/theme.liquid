@@ -14,7 +14,13 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
 <!-- Start of Shoplift scripts -->
 {% render 'shoplift' %}
 <!-- End of Shoplift scripts -->
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWHJTV9X');</script>
+<!-- End Google Tag Manager -->
 
 <!-- Hotjar Tracking Code for Trak Racer AU -->
 <script>
@@ -84,7 +90,10 @@ t.parentNode.insertBefore(y,t);
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
     {%- render 'shadow-dom-templates' -%}
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWHJTV9X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <a href="#main" class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
     {%- if request.page_type != 'password' -%}
