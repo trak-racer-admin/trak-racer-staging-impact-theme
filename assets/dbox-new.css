@@ -63,6 +63,7 @@ margin-top:30px;
 }
 .yt-video {
 	width: 48%;
+  margin-block-start: 0 !important;
 }
 .benefit-1 img{
   height:300px;
