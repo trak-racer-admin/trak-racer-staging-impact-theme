@@ -64,6 +64,9 @@ margin-top:30px;
 .yt-video {
 	width: 48%;
 }
+.benefit-1 img{
+  height:300px;
+}
 @media only screen and (max-width:1600px) and (min-width:1200px){
   .container{
     width:90%;
