@@ -44,6 +44,7 @@
   width:33.33%;
   text-align:left;
   padding-top:15px;
+  margin-block-start: 0 !important;
 }
 .reveiws-list{
   text-align:center;
