@@ -71,7 +71,8 @@ margin-top:30px;
   margin-block-start: 0 !important;
 }
 .benefit-1 img{
-  height:300px;
+  width:300px;
+  object-fit:contain;
 }
 .benefit-1 p{
   height:100px;
