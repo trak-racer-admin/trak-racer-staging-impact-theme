@@ -45,6 +45,10 @@
   text-align:left;
   padding-top:15px;
   margin-block-start: 0 !important;
+  margin-right:30px;
+}
+.benefit-1:nth-child(3){
+  marign-right:0;
 }
 .reveiws-list{
   text-align:center;
