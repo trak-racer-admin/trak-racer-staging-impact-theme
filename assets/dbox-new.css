@@ -67,6 +67,9 @@ margin-top:30px;
 .benefit-1 img{
   height:300px;
 }
+.benefit-1 p{
+  height:100px;
+}
 @media only screen and (max-width:1600px) and (min-width:1200px){
   .container{
     width:90%;
