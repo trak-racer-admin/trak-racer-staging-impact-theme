@@ -223,9 +223,9 @@
         "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1": {
           "type": "tab",
           "settings": {
-            "title": "Spec 2: TR80 Overview",
+            "title": "Spec 3: Alpine Racing TRX Overview",
             "content": "",
-            "page": "spec-2-tr80"
+            "page": "spec-3-alpine-racing-trx"
           }
         }
       },
@@ -235,7 +235,7 @@
       "settings": {
         "full_width": true,
         "content_size": "fill",
-        "subheading": "Spec 2: TR80",
+        "subheading": "Spec 3: Alpine Racing TRX",
         "title": "Description",
         "first_tab_open": false,
         "background": "#ffffff",
