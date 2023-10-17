@@ -205,6 +205,7 @@
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
