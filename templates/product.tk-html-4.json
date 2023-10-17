@@ -210,8 +210,8 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
-        "external_video_url": "https:\/\/youtu.be\/jNEj5rEYkNQ?list=TLGGJYPtZYd5gJ0xNzEwMjAyMw",
-        "poster": "shopify:\/\/shop_images\/Bundle_2_-_frame_at_0m2s.jpg",
+        "external_video_url": "https:\/\/youtu.be\/0L52L1_OSHI?list=TLGGzKQv0QXS_gMxNzEwMjAyMw",
+        "poster": "shopify:\/\/shop_images\/Bundle_1_-_frame_at_0m2s.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
@@ -223,9 +223,9 @@
         "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1": {
           "type": "tab",
           "settings": {
-            "title": "Spec 3: Alpine Racing TRX Overview",
+            "title": "Spec 4: TR160 Overview",
             "content": "",
-            "page": "spec-3-alpine-racing-trx"
+            "page": "spec-4-tr160"
           }
         }
       },
@@ -235,7 +235,7 @@
       "settings": {
         "full_width": true,
         "content_size": "fill",
-        "subheading": "Spec 3: Alpine Racing TRX",
+        "subheading": "Spec 4: TR160",
         "title": "Description",
         "first_tab_open": false,
         "background": "#ffffff",
