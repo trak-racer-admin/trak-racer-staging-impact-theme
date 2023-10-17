@@ -205,7 +205,6 @@
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-play-1",
         "template--17075952877732__b04db594-708b-42f5-998d-8736ea8d10b6-heading-1"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -224,9 +223,9 @@
         "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1": {
           "type": "tab",
           "settings": {
-            "title": "Spec 1: TR8 Pro Overview",
+            "title": "Spec 2: TR80 Overview",
             "content": "",
-            "page": "spec-1-tr8-pro-overview"
+            "page": "spec-2-tr80"
           }
         }
       },
@@ -236,7 +235,7 @@
       "settings": {
         "full_width": true,
         "content_size": "fill",
-        "subheading": "Spec 1: TR8 Pro",
+        "subheading": "Spec 2: TR80",
         "title": "Description",
         "first_tab_open": false,
         "background": "#ffffff",
