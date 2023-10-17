@@ -78,7 +78,7 @@
         "2e253d8a-4192-471d-aad8-dee8c9c54af7": {
           "type": "liquid",
           "settings": {
-            "liquid": ""
+            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
           }
         },
         "quantity_selector": {
