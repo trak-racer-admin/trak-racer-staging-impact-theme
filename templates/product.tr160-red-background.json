@@ -135,11 +135,6 @@
             "background": "#ffffff",
             "text_color": "#545454"
           }
-        },
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
-          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -160,8 +155,7 @@
         "4163194c-df27-4c47-bd48-39a7883f8a23",
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
-        "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
       ],
       "settings": {
         "full_width": true,
@@ -172,7 +166,7 @@
         "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "max_image_zoom_level": 3,
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
@@ -814,6 +808,7 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",

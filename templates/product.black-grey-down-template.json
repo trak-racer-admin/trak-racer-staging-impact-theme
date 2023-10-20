@@ -89,7 +89,7 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": "",
-            "liquid": "<p style=\"text-align: center\">Write or copy\/paste Liquid code<\/p>"
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n          {% if current_variant.metafields.custom.product_eta contains ':' %}\n              {% assign firsthandle = current_variant.metafields.custom.product_eta | split: \":\" | first %}\n              {% assign secondhandle = current_variant.metafields.custom.product_eta | split: \":\" | last %}\n          {% endif %}\n<div id=\"hc-new-eta\">\n{% if current_variant.available == false or current_variant.inventory_quantity < 1 %}\n        <input name=\"{% if current_variant.metafields.custom.product_eta contains ':' %}properties[{{ firsthandle }}]{% else %}properties[Product ETA:]{% endif %}\" type=\"hidden\" value=\"{% if current_variant.metafields.custom.product_eta contains ':' %}{{ secondhandle }}{% else %}{{ current_variant.metafields.custom.product_eta }}{% endif %}\" \/>\n{% endif %}\n<\/div>\n<script>\n      var item_shipping = {};\n      var item_inventory = {};\n      {% for variant in product.variants %}\n         item_shipping[{{ variant.id }}] = {{ variant.metafields.custom.product_eta | json }};\n         item_inventory[{{variant.id}}] = {{ variant.inventory_quantity | json }};\n      {% endfor %}\n    <\/script>"
           }
         },
         "4163194c-df27-4c47-bd48-39a7883f8a23": {
@@ -145,11 +145,6 @@
             "background": "#ffffff",
             "text_color": "#545454"
           }
-        },
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
-          "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -171,8 +166,7 @@
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "5db33921-fbb2-4cc6-bd27-6eba9ed42da5",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
-        "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
+        "c2b51e67-ad0d-4556-b975-bb5000ae8d79"
       ],
       "settings": {
         "full_width": true,
