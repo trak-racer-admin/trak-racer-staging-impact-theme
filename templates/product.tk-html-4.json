@@ -78,7 +78,7 @@
         "0040dc10-c915-4ceb-9474-555cc98fd73b": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"gpo-product-variants\"><\/div>"
+            "liquid": "<div class=\"gpo-text-color-custom\">\n<div class=\"gpo-product-variants\"><\/div>\n<\/div>"
           }
         },
         "quantity_selector": {
@@ -113,7 +113,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#ff454c",
+            "atc_button_background": "#ce151b",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": "",
@@ -128,8 +128,8 @@
             "size": "xl",
             "style": "outline",
             "stretch": true,
-            "background": "#ff454c",
-            "text_color": "#ff454c"
+            "background": "#ce151b",
+            "text_color": "#ce151b"
           }
         },
         "ceb055d8-5897-4811-906d-0fdad123d02c": {
@@ -184,31 +184,6 @@
         "input_text_color": ""
       }
     },
-    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Expertly curated, ready to race simulators to give you the ultimate competitive edge",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": "linear-gradient(133deg, rgba(218, 218, 218, 1) 11%, rgba(255, 255, 255, 1) 87%)"
-          }
-        }
-      },
-      "block_order": [
-        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(159deg, rgba(255, 62, 62, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
-        "text_color": ""
-      }
-    },
     "b04db594-708b-42f5-998d-8736ea8d10b6": {
       "type": "video",
       "blocks": {
@@ -235,11 +210,137 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
-        "external_video_url": "https:\/\/youtu.be\/eBJk5jLqieo",
-        "poster": "shopify:\/\/shop_images\/Bundle_3_-_frame_at_0m1s.jpg",
+        "external_video_url": "https:\/\/youtu.be\/0L52L1_OSHI?list=TLGGzKQv0QXS_gMxNzEwMjAyMw",
+        "poster": "shopify:\/\/shop_images\/Bundle_1_-_frame_at_0m2s.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
+      }
+    },
+    "4c5dd779-e1b6-44b6-9693-e3686c7220e8": {
+      "type": "tabs",
+      "blocks": {
+        "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Spec 4: TR160 Overview",
+            "content": "",
+            "page": "spec-4-tr160"
+          }
+        }
+      },
+      "block_order": [
+        "template--17118475649188__4c5dd779-e1b6-44b6-9693-e3686c7220e8-tab-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "fill",
+        "subheading": "Spec 4: TR160",
+        "title": "Description",
+        "first_tab_open": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Have a question?",
+        "content": "<p>We're here to help - whether you have a question about the rig, or want to add your own customisations, we're happy to help!<\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "#ce151b",
+        "button_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "169164228579fecd9c": {
+      "type": "apps",
+      "blocks": {
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Expertly curated, ready to race simulators to give you the ultimate competitive edge",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(133deg, rgba(218, 218, 218, 1) 11%, rgba(255, 255, 255, 1) 87%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--17075952877732__c7d88ff0-c9db-4fd1-8d70-7a06f2557f28-heading-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(159deg, rgba(255, 62, 62, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+        "text_color": ""
       }
     },
     "bbe63f78-9157-4007-a278-05bf2c593a24": {
@@ -275,6 +376,7 @@
         "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-2",
         "template--17075952877732__bbe63f78-9157-4007-a278-05bf2c593a24-item-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -339,6 +441,7 @@
         "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-2",
         "template--17075952877732__499c9acc-c640-47bd-960b-94b4f6544c20-item-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
@@ -551,6 +654,7 @@
         "367ac19c-ade4-4c18-a1c9-832109c3e122",
         "4253ccf9-91a0-48e1-b857-f79231d03ffd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "image": "shopify:\/\/shop_images\/1.jpg",
@@ -650,93 +754,22 @@
         "impact_text_color": "",
         "impact_text_gradient": ""
       }
-    },
-    "a2b3d321-faf9-48ba-8687-51cdc5f58573": {
-      "type": "contact",
-      "settings": {
-        "full_width": true,
-        "subheading": "Contact Us",
-        "title": "Have a question?",
-        "content": "<p>We're here to help - whether you have a question about the rig, or want to add your own customisations, we're happy to help!<\/p>",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "#ff454c",
-        "button_text_color": ""
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "recommendations_count": 4,
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "You may also like",
-        "content": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "169164228579fecd9c": {
-      "type": "apps",
-      "blocks": {
-        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "rgba(0,0,0,0)",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
     }
   },
   "order": [
     "main",
-    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
     "b04db594-708b-42f5-998d-8736ea8d10b6",
+    "4c5dd779-e1b6-44b6-9693-e3686c7220e8",
+    "a2b3d321-faf9-48ba-8687-51cdc5f58573",
+    "related-products",
+    "169164228579fecd9c",
+    "c7d88ff0-c9db-4fd1-8d70-7a06f2557f28",
     "bbe63f78-9157-4007-a278-05bf2c593a24",
     "499c9acc-c640-47bd-960b-94b4f6544c20",
     "eefab2a8-30d9-446a-8a79-052f6ac35f19",
     "45ace661-5d65-430c-bdc8-9db45ffc738b",
     "8c20408f-48ad-40e9-87fa-7dacd0aaa30a",
     "91cdbda0-a685-49c6-bf2b-d7da069c9109",
-    "046cb4a3-f399-439e-9d21-687edd02659b",
-    "a2b3d321-faf9-48ba-8687-51cdc5f58573",
-    "related-products",
-    "169164228579fecd9c"
+    "046cb4a3-f399-439e-9d21-687edd02659b"
   ]
 }

@@ -10,6 +10,14 @@
     "contact": {
       "type": "contact",
       "blocks": {
+        "6114b765-84d0-4713-b77e-30a8d727efac": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
         "aee39e24-119f-4943-a59f-4e34c497fcb0": {
           "type": "text",
           "settings": {
@@ -35,6 +43,7 @@
         }
       },
       "block_order": [
+        "6114b765-84d0-4713-b77e-30a8d727efac",
         "aee39e24-119f-4943-a59f-4e34c497fcb0",
         "28c403a1-6d2f-47c1-8aca-1e3dc2d95d3f",
         "857e7d25-a646-4270-88bb-350fca86dbf7"

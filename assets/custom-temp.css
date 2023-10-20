@@ -1,0 +1,559 @@
+.tr8-pro-new{
+  text-align:center;
+  width:700px;
+  margin:30px auto 60px;
+}
+.tr8-pro-new p{font-size:16px;}
+
+.tr8-section{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.tr8-right-section, .tr8-left-section{
+  width:48%;
+  align-self:center;
+}
+.product-name {
+	text-align: center;
+  margin-top:70px;
+  margin-bottom:70px;
+}
+.product-name h3{margin-bottom:30px;}
+.included-product{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.product-1{
+  background-color:#191919;
+  padding:15px;
+}
+.product-1 p{
+  font-weight:600;
+}
+.optional{
+  text-align:center;
+  margin-top:70px;
+  margin-bottom:30px;
+  font-size:60px;
+}
+  .optional-bg {
+            background-color: #F1F1F1;
+            color: #000;
+    padding:20px;
+        }
+/* steamer-program  */
+.steamer-team{
+  background-image:url("https://cdn.shopify.com/s/files/1/0268/8149/1135/files/program-bg-image.png?v=1696854427");
+  background-size:cover;
+  height:580px;
+  position:relative;
+}
+.team-member-image {
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+
+  text-align:center;
+}
+.team-member-image h1{
+    font-size:50px;
+}
+.team-member-image p
+{
+  font-size:16px;
+}
+.team-consair{
+  text-align:center;
+}
+.steam-apply .btn{
+  background-color:#D6222B;
+  color:#fff;
+  display:inline;
+}
+.team-consair .team-members{
+  display:flex;
+  flex-wrap:wrap;
+}
+.team-consair .team-members h3{
+margin-top:10px;
+  font-size:30px;
+}
+.team-consair .team-members .team-1 {
+	width: 33.33%;
+
+}
+.team-consair .team-members .team-1 img{
+  scale:1;
+  transition: .5s ease-in-out;
+}
+.team-consair .team-members .team-1 img:hover{
+scale:1.05;
+  
+}
+.apply-now-section{
+  background-color:#191919;
+  text-align:center;
+  padding:25px 0;
+}
+.apply-now-section p {
+	font-size: 16px;
+	width: 670px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.apply-now-section a{
+  background-color:#D6222B !important;
+  color:#fff !important;
+}
+
+.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.3);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 17, 17, 0.61);
+    display: flex;
+    align-items: center;
+}
+.member-detail{
+  display:flex;
+  flex-wrap:wrap;
+}
+.mem-img{
+  width:20%;
+}
+.mem-text{
+  width:80%;
+}
+.content-flex{
+  display:flex;
+}
+.social-name{
+  display:inline;
+}
+.small-logos {
+	width: 30px;
+	aspect-ratio: 1/1;
+	margin-left: 1rem;
+}
+.popup-content {
+	background-color: #222224;
+	margin: auto;
+	padding: 20px;
+	width: 80%;
+	color: #fff;
+	height: 310px;
+}
+.popup-content p {
+	font-size:20px;
+	padding: 10px;
+	line-height:1.5;
+	overflow-y: scroll;
+	height: 210px;
+}
+.popup-content a.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+}
+
+.popup-content a.close:hover{
+  color:#333;
+}
+
+.popup-content span:hover,
+.popup-content span:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-container:target{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-container h3{
+  margin:10px;
+}
+/*End popup styles*/
+/* steamer-program end */
+
+/* alpine f1 partnership */
+.alpine-team{
+  background-image:url("https://cdn.shopify.com/s/files/1/0268/8149/1135/files/ALPINE_00001696_0008.png?v=1697006342");
+height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position:relative;
+  margin-bottom:70px 0 !important;
+}
+.first-sim-racing {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top:15%;
+  text-align:center;
+}
+.first-sim-racing p{
+  margin-bottom:10px;
+}
+.first-sim-racing h1{margin-top:10px; font-size:40px;margin-bottom:10px;}
+.alpine-video-text {
+	padding: 70px 0;
+}
+.alpine-review{
+  text-align:center;
+}
+.alpine-review h2{
+  font-size:26px;
+}
+.alpine-review p{
+  padding-top:20px;
+}
+.alpine-world{
+  padding:70px 0;
+}
+.alpine-world h2{
+  text-align:center;
+  margin-bottom:50px;
+}
+.alpine-world-img-1 {
+	position: relative;
+  margin-bottom:30px;
+}
+.alpine-world-img-1 p {
+	position: absolute;
+	bottom: 30px;
+	font-size: 18px;
+	left: 10px;
+  font-weight:600;
+}
+.alpine-world-img-1 img{
+    scale:1;
+  transition: 0.5s ease-in-out
+}
+.alpine-world-img-1 img:hover{
+scale:1.05;
+}
+.alpine-world-flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.alpine-world-img-2 {
+	position: relative;
+	width: 48%;
+	margin-bottom: 30px;
+  
+}
+.alpine-world-img-2 p {
+	position: absolute;
+	bottom: 30px;
+	font-size: 18px;
+	left: 10px;
+  font-weight:600;
+}
+.alpine-world-img-2 img {
+	height: 400px;
+	object-fit: cover;
+	width: 100%;
+  scale:1;
+  transition: 0.5s ease-in-out
+}
+.alpine-world-img-2 img:hover{
+scale:1.05;
+}
+.ultimate-drive {
+  text-align:center;
+}
+.exp-ultimate {
+	display: flex;
+	justify-content: space-between;
+}
+.drive-seconds .seconds {
+	font-size: 20px;
+	font-weight: 700;
+  margin-bottom:10px;
+}
+.drive-seconds p{
+  font-size:16px;
+}
+.about-alpine {
+	text-align: center;
+	padding: 70px 0;
+}
+.about-alpine-flex {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content:space-between;
+}
+.about-alpine h2{
+ margin-bottom:50px; 
+}
+.about-alpine-flex img{
+  width:40%;
+}
+.about-alpine-flex .about-alpine-team{
+  width:60%;
+  text-align:left;
+}
+/* alpine f1 partneship */
+@media only screen and (max-width:1600px) and (min-width:1200px){
+  .popup-content{
+    height:250px;
+  }
+  .popup-content p{
+    height:160px;
+  }
+}
+@media only screen and (max-width:1199px) and (min-width:768px){
+  .product-1{
+    margin-bottom:30px;
+  }
+  .product-name{
+    margin-top:30px;
+  }
+  .optional{
+    margin-top:30px;
+  }
+  .steamer-team{
+    height:260px;
+  }
+  .team-member-image h1 {
+	font-size: 30px;
+}
+  .team-member-image{
+    top:35%;
+  }
+  .team-consair .team-members .team-1 {
+	width: 29.33%;
+}
+  .team-consair .team-members{
+    justify-content:space-evenly;
+  }
+  .team-consair .team-members h3{
+    font-size:24px;
+  }
+  .team-consair p{
+     margin-bottom:40px; 
+  }
+  .first-sim-racing{
+  transform:none;
+  left:0;
+    right:0;
+  top:75%;
+}
+  .partnership-forever h2{
+    font-size:36px;
+  }
+  .alpine-team{
+    height:430px;
+  }
+  .first-sim-racing h1{
+    font-size:28px;
+  }
+  .alpine-video-text {
+	padding: 30px 0;
+}
+  .alpine-video-text {
+	padding: 30px 0 0;
+}
+  .alpine-world {
+	padding: 20px 0;
+}
+  .alpine-world h2 {
+	margin-bottom: 20px;
+  font-size:36px;
+  }
+  .alpine-world-img-2{
+    width:100%;
+  }
+  .ultimate-drive h2{
+   font-size:36px; 
+  }
+  .drive-second{
+    margin-bottom:20px;
+  }
+  .drive-seconds h2{
+     margin-bottom:10px; 
+  }
+  .about-alpine{
+    padding:0;
+  }
+  .about-alpine-flex img {
+	width: 100%;
+}
+  .about-alpine-flex .about-alpine-team{
+    width:100%;
+  }
+  .drive-seconds {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+  .about-alpine h2 {
+	margin-bottom: 20px;
+    font-size:36px;
+}
+  .about-alpine-team p{
+    padding:20px 0;
+  }
+}
+@media only screen and (max-width:767px) and (min-width:320px){
+  .tr8-pro-new{
+  width:100%;
+  }
+  .tr8-section{
+    flex-direction:column;
+  } 
+  .tr8-section.top-section{
+    flex-direction:column-reverse;
+  }
+  .tr8-right-section, .tr8-left-section {
+	width: 100%;
+}
+  .tr8-left-section{
+   margin:30px 0; 
+  }
+  .product-name {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+  .product-1{
+    margin: 0 auto;
+  margin-bottom: 20px;
+    width:48%;
+  }
+  .product-1 p{
+    font-size:12px;
+  }
+  .optional{
+    margin-top:10px;
+    margin-bottom:30px;
+    font-size:40px;
+  }
+  .steamer-team{
+    height:160px;
+  }
+  .team-member-image h1{
+    font-size:20px;
+    margin-bottom:10px;
+  }
+  .team-member-image{
+    top:36%;
+  }
+  .team-members img {
+	height: 180px;
+}
+  .team-consair .team-members .team-1 {
+	width: 45%;
+}
+  .team-consair .team-members{
+    justify-content:space-between;
+  }
+  .team-consair .team-members h3{
+    font-size:20px;
+  }
+  .apply-now-section p{
+    width:100%;
+  }
+  .mem-img {
+	width: 100%;
+}
+  .mem-img img{
+    width:100% !important;
+  }
+  .mem-text {
+	width: 100%;
+}
+  .popup-content{
+    width:90%;
+    height:auto;
+  }
+  .popup-content p{
+    font-size:16px;
+    text-align:justify;
+  }
+  .content-flex {
+	margin-top: 20px;
+}
+.popup-content a.close {
+	top: -70px;
+	right: -10px;
+}
+  .mem-img img{
+width:100%;
+  }
+.first-sim-racing{
+  transform:none;
+  left:0;
+  top:55%;
+}
+  .alpine-team{
+    height:430px;
+  }
+  .first-sim-racing h1{
+    font-size:28px;
+  }
+  .alpine-video-text {
+	padding: 30px 0;
+}
+  .alpine-video-text {
+	padding: 30px 0 0;
+}
+  .alpine-world {
+	padding: 20px 0;
+}
+  .alpine-world h2 {
+	margin-bottom: 30px;
+}
+  .alpine-world-img-2{
+    width:100%;
+  }
+  .exp-ultimate{
+    flex-wrap:wrap;
+  }
+  .drive-second{
+    margin-bottom:20px;
+  }
+  .drive-seconds h2{
+     margin-bottom:10px; 
+  }
+  .about-alpine{
+    padding:0;
+  }
+  .about-alpine-flex img {
+	width: 100%;
+}
+  .about-alpine-flex .about-alpine-team{
+    width:100%;
+  }
+  .drive-seconds {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+  .about-alpine h2 {
+	margin-bottom: 20px;
+}
+  .about-alpine-team p{
+    padding:20px 0;
+  }
+}
