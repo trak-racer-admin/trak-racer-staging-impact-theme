@@ -1,0 +1,121 @@
+.container{
+  width:1500px;
+  margin:0 auto;
+}
+.d-global {
+	text-align: center;
+	padding: 100px 0 0;
+}
+.d-global p{
+  font-size:24px;
+}
+.d-global span {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	display: block;
+}
+.dbox-move img{
+  width:100%;
+}
+.another-level{
+  display:flex;
+  flex-wrap:wrap;
+}
+.right-level.sim-img img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+.left-level, .right-level{
+  width:50%;
+  align-self:center;
+}
+.system-benefits{
+  text-align:center;
+  padding:100px 0;
+}
+.benefit-box{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+.benefit-1{
+  width:31.9%;
+  text-align:left;
+  padding-top:15px;
+  margin-block-start: 0 !important;
+  margin-right:30px;
+}
+.benefit-1:nth-child(3){
+  margin-right:0;
+}
+.reveiws-list{
+  text-align:center;
+}
+.review-video{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+margin-top:30px;
+}
+.yt-video p{
+  text-align:left;
+  padding-top:20px;
+}
+.ultimate-experience{
+  padding:100px 0;
+}
+.yt-video {
+	width: 48%;
+  margin-block-start: 0 !important;
+}
+.benefit-1 img{
+  width:300px;
+  object-fit:contain;
+}
+.benefit-1 p{
+  height:100px;
+}
+@media only screen and (max-width:1600px) and (min-width:1200px){
+  .container{
+    width:90%;
+  }
+
+}
+@media only screen and (max-width:1199px) and (min-width:768px){
+  .container{
+    width:90%;
+  }
+
+}
+@media only screen and (max-width:767px) and (min-width:320px){
+  .container{
+    width:90%;
+  }
+.d-global p {
+	font-size: 16px;
+}
+  .d-global span{
+    font-size:18px;
+  }
+  .d-global{
+    padding:50px 0;
+  }
+  .left-level, .right-level {
+	width: 100%;
+	align-self: center;
+}
+  .lev-new {
+    flex-direction:column-reverse;
+  }
+  .system-benefits{
+    padding:50px 0;
+  }
+  .benefit-1{
+width:100%;
+  }
+  .ultimate-experience {
+	padding: 50px 0;
+}
+}

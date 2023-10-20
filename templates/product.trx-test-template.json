@@ -126,7 +126,7 @@
             "text_color": "#545454"
           }
         },
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1": {
+        "f79fd264-a794-46b9-ad59-eb6b1d101131": {
           "type": "shopify:\/\/apps\/vimg-multiple-variant-images\/blocks\/app.block\/3fcfc3bb-b4e3-44bd-9ff9-3d525461bb38",
           "settings": {
           }
@@ -149,7 +149,7 @@
         "2feb5056-48de-4c75-b21d-eaeadecae15b",
         "a89d3139-d37b-4d55-8f2b-66855e7f62de",
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
-        "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
+        "f79fd264-a794-46b9-ad59-eb6b1d101131"
       ],
       "settings": {
         "full_width": true,
@@ -391,6 +391,57 @@
         "chart_true_false_color": ""
       }
     },
+    "60e04e2d-ec6f-40e6-965d-dcdca49799af": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "3fa5c3e9-a457-4dfc-963f-3bd9b70d1363": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17061529485476__3fa5c3e9-a457-4dfc-963f-3bd9b70d1363-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dimensions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "479dd6d9-4055-4981-a83e-c2d7c487cb29": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
+            "width_mode": "full_width",
+            "max_width": 1000,
+            "mobile_max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "template--17061529485476__3fa5c3e9-a457-4dfc-963f-3bd9b70d1363-heading-1",
+        "479dd6d9-4055-4981-a83e-c2d7c487cb29"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -410,6 +461,7 @@
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
@@ -424,6 +476,7 @@
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-truck",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
@@ -514,6 +567,7 @@
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
         "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -531,6 +585,55 @@
         "button_text_color": "",
         "accordion_background": "#f2f2f2",
         "accordion_text_color": "#000000"
+      }
+    },
+    "a3dfce6f-fade-4c5a-a222-b343f3c45247": {
+      "type": "tabs",
+      "blocks": {
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Wheel Mount",
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Pedal Mount",
+            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shifter & Handbrake Mount",
+            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-1",
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-2",
+        "template--17061529485476__a3dfce6f-fade-4c5a-a222-b343f3c45247-tab-3"
+      ],
+      "custom_css": [
+        ".tab-content {text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "subheading": "",
+        "title": "Compatibility",
+        "first_tab_open": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "015dc3a2-534d-417a-96e0-83bcf42175ab": {
@@ -596,11 +699,11 @@
         "cbfa0aa7-9293-4cf3-b901-d21cbcf8e3c7"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
+        "background": "#ffffff",
+        "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
         "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
@@ -615,8 +718,11 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
+    "60e04e2d-ec6f-40e6-965d-dcdca49799af",
+    "3fa5c3e9-a457-4dfc-963f-3bd9b70d1363",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "a3dfce6f-fade-4c5a-a222-b343f3c45247",
     "015dc3a2-534d-417a-96e0-83bcf42175ab",
     "related-products",
     "16919816096b1b8f4c"

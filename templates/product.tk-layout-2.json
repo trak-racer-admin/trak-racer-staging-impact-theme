@@ -250,11 +250,11 @@
         "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#717070",
-        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1) 8%, rgba(99, 99, 99, 1) 47%, rgba(143, 143, 143, 1) 84%)",
+        "background": "#ffffff",
+        "background_gradient": "",
         "text_color": "rgba(0,0,0,0)",
         "enable_review_integration": true,
         "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
