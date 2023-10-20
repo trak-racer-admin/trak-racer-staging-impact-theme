@@ -461,6 +461,7 @@
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
@@ -475,6 +476,7 @@
         },
         "template--19236073701664__974a92ca-5417-47d7-bae4-547d0c063284-16855849733f9e6733-2": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-truck",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
