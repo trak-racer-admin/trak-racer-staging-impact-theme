@@ -44,7 +44,7 @@
     "product_image_aspect_ratio": "short",
     "product_info_alignment": "center",
     "cart_type": "page",
-    "cart_show_free_shipping_threshold": true,
+    "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": 1000,
     "social_facebook": "https:\/\/www.facebook.com\/trakracer\/",
     "social_twitter": "https:\/\/twitter.com\/trak_racer",
