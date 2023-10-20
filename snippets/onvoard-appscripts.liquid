@@ -1,0 +1,83 @@
+
+<script>
+
+var ovData = {};
+ovData["ecommerce_platform"] = "shopify";
+ovData["account_id"] = "acct_5l9cj5are7jpnnz";
+
+
+  ovData["page_type"] = "{{ request.page_type }}";
+  ovData["template"] = "{{ template }}";
+  ovData["cart"] = {{ cart | json }};
+  ovData["product"] = {{ product | json }};
+  ovData["shop"] = {};
+  ovData["customer"] = {};
+
+  {% if shop %}
+    ovData["shop"] = {
+      "currency": "{{ shop.currency }}",
+      "myshopify_domain": "{{ shop.permanent_domain }}",
+      "secure_url": "{{ shop.secure_url }}",
+    };
+  {% endif %}
+
+  {% if customer %}
+    var ovLastOrder = {};
+
+    {% assign last_order = customer.last_order %}
+    {% if last_order %}
+      ovLastOrder = {
+        "total_net_amount": {{ last_order.total_net_amount }},
+        "total_discounts": {{ last_order.total_discounts }},
+        "total_price": {{ last_order.total_price }},
+        "order_number": {{ last_order.order_number }},
+        "financial_status": "{{ last_order.financial_status }}",
+        "created_at": "{{ last_order.created_at }}",
+        "cancelled_at": "{{ last_order.cancelled_at }}",
+      };
+    {% endif %}
+
+    ovData["customer"] = {
+      "id": "{{ customer.id }}",
+      "email": "{{ customer.email }}",
+      "name": "{{ customer.name }}",
+      "phone": "{{ customer.phone }}",
+      "accepts_marketing": {{ customer.accepts_marketing }},
+      "orders_count": {{ customer.orders_count }},
+      "total_spent": {{ customer.total_spent }},
+      "tags": {{ customer.tags | json }},
+      "last_order": ovLastOrder,
+    };
+  {% endif %}
+
+  window.OnVoardData = ovData;
+</script>
+
+
+
+
+
+
+{% if request.page_type == 'product' %}
+
+
+
+
+
+
+
+
+
+{% endif %}
+
+{% if request.page_type == 'index' %}
+
+{% endif %}
+
+{% if request.page_type == 'collection' %}
+
+{% endif %}
+
+{% if request.page_type == 'cart' %}
+
+{% endif %}

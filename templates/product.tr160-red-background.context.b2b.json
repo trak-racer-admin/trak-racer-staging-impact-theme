@@ -1,0 +1,8 @@
+{
+  "parent": "product.tr160-red-background.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+  }
+}

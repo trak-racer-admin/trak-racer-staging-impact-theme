@@ -69,10 +69,10 @@
     "general": {
       "description": "Description",
       "view_product": "View product",
-      "quick_add": "+ Quick add",
-      "add_to_cart_short": "+ Add",
-      "add_to_cart_button": "Add to cart",
-      "pre_order_button": "Pre-order",
+      "quick_add": "Add to Cart",
+      "add_to_cart_short": "Add to Cart",
+      "add_to_cart_button": "Add to Cart",
+      "pre_order_button": "Pre-Order",
       "sold_out_button": "Sold out",
       "unavailable_button": "Unavailable",
       "added_to_cart": "Added to your cart!",
@@ -323,8 +323,8 @@
       "remove": "Remove"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Spend {{ remaining_amount }} more and get free shipping!",
-      "limit_reached_html": "You are eligible for free shipping."
+      "limit_unreached_html": "Spend {{ remaining_amount }} more and get 20 bonus entries into our Black Friday giveaway!",
+      "limit_reached_html": "Congratulations! You've recieved the maximum number of entries into our Black Friday giveaway!"
     },
     "shipping_estimator": {
       "estimate_shipping": "Estimate shipping",

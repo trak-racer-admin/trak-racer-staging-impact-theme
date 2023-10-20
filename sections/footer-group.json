@@ -72,13 +72,27 @@
             "title": "Secure payment",
             "content": "<p>Tel your customers about your payment methods.<\/p>"
           }
+        },
+        "bff30cd9-fc82-49cb-8321-5a592030eb9f": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Heading",
+            "content": "<p>Short content about your store<\/p>"
+          }
         }
       },
       "block_order": [
         "free-shipping",
         "customer-support",
         "discount",
-        "payment"
+        "payment",
+        "bff30cd9-fc82-49cb-8321-5a592030eb9f"
       ],
       "disabled": true,
       "settings": {
@@ -125,13 +139,22 @@
             "menu": "service",
             "show_menu_title": true
           }
+        },
+        "2c83b313-91fb-438b-a3d7-53ef6668cbd9": {
+          "type": "text",
+          "settings": {
+            "title": "Customer Support",
+            "content": "<p>For SALES email us at <strong>sales@trakracer.com.au<\/strong><\/p><p>For SUPPORT email us at <strong>support@trakracer.com.au<\/strong><\/p>",
+            "enable_follow_on_shop": false
+          }
         }
       },
       "block_order": [
         "newsletter",
         "links",
         "b04f5f50-51db-467b-9546-223920775c32",
-        "1b353c78-1819-4f33-82ce-ef2f94b95921"
+        "1b353c78-1819-4f33-82ce-ef2f94b95921",
+        "2c83b313-91fb-438b-a3d7-53ef6668cbd9"
       ],
       "settings": {
         "show_social_media": true,
