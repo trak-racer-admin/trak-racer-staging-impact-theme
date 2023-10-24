@@ -144,7 +144,7 @@
           "type": "text",
           "settings": {
             "title": "Customer Support",
-            "content": "<p>For SALES email us at <strong>sales@trakracer.com.au<\/strong><\/p><p>For SUPPORT email us at <strong>support@trakracer.com.au<\/strong><\/p>",
+            "content": "<p>For SALES email us at <strong>sales@trakracer.com.au<\/strong><\/p><p>For SUPPORT email us at <strong>support@trakracer.com.au<\/strong><\/p><p><strong>Phone: <\/strong>+61 3 6361 0205<\/p>",
             "enable_follow_on_shop": false
           }
         }
