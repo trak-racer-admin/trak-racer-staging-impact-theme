@@ -283,6 +283,7 @@
         "c2675274-3f67-465b-ace3-06cd480ce2ee": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/simucube_active_pedal.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -305,7 +306,7 @@
         "9daa36b0-a728-4a7b-82c9-5da7381a036d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/simucube_rexing_bundle.webp",
+            "image": "shopify:\/\/shop_images\/simuult.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -328,7 +329,7 @@
         "1817c6f5-d983-4cb2-be48-e16cc8eabdea": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rexing-timun.png",
+            "image": "shopify:\/\/shop_images\/rexing-wheel-timun.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -396,6 +397,7 @@
         "209738d1-bcb2-43f1-b881-49764cb5cd34": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/heusinkveld-handbrake.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -418,6 +420,7 @@
         "6af323db-ac34-4a92-b9b7-6cc274953f72": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/vnm-shifter.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -440,11 +443,13 @@
         "d8d470a2-e10f-4836-8abf-93188a8bf2b8": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/615pTffNC4L._AC_UF894_1000_QL80.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
-            "icon_width": 48,
+            "custom_icon": "shopify:\/\/shop_images\/Laag_1.png",
+            "icon_width": 120,
             "subheading": "",
             "title": "TOBII Eye Tracker",
             "content": "<p>Tobii Eye Tracker 5 is the only PC gaming device capable of tracking both head and eye movements, unlocking a revolutionary new way to be less hands-on in your favorite games.<\/p>",
@@ -461,6 +466,7 @@
         "a86e8365-bc51-4630-8730-231d7ffcabf0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/tr-gaming-headset.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -469,7 +475,7 @@
             "icon_width": 120,
             "subheading": "",
             "title": "Trak Racer Gaming Headset",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "content": "",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -519,7 +525,7 @@
         "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
       ],
       "custom_css": [
-
+        ".media-with-text__media img {max-width: 100%; height: auto;}"
       ],
       "settings": {
         "full_width": false,
@@ -541,9 +547,9 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
@@ -551,6 +557,41 @@
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
+      }
+    },
+    "3c2f40cd-3162-4b02-b86f-25538e0430b9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Terms & Conditions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>Competition conducted by Trak Racer, of 278 Canterbury Rd, Surrey Hills, VIC, 3127.<\/li><li>Competition commences at 12am on 1\/11\/23 and closes at 11.59pm on 31\/12\/23 (AEST) (Entry Period).<\/li><\/ul><p><strong>To enter the Competition, an Eligible Entrant must meet any of the following conditions:<\/strong><\/p><ul><li>One entry by signing up to Trak Racer’s emailing list<\/li><li>Ten entries by spending $1000 or more on Trak Racer’s website (cart value).<\/li><li>Twenty entries by spending $2000 or more on Trak Racer’s website (cart value)<\/li><li>If the entrant meets the mentioned requirements, they automatically enter the competition.<\/li><li>If an eligible entrant purchases through a Trak Racer distributor, they must meet the above conditions and fill out the form listed on www.trakracer.com\/pages\/giveaway.<\/li><li>Eligible entrants purchased through Trak Racer distributors must<\/li><li>ensure their purchases are on Trak Racer products only.<\/li><li>Eligible Entrants must be opted in to receive Trak Racer marketing communications and must not opt out during the Entry Period.<\/li><li>The winner will be drawn at 12pm on 16\/1\/24 by Trak Racer.<\/li><li>The winner will be notified by phone and email by 19\/1\/24 and published on all Trak Racer’s social media channels (Facebook, Instagram, TikTok, Snapchat, LinkedIn) and on the competition website.<\/li><li>If the winner does not respond within 7 days, a new winner will be drawn.<\/li><li>The winner may be required to pay for shipping, and taxes if applicable.<\/li><li>It is a condition of entry that Eligible Entrants consent to receive Trak Racer marketing communications and do not opt out during the Entry Period.<\/li><li>Entrants may only enter the Competition in their own name. Multiple entries are permitted, but each entry must comply with these conditions.<\/li><li>If an entrant decides to return their order and their order value does not meet the conditions, they will be removed from the competition<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1",
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     }
   },
@@ -563,6 +604,7 @@
     "3fefa21b-9563-40cf-b680-7b259a53324a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "78455a80-7a61-442f-898c-2cd06983f76c",
-    "1698227512f130f481"
+    "1698227512f130f481",
+    "3c2f40cd-3162-4b02-b86f-25538e0430b9"
   ]
 }
