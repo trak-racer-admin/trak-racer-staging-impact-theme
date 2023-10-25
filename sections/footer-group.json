@@ -156,6 +156,9 @@
         "1b353c78-1819-4f33-82ce-ef2f94b95921",
         "2c83b313-91fb-438b-a3d7-53ef6668cbd9"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "show_social_media": true,
         "show_payment_icons": true,
