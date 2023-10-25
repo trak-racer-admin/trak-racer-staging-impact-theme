@@ -66,6 +66,9 @@
         "f91c07d4-d148-43c3-a44f-3375b6a4b064",
         "31568250-3df9-4c8e-8d39-1a6391baf84d"
       ],
+      "custom_css": [
+        "div {padding-bottom: 5px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -74,7 +77,7 @@
         "text_divider": "none",
         "impact_text_size_ratio": 1,
         "background": "",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(90deg, rgba(215, 33, 44, 1), rgba(NaN, NaN, NaN, 0) 100%)",
         "heading_text_color": "",
         "heading_gradient": "",
         "text_color": "",
@@ -82,15 +85,34 @@
         "button_text_color": ""
       }
     },
-    "89a48d11-adde-4f0d-a7e8-33c5f1c073c3": {
+    "7a69025d-51d3-444b-8c1c-56eccbabd91e": {
       "type": "rich-text",
       "blocks": {
-        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-subheading-1": {
+        "template--17179735490724__7a69025d-51d3-444b-8c1c-56eccbabd91e-subheading-1": {
           "type": "subheading",
           "settings": {
             "text": "Each of which will automatically enter you into the draw."
           }
-        },
+        }
+      },
+      "block_order": [
+        "template--17179735490724__7a69025d-51d3-444b-8c1c-56eccbabd91e-subheading-1"
+      ],
+      "custom_css": [
+        "div {padding-top: 5px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "89a48d11-adde-4f0d-a7e8-33c5f1c073c3": {
+      "type": "rich-text",
+      "blocks": {
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1": {
           "type": "heading",
           "settings": {
@@ -108,18 +130,18 @@
         }
       },
       "block_order": [
-        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-subheading-1",
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1",
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1"
       ],
       "custom_css": [
-
+        "p {color: white;}",
+        "div {padding-bottom: 0;}"
       ],
       "settings": {
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
         "text_color": ""
       }
@@ -139,7 +161,7 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "background": "#000000",
         "background_gradient": "",
@@ -179,11 +201,6 @@
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
       "type": "rich-text",
       "blocks": {
-        "fe538d40-3d0b-4082-acec-a496d4b26fcd": {
-          "type": "divider",
-          "settings": {
-          }
-        },
         "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1": {
           "type": "heading",
           "settings": {
@@ -199,6 +216,17 @@
             "content": "<p>Rhys, from Sydney, Australia, was the lucky winner to our 2022 Sim Racing Package Giveaway valued at US$9,000. He won a Simucube Ultimate, Rexing GT Wheel, Rexing Formula Wheel, Meca Cup Pedals, Meca EVO Handbrake and Meca Evo Shifter.<\/p>"
           }
         },
+        "87314646-e227-408e-b8d7-a54730c5a178": {
+          "type": "subheading",
+          "settings": {
+            "text": "THIS YEAR WE DECIDED TO GO BIGGER WITH…"
+          }
+        },
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd": {
+          "type": "divider",
+          "settings": {
+          }
+        },
         "82d1ac28-819b-4837-8152-7811a3a3bc20": {
           "type": "image",
           "settings": {
@@ -207,20 +235,14 @@
             "max_width": 600,
             "mobile_max_width": 400
           }
-        },
-        "87314646-e227-408e-b8d7-a54730c5a178": {
-          "type": "subheading",
-          "settings": {
-            "text": "THIS YEAR WE DECIDED TO GO BIGGER WITH…"
-          }
         }
       },
       "block_order": [
-        "fe538d40-3d0b-4082-acec-a496d4b26fcd",
         "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1",
         "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1",
-        "82d1ac28-819b-4837-8152-7811a3a3bc20",
-        "87314646-e227-408e-b8d7-a54730c5a178"
+        "87314646-e227-408e-b8d7-a54730c5a178",
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd",
+        "82d1ac28-819b-4837-8152-7811a3a3bc20"
       ],
       "settings": {
         "full_width": true,
@@ -330,7 +352,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/rexing-wheel-timun.png",
-            "media_width": 50,
+            "media_width": 45,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
@@ -353,7 +375,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/RexingFormula2021PNG_7_S.png",
-            "media_width": 50,
+            "media_width": 45,
             "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
@@ -595,6 +617,33 @@
         "text_color": ""
       }
     },
+    "768177f5-00ec-48e0-9f38-953a4a91e07b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "alpine-racing-trx-2023-livery"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
       "type": "collection-list",
       "blocks": {
@@ -701,6 +750,7 @@
     "main",
     "d3590901-cb13-4b5f-b5cb-14e3db60410b",
     "5fbea669-366b-44fc-98aa-358feb985385",
+    "7a69025d-51d3-444b-8c1c-56eccbabd91e",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
@@ -708,6 +758,7 @@
     "78455a80-7a61-442f-898c-2cd06983f76c",
     "1698227512f130f481",
     "3c2f40cd-3162-4b02-b86f-25538e0430b9",
+    "768177f5-00ec-48e0-9f38-953a4a91e07b",
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d"
   ]
 }
