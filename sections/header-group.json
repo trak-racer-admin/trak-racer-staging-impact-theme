@@ -139,7 +139,7 @@
         "enable_sticky": true,
         "hide_on_scroll": false,
         "logo": "shopify:\/\/shop_images\/512_px_logo_07004d81-0ef8-4a87-b0c3-c9f87908dda7.png",
-        "logo_max_width": 200,
+        "logo_max_width": 140,
         "logo_mobile_max_width": 170,
         "menu": "main-menu-impact",
         "sidebar_menu": "main-menu-impact-drawer",
