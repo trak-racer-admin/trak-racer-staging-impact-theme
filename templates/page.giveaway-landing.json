@@ -457,6 +457,51 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "a86e8365-bc51-4630-8730-231d7ffcabf0": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Trak Racer Gaming Headset",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trak-racer-gloves.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Trak Racer Sim Racing Gloves",
+            "content": "<p>Introducing the ultimate multi-use racing gloves from Trak Racer, designed to give you the competitive edge on the track and also protect your wheel grip from rapid wear and tear. Our gloves are made with high-quality materials to provide maximum comfort and protection during intense racing sessions.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
@@ -469,7 +514,9 @@
         "400b7377-c8ab-4f2e-b187-e8894fbed714",
         "209738d1-bcb2-43f1-b881-49764cb5cd34",
         "6af323db-ac34-4a92-b9b7-6cc274953f72",
-        "d8d470a2-e10f-4836-8abf-93188a8bf2b8"
+        "d8d470a2-e10f-4836-8abf-93188a8bf2b8",
+        "a86e8365-bc51-4630-8730-231d7ffcabf0",
+        "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
       ],
       "custom_css": [
 
@@ -477,6 +524,33 @@
       "settings": {
         "full_width": false,
         "spacing": "small"
+      }
+    },
+    "1698227512f130f481": {
+      "type": "apps",
+      "blocks": {
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "RZ3qBk"
+          }
+        }
+      },
+      "block_order": [
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     }
   },
@@ -488,6 +562,7 @@
     "169822355365a42863",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
-    "78455a80-7a61-442f-898c-2cd06983f76c"
+    "78455a80-7a61-442f-898c-2cd06983f76c",
+    "1698227512f130f481"
   ]
 }
