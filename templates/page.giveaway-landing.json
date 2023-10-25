@@ -106,10 +106,13 @@
             "content": "<p>By submitting your email, you accept <a href=\"https:\/\/trakracer.com\/pages\/giveaway-landing#\">Trak Racer’s Privacy Policy<\/a><\/p>"
           }
         },
-        "c5ed4518-d5d1-4543-8dc4-487887ca510a": {
-          "type": "liquid",
+        "eca64e6d-d516-4688-bb58-a973a647bfe7": {
+          "type": "heading",
           "settings": {
-            "liquid": "{%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}\n                      {%- if form.posted_successfully? -%}\n                        {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}\n                        {%- render 'banner', content: success_message, status: 'success' -%}\n                      {%- else -%}\n                        {%- if form.errors -%}\n                          {%- capture error_message -%}{{ form.errors.translated_fields['email'] }} {{ form.errors.messages['email'] }}{%- endcapture -%}\n                          {%- render 'banner', content: error_message, status: 'error' -%}\n                        {%- endif -%}\n\n                        <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter\">\n\n                        {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}\n                        {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}\n                      {%- endif -%}\n                    {%- endform -%}"
+            "text": "GIVEAWAY ENDS IN:",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
           }
         }
       },
@@ -117,7 +120,7 @@
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-subheading-1",
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1",
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1",
-        "c5ed4518-d5d1-4543-8dc4-487887ca510a"
+        "eca64e6d-d516-4688-bb58-a973a647bfe7"
       ],
       "custom_css": [
 
