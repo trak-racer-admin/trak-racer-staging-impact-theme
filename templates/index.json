@@ -198,7 +198,7 @@
             "subheading": "testing subheading bold",
             "make_subheading_bold": false,
             "title": "testing heading bold",
-            "make_heading_bold": false,
+            "make_heading_bold": true,
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "shopify:\/\/products\/tr160-mk4-racing-simulator",
