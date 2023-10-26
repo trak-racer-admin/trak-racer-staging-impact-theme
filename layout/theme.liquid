@@ -21,7 +21,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PWHJTV9X');</script>
 <!-- End Google Tag Manager -->
-
+<srcript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"/>
 <!-- Hotjar Tracking Code for Trak Racer AU -->
 <script>
     (function(h,o,t,j,a,r){
@@ -128,5 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </main>
   {% render 'globo.preorder.customs' %}
   {% include "onvoard-appscripts" %}
+
+      <script src="{{ 'custom-script.js' | asset_url }}" defer="defer"></script>
 </body>
 </html>
