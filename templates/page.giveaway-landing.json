@@ -198,6 +198,25 @@
         "text_color": ""
       }
     },
+    "6469952e-51f6-464d-99d5-142fdf72110a": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "h3 {text-align: center; margin-bottom: 25px; }",
+        ".giveaway-time {display: flex; flex-wrap: wrap; justify-content: space-between; width: 770px; margin: 0 auto; padding-bottom: 100px;}",
+        ".duration {border: 1px solid #383838; padding: 35px 49px 15px; text-align: center; width: 170px; box-sizing: border-box;}",
+        ".duration h4 {font-size: 96px; margin-bottom: 0;}",
+        ".duration p {font-size: 24px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<\/div>\n<h3>Giveaway ends in:<\/h3>\n            <div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
       "type": "rich-text",
       "blocks": {
@@ -754,6 +773,7 @@
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
+    "6469952e-51f6-464d-99d5-142fdf72110a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "78455a80-7a61-442f-898c-2cd06983f76c",
     "1698227512f130f481",
