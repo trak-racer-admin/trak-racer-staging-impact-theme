@@ -87,6 +87,7 @@ LIQUID
 
           <div {% render 'surface', class: content_class, text_color: block.settings.text_color %}>
             <div class="prose">
+              <!-- HC - Making Subheading and Heading Bold - 26 Oct '23 -->
               {%- if block.settings.subheading != blank -%}
                 <p class="{% if block.settings.make_subheading_bold %}bold{% endif %}" data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
               {%- endif -%}
