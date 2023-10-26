@@ -189,6 +189,9 @@
       "block_order": [
         "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1"
       ],
+      "custom_css": [
+        "div {margin-bottom: 0px;}"
+      ],
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -201,7 +204,6 @@
     "6469952e-51f6-464d-99d5-142fdf72110a": {
       "type": "custom-liquid",
       "custom_css": [
-        "h3 {text-align: center; margin-bottom: 25px; }",
         ".giveaway-time {display: flex; flex-wrap: wrap; justify-content: space-between; width: 770px; margin: 0 auto; padding-bottom: 100px;}",
         ".duration {border: 1px solid #383838; padding: 35px 49px 15px; text-align: center; width: 170px; box-sizing: border-box;}",
         ".duration h4 {font-size: 96px; margin-bottom: 0;}",
@@ -211,7 +213,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<\/div>\n<h3>Giveaway ends in:<\/h3>\n            <div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
+        "liquid": "<\/div>\n            <div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
