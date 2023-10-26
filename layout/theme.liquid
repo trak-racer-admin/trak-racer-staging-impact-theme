@@ -48,6 +48,8 @@ t.parentNode.insertBefore(y,t);
 
     <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
