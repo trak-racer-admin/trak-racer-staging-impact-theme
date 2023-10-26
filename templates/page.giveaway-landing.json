@@ -20,7 +20,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "1b526b28-baf7-462b-958f-968b96d7360b": {
@@ -36,7 +36,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3": {
@@ -154,7 +154,7 @@
         "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Last Years Winner",
+            "text": "Last Year's Winner",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
