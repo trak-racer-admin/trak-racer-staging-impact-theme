@@ -88,11 +88,11 @@ LIQUID
           <div {% render 'surface', class: content_class, text_color: block.settings.text_color %}>
             <div class="prose">
               {%- if block.settings.subheading != blank -%}
-                <p class="bold" data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
+                <p class="{% if block.settings.make_subheading_bold %}bold{% endif %}" data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
               {%- endif -%}
 
               {%- if block.settings.title != blank -%}
-                <p class="{{ block.settings.heading_tag }}" data-sequence="heading">
+                <p class="{{ block.settings.heading_tag }} {% if block.settings.make_heading_bold %}bold{% endif %}" data-sequence="heading">
                   {%- render 'styled-text', content: block.settings.title, apparition_effect: true -%}
                 </p>
               {%- endif -%}
