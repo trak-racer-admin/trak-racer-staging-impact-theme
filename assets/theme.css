@@ -9876,3 +9876,10 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
+
+/* HC - Making Subheading and Heading Bold - 26 Oct '23 */
+
+.shopify-section--slideshow .bold
+{
+    font-weight: bold !important;
+}
