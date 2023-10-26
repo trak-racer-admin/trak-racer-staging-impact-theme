@@ -14,6 +14,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/giveaway_AU.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile_au.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -21,93 +23,20 @@
         "overlay_opacity": 30
       }
     },
-    "5fbea669-366b-44fc-98aa-358feb985385": {
-      "type": "impact-text",
-      "blocks": {
-        "8b2fd8f5-b9dc-4652-8b59-e64f56b43c8c": {
-          "type": "item",
-          "settings": {
-            "title": "1",
-            "subheading": "ENTRY",
-            "content": "<p>Sign up to the newsletter<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "f91c07d4-d148-43c3-a44f-3375b6a4b064": {
-          "type": "item",
-          "settings": {
-            "title": "10",
-            "subheading": "ENTRIES",
-            "content": "<p>Spend $1000<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 0.5
-          }
-        },
-        "31568250-3df9-4c8e-8d39-1a6391baf84d": {
-          "type": "item",
-          "settings": {
-            "title": "20",
-            "subheading": "ENTRIES",
-            "content": "<p>Spend $2000<\/p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 0.8
-          }
-        }
-      },
-      "block_order": [
-        "8b2fd8f5-b9dc-4652-8b59-e64f56b43c8c",
-        "f91c07d4-d148-43c3-a44f-3375b6a4b064",
-        "31568250-3df9-4c8e-8d39-1a6391baf84d"
-      ],
-      "custom_css": [
-        "div {padding-bottom: 5px;}"
-      ],
+    "1b526b28-baf7-462b-958f-968b96d7360b": {
+      "type": "image-with-text-overlay",
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "linear-gradient(90deg, rgba(215, 33, 44, 1), rgba(NaN, NaN, NaN, 0) 100%)",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "7a69025d-51d3-444b-8c1c-56eccbabd91e": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17179735490724__7a69025d-51d3-444b-8c1c-56eccbabd91e-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Each of which will automatically enter you into the draw."
-          }
-        }
-      },
-      "block_order": [
-        "template--17179735490724__7a69025d-51d3-444b-8c1c-56eccbabd91e-subheading-1"
-      ],
-      "custom_css": [
-        "div {padding-top: 5px;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/web_banner_entries.png",
+        "mobile_image": "shopify:\/\/shop_images\/edm_entries.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3": {
@@ -638,33 +567,6 @@
         "text_color": ""
       }
     },
-    "768177f5-00ec-48e0-9f38-953a4a91e07b": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [
-          "alpine-racing-trx-2023-livery"
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_count": 9,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
       "type": "collection-list",
       "blocks": {
@@ -770,8 +672,7 @@
   "order": [
     "main",
     "d3590901-cb13-4b5f-b5cb-14e3db60410b",
-    "5fbea669-366b-44fc-98aa-358feb985385",
-    "7a69025d-51d3-444b-8c1c-56eccbabd91e",
+    "1b526b28-baf7-462b-958f-968b96d7360b",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
@@ -780,7 +681,6 @@
     "78455a80-7a61-442f-898c-2cd06983f76c",
     "1698227512f130f481",
     "3c2f40cd-3162-4b02-b86f-25538e0430b9",
-    "768177f5-00ec-48e0-9f38-953a4a91e07b",
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d"
   ]
 }
