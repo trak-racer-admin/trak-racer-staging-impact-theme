@@ -139,7 +139,7 @@
         ".duration p {font-size: 24px;}"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
