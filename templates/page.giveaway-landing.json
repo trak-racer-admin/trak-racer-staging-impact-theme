@@ -137,7 +137,8 @@
         ".duration {border: 1px solid #383838; padding: 0 0 15px; text-align: center; width: 170px; box-sizing: border-box;}",
         ".duration h4 {font-size: 96px; margin-bottom: 0;}",
         ".duration p {font-size: 24px;}",
-        "@media only screen and (max-width: 1199px) and (min-width: 768px) {.duration {padding: 15px 35px; width: 150px; } .duration h4 {font-size: 60px; } .giveaway-time {width: 100%; padding-bottom: 0px; }}"
+        "@media only screen and (max-width: 1199px) and (min-width: 768px) {.duration {padding: 15px 35px; width: 150px; } .duration h4 {font-size: 60px; } .giveaway-time {width: 100%; padding-bottom: 0px; }}",
+        "@media only screen and (max-width:767)"
       ],
       "settings": {
         "full_width": false,
