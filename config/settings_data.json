@@ -208,7 +208,7 @@
       ".duration h4 {font-size: 96px; margin-bottom: 0;}",
       ".duration p {font-size: 24px;}",
       "@media only screen and (max-width: 1199px) and (min-width: 768px) {.duration {padding: 15px 35px; width: 150px; } .duration h4 {font-size: 60px; } .giveaway-time {width: 100%; padding-bottom: 0px; }}",
-      "@media only screen and (max-width: 767px) and (min-width: 320px) {.giveaway-time {padding-bottom: 20px;justify-content: space-evenly; width:100%;}}"
+      "@media only screen and (max-width: 767px) and (min-width: 320px) {.giveaway-time {padding-bottom: 20px; justify-content: space-evenly; width: 100%; } .duration {padding: 15px 35px;margin-bottom: 20px;width: 35%;}}"
     ]
   }
 }
