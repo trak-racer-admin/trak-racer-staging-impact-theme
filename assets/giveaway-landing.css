@@ -93,7 +93,7 @@
 .duration {
 	border: 1px solid #383838;
 	background: #121212;
-	padding: 0px 0px 15px;
+	padding: 35px 49px 15px;
 	text-align: center;
 	width: 170px;
 	box-sizing: border-box;
@@ -133,6 +133,17 @@
 .alpine-image:last-child{
 border-bottom:0;
 }
+.alpine-right h3{
+  display:none;
+}
+.alpine-left h3{display:block;}
+.alpine-left .right-logo{
+  display:none;
+}
+.alpine-right .right-logo{
+  display:block;
+}
+
 .winner-text b {
 	font-size: 18px;
 	margin-top: 50px;
@@ -504,5 +515,22 @@ margin-right:0;
 	right: 145px;
 	opacity: 1;
 	top: 440px;
+}
+  .alpine-right h3{
+  display:block;
+}
+.alpine-left h3
+  {display:none;
+  }
+
+.alpine-left .right-logo {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.alpine-right .right-logo{
+  display:none;
 }
 }
