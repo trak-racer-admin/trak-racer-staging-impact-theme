@@ -82,13 +82,13 @@ t.parentNode.insertBefore(y,t);
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
     <script type="module" src="{{ 'sections.js' | asset_url }}"></script>
+       <script type="module" src="{{ 'custom-script.js' | asset_url }}"></script>
 
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'custom-temp.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'dbox-new.css' | asset_url | stylesheet_tag: preload: true -}}
-    {{ -'giveaway-temp.css' | asset_url | stylesheet_tag: prelaod: true- }}
   {% include "onvoard-initialize-head" %}
 </head>
 
