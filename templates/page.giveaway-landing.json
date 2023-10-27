@@ -134,7 +134,7 @@
       "type": "custom-liquid",
       "custom_css": [
         ".giveaway-time {display: flex; flex-wrap: wrap; justify-content: space-between; width: 770px; margin: 0 auto; padding-bottom: 100px;}",
-        ".duration {border: 1px solid #383838; padding: 35px 49px 15px; text-align: center; width: 170px; box-sizing: border-box;}",
+        ".duration {border: 1px solid #383838; padding: 0 0 15px; text-align: center; width: 170px; box-sizing: border-box;}",
         ".duration h4 {font-size: 96px; margin-bottom: 0;}",
         ".duration p {font-size: 24px;}"
       ],
