@@ -32,7 +32,7 @@
     "text_font_size_desktop": 17,
     "text_font_letter_spacing": 5,
     "currency_code_enabled": false,
-    "show_page_transition": true,
+    "show_page_transition": false,
     "heading_apparition": "fade",
     "color_swatch_style": "round",
     "color_swatch_config": "Alpine Racing Blue:#6a97fd\nBlack:#000000",
