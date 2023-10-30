@@ -559,9 +559,9 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "start",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
@@ -575,10 +575,10 @@
             "title": "Racing Simulators",
             "url": "",
             "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2": {
@@ -589,10 +589,10 @@
             "title": "",
             "url": "",
             "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3": {
@@ -603,10 +603,10 @@
             "title": "",
             "url": "",
             "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "ff564899-fe69-4aa2-b17a-f4b8f82e0288": {
@@ -617,10 +617,10 @@
             "title": "",
             "url": "",
             "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "55be72f5-1e77-4b46-b2d1-0bf8053ef72b": {
@@ -631,10 +631,10 @@
             "title": "",
             "url": "",
             "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
@@ -658,9 +658,9 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#ffffff",
         "heading_color": "",
         "heading_gradient": ""
       }
