@@ -123,6 +123,7 @@
           "type": "collection",
           "settings": {
             "collection": "monitor-stands",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_2.jpg",
             "subheading": "",
             "title": "Monitor Stands",
             "url": "",
@@ -137,6 +138,7 @@
           "type": "collection",
           "settings": {
             "collection": "seats-seat-add-ons",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_3.jpg",
             "subheading": "",
             "title": "Seats",
             "url": "",
@@ -151,6 +153,7 @@
           "type": "collection",
           "settings": {
             "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_4.jpg",
             "subheading": "",
             "title": "Accessories",
             "url": "",
