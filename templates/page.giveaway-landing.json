@@ -200,6 +200,39 @@
         "text_color": "#ffffff"
       }
     },
+    "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "alpine-racing-trx-2023-livery",
+          "motion-system-with-4-motors-actuators-and-motion-sim-base",
+          "rexing-gt-wheel",
+          "rexing-formula-wheel-mayaris",
+          "sim-handbrake",
+          "vnm-shifter-h-pattern-manual-or-sequential-gearbox",
+          "trak-racer-mutli-use-sim-racing-gloves-grey-camo"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 50,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Featuring",
+        "content": "<p>And (not featured below):<\/p><ul><li>2x Simucube ActivePedal<\/li><li>Simucube 2 Ultimate<\/li><li>Trak Racer Ultrawide 49” Monitor<\/li><li>TOBII Eye Tracker<\/li><li>Trak Racer Wireless Gaming Headset<\/li><\/ul>",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#282828",
+        "product_card_text_color": "#ffffff"
+      }
+    },
     "78455a80-7a61-442f-898c-2cd06983f76c": {
       "type": "media-with-text",
       "blocks": {
@@ -676,6 +709,7 @@
     "3fefa21b-9563-40cf-b680-7b259a53324a",
     "6469952e-51f6-464d-99d5-142fdf72110a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
+    "591138f3-e4fc-4e77-aba7-9f761bbf1309",
     "78455a80-7a61-442f-898c-2cd06983f76c",
     "1698227512f130f481",
     "3c2f40cd-3162-4b02-b86f-25538e0430b9",
