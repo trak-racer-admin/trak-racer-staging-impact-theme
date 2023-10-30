@@ -499,8 +499,8 @@
         ".section-full {background-color: black;}"
       ],
       "settings": {
-        "full_width": true,
-        "spacing": "none"
+        "full_width": false,
+        "spacing": "small"
       }
     },
     "1698227512f130f481": {
