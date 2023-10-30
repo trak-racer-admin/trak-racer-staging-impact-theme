@@ -125,9 +125,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "6469952e-51f6-464d-99d5-142fdf72110a": {
@@ -136,13 +136,13 @@
 
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
@@ -153,7 +153,7 @@
           "settings": {
             "text": "Last Year's Winner",
             "heading_tag": "h2",
-            "text_color": "",
+            "text_color": "rgba(0,0,0,0)",
             "gradient": ""
           }
         },
