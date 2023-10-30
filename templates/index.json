@@ -263,40 +263,6 @@
         "text_color": ""
       }
     },
-    "1698673530bd4c0db1": {
-      "type": "apps",
-      "blocks": {
-        "946ed0ec-ce1c-43aa-bbd0-0d7093525878": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "tr160-mk4-racing-simulator"
-          }
-        },
-        "8d3acb38-a543-4780-afa7-e09f7f76c4f2": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "tr160-mk4-racing-simulator"
-          }
-        }
-      },
-      "block_order": [
-        "946ed0ec-ce1c-43aa-bbd0-0d7093525878",
-        "8d3acb38-a543-4780-afa7-e09f7f76c4f2"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
     "05811962-822c-4e4a-97c2-34ef4a64d154": {
       "type": "image-with-text-overlay",
       "custom_css": [
@@ -307,6 +273,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Revised_HP.png",
+        "mobile_image": "shopify:\/\/shop_images\/HP_MB.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -794,7 +762,6 @@
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "8267ced5-406c-4fc5-9985-0f4d89959265",
     "a7249964-ef67-4fd6-871d-4f88abab283c",
-    "1698673530bd4c0db1",
     "05811962-822c-4e4a-97c2-34ef4a64d154",
     "slideshow",
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
