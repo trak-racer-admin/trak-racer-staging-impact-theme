@@ -93,6 +93,7 @@
           "type": "collection",
           "settings": {
             "collection": "racing-simulators",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1.jpg",
             "subheading": "",
             "title": "Racing Simulators",
             "url": "",
@@ -107,6 +108,7 @@
           "type": "collection",
           "settings": {
             "collection": "flight-simulators",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie.jpg",
             "subheading": "",
             "title": "Flight Simulators",
             "url": "",
