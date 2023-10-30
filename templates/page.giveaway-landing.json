@@ -229,7 +229,7 @@
         "ab0a5f4f-13ff-4a5f-b3f5-92730b7643cd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DBOX-4-BASE.3.png",
+            "image": "shopify:\/\/shop_images\/DBOX_BASE_BF_1.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -275,7 +275,7 @@
         "9daa36b0-a728-4a7b-82c9-5da7381a036d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/simuult.png",
+            "image": "shopify:\/\/shop_images\/SIMUCUBE_DD_BF_1.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-end text-end",
