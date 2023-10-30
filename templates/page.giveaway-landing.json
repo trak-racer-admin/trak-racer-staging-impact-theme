@@ -367,10 +367,10 @@
         "209738d1-bcb2-43f1-b881-49764cb5cd34": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/heusinkveld-handbrake.png",
+            "image": "shopify:\/\/shop_images\/HV_HB_BF.png",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/heusinkveld.png",
             "icon_width": 120,
@@ -390,7 +390,7 @@
         "6af323db-ac34-4a92-b9b7-6cc274953f72": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vnm-shifter.png",
+            "image": "shopify:\/\/shop_images\/VN_SHIF_BF.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -416,7 +416,7 @@
             "image": "shopify:\/\/shop_images\/TOBI_BF.png",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/Laag_1.png",
             "icon_width": 80,
@@ -436,7 +436,7 @@
         "a86e8365-bc51-4630-8730-231d7ffcabf0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tr-gaming-headset.png",
+            "image": "shopify:\/\/shop_images\/TR_HEADSET_BF.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -459,10 +459,10 @@
         "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trak-racer-gloves.png",
+            "image": "shopify:\/\/shop_images\/TR_GLOVE_BF.png",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
             "icon_width": 120,
