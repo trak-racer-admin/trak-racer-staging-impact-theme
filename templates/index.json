@@ -33,6 +33,7 @@
         "464494f2-46aa-4849-bebf-b7fd7f7f812b",
         "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -43,6 +44,46 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 15
+      }
+    },
+    "847e1d92-d94e-416d-8e9c-fa5869d64d4e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--17175983947940__847e1d92-d94e-416d-8e9c-fa5869d64d4e-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black_friday.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/racing-simulators",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17175983947940__847e1d92-d94e-416d-8e9c-fa5869d64d4e-image-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
       }
     },
     "image-with-text-overlay": {
@@ -716,6 +757,7 @@
   },
   "order": [
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
+    "847e1d92-d94e-416d-8e9c-fa5869d64d4e",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "slideshow",
