@@ -171,9 +171,9 @@
         "full_width": true,
         "stack_collections": false,
         "collections_per_row": 5,
-        "show_progress_bar": true,
+        "show_progress_bar": false,
         "subheading": "",
-        "title": "Shop Simulation",
+        "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -287,6 +287,7 @@
       "blocks": {
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Tekengebied_2.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3.jpg",
@@ -390,7 +391,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Find your perfect simulator",
+        "title": "CHOOSE YOUR SIMULATOR",
         "content": "",
         "link_url": "shopify:\/\/collections\/racing-simulators",
         "link_text": "View all",
