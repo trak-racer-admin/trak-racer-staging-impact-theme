@@ -1,5 +1,32 @@
 {
   "sections": {
+    "1698677237406a7257": {
+      "type": "apps",
+      "blocks": {
+        "e9e1d90f-381a-4d1c-98e3-6a9ef20f5f59": {
+          "type": "shopify:\/\/apps\/onvoard-aov-progress-bar\/blocks\/aov-progress-bar\/73a9be24-355c-420e-90ba-44b9c69509c0",
+          "settings": {
+            "app_id": "apb_makjyn4w5930xnt"
+          }
+        }
+      },
+      "block_order": [
+        "e9e1d90f-381a-4d1c-98e3-6a9ef20f5f59"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "main": {
       "type": "main-cart",
       "blocks": {
@@ -76,6 +103,7 @@
     }
   },
   "order": [
+    "1698677237406a7257",
     "main",
     "674dbf5b-dada-4880-a1d9-02a660d7836d"
   ]
