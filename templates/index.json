@@ -167,6 +167,9 @@
         "26b7b6b1-63b7-45cc-81be-11b2ed9b54f0",
         "58fc28f1-a533-4b9f-8d7b-20247843e73f"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "stack_collections": false,
@@ -392,7 +395,7 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "CHOOSE YOUR SIMULATOR",
-        "content": "",
+        "content": "<p>Our steel, tubular profile rigs are perfect for everyone, from first-time racers to the pros! Our aluminium profile rigs offer a study base for endless customisation.<\/p>",
         "link_url": "shopify:\/\/collections\/racing-simulators",
         "link_text": "View all",
         "background": "#ffffff",
@@ -488,7 +491,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#f2f2f2",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": false,
