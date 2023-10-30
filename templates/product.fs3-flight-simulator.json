@@ -344,6 +344,9 @@
         "4fb86cfb-2d6f-4d08-918c-43e01a1b4f6c",
         "7a5c16a4-1812-48f9-9546-8f6385890135"
       ],
+      "custom_css": [
+        ".section-full {background-color: white;}"
+      ],
       "settings": {
         "full_width": false,
         "spacing": "small"
