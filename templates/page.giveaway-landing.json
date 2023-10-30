@@ -278,7 +278,7 @@
             "image": "shopify:\/\/shop_images\/SIMUCUBE_DD_BF_1.png",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/simucube_symbol_logo_orange_no-r.png",
             "icon_width": 60,
