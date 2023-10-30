@@ -487,11 +487,14 @@
       "block_order": [
         "ae27904b-5955-410b-822b-06c70cef1c38"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#ffffff",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": false,
