@@ -184,6 +184,136 @@
         "heading_gradient": ""
       }
     },
+    "8267ced5-406c-4fc5-9985-0f4d89959265": {
+      "type": "impact-text",
+      "blocks": {
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "TR160 MK4",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 0.5
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.6,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(180deg, rgba(252, 21, 21, 1) 14%, rgba(137, 4, 4, 1) 80.576%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "a7249964-ef67-4fd6-871d-4f88abab283c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Any motor, any pedals, any screen. No problem when you've found your forever rig.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The TR160 is the ultimate rig. Providing best-in-class stability with its thick aluminum profile walls and extreme customisation from the endless list of accessories, get ready for the rig that will take you everywhere.<\/p>"
+          }
+        },
+        "e645ce8b-c104-47b8-a066-ff07fb655592": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Read More",
+            "url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-heading-1",
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-richtext-1",
+        "e645ce8b-c104-47b8-a066-ff07fb655592"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1698673530bd4c0db1": {
+      "type": "apps",
+      "blocks": {
+        "946ed0ec-ce1c-43aa-bbd0-0d7093525878": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "tr160-mk4-racing-simulator"
+          }
+        },
+        "8d3acb38-a543-4780-afa7-e09f7f76c4f2": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-grid\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "tr160-mk4-racing-simulator"
+          }
+        }
+      },
+      "block_order": [
+        "946ed0ec-ce1c-43aa-bbd0-0d7093525878",
+        "8d3acb38-a543-4780-afa7-e09f7f76c4f2"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "05811962-822c-4e4a-97c2-34ef4a64d154": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        ".section-full {background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -612,68 +742,6 @@
         "text_color_outside": "#000000"
       }
     },
-    "8267ced5-406c-4fc5-9985-0f4d89959265": {
-      "type": "impact-text",
-      "blocks": {
-        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1": {
-          "type": "item",
-          "settings": {
-            "title": "100nm",
-            "subheading": "support",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "7b41d68b-9989-439e-a137-5382c8c33a24": {
-          "type": "item",
-          "settings": {
-            "title": "0%",
-            "subheading": "pedal flexing",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "e95aa6a2-511f-49d9-bc24-1b8450e422fd": {
-          "type": "item",
-          "settings": {
-            "title": "160mm",
-            "subheading": "strong fun",
-            "content": "<p>extra content<\/p>",
-            "button_text": "button text",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1",
-        "7b41d68b-9989-439e-a137-5382c8c33a24",
-        "e95aa6a2-511f-49d9-bc24-1b8450e422fd"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "line",
-        "impact_text_size_ratio": 1,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(181deg, rgba(252, 21, 21, 1) 14%, rgba(84, 64, 64, 1) 80.576%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "73c90621-810e-4eb4-b437-3d7a582e0d14": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -724,6 +792,10 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
+    "8267ced5-406c-4fc5-9985-0f4d89959265",
+    "a7249964-ef67-4fd6-871d-4f88abab283c",
+    "1698673530bd4c0db1",
+    "05811962-822c-4e4a-97c2-34ef4a64d154",
     "slideshow",
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
     "a0989716-fbfa-438c-9ca9-87df62670662",
@@ -733,7 +805,6 @@
     "e49ec022-390c-483c-85df-a8ab79ad73e7",
     "974a2167-d7f4-481b-9bc4-e376df9b8abc",
     "328e6918-1bbd-4ea3-a819-d8159e76f8e7",
-    "8267ced5-406c-4fc5-9985-0f4d89959265",
     "73c90621-810e-4eb4-b437-3d7a582e0d14"
   ]
 }
