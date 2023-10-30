@@ -195,9 +195,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "78455a80-7a61-442f-898c-2cd06983f76c": {
@@ -209,7 +209,7 @@
             "image": "shopify:\/\/shop_images\/TRX_ALPINE_F1.1_f82e2da8-69dc-48dd-bca5-f62c1a0d96a9.png",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/alpine_racing_trx_white.png",
             "icon_width": 72,
@@ -232,7 +232,7 @@
             "image": "shopify:\/\/shop_images\/DBOX-4-BASE.3.png",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center-end text-end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "custom_icon": "shopify:\/\/shop_images\/65814749e5e4ec81dae3430765abc29a.png",
             "icon_width": 60,
