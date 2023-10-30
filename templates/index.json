@@ -46,44 +46,35 @@
         "overlay_opacity": 15
       }
     },
-    "847e1d92-d94e-416d-8e9c-fa5869d64d4e": {
-      "type": "slideshow",
+    "1540d662-d4a3-4b1d-97ed-877dfdacdad7": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "template--17175983947940__847e1d92-d94e-416d-8e9c-fa5869d64d4e-image-1": {
-          "type": "image",
+        "d882a732-6092-4228-ab63-9e5ea5f6bb1d": {
+          "type": "button",
           "settings": {
-            "image": "shopify:\/\/shop_images\/black_friday.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/racing-simulators",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "style": "fill",
+            "size": "xl",
+            "text": "SHOP NOW",
+            "url": "shopify:\/\/collections\/racing-simulators",
             "background": "",
-            "background_gradient": ""
+            "text_color": ""
           }
         }
       },
       "block_order": [
-        "template--17175983947940__847e1d92-d94e-416d-8e9c-fa5869d64d4e-image-1"
+        "d882a732-6092-4228-ab63-9e5ea5f6bb1d"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
+        "enable_parallax": false,
         "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#F2F2F2",
-        "background_gradient": ""
+        "image": "shopify:\/\/shop_images\/black_friday.png",
+        "mobile_text_position": "place-self-end text-end",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "image-with-text-overlay": {
@@ -757,7 +748,7 @@
   },
   "order": [
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
-    "847e1d92-d94e-416d-8e9c-fa5869d64d4e",
+    "1540d662-d4a3-4b1d-97ed-877dfdacdad7",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "slideshow",
