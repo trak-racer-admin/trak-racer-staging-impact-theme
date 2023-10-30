@@ -495,7 +495,8 @@
         "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
       ],
       "custom_css": [
-        ".media-with-text__media img {max-width: 100%; height: auto; background: black;}"
+        ".media-with-text__media img {max-width: 100%; height: auto; background: black;}",
+        ".section-full {background-color: black;}"
       ],
       "settings": {
         "full_width": true,
