@@ -206,7 +206,7 @@
         "template--17179735490724__78455a80-7a61-442f-898c-2cd06983f76c-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TRX_ALPINE_F1.1_f82e2da8-69dc-48dd-bca5-f62c1a0d96a9.png",
+            "image": "shopify:\/\/shop_images\/TRX_BF_01_1.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -252,7 +252,7 @@
         "c2675274-3f67-465b-ace3-06cd480ce2ee": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/simucube_active_pedal.png",
+            "image": "shopify:\/\/shop_images\/SIMUCUB_AP_BF_01_1.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
