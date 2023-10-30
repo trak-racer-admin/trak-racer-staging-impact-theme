@@ -5,6 +5,7 @@
       "blocks": {
         "e9e1d90f-381a-4d1c-98e3-6a9ef20f5f59": {
           "type": "shopify:\/\/apps\/onvoard-aov-progress-bar\/blocks\/aov-progress-bar\/73a9be24-355c-420e-90ba-44b9c69509c0",
+          "disabled": true,
           "settings": {
             "app_id": "apb_makjyn4w5930xnt"
           }
@@ -13,6 +14,7 @@
       "block_order": [
         "e9e1d90f-381a-4d1c-98e3-6a9ef20f5f59"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -66,6 +68,12 @@
             "background": "",
             "text_color": ""
           }
+        },
+        "e6a19e57-dbd7-4e2e-8a92-25ce530871cb": {
+          "type": "shopify:\/\/apps\/onvoard-aov-progress-bar\/blocks\/aov-progress-bar\/73a9be24-355c-420e-90ba-44b9c69509c0",
+          "settings": {
+            "app_id": "apb_makjyn4w5930xnt"
+          }
         }
       },
       "block_order": [
@@ -73,7 +81,8 @@
         "cart_note",
         "checkout_button",
         "b4aa3a70-1361-4bc0-9d43-a23e534dd1d3",
-        "232411b1-9ff7-43a6-88af-e8122e74af07"
+        "232411b1-9ff7-43a6-88af-e8122e74af07",
+        "e6a19e57-dbd7-4e2e-8a92-25ce530871cb"
       ],
       "settings": {
         "show_shipping_estimator": true,
