@@ -53,7 +53,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "xl",
+            "size": "sm",
             "text": "SHOP NOW",
             "url": "shopify:\/\/collections\/racing-simulators",
             "background": "",
@@ -64,13 +64,17 @@
       "block_order": [
         "d882a732-6092-4228-ab63-9e5ea5f6bb1d"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/black_friday.png",
-        "mobile_text_position": "place-self-end text-end",
+        "mobile_image": "shopify:\/\/shop_images\/aubanner2rigs.png",
+        "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-end sm:text-end",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
