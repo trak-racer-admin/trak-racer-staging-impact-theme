@@ -529,6 +529,7 @@
         "55c32ab5-191e-4c12-9576-04092a5abd1e",
         "3045d804-b0d1-4790-9b8a-3131e3b2b07f"
       ],
+      "disabled": true,
       "custom_css": [
         "{background-color: white;}"
       ],
