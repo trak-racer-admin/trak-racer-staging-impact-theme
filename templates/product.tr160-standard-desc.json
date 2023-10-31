@@ -163,6 +163,9 @@
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
         "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
       ],
+      "custom_css": [
+        ".text-on-sale {color: white;}"
+      ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,

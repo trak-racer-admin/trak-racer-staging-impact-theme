@@ -1,5 +1,69 @@
 {
   "sections": {
+    "b47ffb49-bd38-477b-a988-fc760b02cdb3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--17175983947940__b47ffb49-bd38-477b-a988-fc760b02cdb3-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black_friday_banner_brighter_copy.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_sale_banner_mobile1.png",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/racing-simulators",
+            "text_color": "#ffffff",
+            "button_background": "#ce151b",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--17175983947940__b47ffb49-bd38-477b-a988-fc760b02cdb3-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/au.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile.png",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "ENTER NOW",
+            "button_link": "shopify:\/\/pages\/tr-ultimategiveaway",
+            "text_color": "#ffffff",
+            "button_background": "#ce151b",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17175983947940__b47ffb49-bd38-477b-a988-fc760b02cdb3-image-1",
+        "template--17175983947940__b47ffb49-bd38-477b-a988-fc760b02cdb3-image-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
@@ -64,6 +128,7 @@
       "block_order": [
         "d882a732-6092-4228-ab63-9e5ea5f6bb1d"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -429,110 +494,6 @@
         "review_button_text_color": "#ffffff"
       }
     },
-    "media-grid": {
-      "type": "media-grid",
-      "blocks": {
-        "item-1": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-2": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "29246d34-c6e0-4373-84f6-b15e57736a00"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
     "e49ec022-390c-483c-85df-a8ab79ad73e7": {
       "type": "logo-list",
       "blocks": {
@@ -751,6 +712,7 @@
     }
   },
   "order": [
+    "b47ffb49-bd38-477b-a988-fc760b02cdb3",
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
     "1540d662-d4a3-4b1d-97ed-877dfdacdad7",
     "image-with-text-overlay",
@@ -760,7 +722,6 @@
     "a0989716-fbfa-438c-9ca9-87df62670662",
     "impact-text",
     "16964984703716d114",
-    "media-grid",
     "e49ec022-390c-483c-85df-a8ab79ad73e7",
     "974a2167-d7f4-481b-9bc4-e376df9b8abc",
     "328e6918-1bbd-4ea3-a819-d8159e76f8e7",
