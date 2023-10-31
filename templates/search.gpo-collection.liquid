@@ -1,0 +1,43 @@
+{%- layout none -%}
+{%- if search.terms contains 'handles:' -%}
+[
+  {%- assign params = canonical_url | url_decode | split: "?" | last | split: "&" -%}
+  {%- assign handles = '' -%}
+  {%- for str in params -%}
+    {%- assign str_split = str | split: "=" -%}
+    {%- if str_split.first == 'q' -%}
+      {%- assign handles = str_split.last | remove_first: "handles:" -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if handles != '' -%}
+    {%- assign handles = handles | split: "|" -%}
+    {%- for handle in handles limit:20 -%}
+      {%- assign product = all_products[handle] -%}
+      {%- unless forloop.first -%},{%- endunless -%}
+      {%- if product.id != '' -%}
+        {
+          "id": {{ product.id }},
+          "title": {{ product.title | json }},
+          "handle": {{ handle | json }},
+          "variants": [
+            {%- for variant in product.variants -%}
+              {
+                "id": {{ variant.id }},
+                "title": {{ variant.title | json }},
+                "price": {{ variant.price }}
+              }{%- unless forloop.last -%},{%- endunless -%}
+            {% endfor %}
+          ],
+          "vendor": {{ product.vendor | json }},
+          "type": {{ product.type | json }},
+          "collections": {{ product.collections | map: 'id' | json }},
+          "tags": {{ product.tags | json }},
+          "isAddon": {%- if product.tags contains 'globo-product-options' -%}true{%- else -%}false{%- endif -%}
+        }
+      {%- else -%}
+        null
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+]
+{%- endif -%}

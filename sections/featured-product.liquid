@@ -1292,4 +1292,13 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}{%- assign gpoFeaturedProduct = all_products[section.settings.product] -%}
+{% if gpoFeaturedProduct %}
+<script class="gpo-featured-product">
+  window.GPOConfigs = window.GPOConfigs || {}
+  window.GPOConfigs.featuredProduct = {{ gpoFeaturedProduct | json }} || null
+  window.GPOConfigs.featuredProduct.collections = {{ gpoFeaturedProduct.collections | map: 'id' | json }}
+</script>
+{% endif %}
+
+<!-- GPO installed -->
