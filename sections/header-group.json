@@ -32,7 +32,7 @@
         "enable_sticky": true,
         "text_size": "text-base",
         "navigation_mode": "scrolling",
-        "scrolling_speed": 30,
+        "scrolling_speed": 26,
         "background": "#a5272c",
         "background_gradient": "linear-gradient(180deg, rgba(234, 0, 25, 1), rgba(163, 2, 17, 1) 100%)",
         "text_color": "#ffffff"
