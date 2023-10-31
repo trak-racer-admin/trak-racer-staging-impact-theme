@@ -396,13 +396,6 @@
       },
       {
         "type": "font_picker",
-        "id": "site_heading_font",
-        "label": "Site Header Font",
-        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
-        "default": "helvetica_n4"
-      },
-      {
-        "type": "font_picker",
         "id": "heading_font",
         "label": "Font",
         "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
