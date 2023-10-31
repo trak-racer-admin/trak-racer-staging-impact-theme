@@ -26,7 +26,7 @@
         "d8d72903-5752-44a9-a546-7d89f57cd46f"
       ],
       "custom_css": [
-
+        ".announcement-bar {white-space: nowrap;}"
       ],
       "settings": {
         "enable_sticky": true,
