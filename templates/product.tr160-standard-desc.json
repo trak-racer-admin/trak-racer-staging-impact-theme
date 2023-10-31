@@ -486,7 +486,6 @@
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
-            "custom_icon": "{{ product.metafields.custom.featured_detail_2_image.value }}",
             "icon_width": 48,
             "subheading": "",
             "title": "{{ product.metafields.custom.featured_detail_2_heading.value }}",
