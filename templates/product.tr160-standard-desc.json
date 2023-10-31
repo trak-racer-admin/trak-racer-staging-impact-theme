@@ -537,6 +537,70 @@
         "spacing": "small"
       }
     },
+    "c6af1e5d-0186-4875-9116-f6ea91396fc6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom.product_feature_heading.value }}",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "{{ product.metafields.custom.product_feature_description | metafield_tag }}"
+          }
+        },
+        "e1188caf-8faf-4f4e-a439-251d6047fe9e": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "sm",
+            "text": "{{ product.metafields.custom.product_feature_button.value }}",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "5e6fb644-4c68-410a-b6e7-2ec458895a53": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "f79ba463-9f8c-42db-aa59-c349e93c9903": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_feature_image.value }}",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-heading-1",
+        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-richtext-1",
+        "e1188caf-8faf-4f4e-a439-251d6047fe9e",
+        "5e6fb644-4c68-410a-b6e7-2ec458895a53",
+        "f79ba463-9f8c-42db-aa59-c349e93c9903"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#1a1a1a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
     "59869190-55a7-472e-b22d-3b1565a35196": {
       "type": "rich-text",
       "blocks": {
@@ -570,6 +634,75 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "748429aa-5dab-4ef6-87e8-aaa1dcb13299": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 24,
+            "vertical_position": 66,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-1",
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-2",
+        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/TR160-DDPBNP_1.png",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
@@ -959,7 +1092,9 @@
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "d60376ec-4552-403b-859b-34747fc838f1",
+    "c6af1e5d-0186-4875-9116-f6ea91396fc6",
     "59869190-55a7-472e-b22d-3b1565a35196",
+    "748429aa-5dab-4ef6-87e8-aaa1dcb13299",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
