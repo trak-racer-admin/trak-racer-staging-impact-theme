@@ -7,26 +7,34 @@
       "blocks": {
         "message": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Trak Racer are proud partners of the Alpine F1 team and Airbus Aircraft!",
+            "url": ""
+          }
+        },
+        "d8d72903-5752-44a9-a546-7d89f57cd46f": {
+          "type": "message",
+          "settings": {
+            "text": "Black Friday Sale On Now! Enjoy 15% off All Trak Racer And D-Box Motion Products! 🏎️",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "d8d72903-5752-44a9-a546-7d89f57cd46f"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
         "enable_sticky": false,
         "text_size": "text-base",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 30,
         "background": "#a5272c",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(180deg, rgba(234, 0, 25, 1), rgba(163, 2, 17, 1) 100%)",
         "text_color": "#ffffff"
       }
     },
