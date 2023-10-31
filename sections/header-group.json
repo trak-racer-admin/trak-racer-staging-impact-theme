@@ -29,7 +29,7 @@
 
       ],
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "text_size": "text-base",
         "navigation_mode": "arrows",
         "scrolling_speed": 30,
