@@ -798,6 +798,68 @@
         "text_color": "#000000"
       }
     },
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "05d91240-88dc-4dba-8167-0712b39f8567": {
       "type": "text-with-icons",
       "blocks": {
@@ -1160,6 +1222,7 @@
     "59869190-55a7-472e-b22d-3b1565a35196",
     "748429aa-5dab-4ef6-87e8-aaa1dcb13299",
     "974a92ca-5417-47d7-bae4-547d0c063284",
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
     "05d91240-88dc-4dba-8167-0712b39f8567",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
