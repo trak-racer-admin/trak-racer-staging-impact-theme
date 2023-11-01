@@ -798,135 +798,6 @@
         "text_color": "#000000"
       }
     },
-    "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
-      "type": "multi-column",
-      "blocks": {
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1",
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
-      ],
-      "custom_css": [
-        ".gap-4 {padding: 0 50px;}",
-        ".section-full {padding-left: 150px; padding-right: 150px;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "x-large",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Featured content",
-        "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "05d91240-88dc-4dba-8167-0712b39f8567": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
-            "mobile_icon_width": 60,
-            "icon_width": 100,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}"
-          }
-        },
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
-            "mobile_icon_width": 60,
-            "icon_width": 100,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}"
-          }
-        },
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
-            "mobile_icon_width": 60,
-            "icon_width": 100,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-1",
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-2",
-        "template--17090428174500__05d91240-88dc-4dba-8167-0712b39f8567-item-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "What's Included",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
       "type": "hot-spots",
       "blocks": {
@@ -1060,6 +931,86 @@
         "background": "#1f1f1f",
         "background_gradient": "",
         "text_color": "#ffffff"
+      }
+    },
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
+      ],
+      "custom_css": [
+        ".gap-4 {padding: 0 50px;}",
+        ".section-full {padding-left: 150px; padding-right: 150px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Featured content",
+        "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "ed2a04fa-645a-4699-8143-d5f7305c1388": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_2.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb": {
@@ -1225,10 +1176,10 @@
     "59869190-55a7-472e-b22d-3b1565a35196",
     "748429aa-5dab-4ef6-87e8-aaa1dcb13299",
     "974a92ca-5417-47d7-bae4-547d0c063284",
-    "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
-    "05d91240-88dc-4dba-8167-0712b39f8567",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
+    "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "related-products",
