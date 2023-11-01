@@ -391,8 +391,8 @@
       },
       {
         "type": "checkbox",
-        "id": "custom_font_for_header",
-        "label": "Do we Need Custom Header Font"
+        "id": "custom_font_for_heading_tag",
+        "label": "Do we Need To Saira Font For All Heading Tag."
       },
       {
         "type": "font_picker",
