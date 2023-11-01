@@ -392,7 +392,7 @@
       {
         "type": "checkbox",
         "id": "custom_font_for_heading_tag",
-        "label": "Do we Need To Saira Font For All Heading Tag."
+        "label": "Override Saira Font For All Heading Tags."
       },
       {
         "type": "font_picker",
