@@ -1038,7 +1038,7 @@
         "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-1": {
           "type": "item",
           "settings": {
-            "horizontal_position": 26,
+            "horizontal_position": 28,
             "vertical_position": 57,
             "horizontal_position_mobile": 12,
             "vertical_position_mobile": 65,
@@ -1050,7 +1050,7 @@
         "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-2": {
           "type": "item",
           "settings": {
-            "horizontal_position": 43,
+            "horizontal_position": 46,
             "vertical_position": 23,
             "horizontal_position_mobile": 38,
             "vertical_position_mobile": 40,
@@ -1062,7 +1062,7 @@
         "baff6160-0af9-441b-9943-341d010111ef": {
           "type": "item",
           "settings": {
-            "horizontal_position": 55,
+            "horizontal_position": 58,
             "vertical_position": 36,
             "horizontal_position_mobile": 57,
             "vertical_position_mobile": 48,
@@ -1074,7 +1074,7 @@
         "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3": {
           "type": "item",
           "settings": {
-            "horizontal_position": 65,
+            "horizontal_position": 68,
             "vertical_position": 66,
             "horizontal_position_mobile": 72,
             "vertical_position_mobile": 69,
@@ -1090,7 +1090,6 @@
         "baff6160-0af9-441b-9943-341d010111ef",
         "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
