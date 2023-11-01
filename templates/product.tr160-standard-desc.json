@@ -534,7 +534,7 @@
       ],
       "settings": {
         "full_width": false,
-        "spacing": "small"
+        "spacing": "none"
       }
     },
     "c6af1e5d-0186-4875-9116-f6ea91396fc6": {
@@ -846,7 +846,9 @@
         "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
         "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
       ],
-      "disabled": true,
+      "custom_css": [
+        "img {padding: 0px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -854,8 +856,8 @@
         "text_alignment": "center",
         "subheading": "",
         "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
-        "background": "",
+        "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
