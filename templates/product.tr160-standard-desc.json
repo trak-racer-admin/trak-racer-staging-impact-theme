@@ -453,70 +453,6 @@
         "chart_true_false_color": ""
       }
     },
-    "c6af1e5d-0186-4875-9116-f6ea91396fc6": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "{{ product.metafields.custom.product_feature_heading.value }}",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-richtext-1": {
-          "type": "richtext",
-          "settings": {
-            "content": "{{ product.metafields.custom.product_feature_description | metafield_tag }}"
-          }
-        },
-        "e1188caf-8faf-4f4e-a439-251d6047fe9e": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "sm",
-            "text": "{{ product.metafields.custom.product_feature_button.value }}",
-            "url": "",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "5e6fb644-4c68-410a-b6e7-2ec458895a53": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "f79ba463-9f8c-42db-aa59-c349e93c9903": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom.product_feature_image.value }}",
-            "width_mode": "custom",
-            "max_width": 600,
-            "mobile_max_width": 400
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-heading-1",
-        "template--17090428174500__c6af1e5d-0186-4875-9116-f6ea91396fc6-richtext-1",
-        "e1188caf-8faf-4f4e-a439-251d6047fe9e",
-        "5e6fb644-4c68-410a-b6e7-2ec458895a53",
-        "f79ba463-9f8c-42db-aa59-c349e93c9903"
-      ],
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "start",
-        "background": "#1a1a1a",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "59869190-55a7-472e-b22d-3b1565a35196": {
       "type": "rich-text",
       "blocks": {
@@ -550,75 +486,6 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "748429aa-5dab-4ef6-87e8-aaa1dcb13299": {
-      "type": "hot-spots",
-      "blocks": {
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-1": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 24,
-            "vertical_position": 66,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-2": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 62,
-            "vertical_position": 14,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-3": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-1",
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-2",
-        "template--17090428174500__748429aa-5dab-4ef6-87e8-aaa1dcb13299-item-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "image": "shopify:\/\/shop_images\/TR160-DDPBNP_1.png",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#ffffff",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#ffffff",
-        "hot_spot_dot_text_color": "#000000",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 90,
-        "hot_spot_content_blur_radius": 3
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
@@ -714,56 +581,6 @@
         "text_color": "#000000"
       }
     },
-    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb": {
-      "type": "multi-column",
-      "blocks": {
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2": {
-          "type": "item",
-          "settings": {
-            "column_size": "2",
-            "title": "Key Benefits",
-            "heading_tag": "h4",
-            "content": "<ul><li>Pair text with an image<\/li><li> to focus on your chosen product,<\/li><li>collection, or blog post. <\/li><li>Add details on availability, style,<\/li><li> or even provide a review.<\/li><\/ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1",
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".text-custom {text-align: left;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "x-large",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "#1f1f1f",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb": {
       "type": "tabs",
       "blocks": {
@@ -811,56 +628,6 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
-      }
-    },
-    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
-      "type": "accordion-content",
-      "blocks": {
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
-          "type": "item",
-          "settings": {
-            "title": "Wheel Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
-          "type": "item",
-          "settings": {
-            "title": "Pedal Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
-          "type": "item",
-          "settings": {
-            "title": "Shifter & Handbrake Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Compatibility",
-        "content": "<p>Our simulators are made to be used with the biggest brands in the simracing market!<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#000000",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "#f2f2f2",
-        "accordion_text_color": "#000000"
       }
     },
     "d60376ec-4552-403b-859b-34747fc838f1": {
@@ -1214,6 +981,106 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Mount (click to view)",
+            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
+          "type": "item",
+          "settings": {
+            "title": "Pedal Mount (click to view)",
+            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}"
+          }
+        },
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
+          "type": "item",
+          "settings": {
+            "title": "Shifter & Handbrake Mount (click to view)",
+            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
+        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Compatibility",
+        "content": "<p>Our simulators are made to be used with the biggest brands in the simracing market!<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#f2f2f2",
+        "accordion_text_color": "#000000"
+      }
+    },
+    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Key Benefits",
+            "heading_tag": "h4",
+            "content": "<ul><li>Pair text with an image<\/li><li> to focus on your chosen product,<\/li><li>collection, or blog post. <\/li><li>Add details on availability, style,<\/li><li> or even provide a review.<\/li><\/ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1",
+        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-custom {text-align: left;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#1f1f1f",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -1222,19 +1089,17 @@
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
-    "c6af1e5d-0186-4875-9116-f6ea91396fc6",
     "59869190-55a7-472e-b22d-3b1565a35196",
-    "748429aa-5dab-4ef6-87e8-aaa1dcb13299",
     "974a92ca-5417-47d7-bae4-547d0c063284",
-    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
-    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "d60376ec-4552-403b-859b-34747fc838f1",
     "57b66606-5026-4e46-ae1c-c311aab94ded",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
     "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "related-products",
-    "16919816096b1b8f4c"
+    "16919816096b1b8f4c",
+    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb"
   ]
 }
