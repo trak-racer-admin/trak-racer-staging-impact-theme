@@ -798,91 +798,6 @@
         "text_color": "#000000"
       }
     },
-    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
-      "type": "hot-spots",
-      "blocks": {
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 18,
-            "vertical_position": 59,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 62,
-            "vertical_position": 14,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1",
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2",
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3",
-        "ee35adab-059f-4e59-bfbc-a4ada75d6437"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{background-color: white;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "image": "shopify:\/\/shop_images\/TR160-SMPBAL.6_f859b599-3317-42f2-9667-56555dddc0cc.png",
-        "title": "The Forever Rig",
-        "content": "<p>Some memes conetentente<\/p>",
-        "button_text": "buy now",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "#ffffff",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#000000",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#cb1314",
-        "hot_spot_dot_text_color": "#ffffff",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 84,
-        "hot_spot_content_blur_radius": 5
-      }
-    },
     "b6d9947c-eb9b-4489-8bb1-19b21fc458bb": {
       "type": "multi-column",
       "blocks": {
@@ -931,85 +846,6 @@
         "background": "#1f1f1f",
         "background_gradient": "",
         "text_color": "#ffffff"
-      }
-    },
-    "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
-      "type": "multi-column",
-      "blocks": {
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3": {
-          "type": "item",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
-            "column_size": "3",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
-            "heading_tag": "h5",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1",
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
-        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": true,
-        "gap": "small",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Featured content",
-        "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "ed2a04fa-645a-4699-8143-d5f7305c1388": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_2.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     },
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb": {
@@ -1111,6 +947,171 @@
         "accordion_text_color": "#000000"
       }
     },
+    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 18,
+            "vertical_position": 59,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        },
+        "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 30,
+            "vertical_position": 30,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1",
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2",
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3",
+        "ee35adab-059f-4e59-bfbc-a4ada75d6437"
+      ],
+      "custom_css": [
+        "{background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/TR160-SMPBAL.6_f859b599-3317-42f2-9667-56555dddc0cc.png",
+        "title": "The Forever Rig",
+        "content": "<p>Some memes conetentente<\/p>",
+        "button_text": "buy now",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#000000",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#cb1314",
+        "hot_spot_dot_text_color": "#ffffff",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 84,
+        "hot_spot_content_blur_radius": 5
+      }
+    },
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.custom_fields.whats_included_header_3.value }}",
+            "heading_tag": "h5",
+            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_3 | metafield_tag }}",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-1",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-2",
+        "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Featured content",
+        "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "ed2a04fa-645a-4699-8143-d5f7305c1388": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_2.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -1175,12 +1176,12 @@
     "59869190-55a7-472e-b22d-3b1565a35196",
     "748429aa-5dab-4ef6-87e8-aaa1dcb13299",
     "974a92ca-5417-47d7-bae4-547d0c063284",
-    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
-    "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
-    "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
+    "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
+    "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "related-products",
     "16919816096b1b8f4c"
   ]
