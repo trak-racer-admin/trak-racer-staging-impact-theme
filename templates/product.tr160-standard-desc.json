@@ -1032,6 +1032,89 @@
         "hot_spot_content_blur_radius": 5
       }
     },
+    "050e94bc-2b68-4757-a3a0-dd756ec13fd3": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 26,
+            "vertical_position": 57,
+            "horizontal_position_mobile": 12,
+            "vertical_position_mobile": 65,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_1_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_1_subtext | metafield_tag }}"
+          }
+        },
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 43,
+            "vertical_position": 23,
+            "horizontal_position_mobile": 38,
+            "vertical_position_mobile": 40,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_2_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_2_subtext | metafield_tag }}"
+          }
+        },
+        "baff6160-0af9-441b-9943-341d010111ef": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 55,
+            "vertical_position": 36,
+            "horizontal_position_mobile": 57,
+            "vertical_position_mobile": 48,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_3_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_3_subtext | metafield_tag }}"
+          }
+        },
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 65,
+            "vertical_position": 66,
+            "horizontal_position_mobile": 72,
+            "vertical_position_mobile": 69,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_4_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_4_subtext | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-1",
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-2",
+        "baff6160-0af9-441b-9943-341d010111ef",
+        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
+        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
+        "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
+        "button_text": "{{ product.metafields.custom.product_hotspot_button.value }}",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#000000",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#eb4a4a",
+        "hot_spot_dot_text_color": "#ffffff",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
     "e2dea07d-57f3-4957-83ab-a390ea63d2f4": {
       "type": "multi-column",
       "blocks": {
@@ -1164,88 +1247,6 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
-    },
-    "050e94bc-2b68-4757-a3a0-dd756ec13fd3": {
-      "type": "hot-spots",
-      "blocks": {
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-1": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 26,
-            "vertical_position": 57,
-            "horizontal_position_mobile": 12,
-            "vertical_position_mobile": 65,
-            "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_1_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_1_subtext | metafield_tag }}"
-          }
-        },
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-2": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 43,
-            "vertical_position": 23,
-            "horizontal_position_mobile": 38,
-            "vertical_position_mobile": 40,
-            "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_2_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_2_subtext | metafield_tag }}"
-          }
-        },
-        "baff6160-0af9-441b-9943-341d010111ef": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 55,
-            "vertical_position": 36,
-            "horizontal_position_mobile": 57,
-            "vertical_position_mobile": 48,
-            "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_3_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_3_subtext | metafield_tag }}"
-          }
-        },
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 65,
-            "vertical_position": 66,
-            "horizontal_position_mobile": 72,
-            "vertical_position_mobile": 69,
-            "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_4_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_4_subtext | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-1",
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-2",
-        "baff6160-0af9-441b-9943-341d010111ef",
-        "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3"
-      ],
-      "settings": {
-        "full_width": true,
-        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
-        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
-        "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
-        "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
-        "button_text": "{{ product.metafields.custom.product_hotspot_button.value }}",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#000000",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#eb4a4a",
-        "hot_spot_dot_text_color": "#ffffff",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 90,
-        "hot_spot_content_blur_radius": 3
-      }
     }
   },
   "order": [
@@ -1263,10 +1264,10 @@
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
+    "050e94bc-2b68-4757-a3a0-dd756ec13fd3",
     "e2dea07d-57f3-4957-83ab-a390ea63d2f4",
     "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "related-products",
-    "16919816096b1b8f4c",
-    "050e94bc-2b68-4757-a3a0-dd756ec13fd3"
+    "16919816096b1b8f4c"
   ]
 }
