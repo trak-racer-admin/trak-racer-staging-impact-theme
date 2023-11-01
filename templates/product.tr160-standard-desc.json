@@ -1090,6 +1090,10 @@
         "baff6160-0af9-441b-9943-341d010111ef",
         "template--17090428174500__050e94bc-2b68-4757-a3a0-dd756ec13fd3-item-3"
       ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
