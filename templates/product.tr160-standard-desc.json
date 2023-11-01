@@ -848,7 +848,7 @@
       ],
       "custom_css": [
         ".gap-4 {padding: 0 50px;}",
-        ".section-full {padding: 0 150px;}"
+        ".section-full {padding-left: 150px; padding-right: 150px;}"
       ],
       "settings": {
         "full_width": true,
