@@ -982,8 +982,7 @@
         "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
       ],
       "custom_css": [
-        ".gap-4 {padding: 0 50px;}",
-        ".section-full {padding-left: 150px; padding-right: 150px;}"
+
       ],
       "settings": {
         "full_width": true,
