@@ -1184,7 +1184,7 @@
           "type": "item",
           "settings": {
             "horizontal_position": 43,
-            "vertical_position": 20,
+            "vertical_position": 23,
             "horizontal_position_mobile": 38,
             "vertical_position_mobile": 40,
             "icon_width": 32,
@@ -1225,8 +1225,8 @@
       ],
       "settings": {
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/TR160-DDPBNP_1_HOTSPOTS.png",
-        "mobile_image": "shopify:\/\/shop_images\/TR160-DDPBNP_1_HOTSPOTS_M.png",
+        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
+        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
         "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
         "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
         "button_text": "{{ product.metafields.custom.product_hotspot_button.value }}",
@@ -1236,7 +1236,7 @@
         "image_background_gradient": "",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "overlay_text_color": "#ffffff",
+        "overlay_text_color": "#000000",
         "overlay_button_background": "",
         "overlay_button_text_color": "",
         "hot_spot_dot_background": "#eb4a4a",
