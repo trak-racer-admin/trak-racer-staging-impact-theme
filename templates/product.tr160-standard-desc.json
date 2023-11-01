@@ -1005,6 +1005,7 @@
         "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3",
         "ee35adab-059f-4e59-bfbc-a4ada75d6437"
       ],
+      "disabled": true,
       "custom_css": [
         "{background-color: white;}"
       ],
