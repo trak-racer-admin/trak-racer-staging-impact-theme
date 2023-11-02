@@ -224,6 +224,9 @@
       "block_order": [
         "template--17214620926116__e76c845b-4023-46a3-82ff-12886b72f464-image-1"
       ],
+      "custom_css": [
+        ".media-with-text {background-colour: white;}"
+      ],
       "settings": {
         "full_width": false,
         "spacing": "small"
