@@ -93,6 +93,7 @@ t.parentNode.insertBefore(y,t);
       {% if settings.custom_font_for_heading_tag %}
         .heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1, h2, h3, h4, h5, h6) {
           font-family: 'Saira', sans-serif !important;
+          letter-spacing: {{ settings.custom_heading_letter_spacing }}px !important;
         }
       {% endif %}
     </style>

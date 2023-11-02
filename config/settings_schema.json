@@ -395,6 +395,17 @@
         "label": "Override Saira Font For All Heading Tags."
       },
       {
+        "type": "range",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "unit": "%",
+        "id": "custom_heading_letter_spacing",
+        "label": "letter spacing",
+        "default": 0,
+        "info": "The letter spacing for the Saira font should be adjusted, with a minimum of 0px, a maximum of 5px, and a step size of 0.2px."
+      },
+      {
         "type": "font_picker",
         "id": "heading_font",
         "label": "Font",
