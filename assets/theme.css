@@ -7465,6 +7465,11 @@ split-lines {
   }
 }
 
+.shopify-section--main-product .product product-gallery {
+  position: sticky;
+  top: 120px;
+}
+
 .product-gallery {
   gap: var(--spacing-5);
   grid-auto-columns: minmax(0, 1fr);

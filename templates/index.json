@@ -45,7 +45,7 @@
         "overlay_opacity": 15
       }
     },
-    "image-with-text-overlay": {
+        "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
         "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2": {
@@ -582,6 +582,7 @@
   },
   "order": [
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
+    "d7751b4a-1c20-42b1-bc21-7fe5b7cc9131",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "8267ced5-406c-4fc5-9985-0f4d89959265",
