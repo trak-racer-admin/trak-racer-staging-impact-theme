@@ -396,33 +396,31 @@
             "heading_tag": "h1"
           }
         },
+        "d2617995-73f5-4f6f-9842-96c28512355c": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>12 HOURS WIRELESS PLAY TIME<\/p>"
+          }
+        },
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1": {
           "type": "richtext",
-          "disabled": true,
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "content": "<p>7.1 SURROUND SOUND<\/p>"
           }
         },
-        "f4024dda-8054-4b9b-94e5-81e80b43a230": {
-          "type": "heading",
+        "f97ef0e0-48b4-4c95-9ff1-70c93d4af969": {
+          "type": "richtext",
           "settings": {
-            "text": "12 HOURS WIRELESS PLAY TIME",
-            "heading_tag": "h6"
-          }
-        },
-        "13d7aa9d-9787-4879-80f7-33c0dcf60702": {
-          "type": "subheading",
-          "settings": {
-            "text": "12 HOURS WIRELESS PLAY TIME"
+            "content": "<p>ON-HEADSET CONTROLS<\/p>"
           }
         },
         "a8c8646f-d295-47d6-9c20-26af281a535b": {
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "lg",
-            "text": "Button text",
-            "url": "",
+            "size": "xl",
+            "text": "PRE-ORDER NOW",
+            "url": "shopify:\/\/products\/trak-racer-wireless-gaming-headset",
             "background": "",
             "text_color": ""
           }
@@ -430,21 +428,21 @@
       },
       "block_order": [
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1",
+        "d2617995-73f5-4f6f-9842-96c28512355c",
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1",
-        "f4024dda-8054-4b9b-94e5-81e80b43a230",
-        "13d7aa9d-9787-4879-80f7-33c0dcf60702",
+        "f97ef0e0-48b4-4c95-9ff1-70c93d4af969",
         "a8c8646f-d295-47d6-9c20-26af281a535b"
       ],
       "custom_css": [
-        "h6 {font-weight: light;}"
+        "subheading {font-weight: normal;}"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/large-desktop_trheadset.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/large-mobile_trheadset.jpg",
+        "image": "shopify:\/\/shop_images\/desktop_trheadset.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/mobile_trheadset.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center-end sm:text-end",
         "text_color": "#ffffff",
