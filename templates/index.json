@@ -398,8 +398,22 @@
         },
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "f4024dda-8054-4b9b-94e5-81e80b43a230": {
+          "type": "heading",
+          "settings": {
+            "text": "12 HOURS WIRELESS PLAY TIME",
+            "heading_tag": "h6"
+          }
+        },
+        "13d7aa9d-9787-4879-80f7-33c0dcf60702": {
+          "type": "subheading",
+          "settings": {
+            "text": "12 HOURS WIRELESS PLAY TIME"
           }
         },
         "a8c8646f-d295-47d6-9c20-26af281a535b": {
@@ -417,7 +431,12 @@
       "block_order": [
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1",
         "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1",
+        "f4024dda-8054-4b9b-94e5-81e80b43a230",
+        "13d7aa9d-9787-4879-80f7-33c0dcf60702",
         "a8c8646f-d295-47d6-9c20-26af281a535b"
+      ],
+      "custom_css": [
+        "h6 {font-weight: light;}"
       ],
       "settings": {
         "full_width": true,
