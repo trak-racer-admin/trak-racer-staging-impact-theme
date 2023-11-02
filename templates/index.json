@@ -393,7 +393,7 @@
           "type": "heading",
           "settings": {
             "text": "Trak Racer Wireless Gaming Headset",
-            "heading_tag": "h1"
+            "heading_tag": "h2"
           }
         },
         "d2617995-73f5-4f6f-9842-96c28512355c": {
@@ -443,8 +443,8 @@
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/desktop_trheadset.jpg",
         "mobile_image": "shopify:\/\/shop_images\/mobile_trheadset.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center-end sm:text-end",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
