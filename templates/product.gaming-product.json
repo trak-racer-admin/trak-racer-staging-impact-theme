@@ -204,12 +204,12 @@
             "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
-            "content": "<p>{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}<\/p>",
+            "content": "{{ product.metafields.custom_fields.features_tab_2 | metafield_tag }}",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -225,7 +225,7 @@
         "template--17214620926116__e76c845b-4023-46a3-82ff-12886b72f464-image-1"
       ],
       "custom_css": [
-        ".media-with-text {background-colour: white;}"
+
       ],
       "settings": {
         "full_width": false,
