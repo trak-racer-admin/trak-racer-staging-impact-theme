@@ -164,7 +164,7 @@
         "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
       ],
       "custom_css": [
-
+        ".text-on-sale {color: white;}"
       ],
       "settings": {
         "full_width": true,
