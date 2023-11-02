@@ -373,6 +373,7 @@
         "slide-2",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -383,6 +384,53 @@
         "cycle_speed": 8,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "e1fa35ac-9e9c-43b6-971e-838e2c416852": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trak Racer Wireless Gaming Headset",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "a8c8646f-d295-47d6-9c20-26af281a535b": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Button text",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1",
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1",
+        "a8c8646f-d295-47d6-9c20-26af281a535b"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/large-desktop_trheadset.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/large-mobile_trheadset.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d": {
@@ -588,6 +636,7 @@
     "a7249964-ef67-4fd6-871d-4f88abab283c",
     "05811962-822c-4e4a-97c2-34ef4a64d154",
     "slideshow",
+    "e1fa35ac-9e9c-43b6-971e-838e2c416852",
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
     "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8",
     "a0989716-fbfa-438c-9ca9-87df62670662",
