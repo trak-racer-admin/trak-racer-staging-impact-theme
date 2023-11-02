@@ -399,7 +399,7 @@
         "min": 0,
         "max": 5,
         "step": 0.2,
-        "unit": "%",
+        "unit": "px",
         "id": "custom_heading_letter_spacing",
         "label": "letter spacing",
         "default": 0,
