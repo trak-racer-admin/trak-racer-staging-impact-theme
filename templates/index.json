@@ -3,10 +3,10 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
-        "8583a7f8-bb48-45ba-94ae-2da648356bb4": {
-          "type": "subheading",
+        "76c5a092-ca11-437a-9303-e766523c1967": {
+          "type": "richtext",
           "settings": {
-            "text": "Your Edge Against the Competition"
+            "content": "<p>Your Edge Against the Competition<\/p>"
           }
         },
         "464494f2-46aa-4849-bebf-b7fd7f7f812b": {
@@ -29,7 +29,7 @@
         }
       },
       "block_order": [
-        "8583a7f8-bb48-45ba-94ae-2da648356bb4",
+        "76c5a092-ca11-437a-9303-e766523c1967",
         "464494f2-46aa-4849-bebf-b7fd7f7f812b",
         "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
@@ -477,21 +477,6 @@
         "product_card_text_color": ""
       }
     },
-    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/large-Tekengebied_2.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "a0989716-fbfa-438c-9ca9-87df62670662": {
       "type": "featured-collection",
       "disabled": true,
@@ -518,6 +503,21 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/large-Tekengebied_2.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "16964984703716d114": {
@@ -655,8 +655,8 @@
     "slideshow",
     "e1fa35ac-9e9c-43b6-971e-838e2c416852",
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
-    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8",
     "a0989716-fbfa-438c-9ca9-87df62670662",
+    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8",
     "16964984703716d114",
     "974a2167-d7f4-481b-9bc4-e376df9b8abc",
     "328e6918-1bbd-4ea3-a819-d8159e76f8e7",
