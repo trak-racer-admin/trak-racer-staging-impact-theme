@@ -107,44 +107,6 @@
         "text_color": ""
       }
     },
-    "16989710070f532485": {
-      "type": "apps",
-      "blocks": {
-        "2da11bf3-5459-4046-b909-9ffcb8962061": {
-          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "",
-            "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#1878B9",
-            "errors_color": "#E02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "2da11bf3-5459-4046-b909-9ffcb8962061"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -210,7 +172,6 @@
   "order": [
     "16921040486797a197",
     "text-with-icons",
-    "16989710070f532485",
     "footer"
   ]
 }
