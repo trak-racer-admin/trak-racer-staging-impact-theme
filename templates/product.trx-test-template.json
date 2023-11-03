@@ -72,6 +72,7 @@
         },
         "6d4f1626-5de4-4a97-9adb-0bbf7ca135e4": {
           "type": "shopify:\/\/apps\/assortion-upsell-bundles\/blocks\/addon\/5588d7f9-a5bc-4f4a-9c54-39b7e081dd23",
+          "disabled": true,
           "settings": {
             "id": "cb829bfe-a666-4513-95fe-59f3c444f799"
           }
