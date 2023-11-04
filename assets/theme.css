@@ -7463,10 +7463,10 @@ split-lines {
     z-index: 1;
     position: sticky;
   }
-}
-.shopify-section--main-product .product product-gallery {
-  position: sticky;
-  top: 120px;
+  .shopify-section--main-product .product product-gallery {
+    position: sticky;
+    top: 120px;
+  }
 }
 .product-gallery {
   gap: var(--spacing-5);
