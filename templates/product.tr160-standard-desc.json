@@ -821,6 +821,7 @@
         },
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-love",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_4.value }}",
@@ -835,6 +836,7 @@
         },
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-shield",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_5.value }}",
