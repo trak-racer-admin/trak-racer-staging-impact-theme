@@ -37,7 +37,8 @@
               {%- assign title = block.settings.title | default: block.settings.page.title -%}
               {%- assign content = block.settings.page.content | default: block.settings.content -%}
 
-              {%- if title and content -%}
+              {%- if title != blank and content != blank -%}
+                {% comment %} <div class="hidden">This is coneten {{ forloop.index }} ===== {{ content }}</div> {% endcomment %}
                 {%- assign open = false -%}
 
                 {%- if forloop.first and section.settings.first_tab_open -%}
