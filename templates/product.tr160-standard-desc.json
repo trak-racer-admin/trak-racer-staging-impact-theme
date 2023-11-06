@@ -792,7 +792,7 @@
         ".tab-content {text-align: left;}"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "content_size": "large",
         "subheading": "",
         "title": "Compatibility",
@@ -802,70 +802,6 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
-      }
-    },
-    "4f1d4890-7918-45d4-8a33-dd23b1b89f37": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "{{ product.metafields.custom_fields.whats_included_header_1.value }}",
-            "content": "{{ product.metafields.custom_fields.what_s_included_subtext_1 | metafield_tag }}"
-          }
-        },
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
-          }
-        },
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-1",
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-2",
-        "template--17090428174500__4f1d4890-7918-45d4-8a33-dd23b1b89f37-item-3"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "What's Included",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "ed2a04fa-645a-4699-8143-d5f7305c1388": {
@@ -1026,7 +962,6 @@
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "59869190-55a7-472e-b22d-3b1565a35196",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
-    "4f1d4890-7918-45d4-8a33-dd23b1b89f37",
     "ed2a04fa-645a-4699-8143-d5f7305c1388",
     "1699280302ce249eed",
     "57b66606-5026-4e46-ae1c-c311aab94ded",
