@@ -885,6 +885,33 @@
         "overlay_opacity": 0
       }
     },
+    "1699280302ce249eed": {
+      "type": "apps",
+      "blocks": {
+        "fcc53b01-9598-444f-a993-40806919ac12": {
+          "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/specific-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+            "bundle_ids": "137851"
+          }
+        }
+      },
+      "block_order": [
+        "fcc53b01-9598-444f-a993-40806919ac12"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "57b66606-5026-4e46-ae1c-c311aab94ded": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -1001,6 +1028,7 @@
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "4f1d4890-7918-45d4-8a33-dd23b1b89f37",
     "ed2a04fa-645a-4699-8143-d5f7305c1388",
+    "1699280302ce249eed",
     "57b66606-5026-4e46-ae1c-c311aab94ded",
     "related-products",
     "16919816096b1b8f4c"
