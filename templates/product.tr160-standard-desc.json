@@ -758,7 +758,7 @@
         "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
       ],
       "custom_css": [
-        ".multi-column {padding-left: 70px; padding-right: 70px;}",
+        ".multi-column {padding-left: 120px; padding-right: 120px;}",
         ".multi-column__item {padding-left: 10px; padding-right: 10px;}"
       ],
       "settings": {
