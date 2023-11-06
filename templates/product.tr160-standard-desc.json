@@ -706,7 +706,7 @@
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
       "custom_css": [
-        ".text-with-icons {padding-left: 10px; padding-right: 10px;}"
+
       ],
       "settings": {
         "full_width": true,
@@ -715,7 +715,7 @@
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "#ffffff",
+        "background": "#f7f7f7",
         "background_gradient": "",
         "text_color": "#000000"
       }
