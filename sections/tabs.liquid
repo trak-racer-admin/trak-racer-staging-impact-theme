@@ -37,7 +37,7 @@
               {%- assign title = block.settings.title | default: block.settings.page.title -%}
               {%- assign content = block.settings.page.content | default: block.settings.content -%}
 
-              <div class="hidden">This is coneten ===== {{ content }}</div>
+              <div class="hidden">This is coneten {{ forloop.index }} ===== {{ content }}</div>
 
               {%- if title and content -%}
                 {%- assign open = false -%}
