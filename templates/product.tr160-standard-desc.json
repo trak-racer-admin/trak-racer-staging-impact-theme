@@ -200,6 +200,32 @@
         "text_gradient": ""
       }
     },
+    "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom_fields.product_headline_statement.value }}",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#efefef",
+        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(230, 66, 66, 1) 70%)",
+        "text_color": "#ffffff"
+      }
+    },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
       "type": "feature-chart",
       "blocks": {
@@ -287,32 +313,6 @@
         "chart_true_false_color": ""
       }
     },
-    "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1": {
-          "type": "heading",
-          "settings": {
-            "text": "{{ product.metafields.custom_fields.product_headline_statement.value }}",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 2.518%, rgba(228, 227, 225, 1) 42%, rgba(249, 249, 249, 1) 74%, rgba(194, 194, 194, 1) 100%)"
-          }
-        }
-      },
-      "block_order": [
-        "template--19236073701664__373735c4-09bd-4ac5-838d-450fa5dd77ce-1685585731e194a368-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#efefef",
-        "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(230, 66, 66, 1) 70%)",
-        "text_color": "#ffffff"
-      }
-    },
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
       "type": "hot-spots",
       "blocks": {
@@ -382,7 +382,7 @@
         "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
         "button_text": "Buy Now",
         "button_url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
-        "desktop_text_position": "place-self-start text-start",
+        "desktop_text_position": "place-self-start-end text-end",
         "image_background": "#ffffff",
         "image_background_gradient": "",
         "overlay_color": "#000000",
@@ -927,8 +927,8 @@
   "order": [
     "main",
     "9699c3a6-d29d-424f-8992-c24a2d0b7bc6",
-    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
+    "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "59869190-55a7-472e-b22d-3b1565a35196",
