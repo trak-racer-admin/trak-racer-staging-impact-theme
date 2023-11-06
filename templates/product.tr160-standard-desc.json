@@ -659,56 +659,6 @@
         "spacing": "none"
       }
     },
-    "57b66606-5026-4e46-ae1c-c311aab94ded": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Single, triple or ultrawide?",
-            "heading_tag": "h2"
-          }
-        },
-        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Trak Racer offers options for free standing, and integrated display stands for One, Two, Three and Four monitors. Options for every size screen or TV to get you closer that immersive experience.<\/p>"
-          }
-        },
-        "fd2c6817-6caf-45e1-97c5-6f784742ee52": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "base",
-            "text": "Shop Monitor Stands",
-            "url": "shopify:\/\/collections\/monitor-stands",
-            "background": "",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1",
-        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1",
-        "fd2c6817-6caf-45e1-97c5-6f784742ee52"
-      ],
-      "custom_css": [
-        ".image-banner {background-color: white;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/monitor_upsale.png",
-        "mobile_image": "shopify:\/\/shop_images\/monitor_upsale_mobile.png",
-        "mobile_text_position": "place-self-start text-start",
-        "desktop_text_position": "sm:place-self-end-start sm:text-start",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
       "type": "text-with-icons",
       "blocks": {
@@ -871,6 +821,56 @@
         "overlay_opacity": 0
       }
     },
+    "57b66606-5026-4e46-ae1c-c311aab94ded": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Single, triple or ultrawide?",
+            "heading_tag": "h2"
+          }
+        },
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Trak Racer offers options for free standing, and integrated display stands for One, Two, Three and Four monitors. Options for every size screen or TV to get you closer that immersive experience.<\/p>"
+          }
+        },
+        "fd2c6817-6caf-45e1-97c5-6f784742ee52": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Shop Monitor Stands",
+            "url": "shopify:\/\/collections\/monitor-stands",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1",
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1",
+        "fd2c6817-6caf-45e1-97c5-6f784742ee52"
+      ],
+      "custom_css": [
+        ".image-banner {background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/monitor_upsale.png",
+        "mobile_image": "shopify:\/\/shop_images\/monitor_upsale_mobile.png",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -933,10 +933,10 @@
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "59869190-55a7-472e-b22d-3b1565a35196",
     "d60376ec-4552-403b-859b-34747fc838f1",
-    "57b66606-5026-4e46-ae1c-c311aab94ded",
     "974a92ca-5417-47d7-bae4-547d0c063284",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
     "ed2a04fa-645a-4699-8143-d5f7305c1388",
+    "57b66606-5026-4e46-ae1c-c311aab94ded",
     "related-products",
     "16919816096b1b8f4c"
   ]
