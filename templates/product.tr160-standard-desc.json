@@ -52,7 +52,7 @@
           "settings": {
             "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "block",
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -180,8 +180,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
         "text_color": "#ffffff",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_background": "#ffffff",
+        "input_text_color": "#000000"
       }
     },
     "9699c3a6-d29d-424f-8992-c24a2d0b7bc6": {
