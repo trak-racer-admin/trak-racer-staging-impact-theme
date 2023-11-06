@@ -113,7 +113,7 @@
       },
       "2369874457889669609": {
         "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/app-embed\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
