@@ -692,7 +692,7 @@
         "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
         "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
         "button_text": "Buy Now",
-        "button_url": "",
+        "button_url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
         "desktop_text_position": "place-self-start text-start",
         "image_background": "#ffffff",
         "image_background_gradient": "",
