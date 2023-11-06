@@ -758,17 +758,18 @@
         "template--17090428174500__e2dea07d-57f3-4957-83ab-a390ea63d2f4-item-3"
       ],
       "custom_css": [
-
+        ".multi-column {padding-left: 70px; padding-right: 70px;}",
+        ".multi-column__item {padding-left: 10px; padding-right: 10px;}"
       ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
-        "gap": "small",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "What's Included",
         "content": "<p>{{ product.metafields.custom.whats_included_subheader.value }}<\/p>",
-        "background": "#ffffff",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
       }
@@ -854,15 +855,17 @@
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".text-with-icons {padding-left: 10px; padding-right: 10px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
         "title": "What's Included",
         "heading_tag": "h5",
         "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "#e6e6e6",
+        "icon_spacing": "small",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "#000000"
       }
