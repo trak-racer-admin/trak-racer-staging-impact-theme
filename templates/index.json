@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/black_friday_banner_brighter_copy.png",
-            "mobile_image": "shopify:\/\/shop_images\/final_sale_banner_mobile1.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_sale_banner_mobile2_1.png",
             "content_max_width": 1200,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
@@ -60,7 +60,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
