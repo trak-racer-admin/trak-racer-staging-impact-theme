@@ -71,7 +71,7 @@
           }
         },
         "6d4f1626-5de4-4a97-9adb-0bbf7ca135e4": {
-          "type": "shopify:\/\/apps\/assortion-upsell-bundles\/blocks\/addon\/5588d7f9-a5bc-4f4a-9c54-39b7e081dd23",
+          "type": "shopify:\/\/apps\/assortion\/blocks\/addon\/5588d7f9-a5bc-4f4a-9c54-39b7e081dd23",
           "disabled": true,
           "settings": {
             "id": "cb829bfe-a666-4513-95fe-59f3c444f799"
@@ -127,8 +127,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
