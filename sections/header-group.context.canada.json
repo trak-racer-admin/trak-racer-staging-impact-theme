@@ -4,5 +4,12 @@
     "market": "canada"
   },
   "sections": {
+    "header": {
+      "settings": {
+        "menu": "main-menu-canada"
+      },
+      "blocks": {
+      }
+    }
   }
 }
