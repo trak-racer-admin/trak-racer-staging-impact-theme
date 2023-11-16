@@ -1,5 +1,6 @@
 {
   "current": {
+    "page_width": 1800,
     "section_vertical_spacing": "xsmall",
     "button_border_radius": 6,
     "input_border_radius": 8,
@@ -9,20 +10,21 @@
     "icon_stroke_width": 1,
     "icon_style": "mono",
     "button_hover_effect": "fade",
-    "background": "#f2f2f2",
-    "text_color": "#1a1a1a",
-    "header_background": "#000000",
+    "background": "#f7f7f7",
+    "text_color": "#121212",
+    "header_background": "#121212",
     "header_text_color": "#ffffff",
     "footer_background": "#ffffff",
-    "footer_text_color": "#1a1a1a",
-    "primary_button_background": "#ce151b",
+    "footer_text_color": "#121212",
+    "primary_button_background": "#e53535",
     "primary_button_text_color": "#ffffff",
-    "secondary_button_background": "#1a1a1a",
+    "secondary_button_background": "#121212",
     "secondary_button_text_color": "#ffffff",
     "product_card_text_color": "#000000",
     "product_rating_color": "#ffb74a",
     "product_on_sale_accent": "#000000",
     "product_primary_badge_background": "#803cee",
+    "custom_font_for_heading_tag": true,
     "heading_font": "helvetica_n3",
     "heading_font_size": "large",
     "heading_text_transform": "normal",
@@ -32,7 +34,7 @@
     "text_font_size_desktop": 17,
     "text_font_letter_spacing": 5,
     "currency_code_enabled": false,
-    "show_page_transition": true,
+    "show_page_transition": false,
     "heading_apparition": "fade",
     "color_swatch_style": "round",
     "color_swatch_config": "Alpine Racing Blue:#6a97fd\nBlack:#000000",
@@ -97,8 +99,14 @@
         "settings": {
         }
       },
-      "15659862187755629035": {
-        "type": "shopify:\/\/apps\/bookeasy\/blocks\/app-embed\/865cd10f-9515-4d8b-8e41-efece9c83f71",
+      "10746902591489815047": {
+        "type": "shopify:\/\/apps\/use-google-fonts-custom-fonts\/blocks\/app-embed\/2caf2c68-0038-455e-b0b9-066a7c2ad923",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2369874457889669609": {
+        "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/app-embed\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
         "disabled": true,
         "settings": {
         }

@@ -52,7 +52,7 @@
           "settings": {
             "hide_sold_out_variants": true,
             "stack_blocks": true,
-            "selector_mode": "block",
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -163,6 +163,9 @@
         "c2b51e67-ad0d-4556-b975-bb5000ae8d79",
         "a5fb07ee-2724-4c6e-a703-16c79586c6f1"
       ],
+      "custom_css": [
+        ".text-on-sale {color: white;}"
+      ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
@@ -177,8 +180,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
         "text_color": "#ffffff",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_background": "#ffffff",
+        "input_text_color": "#000000"
       }
     },
     "9699c3a6-d29d-424f-8992-c24a2d0b7bc6": {
@@ -221,139 +224,6 @@
         "background": "#efefef",
         "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(230, 66, 66, 1) 70%)",
         "text_color": "#ffffff"
-      }
-    },
-    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
-      "type": "slideshow",
-      "blocks": {
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_mobile.value }}",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
-            "heading_tag": "h2",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
-            "heading_tag": "h2",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
-            "heading_tag": "h2",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
-            "heading_tag": "h2",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "76b820e2-76f8-484e-a3a4-4ecb3be6ae10": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.product_slide_image_5_desktop.value }}",
-            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_5_mobile.value }}",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center-end sm:text-end",
-            "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
-            "heading_tag": "h2",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
-        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
-        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
-        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
-        "76b820e2-76f8-484e-a3a4-4ecb3be6ae10"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "auto",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "#f2f2f2",
-        "background_gradient": ""
       }
     },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
@@ -443,68 +313,298 @@
         "chart_true_false_color": ""
       }
     },
+    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 28,
+            "vertical_position": 57,
+            "horizontal_position_mobile": 10,
+            "vertical_position_mobile": 46,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_1_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_1_subtext | metafield_tag }}"
+          }
+        },
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 46,
+            "vertical_position": 23,
+            "horizontal_position_mobile": 43,
+            "vertical_position_mobile": 19,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_2_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_2_subtext | metafield_tag }}"
+          }
+        },
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 58,
+            "vertical_position": 36,
+            "horizontal_position_mobile": 60,
+            "vertical_position_mobile": 33,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_3_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_3_subtext | metafield_tag }}"
+          }
+        },
+        "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 68,
+            "vertical_position": 66,
+            "horizontal_position_mobile": 76,
+            "vertical_position_mobile": 62,
+            "icon_width": 32,
+            "title": "{{ product.metafields.custom.product_hotspot_4_header.value }}",
+            "content": "{{ product.metafields.custom.product_hotspot_4_subtext | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1",
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2",
+        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3",
+        "ee35adab-059f-4e59-bfbc-a4ada75d6437"
+      ],
+      "custom_css": [
+        "{background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
+        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
+        "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
+        "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
+        "button_text": "Buy Now",
+        "button_url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
+        "desktop_text_position": "place-self-start-end text-end",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#000000",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#cb1314",
+        "hot_spot_dot_text_color": "#ffffff",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 84,
+        "hot_spot_content_blur_radius": 5
+      }
+    },
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_1_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_1_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "make_subheading_bold": false,
+            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "make_heading_bold": false,
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_2_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_2_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
+            "make_subheading_bold": false,
+            "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "make_heading_bold": false,
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_3_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_3_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
+            "make_subheading_bold": false,
+            "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "make_heading_bold": false,
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_4_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_4_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
+            "make_subheading_bold": false,
+            "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "make_heading_bold": false,
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "76b820e2-76f8-484e-a3a4-4ecb3be6ae10": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom_fields.product_slide_image_5_desktop.value }}",
+            "mobile_image": "{{ product.metafields.custom_fields.product_slide_image_5_mobile.value }}",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "{{ product.metafields.custom_fields.product_slide_text_5.value }}",
+            "make_subheading_bold": false,
+            "title": "{{ product.metafields.custom_fields.product_slide_title_5.value }}",
+            "make_heading_bold": false,
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-0",
+        "844e4e46-0897-43d2-9b8d-06260df6ccc9",
+        "template--19236073701664__4c633010-91ac-4cc3-a8a9-ad6ff192ed45-1685584167944544db-1",
+        "1d5dbb33-f7e0-42d1-9487-92822115a20f",
+        "76b820e2-76f8-484e-a3a4-4ecb3be6ae10"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 20,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
     "d60376ec-4552-403b-859b-34747fc838f1": {
       "type": "media-with-text",
       "blocks": {
-        "template--17087704826020__d60376ec-4552-403b-859b-34747fc838f1-image-1": {
+        "aa962182-464b-4d76-a90e-6799236a62e5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TR160_05-GIF05ALPB_TR_Red.gif",
+            "image": "{{ product.metafields.custom.featured_detail_1_image.value }}",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
-            "content": "<p>{{ product.metafields.custom_fields.product_slide_text_1.value }}<\/p>",
-            "link_text": "",
+            "title": "{{ product.metafields.custom.featured_detail_1_heading.value }}",
+            "content": "{{ product.metafields.custom.featured_detail_1_description | metafield_tag }}<p><a href=\"https:\/\/trakracer.com\" title=\"https:\/\/trakracer.com\">sdfgsdfgsdfg<\/a><\/p>",
+            "link_text": "{{ product.metafields.custom.featured_detail_1_button.value }}",
             "link_url": "",
             "background": "#ffffff",
             "background_gradient": "",
-            "text_color": "#1a1a1a",
+            "text_color": "#000000",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
           }
         },
-        "e84f1235-995d-4f4e-a8a3-5cc7ed7e2bce": {
+        "55c32ab5-191e-4c12-9576-04092a5abd1e": {
           "type": "image",
           "settings": {
+            "image": "{{ product.metafields.custom.featured_detail_2_image.value }}",
             "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
+            "title": "{{ product.metafields.custom.featured_detail_2_heading.value }}",
+            "content": "{{ product.metafields.custom.featured_detail_2_description | metafield_tag }}",
+            "link_text": "{{ product.metafields.custom.featured_detail_2_button.value }}",
             "link_url": "",
-            "background": "#000000",
+            "background": "#ffffff",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
           }
         },
-        "35f9fdf5-09a7-41d9-967e-d0febe5e1739": {
+        "3045d804-b0d1-4790-9b8a-3131e3b2b07f": {
           "type": "image",
           "settings": {
+            "image": "{{ product.metafields.custom.featured_detail_3_image.value }}",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "link_text": "",
+            "title": "{{ product.metafields.custom.featured_detail_3_heading.value }}",
+            "content": "{{ product.metafields.custom.featured_detail_3_description | metafield_tag }}",
+            "link_text": "{{ product.metafields.custom.featured_detail_3_button.value }}",
             "link_url": "",
-            "background": "#000000",
+            "background": "#ffffff",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
@@ -512,52 +612,16 @@
         }
       },
       "block_order": [
-        "template--17087704826020__d60376ec-4552-403b-859b-34747fc838f1-image-1",
-        "e84f1235-995d-4f4e-a8a3-5cc7ed7e2bce",
-        "35f9fdf5-09a7-41d9-967e-d0febe5e1739"
+        "aa962182-464b-4d76-a90e-6799236a62e5",
+        "55c32ab5-191e-4c12-9576-04092a5abd1e",
+        "3045d804-b0d1-4790-9b8a-3131e3b2b07f"
       ],
-      "disabled": true,
       "custom_css": [
         "{background-color: white;}"
       ],
       "settings": {
         "full_width": false,
-        "spacing": "small"
-      }
-    },
-    "59869190-55a7-472e-b22d-3b1565a35196": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Dimensions",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "8b1c6446-ebba-40f6-b580-1f512dd70743": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
-            "width_mode": "custom",
-            "max_width": 1000,
-            "mobile_max_width": 600
-          }
-        }
-      },
-      "block_order": [
-        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1",
-        "8b1c6446-ebba-40f6-b580-1f512dd70743"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
+        "spacing": "none"
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
@@ -641,151 +705,54 @@
         "f49e58c2-b8c6-43ba-a347-41bd9b6e609b",
         "59afb412-3ea0-4dec-b89f-ed55e18ebd09"
       ],
+      "custom_css": [
+        ".section-full {padding-top: 40px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
         "title": "What's Included",
         "heading_tag": "h5",
         "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "#e6e6e6",
+        "icon_spacing": "small",
+        "background": "#f7f7f7",
         "background_gradient": "",
         "text_color": "#000000"
       }
     },
-    "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6": {
-      "type": "hot-spots",
+    "59869190-55a7-472e-b22d-3b1565a35196": {
+      "type": "rich-text",
       "blocks": {
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1": {
-          "type": "item",
+        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1": {
+          "type": "heading",
           "settings": {
-            "horizontal_position": 18,
-            "vertical_position": 59,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
+            "text": "Dimensions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
           }
         },
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 62,
-            "vertical_position": 14,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        },
-        "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
-          "type": "item",
-          "settings": {
-            "horizontal_position": 30,
-            "vertical_position": 30,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-1",
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2",
-        "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3",
-        "ee35adab-059f-4e59-bfbc-a4ada75d6437"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{background-color: white;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "image": "shopify:\/\/shop_images\/TR160-SMPBAL.6_f859b599-3317-42f2-9667-56555dddc0cc.png",
-        "title": "The Forever Rig",
-        "content": "<p>Some memes conetentente<\/p>",
-        "button_text": "buy now",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "#ffffff",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#000000",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#cb1314",
-        "hot_spot_dot_text_color": "#ffffff",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 84,
-        "hot_spot_content_blur_radius": 5
-      }
-    },
-    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb": {
-      "type": "multi-column",
-      "blocks": {
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1": {
-          "type": "item",
+        "8b1c6446-ebba-40f6-b580-1f512dd70743": {
+          "type": "image",
           "settings": {
             "image": "{{ product.metafields.custom_fields.dimensions_image.value }}",
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2": {
-          "type": "item",
-          "settings": {
-            "column_size": "2",
-            "title": "Key Benefits",
-            "heading_tag": "h4",
-            "content": "<ul><li>Pair text with an image<\/li><li> to focus on your chosen product,<\/li><li>collection, or blog post. <\/li><li>Add details on availability, style,<\/li><li> or even provide a review.<\/li><\/ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 600
           }
         }
       },
       "block_order": [
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-1",
-        "template--17087704826020__b6d9947c-eb9b-4489-8bb1-19b21fc458bb-item-2"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".text-custom {text-align: left;}"
+        "template--17087704826020__59869190-55a7-472e-b22d-3b1565a35196-heading-1",
+        "8b1c6446-ebba-40f6-b580-1f512dd70743"
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "x-large",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "#1f1f1f",
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": ""
       }
     },
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb": {
@@ -825,7 +792,7 @@
         ".tab-content {text-align: left;}"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "content_size": "large",
         "subheading": "",
         "title": "Compatibility",
@@ -837,54 +804,98 @@
         "heading_gradient": ""
       }
     },
-    "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
-      "type": "accordion-content",
+    "ed2a04fa-645a-4699-8143-d5f7305c1388": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_51131b6c-e635-4eb5-a32b-dca90012dcd4.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_400px.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "1699280302ce249eed": {
+      "type": "apps",
       "blocks": {
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0": {
-          "type": "item",
+        "fcc53b01-9598-444f-a993-40806919ac12": {
+          "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/specific-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
           "settings": {
-            "title": "Wheel Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.wheel_mount_compatability_rigs | metafield_tag }}"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1": {
-          "type": "item",
-          "settings": {
-            "title": "Pedal Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.pedal_mount_compatibility_rigs | metafield_tag }}"
-          }
-        },
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2": {
-          "type": "item",
-          "settings": {
-            "title": "Shifter & Handbrake Mount (click to view)",
-            "content": "{{ product.metafields.custom_fields.shifter_mount_other_mounts_compatibiltiy_rigs | metafield_tag }}"
+            "bundle_ids": "137851"
           }
         }
       },
       "block_order": [
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-0",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-1",
-        "template--19818471325984__cec87c33-f6bb-4256-a0cd-37a59df85d6b-1689138860861c7092-2"
+        "fcc53b01-9598-444f-a993-40806919ac12"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
-        "subheading": "",
-        "title": "Compatibility",
-        "content": "<p>Our simulators are made to be used with the biggest brands in the simracing market!<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
         "background_gradient": "",
-        "text_color": "#000000",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "#f2f2f2",
-        "accordion_text_color": "#000000"
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "57b66606-5026-4e46-ae1c-c311aab94ded": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Single, triple or ultrawide?",
+            "heading_tag": "h2"
+          }
+        },
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Trak Racer offers options for free standing, and integrated display stands for One, Two, Three and Four monitors. Options for every size screen or TV to get you closer that immersive experience.<\/p>"
+          }
+        },
+        "fd2c6817-6caf-45e1-97c5-6f784742ee52": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Shop Monitor Stands",
+            "url": "shopify:\/\/collections\/monitor-stands",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-heading-1",
+        "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1",
+        "fd2c6817-6caf-45e1-97c5-6f784742ee52"
+      ],
+      "custom_css": [
+        ".image-banner {background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/monitor_upsale.png",
+        "mobile_image": "shopify:\/\/shop_images\/monitor_upsale_mobile.png",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "related-products": {
@@ -944,15 +955,16 @@
     "main",
     "9699c3a6-d29d-424f-8992-c24a2d0b7bc6",
     "373735c4-09bd-4ac5-838d-450fa5dd77ce",
-    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7",
-    "d60376ec-4552-403b-859b-34747fc838f1",
-    "59869190-55a7-472e-b22d-3b1565a35196",
-    "974a92ca-5417-47d7-bae4-547d0c063284",
     "e8c984a5-6424-4e02-ae2f-f8d33d0c77d6",
-    "b6d9947c-eb9b-4489-8bb1-19b21fc458bb",
+    "4c633010-91ac-4cc3-a8a9-ad6ff192ed45",
+    "d60376ec-4552-403b-859b-34747fc838f1",
+    "974a92ca-5417-47d7-bae4-547d0c063284",
+    "59869190-55a7-472e-b22d-3b1565a35196",
     "27a97f99-7e34-46ea-b4b4-ba8d8c2243eb",
-    "cec87c33-f6bb-4256-a0cd-37a59df85d6b",
+    "ed2a04fa-645a-4699-8143-d5f7305c1388",
+    "1699280302ce249eed",
+    "57b66606-5026-4e46-ae1c-c311aab94ded",
     "related-products",
     "16919816096b1b8f4c"
   ]
