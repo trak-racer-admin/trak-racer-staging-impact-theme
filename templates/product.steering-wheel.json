@@ -300,7 +300,7 @@
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "",
-            "icon_color": "",
+            "icon_color": "rgba(0,0,0,0)",
             "title": "{{ product.metafields.custom_fields.whats_included_header_2.value }}",
             "content": "{{ product.metafields.custom_fields.what_s_included_subtext_2 | metafield_tag }}"
           }
