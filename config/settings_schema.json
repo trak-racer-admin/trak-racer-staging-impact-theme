@@ -4,8 +4,8 @@
     "theme_name": "Impact",
     "theme_author": "Maestrooo",
     "theme_version": "4.3.1",
-    "theme_documentation_url": "https://support.maestrooo.com/",
-    "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
+    "theme_documentation_url": "https:\/\/support.maestrooo.com\/",
+    "theme_support_url": "https:\/\/support.maestrooo.com\/article\/203-contact-us"
   },
   {
     "name": "Appearance and spacing",
@@ -298,12 +298,12 @@
       },
       {
         "type": "header",
-        "content": "Drawer/popover"
+        "content": "Drawer\/popover"
       },
       {
         "type": "color",
         "id": "dialog_background",
-        "label": "Modal/popover background",
+        "label": "Modal\/popover background",
         "info": "Choose a color similar to the primary background.",
         "default": "#ffffff"
       },
@@ -342,7 +342,7 @@
       {
         "type": "header",
         "content": "Product",
-        "info": "[Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label) about setting custom badges."
+        "info": "[Learn more](https:\/\/support.maestrooo.com\/article\/75-collection-displaying-custom-label) about setting custom badges."
       },
       {
         "type": "color",
@@ -390,10 +390,26 @@
         "content": "Headings"
       },
       {
+        "type": "checkbox",
+        "id": "custom_font_for_heading_tag",
+        "label": "Override Saira Font For All Heading Tags."
+      },
+      {
+        "type": "range",
+        "min": 0,
+        "max": 5,
+        "step": 0.2,
+        "unit": "px",
+        "id": "custom_heading_letter_spacing",
+        "label": "letter spacing",
+        "default": 0,
+        "info": "The letter spacing for the Saira font should be adjusted, with a minimum of 0px, a maximum of 5px, and a step size of 0.2px."
+      },
+      {
         "type": "font_picker",
         "id": "heading_font",
         "label": "Font",
-        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
         "default": "helvetica_n4"
       },
       {
@@ -454,7 +470,7 @@
         "type": "font_picker",
         "id": "text_font",
         "label": "Font",
-        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
         "default": "helvetica_n4"
       },
       {
@@ -543,7 +559,7 @@
         "type": "select",
         "id": "heading_apparition",
         "label": "Heading apparition",
-        "info": "Line by line apparition can't be used for gradient heading. [Learn more](https://support.maestrooo.com/article/299-limitation-for-gradients-on-impact-theme)",
+        "info": "Line by line apparition can't be used for gradient heading. [Learn more](https:\/\/support.maestrooo.com\/article\/299-limitation-for-gradients-on-impact-theme)",
         "options": [
           {
             "value": "none",
@@ -598,7 +614,7 @@
         "id": "color_swatch_config",
         "label": "Configuration",
         "placeholder": "Red:#ff0000\nGreen:#00ff00\nBlue:#0000ff",
-        "info": "Each rule must be in its own line. [Learn more](https://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
+        "info": "Each rule must be in its own line. [Learn more](https:\/\/support.maestrooo.com\/article\/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
       }
     ]
   },
@@ -627,7 +643,7 @@
         "type": "checkbox",
         "id": "show_product_rating",
         "label": "Show product rating",
-        "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+        "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)",
         "default": false
       },
       {
@@ -780,12 +796,12 @@
         "type": "url",
         "id": "cart_empty_button_link",
         "label": "Empty button link",
-        "default": "/collections/all"
+        "default": "\/collections\/all"
       },
       {
         "type": "header",
         "content": "Free shipping bar",
-        "info": "Show a shipping bar advancement on cart page and cart drawer. Configure your [shipping rates](/admin/settings/shipping) to match the amount."
+        "info": "Show a shipping bar advancement on cart page and cart drawer. Configure your [shipping rates](\/admin\/settings\/shipping) to match the amount."
       },
       {
         "type": "checkbox",

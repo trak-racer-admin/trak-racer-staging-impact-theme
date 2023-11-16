@@ -7463,8 +7463,11 @@ split-lines {
     z-index: 1;
     position: sticky;
   }
+  .shopify-section--main-product .product product-gallery {
+    position: sticky;
+    top: 180px;
+  }
 }
-
 .product-gallery {
   gap: var(--spacing-5);
   grid-auto-columns: minmax(0, 1fr);
@@ -9875,4 +9878,11 @@ split-lines {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
+}
+
+/* HC - Making Subheading and Heading Bold - 26 Oct '23 */
+
+.shopify-section--slideshow .bold
+{
+    font-weight: bold !important;
 }
