@@ -46,12 +46,6 @@
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17": {
           "type": "text",
           "disabled": true,
@@ -130,7 +124,6 @@
         "rating",
         "payment_terms",
         "separator",
-        "description",
         "95d3ed57-f1ed-403e-baeb-a565bdc71b17",
         "variant_picker",
         "0040dc10-c915-4ceb-9474-555cc98fd73b",
@@ -157,6 +150,307 @@
         "text_color": "#1a1a1a",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "d256469e-14b0-46fc-8d36-c0b8c6407c38": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--17275706998948__d256469e-14b0-46fc-8d36-c0b8c6407c38-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--17275706998948__d256469e-14b0-46fc-8d36-c0b8c6407c38-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17275706998948__d256469e-14b0-46fc-8d36-c0b8c6407c38-headings-1",
+        "template--17275706998948__d256469e-14b0-46fc-8d36-c0b8c6407c38-values-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "bad9937e-1dd8-4d71-bb2d-0017e95acd4f": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17275706998948__bad9937e-1dd8-4d71-bb2d-0017e95acd4f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17275706998948__bad9937e-1dd8-4d71-bb2d-0017e95acd4f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17275706998948__bad9937e-1dd8-4d71-bb2d-0017e95acd4f-heading-1",
+        "template--17275706998948__bad9937e-1dd8-4d71-bb2d-0017e95acd4f-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "b72adc25-af75-414b-9b4d-7ecc82137aab": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+          }
+        },
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.<\/p>"
+          }
+        },
+        "6f0fe3bc-9e58-4876-8324-406743d92cda": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Heading",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "ac1e12b4-e4a3-47e0-8d2a-5bd361297770": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Heading",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-1",
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-2",
+        "template--17275706998948__b72adc25-af75-414b-9b4d-7ecc82137aab-item-3",
+        "6f0fe3bc-9e58-4876-8324-406743d92cda",
+        "ac1e12b4-e4a3-47e0-8d2a-5bd361297770"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "56ec78c1-ffcb-4934-9c3d-aeee15ee4b56": {
+      "type": "video",
+      "blocks": {
+        "template--17275706998948__56ec78c1-ffcb-4934-9c3d-aeee15ee4b56-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17275706998948__56ec78c1-ffcb-4934-9c3d-aeee15ee4b56-play-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "7a4d37e8-e29d-4555-914b-42f62fe65da0": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--17275706998948__7a4d37e8-e29d-4555-914b-42f62fe65da0-image-1": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "a03de45b-d105-4078-aa8c-d1a7638f4a60": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17275706998948__7a4d37e8-e29d-4555-914b-42f62fe65da0-image-1",
+        "a03de45b-d105-4078-aa8c-d1a7638f4a60"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "58bd0ede-3575-4f5d-a969-7ff71839ee08": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_51131b6c-e635-4eb5-a32b-dca90012dcd4.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "related-products": {
@@ -214,6 +508,12 @@
   },
   "order": [
     "main",
+    "d256469e-14b0-46fc-8d36-c0b8c6407c38",
+    "bad9937e-1dd8-4d71-bb2d-0017e95acd4f",
+    "b72adc25-af75-414b-9b4d-7ecc82137aab",
+    "56ec78c1-ffcb-4934-9c3d-aeee15ee4b56",
+    "7a4d37e8-e29d-4555-914b-42f62fe65da0",
+    "58bd0ede-3575-4f5d-a969-7ff71839ee08",
     "related-products",
     "169164228579fecd9c"
   ]
