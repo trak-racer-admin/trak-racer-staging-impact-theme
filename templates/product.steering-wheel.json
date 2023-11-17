@@ -384,6 +384,7 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
+        "video": "{{ product.metafields.custom_fields.video_file.value }}",
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
