@@ -184,7 +184,7 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>test {{ block.settings.product.metafields.custom_fields.spec_1_label.value }}{{ block.settings.product.metafields.custom_fields.spec_1.value }}<\/p>{{ block.settings.product.metafields.custom_fields.description_tab_1 | metafield_tag }}",
+            "value_1": "<p>{{ product.metafields.custom_fields.spec_1.value }}<\/p>",
             "value_2": "<p>Yes<\/p>",
             "value_3": "<p>No<\/p>",
             "value_4": "<p>No<\/p>",
