@@ -158,7 +158,7 @@
         "template--17275706998948__d256469e-14b0-46fc-8d36-c0b8c6407c38-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "Heading 1",
+            "heading_1": "{{ product.metafields.custom_fields.spec_1_label.value }}",
             "heading_2": "Heading 2",
             "heading_3": "Heading 3",
             "heading_4": "Heading 4",
@@ -184,7 +184,7 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>Yes<\/p>",
+            "value_1": "<p>{{ block.settings.product.metafields.custom_fields.spec_1_label.value }}<\/p>",
             "value_2": "<p>Yes<\/p>",
             "value_3": "<p>No<\/p>",
             "value_4": "<p>No<\/p>",
@@ -399,7 +399,7 @@
             "image": "{{ product.metafields.custom.featured_detail_1_image.value }}",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
@@ -409,7 +409,7 @@
             "link_url": "",
             "background": "rgba(0,0,0,0)",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
@@ -421,7 +421,7 @@
             "image": "{{ product.metafields.custom.featured_detail_2_image.value }}",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
@@ -431,7 +431,7 @@
             "link_url": "",
             "background": "rgba(0,0,0,0)",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
