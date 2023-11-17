@@ -370,14 +370,14 @@
     "56ec78c1-ffcb-4934-9c3d-aeee15ee4b56": {
       "type": "video",
       "blocks": {
-        "template--17275706998948__56ec78c1-ffcb-4934-9c3d-aeee15ee4b56-play-1": {
+        "632d96a3-a008-44f4-9343-e2e04c973d9f": {
           "type": "play",
           "settings": {
           }
         }
       },
       "block_order": [
-        "template--17275706998948__56ec78c1-ffcb-4934-9c3d-aeee15ee4b56-play-1"
+        "632d96a3-a008-44f4-9343-e2e04c973d9f"
       ],
       "settings": {
         "full_width": true,
@@ -386,6 +386,7 @@
         "video_size": "auto",
         "video": "{{ product.metafields.custom_fields.video_file.value }}",
         "external_video_url": "",
+        "poster": "{{ product.metafields.custom_fields.video_cover.value }}",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
