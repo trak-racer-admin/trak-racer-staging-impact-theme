@@ -55,4 +55,7 @@
   .shopify-section .enter_step_sec .multi-column__item {
     grid-column: span 6;
   }
+  .shopify-section .enter_step_sec .multi-column__item:nth-child(2) {
+    border-right: 0px;
+  }
 }
