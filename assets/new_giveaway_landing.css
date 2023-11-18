@@ -52,7 +52,7 @@
   }
 }
 @media screen and (max-width: 1399px) {
-  .enter_step_sec .title_block {
-    flex-wrap: wrap;
+  .shopify-section .enter_step_sec .multi-column__item {
+    grid-column: span 6;
   }
 }
