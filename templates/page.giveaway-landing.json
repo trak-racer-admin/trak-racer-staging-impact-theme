@@ -19,8 +19,34 @@
         "6d1f753b-9aaa-4338-833d-21976561dd47": {
           "type": "item",
           "settings": {
-            "column_size": "3",
+            "column_size": "4",
             "title": "5",
+            "heading_tag": "h2",
+            "subtitle": "Entries",
+            "content": "<p>Spend $300<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "a8590410-16a7-4e04-9350-234260e8bf76": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "30",
+            "heading_tag": "h2",
+            "subtitle": "Entries",
+            "content": "<p>Spend $1000<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "ab044be9-40cf-448a-b807-0819d8e06edd": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "100",
             "heading_tag": "h2",
             "subtitle": "Entries",
             "content": "<p>Spend $300<\/p>",
@@ -32,7 +58,9 @@
       },
       "block_order": [
         "template--17287309295780__3b0e150e-9fa6-471f-8ebe-bffa4c23f45a-item-1",
-        "6d1f753b-9aaa-4338-833d-21976561dd47"
+        "6d1f753b-9aaa-4338-833d-21976561dd47",
+        "a8590410-16a7-4e04-9350-234260e8bf76",
+        "ab044be9-40cf-448a-b807-0819d8e06edd"
       ],
       "settings": {
         "full_width": false,
