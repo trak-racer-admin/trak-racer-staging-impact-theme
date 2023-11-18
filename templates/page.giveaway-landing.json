@@ -119,7 +119,8 @@
         "text_position": "center",
         "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": "first_signUpForm_text"
       }
     },
     "169822355365a42863": {
@@ -174,7 +175,8 @@
         "text_position": "center",
         "background": "#000000",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "6469952e-51f6-464d-99d5-142fdf72110a": {
@@ -244,7 +246,8 @@
         "text_position": "center",
         "background": "#000000",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
@@ -645,7 +648,8 @@
         "text_position": "start",
         "background": "#000000",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
