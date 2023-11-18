@@ -36,3 +36,14 @@
   line-height: 157%;
   margin-top: -20px;
 }
+@media screen and (max-width: 1500px) {
+  .enter_step_sec .title_block .h2 {
+    font-size: 65px;
+  }
+  .enter_step_sec .title_block .column_subtitle {
+    font-size: 52px;
+  }
+  .enter_step_sec .prose {
+    font-size: 20px;
+  }
+}
