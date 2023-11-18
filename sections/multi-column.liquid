@@ -7,8 +7,8 @@
       --multi-column-list-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
     }
   </style>
-
-  <div {% render 'section-properties' %}>
+  {% assign section_custom_class = section.settings.section_class %}
+  <div {% render 'section-properties' class: section_custom_class %}>
     <div class="section-stack">
       {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
 
@@ -28,10 +28,14 @@
 
                 {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
                   <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
+                  <div class="title_block">
                     {%- if block.settings.title != blank -%}
                       <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
                     {%- endif -%}
-
+                    {%- if block.settings.subtitle != blank -%}
+                      <div class="column_subtitle">{{ block.settings.subtitle | escape }}</div>
+                    {%- endif -%}
+                  </div>
                     {%- if block.settings.content != blank or block.settings.link_text != blank -%}
                       <div class="prose">
                         {{- block.settings.content -}}
@@ -163,6 +167,11 @@
       "type": "color",
       "id": "text_color",
       "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
     }
   ],
   "blocks": [
@@ -243,6 +252,12 @@
             }
           ],
           "default": "h4"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Sub title"
         },
         {
           "type": "richtext",
