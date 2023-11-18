@@ -1,5 +1,53 @@
 {
   "sections": {
+    "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17287309295780__3b0e150e-9fa6-471f-8ebe-bffa4c23f45a-item-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "1",
+            "heading_tag": "h2",
+            "subtitle": "Entry",
+            "content": "<p>Sign Up to the NewsLetter<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "6d1f753b-9aaa-4338-833d-21976561dd47": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "5",
+            "heading_tag": "h2",
+            "subtitle": "Entries",
+            "content": "<p>Spend $300<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17287309295780__3b0e150e-9fa6-471f-8ebe-bffa4c23f45a-item-1",
+        "6d1f753b-9aaa-4338-833d-21976561dd47"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#cd353d",
+        "background_gradient": "",
+        "text_color": "#d9d9d9",
+        "section_class": "enter_step_sec"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -704,6 +752,7 @@
     }
   },
   "order": [
+    "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "main",
     "d3590901-cb13-4b5f-b5cb-14e3db60410b",
     "1b526b28-baf7-462b-958f-968b96d7360b",
