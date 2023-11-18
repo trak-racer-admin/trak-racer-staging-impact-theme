@@ -67,6 +67,6 @@
   }
   .enter_step_sec .multi-column__item {
     grid-column: span 12;
-    border-right: 0;
+    border-right: 0 !important;
   }
 }
