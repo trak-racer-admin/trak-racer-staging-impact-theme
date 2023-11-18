@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&family=Syne&display=swap");
 /* body {
   background: #000000 !important;
 } */
 /* ------------ Enter Step Sec ------------ */
+.shopify-section .enter_step_sec {
+  padding: 29px 30px 22px;
+}
+.shopify-section .enter_step_sec .multi-column__item {
+  justify-content: center;
+}
+.shopify-section .enter_step_sec .multi-column__item:not(:last-child) {
+  border-right: 1px solid #db6f75;
+}
+.shopify-section .enter_step_sec .multi-column__item .v-stack {
+  gap: 0;
+}
 .enter_step_sec .title_block {
   display: flex;
   gap: 8px;
@@ -14,5 +27,11 @@
 .enter_step_sec .title_block .column_subtitle {
   font-size: 66px;
   font-weight: 400;
+  line-height: 157%;
+}
+.enter_step_sec .prose {
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
   line-height: 157%;
 }
