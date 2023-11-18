@@ -101,4 +101,8 @@
   /* border-image: linear-gradient( to bottom, red, rgba(0, 0, 0, 0) ) 1 100% !important;
     border-width: 4px;
     border-style: solid; */
+  color: #716f6f !important;
+  font-family: Syne !important;
+  font-size: 23px !important;
+  line-height: 107%;
 }
