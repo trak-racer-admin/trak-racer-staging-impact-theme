@@ -37,7 +37,7 @@
   margin-top: -20px;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .enter_step_sec .multi-column__item {
     grid-column: span 6;
   }
