@@ -37,6 +37,9 @@
   margin-top: -20px;
 }
 @media screen and (max-width: 1500px) {
+  .shopify-section .enter_step_sec {
+    padding: 30px 20px;
+  }
   .enter_step_sec .title_block .h2 {
     font-size: 65px;
   }
