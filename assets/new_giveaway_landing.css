@@ -31,7 +31,8 @@
 }
 .enter_step_sec .prose {
   color: #fff;
-  font-family: "Syne", sans-serif;
+  font-family: Syne, sans-serif;
   font-size: 20px;
   line-height: 157%;
+  margin-top: -20px;
 }
