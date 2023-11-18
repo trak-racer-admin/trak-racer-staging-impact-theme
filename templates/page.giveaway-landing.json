@@ -82,7 +82,16 @@
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "SIGN UP TO ENTER THE GIVEAWAY",
+            "text": "Signup to for 1 entry or",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "1e158f3d-ad23-46d9-a0de-46eef6378eae": {
+          "type": "heading",
+          "settings": {
+            "text": "purchase Trak Racer products for more entries.",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -97,6 +106,7 @@
       },
       "block_order": [
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1",
+        "1e158f3d-ad23-46d9-a0de-46eef6378eae",
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1"
       ],
       "custom_css": [
