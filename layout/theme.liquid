@@ -90,6 +90,9 @@ t.parentNode.insertBefore(y,t);
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'custom-temp.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'dbox-new.css' | asset_url | stylesheet_tag: preload: true -}}
+    {% if page.template_suffix == 'giveaway-landing' %}
+      {{- 'new_giveaway_landing.css' | asset_url | stylesheet_tag: preload: true -}}
+    {% endif %}
   {% include "onvoard-initialize-head" %}
   <style>
     {% if settings.custom_font_for_heading_tag %}
