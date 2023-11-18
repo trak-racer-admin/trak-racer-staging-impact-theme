@@ -72,7 +72,7 @@
 }
 /* ------------ First SignUp Form ------------ */
 .first_signUpForm_text .prose .h2:first-child {
-  font-family: Syne, sans-serif;
+  font-family: Syne, sans-serif !important;
   font-size: 59px;
   line-height: 0%;
 }
