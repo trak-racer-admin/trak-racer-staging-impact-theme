@@ -1,0 +1,15 @@
+/* ------------ Enter Step Sec ------------ */
+.enter_step_sec .title_block {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.enter_step_sec .title_block .h2 {
+  font-size: 79px;
+  line-height: 157%;
+}
+.enter_step_sec .title_block .column_subtitle {
+  font-size: 66px;
+  font-weight: 400;
+  line-height: 157%;
+}
