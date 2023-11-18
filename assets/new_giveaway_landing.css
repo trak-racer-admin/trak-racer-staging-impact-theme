@@ -88,8 +88,9 @@
   line-height: 107%;
 }
 .first_signUpForm_text .prose div p:nth-child(2) {
-  color: #cd353d;
+  color: #cd353d !important;
   font-family: Syne;
   font-size: 25px;
   line-height: 107%;
+  text-decoration: underline;
 }
