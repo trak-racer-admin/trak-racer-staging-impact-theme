@@ -87,7 +87,7 @@
   font-size: 25px;
   line-height: 107%;
 }
-.first_signUpForm_text .prose div p:first-child {
+.first_signUpForm_text .prose div p:nth-child(2) {
   color: #cd353d;
   font-family: Syne;
   font-size: 25px;
