@@ -150,6 +150,30 @@
         "review_button_text_color": "#ffffff"
       }
     },
+    "e8d43e02-ec93-468a-8cb9-9150a6391c92": {
+      "type": "video",
+      "blocks": {
+        "template--17287309295780__e8d43e02-ec93-468a-8cb9-9150a6391c92-play-1": {
+          "type": "play",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17287309295780__e8d43e02-ec93-468a-8cb9-9150a6391c92-play-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "poster": "shopify:\/\/shop_images\/TRX_Fix1_Vray0055.png",
+        "text_color": "#cd353d",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "3fefa21b-9563-40cf-b680-7b259a53324a": {
       "type": "rich-text",
       "blocks": {
@@ -765,6 +789,7 @@
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
+    "e8d43e02-ec93-468a-8cb9-9150a6391c92",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
     "6469952e-51f6-464d-99d5-142fdf72110a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
