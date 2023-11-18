@@ -62,10 +62,11 @@
   }
 }
 @media screen and (max-width: 699px) {
-  .enter_step_sec .multi-column__item {
-    grid-column: span 12;
+  .enter_step_sec .multi-column {
+    gap: 0;
   }
   .enter_step_sec .multi-column__item {
+    grid-column: span 12;
     border-right: 0;
   }
 }
