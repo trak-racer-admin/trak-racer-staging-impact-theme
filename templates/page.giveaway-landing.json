@@ -64,7 +64,7 @@
       ],
       "settings": {
         "full_width": false,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
