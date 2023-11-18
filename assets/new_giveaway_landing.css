@@ -1,3 +1,6 @@
+body {
+  background: #000000;
+}
 /* ------------ Enter Step Sec ------------ */
 .enter_step_sec .title_block {
   display: flex;
