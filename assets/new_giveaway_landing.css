@@ -42,7 +42,7 @@
     grid-column: span 6;
   }
   .enter_step_sec .multi-column__item:nth-child(2) {
-    border-right: 0px;
+    border-right: 0;
   }
   .enter_step_sec.multi-column {
     --multi-column-list-row-min-gap: var(--spacing-16);
@@ -63,13 +63,9 @@
 }
 @media screen and (max-width: 699px) {
   .enter_step_sec .multi-column__item {
-    grid-column: span 6;
+    grid-column: span 12;
   }
-  .enter_step_sec .multi-column__item:nth-child(2) {
-    border-right: 0px;
-  }
-  .multi-column {
-    --multi-column-list-row-min-gap: var(--spacing-16);
-    grid: auto / repeat(12, minmax(0, 1fr));
+  .enter_step_sec .multi-column__item {
+    border-right: 0;
   }
 }
