@@ -70,3 +70,9 @@
     border-right: 0 !important;
   }
 }
+/* ------------ First SignUp Form ------------ */
+.first_signUpForm_text .prose .h2:first-child {
+  font-family: Syne;
+  font-size: 59px;
+  line-height: 0%;
+}
