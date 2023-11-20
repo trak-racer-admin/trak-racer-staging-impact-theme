@@ -152,3 +152,7 @@ body {
   width: 100%;
   max-width: 1006px;
 }
+/* ------------ Singal Video Section ------------ */
+.shopify-section--video .content-over-media video-media img {
+  border-radius: 47px;
+}
