@@ -4,5 +4,12 @@
     "market": "canada"
   },
   "sections": {
+    "7e84a986-13b9-4c09-9706-1d0d46c45ac7": {
+      "settings": {
+        "product": "alpine-racing-trx-2023-livery-ca"
+      },
+      "blocks": {
+      }
+    }
   }
 }
