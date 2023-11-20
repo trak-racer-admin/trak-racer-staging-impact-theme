@@ -76,9 +76,7 @@
 
             {%- when 'description' -%}
               <div class="product-info__description" {{ block.shopify_attributes }}>
-                <div class="prose">
-                  {{- 'general.on_boarding.product_description' | t -}}
-                </div>
+                <div class="prose">{{ block.settings.product_description }}</div>
               </div>
 
             {%- when 'quantity_selector' -%}
