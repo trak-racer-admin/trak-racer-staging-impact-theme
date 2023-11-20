@@ -54,11 +54,13 @@
       <div class="product-info__price">{{ section.settings.product_price }}</div>
       <div class="product-info__description">{{ section.settings.product_description }}</div>
       <div class="product-info__buttons">
-        <a href="{{ section.settings.button_link }}" class="custom_link_btn">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.button_link }}" class="custom_link_btn border_gradient">
+          {{- section.settings.button_text -}}
+        </a>
 
         <div class="place-self-center text-center">
           <div class="prose">
-            <button class="video-play-button" type="button">
+            <button class="video-play-button " type="button">
               <span class="sr-only">Play video</span>
               <svg
                 role="presentation"
