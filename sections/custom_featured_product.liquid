@@ -49,21 +49,10 @@
     </div>
 
     <div class="product-info">
-      <h2 class="product-info__subtitle">
-        {{ section.settings.product_subtitle }}
-      </h2>
-      <h2 class="product-info__title">
-        {{ section.settings.product_title }}
-      </h2>
-
-      <div class="product-info__price">
-        {{ section.settings.product_price }}
-      </div>
-
-      <div class="product-info__description">
-        <div class="prose">{{ section.settings.product_description }}</div>
-      </div>
-
+      <h2 class="product-info__subtitle">{{ section.settings.product_subtitle }}</h2>
+      <h2 class="product-info__title">{{ section.settings.product_title }}</h2>
+      <div class="product-info__price">{{ section.settings.product_price }}</div>
+      <div class="product-info__description">{{ section.settings.product_description }}</div>
       <div class="product-info__buttons">
         <a href="{{ section.settings.button_link }}" class="custom_link_btn">{{ section.settings.button_text }}</a>
 
