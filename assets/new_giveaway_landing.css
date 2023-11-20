@@ -138,4 +138,17 @@ body {
 }
 .shopify-section--custom-liquid .section.section-blends {
   padding-top: 0;
+  text-align: center;
+}
+.section.section-blends .custom_link_btn {
+  border-radius: 17px;
+  background: #cd353d;
+  color: #fff;
+  font-family: Frutiger;
+  font-size: 25px;
+  line-height: 79px;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1006px;
 }
