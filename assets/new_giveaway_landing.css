@@ -71,6 +71,9 @@ body {
   }
 }
 /* ------------ First SignUp Form ------------ */
+.first_signUpForm_text .rich-text__wrapper {
+  max-width: 100%;
+}
 .first_signUpForm_text .prose .h2:first-child {
   font-family: Syne, sans-serif !important;
   font-size: 59px;
