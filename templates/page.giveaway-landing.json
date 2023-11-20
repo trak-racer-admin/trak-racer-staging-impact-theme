@@ -238,6 +238,304 @@
         "overlay_opacity": 0
       }
     },
+    "f5b134d7-c185-4b0d-a99d-d175684ee784": {
+      "type": "media-with-text",
+      "blocks": {
+        "e06f9cba-923f-47c7-84ad-88fe3a19b06b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TRX_BF_01_1.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/alpine_racing_trx_white.png",
+            "icon_width": 72,
+            "subheading": "",
+            "title": "Alpine Racing TRX",
+            "content": "<p>Developed alongside Alpine F1 engineers, the Alpine Racing TRX is the first Sim Racing cockpit allowing you to switch between Formula and GT seating position in minutes.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "e06f9cba-923f-47c7-84ad-88fe3a19b06b"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Last Year's Winner",
+            "heading_tag": "h2",
+            "text_color": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Rhys, from Sydney, Australia, was the lucky winner to our 2022 Sim Racing Package Giveaway valued at US$9,000. He won a Simucube Ultimate, Rexing GT Wheel, Rexing Formula Wheel, Meca Cup Pedals, Meca EVO Handbrake and Meca Evo Shifter.<\/p>"
+          }
+        },
+        "87314646-e227-408e-b8d7-a54730c5a178": {
+          "type": "subheading",
+          "settings": {
+            "text": "THIS YEAR WE DECIDED TO GO BIGGER WITH…"
+          }
+        },
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "82d1ac28-819b-4837-8152-7811a3a3bc20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/last-year.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1",
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1",
+        "87314646-e227-408e-b8d7-a54730c5a178",
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd",
+        "82d1ac28-819b-4837-8152-7811a3a3bc20"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".text-on-sale {color: white;}"
+      ],
+      "settings": {
+        "collection": "",
+        "products": [
+          "alpine-racing-trx-2023-livery",
+          "motion-system-with-4-motors-actuators-and-motion-sim-base",
+          "rexing-gt-wheel",
+          "rexing-formula-wheel-mayaris",
+          "sim-handbrake",
+          "vnm-shifter-h-pattern-manual-or-sequential-gearbox",
+          "trak-racer-mutli-use-sim-racing-gloves-grey-camo"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 50,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Featuring",
+        "content": "<p>And (not featured below):<\/p><ul><li>2x Simucube ActivePedal<\/li><li>Simucube 2 Ultimate<\/li><li>Trak Racer Ultrawide 49” Monitor<\/li><li>TOBII Eye Tracker<\/li><li>Trak Racer Wireless Gaming Headset<\/li><\/ul>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#282828",
+        "product_card_text_color": "#ffffff"
+      }
+    },
+    "1698227512f130f481": {
+      "type": "apps",
+      "blocks": {
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "RZ3qBk"
+          }
+        }
+      },
+      "block_order": [
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "3c2f40cd-3162-4b02-b86f-25538e0430b9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Terms & Conditions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>Competition conducted by Trak Racer, of 278 Canterbury Rd, Surrey Hills, VIC, 3127.<\/li><li>Competition commences at 12am on 1\/11\/23 and closes at 11.59pm on 31\/12\/23 (AEST) (Entry Period).<\/li><\/ul><p><strong>To enter the Competition, an Eligible Entrant must meet any of the following conditions:<\/strong><\/p><ul><li>One entry by signing up to Trak Racer’s emailing list<\/li><li>Ten entries by spending $1000 or more on Trak Racer’s website (cart value).<\/li><li>Twenty entries by spending $2000 or more on Trak Racer’s website (cart value)<\/li><li>If the entrant meets the mentioned requirements, they automatically enter the competition.<\/li><li>If an eligible entrant purchases through a Trak Racer distributor, they must meet the above conditions and fill out the form listed on www.trakracer.com\/pages\/giveaway.<\/li><li>Eligible entrants purchased through Trak Racer distributors must<\/li><li>ensure their purchases are on Trak Racer products only.<\/li><li>Eligible Entrants must be opted in to receive Trak Racer marketing communications and must not opt out during the Entry Period.<\/li><li>The winner will be drawn at 12pm on 16\/1\/24 by Trak Racer.<\/li><li>The winner will be notified by phone and email by 19\/1\/24 and published on all Trak Racer’s social media channels (Facebook, Instagram, TikTok, Snapchat, LinkedIn) and on the competition website.<\/li><li>If the winner does not respond within 7 days, a new winner will be drawn.<\/li><li>The winner may be required to pay for shipping, and taxes if applicable.<\/li><li>It is a condition of entry that Eligible Entrants consent to receive Trak Racer marketing communications and do not opt out during the Entry Period.<\/li><li>Entrants may only enter the Competition in their own name. Multiple entries are permitted, but each entry must comply with these conditions.<\/li><li>If an entrant decides to return their order and their order value does not meet the conditions, they will be removed from the competition<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1",
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "racing-simulators",
+            "subheading": "",
+            "title": "Racing Simulators",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "flight-simulators",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "seats",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "ff564899-fe69-4aa2-b17a-f4b8f82e0288": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitor-stands",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1",
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2",
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3",
+        "ff564899-fe69-4aa2-b17a-f4b8f82e0288",
+        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 5,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
     "78455a80-7a61-442f-898c-2cd06983f76c": {
       "type": "media-with-text",
       "blocks": {
@@ -532,7 +830,6 @@
         "a86e8365-bc51-4630-8730-231d7ffcabf0",
         "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
       ],
-      "disabled": true,
       "custom_css": [
         ".media-with-text__media img {max-width: 100%; height: auto; background: black;}",
         ".section-full {background-color: black;}"
@@ -542,267 +839,151 @@
         "spacing": "small"
       }
     },
-    "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
-      "type": "rich-text",
+    "153dc568-434d-477e-868f-7d59e4096b0a": {
+      "type": "multiple-images-with-text",
       "blocks": {
-        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1": {
-          "type": "heading",
+        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-1": {
+          "type": "item",
           "settings": {
-            "text": "Last Year's Winner",
-            "heading_tag": "h2",
-            "text_color": "rgba(0,0,0,0)",
-            "gradient": ""
+            "image": "shopify:\/\/shop_images\/TRX_Fix1_Vray0055.png",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
           }
         },
-        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1": {
-          "type": "richtext",
+        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-2": {
+          "type": "item",
           "settings": {
-            "content": "<p>Rhys, from Sydney, Australia, was the lucky winner to our 2022 Sim Racing Package Giveaway valued at US$9,000. He won a Simucube Ultimate, Rexing GT Wheel, Rexing Formula Wheel, Meca Cup Pedals, Meca EVO Handbrake and Meca Evo Shifter.<\/p>"
-          }
-        },
-        "87314646-e227-408e-b8d7-a54730c5a178": {
-          "type": "subheading",
-          "settings": {
-            "text": "THIS YEAR WE DECIDED TO GO BIGGER WITH…"
-          }
-        },
-        "fe538d40-3d0b-4082-acec-a496d4b26fcd": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "82d1ac28-819b-4837-8152-7811a3a3bc20": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/last-year.png",
-            "width_mode": "custom",
-            "max_width": 600,
-            "mobile_max_width": 400
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
           }
         }
       },
       "block_order": [
-        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1",
-        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1",
-        "87314646-e227-408e-b8d7-a54730c5a178",
-        "fe538d40-3d0b-4082-acec-a496d4b26fcd",
-        "82d1ac28-819b-4837-8152-7811a3a3bc20"
+        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-1",
+        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-2"
       ],
       "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#000000",
+        "full_width": false,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
         "background_gradient": "",
         "text_color": "#ffffff",
-        "section_class": ""
+        "button_background": "",
+        "button_text_color": ""
       }
     },
-    "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
-      "type": "featured-collection",
-      "custom_css": [
-        ".text-on-sale {color: white;}"
-      ],
-      "settings": {
-        "collection": "",
-        "products": [
-          "alpine-racing-trx-2023-livery",
-          "motion-system-with-4-motors-actuators-and-motion-sim-base",
-          "rexing-gt-wheel",
-          "rexing-formula-wheel-mayaris",
-          "sim-handbrake",
-          "vnm-shifter-h-pattern-manual-or-sequential-gearbox",
-          "trak-racer-mutli-use-sim-racing-gloves-grey-camo"
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": true,
-        "products_count": 50,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 5,
-        "subheading": "",
-        "title": "Featuring",
-        "content": "<p>And (not featured below):<\/p><ul><li>2x Simucube ActivePedal<\/li><li>Simucube 2 Ultimate<\/li><li>Trak Racer Ultrawide 49” Monitor<\/li><li>TOBII Eye Tracker<\/li><li>Trak Racer Wireless Gaming Headset<\/li><\/ul>",
-        "link_url": "",
-        "link_text": "",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "#282828",
-        "product_card_text_color": "#ffffff"
-      }
-    },
-    "1698227512f130f481": {
-      "type": "apps",
+    "f526ac16-550c-416d-b625-6429323d64d8": {
+      "type": "featured-product",
       "blocks": {
-        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-vendor-1": {
+          "type": "vendor",
           "settings": {
-            "formId": "RZ3qBk"
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-badges-1": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-price-1": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-rating-1": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-separator-1": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-description-1": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-pickup_availability-1": {
+          "type": "pickup_availability",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6"
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-vendor-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-title-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-badges-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-price-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-rating-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-separator-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-description-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-variant_picker-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-quantity_selector-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-buy_buttons-1",
+        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-pickup_availability-1"
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "background": "#000000",
+        "product": "",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
         "background_gradient": "",
         "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
-    "3c2f40cd-3162-4b02-b86f-25538e0430b9": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Terms & Conditions",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1": {
-          "type": "richtext",
-          "settings": {
-            "content": "<ul><li>Competition conducted by Trak Racer, of 278 Canterbury Rd, Surrey Hills, VIC, 3127.<\/li><li>Competition commences at 12am on 1\/11\/23 and closes at 11.59pm on 31\/12\/23 (AEST) (Entry Period).<\/li><\/ul><p><strong>To enter the Competition, an Eligible Entrant must meet any of the following conditions:<\/strong><\/p><ul><li>One entry by signing up to Trak Racer’s emailing list<\/li><li>Ten entries by spending $1000 or more on Trak Racer’s website (cart value).<\/li><li>Twenty entries by spending $2000 or more on Trak Racer’s website (cart value)<\/li><li>If the entrant meets the mentioned requirements, they automatically enter the competition.<\/li><li>If an eligible entrant purchases through a Trak Racer distributor, they must meet the above conditions and fill out the form listed on www.trakracer.com\/pages\/giveaway.<\/li><li>Eligible entrants purchased through Trak Racer distributors must<\/li><li>ensure their purchases are on Trak Racer products only.<\/li><li>Eligible Entrants must be opted in to receive Trak Racer marketing communications and must not opt out during the Entry Period.<\/li><li>The winner will be drawn at 12pm on 16\/1\/24 by Trak Racer.<\/li><li>The winner will be notified by phone and email by 19\/1\/24 and published on all Trak Racer’s social media channels (Facebook, Instagram, TikTok, Snapchat, LinkedIn) and on the competition website.<\/li><li>If the winner does not respond within 7 days, a new winner will be drawn.<\/li><li>The winner may be required to pay for shipping, and taxes if applicable.<\/li><li>It is a condition of entry that Eligible Entrants consent to receive Trak Racer marketing communications and do not opt out during the Entry Period.<\/li><li>Entrants may only enter the Competition in their own name. Multiple entries are permitted, but each entry must comply with these conditions.<\/li><li>If an entrant decides to return their order and their order value does not meet the conditions, they will be removed from the competition<\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1",
-        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "start",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "section_class": ""
-      }
-    },
-    "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
-      "type": "collection-list",
-      "blocks": {
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "racing-simulators",
-            "subheading": "",
-            "title": "Racing Simulators",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "flight-simulators",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "seats",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "ff564899-fe69-4aa2-b17a-f4b8f82e0288": {
-          "type": "collection",
-          "settings": {
-            "collection": "monitor-stands",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1",
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2",
-        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3",
-        "ff564899-fe69-4aa2-b17a-f4b8f82e0288",
-        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 5,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "content_width": "100ch"
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     }
   },
@@ -814,12 +995,15 @@
     "169822355365a42863",
     "f741c5d0-fe70-4247-b9b5-1f3601b1b430",
     "e8d43e02-ec93-468a-8cb9-9150a6391c92",
-    "78455a80-7a61-442f-898c-2cd06983f76c",
+    "f5b134d7-c185-4b0d-a99d-d175684ee784",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "591138f3-e4fc-4e77-aba7-9f761bbf1309",
     "1698227512f130f481",
     "3c2f40cd-3162-4b02-b86f-25538e0430b9",
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d",
-    "main"
+    "main",
+    "78455a80-7a61-442f-898c-2cd06983f76c",
+    "153dc568-434d-477e-868f-7d59e4096b0a",
+    "f526ac16-550c-416d-b625-6429323d64d8"
   ]
 }
