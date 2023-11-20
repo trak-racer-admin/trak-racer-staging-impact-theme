@@ -100,13 +100,12 @@ body {
   margin: 0;
 }
 .klaviyo-form-RZ3qBk input#email_87327414 {
-  border-radius: 17px;
-  border: 2px solid #d9d9d9;
   background: rgba(1, 171, 238, 0);
   color: #716f6f !important;
   font-family: Syne !important;
   font-size: 23px !important;
-  line-height: 107%;
+  line-height: 107% !important;
+  border: 2px solid #d9d9d9;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, #d9d9d9, #ffffff10);
   border-radius: 17px !important;
