@@ -57,50 +57,45 @@
         </div>
       </product-gallery>
 
-      <safe-sticky class="product-info">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'title' -%}
-              <h2 class="product-info__title {{ block.settings.heading_tag }}">
-                {{ block.settings.product_title }}
-              </h2>
+      <div class="product-info">
+        <h2 class="product-info__subtitle">
+          {{ section.settings.product_subtitle }}
+        </h2>
+        <h2 class="product-info__title">
+          {{ section.settings.product_title }}
+        </h2>
 
-            {%- when 'price' -%}
-              <div class="product-info__price">
-                {{ block.settings.product_price }}
-              </div>
+        <div class="product-info__price">
+          {{ section.settings.product_price }}
+        </div>
 
-            {%- when 'description' -%}
-              <div class="product-info__description">
-                <div class="prose">{{ block.settings.product_description }}</div>
-              </div>
+        <div class="product-info__description">
+          <div class="prose">{{ section.settings.product_description }}</div>
+        </div>
 
-            {%- when 'buy_buttons' -%}
-              <div class="product-info__buttons">
-                <a href="" class="custom_link_btn"></a>
+        <div class="product-info__buttons">
+          <a href="{{ section.settings.button_link }}" class="custom_link_btn">{{ section.settings.button_text }}</a>
 
-                <div class="place-self-center text-center">
-                  <div class="prose">
-                    <button class="video-play-button" type="button">
-                      <span class="sr-only">Play video</span>
-                      <svg
-                        role="presentation"
-                        fill="none"
-                        focusable="false"
-                        width="48"
-                        height="48"
-                        class="icon icon-play-button"
-                        viewBox="0 0 48 48"
-                      >
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-          {%- endcase -%}
-        {%- endfor -%}
-      </safe-sticky>
+          <div class="place-self-center text-center">
+            <div class="prose">
+              <button class="video-play-button" type="button">
+                <span class="sr-only">Play video</span>
+                <svg
+                  role="presentation"
+                  fill="none"
+                  focusable="false"
+                  width="48"
+                  height="48"
+                  class="icon icon-play-button"
+                  viewBox="0 0 48 48"
+                >
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     {%- endif -%}
   </div>
 </div>
@@ -112,7 +107,7 @@
   "tag": "section",
   "disabled_on": {
     "templates": ["password"],
-    "groups": ["header", "custom.overlay"]
+    "groups": ["header", "footer"]
   },
   "blocks": [
     {
@@ -137,6 +132,11 @@
     {
       "type": "header",
       "content": "Product Content"
+    },
+    {
+      "type": "text",
+      "id": "product_subtitle",
+      "label": "Product Subtitle"
     },
     {
       "type": "text",
