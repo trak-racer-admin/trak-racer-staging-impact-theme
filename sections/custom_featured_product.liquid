@@ -62,7 +62,6 @@
       </product-gallery>
 
       <safe-sticky class="product-info">
-        {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -79,26 +78,22 @@
                 <div class="prose">{{ block.settings.product_description }}</div>
               </div>
 
-            {%- when 'quantity_selector' -%}
-              <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
-                <div class="form-control">
-                  <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
-
-                  <quantity-selector class="quantity-selector">
-                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                    <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="1" autocomplete="off">
-                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
-                  </quantity-selector>
-                </div>
-              </div>
-
             {%- when 'buy_buttons' -%}
-              <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
-                <buy-buttons class="buy-buttons">
-                  {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
-                  {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
-                </buy-buttons>
+              <div class="product-info__buttons" {{ block.shopify_attributes }}>
+                <a href="" class="custom_link_btn"></a>
+                <div class="place-self-center text-center">
+                  <div class="prose">
+                    <button class="video-play-button" type="button">
+                      <span class="sr-only">Play video</span>
+                      <svg role="presentation" fill="none" focusable="false" width="48" height="48" class="icon icon-play-button" viewBox="0 0 48 48">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
               </div>
+            
           {%- endcase -%}
         {%- endfor -%}
       </safe-sticky>
@@ -360,17 +355,6 @@
           "type": "number",
           "id": "max_length",
           "label": "Maximum number of characters"
-        }
-      ]
-    },
-    {
-      "type": "quantity_selector",
-      "name": "Quantity selector",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "The selector is automatically hidden if all variants are sold out. When at least one variant is available, the selector is always visible to prevent the page from moving when switching variants."
         }
       ]
     },

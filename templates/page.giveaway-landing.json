@@ -853,16 +853,10 @@
             "heading_tag": "h2"
           }
         },
-        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-badges-1": {
-          "type": "badges",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-price-1": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-rating-1": {
@@ -924,7 +918,6 @@
       "block_order": [
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-vendor-1",
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-title-1",
-        "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-badges-1",
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-price-1",
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-rating-1",
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-separator-1",
