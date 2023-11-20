@@ -1,5 +1,56 @@
 {
   "sections": {
+    "3fefa21b-9563-40cf-b680-7b259a53324a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "THE GIVEAWAY ENDS IN:",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "7bef7467-3dd7-4735-a0b7-376885877dec": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1",
+        "7bef7467-3dd7-4735-a0b7-376885877dec"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "6469952e-51f6-464d-99d5-142fdf72110a": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a": {
       "type": "multi-column",
       "blocks": {
@@ -480,6 +531,7 @@
         "a86e8365-bc51-4630-8730-231d7ffcabf0",
         "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
       ],
+      "disabled": true,
       "custom_css": [
         ".media-with-text__media img {max-width: 100%; height: auto; background: black;}",
         ".section-full {background-color: black;}"
@@ -487,50 +539,6 @@
       "settings": {
         "full_width": false,
         "spacing": "small"
-      }
-    },
-    "3fefa21b-9563-40cf-b680-7b259a53324a": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "THE GIVEAWAY ENDS IN:",
-            "heading_tag": "h4",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "section_class": ""
-      }
-    },
-    "6469952e-51f6-464d-99d5-142fdf72110a": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff"
       }
     },
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
@@ -798,14 +806,14 @@
     }
   },
   "order": [
+    "3fefa21b-9563-40cf-b680-7b259a53324a",
+    "6469952e-51f6-464d-99d5-142fdf72110a",
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
     "f741c5d0-fe70-4247-b9b5-1f3601b1b430",
     "e8d43e02-ec93-468a-8cb9-9150a6391c92",
     "78455a80-7a61-442f-898c-2cd06983f76c",
-    "3fefa21b-9563-40cf-b680-7b259a53324a",
-    "6469952e-51f6-464d-99d5-142fdf72110a",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "591138f3-e4fc-4e77-aba7-9f761bbf1309",
     "1698227512f130f481",
