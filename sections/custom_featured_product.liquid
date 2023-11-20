@@ -29,7 +29,7 @@
 
 <div {% render 'section-properties', tight: true %}>
   <div class="product_data">
-    <div class="Product_gallery">
+    <div class="product_gallery">
       {%- for block in section.blocks -%}
         {%- if block.settings.product_image -%}
           {% assign image_url = block.settings.product_image | img_url: 'original' %}
