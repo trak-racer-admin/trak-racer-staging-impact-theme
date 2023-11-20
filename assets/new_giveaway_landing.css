@@ -228,6 +228,11 @@ body {
   font-size: 16px;
   line-height: 157%;
 }
+.custom_featured_product .product-info__buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .custom_featured_product .product_btn {
   color: #fff;
   font-family: Frutiger;
