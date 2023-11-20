@@ -964,8 +964,8 @@
         "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
             "atc_button_background": "",
             "atc_button_text_color": "",
             "payment_button_background": "",
