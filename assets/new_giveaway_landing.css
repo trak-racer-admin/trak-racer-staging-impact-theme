@@ -114,8 +114,10 @@ body {
 .klaviyo-form-RZ3qBk button.needsclick {
   border-radius: 17px !important;
   border: 2px solid #cd353d !important;
-  background: #cd353d !important;
-  font-family: Frutiger;
-  font-size: 25px !important;
-  line-height: 116%;
+  background: #d9d9d9 !important;
+  line-height: 69px !important;
+  height: auto !important;
+  color: #cd353d !important;
+  font-family: Syne !important;
+  font-size: 29px !important;
 }
