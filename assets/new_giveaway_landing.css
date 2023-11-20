@@ -233,5 +233,9 @@ body {
   font-family: Frutiger;
   font-size: 22px;
   font-weight: 400;
-  line-height: 116%;
+  line-height: 78px;
+  display: inline-flex;
+  justify-content: center;
+  max-width: 240px;
+  width: 100%;
 }
