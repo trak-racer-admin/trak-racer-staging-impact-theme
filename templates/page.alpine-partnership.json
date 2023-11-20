@@ -19,7 +19,9 @@
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "subheading": "Welcome to the first sim racing rig co-produced by F1 engineers.",
+            "make_subheading_bold": false,
             "title": "BWT Alpine F1 Team x Trak Racer",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "Shop Now",
             "button_link": "shopify:\/\/products\/alpine-racing-trx-2023-livery",
@@ -104,7 +106,6 @@
         "autoplay": false,
         "video_size": "auto",
         "external_video_url": "https:\/\/www.youtube.com\/watch?v=FUyoOfm7sRE",
-        "poster": "shopify:\/\/shop_images\/TR_Logo.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
@@ -173,7 +174,6 @@
         "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/222222222222222.jpg",
             "title": "Alpine Esports headquarters using Trak Racer simulators to train",
             "heading_tag": "h5",
             "link_url": "",
@@ -195,7 +195,6 @@
         "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/339309774_959227302104875_8780955438405234235_n.jpg",
             "title": "Melbourne Grand Prix 2023 - BWT Alpine drivers practicing on the Alpine Racing TRX",
             "heading_tag": "h5",
             "link_url": "",
@@ -217,7 +216,6 @@
         "template--17060381425828__647eccb9-c730-4429-a7b9-fd16a6fcea0b-image-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5c5a7b6f-3e5a-4ed8-976e-27a8acfcacba_1.jpg",
             "title": "Trak Racer featured on the BWT Alpine F1 car in February 2023",
             "heading_tag": "h5",
             "link_url": "",
@@ -261,7 +259,6 @@
         "afae82e8-400b-4425-ac3e-80e3133423ba": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Alpine_TR.jpg",
             "title": "BWT Alpine F1 Car for Trak Racer at Sim Race Expo 2022",
             "heading_tag": "h5",
             "link_url": "",
@@ -507,7 +504,6 @@
         "template--17060381425828__dcebc5b2-391f-48ba-a807-44ef3c283a0f-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ALPINE_00001698_0008_1.jpg",
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
