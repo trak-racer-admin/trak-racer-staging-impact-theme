@@ -4,7 +4,7 @@ body {
 }
 .border_gradient {
   background: transparent !important;
-  border: 2px solid !important;
+  border: 1px solid !important;
   border-image-slice: 1 !important;
   border-image-source: linear-gradient(
     to bottom,
@@ -201,7 +201,6 @@ body {
 .custom_featured_product .slick-dots li.slick-active button:before {
   display: none;
 }
-
 .custom_featured_product .product-info__subtitle {
   color: #cd353d;
   font-family: Futura Bk BT;
@@ -228,4 +227,11 @@ body {
   font-family: Frutiger;
   font-size: 16px;
   line-height: 157%;
+}
+.custom_featured_product .product_btn {
+  color: #fff;
+  font-family: Frutiger;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 116%;
 }
