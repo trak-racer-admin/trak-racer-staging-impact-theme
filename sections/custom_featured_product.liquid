@@ -28,73 +28,61 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  <div class="product">
-    {%- if section.settings.product != blank -%}
-      {%- if section.settings.product.media.size > 0 -%}
-        {%- render 'product-gallery', product: section.settings.product -%}
+  <div class="product_data">
+    <div class="Product_gallery">
+      {%- if block.settings.product_image -%}
+        {% assign image_url = block.settings.product_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        <img
+          class="product_img_item img_{{ forloop.index }}"
+          data-src="{{ image_url }}"
+          data-widths="[400, 600, 800, 1000, 1200]"
+          data-sizes="auto"
+          alt="{{ block.settings.product_image.alt | escape }}"
+        >
+      {%- else -%}
+        <img class="product_img_item img_{{ forloop.index }}" src="https://via.placeholder.com/600x600/e9e9e9" alt="Dummy Image">
       {%- endif -%}
+    </div>
 
-      {%- render 'product-info', product: section.settings.product, update_url: false -%}
-    {%- else -%}
-      <product-gallery
-        form="placeholder-{{ section.id }}"
-        class="product-gallery product-gallery--mobile-dots product-gallery--desktop-carousel"
-      >
-        <div class="product-gallery__ar-wrapper">
-          <div class="product-gallery__media-list-wrapper">
-            <media-carousel
-              desktop-mode="carousel_thumbnails_bottom"
-              adaptive-height
-              class="product-gallery__media-list bleed scroll-area md:unbleed"
-            >
-              <div class="product-gallery__media">
-                {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
-              </div>
-            </media-carousel>
-          </div>
-        </div>
-      </product-gallery>
+    <div class="product-info">
+      <h2 class="product-info__subtitle">
+        {{ section.settings.product_subtitle }}
+      </h2>
+      <h2 class="product-info__title">
+        {{ section.settings.product_title }}
+      </h2>
 
-      <div class="product-info">
-        <h2 class="product-info__subtitle">
-          {{ section.settings.product_subtitle }}
-        </h2>
-        <h2 class="product-info__title">
-          {{ section.settings.product_title }}
-        </h2>
+      <div class="product-info__price">
+        {{ section.settings.product_price }}
+      </div>
 
-        <div class="product-info__price">
-          {{ section.settings.product_price }}
-        </div>
+      <div class="product-info__description">
+        <div class="prose">{{ section.settings.product_description }}</div>
+      </div>
 
-        <div class="product-info__description">
-          <div class="prose">{{ section.settings.product_description }}</div>
-        </div>
+      <div class="product-info__buttons">
+        <a href="{{ section.settings.button_link }}" class="custom_link_btn">{{ section.settings.button_text }}</a>
 
-        <div class="product-info__buttons">
-          <a href="{{ section.settings.button_link }}" class="custom_link_btn">{{ section.settings.button_text }}</a>
-
-          <div class="place-self-center text-center">
-            <div class="prose">
-              <button class="video-play-button" type="button">
-                <span class="sr-only">Play video</span>
-                <svg
-                  role="presentation"
-                  fill="none"
-                  focusable="false"
-                  width="48"
-                  height="48"
-                  class="icon icon-play-button"
-                  viewBox="0 0 48 48"
-                >
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
-                </svg>
-              </button>
-            </div>
+        <div class="place-self-center text-center">
+          <div class="prose">
+            <button class="video-play-button" type="button">
+              <span class="sr-only">Play video</span>
+              <svg
+                role="presentation"
+                fill="none"
+                focusable="false"
+                width="48"
+                height="48"
+                class="icon icon-play-button"
+                viewBox="0 0 48 48"
+              >
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-    {%- endif -%}
+    </div>
   </div>
 </div>
 
@@ -114,8 +102,8 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
-          "label": "Image"
+          "id": "product_image",
+          "label": "Product Image"
         }
       ]
     }
@@ -178,13 +166,11 @@
       "default": 55
     },
 
-
     {
       "type": "product",
       "id": "product",
       "label": "Product"
     },
-
 
     {
       "type": "header",
