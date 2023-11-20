@@ -38,6 +38,7 @@
     },
     "6469952e-51f6-464d-99d5-142fdf72110a": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
 
       ],
