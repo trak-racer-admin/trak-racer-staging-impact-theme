@@ -166,11 +166,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.custom_featured_product .product_data .product_gallery {
-  width: 100%;
-  max-width: 50%;
-}
+.custom_featured_product .product_data .product_gallery,
 .custom_featured_product .product_data .product-info {
   width: 100%;
-  max-width: 50%;
+  max-width: calc(50% - 10px);
 }
