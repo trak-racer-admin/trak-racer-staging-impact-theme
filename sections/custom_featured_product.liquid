@@ -32,12 +32,10 @@
     <div class="Product_gallery">
       {%- for block in section.blocks -%}
         {%- if block.settings.product_image -%}
-          {% assign image_url = block.settings.product_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          {% assign image_url = block.settings.product_image | img_url: 'orignal' %}
           <img
             class="product_img_item img_{{ forloop.index }}"
-            data-src="{{ image_url }}"
-            data-widths="[400, 600, 800, 1000, 1200]"
-            data-sizes="auto"
+            src="{{ image_url }}"
             alt="{{ block.settings.product_image.alt | escape }}"
           >
         {%- else -%}
