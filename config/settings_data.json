@@ -41,6 +41,7 @@
     "show_vendor": false,
     "show_product_rating": true,
     "show_sold_out_badge": false,
+    "show_discount": false,
     "discount_mode": "saving",
     "product_color_display": "swatch",
     "product_image_aspect_ratio": "short",

@@ -931,9 +931,9 @@
         "full_width": true,
         "product": "trak-racer-wireless-gaming-headset",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_carousel_control": "dots",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -981,19 +981,19 @@
       "settings": {
         "full_width": true,
         "product": "trak-racer-wireless-gaming-headset",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_width": 50,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "dots",
-        "enable_video_autoplay": true,
+        "enable_video_autoplay": false,
         "enable_video_looping": false,
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "max_image_zoom_level": 3,
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_text_color": "#ffffff"
       }
     }
   },
