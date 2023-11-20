@@ -106,6 +106,7 @@
         "autoplay": false,
         "video_size": "auto",
         "external_video_url": "https:\/\/www.youtube.com\/watch?v=FUyoOfm7sRE",
+        "poster": "shopify:\/\/shop_images\/TR_Logo_b4418bb4-394e-4aac-af30-3536f0c57af3.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
