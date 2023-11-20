@@ -839,49 +839,6 @@
         "spacing": "small"
       }
     },
-    "153dc568-434d-477e-868f-7d59e4096b0a": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TRX_Fix1_Vray0055.png",
-            "image_rotation_degrees": 0,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-2": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cube_F-CORE_Formula_Feature_2.png",
-            "image_rotation_degrees": 0,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-1",
-        "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "f526ac16-550c-416d-b625-6429323d64d8": {
       "type": "featured-product",
       "blocks": {
@@ -898,6 +855,7 @@
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-badges-1": {
           "type": "badges",
+          "disabled": true,
           "settings": {
           }
         },
@@ -909,23 +867,27 @@
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-rating-1": {
           "type": "rating",
+          "disabled": true,
           "settings": {
             "show_empty": false
           }
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-separator-1": {
           "type": "separator",
+          "disabled": true,
           "settings": {
           }
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-description-1": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "collapse_content": false
           }
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-variant_picker-1": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "hide_sold_out_variants": false,
             "stack_blocks": true,
@@ -936,11 +898,13 @@
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-quantity_selector-1": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-buy_buttons-1": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": true,
@@ -952,6 +916,7 @@
         },
         "template--17287309295780__f526ac16-550c-416d-b625-6429323d64d8-pickup_availability-1": {
           "type": "pickup_availability",
+          "disabled": true,
           "settings": {
           }
         }
@@ -971,7 +936,7 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "",
+        "product": "trak-racer-wireless-gaming-headset",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -982,9 +947,9 @@
         "max_image_zoom_level": 3,
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#ffffff",
         "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_text_color": "#ffffff"
       }
     }
   },
@@ -1004,7 +969,6 @@
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d",
     "main",
     "78455a80-7a61-442f-898c-2cd06983f76c",
-    "153dc568-434d-477e-868f-7d59e4096b0a",
     "f526ac16-550c-416d-b625-6429323d64d8"
   ]
 }
