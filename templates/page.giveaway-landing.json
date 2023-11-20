@@ -857,7 +857,8 @@
         "template--17287309295780__153dc568-434d-477e-868f-7d59e4096b0a-item-2": {
           "type": "item",
           "settings": {
-            "image_rotation_degrees": 1.5,
+            "image": "shopify:\/\/shop_images\/Cube_F-CORE_Formula_Feature_2.png",
+            "image_rotation_degrees": 0,
             "subheading": "",
             "title": "Heading 1",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
