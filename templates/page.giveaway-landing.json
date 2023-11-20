@@ -150,6 +150,18 @@
         "review_button_text_color": "#ffffff"
       }
     },
+    "f741c5d0-fe70-4247-b9b5-1f3601b1b430": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<a href=\"https:\/\/trakracer.com.au\/\" class=\"custom_link_btn\">Shop TR Now<\/a>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "e8d43e02-ec93-468a-8cb9-9150a6391c92": {
       "type": "video",
       "blocks": {
@@ -789,6 +801,7 @@
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
+    "f741c5d0-fe70-4247-b9b5-1f3601b1b430",
     "e8d43e02-ec93-468a-8cb9-9150a6391c92",
     "78455a80-7a61-442f-898c-2cd06983f76c",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
