@@ -74,9 +74,6 @@
                 {{ block.settings.product_price }}
               </div>
 
-            {%- when 'separator' -%}
-              <hr class="product-info__separator" {{ block.shopify_attributes }}>
-
             {%- when 'description' -%}
               <div class="product-info__description" {{ block.shopify_attributes }}>
                 <div class="prose">
@@ -204,10 +201,6 @@
           "default": false
         }
       ]
-    },
-    {
-      "type": "separator",
-      "name": "Separator"
     },
     {
       "type": "description",
