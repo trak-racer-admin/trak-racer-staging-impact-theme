@@ -100,7 +100,7 @@
         "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>By submitting your email, you accept<\/p><p><a href=\"https:\/\/trakracer.com\/pages\/giveaway-landing#\">Trak Racer’s Privacy Policy<\/a><\/p>"
+            "content": "<p>By submitting your email, you accept<\/p><p><a href=\"#Test\" title=\"#Test\">Trak Racer’s Terms and Conditions<\/a><\/p>"
           }
         }
       },
