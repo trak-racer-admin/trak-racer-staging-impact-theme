@@ -947,53 +947,20 @@
     },
     "be879409-eb8d-4d1a-bc97-1eb01c0290b3": {
       "type": "custom_featured_product",
-      "blocks": {
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-title-1": {
-          "type": "title",
-          "settings": {
-            "product_title": "",
-            "heading_tag": "h2"
-          }
-        },
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-price-1": {
-          "type": "price",
-          "settings": {
-            "product_price": ""
-          }
-        },
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": false,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-title-1",
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-price-1",
-        "template--17287309295780__be879409-eb8d-4d1a-bc97-1eb01c0290b3-buy_buttons-1"
-      ],
       "settings": {
         "full_width": true,
-        "product": "trak-racer-wireless-gaming-headset",
+        "product_subtitle": "TRAK RACER WIRELESS",
+        "product_title": "GAMING HEADSET",
+        "product_price": "Valued at US$1498",
+        "product_description": "Featuring an adjustable microphone, comfortable ergonomic earpads, an ultra-light headband, and a powerful 50mm speaker driver. It includes a condenser microphone, ensuring clear communication. With a remarkable 12-hour battery life, it's designed for extended use. Its cutting-edge design and engineering provide a competitive edge.",
+        "button_link": "shopify:\/\/products\/trak-racer-wireless-gaming-headset",
+        "button_text": "View Product",
+        "video_link": "#video1",
         "desktop_media_width": 50,
-        "desktop_media_layout": "carousel_thumbnails_bottom",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "dots",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "enable_image_zoom": false,
-        "max_image_zoom_level": 3,
+        "product": "trak-racer-wireless-gaming-headset",
         "background": "",
         "background_gradient": "",
-        "text_color": "#ffffff",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": "#ffffff"
+        "text_color": "#ffffff"
       }
     }
   },
