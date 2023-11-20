@@ -103,13 +103,13 @@ body {
   border-radius: 17px;
   border: 2px solid #d9d9d9;
   background: rgba(1, 171, 238, 0);
-  /* border-image: linear-gradient( to bottom, red, rgba(0, 0, 0, 0) ) 1 100% !important;
-    border-width: 4px;
-    border-style: solid; */
   color: #716f6f !important;
   font-family: Syne !important;
   font-size: 23px !important;
   line-height: 107%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #d9d9d9, #ffffff10);
+  border-radius: 17px !important;
 }
 .klaviyo-form-RZ3qBk button.needsclick {
   border-radius: 17px !important;
