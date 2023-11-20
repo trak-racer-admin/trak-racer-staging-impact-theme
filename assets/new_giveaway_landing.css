@@ -244,3 +244,7 @@ body {
   max-width: 240px;
   width: 100%;
 }
+.custom_featured_product .video-play-button svg {
+  height: 72px;
+  width: 72px;
+}
