@@ -79,23 +79,25 @@ body {
   font-size: 59px;
   line-height: 0%;
 }
-.first_signUpForm_text .prose .h2:nth-child(2) {
-  font-family: Syne, sans-serif !important;
-  font-size: 57px;
-  font-weight: 700;
-  line-height: 107%;
-}
-.first_signUpForm_text .prose div p:first-child {
-  font-family: Syne;
-  font-size: 25px;
-  line-height: 107%;
-}
 .first_signUpForm_text .prose .h2:nth-child(2) .text-custom {
   font-family: Syne, sans-serif !important;
   font-size: 57px;
   font-weight: 700;
   line-height: 107%;
   color: #ba3138;
+}
+.first_signUpForm_text .prose div p:first-child {
+  font-family: Syne;
+  font-size: 25px;
+  line-height: 107%;
+}
+.first_signUpForm_text .prose div p:nth-child(2) {
+  color: #cd353d !important;
+  font-family: Syne;
+  font-size: 25px;
+  line-height: 107%;
+  text-decoration: underline;
+  margin: 0;
 }
 .klaviyo-form-RZ3qBk input#email_87327414 {
   border-radius: 17px;
