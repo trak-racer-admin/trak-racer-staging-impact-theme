@@ -71,9 +71,7 @@
 
             {%- when 'price' -%}
               <div class="product-info__price">
-                <price-list class="price-list price-list--lg">
-                  <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
-                </price-list>
+                
               </div>
 
             {%- when 'separator' -%}
@@ -168,31 +166,14 @@
       ]
     },
     {
-      "type": "sku",
-      "name": "SKU",
-      "limit": 1
-    },
-    {
-      "type": "badges",
-      "name": "Badges",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Use metafields to add custom badges. [Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label)"
-        }
-      ]
-    },
-    {
       "type": "price",
       "name": "Price",
       "limit": 1,
       "settings": [
         {
-          "type": "checkbox",
-          "id": "show_taxes_notice",
-          "label": "Show taxes notice",
-          "default": false
+          "type": "text",
+          "id": "product_price",
+          "label": "Product Price"
         }
       ]
     },
