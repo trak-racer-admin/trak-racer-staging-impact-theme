@@ -95,6 +95,9 @@ t.parentNode.insertBefore(y,t);
     {% if page.template_suffix == 'giveaway-landing' %}
       {{- 'new_giveaway_landing.css' | asset_url | stylesheet_tag: preload: true -}}
     {% endif %}
+     <!-- Slick Slider CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    
   {% include "onvoard-initialize-head" %}
   <style>
     {% if settings.custom_font_for_heading_tag %}
