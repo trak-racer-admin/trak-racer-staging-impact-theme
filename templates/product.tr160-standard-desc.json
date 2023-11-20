@@ -324,8 +324,8 @@
             "horizontal_position_mobile": 10,
             "vertical_position_mobile": 46,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_1_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_1_subtext | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         },
         "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
@@ -336,8 +336,8 @@
             "horizontal_position_mobile": 43,
             "vertical_position_mobile": 19,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_2_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_2_subtext | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         },
         "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
@@ -348,8 +348,8 @@
             "horizontal_position_mobile": 60,
             "vertical_position_mobile": 33,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_3_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_3_subtext | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         },
         "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
@@ -360,8 +360,8 @@
             "horizontal_position_mobile": 76,
             "vertical_position_mobile": 62,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_4_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_4_subtext | metafield_tag }}"
+            "title": "",
+            "content": ""
           }
         }
       },
@@ -376,8 +376,8 @@
       ],
       "settings": {
         "full_width": true,
-        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
-        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
+        "image": "{{ product.metafields.custom_fields._product_hotspot_image_desktop.value }}",
+        "mobile_image": "{{ product.metafields.custom_fields._product_hotspot_image_mobile.value }}",
         "title": "{{ product.metafields.custom_fields.product_hotspot_heading.value }}",
         "content": "{{ product.metafields.custom_fields.product_hotspot_subheading | metafield_tag }}",
         "button_text": "Buy Now",
