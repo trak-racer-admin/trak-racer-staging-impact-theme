@@ -280,6 +280,26 @@
         "text_color": "#ffffff"
       }
     },
+    "c6578b5a-f5fb-4286-996c-6c2afc44e02f": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Do you have any question?",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
       "type": "rich-text",
       "blocks": {
@@ -962,6 +982,7 @@
     "f741c5d0-fe70-4247-b9b5-1f3601b1b430",
     "e8d43e02-ec93-468a-8cb9-9150a6391c92",
     "be879409-eb8d-4d1a-bc97-1eb01c0290b3",
+    "c6578b5a-f5fb-4286-996c-6c2afc44e02f",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "591138f3-e4fc-4e77-aba7-9f761bbf1309",
     "1698227512f130f481",
