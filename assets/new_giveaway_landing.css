@@ -98,6 +98,16 @@ body {
   line-height: 107%;
   text-decoration: underline;
   margin: 0;
+
+.klaviyo-form-RZ3qBk form.klaviyo-form {
+    max-width: 1006px;
+    margin: 0 auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+  .klaviyo-form-RZ3qBk form.klaviyo-form .needsclick.kl-private-reset-css-Xuajs1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .klaviyo-form-RZ3qBk input#email_87327414 {
   height: auto !important;
@@ -114,6 +124,7 @@ body {
     #ffffff20
   ) !important;
   border-radius: 17px !important;
+      padding-left: 40px !important;
 }
 .klaviyo-form-RZ3qBk button.needsclick {
   border-radius: 17px !important;
@@ -124,4 +135,7 @@ body {
   color: #cd353d !important;
   font-family: Syne !important;
   font-size: 29px !important;
+}
+.shopify-section--custom-liquid .section.section-blends {
+  padding-top: 0;
 }
