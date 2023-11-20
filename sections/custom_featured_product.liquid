@@ -58,7 +58,15 @@
           {{- section.settings.button_text -}}
         </a>
         <a class="video-play-button magnific_video_popup" href="{{ section.settings.video_link }}">
-          <svg role="presentation" fill="none" focusable="false" width="48" height="48" class="icon icon-play-button" viewBox="0 0 48 48">
+          <svg
+            role="presentation"
+            fill="none"
+            focusable="false"
+            width="48"
+            height="48"
+            class="icon icon-play-button"
+            viewBox="0 0 48 48"
+          >
             <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
           </svg>
         </a>
@@ -132,13 +140,13 @@
       "default": "Button"
     },
     {
-          "type": "video_url",
-          "id": "video_link",
-          "label": "Video URL",
-          "accept": ["youtube"],
-          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-          "info": "Accept YouTube link only"
-        },
+      "type": "video_url",
+      "id": "video_link",
+      "label": "Video URL",
+      "accept": ["youtube"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "info": "Accept YouTube link only"
+    },
     {
       "type": "range",
       "id": "desktop_media_width",
@@ -149,13 +157,6 @@
       "unit": "%",
       "default": 55
     },
-
-    {
-      "type": "product",
-      "id": "product",
-      "label": "Product"
-    },
-
     {
       "type": "header",
       "content": "Colors",
@@ -218,4 +219,3 @@
     });
   });
 </script>
-
