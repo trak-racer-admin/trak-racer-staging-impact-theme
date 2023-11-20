@@ -66,9 +66,6 @@
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {%- when 'vendor' -%}
-              <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
-
             {%- when 'title' -%}
               <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ block.settings.product_title }}</h2>
 
@@ -126,11 +123,6 @@
     "groups": ["header", "custom.overlay"]
   },
   "blocks": [
-    {
-      "type": "vendor",
-      "name": "Vendor",
-      "limit": 1
-    },
     {
       "type": "title",
       "name": "Title",
@@ -1257,9 +1249,6 @@
     {
       "name": "Custom Featured product",
       "blocks": [
-        {
-          "type": "vendor"
-        },
         {
           "type": "title"
         },
