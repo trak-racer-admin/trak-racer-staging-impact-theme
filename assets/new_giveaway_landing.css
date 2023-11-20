@@ -178,7 +178,7 @@ body {
   gap: 20px;
 }
 .custom_featured_product .product_data .product_gallery,
-.custom_featured_product .product_data .product-info {
+.custom_featured_product .product_data .product_info {
   width: 100%;
   max-width: calc(50% - 10px);
 }
@@ -201,20 +201,20 @@ body {
 .custom_featured_product .slick-dots li.slick-active button:before {
   display: none;
 }
-.custom_featured_product .product-info__subtitle {
+.custom_featured_product .product_info__subtitle {
   color: #cd353d;
   font-family: Futura Bk BT;
   font-size: 45px;
   line-height: 63px;
 }
-.custom_featured_product .product-info__title {
+.custom_featured_product .product_info__title {
   color: #d9d9d9;
   font-family: Frutiger;
   font-size: 64px;
   font-weight: 700;
   line-height: 63px;
 }
-.custom_featured_product .product-info__price {
+.custom_featured_product .product_info__price {
   color: #ff4e57;
   font-family: Frutiger;
   font-size: 33px;
@@ -222,13 +222,13 @@ body {
   font-weight: 400;
   line-height: 107.7%;
 }
-.custom_featured_product .product-info__description {
+.custom_featured_product .product_info__description {
   color: #fff;
   font-family: Frutiger;
   font-size: 16px;
   line-height: 157%;
 }
-.custom_featured_product .product-info__buttons {
+.custom_featured_product .product_info__buttons {
   display: flex;
   align-items: center;
   gap: 40px;
