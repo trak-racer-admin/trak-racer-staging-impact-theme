@@ -165,6 +165,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .custom_featured_product .product_data .product_gallery,
 .custom_featured_product .product_data .product-info {
