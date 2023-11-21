@@ -362,10 +362,8 @@ body {
   top: -1px;
   bottom: -1px;
   left: -5px;
-  border-bottom: 1px solid;
-  border-bottom-color: #c7c7c7;
-  border-left: 1px solid;
-  border-left-color: #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  border-left: 1px solid #c7c7c7;
 }
 .giveaway_product_grid .product_link:after {
   content: "";
@@ -377,8 +375,6 @@ body {
   top: -1px;
   bottom: -1px;
   right: -5px;
-  border-top: 1px solid;
-  border-top-color: #c7c7c7;
-  border-right: 1px solid;
-  border-right-color: #c7c7c7;
+  border-top: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
 }
