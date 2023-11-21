@@ -1,53 +1,35 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-
-    {%- when 'products' -%}
-      {%- ########################################################################## 
-      # Label: Product Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.product_title }} 
-
-      {%- ########################################################################## 
-      # Label: Product Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign product_image = block.settings.product_image -%}
-      {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image', loading: 'lazy' }}
-
-      {%- ########################################################################## 
-      # Label: Product Brand Logo
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign product_brand_logo = block.settings.product_brand_logo -%}
-      {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
-
-      {%- ########################################################################## 
-      # Label: Product Price
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.product_price }} 
-
-      {%- ########################################################################## 
-      # Label: Product link
-      # Returns: a string(the entered URL) or nil / false(if nothing has been entered)
-      ########################################################################## -%}
-      {{ block.settings.product_link }} 
-
-  {%- endcase -%}
-{%- endfor -%}
-
+{% assign section_custom_class = section.settings.section_class %}
+<div {% render 'section-properties', class: section_custom_class %}>
+  <div class="alpine-carousel-section">
+    <div class="slick-carousel">
+      {%- for block in section.blocks -%}
+        <div>
+          <div class="slide-content">
+            <div class="alpine-carousel">
+              <h3>{{ block.settings.product_title }} </h3>
+              {%- assign product_image = block.settings.product_image -%}
+              {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image slider-image', loading: 'lazy' }}
+              <div class="logo-price">
+                {%- assign product_brand_logo = block.settings.product_brand_logo -%}
+                {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
+                <h4>{{ block.settings.product_price }}</h4>
+              </div>
+            </div>
+            <div class="view-product">
+              <a href="{{ block.settings.product_link }}" class="btn btn--secondary btn--small section-header__link">View Product</a>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
 
 {% schema %}
   {
   "name": "Giveaway Product Grid",
   "class": "giveaway_product_grid",
+  "tag": "section",
   "settings": [
    {
     "type": "checkbox",
