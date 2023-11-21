@@ -376,3 +376,10 @@ body {
   border-top: 1px solid #c7c7c7;
   border-right: 1px solid #c7c7c7;
 }
+@media only screen and (max-width: 767px) {
+  .giveaway_product_grid .slick-next {
+    right: 145px;
+    opacity: 1;
+    top: 510px;
+  }
+}
