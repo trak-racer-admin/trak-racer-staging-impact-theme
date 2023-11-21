@@ -272,6 +272,9 @@ body {
 }
 
 /* ------------ Giveaway Includes Title Section ------------ */
+.giveawayIncludes_title_sec .rich-text__wrapper {
+  max-width: 750px;
+}
 .giveawayIncludes_title_sec .rich-text__wrapper .h3 {
   font-family: Frutiger;
   font-size: 42px;
