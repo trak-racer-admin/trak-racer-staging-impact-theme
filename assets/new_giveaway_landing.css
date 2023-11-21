@@ -1,18 +1,18 @@
 /* Saira Font */
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&family=Syne&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&family=Syne&display=swap");
 
 /* Futura Bk BT Font */
 @font-face {
-  font-family: "Avenir";
-  src: url("//res.cloudinary.com/spiralyze/raw/upload/v1623992654/FONTS/AvenirLTStd/Avenir_Black.ttf")
+  font-family: "Futura";
+  src: url("//cdn.shopify.com/s/files/1/0601/1312/5540/files/FuturaBookBT.ttf?v=1700548691")
     format("truetype");
-  font-weight: 600;
+  font-weight: 300;
 }
 @font-face {
-  font-family: "Avenir";
-  src: url("//res.cloudinary.com/spiralyze/raw/upload/v1623992654/FONTS/AvenirLTStd/Avenir_Black.ttf")
+  font-family: "Futura";
+  src: url("//cdn.shopify.com/s/files/1/0601/1312/5540/files/FuturaMediumBT.ttf?v=1700548691")
     format("truetype");
-  font-weight: 600;
+  font-weight: 400;
 }
 body {
   background: gray !important;
