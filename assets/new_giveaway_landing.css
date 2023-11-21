@@ -267,3 +267,6 @@ body {
   background: white;
   border-radius: 100%;
 }
+.custom_featured_product .video-play-button svg path {
+  fill: rgb(var(--text-color));
+}
