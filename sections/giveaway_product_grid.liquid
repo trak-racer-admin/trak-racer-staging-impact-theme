@@ -6,13 +6,13 @@
         <div>
           <div class="slide-content">
             <div class="alpine-carousel">
-              <h3>{{ block.settings.product_title }} </h3>
+              <h3 class="product_title">{{ block.settings.product_title }} </h3>
               {%- assign product_image = block.settings.product_image -%}
               {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image slider-image', loading: 'lazy' }}
               <div class="logo-price">
                 {%- assign product_brand_logo = block.settings.product_brand_logo -%}
                 {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
-                <h4>{{ block.settings.product_price }}</h4>
+                <h4 class="product_price">{{ block.settings.product_price }}</h4>
               </div>
             </div>
             <div class="view-product">
