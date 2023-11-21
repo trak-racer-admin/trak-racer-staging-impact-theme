@@ -282,6 +282,7 @@
     },
     "c6578b5a-f5fb-4286-996c-6c2afc44e02f": {
       "type": "contact",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "Contact Us",
