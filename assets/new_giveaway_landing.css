@@ -281,8 +281,7 @@ body {
 .giveaway_product_grid {
   margin-bottom: 70px;
 }
-.giveaway_product_grid .slick-arrow:before,
-.giveaway_product_grid .slick-arrow:after {
+.giveaway_product_grid .slick-arrow:before {
   content: "";
   background-image: url(//cdn.shopify.com/s/files/1/0601/1312/5540/files/Slider_Arrow.png?v=1700563453);
   width: 18px;
