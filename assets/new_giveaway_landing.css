@@ -315,6 +315,7 @@ body {
 .giveaway_product_grid .product_image {
   height: 200px;
   margin: 0 auto 30px;
+  object-fit: contain;
 }
 .giveaway_product_grid .logo_price {
   display: flex;
@@ -337,6 +338,7 @@ body {
 .giveaway_product_grid .product_link {
   font-size: 20px;
   font-weight: 400;
+  color: #fff;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 16px;
