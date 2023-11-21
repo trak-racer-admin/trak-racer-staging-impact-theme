@@ -16,7 +16,7 @@
       # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
       ########################################################################## -%}
       {%- assign product_image = block.settings.product_image -%}
-      {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image', loading: 'lazy' }}
 
       {%- ########################################################################## 
       # Label: Product Brand Logo
@@ -25,7 +25,7 @@
       # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
       ########################################################################## -%}
       {%- assign product_brand_logo = block.settings.product_brand_logo -%}
-      {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
 
       {%- ########################################################################## 
       # Label: Product Price
