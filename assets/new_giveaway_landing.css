@@ -356,9 +356,9 @@ body {
   position: absolute;
   width: 20px;
   transform: skew(-12deg);
-  top: -1px;
-  bottom: -1px;
-  left: -3px;
+  top: 0;
+  bottom: -0.5px;
+  left: -4px;
   border-bottom: 1px solid #c7c7c7;
   border-left: 1px solid #c7c7c7;
 }
@@ -369,8 +369,8 @@ body {
   transform: skew(-12deg);
   background-color: transparent;
   top: -0.5px;
-  bottom: -1px;
-  right: -3px;
+  bottom: 0;
+  right: -5px;
   border-top: 1px solid #c7c7c7;
   border-right: 1px solid #c7c7c7;
 }
