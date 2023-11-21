@@ -270,3 +270,11 @@ body {
 .custom_featured_product .video-play-button svg path {
   fill: rgb(var(--text-color));
 }
+
+/* ------------ Giveaway Includes Title Section ------------ */
+.giveawayIncludes_title_sec .rich-text__wrapper .h3 {
+  font-family: Frutiger;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 116%;
+}
