@@ -280,6 +280,7 @@ body {
 }
 .giveaway_product_grid {
   /* margin-bottom: 70px; */
+  /* padding-bottom: 30px; */
 }
 .giveaway_product_grid .slick-arrow:before {
   content: "";
@@ -377,6 +378,9 @@ body {
   border-right: 1px solid #c7c7c7;
 }
 @media only screen and (max-width: 767px) {
+  .giveaway_product_grid {
+    padding-bottom: 30px;
+  }
   .giveaway_product_grid .slick-arrow.slick-prev {
     left: 155px;
     top: 510px;
