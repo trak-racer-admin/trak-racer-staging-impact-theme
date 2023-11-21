@@ -85,6 +85,8 @@ t.parentNode.insertBefore(y,t);
 
     {{ content_for_header }}
 
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'custom-temp.css' | asset_url | stylesheet_tag: preload: true -}}
     {{- 'dbox-new.css' | asset_url | stylesheet_tag: preload: true -}}
