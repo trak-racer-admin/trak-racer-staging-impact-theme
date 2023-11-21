@@ -1,27 +1,23 @@
 {% assign section_custom_class = section.settings.section_class %}
 <div {% render 'section-properties', class: section_custom_class %}>
-  <div class="alpine-carousel-section">
-    <div class="slick-carousel">
-      {%- for block in section.blocks -%}
-        <div>
-          <div class="slide-content">
-            <div class="alpine-carousel">
-              <h3 class="product_title">{{ block.settings.product_title }} </h3>
-              {%- assign product_image = block.settings.product_image -%}
-              {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image slider-image', loading: 'lazy' }}
-              <div class="logo-price">
-                {%- assign product_brand_logo = block.settings.product_brand_logo -%}
-                {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
-                <h4 class="product_price">{{ block.settings.product_price }}</h4>
-              </div>
-            </div>
-            <div class="view-product">
-              <a href="{{ block.settings.product_link }}" class="product_link">View Product</a>
-            </div>
+  <div class="slick-carousel">
+    {%- for block in section.blocks -%}
+      <div>
+        <div class="slide_content">
+          <h3 class="product_title">{{ block.settings.product_title }} </h3>
+          {%- assign product_image = block.settings.product_image -%}
+          {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image', loading: 'lazy' }}
+          <div class="logo_price">
+            {%- assign product_brand_logo = block.settings.product_brand_logo -%}
+            {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
+            <h4 class="product_price">{{ block.settings.product_price }}</h4>
+          </div>
+          <div class="product_link_block">
+            <a href="{{ block.settings.product_link }}" class="product_link">View Product</a>
           </div>
         </div>
-      {%- endfor -%}
-    </div>
+      </div>
+    {%- endfor -%}
   </div>
 </div>
 
