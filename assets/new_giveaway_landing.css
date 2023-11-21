@@ -279,7 +279,7 @@ body {
   line-height: 116%;
 }
 .giveaway_product_grid {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 .giveaway_product_grid .slick-arrow:before {
   content: "";
@@ -290,10 +290,10 @@ body {
 }
 .giveaway_product_grid .slick-arrow.slick-prev:before {
   transform: rotate(180deg);
-  left: -55px;
+  /* left: -55px; */
 }
 .giveaway_product_grid .slick-arrow.slick-next:before {
-  right: -55px;
+  /* right: -55px; */
 }
 .giveaway_product_grid .slick-slide {
   margin-right: 15px;
