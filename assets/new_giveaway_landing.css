@@ -360,8 +360,8 @@ body {
   width: 20px;
   transform: skew(-12deg);
   top: 0;
-  bottom: -0.5px;
-  left: -4px;
+  bottom: -1px;
+  left: -5px;
   border-bottom: 1px solid #c7c7c7;
   border-left: 1px solid #c7c7c7;
 }
@@ -371,7 +371,7 @@ body {
   width: 20px;
   transform: skew(-12deg);
   background-color: transparent;
-  top: -0.5px;
+  top: -1px;
   bottom: 0;
   right: -5px;
   border-top: 1px solid #c7c7c7;
