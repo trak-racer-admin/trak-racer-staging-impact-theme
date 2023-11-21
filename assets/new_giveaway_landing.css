@@ -264,4 +264,6 @@ body {
 .custom_featured_product .video-play-button svg {
   height: 72px;
   width: 72px;
+  background: white;
+  border-radius: 100%;
 }
