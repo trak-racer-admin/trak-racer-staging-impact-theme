@@ -306,6 +306,100 @@
         "section_class": "giveawayIncludes_title_sec"
       }
     },
+    "53644647-6213-4d8d-8286-3836613d4c0e": {
+      "type": "giveaway_product_grid",
+      "blocks": {
+        "template--17287309295780__53644647-6213-4d8d-8286-3836613d4c0e-products-1": {
+          "type": "products",
+          "settings": {
+            "product_title": "ALPINE RACING TRX",
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
+            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
+            "product_price": "US$1,498",
+            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
+          }
+        },
+        "4d3d5ca7-02b9-4476-894a-37553fddf28a": {
+          "type": "products",
+          "settings": {
+            "product_title": "ALPINE RACING TRX",
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
+            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
+            "product_price": "US$1,498",
+            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
+          }
+        },
+        "cc801f88-b504-429b-b3ab-48dbc9851f66": {
+          "type": "products",
+          "settings": {
+            "product_title": "ALPINE RACING TRX",
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
+            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
+            "product_price": "US$1,498",
+            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
+          }
+        },
+        "0a628472-369c-4e81-9bad-ed176e43e169": {
+          "type": "products",
+          "settings": {
+            "product_title": "ALPINE RACING TRX",
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
+            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
+            "product_price": "US$1,498",
+            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
+          }
+        },
+        "e990083a-6e03-4bde-92f0-fa81891d18e0": {
+          "type": "products",
+          "settings": {
+            "product_title": "ALPINE RACING TRX",
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
+            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
+            "product_price": "US$1,498",
+            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
+          }
+        }
+      },
+      "block_order": [
+        "template--17287309295780__53644647-6213-4d8d-8286-3836613d4c0e-products-1",
+        "4d3d5ca7-02b9-4476-894a-37553fddf28a",
+        "cc801f88-b504-429b-b3ab-48dbc9851f66",
+        "0a628472-369c-4e81-9bad-ed176e43e169",
+        "e990083a-6e03-4bde-92f0-fa81891d18e0"
+      ],
+      "settings": {
+        "full_width": true,
+        "section_class": ""
+      }
+    },
+    "0eebdd59-e4a5-4928-8379-b91edc4b95c8": {
+      "type": "custom_featured_product",
+      "blocks": {
+        "11a34516-b866-44af-aac4-7290bc42b0d4": {
+          "type": "image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png"
+          }
+        }
+      },
+      "block_order": [
+        "11a34516-b866-44af-aac4-7290bc42b0d4"
+      ],
+      "settings": {
+        "full_width": false,
+        "product_subtitle": "",
+        "product_title": "ALPINE RACING TRX RACING SIMULATOR",
+        "product_price": "Valued at US$1,498",
+        "product_description": "Developed alongside Alpine F1 engineers, the Alpine Racing TRX is the first Sim Racing cockpit allowing you to switch between Formula and GT seating position in minutes.VIEW PRODUCT",
+        "button_link": "shopify:\/\/products\/trak-racer-wireless-gaming-headset",
+        "button_text": "View Product",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_media_width": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
     "c6578b5a-f5fb-4286-996c-6c2afc44e02f": {
       "type": "contact",
       "disabled": true,
@@ -898,72 +992,6 @@
         "full_width": false,
         "spacing": "small"
       }
-    },
-    "53644647-6213-4d8d-8286-3836613d4c0e": {
-      "type": "giveaway_product_grid",
-      "blocks": {
-        "template--17287309295780__53644647-6213-4d8d-8286-3836613d4c0e-products-1": {
-          "type": "products",
-          "settings": {
-            "product_title": "ALPINE RACING TRX",
-            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
-            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
-            "product_price": "US$1,498",
-            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
-          }
-        },
-        "4d3d5ca7-02b9-4476-894a-37553fddf28a": {
-          "type": "products",
-          "settings": {
-            "product_title": "ALPINE RACING TRX",
-            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
-            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
-            "product_price": "US$1,498",
-            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
-          }
-        },
-        "cc801f88-b504-429b-b3ab-48dbc9851f66": {
-          "type": "products",
-          "settings": {
-            "product_title": "ALPINE RACING TRX",
-            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
-            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
-            "product_price": "US$1,498",
-            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
-          }
-        },
-        "0a628472-369c-4e81-9bad-ed176e43e169": {
-          "type": "products",
-          "settings": {
-            "product_title": "ALPINE RACING TRX",
-            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
-            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
-            "product_price": "US$1,498",
-            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
-          }
-        },
-        "e990083a-6e03-4bde-92f0-fa81891d18e0": {
-          "type": "products",
-          "settings": {
-            "product_title": "ALPINE RACING TRX",
-            "product_image": "shopify:\/\/shop_images\/alpine-racing_ad09a165-c283-4fb9-9afa-86dee72bb69d.png",
-            "product_brand_logo": "shopify:\/\/shop_images\/alpine-logo.png",
-            "product_price": "US$1,498",
-            "product_link": "shopify:\/\/products\/trx-hybrid-fixed-fiberglass-seat-alpine-2023-livery"
-          }
-        }
-      },
-      "block_order": [
-        "template--17287309295780__53644647-6213-4d8d-8286-3836613d4c0e-products-1",
-        "4d3d5ca7-02b9-4476-894a-37553fddf28a",
-        "cc801f88-b504-429b-b3ab-48dbc9851f66",
-        "0a628472-369c-4e81-9bad-ed176e43e169",
-        "e990083a-6e03-4bde-92f0-fa81891d18e0"
-      ],
-      "settings": {
-        "full_width": true,
-        "section_class": ""
-      }
     }
   },
   "order": [
@@ -976,6 +1004,8 @@
     "e8d43e02-ec93-468a-8cb9-9150a6391c92",
     "be879409-eb8d-4d1a-bc97-1eb01c0290b3",
     "483fec3a-660c-4a4a-b9bc-21756f5e9ad7",
+    "53644647-6213-4d8d-8286-3836613d4c0e",
+    "0eebdd59-e4a5-4928-8379-b91edc4b95c8",
     "c6578b5a-f5fb-4286-996c-6c2afc44e02f",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "591138f3-e4fc-4e77-aba7-9f761bbf1309",
@@ -983,7 +1013,6 @@
     "3c2f40cd-3162-4b02-b86f-25538e0430b9",
     "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d",
     "main",
-    "78455a80-7a61-442f-898c-2cd06983f76c",
-    "53644647-6213-4d8d-8286-3836613d4c0e"
+    "78455a80-7a61-442f-898c-2cd06983f76c"
   ]
 }
