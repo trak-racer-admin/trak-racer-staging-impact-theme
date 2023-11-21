@@ -125,9 +125,13 @@
       </svg>
 
     {%- when 'play-button' -%}
-      <svg role="presentation" fill="none" focusable="false" width="{{ width | default: 48 }}" height="{{ height | default: 48 }}" class="{{ class | strip }}" viewBox="0 0 48 48">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
+      <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="31" cy="31" r="31" fill="#CD353D"/>
+        <path d="M21 42.4149V19.1496C21 15.4184 24.9389 13.0017 28.2652 14.6921L47.5584 24.4968C50.9263 26.2084 51.2525 30.8932 48.1541 33.0549L28.8609 46.5155C25.5464 48.828 21 46.4565 21 42.4149Z" fill="#D9D9D9"/>
       </svg>
+      {% comment %}<svg role="presentation" fill="none" focusable="false" width="{{ width | default: 48 }}" height="{{ height | default: 48 }}" class="{{ class | strip }}" viewBox="0 0 48 48">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24Zm-3-19.15a.3.3 0 0 0 .462.253l7.545-4.85a.3.3 0 0 0 0-.505l-7.545-4.85a.3.3 0 0 0-.462.252v9.7Z" fill="currentColor"></path>
+      </svg>{% endcomment %}
 
     {%- when 'play-video' -%}
       <svg role="presentation" fill="none" focusable="false" width="{{ width | default: 24 }}" height="{{ height | default: 24 }}" class="{{ class | strip }}" viewBox="0 0 24 24">
