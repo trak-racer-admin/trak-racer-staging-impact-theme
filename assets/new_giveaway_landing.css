@@ -1,4 +1,19 @@
+/* Saira Font */
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&family=Syne&display=swap");
+
+/* Futura Bk BT Font */
+@font-face {
+  font-family: "Avenir";
+  src: url("//res.cloudinary.com/spiralyze/raw/upload/v1623992654/FONTS/AvenirLTStd/Avenir_Black.ttf")
+    format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("//res.cloudinary.com/spiralyze/raw/upload/v1623992654/FONTS/AvenirLTStd/Avenir_Black.ttf")
+    format("truetype");
+  font-weight: 600;
+}
 body {
   background: gray !important;
 }
