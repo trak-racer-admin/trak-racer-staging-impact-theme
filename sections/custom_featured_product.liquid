@@ -26,8 +26,8 @@
     }
   }
 </style>
-
-<div {% render 'section-properties', tight: true %}>
+{% assign section_custom_class = section.settings.section_class %}
+<div {% render 'section-properties', tight: true, class: section_custom_class %}>
   <div class="product_data">
     <div class="product_gallery">
       {%- for block in section.blocks -%}
@@ -166,6 +166,11 @@
       "type": "color",
       "id": "text_color",
       "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
     }
   ],
   "presets": [
