@@ -271,13 +271,121 @@ body {
   fill: rgb(var(--text-color));
 }
 
-/* ------------ Giveaway Includes Title Section ------------ */
-.giveawayIncludes_title_sec .rich-text__wrapper {
-  /* max-width: 750px; */
-}
+/* ------------ Giveaway Includes Title and Grid Section ------------ */
 .giveawayIncludes_title_sec .rich-text__wrapper .h3 {
   font-family: Frutiger;
   font-size: 42px;
   font-weight: 700;
   line-height: 116%;
+}
+.giveaway_product_grid {
+  margin-bottom: 70px;
+}
+.giveaway_product_grid .slick-arrow:before,
+.giveaway_product_grid .slick-arrow:after {
+  content: "";
+  background-image: url(//cdn.shopify.com/s/files/1/0601/1312/5540/files/Slider_Arrow.png?v=1700563453);
+  width: 18px;
+  height: 32px;
+  display: block;
+}
+.giveaway_product_grid .slick-arrow.slick-prev:before {
+  transform: rotate(180deg);
+  left: -55px;
+}
+.giveaway_product_grid .slick-arrow.slick-next:before {
+  right: -55px;
+}
+.giveaway_product_grid .slick-slide {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.giveaway_product_grid .slide_content {
+  border-radius: 10px;
+  background: #1a1a1a;
+  padding: 20px;
+  height: 470px;
+}
+.giveaway_product_grid .product_title {
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  height: 70px;
+}
+.giveaway_product_grid .product_image {
+  height: 200px;
+  margin: 0 auto 30px;
+}
+.giveaway_product_grid .logo_price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.giveaway_product_grid .logo_price .product_brand_logo {
+  width: 100px;
+  object-fit: contain;
+  height: 50px;
+}
+.giveaway_product_grid .logo_price .product_price {
+  align-self: center;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.giveaway_product_grid .product_link_block {
+  text-align: center;
+}
+.giveaway_product_grid .product_link {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: opacity 0.1s ease-in-out;
+  letter-spacing: 0.01em;
+  border-top: 1px solid;
+  border-right: 0;
+  border-bottom: 1px solid;
+  border-left: 0;
+  border-top-color: #c7c7c7;
+  border-bottom-color: #c7c7c7;
+  position: relative;
+  background: transparent;
+  border-radius: 0px;
+}
+.giveaway_product_grid .product_link:hover,
+.giveaway_product_grid .product_link:focus {
+  opacity: 0.8;
+  outline: none;
+}
+.giveaway_product_grid .product_link:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  transform: skew(-12deg);
+  background-color: transparent;
+  top: -1px;
+  bottom: -1px;
+  left: -5px;
+  border-bottom: 1px solid;
+  border-bottom-color: #c7c7c7;
+  border-left: 1px solid;
+  border-left-color: #c7c7c7;
+}
+.giveaway_product_grid .product_link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  transform: skew(-12deg);
+  background-color: transparent;
+  top: -1px;
+  bottom: -1px;
+  right: -5px;
+  border-top: 1px solid;
+  border-top-color: #c7c7c7;
+  border-right: 1px solid;
+  border-right-color: #c7c7c7;
 }
