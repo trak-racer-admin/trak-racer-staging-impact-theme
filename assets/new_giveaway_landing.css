@@ -339,8 +339,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 8px 16px;
   transition: opacity 0.1s ease-in-out;
   letter-spacing: 0.01em;
   border-top: 1px solid #c7c7c7;
