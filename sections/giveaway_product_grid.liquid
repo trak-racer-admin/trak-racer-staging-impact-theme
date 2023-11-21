@@ -1,63 +1,48 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
+
     {%- when 'products' -%}
-      {%-
-        # #########################################################################
-        # Label: Product Title
-        # Returns: a string or an empty object(if nothing has been entered)
-        # Filters: https://shopify.dev/api/liquid/objects#string
-        ##########################################################################
-      -%}
-      {{ block.settings.product_title }}
+      {%- ########################################################################## 
+      # Label: Product Title
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.product_title }} 
 
-      {%-
-        # #########################################################################
-        # Label: Product Image
-        # Returns: an image object or nil(if no selection has been made)
-        # Image Properties: https://shopify.dev/api/liquid/objects#image
-        # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-        ##########################################################################
-      -%}
+      {%- ########################################################################## 
+      # Label: Product Image
+      # Returns: an image object or nil(if no selection has been made)
+      # Image Properties: https://shopify.dev/api/liquid/objects#image
+      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+      ########################################################################## -%}
       {%- assign product_image = block.settings.product_image -%}
-      {{
-        product_image
-        | image_url: width: product_image.width
-        | image_tag: class: 'add_your_class_here', loading: 'lazy'
-      }}
+      {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
 
-      {%-
-        # #########################################################################
-        # Label: Product Brand Logo
-        # Returns: an image object or nil(if no selection has been made)
-        # Image Properties: https://shopify.dev/api/liquid/objects#image
-        # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-        ##########################################################################
-      -%}
+      {%- ########################################################################## 
+      # Label: Product Brand Logo
+      # Returns: an image object or nil(if no selection has been made)
+      # Image Properties: https://shopify.dev/api/liquid/objects#image
+      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+      ########################################################################## -%}
       {%- assign product_brand_logo = block.settings.product_brand_logo -%}
-      {{
-        product_brand_logo
-        | image_url: width: product_brand_logo.width
-        | image_tag: class: 'add_your_class_here', loading: 'lazy'
-      }}
+      {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
 
-      {%-
-        # #########################################################################
-        # Label: Product Price
-        # Returns: a string or an empty object(if nothing has been entered)
-        # Filters: https://shopify.dev/api/liquid/objects#string
-        ##########################################################################
-      -%}
-      {{ block.settings.product_price }}
+      {%- ########################################################################## 
+      # Label: Product Price
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.product_price }} 
 
-      {%-
-        # #########################################################################
-        # Label: Product link
-        # Returns: a string(the entered URL) or nil / false(if nothing has been entered)
-        ##########################################################################
-      -%}
-      {{ block.settings.product_link }}
+      {%- ########################################################################## 
+      # Label: Product link
+      # Returns: a string(the entered URL) or nil / false(if nothing has been entered)
+      ########################################################################## -%}
+      {{ block.settings.product_link }} 
+
   {%- endcase -%}
 {%- endfor -%}
+
 
 {% schema %}
   {
@@ -65,11 +50,11 @@
   "class": "giveaway_product_grid",
   "settings": [
    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "Full width",
-      "default": true
-    }
+    "type": "checkbox",
+    "id": "full_width",
+    "label": "Full width",
+    "default": true
+  }
   ],
   "blocks": [
     {
@@ -111,7 +96,7 @@
       "name": "Giveaway Product Grid"
     }
   ]
-}
+}  
 {% endschema %}
 
 {% stylesheet %}
