@@ -551,4 +551,7 @@ body {
   font-family: Frutiger;
   font-size: 20px;
   font-weight: 700;
+  border-top: 10px solid #000;
+  border-right: 10px solid #000;
+  position: relative;
 }
