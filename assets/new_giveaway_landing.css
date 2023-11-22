@@ -26,6 +26,9 @@ body {
 .button_gradient > button {
   border-radius: 16px;
 }
+.video-play-button {
+  display: inline-flex;
+}
 /* ------------ Enter Step Sec ------------ */
 .enter_step_sec {
   padding: 29px 30px 22px;
