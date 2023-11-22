@@ -1,5 +1,23 @@
 {
   "sections": {
+    "2ac0969d-4db1-4921-845e-887ec2dc977c": {
+      "type": "custom_hero_section",
+      "settings": {
+        "full_width": true,
+        "product_subtitle": "",
+        "product_title": "",
+        "product_price": "",
+        "product_description": "",
+        "button_link": "",
+        "button_text": "Button",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_media_width": 55,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "section_class": ""
+      }
+    },
     "3fefa21b-9563-40cf-b680-7b259a53324a": {
       "type": "rich-text",
       "blocks": {
@@ -955,6 +973,7 @@
     }
   },
   "order": [
+    "2ac0969d-4db1-4921-845e-887ec2dc977c",
     "3fefa21b-9563-40cf-b680-7b259a53324a",
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
