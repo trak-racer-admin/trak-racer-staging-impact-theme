@@ -503,7 +503,8 @@ body {
 }
 
 .custom_hero_section .main_image_block {
-  background: #d9d9d9;
+  background: url(https://cdn.shopify.com/s/files/1/0601/1312/5540/files/hero_bg.png?v=1700653468)
+    center/contain;
   border-radius: 30px;
   display: flex;
 }
