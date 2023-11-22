@@ -398,11 +398,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 .custom_hero_section .product_data .product_gallery,
-.custom_hero_section .product_data .product_info {
+.custom_hero_section .product_data .product_info_block {
   width: 100%;
   max-width: calc(50% - 10px);
 }
