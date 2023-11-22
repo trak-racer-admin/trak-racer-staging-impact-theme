@@ -601,4 +601,10 @@ body {
   font-family: Syne;
   font-size: 18px;
   line-height: 163%;
+  min-width: 303px;
+  min-height: 63px;
+  background: #cd353d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
