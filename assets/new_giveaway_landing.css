@@ -432,32 +432,31 @@ body {
   display: none;
 }
 .custom_hero_section .product_info__subtitle {
-  color: #cd353d;
-  font-family: Futura;
-  font-size: 45px;
-  line-height: 63px;
+  color: #fff;
+  font-family: Futura Bk BT;
+  font-size: 50px;
+  line-height: 102%;
 }
 .custom_hero_section .product_info__title {
   color: #d9d9d9;
   font-family: Frutiger;
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
-  line-height: 63px;
+  line-height: 102%;
 }
 .custom_hero_section .product_info__price {
+  margin: 23px 0 12px;
   color: #ff4e57;
   font-family: Frutiger;
   font-size: 33px;
-  font-style: normal;
   font-weight: 400;
   line-height: 107%;
-  margin: 23px 0 12px;
 }
 .custom_hero_section .product_info__description {
   color: #fff;
   font-family: Frutiger;
   font-size: 16px;
-  line-height: 157%;
+  line-height: 131%;
 }
 .custom_hero_section .product_info__buttons {
   display: flex;
@@ -467,22 +466,13 @@ body {
 }
 .custom_hero_section .product_btn {
   background: black;
-  color: #fff;
-  font-family: Frutiger;
-  font-size: 22px;
-  line-height: 25px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
-  height: 78px;
+  min-width: 240px;
+  min-height: 78px;
+  color: #bfbfbf;
+  font-family: Frutiger;
+  font-size: 22px;
+  line-height: 116%;
 }
-/* .custom_hero_section .video-play-button svg {
-  height: 72px;
-  width: 72px;
-  background: white;
-  border-radius: 100%;
-} */
-/* .custom_hero_section .video-play-button svg path {
-  fill: rgb(var(--text-color));
-} */
