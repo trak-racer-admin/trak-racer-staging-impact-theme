@@ -1,4 +1,4 @@
-<style>
+{% comment %} <style>
   #shopify-section-{{ section.id }} {
     --product-grid: auto / minmax(0, 1fr);
     --product-gallery-media-list-grid: auto / auto-flow 100%;
@@ -25,7 +25,7 @@
       --product-gallery-media-list-gap: var(--grid-gutter);
     }
   }
-</style>
+</style> {% endcomment %}
 {% assign section_custom_class = section.settings.section_class %}
 <div {% render 'section-properties', tight: true, class: section_custom_class %}>
   <div class="product_data">
