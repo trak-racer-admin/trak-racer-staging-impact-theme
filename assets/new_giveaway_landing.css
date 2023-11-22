@@ -538,6 +538,7 @@ body {
   display: inline-grid;
   gap: 8px;
   padding: 6px 4px;
+  margin: 0 0 33px 23px;
 }
 .custom_hero_section .main_image_block .color_variant .variant_item {
   height: 35px;
