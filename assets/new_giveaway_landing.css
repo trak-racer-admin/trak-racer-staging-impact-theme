@@ -574,7 +574,8 @@ body {
 }
 .custom_hero_section .thumbnail_image_block .thumbnail_items {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 15px;
   padding: 17px 15px;
 }
 .thumbnail_item {
@@ -584,4 +585,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  max-width: 178px;
+  max-height: 154px;
+  height: inherit;
+  width: 100%;
 }
