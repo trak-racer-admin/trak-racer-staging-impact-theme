@@ -1,4 +1,4 @@
-{% assign section_custom_class = section.settings.section_class %}
+{% assign section_custom_class = section.settings.section_class | append: section.id %}
 <div {% render 'section-properties', tight: true, class: section_custom_class %}>
   <div class="product_data">
     <div class="product_gallery">
