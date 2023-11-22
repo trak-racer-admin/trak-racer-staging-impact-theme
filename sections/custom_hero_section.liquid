@@ -27,6 +27,7 @@
             <div class="variant_item" style="background: #CD353D;"></div>
             <div class="variant_item" style="background: #025AB6;"></div>
           </div>
+          <a href="{{ section.settings.button_link }}" class="product_btn">{{- section.settings.button_text -}}</a>
         </div>
         {%- if block.settings.product_main_image -%}
           {% assign image_url = block.settings.product_main_image | img_url: 'original' %}
@@ -108,7 +109,29 @@
       "type": "text",
       "id": "button_text",
       "label": "Button Text",
-      "default": "Button"
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "image_button_link",
+      "label": "Image Button Link"
+    },
+    {
+      "type": "text",
+      "id": "image_button_text",
+      "label": "Image Button Text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "thumbnail_button_link",
+      "label": "Thumbnail Button Link"
+    },
+    {
+      "type": "text",
+      "id": "thumbnail_button_text",
+      "label": "Thumbnail Button Text",
+      "default": "Button 3"
     },
     {
       "type": "video_url",
