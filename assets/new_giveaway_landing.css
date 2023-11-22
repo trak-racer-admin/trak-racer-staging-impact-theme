@@ -478,6 +478,9 @@ body {
 }
 .giveaway_time .duration {
   padding: 25px 0 40px;
+  border: 0;
+  background: #333;
+  border-radius: 16px;
 }
 .giveaway_time .duration h4 {
   color: #fbfbfb;
