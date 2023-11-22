@@ -26,12 +26,14 @@
       <div class="main_image_block">
         <div class="product_optherdata">
           <div class="tag">In Stock</div>
-          <div class="color_variant">
-            <div class="variant_item" style="background: #131315;"></div>
-            <div class="variant_item" style="background: #CD353D;"></div>
-            <div class="variant_item" style="background: #025AB6;"></div>
+          <div class="bottom_option">
+            <div class="color_variant">
+              <div class="variant_item" style="background: #131315;"></div>
+              <div class="variant_item" style="background: #CD353D;"></div>
+              <div class="variant_item" style="background: #025AB6;"></div>
+            </div>
+            <a href="{{ section.settings.image_button_link }}" class="product_btn">{{- section.settings.image_button_text -}}</a>
           </div>
-          <a href="{{ section.settings.image_button_link }}" class="product_btn">{{- section.settings.image_button_text -}}</a>
         </div>
         {%- if section.settings.product_main_image -%}
           {% assign image_url = section.settings.product_main_image | img_url: 'original' %}
