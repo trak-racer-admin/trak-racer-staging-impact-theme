@@ -540,14 +540,15 @@ body {
   border-radius: 50%;
 }
 .custom_hero_section .main_image_block .image_btn {
-  background: black;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 240px;
-  min-height: 78px;
-  color: #bfbfbf;
+  min-width: 200px;
+  min-height: 90px;
+  border-radius: 12px 25px 12px 12px;
+  background: #f0e8e8;
+  color: #1d1c1c;
   font-family: Frutiger;
-  font-size: 22px;
-  line-height: 116%;
+  font-size: 20px;
+  font-weight: 700;
 }
