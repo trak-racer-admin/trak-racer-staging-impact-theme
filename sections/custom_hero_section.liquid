@@ -10,8 +10,9 @@
         <div class="button_gradient">
           <a href="{{ section.settings.button_link }}" class="gradient_btn product_btn">{{- section.settings.button_text -}}</a>
         </div>
-        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'play-button', width: 48, height: 48 -%}</a>
+        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'new-play-button', width: 48, height: 48 -%}</a>
       </div>
+      
       <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
       <div id="countdown" class="giveaway-time">
         <div class="duration"><h4 id="days"></h4><h6>Days</h6></div>
