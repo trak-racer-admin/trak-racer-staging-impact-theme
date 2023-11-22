@@ -566,9 +566,22 @@ body {
   left: -40px;
   top: 35px;
 }
-.thumbnail_image_block {
+.custom_hero_section .thumbnail_image_block {
   background: url(https://cdn.shopify.com/s/files/1/0601/1312/5540/files/thumbnail_bg.png?v=1700655498);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+}
+.custom_hero_section .thumbnail_image_block .thumbnail_items {
+  display: flex;
+  gap: 20px;
+  padding: 17px 15px;
+}
+.thumbnail_item {
+  border-radius: 20px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
