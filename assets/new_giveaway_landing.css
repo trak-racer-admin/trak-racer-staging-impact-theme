@@ -476,6 +476,9 @@ body {
   justify-content: center;
   gap: 10px;
 }
+.giveaway_time .button_gradient {
+  background: linear-gradient(to bottom, #ffffff, #13131500);
+}
 .giveaway_time .duration {
   padding: 25px 0 40px;
   border: 0;
