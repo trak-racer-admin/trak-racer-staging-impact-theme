@@ -504,7 +504,7 @@ body {
 
 .custom_hero_section .main_image_block {
   background: #d9d9d9;
-  border-radius: 50px;
+  border-radius: 30px;
   display: flex;
 }
 .custom_hero_section .main_image_block .tag {
@@ -519,6 +519,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
 }
 .custom_hero_section .main_image_block .color_variant {
   border-radius: 50px;
