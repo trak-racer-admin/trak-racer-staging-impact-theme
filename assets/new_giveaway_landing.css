@@ -507,6 +507,11 @@ body {
   border-radius: 30px;
   display: flex;
 }
+.custom_hero_section .main_image_block .product_optherdata {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
 .custom_hero_section .main_image_block .tag {
   border-radius: 30px;
   background: #cd353d;
