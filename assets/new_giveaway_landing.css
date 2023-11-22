@@ -594,7 +594,8 @@ body {
 }
 .custom_hero_section .thumbnail_image_block .button_gradient {
   background: linear-gradient(to bottom, #000000, #00000000);
-  display: inline-block;
+  display: inline-flex;
+  margin: 0 31px 17px 0;
 }
 .custom_hero_section .thumbnail_image_block .thumbnail_btn {
   color: #131315;
