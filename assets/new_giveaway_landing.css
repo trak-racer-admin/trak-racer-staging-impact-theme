@@ -470,12 +470,12 @@ body {
   width: 240px;
   height: 78px;
 }
-.custom_hero_section .video-play-button svg {
+/* .custom_hero_section .video-play-button svg {
   height: 72px;
   width: 72px;
   background: white;
   border-radius: 100%;
-}
+} */
 /* .custom_hero_section .video-play-button svg path {
   fill: rgb(var(--text-color));
 } */
