@@ -558,6 +558,10 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
+.custom_hero_section .main_image_block .product_img_block {
+  max-width: calc(100% - 200px);
+  width: 100%;
+}
 .custom_hero_section .main_image_block .product_img {
   max-width: calc(100% - 200px);
   width: 100%;
