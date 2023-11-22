@@ -390,3 +390,92 @@ body {
     top: 510px;
   }
 }
+
+/* ------------ Custom Hero Section ------------ */
+.custom_hero_section {
+}
+.custom_hero_section .product_data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.custom_hero_section .product_data .product_gallery,
+.custom_hero_section .product_data .product_info {
+  width: 100%;
+  max-width: calc(50% - 10px);
+}
+.custom_hero_section .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.custom_hero_section .slick-dots li {
+  background: transparent;
+  border: 3px solid #616161;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.custom_hero_section .slick-dots li.slick-active {
+  background: #616161;
+}
+.custom_hero_section .slick-dots li.slick-active button:before {
+  display: none;
+}
+.custom_hero_section .product_info__subtitle {
+  color: #cd353d;
+  font-family: Futura;
+  font-size: 45px;
+  line-height: 63px;
+}
+.custom_hero_section .product_info__title {
+  color: #d9d9d9;
+  font-family: Frutiger;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 63px;
+}
+.custom_hero_section .product_info__price {
+  color: #ff4e57;
+  font-family: Frutiger;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 107%;
+  margin: 23px 0 12px;
+}
+.custom_hero_section .product_info__description {
+  color: #fff;
+  font-family: Frutiger;
+  font-size: 16px;
+  line-height: 157%;
+}
+.custom_hero_section .product_info__buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.custom_hero_section .product_btn {
+  color: #fff;
+  font-family: Frutiger;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 78px;
+  display: inline-flex;
+  justify-content: center;
+  max-width: 240px;
+  width: 100%;
+}
+.custom_hero_section .video-play-button svg {
+  height: 72px;
+  width: 72px;
+  background: white;
+  border-radius: 100%;
+}
+.custom_hero_section .video-play-button svg path {
+  fill: rgb(var(--text-color));
+}
