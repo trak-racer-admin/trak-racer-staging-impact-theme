@@ -36,22 +36,6 @@
         "section_class": ""
       }
     },
-    "6469952e-51f6-464d-99d5-142fdf72110a": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a": {
       "type": "multi-column",
       "blocks": {
@@ -277,7 +261,8 @@
         "desktop_media_width": 50,
         "background": "",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "483fec3a-660c-4a4a-b9bc-21756f5e9ad7": {
@@ -397,28 +382,8 @@
         "desktop_media_width": 50,
         "background": "",
         "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
-    "c6578b5a-f5fb-4286-996c-6c2afc44e02f": {
-      "type": "contact",
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "subheading": "Contact Us",
-        "title": "Do you have any question?",
-        "content": "",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "",
-        "background_gradient": "",
         "text_color": "#ffffff",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "section_class": ""
       }
     },
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
@@ -467,7 +432,6 @@
         "fe538d40-3d0b-4082-acec-a496d4b26fcd",
         "82d1ac28-819b-4837-8152-7811a3a3bc20"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -480,7 +444,6 @@
     },
     "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [
         ".text-on-sale {color: white;}"
       ],
@@ -528,7 +491,6 @@
       "block_order": [
         "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
@@ -566,7 +528,6 @@
         "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1",
         "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -661,7 +622,6 @@
         "ff564899-fe69-4aa2-b17a-f4b8f82e0288",
         "55be72f5-1e77-4b46-b2d1-0bf8053ef72b"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -996,7 +956,6 @@
   },
   "order": [
     "3fefa21b-9563-40cf-b680-7b259a53324a",
-    "6469952e-51f6-464d-99d5-142fdf72110a",
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
@@ -1006,7 +965,6 @@
     "483fec3a-660c-4a4a-b9bc-21756f5e9ad7",
     "53644647-6213-4d8d-8286-3836613d4c0e",
     "0eebdd59-e4a5-4928-8379-b91edc4b95c8",
-    "c6578b5a-f5fb-4286-996c-6c2afc44e02f",
     "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
     "591138f3-e4fc-4e77-aba7-9f761bbf1309",
     "1698227512f130f481",
