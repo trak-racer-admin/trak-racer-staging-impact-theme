@@ -1,31 +1,3 @@
-{% comment %} <style>
-  #shopify-section-{{ section.id }} {
-    --product-grid: auto / minmax(0, 1fr);
-    --product-gallery-media-list-grid: auto / auto-flow 100%;
-    --product-gallery-media-list-gap: var(--grid-gutter);
-  }
-
-  @media screen and (max-width: 999px) {
-    #shopify-section-{{ section.id }} {
-      --section-spacing-block-start: var(--container-gutter);
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    #shopify-section-{{ section.id }} {
-    {%- assign media_ratio = section.settings.desktop_media_width | divided_by: 50.0 -%}
-      --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
-      --product-gallery-media-list-grid: auto / auto-flow 100%;
-      --product-gallery-media-list-gap: calc(var(--grid-gutter) / 2);
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    #shopify-section-{{ section.id }} {
-      --product-gallery-media-list-gap: var(--grid-gutter);
-    }
-  }
-</style> {% endcomment %}
 {% assign section_custom_class = section.settings.section_class %}
 <div {% render 'section-properties', tight: true, class: section_custom_class %}>
   <div class="product_data">
