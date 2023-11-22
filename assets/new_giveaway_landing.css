@@ -504,7 +504,6 @@ body {
 
 .custom_hero_section .main_image_block {
   background: url(https://cdn.shopify.com/s/files/1/0601/1312/5540/files/hero_bg.png?v=1700653468);
-  border-radius: 30px;
   display: flex;
   flex-wrap: wrap;
   background-repeat: no-repeat;
@@ -566,4 +565,10 @@ body {
   position: relative;
   left: -40px;
   top: 35px;
+}
+.thumbnail_image_block {
+  background: url(https://cdn.shopify.com/s/files/1/0601/1312/5540/files/thumbnail_bg.png?v=1700655498);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
 }
