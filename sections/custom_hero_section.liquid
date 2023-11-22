@@ -12,13 +12,14 @@
         </div>
         <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'new-play-button', width: 48, height: 48 -%}</a>
       </div>
-      
-      <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
-      <div id="countdown" class="giveaway-time">
+      <div class="countdown_block">
+        <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
+        <div id="countdown" class="giveaway-time">
         <div class="duration"><h4 id="days"></h4><h6>Days</h6></div>
         <div class="duration"><h4 id="hours"></h4><h6>Hours</h6></div>
         <div class="duration"><h4 id="minutes"></h4><h6>Minutes</h6></div>
         <div class="duration"><h4 id="seconds"></h4><h6>Seconds</h6></div>
+      </div>
       </div>
     </div>
     <div class="product_image_block">
