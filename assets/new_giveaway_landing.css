@@ -29,6 +29,10 @@ body {
 .video-play-button {
   display: inline-flex;
 }
+.video-play-button svg {
+  height: 62px;
+  width: 62px;
+}
 /* ------------ Enter Step Sec ------------ */
 .enter_step_sec {
   padding: 29px 30px 22px;
