@@ -476,6 +476,6 @@ body {
   background: white;
   border-radius: 100%;
 }
-.custom_hero_section .video-play-button svg path {
+/* .custom_hero_section .video-play-button svg path {
   fill: rgb(var(--text-color));
-}
+} */
