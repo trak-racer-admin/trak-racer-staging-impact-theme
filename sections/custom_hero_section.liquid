@@ -1,6 +1,23 @@
 {% assign section_custom_class = section.settings.section_class | append: ' ' | append: section.id %}
 <div {% render 'section-properties', tight: true, class: section_custom_class %}>
   <div class="product_data">
+    <div class="product_info">
+      <h2 class="product_info__subtitle">{{ section.settings.product_title_1 }}</h2>
+      <h2 class="product_info__title">{{ section.settings.product_title_2 }}</h2>
+      <div class="product_info__price">{{ section.settings.product_price }}</div>
+      <div class="product_info__description">{{ section.settings.product_description }}</div>
+      <div class="product_info__buttons">
+        <a href="{{ section.settings.button_link }}" class="product_btn border_gradient">{{- section.settings.button_text -}}</a>
+        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'play-button', width: 48, height: 48 -%}</a>
+      </div>
+      <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
+      <div id="countdown" class="giveaway-time">
+        <div class="duration"><h4 id="days"></h4><h6>Days</h6></div>
+        <div class="duration"><h4 id="hours"></h4><h6>Hours</h6></div>
+        <div class="duration"><h4 id="minutes"></h4><h6>Minutes</h6></div>
+        <div class="duration"><h4 id="seconds"></h4><h6>Seconds</h6></div>
+      </div>
+    </div>
     <div class="product_gallery">
       {%- for block in section.blocks -%}
         {%- if block.settings.product_image -%}
@@ -18,29 +35,6 @@
           >
         {%- endif -%}
       {%- endfor -%}
-    </div>
-
-    <div class="product_info">
-      <h2 class="product_info__subtitle">{{ section.settings.product_title_1 }}</h2>
-      <h2 class="product_info__title">{{ section.settings.product_title_2 }}</h2>
-      <div class="product_info__price">{{ section.settings.product_price }}</div>
-      <div class="product_info__description">{{ section.settings.product_description }}</div>
-      <div class="product_info__buttons">
-        <a href="{{ section.settings.button_link }}" class="product_btn border_gradient">
-          {{- section.settings.button_text -}}
-        </a>
-        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">
-          {%- render 'icon' with 'play-button', width: 48, height: 48 -%}
-        </a>
-      </div>
-      <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
-      <div id="countdown" class="giveaway-time">
-        <div class="duration"><h4 id="days"></h4><h6>Days</h6></div>
-        <div class="duration"><h4 id="hours"></h4><h6>Hours</h6></div>
-        <div class="duration"><h4 id="minutes"></h4><h6>Minutes</h6></div>
-        <div class="duration"><h4 id="seconds"></h4><h6>Seconds</h6></div>
-      </div>
-
     </div>
   </div>
 </div>
