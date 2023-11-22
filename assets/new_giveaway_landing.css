@@ -460,7 +460,7 @@ body {
 .countdown_block {
   border-radius: 29px;
   background: #333;
-  padding: 45px 15px 34px;
+  padding: 45px 40px 34px;
 }
 .countdown_title {
   color: #ebebeb;
@@ -473,7 +473,7 @@ body {
 .giveaway_time {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
 .giveaway_time .duration {
@@ -481,6 +481,8 @@ body {
   border: 0;
   background: #333;
   border-radius: 16px;
+  width: auto;
+  min-width: 120px;
 }
 .giveaway_time .duration h4 {
   color: #fbfbfb;
