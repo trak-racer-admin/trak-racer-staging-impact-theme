@@ -56,42 +56,6 @@
         "section_class": ""
       }
     },
-    "3fefa21b-9563-40cf-b680-7b259a53324a": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "THE GIVEAWAY ENDS IN:",
-            "heading_tag": "h4",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "7bef7467-3dd7-4735-a0b7-376885877dec": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1",
-        "7bef7467-3dd7-4735-a0b7-376885877dec"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "section_class": ""
-      }
-    },
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a": {
       "type": "multi-column",
       "blocks": {
@@ -1012,7 +976,6 @@
   },
   "order": [
     "2ac0969d-4db1-4921-845e-887ec2dc977c",
-    "3fefa21b-9563-40cf-b680-7b259a53324a",
     "3b0e150e-9fa6-471f-8ebe-bffa4c23f45a",
     "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
     "169822355365a42863",
