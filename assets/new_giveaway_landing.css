@@ -412,25 +412,6 @@ body {
   width: 100%;
   max-width: calc(50% - 10px);
 }
-.custom_hero_section .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.custom_hero_section .slick-dots li {
-  background: transparent;
-  border: 3px solid #616161;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-}
-.custom_hero_section .slick-dots li.slick-active {
-  background: #616161;
-}
-.custom_hero_section .slick-dots li.slick-active button:before {
-  display: none;
-}
 .custom_hero_section .product_info__subtitle {
   color: #fff;
   font-family: Futura Bk BT;
