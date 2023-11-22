@@ -572,6 +572,7 @@ body {
   background-position: left;
   background-size: contain;
   margin-top: 40px;
+  text-align: right;
 }
 .custom_hero_section .thumbnail_image_block .thumbnail_items {
   display: flex;
@@ -590,4 +591,14 @@ body {
   max-height: 154px;
   height: inherit;
   width: 100%;
+}
+.custom_hero_section .thumbnail_image_block .button_gradient {
+  background: linear-gradient(to bottom, #000000, #00000000);
+  display: inline-block;
+}
+.custom_hero_section .thumbnail_image_block .thumbnail_btn {
+  color: #131315;
+  font-family: Syne;
+  font-size: 18px;
+  line-height: 163%;
 }
