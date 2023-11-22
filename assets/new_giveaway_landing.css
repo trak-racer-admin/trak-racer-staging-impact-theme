@@ -563,6 +563,7 @@ body {
   width: 100%;
 }
 .custom_hero_section .main_image_block .product_img {
-  /* max-width: calc(100% - 200px);
-  width: 100%; */
+  position: relative;
+  left: -40px;
+  top: 35px;
 }
