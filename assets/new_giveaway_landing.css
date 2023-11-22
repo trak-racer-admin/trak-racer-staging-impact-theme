@@ -571,6 +571,7 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+  margin-top: 40px;
 }
 .custom_hero_section .thumbnail_image_block .thumbnail_items {
   display: flex;
