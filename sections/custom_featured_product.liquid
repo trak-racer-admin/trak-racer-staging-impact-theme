@@ -1,4 +1,4 @@
-{% assign section_custom_class = section.settings.section_class | append: ' space ' | append: section.id %}
+{% assign section_custom_class = section.settings.section_class | append: ' ' | append: section.id %}
 
 <h1>{{ section_custom_class }}</h1>
 
@@ -168,7 +168,7 @@
   // });
 
   jQuery(document).ready(function () {
-    $(".magnific_video_popup").magnificPopup({
+    $(".{{ section.id }} .magnific_video_popup").magnificPopup({
       type: "iframe",
       closeOnBgClick: false,
       iframe: {
