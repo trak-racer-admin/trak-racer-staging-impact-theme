@@ -457,3 +457,16 @@ body {
   font-size: 22px;
   line-height: 116%;
 }
+.countdown_block {
+  border-radius: 29px;
+  background: #333;
+  padding: 45px 15px 34px;
+}
+.countdown_title {
+  color: #ebebeb;
+  font-family: Syne;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 163%;
+  text-align: center;
+}
