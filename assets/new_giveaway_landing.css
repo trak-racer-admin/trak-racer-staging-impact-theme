@@ -470,3 +470,21 @@ body {
   line-height: 163%;
   text-align: center;
 }
+.giveaway_time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.duration h4 {
+  color: #fbfbfb;
+  font-family: Syne;
+  font-size: 62px;
+  line-height: 60%;
+}
+.duration h6 {
+  color: #fbfbfb;
+  font-family: Syne;
+  font-size: 22px;
+  line-height: 163%;
+}
