@@ -47,12 +47,14 @@
       <div class="thumbnail_image_block">
           <div class="thumbnail_items">
             {%- for block in section.blocks -%}
-              {%- if block.settings.product_thumbnail -%}
-                {% assign image_url = block.settings.product_thumbnail | img_url: 'original' %}
-                <img class="thumbnail_img img_{{ forloop.index }}" src="{{ image_url }}" alt="{{ block.settings.product_thumbnail.alt | escape }}">
-              {%- else -%}
-                <img class="thumbnail_img img_{{ forloop.index }}" src="https://via.placeholder.com/150x150/e9e9e9" alt="Dummy Image">
-              {%- endif -%}
+              <div class="thumbnail_item">
+                {%- if block.settings.product_thumbnail -%}
+                  {% assign image_url = block.settings.product_thumbnail | img_url: 'original' %}
+                  <img class="thumbnail_img img_{{ forloop.index }}" src="{{ image_url }}" alt="{{ block.settings.product_thumbnail.alt | escape }}">
+                {%- else -%}
+                  <img class="thumbnail_img img_{{ forloop.index }}" src="https://via.placeholder.com/150x150/e9e9e9" alt="Dummy Image">
+                {%- endif -%}
+              </div>
             {%- endfor -%}
           </div>
         <a href="{{ section.settings.thumbnail_button_link }}" class="thumbnail_btn">{{- section.settings.thumbnail_button_text -}}</a>
