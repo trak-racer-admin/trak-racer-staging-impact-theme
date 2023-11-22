@@ -401,8 +401,8 @@ body {
   justify-content: space-between;
   gap: 20px;
 }
-.custom_hero_section .product_data .product_gallery,
-.custom_hero_section .product_data .product_info_block {
+.custom_hero_section .product_data .product_image_block,
+.custom_hero_section .product_data .product_info {
   width: 100%;
   max-width: calc(50% - 10px);
 }
