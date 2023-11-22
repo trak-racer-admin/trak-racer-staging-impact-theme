@@ -521,4 +521,15 @@ body {
   justify-content: center;
 }
 .custom_hero_section .main_image_block .color_variant {
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0);
+  display: inline-grid;
+  gap: 8px;
+  padding: 6px 4px;
+}
+.custom_hero_section .main_image_block .color_variant .variant_item {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
