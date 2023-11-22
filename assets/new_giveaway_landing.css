@@ -405,12 +405,12 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 80px;
 }
 .custom_hero_section .product_data .product_image_block,
 .custom_hero_section .product_data .product_info {
   width: 100%;
-  max-width: calc(50% - 10px);
+  max-width: calc(50% - 40px);
 }
 .custom_hero_section .product_info__subtitle {
   color: #fff;
