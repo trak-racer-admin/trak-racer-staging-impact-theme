@@ -476,13 +476,13 @@ body {
   justify-content: space-between;
   gap: 10px;
 }
-.duration h4 {
+.giveaway_time .duration h4 {
   color: #fbfbfb;
   font-family: Syne;
   font-size: 62px;
   line-height: 60%;
 }
-.duration h6 {
+.giveaway_time .duration h6 {
   color: #fbfbfb;
   font-family: Syne;
   font-size: 22px;
