@@ -20,8 +20,12 @@ body {
 .button_gradient {
   background: linear-gradient(to bottom, #d9d9d9, #ffffff20);
   padding: 2px;
+  border-radius: 16px;
 }
-
+.button_gradient > a,
+.button_gradient > button {
+  border-radius: 16px;
+}
 /* ------------ Enter Step Sec ------------ */
 .enter_step_sec {
   padding: 29px 30px 22px;
