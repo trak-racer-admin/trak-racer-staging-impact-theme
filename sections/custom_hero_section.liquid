@@ -7,7 +7,9 @@
       <div class="product_info__price">{{ section.settings.product_price }}</div>
       <div class="product_info__description">{{ section.settings.product_description }}</div>
       <div class="product_info__buttons">
-        <a href="{{ section.settings.button_link }}" class="product_btn border_gradient">{{- section.settings.button_text -}}</a>
+        <div class="button_gradient">
+          <a href="{{ section.settings.button_link }}" class="gradient_btn product_btn">{{- section.settings.button_text -}}</a>
+        </div>
         <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'play-button', width: 48, height: 48 -%}</a>
       </div>
       <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
