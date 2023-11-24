@@ -806,14 +806,13 @@
     },
     "ed2a04fa-645a-4699-8143-d5f7305c1388": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_51131b6c-e635-4eb5-a32b-dca90012dcd4.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_400px.jpg",
+        "image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine_mobile.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -881,6 +880,7 @@
         "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1",
         "fd2c6817-6caf-45e1-97c5-6f784742ee52"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-banner {background-color: white;}"
       ],
