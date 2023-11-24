@@ -282,8 +282,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_1.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -296,8 +296,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_2.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "rgba(0,0,0,0)",
@@ -310,8 +310,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_3.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -324,8 +324,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_4.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -338,8 +338,8 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "{{ product.metafields.custom_fields.what_s_included_icon_5.value }}",
-            "mobile_icon_width": 120,
-            "icon_width": 120,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
@@ -357,12 +357,12 @@
       ],
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
-        "background": "",
+        "background": "#f0f0f0",
         "background_gradient": "",
         "text_color": ""
       }
@@ -456,13 +456,13 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn.jpg",
+        "image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine.jpg",
         "mobile_image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_400px.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "related-products": {
