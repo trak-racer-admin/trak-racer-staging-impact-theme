@@ -457,7 +457,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_400px.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine_mobile.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
