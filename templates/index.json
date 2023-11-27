@@ -3,10 +3,10 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
-        "8583a7f8-bb48-45ba-94ae-2da648356bb4": {
-          "type": "subheading",
+        "76c5a092-ca11-437a-9303-e766523c1967": {
+          "type": "richtext",
           "settings": {
-            "text": "Your Edge Against the Competition"
+            "content": "<p>Your Edge Against the Competition<\/p>"
           }
         },
         "464494f2-46aa-4849-bebf-b7fd7f7f812b": {
@@ -29,7 +29,7 @@
         }
       },
       "block_order": [
-        "8583a7f8-bb48-45ba-94ae-2da648356bb4",
+        "76c5a092-ca11-437a-9303-e766523c1967",
         "464494f2-46aa-4849-bebf-b7fd7f7f812b",
         "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
@@ -37,7 +37,7 @@
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": true,
-        "video_size": "lg",
+        "video_size": "md",
         "video": "shopify:\/\/files\/videos\/Web Banner (Q2, 2023).mp4",
         "external_video_url": "https:\/\/youtu.be\/gv5LZFG7Afc",
         "text_color": "#ffffff",
@@ -93,6 +93,7 @@
           "type": "collection",
           "settings": {
             "collection": "racing-simulators",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1.jpg",
             "subheading": "",
             "title": "Racing Simulators",
             "url": "",
@@ -107,6 +108,7 @@
           "type": "collection",
           "settings": {
             "collection": "flight-simulators",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie.jpg",
             "subheading": "",
             "title": "Flight Simulators",
             "url": "",
@@ -121,6 +123,7 @@
           "type": "collection",
           "settings": {
             "collection": "monitor-stands",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_2.jpg",
             "subheading": "",
             "title": "Monitor Stands",
             "url": "",
@@ -135,6 +138,7 @@
           "type": "collection",
           "settings": {
             "collection": "seats-seat-add-ons",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_3.jpg",
             "subheading": "",
             "title": "Seats",
             "url": "",
@@ -149,6 +153,7 @@
           "type": "collection",
           "settings": {
             "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/Tekengebied_1_kopie_4.jpg",
             "subheading": "",
             "title": "Accessories",
             "url": "",
@@ -167,13 +172,16 @@
         "26b7b6b1-63b7-45cc-81be-11b2ed9b54f0",
         "58fc28f1-a533-4b9f-8d7b-20247843e73f"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "stack_collections": false,
         "collections_per_row": 5,
-        "show_progress_bar": true,
+        "show_progress_bar": false,
         "subheading": "",
-        "title": "Shop Simulation",
+        "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -184,11 +192,110 @@
         "heading_gradient": ""
       }
     },
+    "8267ced5-406c-4fc5-9985-0f4d89959265": {
+      "type": "impact-text",
+      "blocks": {
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "TR160 MK4",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 0.5
+          }
+        }
+      },
+      "block_order": [
+        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.6,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(180deg, rgba(252, 21, 21, 1) 14%, rgba(137, 4, 4, 1) 80.576%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "a7249964-ef67-4fd6-871d-4f88abab283c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Any motor, any pedals, any screen. No problem when you've found your forever rig.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The TR160 is the ultimate rig. Providing best-in-class stability with its thick aluminum profile walls and extreme customisation from the endless list of accessories, get ready for the rig that will take you everywhere.<\/p>"
+          }
+        },
+        "e645ce8b-c104-47b8-a066-ff07fb655592": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Read More",
+            "url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-heading-1",
+        "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-richtext-1",
+        "e645ce8b-c104-47b8-a066-ff07fb655592"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "05811962-822c-4e4a-97c2-34ef4a64d154": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        ".section-full {background-color: white;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Revised_HP.png",
+        "mobile_image": "shopify:\/\/shop_images\/HP_MB.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Tekengebied_2.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3.jpg",
@@ -196,7 +303,9 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
+            "make_subheading_bold": false,
             "title": "",
+            "make_heading_bold": true,
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "shopify:\/\/products\/tr160-mk4-racing-simulator",
@@ -218,11 +327,13 @@
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "subheading": "",
+            "make_subheading_bold": true,
             "title": "",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "Learn More",
             "button_link": "shopify:\/\/pages\/alpine-f1-partnership",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "button_background": "#0087b9",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -241,7 +352,9 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
+            "make_subheading_bold": false,
             "title": "",
+            "make_heading_bold": false,
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -260,6 +373,7 @@
         "slide-2",
         "608024a0-e217-41b1-9d40-12afc11e7af9"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -270,6 +384,70 @@
         "cycle_speed": 8,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "e1fa35ac-9e9c-43b6-971e-838e2c416852": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trak Racer Wireless Gaming Headset",
+            "heading_tag": "h2"
+          }
+        },
+        "d2617995-73f5-4f6f-9842-96c28512355c": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>12 HOURS WIRELESS PLAY TIME<\/p>"
+          }
+        },
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>7.1 SURROUND SOUND<\/p>"
+          }
+        },
+        "f97ef0e0-48b4-4c95-9ff1-70c93d4af969": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>ON-HEADSET CONTROLS<\/p>"
+          }
+        },
+        "a8c8646f-d295-47d6-9c20-26af281a535b": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "PRE-ORDER NOW",
+            "url": "shopify:\/\/products\/trak-racer-wireless-gaming-headset",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-heading-1",
+        "d2617995-73f5-4f6f-9842-96c28512355c",
+        "template--17083312111780__e1fa35ac-9e9c-43b6-971e-838e2c416852-richtext-1",
+        "f97ef0e0-48b4-4c95-9ff1-70c93d4af969",
+        "a8c8646f-d295-47d6-9c20-26af281a535b"
+      ],
+      "custom_css": [
+        "subheading {font-weight: normal;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Tekengebied_1_5f4a25fd-795d-4e6a-8c14-58af2726e847.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Tekengebied_3_347783a3-18a5-4db4-aec1-364471b5bd4f.jpg",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-center-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d": {
@@ -286,8 +464,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Find your perfect simulator",
-        "content": "",
+        "title": "Choose Your Simulator",
+        "content": "<p>Our steel, tubular profile rigs are perfect for everyone, from first-time racers to the pros! Our aluminium profile rigs offer a study base for endless customisation.<\/p>",
         "link_url": "shopify:\/\/collections\/racing-simulators",
         "link_text": "View all",
         "background": "#ffffff",
@@ -327,40 +505,19 @@
         "product_card_text_color": ""
       }
     },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "The first ever rig built with F1 Engineers.",
-            "subheading": "",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "disabled": true,
+    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8": {
+      "type": "image-with-text-overlay",
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.5,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(7, 86, 249, 0.2), rgba(0, 129, 255, 0.63) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/large-Tekengebied_2.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "16964984703716d114": {
@@ -379,6 +536,9 @@
       "block_order": [
         "ae27904b-5955-410b-822b-06c70cef1c38"
       ],
+      "custom_css": [
+        ".section-full {background-color: white;}"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -391,173 +551,6 @@
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
-      }
-    },
-    "media-grid": {
-      "type": "media-grid",
-      "blocks": {
-        "item-1": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-2": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "settings": {
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "29246d34-c6e0-4373-84f6-b15e57736a00"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
-    "e49ec022-390c-483c-85df-a8ab79ad73e7": {
-      "type": "logo-list",
-      "blocks": {
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-1": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-2": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-3": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-4": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-5": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-1",
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-2",
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-3",
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-4",
-        "template--17060380672164__e49ec022-390c-483c-85df-a8ab79ad73e7-logo-5"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "Logo list",
-        "content": "",
-        "text_alignment": "start",
-        "items_per_row": 5,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
       }
     },
     "974a2167-d7f4-481b-9bc4-e376df9b8abc": {
@@ -604,68 +597,6 @@
         "background": "",
         "text_color_inside": "#ffffff",
         "text_color_outside": "#000000"
-      }
-    },
-    "8267ced5-406c-4fc5-9985-0f4d89959265": {
-      "type": "impact-text",
-      "blocks": {
-        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1": {
-          "type": "item",
-          "settings": {
-            "title": "100nm",
-            "subheading": "support",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "7b41d68b-9989-439e-a137-5382c8c33a24": {
-          "type": "item",
-          "settings": {
-            "title": "0%",
-            "subheading": "pedal flexing",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "e95aa6a2-511f-49d9-bc24-1b8450e422fd": {
-          "type": "item",
-          "settings": {
-            "title": "160mm",
-            "subheading": "strong fun",
-            "content": "<p>extra content<\/p>",
-            "button_text": "button text",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1",
-        "7b41d68b-9989-439e-a137-5382c8c33a24",
-        "e95aa6a2-511f-49d9-bc24-1b8450e422fd"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "line",
-        "impact_text_size_ratio": 1,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(181deg, rgba(252, 21, 21, 1) 14%, rgba(84, 64, 64, 1) 80.576%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "73c90621-810e-4eb4-b437-3d7a582e0d14": {
@@ -718,16 +649,17 @@
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
     "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
+    "8267ced5-406c-4fc5-9985-0f4d89959265",
+    "a7249964-ef67-4fd6-871d-4f88abab283c",
+    "05811962-822c-4e4a-97c2-34ef4a64d154",
     "slideshow",
+    "e1fa35ac-9e9c-43b6-971e-838e2c416852",
     "dd1ebc77-77a9-4644-9d70-3bf342f8041d",
     "a0989716-fbfa-438c-9ca9-87df62670662",
-    "impact-text",
+    "a7c2bcbf-9c25-49cf-9bc3-2bbe6b8988c8",
     "16964984703716d114",
-    "media-grid",
-    "e49ec022-390c-483c-85df-a8ab79ad73e7",
     "974a2167-d7f4-481b-9bc4-e376df9b8abc",
     "328e6918-1bbd-4ea3-a819-d8159e76f8e7",
-    "8267ced5-406c-4fc5-9985-0f4d89959265",
     "73c90621-810e-4eb4-b437-3d7a582e0d14"
   ]
 }
