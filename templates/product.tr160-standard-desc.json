@@ -324,8 +324,8 @@
             "horizontal_position_mobile": 10,
             "vertical_position_mobile": 46,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_1_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_1_subtext | metafield_tag }}"
+            "title": "{{ product.metafields.custom_fields.product_hotspot_1_header.value }}",
+            "content": "{{ product.metafields.custom_fields.product_hotspot_1_subtext | metafield_tag }}"
           }
         },
         "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-2": {
@@ -336,8 +336,8 @@
             "horizontal_position_mobile": 43,
             "vertical_position_mobile": 19,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_2_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_2_subtext | metafield_tag }}"
+            "title": "{{ product.metafields.custom_fields.product_hotspot_2_header.value }}",
+            "content": "{{ product.metafields.custom_fields.product_hotspot_2_subtext | metafield_tag }}"
           }
         },
         "template--17087704826020__e8c984a5-6424-4e02-ae2f-f8d33d0c77d6-item-3": {
@@ -348,8 +348,8 @@
             "horizontal_position_mobile": 60,
             "vertical_position_mobile": 33,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_3_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_3_subtext | metafield_tag }}"
+            "title": "{{ product.metafields.custom_fields.product_hotspot_3_header.value }}",
+            "content": "{{ product.metafields.custom_fields.product_hotspot_3_subtext | metafield_tag }}"
           }
         },
         "ee35adab-059f-4e59-bfbc-a4ada75d6437": {
@@ -360,8 +360,8 @@
             "horizontal_position_mobile": 76,
             "vertical_position_mobile": 62,
             "icon_width": 32,
-            "title": "{{ product.metafields.custom.product_hotspot_4_header.value }}",
-            "content": "{{ product.metafields.custom.product_hotspot_4_subtext | metafield_tag }}"
+            "title": "{{ product.metafields.custom_fields.product_hotspot_4_header.value }}",
+            "content": "{{ product.metafields.custom_fields.product_hotspot_4_subtext | metafield_tag }}"
           }
         }
       },
@@ -376,10 +376,10 @@
       ],
       "settings": {
         "full_width": true,
-        "image": "{{ product.metafields.custom.product_hotspot_image_desktop.value }}",
-        "mobile_image": "{{ product.metafields.custom.product_hotspot_image_mobile.value }}",
-        "title": "{{ product.metafields.custom.product_hotspot_heading.value }}",
-        "content": "<p>{{ product.metafields.custom.product_hotspot_subheading.value }}<\/p>",
+        "image": "{{ product.metafields.custom_fields._product_hotspot_image_desktop.value }}",
+        "mobile_image": "{{ product.metafields.custom_fields._product_hotspot_image_mobile.value }}",
+        "title": "{{ product.metafields.custom_fields.product_hotspot_heading.value }}",
+        "content": "{{ product.metafields.custom_fields.product_hotspot_subheading | metafield_tag }}",
         "button_text": "Buy Now",
         "button_url": "shopify:\/\/products\/tr160-mk4-racing-simulator",
         "desktop_text_position": "place-self-start-end text-end",
@@ -547,16 +547,16 @@
         "aa962182-464b-4d76-a90e-6799236a62e5": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.featured_detail_1_image.value }}",
+            "image": "{{ product.metafields.custom_fields.featured_detail_1_image.value }}",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "{{ product.metafields.custom.featured_detail_1_heading.value }}",
-            "content": "{{ product.metafields.custom.featured_detail_1_description | metafield_tag }}<p><a href=\"https:\/\/trakracer.com\" title=\"https:\/\/trakracer.com\">sdfgsdfgsdfg<\/a><\/p>",
-            "link_text": "{{ product.metafields.custom.featured_detail_1_button.value }}",
+            "title": "{{ product.metafields.custom_fields.featured_detail_1_heading.value }}",
+            "content": "{{ product.metafields.custom_fields.featured_detail_1_description | metafield_tag }}",
+            "link_text": "{{ product.metafields.custom_fields.featured_detail_1_button.value }}",
             "link_url": "",
             "background": "#ffffff",
             "background_gradient": "",
@@ -569,16 +569,16 @@
         "55c32ab5-191e-4c12-9576-04092a5abd1e": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.featured_detail_2_image.value }}",
+            "image": "{{ product.metafields.custom_fields.featured_detail_2_image.value }}",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "{{ product.metafields.custom.featured_detail_2_heading.value }}",
-            "content": "{{ product.metafields.custom.featured_detail_2_description | metafield_tag }}",
-            "link_text": "{{ product.metafields.custom.featured_detail_2_button.value }}",
+            "title": "{{ product.metafields.custom_fields.featured_detail_2_heading.value }}",
+            "content": "{{ product.metafields.custom_fields.featured_detail_2_description | metafield_tag }}",
+            "link_text": "{{ product.metafields.custom_fields.featured_detail_2_button.value }}",
             "link_url": "",
             "background": "#ffffff",
             "background_gradient": "",
@@ -591,16 +591,16 @@
         "3045d804-b0d1-4790-9b8a-3131e3b2b07f": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.featured_detail_3_image.value }}",
+            "image": "{{ product.metafields.custom_fields.featured_detail_3_image.value }}",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "{{ product.metafields.custom.featured_detail_3_heading.value }}",
-            "content": "{{ product.metafields.custom.featured_detail_3_description | metafield_tag }}",
-            "link_text": "{{ product.metafields.custom.featured_detail_3_button.value }}",
+            "title": "{{ product.metafields.custom_fields.featured_detail_3_heading.value }}",
+            "content": "{{ product.metafields.custom_fields.featured_detail_3_description | metafield_tag }}",
+            "link_text": "{{ product.metafields.custom_fields.featured_detail_3_button.value }}",
             "link_url": "",
             "background": "#ffffff",
             "background_gradient": "",
@@ -806,14 +806,13 @@
     },
     "ed2a04fa-645a-4699-8143-d5f7305c1388": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_thinn_51131b6c-e635-4eb5-a32b-dca90012dcd4.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/trakracer_x_bwt_alpine_f1_team_banner_wide_400px.jpg",
+        "image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/proud_partner_TR_Alpine_mobile.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -881,6 +880,7 @@
         "template--17090428174500__57b66606-5026-4e46-ae1c-c311aab94ded-richtext-1",
         "fd2c6817-6caf-45e1-97c5-6f784742ee52"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-banner {background-color: white;}"
       ],
