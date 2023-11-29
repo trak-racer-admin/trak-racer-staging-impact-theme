@@ -38,6 +38,7 @@
         "allow_transparent_header": false,
         "autoplay": true,
         "video_size": "md",
+        "video": "shopify:\/\/files\/videos\/Web Banner (Q2, 2023).mp4",
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
