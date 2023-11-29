@@ -16,6 +16,7 @@
       "block_order": [
         "message"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
