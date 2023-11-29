@@ -5849,6 +5849,7 @@ split-lines {
   width: var(--header-logo-width);
   height: var(--header-logo-height);
   opacity: var(--header-logo-opacity, 1);
+  object-fit: contain;
 }
 
 .header__logo-image--transparent {
