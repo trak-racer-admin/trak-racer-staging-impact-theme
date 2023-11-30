@@ -6,8 +6,8 @@
       --rich-text-max-width: {% if section.settings.content_width == 'small' %}650px{% elsif section.settings.content_width == 'medium' %}780px{% else %}100%{% endif %}
     }
   </style>
-
-  <div {% render 'section-properties' %}>
+  {% assign section_custom_class = section.settings.section_class %}
+  <div {% render 'section-properties' class: section_custom_class %}>
     {%- assign text_position = section.settings.text_position -%}
     {%- assign blocks_before_divider = '' -%}
     {%- assign blocks_after_divider = '' -%}
@@ -205,6 +205,11 @@
       "type": "color",
       "id": "text_color",
       "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
     }
   ],
   "blocks": [

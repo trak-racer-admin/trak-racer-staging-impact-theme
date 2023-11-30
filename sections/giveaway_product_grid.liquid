@@ -1,0 +1,103 @@
+{% assign section_custom_class = section.settings.section_class %}
+<div {% render 'section-properties', class: section_custom_class %}>
+  <div class="slick-carousel">
+    {%- for block in section.blocks -%}
+      <div>
+        <div class="slide_content">
+          <h3 class="product_title">{{ block.settings.product_title }} </h3>
+          {%- assign product_image = block.settings.product_image -%}
+          {{ product_image | image_url: width: product_image.width | image_tag: class: 'product_image', loading: 'lazy' }}
+          <div class="logo_price">
+            {%- assign product_brand_logo = block.settings.product_brand_logo -%}
+            {{ product_brand_logo | image_url: width: product_brand_logo.width | image_tag: class: 'product_brand_logo', loading: 'lazy' }}
+            <h4 class="product_price">{{ block.settings.product_price }}</h4>
+          </div>
+          <div class="product_link_block">
+            <a href="{{ block.settings.product_link }}" class="product_link">View Product</a>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Giveaway Product Grid",
+  "class": "giveaway_product_grid",
+  "tag": "section",
+  "settings": [
+   {
+    "type": "checkbox",
+    "id": "full_width",
+    "label": "Full width",
+    "default": true
+  },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Products",
+      "type": "products",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product Title",
+          "default": "Product Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_brand_logo",
+          "label": "Product Brand Logo"
+        },
+        {
+          "type": "text",
+          "id": "product_price",
+          "label": "Product Price",
+          "default": "US$100"
+        },
+        {
+          "type": "url",
+          "id": "product_link",
+          "label": "Product link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giveaway Product Grid",
+      "blocks": [
+        {
+          "type": "products"
+        },
+        {
+          "type": "products"
+        },
+        {
+          "type": "products"
+        },
+        {
+          "type": "products"
+        }
+      ]
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
