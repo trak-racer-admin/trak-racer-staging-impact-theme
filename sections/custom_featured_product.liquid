@@ -1,0 +1,154 @@
+{% assign section_custom_class = section.settings.section_class | append: ' ' | append: section.id %}
+<div {% render 'section-properties', tight: true, class: section_custom_class %}>
+  <div class="product_data">
+    <div class="product_gallery">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.product_image -%}
+          {% assign image_url = block.settings.product_image | img_url: 'original' %}
+          <img
+            class="product_img_item img_{{ forloop.index }}"
+            src="{{ image_url }}"
+            alt="{{ block.settings.product_image.alt | escape }}"
+          >
+        {%- else -%}
+          <img
+            class="product_img_item img_{{ forloop.index }}"
+            src="https://via.placeholder.com/600x600/e9e9e9"
+            alt="Dummy Image"
+          >
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="product_info">
+      <h2 class="product_info__subtitle">{{ section.settings.product_subtitle }}</h2>
+      <h2 class="product_info__title">{{ section.settings.product_title }}</h2>
+      <div class="product_info__price">{{ section.settings.product_price }}</div>
+      <div class="product_info__description">{{ section.settings.product_description }}</div>
+      <div class="product_info__buttons">
+        <a href="{{ section.settings.button_link }}" class="product_btn border_gradient">
+          {{- section.settings.button_text -}}
+        </a>
+        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">
+          {%- render 'icon' with 'play-button', width: 48, height: 48 -%}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Featured product",
+  "class": "custom_featured_product",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product Content"
+    },
+    {
+      "type": "text",
+      "id": "product_subtitle",
+      "label": "Product Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "product_title",
+      "label": "Product Title"
+    },
+    {
+      "type": "text",
+      "id": "product_price",
+      "label": "Product Price"
+    },
+    {
+      "type": "text",
+      "id": "product_description",
+      "label": "Product Description"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Button"
+    },
+    {
+      "type": "video_url",
+      "id": "video_link",
+      "label": "Video URL",
+      "accept": ["youtube"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "info": "Accept YouTube link only"
+    },
+    {
+      "type": "range",
+      "id": "desktop_media_width",
+      "label": "Desktop media size",
+      "min": 35,
+      "max": 65,
+      "step": 5,
+      "unit": "%",
+      "default": 55
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Featured product"
+    }
+  ]
+}
+{% endschema %}
