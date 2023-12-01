@@ -9751,7 +9751,7 @@ split-lines {
 .heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1, h2, h3, h4, h5, h6) {
   font-family: var(--heading-font-family);
   /* font-weight: var(--heading-font-weight); */
-  font-weight: 200;
+  font-weight: bold;
   font-style: var(--heading-font-style);
   letter-spacing: var(--heading-letter-spacing);
   text-transform: var(--heading-text-transform);
