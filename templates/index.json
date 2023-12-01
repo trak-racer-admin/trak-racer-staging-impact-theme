@@ -1,5 +1,48 @@
 {
   "sections": {
+    "c223a27c-9517-4ac7-9e6d-d7974a644653": {
+      "type": "slideshow",
+      "blocks": {
+        "template--17083312111780__c223a27c-9517-4ac7-9e6d-d7974a644653-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/au.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy.png",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "make_subheading_bold": false,
+            "title": "",
+            "make_heading_bold": false,
+            "heading_tag": "h0",
+            "button_text": "ENTER NOW",
+            "button_link": "shopify:\/\/pages\/tr-ultimategiveaway",
+            "text_color": "#ffffff",
+            "button_background": "#ce151b",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17083312111780__c223a27c-9517-4ac7-9e6d-d7974a644653-image-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
       "type": "video",
       "blocks": {
@@ -33,53 +76,13 @@
         "464494f2-46aa-4849-bebf-b7fd7f7f812b",
         "c784b7d1-82a1-425f-8f50-bf34eb325042"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": true,
         "video_size": "md",
         "external_video_url": "",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 15
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2": {
-          "type": "heading",
-          "settings": {
-            "text": "The Trak Racer x BWT Alpine F1 Story",
-            "heading_tag": "h4"
-          }
-        },
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Our Story",
-            "url": "shopify:\/\/pages\/alpine-f1-partnership",
-            "background": "#0087b9",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "9ec7677a-e285-4a6a-a37e-3013ac0f2ba2",
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/Desktop_2800x1000_kopieren.png",
-        "mobile_image": "shopify:\/\/shop_images\/Mobile_1200x1600_1.jpg",
-        "mobile_text_position": "place-self-end-center text-center",
-        "desktop_text_position": "sm:place-self-end sm:text-end",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 15
@@ -267,7 +270,8 @@
         "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "05811962-822c-4e4a-97c2-34ef4a64d154": {
@@ -645,8 +649,8 @@
     }
   },
   "order": [
+    "c223a27c-9517-4ac7-9e6d-d7974a644653",
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
-    "image-with-text-overlay",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "8267ced5-406c-4fc5-9985-0f4d89959265",
     "a7249964-ef67-4fd6-871d-4f88abab283c",
