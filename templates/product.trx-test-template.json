@@ -120,8 +120,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
@@ -191,7 +191,8 @@
         "text_position": "center",
         "background": "#efefef",
         "background_gradient": "linear-gradient(180deg, rgba(1, 103, 186, 1) 2%, rgba(66, 149, 230, 1) 70%)",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
@@ -206,7 +207,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -228,7 +231,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -250,7 +255,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -272,7 +279,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -439,7 +448,8 @@
         "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
