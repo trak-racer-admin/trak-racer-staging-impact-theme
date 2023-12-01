@@ -25,6 +25,7 @@
     "product_on_sale_accent": "#000000",
     "product_primary_badge_background": "#803cee",
     "custom_font_for_heading_tag": true,
+    "custom_heading_letter_spacing": 2,
     "heading_font": "helvetica_n3",
     "heading_font_size": "large",
     "heading_text_transform": "uppercase",

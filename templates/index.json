@@ -219,7 +219,7 @@
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
-        "impact_text_size_ratio": 0.6,
+        "impact_text_size_ratio": 1,
         "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "",
@@ -236,7 +236,7 @@
           "type": "heading",
           "settings": {
             "text": "Any motor, any pedals, any screen. No problem when you've found your forever rig.",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
           }
