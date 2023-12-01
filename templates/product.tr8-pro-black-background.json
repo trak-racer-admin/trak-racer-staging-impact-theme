@@ -136,8 +136,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
@@ -210,7 +210,8 @@
         "text_position": "center",
         "background": "#919191",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
@@ -475,7 +476,8 @@
         "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {
