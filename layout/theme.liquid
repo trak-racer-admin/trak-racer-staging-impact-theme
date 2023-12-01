@@ -71,7 +71,8 @@ t.parentNode.insertBefore(y,t);
     {%- unless settings.text_font.system? -%}
       <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
     {%- endunless -%}
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&display=swap" rel="stylesheet">
+    {% comment %} <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;900&display=swap" rel="stylesheet"> {% endcomment %}
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Saira:wght@100;400;600;700;900&family=Syne&display=swap" rel="stylesheet">
 
     {%- render 'social-meta-tags' -%}
     {%- render 'microdata-schema' -%}
@@ -105,7 +106,7 @@ t.parentNode.insertBefore(y,t);
   <style>
     {% if settings.custom_font_for_heading_tag %}
       .heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1, h2, h3, h4, h5, h6) {
-        font-family: 'Saira', sans-serif !important;
+        font-family: 'Saira Condensed', sans-serif !important;
         letter-spacing: {{ settings.custom_heading_letter_spacing }}px !important;
       }
     {% endif %}
