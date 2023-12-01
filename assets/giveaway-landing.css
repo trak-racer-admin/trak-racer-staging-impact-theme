@@ -108,7 +108,7 @@
   padding-bottom: 100px;
 }
 
-.duration {
+/* .duration {
   border: 1px solid #383838;
   background: #121212;
   padding: 35px 49px 15px;
@@ -124,7 +124,7 @@
 
 .duration p {
   font-size: 24px;
-}
+} */
 
 .last-year-winner {
   display: flex;
@@ -437,7 +437,7 @@
     padding: 60px 0;
   }
 
-  .giveaway-time {
+  /* .giveaway-time {
     width: 100%;
   }
 
@@ -448,7 +448,7 @@
 
   .duration h4 {
     font-size: 60px;
-  }
+  } */
 
   .winner-img,
   .winner-text {
@@ -542,7 +542,7 @@
     padding: 30px 0;
   }
 
-  .giveaway-time {
+  /* .giveaway-time {
     width: 100%;
   }
 
@@ -554,7 +554,7 @@
 
   .duration h4 {
     font-size: 30px;
-  }
+  } */
 
   .winner-img,
   .winner-text {
@@ -641,5 +641,66 @@
     right: 145px;
     opacity: 1;
     top: 440px;
+  }
+}
+
+/* Timer Css */
+.giveaway-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 770px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.duration {
+  border: 1px solid #383838;
+  padding: 0 0 15px;
+  text-align: center;
+  width: 170px;
+  box-sizing: border-box;
+}
+
+.duration h4 {
+  font-size: 96px;
+  margin-bottom: 0;
+}
+
+.duration p {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .duration {
+    padding: 15px 35px;
+    width: 150px;
+  }
+
+  .duration h4 {
+    font-size: 60px;
+  }
+
+  .giveaway-time {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .giveaway-time {
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .duration {
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    width: 35%;
+  }
+
+  .duration h4 {
+    font-size: 30px;
   }
 }
