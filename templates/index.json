@@ -1,35 +1,46 @@
 {
   "sections": {
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "c223a27c-9517-4ac7-9e6d-d7974a644653": {
+      "type": "slideshow",
       "blocks": {
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad": {
-          "type": "button",
+        "template--17083312111780__c223a27c-9517-4ac7-9e6d-d7974a644653-image-1": {
+          "type": "image",
           "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "ENTER NOW",
-            "url": "shopify:\/\/pages\/tr-ultimategiveaway",
-            "background": "#ce151b",
-            "text_color": ""
+            "image": "shopify:\/\/shop_images\/au.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy.png",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "make_subheading_bold": false,
+            "title": "",
+            "make_heading_bold": false,
+            "heading_tag": "h0",
+            "button_text": "ENTER NOW",
+            "button_link": "shopify:\/\/pages\/tr-ultimategiveaway",
+            "text_color": "#ffffff",
+            "button_background": "#ce151b",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "be48d046-28e0-4c7a-8dff-8d6a52c265ad"
+        "template--17083312111780__c223a27c-9517-4ac7-9e6d-d7974a644653-image-1"
       ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/au.png",
-        "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy.png",
-        "mobile_text_position": "place-self-end-center text-center",
-        "desktop_text_position": "sm:place-self-end-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 15
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
       }
     },
     "3c02c793-b794-482d-a8e9-d915c4e9ca59": {
@@ -638,7 +649,7 @@
     }
   },
   "order": [
-    "image-with-text-overlay",
+    "c223a27c-9517-4ac7-9e6d-d7974a644653",
     "3c02c793-b794-482d-a8e9-d915c4e9ca59",
     "56bae42b-8352-4291-b2a0-90cf30962707",
     "8267ced5-406c-4fc5-9985-0f4d89959265",
