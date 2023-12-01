@@ -8,15 +8,14 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Trak Racer are proud partners of the Alpine F1 team and Airbus Aircraft!",
-            "url": ""
+            "text": "WIN THE ULTIMATE RACING SIMULATOR GIVEAWAY WORTH OVER AU$36,000! SIGN UP NOW!",
+            "url": "shopify:\/\/pages\/tr-ultimategiveaway"
           }
         }
       },
       "block_order": [
         "message"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -26,7 +25,7 @@
         "navigation_mode": "scrolling",
         "scrolling_speed": 30,
         "background": "#a5272c",
-        "background_gradient": "",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 0, 8, 1), rgba(183, 9, 15, 1) 100%)",
         "text_color": "#ffffff"
       }
     },
