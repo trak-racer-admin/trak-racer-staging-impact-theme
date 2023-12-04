@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/au.png",
-            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy.png",
+            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy_1.png",
             "content_max_width": 1200,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
