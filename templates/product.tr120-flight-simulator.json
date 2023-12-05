@@ -136,8 +136,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
@@ -217,7 +217,8 @@
         "text_position": "center",
         "background": "#efefef",
         "background_gradient": "linear-gradient(180deg, rgba(1, 103, 186, 1) 2%, rgba(66, 149, 230, 1) 70%)",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "7617e7f5-08a4-4353-8604-b762708565f8": {
@@ -381,7 +382,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -403,7 +406,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -425,7 +430,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -447,7 +454,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "make_subheading_bold": false,
             "title": "",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -490,6 +499,7 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "",
             "link_url": "",
             "link_text": "",
@@ -502,6 +512,7 @@
             "column_size": "2",
             "title": "Trak Racer TR120 Flight Simulator Overview",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Heavier duty brackets - especially important for wheel uprights to increase rigidity<\/li><li>Thicker-walled aluminium profile compared to the competition<\/li><li>Experience gained in sim racing since 2008<\/li><li>The leading sim cockpit innovators in the industry<\/li><li>Better value for money – we include more!<\/li><li>Accessible product from over 11 country warehouses<\/li><li>Constant development of accessories<\/li><li>Rigid 120mm x 40mm thicker-walled Aluminium Extrusion Profile - Anodized Black<\/li><li>Side-Mounted Wheel Uprights with 120 x 40mm Heavy Duty Brackets<\/li><li>Shifter Mount and Over-sized Support Profile (for Sim Racing)<\/li><li>Over 30 optional accessories<\/li><li>Includes Seat Slider, Colored Dust Strips and Heavier Duty Brackets and Fixings<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -523,7 +534,8 @@
         "content": "",
         "background": "#bde5f7",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "13942dab-2bfb-42c2-9106-887f02716a44": {
@@ -535,6 +547,7 @@
             "column_size": "4",
             "title": "Frame\/Chassis Features",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Constructed from high quality extruded aluminium<\/li><li>580mm wide and 1,445mm long<\/li><li>Low ground clearance with hardwood rubber floor protectors<\/li><li>Finished in black anodized high-quality aluminium<\/li><li>Adjustable Pedal Mount<\/li><li>Unique Bracket Design allows you to position the pedal low or in a high position and also slide for fine-tuning<\/li><li>Thick, no-flex Carbon Steel Construction<\/li><li>Pre-drilled mounting points for all major brand rudders and pedals<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -547,6 +560,7 @@
             "column_size": "4",
             "title": "Adjustable Rudder\/Pedal Mount Features",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>The unique Bracket Design allows you to position the rudder or pedal low or in a high position and slide for fine-tuning<\/li><li>Thick, no-flex Carbon Steel Construction,<\/li><li>Pre-drilled mounting points for all major brand rudders\/pedals<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -559,6 +573,7 @@
             "column_size": "4",
             "title": "Specifications",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Includes all aluminium profiles and mounting gear<\/li><li>The main Chassis is an 8-Slot 120 x 40mm profile<\/li><li>Steering wheel uprights are 8-Slot 120 x 40mm profiles<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -571,6 +586,7 @@
             "column_size": "4",
             "title": "What's Included",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Flight Sim Control Mounts (left and right) and Supports<\/li><li>Yoke\/Wheel Mount<\/li><li>Rudder\/Pedal Mount<\/li><li>Universal Gen 2 Shifter Mount and Over-sized Shifter Support (for Sim Racing if desired)<\/li><li>BONUS Rubber Feet to protect floors<\/li><li>Set of 10 Cable Ties<\/li><li>Red Coloured Strips<\/li><li>All Mounting Screws, Brackets and Fixtures included<\/li><li>Assembly Tool Kit Included<\/li><li>Premium Seat Slider Rails<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -594,7 +610,8 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "ebb82c11-a248-4b66-b944-cf4d8dfb3ef7": {
@@ -833,6 +850,7 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "",
             "link_url": "",
             "link_text": "",
@@ -845,6 +863,7 @@
             "column_size": "2",
             "title": "Take to the skies with an official AIRBUS partner!",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>",
             "link_url": "",
             "link_text": "",
@@ -866,7 +885,8 @@
         "content": "",
         "background": "#bde5f7",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "related-products": {

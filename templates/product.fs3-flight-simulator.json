@@ -119,8 +119,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
@@ -197,7 +197,8 @@
         "text_position": "center",
         "background": "#efefef",
         "background_gradient": "linear-gradient(180deg, rgba(1, 103, 186, 1) 2%, rgba(66, 149, 230, 1) 70%)",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "7617e7f5-08a4-4353-8604-b762708565f8": {
@@ -359,6 +360,7 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "",
             "link_url": "",
             "link_text": "",
@@ -371,6 +373,7 @@
             "column_size": "2",
             "title": "Trak Racer FS3 Flight Stand Overview",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Compatible with PC and Console<\/li><li>Compatible with all popular Flight Yoke, Rudders and Flight Controls as well as steering wheels, pedals and shifters on the market<\/li><li>Improved Left and Right Side Flight Control Mounts and a Gear Shift is included with pre-drilled mounting points and slide function for Sim Racing<\/li><li>Reinforced Angle and Distance Adjustable Pedal Mount, suitable for all the big brands!<\/li><li>Upgraded 3-Point adjustable steering wheel mount with slide<\/li><li>Superior build quality, stability and comfort<\/li><li>Designed and Engineered in Australia<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -392,7 +395,8 @@
         "content": "",
         "background": "#bde5f7",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "13942dab-2bfb-42c2-9106-887f02716a44": {
@@ -404,6 +408,7 @@
             "column_size": "4",
             "title": "Frame\/Chassis Features",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Adjustable Height<\/li><li>Rigid Frame Constructed from Premium Materials<\/li><li>Folds up to a Compact Size for Storage<\/li><li>Wide Leg Stance - Suitable for Office Chairs!<\/li><li>650mm wide for firm stance when racing<\/li><li>Hard-Wood Floor Safe Feet<\/li><li>Finished in high-grade steel tubing<\/li><li>Folds away in a matter of Seconds<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -416,6 +421,7 @@
             "column_size": "4",
             "title": "Adjustable Pedal Mount Features",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Pre-drilled mounting points for all major brand rudders and sim racing pedals<\/li><li>Angle Adjustable with Realistic Inclined Angle<\/li><li>Distance Slider for perfect ergonomics<\/li><li>Compatible with PC, PS3, PS4, PS5, XBOX 360, XBOX One, Wii and more<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -428,6 +434,7 @@
             "column_size": "4",
             "title": "Adjustable Wheel Mount Features",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>Solid construction<\/li><li>Pre-drilled mounting points for all major brand yokes and sim racing wheel bases<\/li><li><strong>3-Point Adjustment allows you to adjust the height and angle of the mount<\/strong><\/li><li>Distance Slider for perfect ergonomics<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -440,6 +447,7 @@
             "column_size": "4",
             "title": "What's Included",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<ul><li>High Quality Chassis with Assembly Instructions<\/li><li>Left and Right Side Flight Sim mounts<\/li><li>Left\/Right Adjustable Gear Shifter Mount<\/li><li>Angle and Height Adjustable Wheel Mount<\/li><li>Angle Adjustable Pedal Mount<\/li><li>Tools and Screws for Assembly<\/li><\/ul>",
             "link_url": "",
             "link_text": "",
@@ -463,7 +471,8 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "cec87c33-f6bb-4256-a0cd-37a59df85d6b": {
@@ -525,6 +534,7 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "",
             "link_url": "",
             "link_text": "",
@@ -537,6 +547,7 @@
             "column_size": "2",
             "title": "Take to the skies with an official AIRBUS partner!",
             "heading_tag": "h4",
+            "subtitle": "Sub title",
             "content": "<p>Trak Racer, a pioneer in building sim racing and flight cockpits since 2008, became the Official and Trusted Simulator Supplier to Alpine F1 and Airbus Aircraft in 2020. Trak Racer simulators are used by Alpine F1 Team and Alpine Academy drivers like Esteban Ocon, Victor Martins (Formula 3) and Caio Collet (Formula 3) and first choice flight simulator for Airbus! <strong>Trak Racer is the Official Simulator Supplier to Alpine F1 Team and Airbus Aircraft.<\/strong><\/p>",
             "link_url": "",
             "link_text": "",
@@ -558,7 +569,8 @@
         "content": "",
         "background": "#bde5f7",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "related-products": {

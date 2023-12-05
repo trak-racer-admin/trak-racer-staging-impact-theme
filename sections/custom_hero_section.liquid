@@ -1,0 +1,215 @@
+{% assign section_custom_class = section.settings.section_class | append: ' ' | append: section.id %}
+<div {% render 'section-properties', tight: true, class: section_custom_class %}>
+  <div class="product_data">
+    <div class="product_info">
+      <h2 class="product_info__subtitle">{{ section.settings.product_title_1 }}</h2>
+      <h2 class="product_info__title">{{ section.settings.product_title_2 }}</h2>
+      <div class="product_info__price">{{ section.settings.product_price }}</div>
+      <div class="product_info__description">{{ section.settings.product_description }}</div>
+      <div class="product_info__buttons">
+        <div class="button_gradient">
+          <a href="{{ section.settings.button_link }}" class="gradient_btn product_btn">{{- section.settings.button_text -}}</a>
+        </div>
+        <a class="video-play-button magnific_YT_video" href="{{ section.settings.video_link }}" style="--text-color: 205 53 61;">{%- render 'icon' with 'new-play-button', width: 48, height: 48 -%}</a>
+      </div>
+      <div class="countdown_block">
+        <h4 class="countdown_title">{{ section.settings.countdown_title }}</h4>
+        <div id="countdown" class="giveaway_time">
+          <div class="button_gradient"><div class="duration"><h4 id="days"></h4><h6>Days</h6></div></div>
+          <div class="button_gradient"><div class="duration"><h4 id="hours"></h4><h6>Hours</h6></div></div>
+          <div class="button_gradient"><div class="duration"><h4 id="minutes"></h4><h6>Minutes</h6></div></div>
+          <div class="button_gradient"><div class="duration"><h4 id="seconds"></h4><h6>Seconds</h6></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="product_image_block">
+      <div class="main_image_block">
+        <div class="product_optherdata">
+          <div class="tag">In Stock</div>
+          <div class="bottom_option">
+            <div class="color_variant">
+              <div class="variant_item" style="background: #131315;"></div>
+              <div class="variant_item" style="background: #CD353D;"></div>
+              <div class="variant_item" style="background: #025AB6;"></div>
+            </div>
+            <a href="{{ section.settings.image_button_link }}" class="image_btn">{{- section.settings.image_button_text -}}</a>
+          </div>
+        </div>
+        <div class="product_img_block">
+          {%- if section.settings.product_main_image -%}
+            {% assign image_url = section.settings.product_main_image | img_url: 'original' %}
+            <img class="product_img" src="{{ image_url }}" alt="{{ section.settings.product_main_image.alt | escape }}">
+          {%- else -%}
+            <img class="product_img" src="https://via.placeholder.com/600x600/e9e9e9" alt="Dummy Image">
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="thumbnail_image_block">
+          <div class="thumbnail_items">
+            {%- for block in section.blocks -%}
+              <div class="thumbnail_item">
+                {%- if block.settings.product_thumbnail -%}
+                  {% assign image_url = block.settings.product_thumbnail | img_url: 'original' %}
+                  <img class="thumbnail_img img_{{ forloop.index }}" src="{{ image_url }}" alt="{{ block.settings.product_thumbnail.alt | escape }}">
+                {%- else -%}
+                  <img class="thumbnail_img img_{{ forloop.index }}" src="https://via.placeholder.com/150x150/e9e9e9" alt="Dummy Image">
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        <div class="button_gradient">
+          <a href="{{ section.settings.thumbnail_button_link }}" class="gradient_btn thumbnail_btn">{{- section.settings.thumbnail_button_text -}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Hero Section",
+  "class": "custom_hero_section",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_main_image",
+      "label": "Product Main Image"
+    },
+    {
+      "type": "text",
+      "id": "product_title_1",
+      "label": "Product Title 1",
+      "default": "Test Product"
+    },
+    {
+      "type": "text",
+      "id": "product_title_2",
+      "label": "Product Title 2",
+      "default": "Dummy Product"
+    },
+    {
+      "type": "text",
+      "id": "product_price",
+      "label": "Product Price",
+      "default": "$100"
+    },
+    {
+      "type": "textarea",
+      "id": "product_description",
+      "label": "Product Description",
+      "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "image_button_link",
+      "label": "Image Button Link"
+    },
+    {
+      "type": "text",
+      "id": "image_button_text",
+      "label": "Image Button Text",
+      "default": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "thumbnail_button_link",
+      "label": "Thumbnail Button Link"
+    },
+    {
+      "type": "text",
+      "id": "thumbnail_button_text",
+      "label": "Thumbnail Button Text",
+      "default": "Button 3"
+    },
+    {
+      "type": "video_url",
+      "id": "video_link",
+      "label": "Video URL",
+      "accept": ["youtube"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "info": "Accept YouTube link only"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_countdown",
+      "label": "Show Countdown",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "countdown_title",
+      "label": "Countdown Title",
+      "default": "Countdown"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Custom Class For Section"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_thumbnail",
+          "label": "Product Thumbnail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero Section"
+    }
+  ]
+}
+{% endschema %}

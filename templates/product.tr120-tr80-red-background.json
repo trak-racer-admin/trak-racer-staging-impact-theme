@@ -51,8 +51,8 @@
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": true,
-            "stack_blocks": true,
-            "selector_mode": "block",
+            "stack_blocks": false,
+            "selector_mode": "dropdown",
             "color_mode": "color",
             "size_chart_page": ""
           }
@@ -130,8 +130,8 @@
             "icon_position": "aligned",
             "icon": "picto-credit-card",
             "icon_width": 24,
-            "title": "Flexible Payment Options",
-            "content": "<p>We offer up to 36 months interest-free. Learn more about our payment options here.<\/p>",
+            "title": "Race now, pay later",
+            "content": "<p>We offer Afterpay, Zip Pay and PayPal Pay in 4 so you can pay your way and get on the Trak faster than ever!<\/p>",
             "background": "#ffffff",
             "text_color": "#545454"
           }
@@ -177,8 +177,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "linear-gradient(180deg, rgba(212, 19, 19, 1), rgba(239, 63, 63, 1) 33%, rgba(33, 33, 33, 1) 67%)",
         "text_color": "#ffffff",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "input_background": "#ffffff",
+        "input_text_color": "#000000"
       }
     },
     "373735c4-09bd-4ac5-838d-450fa5dd77ce": {
@@ -203,7 +203,8 @@
         "text_position": "center",
         "background": "#efefef",
         "background_gradient": "linear-gradient(180deg, rgba(186, 1, 1, 1) 2%, rgba(230, 66, 66, 1) 70%)",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "section_class": ""
       }
     },
     "4c633010-91ac-4cc3-a8a9-ad6ff192ed45": {
@@ -218,7 +219,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_1.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_1.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -240,7 +243,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_2.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_2.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -262,7 +267,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-end sm:text-end",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_3.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_3.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -284,7 +291,9 @@
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "{{ product.metafields.custom_fields.product_slide_text_4.value }}",
+            "make_subheading_bold": false,
             "title": "{{ product.metafields.custom_fields.product_slide_title_4.value }}",
+            "make_heading_bold": false,
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
@@ -467,7 +476,8 @@
         "text_position": "start",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "8f7df348-f2a5-4f5a-add8-7c712f2c50ac": {
@@ -502,7 +512,8 @@
         "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "section_class": ""
       }
     },
     "974a92ca-5417-47d7-bae4-547d0c063284": {

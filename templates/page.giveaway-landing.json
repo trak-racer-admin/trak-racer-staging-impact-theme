@@ -1,0 +1,725 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "d3590901-cb13-4b5f-b5cb-14e3db60410b": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/giveaway_AU.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile_au.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "1b526b28-baf7-462b-958f-968b96d7360b": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/web_banner_entries.png",
+        "mobile_image": "shopify:\/\/shop_images\/edm_entries.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "89a48d11-adde-4f0d-a7e8-33c5f1c073c3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "SIGN UP TO ENTER THE GIVEAWAY",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>By submitting your email, you accept <a href=\"https:\/\/trakracer.com\/pages\/giveaway-landing#\">Trak Racer’s Privacy Policy<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-heading-1",
+        "template--17179735490724__89a48d11-adde-4f0d-a7e8-33c5f1c073c3-richtext-1"
+      ],
+      "custom_css": [
+        "p {color: white;}",
+        "div {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "",
+        "section_class": ""
+      }
+    },
+    "169822355365a42863": {
+      "type": "apps",
+      "blocks": {
+        "d0ffbef3-8242-4eec-934d-493c1714ee2c": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "RZ3qBk"
+          }
+        }
+      },
+      "block_order": [
+        "d0ffbef3-8242-4eec-934d-493c1714ee2c"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "3fefa21b-9563-40cf-b680-7b259a53324a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "THE GIVEAWAY ENDS IN:",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__3fefa21b-9563-40cf-b680-7b259a53324a-heading-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "6469952e-51f6-464d-99d5-142fdf72110a": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<center><div id=\"countdown\" class=\"giveaway-time\">\n                <div class=\"duration\">\n                    <h4 id=\"days\"><\/h4>\n                    <h6>Days<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"hours\"><\/h4>\n                    <h6>Hours<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"minutes\"><\/h4>\n                    <h6>Minutes<\/h6>\n                <\/div>\n                <div class=\"duration\">\n                    <h4 id=\"seconds\"><\/h4>\n                      <h6>Seconds<\/h6>\n                                <\/div>\n            <\/div><\/center>",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "4adfecf2-f85e-4ddd-9af5-e7f6208127aa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Last Year's Winner",
+            "heading_tag": "h2",
+            "text_color": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Rhys, from Sydney, Australia, was the lucky winner to our 2022 Sim Racing Package Giveaway valued at US$9,000. He won a Simucube Ultimate, Rexing GT Wheel, Rexing Formula Wheel, Meca Cup Pedals, Meca EVO Handbrake and Meca Evo Shifter.<\/p>"
+          }
+        },
+        "87314646-e227-408e-b8d7-a54730c5a178": {
+          "type": "subheading",
+          "settings": {
+            "text": "THIS YEAR WE DECIDED TO GO BIGGER WITH…"
+          }
+        },
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "82d1ac28-819b-4837-8152-7811a3a3bc20": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/last-year.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-heading-1",
+        "template--17179735490724__4adfecf2-f85e-4ddd-9af5-e7f6208127aa-richtext-1",
+        "87314646-e227-408e-b8d7-a54730c5a178",
+        "fe538d40-3d0b-4082-acec-a496d4b26fcd",
+        "82d1ac28-819b-4837-8152-7811a3a3bc20"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "591138f3-e4fc-4e77-aba7-9f761bbf1309": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".text-on-sale {color: white;}"
+      ],
+      "settings": {
+        "collection": "",
+        "products": [
+          "alpine-racing-trx-2023-livery",
+          "motion-system-with-4-motors-actuators-and-motion-sim-base",
+          "rexing-gt-wheel",
+          "rexing-formula-wheel-mayaris",
+          "sim-handbrake",
+          "vnm-shifter-h-pattern-manual-or-sequential-gearbox",
+          "trak-racer-mutli-use-sim-racing-gloves-grey-camo"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 50,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Featuring",
+        "content": "<p>And (not featured below):<\/p><ul><li>2x Simucube ActivePedal<\/li><li>Simucube 2 Ultimate<\/li><li>Trak Racer Ultrawide 49” Monitor<\/li><li>TOBII Eye Tracker<\/li><li>Trak Racer Wireless Gaming Headset<\/li><\/ul>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#282828",
+        "product_card_text_color": "#ffffff"
+      }
+    },
+    "78455a80-7a61-442f-898c-2cd06983f76c": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--17179735490724__78455a80-7a61-442f-898c-2cd06983f76c-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TRX_BF_01_1.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/alpine_racing_trx_white.png",
+            "icon_width": 72,
+            "subheading": "",
+            "title": "Alpine Racing TRX",
+            "content": "<p>Developed alongside Alpine F1 engineers, the Alpine Racing TRX is the first Sim Racing cockpit allowing you to switch between Formula and GT seating position in minutes.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "ab0a5f4f-13ff-4a5f-b3f5-92730b7643cd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DBOX_BASE_BF_1.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/65814749e5e4ec81dae3430765abc29a.png",
+            "icon_width": 60,
+            "subheading": "",
+            "title": "D-BOX Gen 5 4250i Haptic System",
+            "content": "<p>D-BOX revolutionizes the sim racing experience with haptic technology by communicating with drivers in a way that’s not through sight and sound; but through perfectly synchronized movements, vibrations and textures. With more than 65,000 hand-coded haptic effects, D-BOX motion systems allow you to sense the smallest details that have potential to shave seconds off your lap time, such as the feeling of your tires wearing down and the feeling of any imperfections in the tracks!<\/p><p>As the only haptic system to be licensed by the FIA, D-BOX is even used by professional drivers to train off-the track— making it an essential enhancement for sim racers seeking the most authentic and immersive experience.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "c2675274-3f67-465b-ace3-06cd480ce2ee": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SIMUCUB_AP_BF_01_1.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/simucube_symbol_logo_orange_no-r.png",
+            "icon_width": 60,
+            "subheading": "",
+            "title": "Two Simucube ActivePedals With Throttle",
+            "content": "<p>Simucube ActivePedal is the world’s first pedal created by you. With unlimited adjustability, repeatability, and telemetry based force feedback effects, it is designed to be the last pedal you’ll need<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "9daa36b0-a728-4a7b-82c9-5da7381a036d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SIMUCUBE_DD_BF_1.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/simucube_symbol_logo_orange_no-r.png",
+            "icon_width": 60,
+            "subheading": "",
+            "title": "Simucube 2 Ultimate Wheelbase",
+            "content": "<p>The Simucube 2 Ultimate Direct Drive System raises the bar for sim racing steering wheel systems. It offers the most realistic and detailed force feedback currently available through a high torque, brushless motor. For those seeking the very best direct drive system for their home cockpit or professional simulator, the Ultimate will provide you with the best possible feedback system available. A massive 32Nm of torque is produced from the highly optimised motor which is combined with a 24 bit Hiperface encoder to produce the most advanced signal processing unit currently available.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "1817c6f5-d983-4cb2-be48-e16cc8eabdea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/REXING_GT_BF.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/logo2-1_2.png",
+            "icon_width": 80,
+            "subheading": "",
+            "title": "Rexing GT Steering Wheel \"Timun\"",
+            "content": "<p>Rexing GT steering wheel is used as addon wheel for PC games and simulations featuring:<\/p><ul><li>Full carbon fiber body<\/li><li>4.3″ wide angle color LCD by Ultimate Game Tech<\/li><li>15 rpm LEDs, 6 additional marshal LEDs<\/li><li>Original alcanatara grips<\/li><li>Analog joystick\/thumbstick<\/li><li>13 configurable push-buttons:<\/li><li>8 highest quality industrial push-buttons with snap action<\/li><li>4 high-quality tactile switches arranged in D-Pad configuration<\/li><li>configurable center push on analog joystick<\/li><li>2 thumb rotary encoders<\/li><li>2 additional rotary encoders on the front of the wheel<\/li><li>12-position switch<\/li><li>2 momentary toggle switches, each with up and position and spring return to center<\/li><li>tempered glass display cover<\/li><li>all aluminium knobs<\/li><\/ul>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "adfa2971-da47-4be5-a945-63b37047ffef": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/REXING_FORMUAL_BF.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/logo2-1_2.png",
+            "icon_width": 80,
+            "subheading": "",
+            "title": "Rexing Formula Wheel “Mayaris”",
+            "content": "<p><strong>CARBON FIBER FORMULA STEERING WHEEL<\/strong> Rexing steering wheel is molded out of carbon fiber. The bodywork itself is the chassis. No metal inserts - only CARBON FIBER strength and endurance with superior finish. Rexing we learned the production process from aeronautics and real motorsports steering wheels.<\/p><p>LCD DISPLAY 4.3” LCD display compatible with all major sim racing games with RPM LEDs and six additional LEDs. ILLUMINATED PUSH-BUTTONS 10 dimmable backlit push-buttons, fully configurable to any telemetry data. On top of that, you can add more than one telemetry data conditions to the same button, and choose how to prioritize them. MULTI-SWITCH It can be rotated - like an encoder. It can be pressed - like a button. It can be pushed up, down, left, right - like a joystick<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "400b7377-c8ab-4f2e-b187-e8894fbed714": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MONITOR_BF.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Trak Racer Ultrawide 49” Monitor",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "209738d1-bcb2-43f1-b881-49764cb5cd34": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HV_HB_BF.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/heusinkveld.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Heuskinvield Handbrake",
+            "content": "<p>The Heusinkveld Handbrake is a versatile, pressure sensitive USB simulator handbrake using load cell technology. It has a firm and adjustable progressive feel with up to 22kg of force at the lever (120kg load cell)<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "6af323db-ac34-4a92-b9b7-6cc274953f72": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VN_SHIF_BF.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/vnm_simulation.png",
+            "icon_width": 60,
+            "subheading": "",
+            "title": "VNM Shifter - H-Pattern Manual or Sequential Gearbox",
+            "content": "<p>The VNM Shifter, designed for competitive sim racing, lets you configure for a Sequential Gearbox or up to a 7-speed H-pattern gearbox(6+Reverse). The full metal construction provides the VNM Shifter with the most realistic tactile feedback and adjustable tension in its price range. With I clever design the compact VNM shift allows you to easily mount to your racing simulator from the side or the base of the shifter.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "d8d470a2-e10f-4836-8abf-93188a8bf2b8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TOBI_BF.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/Laag_1.png",
+            "icon_width": 80,
+            "subheading": "",
+            "title": "TOBII Eye Tracker",
+            "content": "<p>Tobii Eye Tracker 5 is the only PC gaming device capable of tracking both head and eye movements, unlocking a revolutionary new way to be less hands-on in your favorite games.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "a86e8365-bc51-4630-8730-231d7ffcabf0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR_HEADSET_BF.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Trak Racer Gaming Headset",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TR_GLOVE_BF.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/trak-racer-white.png",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "Trak Racer Sim Racing Gloves",
+            "content": "<p>Introducing the ultimate multi-use racing gloves from Trak Racer, designed to give you the competitive edge on the track and also protect your wheel grip from rapid wear and tear. Our gloves are made with high-quality materials to provide maximum comfort and protection during intense racing sessions.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__78455a80-7a61-442f-898c-2cd06983f76c-image-1",
+        "ab0a5f4f-13ff-4a5f-b3f5-92730b7643cd",
+        "c2675274-3f67-465b-ace3-06cd480ce2ee",
+        "9daa36b0-a728-4a7b-82c9-5da7381a036d",
+        "1817c6f5-d983-4cb2-be48-e16cc8eabdea",
+        "adfa2971-da47-4be5-a945-63b37047ffef",
+        "400b7377-c8ab-4f2e-b187-e8894fbed714",
+        "209738d1-bcb2-43f1-b881-49764cb5cd34",
+        "6af323db-ac34-4a92-b9b7-6cc274953f72",
+        "d8d470a2-e10f-4836-8abf-93188a8bf2b8",
+        "a86e8365-bc51-4630-8730-231d7ffcabf0",
+        "eeb123f2-5a12-4e09-8f14-d9e3d15b7adc"
+      ],
+      "custom_css": [
+        ".media-with-text__media img {max-width: 100%; height: auto; background: black;}",
+        ".section-full {background-color: black;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "1698227512f130f481": {
+      "type": "apps",
+      "blocks": {
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "RZ3qBk"
+          }
+        }
+      },
+      "block_order": [
+        "f5a93c68-7ccc-4fd9-81bc-ae59f4a14bd6"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "3c2f40cd-3162-4b02-b86f-25538e0430b9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Terms & Conditions",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>Competition conducted by Trak Racer, of 278 Canterbury Rd, Surrey Hills, VIC, 3127.<\/li><li>Competition commences at 12am on 1\/11\/23 and closes at 11.59pm on 31\/12\/23 (AEST) (Entry Period).<\/li><\/ul><p><strong>To enter the Competition, an Eligible Entrant must meet any of the following conditions:<\/strong><\/p><ul><li>One entry by signing up to Trak Racer’s emailing list<\/li><li>Ten entries by spending $1000 or more on Trak Racer’s website (cart value).<\/li><li>Twenty entries by spending $2000 or more on Trak Racer’s website (cart value)<\/li><li>If the entrant meets the mentioned requirements, they automatically enter the competition.<\/li><li>If an eligible entrant purchases through a Trak Racer distributor, they must meet the above conditions and fill out the form listed on www.trakracer.com\/pages\/giveaway.<\/li><li>Eligible entrants purchased through Trak Racer distributors must<\/li><li>ensure their purchases are on Trak Racer products only.<\/li><li>Eligible Entrants must be opted in to receive Trak Racer marketing communications and must not opt out during the Entry Period.<\/li><li>The winner will be drawn at 12pm on 16\/1\/24 by Trak Racer.<\/li><li>The winner will be notified by phone and email by 19\/1\/24 and published on all Trak Racer’s social media channels (Facebook, Instagram, TikTok, Snapchat, LinkedIn) and on the competition website.<\/li><li>If the winner does not respond within 7 days, a new winner will be drawn.<\/li><li>The winner may be required to pay for shipping, and taxes if applicable.<\/li><li>It is a condition of entry that Eligible Entrants consent to receive Trak Racer marketing communications and do not opt out during the Entry Period.<\/li><li>Entrants may only enter the Competition in their own name. Multiple entries are permitted, but each entry must comply with these conditions.<\/li><li>If an entrant decides to return their order and their order value does not meet the conditions, they will be removed from the competition<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-heading-1",
+        "template--17179735490724__3c2f40cd-3162-4b02-b86f-25538e0430b9-richtext-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "section_class": ""
+      }
+    },
+    "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "racing-simulators",
+            "subheading": "",
+            "title": "Racing Simulators",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "flight-simulators",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "seats",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "ff564899-fe69-4aa2-b17a-f4b8f82e0288": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitor-stands",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-1",
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-2",
+        "template--17179735490724__5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d-collection-3",
+        "ff564899-fe69-4aa2-b17a-f4b8f82e0288",
+        "55be72f5-1e77-4b46-b2d1-0bf8053ef72b"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 5,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d3590901-cb13-4b5f-b5cb-14e3db60410b",
+    "1b526b28-baf7-462b-958f-968b96d7360b",
+    "89a48d11-adde-4f0d-a7e8-33c5f1c073c3",
+    "169822355365a42863",
+    "3fefa21b-9563-40cf-b680-7b259a53324a",
+    "6469952e-51f6-464d-99d5-142fdf72110a",
+    "4adfecf2-f85e-4ddd-9af5-e7f6208127aa",
+    "591138f3-e4fc-4e77-aba7-9f761bbf1309",
+    "78455a80-7a61-442f-898c-2cd06983f76c",
+    "1698227512f130f481",
+    "3c2f40cd-3162-4b02-b86f-25538e0430b9",
+    "5f72d26f-4fcc-4b35-bd3b-8df3a0ebca8d"
+  ]
+}
