@@ -10418,3 +10418,15 @@ body.product-template buy-buttons.buy-buttons {
   visibility: visible;
   bottom: 100%;
 }
+
+.upsell_product_group .availability {
+  background: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.upsell_product_group .availability.available {
+  color: green;
+}
+.upsell_product_group .availability.unavailable {
+  color: red;
+}

@@ -139,6 +139,7 @@ $(document).on('click', '.product_list .product_item input', function () {
   // console.log("isChecked == ", isChecked)
   let productTitle = $(this).val();
   let productPrice = formateThePrice($(this).data('product_price'));
+  let productAvailable = $(this).data("available");
   let $upsellProductGroup = $(this).closest('.upsell_product_group');
   // debugger
 
@@ -151,11 +152,25 @@ $(document).on('click', '.product_list .product_item input', function () {
     $(this).prop('checked', true);
     $upsellProductGroup.find('.selected_values').text(productTitle);
     $upsellProductGroup.find('.addOn').text(`(+ ${productPrice})`);
+    console.log("productAvailable == ", productAvailable)
+    console.log(typeof(productAvailable))
+    if (productAvailable) {
+      $upsellProductGroup.find('.availability').text('Instock');
+      $upsellProductGroup.find('.availability').addClass('available');
+      $upsellProductGroup.find('.availability').show()
+    } else {
+      $upsellProductGroup.find('.availability').text('Preorder');
+      $upsellProductGroup.find('.availability').addClass('unavailable');
+      $upsellProductGroup.find('.availability').show()
+    }
   } else {
     // console.log("falseeeeeeeeee")
     $(this).prop('checked', false);
     $upsellProductGroup.find('.selected_values').text('');
     $upsellProductGroup.find('.addOn').text('');
+    $upsellProductGroup.find('.availability').hide()
+    $upsellProductGroup.find('.availability').text('');
+    $upsellProductGroup.find('.availability').removeClass('available unavailable');
   }
 });
 $(document).on('click', '.product-template button.custom_addToCart', function () {

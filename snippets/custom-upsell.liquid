@@ -12,6 +12,7 @@
     <label for="" class="label required">
       <span class="label-content">{{ group_title }}</span>
       <span class="addOn"></span>
+      <span class="availability" style="display: none;"></span>
     </label>
     <div class="selected_values"></div>
 
@@ -33,16 +34,23 @@
         {% assign product_variant_id = product_inner_data[1] | replace: 'v-', '' | strip | plus: 0 %}
         {% comment %} <!-- Get Products Data --> {% endcomment %}
         {% assign upsellProduct = all_products[product_handles] %}
+        {% assign available = false %}
 
         {% if product_variant_id != blank and product_variant_id != 0 %}
           {% for variant in upsellProduct.variants %}
             {% if variant.id == product_variant_id %}
               {% assign productImg = variant.featured_image.src | product_img_url: 'large' %}
+              {% if variant.available %}
+                {% assign available = true %}
+              {% endif %}
             {% endif %}
           {% endfor %}
         {% else %}
           {% assign productImg = upsellProduct.featured_image.src | product_img_url: 'large' %}
           {% assign product_variant_id = upsellProduct.variants[0].id %}
+          {% if upsellProduct.available %}
+            {% assign available = true %}
+          {% endif %}
         {% endif %}
 
         <div class="product_item">
@@ -57,6 +65,7 @@
             data-product_price="{{ upsellProduct.price }}"
             data-product-handle="{{ product_handles }}"
             data-variant-id="{{ product_variant_id }}"
+            data-available="{{ available }}"
           >
           <label
             for="{{ group_title |  replace: ' ', '_' | downcase  }}_item_{{ forloop.index }}"
