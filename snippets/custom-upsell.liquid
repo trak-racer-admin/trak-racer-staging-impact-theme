@@ -40,7 +40,7 @@
           {% for variant in upsellProduct.variants %}
             {% if variant.id == product_variant_id %}
               {% assign productImg = variant.featured_image.src | product_img_url: 'large' %}
-              {% if variant.available %}
+              {% if variant.inventory_quantity > 0 %}
                 {% assign available = true %}
               {% endif %}
             {% endif %}
@@ -48,7 +48,7 @@
         {% else %}
           {% assign productImg = upsellProduct.featured_image.src | product_img_url: 'large' %}
           {% assign product_variant_id = upsellProduct.variants[0].id %}
-          {% if upsellProduct.available %}
+          {% if upsellProduct.selected_or_first_available_variant.inventory_quantity > 0 %}
             {% assign available = true %}
           {% endif %}
         {% endif %}

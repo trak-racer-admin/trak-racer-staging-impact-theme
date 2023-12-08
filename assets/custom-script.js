@@ -156,11 +156,11 @@ $(document).on('click', '.product_list .product_item input', function () {
     console.log(typeof(productAvailable))
     if (productAvailable) {
       $upsellProductGroup.find('.availability').text('Instock');
-      $upsellProductGroup.find('.availability').addClass('available');
+      $upsellProductGroup.find('.availability').removeClass('unavailable').addClass('available');
       $upsellProductGroup.find('.availability').show()
     } else {
       $upsellProductGroup.find('.availability').text('Preorder');
-      $upsellProductGroup.find('.availability').addClass('unavailable');
+      $upsellProductGroup.find('.availability').removeClass('available').addClass('unavailable');
       $upsellProductGroup.find('.availability').show()
     }
   } else {
