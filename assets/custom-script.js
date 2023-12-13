@@ -20,8 +20,13 @@
   }
   //end
 
-  const countDown = new Date(birthday).getTime(),
-    x = setInterval(function () {
+  // Check if the element with id "countdown" exists
+  var countdownDiv = document.getElementById("countdown");
+
+  const countDown = new Date(birthday).getTime();
+  if (countdownDiv !== null) {
+    console.log("#countdown exists in the DOM");
+    const x = setInterval(function () {
       const now = new Date().getTime(),
         distance = countDown - now;
 
@@ -45,6 +50,7 @@
       }
       //seconds
     }, 0);
+  }
 })();
 
 $().ready(function () {
@@ -97,5 +103,86 @@ $().ready(function () {
     },
     removalDelay: 300,
     mainClass: "mfp-fade",
+  });
+});
+
+function formateThePrice(data) {
+  let moneyFormat = theme.moneyFormat;
+  let price = (data / 100).toFixed(2);
+  let formattedPrice = moneyFormat.replace('{{amount}}', price);
+  return formattedPrice;
+}
+
+// Add to cart js For Shopify 
+function addToCart_Ajax(data, callback) {
+  jQuery.ajax({
+    type: "POST",
+    url: "/cart/add.js",
+    data: {
+      items: data,
+    },
+    dataType: "json",
+    success: function () {
+      console.log("Data added successfully - selling_plan");
+      if (callback && typeof callback === "function") {
+        callback();
+      }
+    },
+    error: function (xhr, status, error) {
+      console.error("Error adding data to cart:", error);
+    },
+  });
+}
+$(document).on('click', '.product_list .product_item input', function () {
+  // $(this).closest('.product_list').find('input').data('checked', false);
+  let isChecked = $(this).data('checked');
+  // console.log("isChecked == ", isChecked)
+  let productTitle = $(this).val();
+  let productPrice = formateThePrice($(this).data('product_price'));
+  let productAvailable = $(this).data("available");
+  let $upsellProductGroup = $(this).closest('.upsell_product_group');
+  // debugger
+
+  // Toggle the checked state
+  $(this).data('checked', !isChecked);
+  // console.log("after chnage == ", !isChecked)
+  // Update the UI based on the checked state
+  if (!isChecked) {
+    // console.log("Trueeeeeeeeeeee")
+    $(this).prop('checked', true);
+    $upsellProductGroup.find('.selected_values').text(productTitle);
+    $upsellProductGroup.find('.addOn').text(`(+ ${productPrice})`);
+    console.log("productAvailable == ", productAvailable)
+    console.log(typeof(productAvailable))
+    if (productAvailable) {
+      $upsellProductGroup.find('.availability').text('Instock');
+      $upsellProductGroup.find('.availability').removeClass('unavailable').addClass('available');
+      $upsellProductGroup.find('.availability').show()
+    } else {
+      $upsellProductGroup.find('.availability').text('Preorder');
+      $upsellProductGroup.find('.availability').removeClass('available').addClass('unavailable');
+      $upsellProductGroup.find('.availability').show()
+    }
+  } else {
+    // console.log("falseeeeeeeeee")
+    $(this).prop('checked', false);
+    $upsellProductGroup.find('.selected_values').text('');
+    $upsellProductGroup.find('.addOn').text('');
+    $upsellProductGroup.find('.availability').hide()
+    $upsellProductGroup.find('.availability').text('');
+    $upsellProductGroup.find('.availability').removeClass('available unavailable');
+  }
+});
+$(document).on('click', '.product-template button.custom_addToCart', function () {
+  let products = [];
+  $(".product_list .product_item input:checked").each(function () {
+    let variant_id = $(this).data("variant-id");
+    let existingProduct = products.find(product => product.id === variant_id);
+    if (!existingProduct) {
+      products.push({ "id": variant_id, "quantity": 1 });
+    }
+  });
+  addToCart_Ajax(products, function () {
+    $("body.product-template buy-buttons.buy-buttons button.button").click();
   });
 });

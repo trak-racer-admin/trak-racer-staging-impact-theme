@@ -1,0 +1,95 @@
+{% assign metafieldData = product.metafields.custom.product_upsell %}
+{% assign product_groups = metafieldData | split: '||' %}
+
+{% for group in product_groups -%}
+  {% comment %} <div>{{ group }}</div> {% endcomment %}
+
+  <div class="upsell_product_group form__group_{{ forloop.index }}">
+    {% comment %} <!-- Get Title --> {% endcomment %}
+    {% assign groups_title = group | split: '==' %}
+    {% assign group_title = groups_title[0] | trim | strip %}
+    {% comment %} <h3>{{ group_title }}</h3> {% endcomment %}
+    <label for="" class="label required">
+      <span class="label-content">{{ group_title }}</span>
+      <span class="addOn"></span>
+      <span class="availability" style="display: none;"></span>
+    </label>
+    <div class="selected_values"></div>
+
+    <div class="product_list">
+      {% comment %} <!-- Get Products --> {% endcomment %}
+      {% assign group_products_all = group | split: '==' %}
+      {% assign group_products = group_products_all[1] %}
+      {% assign group_product = group_products | split: ', ' %}
+      {% for product in group_product -%}
+        {% comment %} <h6>product Array == {{ product }}</h6> {% endcomment %}
+        {% assign products_data = product | split: '---' %}
+        {% comment %} <!-- Get Products Title --> {% endcomment %}
+        {% assign product_title = products_data[0] | strip %}
+
+        {% assign product_inner_data = products_data[1] | split: '|' %}
+        {% comment %} <!-- Get Products Handel --> {% endcomment %}
+        {% assign product_handles = product_inner_data[0] | strip %}
+        {% comment %} <!-- Get Products variant ID --> {% endcomment %}
+        {% assign product_variant_id = product_inner_data[1] | replace: 'v-', '' | strip | plus: 0 %}
+        {% comment %} <!-- Get Products Data --> {% endcomment %}
+        {% assign upsellProduct = all_products[product_handles] %}
+        {% assign available = false %}
+
+        {% if product_variant_id != blank and product_variant_id != 0 %}
+          {% for variant in upsellProduct.variants %}
+            {% if variant.id == product_variant_id %}
+              {% assign productImg = variant.featured_image.src | product_img_url: 'large' %}
+              {% if variant.inventory_quantity > 0 %}
+                {% assign available = true %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% assign productImg = upsellProduct.featured_image.src | product_img_url: 'large' %}
+          {% assign product_variant_id = upsellProduct.variants[0].id %}
+          {% if upsellProduct.selected_or_first_available_variant.inventory_quantity > 0 %}
+            {% assign available = true %}
+          {% endif %}
+        {% endif %}
+
+        <div class="product_item">
+          <input
+            type="radio"
+            id="{{ group_title |  replace: ' ', '_' | downcase  }}_item_{{ forloop.index }}"
+            data-type="image-swatches"
+            name="{{ group_title }}"
+            data-name="properties[{{ group_title }}]"
+            value="{{ product_title }}"
+            data-checked="false"
+            data-product_price="{{ upsellProduct.price }}"
+            data-product-handle="{{ product_handles }}"
+            data-variant-id="{{ product_variant_id }}"
+            data-available="{{ available }}"
+          >
+          <label
+            for="{{ group_title |  replace: ' ', '_' | downcase  }}_item_{{ forloop.index }}"
+            title="{{ product_title }} ( + {{ upsellProduct.price | money }})"
+            data-product_title="{{ product_title }}"
+            data-product_price="{{ upsellProduct.price }}"
+          >
+            <span
+              id="{{ group_title |  replace: ' ', '_' | downcase  }}_item_{{ forloop.index }}_{{ product_variant_id }}"
+              class="swatch__image"
+              style="background: url('{{ productImg }}') no-repeat center/contain;"
+            >
+            </span>
+            <div class="tooltip">
+              <div class="tooltip__title">
+                <span>{{ product_title }}</span> <span class="addOn">(+ {{ upsellProduct.price | money }})</span>
+              </div>
+              <div class="tooltip__image">
+                <img src="{{ productImg }}" class="tooltip__productImage">
+              </div>
+            </div>
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{%- endfor %}
