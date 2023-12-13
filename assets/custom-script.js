@@ -20,8 +20,13 @@
   }
   //end
 
-  const countDown = new Date(birthday).getTime(),
-    x = setInterval(function () {
+  // Check if the element with id "countdown" exists
+  var countdownDiv = document.getElementById("countdown");
+
+  const countDown = new Date(birthday).getTime();
+  if (countdownDiv !== null) {
+    console.log("#countdown exists in the DOM");
+    const x = setInterval(function () {
       const now = new Date().getTime(),
         distance = countDown - now;
 
@@ -45,6 +50,7 @@
       }
       //seconds
     }, 0);
+  }
 })();
 
 $().ready(function () {
@@ -98,4 +104,67 @@ $().ready(function () {
     removalDelay: 300,
     mainClass: "mfp-fade",
   });
+});
+
+function checkAndSetAvailability() {
+  if ($(".gpo-swatches.image-swatches").length === 0) {
+    return;
+  }
+
+  clearInterval(findGPO);
+
+  $(".gpo-form__group .gpo-label").append('<span class="availability" style="display:none;"></span>');
+
+  $('.gpo-swatches.image-swatches').each(function () {
+    const $input = $(this).find("input");
+    const productHandle = $input.attr("gpo-data-product-handle");
+    const productVarId = $input.attr("gpo-data-variant-id");
+
+    if (productHandle !== "" && productHandle !== undefined) {
+      getProductAvailability(productHandle, productVarId);
+    }
+  });
+}
+
+let findGPO = setInterval(checkAndSetAvailability, 100);
+
+setTimeout(function () {
+  clearInterval(findGPO);
+}, 50000);
+
+function getProductAvailability(p_Handle, p_variant) {
+  const product_url = p_variant !== ""
+    ? `${location.origin}/products/${p_Handle}?variant=${p_variant}`
+    : `${location.origin}/products/${p_Handle}`;
+
+  $.ajax({
+    url: product_url,
+    type: "GET",
+    success: function (data) {
+      const Product_Availability = $(data).find(".Product_Availability .product_qty").data("productqty");
+      const $productElement = $(`[gpo-data-product-handle=${p_Handle}]`);
+      $productElement.attr('data-available', Product_Availability > 0);
+    },
+    error: function (error) {
+      console.error("Error fetching product information:", error);
+    },
+  });
+}
+
+$(document).on('click', '.gpo-swatches.image-swatches input', function () {
+  const $input = $(this);
+  const productAvailable = $input.data("available");
+  const availabilityDIV = $input.closest(".gpo-form__group").find(".availability");
+
+  if ($input.prop('checked')) {
+    if (productAvailable === true) {
+      availabilityDIV.text('Instock').removeClass('unavailable').addClass('available').show();
+    } else if (productAvailable === false) {
+      availabilityDIV.text('Preorder').removeClass('available').addClass('unavailable').show();
+    } else {
+      availabilityDIV.text('').removeClass('available unavailable').hide();
+    }
+  } else {
+    availabilityDIV.text('').removeClass('available unavailable').hide();
+  }
 });

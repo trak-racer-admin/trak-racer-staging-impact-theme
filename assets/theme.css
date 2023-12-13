@@ -10343,3 +10343,15 @@ screen and (max-height: 300px) {
     min-height: 50vh;
   }
 }
+.gpo-form__group .availability {
+  background: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.gpo-form__group .availability.available {
+  color: green;
+}
+.gpo-form__group .availability.unavailable {
+  color: red;
+}

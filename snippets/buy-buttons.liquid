@@ -20,6 +20,15 @@ Supported variables
 * form_id: if specified, define the form ID linked to this input
 {%- endcomment -%}
 
+<div class="Product_Availability hidden">
+  <div class="product_qty" data-productQty="{{ product.selected_or_first_available_variant.inventory_quantity }}">{{ product.selected_or_first_available_variant.id }} - {{ product.selected_or_first_available_variant.inventory_quantity }}</div>
+  {% comment %} <ul>
+    {% for variant in product.variants %}
+      <li class="variant_list" data-variantId="{{ variant.id }}" data-variantQty="{{ variant.inventory_quantity }}">{{ variant.id }} - {{ variant.inventory_quantity }}</li>
+    {% endfor %}
+  </ul> {% endcomment %}
+</div>
+
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 
 {%- form 'product', product, is: 'product-form', id: form_id -%}
