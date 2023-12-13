@@ -37,6 +37,20 @@ Supported variables
       {%- endif -%}
 
       {%- render 'price-list', line_item: line_item -%}
+      <p></p>
+
+      {%  assign product_quantity = line_item.product.selected_or_first_available_variant.inventory_quantity %}
+
+<div class="Product_Availability">
+  {% comment %} {% if product_quantity > 0 %}
+    <span class="availability available" style="">Instock</span>
+  {% else  %}
+    <span class="availability unavailable" style="">Preorder</span>
+  {% endif %} {% endcomment %}
+
+  {%- render 'inventory', product: line_item.product, low_threshold: 0 -%}
+</div>
+
     </div>
 
     {%- unless line_item.product.has_only_default_variant or line_item.gift_card -%}
