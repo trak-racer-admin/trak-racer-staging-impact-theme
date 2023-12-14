@@ -213,13 +213,16 @@
       "block_order": [
         "template--17060380672164__8267ced5-406c-4fc5-9985-0f4d89959265-item-1"
       ],
+      "custom_css": [
+        ".section-full {padding-bottom: 10px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_mobile": true,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
-        "impact_text_size_ratio": 1,
+        "impact_text_size_ratio": 0.7,
         "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "",
@@ -235,7 +238,7 @@
         "template--17083312111780__a7249964-ef67-4fd6-871d-4f88abab283c-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Any motor, any pedals, any screen. No problem when you've found your forever rig.",
+            "text": "Any motor, any pedals, any screen",
             "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
