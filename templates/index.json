@@ -6,8 +6,8 @@
         "template--17083312111780__c223a27c-9517-4ac7-9e6d-d7974a644653-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/au.png",
-            "mobile_image": "shopify:\/\/shop_images\/final_giveaway_banner_mobile_copy_1.png",
+            "image": "shopify:\/\/shop_images\/banner-refresh-au.png",
+            "mobile_image": "shopify:\/\/shop_images\/au-mobile-banner.png",
             "content_max_width": 1200,
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",

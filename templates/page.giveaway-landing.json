@@ -14,8 +14,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/giveaway_AU.png",
-        "mobile_image": "shopify:\/\/shop_images\/mobile_au.png",
+        "image": "shopify:\/\/shop_images\/banner-refresh-au-giveawaypage.png",
+        "mobile_image": "shopify:\/\/shop_images\/au-mobile-banner-giveawaypage.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -25,6 +25,7 @@
     },
     "1b526b28-baf7-462b-958f-968b96d7360b": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
