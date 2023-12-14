@@ -130,11 +130,21 @@
                       {%- endif -%}
                     </div>
 
-                  {%- when 'cart_note' -%}
+                    <div class="custom_cart_note">
+                      {%- capture select_options -%}
+                        <option value="">- Select an option -</option>
+                        <option value="Ship Available Items Now">Ship Available Items Now</option>
+                        <option value="Wait for Full Order">Wait for Full Order</option>
+                      {%- endcapture -%}
+                  
+                      {%- render 'select', label: 'How you would like us to proceed: *', required: true, name: 'How you would like us to proceed', options: select_options -%}
+                    </div>
+
                     <cart-note class="cart-form__note block" {{ block.shopify_attributes }}>
                       {%- assign order_note = 'cart.general.order_note' | t -%}
                       {%- render 'input', name: 'note', multiline: 3, label: order_note, value: cart.note, maxlength: block.settings.maxlength -%}
                     </cart-note>
+                  {% comment %} {%- when 'cart_note' -%} {% endcomment %}
 
                   {%- when 'text' -%}
                     {%- if block.settings.content != blank -%}
@@ -618,3 +628,13 @@
 }
 {% endschema %}
 <!-- GPO installed -->
+
+<script>
+$(".custom_cart_note select").on('change', function(){
+  $("cart-note.cart-form__note.block textarea.textarea").val($(this).val())
+});
+let restock_item_length = $(".cart-order variant-inventory .active_variant .availability.restock").length;
+if (restock_item_length === 0){
+  $(".custom_cart_note").hide()
+}
+</script>

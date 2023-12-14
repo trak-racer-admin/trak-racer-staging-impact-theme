@@ -179,3 +179,5 @@ $(document).on('click', '.gpo-swatches.image-swatches input', function () {
     availabilityDIV.text('').removeClass('restock available unavailable').hide();
   }
 });
+
+$(".product-info .product-info__inventory").appendTo(".product-info  .product-info__variant-picker .h-stack");

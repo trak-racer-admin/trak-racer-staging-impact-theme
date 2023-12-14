@@ -10380,3 +10380,28 @@ screen and (max-height: 300px) {
   gap: 10px;
   align-items: center;
 }
+.cart .line_item_productTitle span {
+  display: inline;
+}
+.cart .line_item_productTitle variant-inventory .availability {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.cart .line_item_productTitle variant-inventory .availability:not(.available) {
+  font-weight: 300;
+}
+.cart .line-item__info .text-subdued {
+  color: black;
+}
+form.cart-form.rounded cart-note.cart-form__note {
+  display: none;
+}
+.cart .custom_cart_note .floating-label {
+  width: 100%;
+  transform: scale(1);
+  font-size: 14px;
+  letter-spacing: 0;
+  top: -15px;
+  font-weight: 400;
+  color: black;
+}

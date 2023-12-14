@@ -1215,6 +1215,26 @@ quick buy information in a template, that will be extracted in JS, but ensure it
     },
     {
       "type": "header",
+      "content": "Inventory"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory",
+      "label": "Show Inventory",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "low_inventory_threshold",
+      "label": "Low inventory threshold",
+      "info": "Use low stock color when quantity is below the threshold. Choose 0 to always show in stock.",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "header",
       "content": "Image zoom"
     },
     {

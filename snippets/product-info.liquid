@@ -102,6 +102,13 @@
         {%- endif -%}
 
       {%- when 'variant_picker' -%}
+        
+<div class="product-info__inventory {{ block.shopify_attributes }}">
+  {%- render 'inventory', product: product, low_threshold: block.settings.low_inventory_threshold, form_id: product_form_id -%}
+</div>
+{% if section.settings.show_inventory %}
+{% endif %}
+
         <div class="product-info__variant-picker" {{ block.shopify_attributes }}>
           {%- render 'variant-picker', product: product, form_id: product_form_id, update_url: update_url, hide_sold_out_variants: block.settings.hide_sold_out_variants, block: block -%}
         </div>
@@ -199,10 +206,10 @@
           </div>
         {%- endif -%}
 
-      {%- when 'inventory' -%}
+      {% comment %} {%- when 'inventory' -%}
         <div class="product-info__inventory {{ block.shopify_attributes }}">
           {%- render 'inventory', product: product, low_threshold: block.settings.low_inventory_threshold, form_id: product_form_id -%}
-        </div>
+        </div> {% endcomment %}
 
       {%- when 'buy_buttons' -%}
         {%- assign main_form_exists = true -%}
