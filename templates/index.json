@@ -226,7 +226,7 @@
         "background": "#ffffff",
         "background_gradient": "",
         "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(233, 46, 46, 1) 14%, rgba(189, 50, 50, 1) 80.576%)",
+        "heading_gradient": "linear-gradient(180deg, rgba(233, 46, 46, 1) 14%, rgba(189, 50, 50, 1) 71%)",
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
