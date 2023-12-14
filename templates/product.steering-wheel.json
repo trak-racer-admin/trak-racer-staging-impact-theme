@@ -379,6 +379,7 @@
       "block_order": [
         "632d96a3-a008-44f4-9343-e2e04c973d9f"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
