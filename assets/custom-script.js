@@ -142,8 +142,10 @@ function getProductAvailability(p_Handle, p_variant) {
     type: "GET",
     success: function (data) {
       const Product_Availability = $(data).find(".Product_Availability .product_qty").data("productqty");
+      const Product_restock = $(data).find(".product-info__inventory span.active_variant").data("warning");
       const $productElement = $(`[gpo-data-product-handle=${p_Handle}]`);
       $productElement.attr('data-available', Product_Availability > 0);
+      $productElement.attr('data-restock', Product_restock == 'Pending restock' ? true : false);
     },
     error: function (error) {
       console.error("Error fetching product information:", error);
@@ -154,17 +156,26 @@ function getProductAvailability(p_Handle, p_variant) {
 $(document).on('click', '.gpo-swatches.image-swatches input', function () {
   const $input = $(this);
   const productAvailable = $input.data("available");
+  const productRestock = $input.data("restock");
   const availabilityDIV = $input.closest(".gpo-form__group").find(".availability");
 
+  // restock | available | unavailable
   if ($input.prop('checked')) {
-    if (productAvailable === true) {
-      availabilityDIV.text('Instock').removeClass('unavailable').addClass('available').show();
+    if (productRestock === true) {
+      $input.removeClass('available unavailable').addClass('restock').show();
+      availabilityDIV.text('Pending Restock').removeClass('available unavailable').addClass('restock').show();
+    } else if (productAvailable === true) {
+      $input.removeClass('restock unavailable').addClass('available').show();
+      availabilityDIV.text('In stock').removeClass('restock unavailable').addClass('available').show();
     } else if (productAvailable === false) {
-      availabilityDIV.text('Preorder').removeClass('available').addClass('unavailable').show();
+      $input.removeClass('restock available').addClass('unavailable').show();
+      availabilityDIV.text('Preorder').removeClass('restock available').addClass('unavailable').show();
     } else {
-      availabilityDIV.text('').removeClass('available unavailable').hide();
+      $input.removeClass('restock available unavailable');
+      availabilityDIV.text('').removeClass('restock available unavailable').hide();
     }
   } else {
-    availabilityDIV.text('').removeClass('available unavailable').hide();
+    $input.removeClass('restock available unavailable');
+    availabilityDIV.text('').removeClass('restock available unavailable').hide();
   }
 });

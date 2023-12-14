@@ -10352,9 +10352,31 @@ screen and (max-height: 300px) {
 .cart .availability {
   margin-left: 0;
 }
+.availability.restock {
+  color: yellow;
+  background: black;
+}
 .availability.available {
-  color: green;
+  color: Green;
 }
 .availability.unavailable {
-  color: red;
+  color: Orange;
+}
+.gpo-app .gpo-swatches input.restock:checked + label {
+  box-shadow: 0 0 0 2px yellow;
+  border-color: yellow;
+}
+.gpo-app .gpo-swatches input.available:checked + label {
+  box-shadow: 0 0 0 2px Green;
+  border-color: Green;
+}
+.gpo-app .gpo-swatches input.unavailable:checked + label {
+  box-shadow: 0 0 0 2px Orange;
+  border-color: Orange;
+}
+.cart .productVariant_title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }

@@ -37,28 +37,24 @@ Supported variables
       {%- endif -%}
 
       {%- render 'price-list', line_item: line_item -%}
-      <p></p>
-
-      {%  assign product_quantity = line_item.product.selected_or_first_available_variant.inventory_quantity %}
-
-<div class="Product_Availability">
-  {% comment %} {% if product_quantity > 0 %}
-    <span class="availability available" style="">Instock</span>
-  {% else  %}
-    <span class="availability unavailable" style="">Preorder</span>
-  {% endif %} {% endcomment %}
-
-  {%- render 'inventory', product: line_item.product, low_threshold: 0 -%}
-</div>
+      {% if line_item.product.has_only_default_variant or line_item.gift_card %}
+        {%- render 'inventory', product: line_item.product, low_threshold: 10 -%}
+      {% endif %}
 
     </div>
 
     {%- unless line_item.product.has_only_default_variant or line_item.gift_card -%}
-      <p class="text-sm text-subdued">{{ line_item.variant.title }}</p>
+      <div class="productVariant_title">
+        <p class="text-sm text-subdued">{{ line_item.variant.title }}</p>
+        {%- render 'inventory', product: line_item.product, low_threshold: 10 -%}
+      </div>
     {%- endunless -%}
 
     {%- if line_item.selling_plan_allocation -%}
-      <p class="text-sm text-subdued">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
+      <div class="productVariant_title">
+        <p class="text-sm text-subdued">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
+        {%- render 'inventory', product: line_item.product, low_threshold: 10 -%}
+      </div>
     {%- endif -%}
 
     {%- unless line_item.properties == blank -%}
