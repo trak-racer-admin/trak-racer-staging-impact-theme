@@ -7,7 +7,7 @@
     "block_border_radius": 16,
     "block_shadow_opacity": 20,
     "block_shadow_vertical_offset": 18,
-    "icon_stroke_width": 1,
+    "icon_stroke_width": 2,
     "icon_style": "mono",
     "button_hover_effect": "fade",
     "background": "#f7f7f7",
