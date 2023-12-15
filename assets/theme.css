@@ -10405,6 +10405,7 @@ form.cart-form.rounded cart-note.cart-form__note {
   font-weight: 400;
   color: black;
 }
-.gpo-popupBody .gpo-app .gpo-label span.label-content {
+.gpo-popupBody .gpo-app .gpo-label span.label-content,
+.gpo-popupBody .gpo-app .gpo-label span.addOn {
 	color: #000 !important;
 }
