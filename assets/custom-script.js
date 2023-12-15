@@ -106,13 +106,12 @@ $().ready(function () {
   });
 });
 
-function checkAndSetAvailability() {
-  if ($(".gpo-swatches.image-swatches").length === 0) {
+function checkAndSetAvailability(GPO_Data, intervalId) {
+  if ($(GPO_Data).length === 0) {
     return;
   }
 
-  clearInterval(findGPO);
-
+  clearInterval(intervalId);
   $(".gpo-form__group .gpo-label").append('<span class="availability" style="display:none;"></span>');
 
   $('.gpo-swatches.image-swatches').each(function () {
@@ -124,13 +123,75 @@ function checkAndSetAvailability() {
       getProductAvailability(productHandle, productVarId);
     }
   });
+
+  // setTimeout(function () {
+  //   $(".gpo-cartPopup .gpo-swatches.image-swatches input:checked").trigger("click").trigger("click");
+  //   console.log("Click Checked Input")
+  // }, 5000);
 }
 
-let findGPO = setInterval(checkAndSetAvailability, 100);
+let productPageGPO = '';
+// Product Page GPO
+if ($(".shopify-section--main-product").length !== 0) {
+  productPageGPO = ".product .gpo-swatches.image-swatches";
+}
 
-setTimeout(function () {
-  clearInterval(findGPO);
-}, 50000);
+if (productPageGPO !== "") {
+  let findGPO = setInterval(function () {
+    checkAndSetAvailability(productPageGPO, findGPO);
+  }, 100);
+
+  setTimeout(function () {
+    clearInterval(findGPO);
+  }, 50000);
+}
+
+// Cart Page GPO
+if ($(".shopify-section--main-cart").length) {
+
+  let GPOAddClass = setInterval(function () {
+    if ($(".cart .gpo-editCart").length) {
+      clearInterval(GPOAddClass);
+      $(".cart .gpo-editCart").addClass("gpoEditBTN");
+      $(".cart .gpo-editCart.gpoEditBTN").click(function () {
+        var checkinputs = setInterval(function () {
+          productPageGPO = ".gpo-cartPopup .gpo-swatches.image-swatches";
+          if ($(productPageGPO).length) {
+            $('.gpo-popupBox').addClass('gpo-loading');
+            let findGPOData = setInterval(function () {
+              checkAndSetAvailability(productPageGPO, findGPOData);
+            }, 100);
+
+            setTimeout(function () {
+              clearInterval(findGPOData);
+            }, 50000);
+
+            var checkAttrLength = setInterval(function () {
+              let dataAvailable = $(productPageGPO).find("[data-available]").length;
+              let dataProductHandle = $(productPageGPO).find("[gpo-data-product-handle]").length;
+              if (dataAvailable !== 0 && dataProductHandle !== 0 && dataAvailable === dataProductHandle) {
+                $(".gpo-cartPopup .gpo-swatches.image-swatches input:checked").trigger("click").trigger("click");
+                $('.gpo-popupBox').removeClass('gpo-loading');
+                clearInterval(checkAttrLength);
+              }
+            }, 1000);
+
+            setTimeout(function () {
+              clearInterval(checkAttrLength);
+            }, 30000);
+
+            clearInterval(checkinputs);
+
+          }
+        }, 100);
+      });
+    }
+  }, 100);
+  setTimeout(function () {
+    clearInterval(GPOAddClass);
+  }, 10000);
+}
+
 
 function getProductAvailability(p_Handle, p_variant) {
   const product_url = p_variant !== ""
@@ -146,6 +207,7 @@ function getProductAvailability(p_Handle, p_variant) {
       const $productElement = $(`[gpo-data-product-handle=${p_Handle}]`);
       $productElement.attr('data-available', Product_Availability > 0);
       $productElement.attr('data-restock', Product_restock == 'Pending restock' ? true : false);
+      // $productElement.trigger("click").trigger("click");
     },
     error: function (error) {
       console.error("Error fetching product information:", error);
