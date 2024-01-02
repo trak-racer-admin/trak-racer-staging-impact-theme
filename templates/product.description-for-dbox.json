@@ -338,7 +338,7 @@
           "caster-wheels-with-brake-mounting-brackets-1",
           "tr8020-620mm-table-top-desk-with-swivel-mount-black-2",
           "universal-aluminium-profile-headphone-hook-holder-1",
-          "alum-floor-triple-monitor-stand-monitors-up-to-46",
+          "floor-triple-monitor-stand",
           "premium-sim-rig-floor-mat-with-rgb-light"
         ],
         "full_width": true,
@@ -422,7 +422,7 @@
         "757f0616-ee90-4f27-b492-20d67bc8cfa1": {
           "type": "product",
           "settings": {
-            "product": "alum-floor-triple-monitor-stand-monitors-up-to-46",
+            "product": "floor-triple-monitor-stand",
             "horizontal_position": 26,
             "vertical_position": 44
           }
