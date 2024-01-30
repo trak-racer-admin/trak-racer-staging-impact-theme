@@ -293,7 +293,7 @@
       "type": "apps",
       "blocks": {
         "e8b95bcc-1d64-4c8a-8d8e-96b6c21fe790": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
             "widget_type": "reviews_widget"
@@ -461,7 +461,7 @@
         "recommendations_count": 10,
         "products": [
           "tr80-racing-simulator-mk5",
-          "gt-style-fixed-fiberglass-seat-1",
+          "gt-style-fixed-fiberglass-seat-ca",
           "simucube-2-sport-direct-drive-wheel-base",
           "simucube-sqr-quick-release-pin",
           "simucube-tahko-gt-21-wireless-wheel",
@@ -536,7 +536,7 @@
         "template--17075952877732__8c20408f-48ad-40e9-87fa-7dacd0aaa30a-product-2": {
           "type": "product",
           "settings": {
-            "product": "gt-style-fixed-fiberglass-seat-1",
+            "product": "gt-style-fixed-fiberglass-seat-ca",
             "horizontal_position": 75,
             "vertical_position": 53
           }
