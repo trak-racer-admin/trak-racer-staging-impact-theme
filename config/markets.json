@@ -8,9 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "index.json",
-  "context": {
-    "market": "all-b2b"
-  },
-  "sections": {}
+  "markets": {
+    "all-b2b": {
+      "parent": "@default"
+    }
+  }
 }
